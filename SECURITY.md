@@ -4,6 +4,6 @@
 
 转换器处理本地 XHTML、路径和图片文件。仅导入可信内容；浏览器预览脚本会在浏览器中运行，导入器不会执行这些脚本。
 
-若问题涉及路径越界、任意文件覆盖或敏感数据，请优先使用仓库 Security 页中的 **Report a vulnerability**（如可用），或通过 [维护者主页](https://github.com/xzzhuu) 提供的联系渠道联系。不要在公开 Issue 中上传凭据、私人工程或可直接利用的敏感材料。普通功能错误请使用 Bug Report 模板。
+若问题涉及路径越界、任意文件覆盖或敏感数据，请优先使用仓库 Security 页中的 [Report a vulnerability](https://github.com/xzzhuu/html-to-unity-ugui-workflow/security/advisories/new)（已开启私密报告），或通过 [维护者主页](https://github.com/xzzhuu) 提供的联系渠道联系。不要在公开 Issue 中上传凭据、私人工程或可直接利用的敏感材料。普通功能错误请使用 Bug Report 模板。
 
 报告应包含受影响版本、最小复现、影响范围和可选修复建议。
