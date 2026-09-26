@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "panelName": "TowerCraneDashboardPanel",
+  "html": "TowerCraneDashboardPanel.html",
+  "outputFolder": "Assets/Art/UIPrefab/TowerCraneDashboardPanel",
+  "assetPrefix": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/",
+  "fontAsset": null,
+  "boldWeight": 0.12
+}

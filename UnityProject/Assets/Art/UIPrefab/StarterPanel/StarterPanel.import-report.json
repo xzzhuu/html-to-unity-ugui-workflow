@@ -1,0 +1,16 @@
+{
+    "schemaVersion": "html-ugui/1",
+    "panelName": "StarterPanel",
+    "width": 1280.0,
+    "height": 720.0,
+    "nodes": 5,
+    "bindings": 0,
+    "templates": 0,
+    "visualStatus": "pending-browser-and-unity-review",
+    "errors": [],
+    "warnings": [
+        "CSS selector ignored by Unity: div",
+        "CSS selector ignored by Unity: span",
+        "CSS selector ignored by Unity: span"
+    ]
+}

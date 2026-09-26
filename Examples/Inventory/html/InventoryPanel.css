@@ -1,0 +1,12 @@
+html,body{margin:0;padding:0;background:#101b2a;font-family:"Microsoft YaHei",sans-serif;color:#eef4ff}
+#InventoryPanel{position:relative;overflow:hidden}
+.title{position:absolute;left:40px;top:28px;width:600px;height:56px;font-size:36px;color:#eef4ff;font-weight:700;line-height:56px}
+.search{position:absolute;left:40px;top:112px;width:640px;height:48px;background-color:#1c2d43;color:#eef4ff;font-size:22px;border:0;box-sizing:border-box}
+.list{position:absolute;left:40px;top:184px;width:640px;height:496px;overflow-y:auto}
+.row{position:absolute;left:0;top:0;width:640px;height:64px;background-color:#1c2d43;color:#eef4ff;border:0}
+.item-name{position:absolute;left:24px;top:12px;width:420px;height:40px;font-size:24px;color:#eef4ff;text-align:left;line-height:40px}
+.quantity{position:absolute;left:464px;top:12px;width:152px;height:40px;font-size:24px;color:#00ccff;text-align:right;line-height:40px}
+.detail{position:absolute;left:720px;top:112px;width:520px;height:568px;background-color:#1c2d43}
+.detail-title{position:absolute;left:32px;top:32px;width:456px;height:56px;font-size:30px;color:#eef4ff;line-height:56px}
+.description{position:absolute;left:32px;top:112px;width:456px;height:180px;font-size:24px;color:#91a8bf;line-height:40px}
+.use{position:absolute;left:32px;top:456px;width:456px;height:72px;background-color:#007aaf;color:#ffffff;font-size:26px;border:0}

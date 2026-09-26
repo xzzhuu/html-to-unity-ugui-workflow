@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Panel 设计到 HTML 工作流"
+  short_description: "初始化标准目录、审核 UI 布局并交付可验收 HTML"
+  default_prompt: "使用 $ui-panel-design-to-html，先按需要初始化 HTML 工作区，再根据需求生成布局图供我审核；批准后制作语义化组件清单、Sprite 素材和可验收 HTML，必要时准备 Unity 导入。"

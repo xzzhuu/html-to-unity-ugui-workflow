@@ -1,0 +1,7 @@
+{
+  "packageName": "com.nexvr.html-to-ugui",
+  "version": "0.2.0",
+  "packagePath": "Packages/com.nexvr.html-to-ugui",
+  "installation": "Unity Package Manager > Add package from disk > package.json",
+  "htmlSourcesStayExternal": true
+}

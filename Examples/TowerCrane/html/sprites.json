@@ -1,0 +1,780 @@
+{
+  "schemaVersion": 1,
+  "panelName": "TowerCraneDashboardPanel",
+  "sprites": [
+    {
+      "source": "assets/icons/alarm.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/icons/alarm.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        96,
+        96
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面alarm装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/icons/arrow.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/icons/arrow.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        96,
+        96
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面arrow装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/icons/chart.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/icons/chart.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        96,
+        96
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面chart装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/icons/check_green.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/icons/check_green.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        96,
+        96
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面check_green装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/icons/crane.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/icons/crane.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        96,
+        96
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面crane装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/icons/height.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/icons/height.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        96,
+        96
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面height装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/icons/home.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/icons/home.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        96,
+        96
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面home装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/icons/load.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/icons/load.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        96,
+        96
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面load装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/icons/radius.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/icons/radius.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        96,
+        96
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面radius装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/icons/refresh.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/icons/refresh.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        96,
+        96
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面refresh装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/icons/rotate.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/icons/rotate.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        96,
+        96
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面rotate装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/icons/search.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/icons/search.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        96,
+        96
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面search装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/icons/tilt.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/icons/tilt.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        96,
+        96
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面tilt装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/icons/warning_red.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/icons/warning_red.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        96,
+        96
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面warning_red装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/icons/wind.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/icons/wind.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        96,
+        96
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面wind装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/sprites/button_blue.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/sprites/button_blue.png",
+      "role": "Sprite",
+      "border": [
+        18.0,
+        18.0,
+        18.0,
+        18.0
+      ],
+      "pixelSize": [
+        320,
+        104
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面button_blue装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/sprites/button_dark.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/sprites/button_dark.png",
+      "role": "Sprite",
+      "border": [
+        18.0,
+        18.0,
+        18.0,
+        18.0
+      ],
+      "pixelSize": [
+        320,
+        104
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面button_dark装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/sprites/card.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/sprites/card.png",
+      "role": "Sprite",
+      "border": [
+        22.0,
+        22.0,
+        22.0,
+        22.0
+      ],
+      "pixelSize": [
+        512,
+        192
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面card装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/sprites/chart_frame.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/sprites/chart_frame.png",
+      "role": "Sprite",
+      "border": [
+        24.0,
+        24.0,
+        24.0,
+        24.0
+      ],
+      "pixelSize": [
+        768,
+        384
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面chart_frame装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/sprites/device_selected.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/sprites/device_selected.png",
+      "role": "Sprite",
+      "border": [
+        18.0,
+        18.0,
+        18.0,
+        18.0
+      ],
+      "pixelSize": [
+        400,
+        90
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面device_selected装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/sprites/dot.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/sprites/dot.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        64,
+        64
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面dot装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/sprites/panel.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/sprites/panel.png",
+      "role": "Sprite",
+      "border": [
+        24.0,
+        24.0,
+        24.0,
+        24.0
+      ],
+      "pixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面panel装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/sprites/pill_green.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/sprites/pill_green.png",
+      "role": "Sprite",
+      "border": [
+        14.0,
+        14.0,
+        14.0,
+        14.0
+      ],
+      "pixelSize": [
+        180,
+        64
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面pill_green装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/sprites/pill_red.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/sprites/pill_red.png",
+      "role": "Sprite",
+      "border": [
+        14.0,
+        14.0,
+        14.0,
+        14.0
+      ],
+      "pixelSize": [
+        180,
+        64
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面pill_red装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/sprites/status_green.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/sprites/status_green.png",
+      "role": "Sprite",
+      "border": [
+        18.0,
+        18.0,
+        18.0,
+        18.0
+      ],
+      "pixelSize": [
+        280,
+        100
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面status_green装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/sprites/status_red.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/sprites/status_red.png",
+      "role": "Sprite",
+      "border": [
+        18.0,
+        18.0,
+        18.0,
+        18.0
+      ],
+      "pixelSize": [
+        280,
+        100
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊界面status_red装饰或状态素材",
+      "usage": "source"
+    },
+    {
+      "source": "assets/textures/charts/TC001/height.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/textures/charts/TC001/height.png",
+      "role": "Texture",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        1264,
+        704
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊趋势图：TC001/height",
+      "usage": "source"
+    },
+    {
+      "source": "assets/textures/charts/TC001/load.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/textures/charts/TC001/load.png",
+      "role": "Texture",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        1264,
+        704
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊趋势图：TC001/load",
+      "usage": "source"
+    },
+    {
+      "source": "assets/textures/charts/TC001/radius.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/textures/charts/TC001/radius.png",
+      "role": "Texture",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        1264,
+        704
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊趋势图：TC001/radius",
+      "usage": "source"
+    },
+    {
+      "source": "assets/textures/charts/TC001/wind_speed.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/textures/charts/TC001/wind_speed.png",
+      "role": "Texture",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        1264,
+        704
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊趋势图：TC001/wind_speed",
+      "usage": "source"
+    },
+    {
+      "source": "assets/textures/charts/TC002/height.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/textures/charts/TC002/height.png",
+      "role": "Texture",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        1264,
+        704
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊趋势图：TC002/height",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/textures/charts/TC002/load.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/textures/charts/TC002/load.png",
+      "role": "Texture",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        1264,
+        704
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊趋势图：TC002/load",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/textures/charts/TC002/radius.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/textures/charts/TC002/radius.png",
+      "role": "Texture",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        1264,
+        704
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊趋势图：TC002/radius",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/textures/charts/TC002/wind_speed.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/textures/charts/TC002/wind_speed.png",
+      "role": "Texture",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        1264,
+        704
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊趋势图：TC002/wind_speed",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/textures/charts/TC003/height.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/textures/charts/TC003/height.png",
+      "role": "Texture",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        1264,
+        704
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊趋势图：TC003/height",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/textures/charts/TC003/load.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/textures/charts/TC003/load.png",
+      "role": "Texture",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        1264,
+        704
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊趋势图：TC003/load",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/textures/charts/TC003/radius.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/textures/charts/TC003/radius.png",
+      "role": "Texture",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        1264,
+        704
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊趋势图：TC003/radius",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/textures/charts/TC003/wind_speed.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/textures/charts/TC003/wind_speed.png",
+      "role": "Texture",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        1264,
+        704
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊趋势图：TC003/wind_speed",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/textures/charts/TC004/height.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/textures/charts/TC004/height.png",
+      "role": "Texture",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        1264,
+        704
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊趋势图：TC004/height",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/textures/charts/TC004/load.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/textures/charts/TC004/load.png",
+      "role": "Texture",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        1264,
+        704
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊趋势图：TC004/load",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/textures/charts/TC004/radius.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/textures/charts/TC004/radius.png",
+      "role": "Texture",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        1264,
+        704
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊趋势图：TC004/radius",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/textures/charts/TC004/wind_speed.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/textures/charts/TC004/wind_speed.png",
+      "role": "Texture",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        1264,
+        704
+      ],
+      "hasAlpha": true,
+      "purpose": "塔吊趋势图：TC004/wind_speed",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/sprites/decor/header_bg.png",
+      "path": "Assets/Art/UI/Sprite/TowerCraneDashboardPanel/sprites/decor/header_bg.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        1920,
+        88
+      ],
+      "hasAlpha": false,
+      "purpose": "塔吊界面header_bg装饰或状态素材",
+      "usage": "source"
+    }
+  ]
+}

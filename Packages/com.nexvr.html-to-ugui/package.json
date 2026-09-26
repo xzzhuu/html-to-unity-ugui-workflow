@@ -1,0 +1,28 @@
+{
+  "name": "com.nexvr.html-to-ugui",
+  "version": "0.2.0",
+  "displayName": "HTML to UGUI (TMP)",
+  "description": "Convert external prepared XHTML and referenced images to native UGUI/TMP root and item prefabs. No project business logic is generated.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.unity.ugui": "1.0.0",
+    "com.unity.textmeshpro": "3.0.7"
+  },
+  "author": {
+    "name": "XieZhu"
+  },
+  "keywords": [
+    "html",
+    "ugui",
+    "tmp",
+    "ui",
+    "editor"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xzzhuu/html-to-unity-ugui-workflow.git"
+  },
+  "documentationUrl": "https://github.com/xzzhuu/html-to-unity-ugui-workflow",
+  "changelogUrl": "https://github.com/xzzhuu/html-to-unity-ugui-workflow/blob/main/CHANGELOG.md"
+}

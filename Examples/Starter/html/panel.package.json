@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "panelName": "StarterPanel",
+  "html": "StarterPanel.html",
+  "outputFolder": "Assets/Art/UIPrefab/StarterPanel",
+  "assetPrefix": "Assets/Art/UI/Sprite/StarterPanel/",
+  "fontAsset": null,
+  "boldWeight": 0.12
+}

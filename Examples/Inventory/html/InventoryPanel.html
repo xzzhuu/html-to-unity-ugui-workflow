@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta charset="utf-8" /><title>Inventory</title><link rel="stylesheet" href="InventoryPanel.css" /></head>
+<body>
+<div id="InventoryPanel" data-root="true" data-asset-prefix="Assets/Art/UI/Sprite/InventoryPanel/" data-ugui="Container" style="width:1280px;height:720px;background-color:#101b2a" data-panel-name="InventoryPanel" data-output-folder="Assets/Art/UIPrefab/InventoryPanel">
+  <span class="title" data-ui-name="Txt_Title" data-ugui="Text" data-binding="Title" id="Txt_Title">物品仓库</span>
+  <input class="search" data-ui-name="Input_ItemsSearch" data-ugui="InputField" data-binding="Items.Search" placeholder="搜索物品" id="Input_ItemsSearch" />
+  <div class="list" data-ui-name="Scroll_ItemsList" data-ugui="ScrollView" data-binding="Items.List" style="content-height:640px" id="Scroll_ItemsList">
+    <template data-prefab="InventoryRow"><button data-preview-template="InventoryRow" class="row" data-ui-name="Item_Inventory" data-ugui="Button" data-binding="Item.Select" id="Item_Inventory"><span class="item-name" data-ui-name="Txt_ItemName" data-ugui="Text" data-binding="Item.Name" id="Txt_ItemName">物品名称</span><span class="quantity" data-ui-name="Txt_ItemQuantity" data-ugui="Text" data-binding="Item.Quantity" id="Txt_ItemQuantity">× 12</span></button></template>
+  </div>
+  <div class="detail" data-ui-name="Group_Detail" data-ugui="Image" id="Group_Detail"><span class="detail-title" data-ui-name="Txt_ItemDetail" data-ugui="Text" data-binding="Item.Detail" id="Txt_ItemDetail">请选择物品</span><span class="description" data-ui-name="Txt_Description" data-ugui="Text" data-wrap="true" id="Txt_Description">左侧条目使用独立子 Prefab。业务层通过 UiTemplateCatalog 创建条目并填充绑定。</span><button class="use" data-ui-name="Btn_Use" data-ugui="Button" data-binding="Action.Use" data-interactable="false" disabled="disabled" id="Btn_Use">使用物品</button></div>
+</div>
+<script src="InventoryPanel.preview.js"></script>
+</body></html>

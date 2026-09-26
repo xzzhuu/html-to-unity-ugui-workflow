@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "panelName": "InventoryPanel",
+  "html": "InventoryPanel.html",
+  "outputFolder": "Assets/Art/UIPrefab/InventoryPanel",
+  "assetPrefix": "Assets/Art/UI/Sprite/InventoryPanel/",
+  "fontAsset": null,
+  "boldWeight": 0.12
+}

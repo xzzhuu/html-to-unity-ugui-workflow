@@ -1,0 +1,51 @@
+__pycache__/
+*.py[cod]
+*.tmp
+.DS_Store
+
+# Local secrets and editor state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.vscode/
+.idea/
+.vs/
+.codegraph/
+
+# Python, builds and generated verification reports
+.venv/
+venv/
+.pytest_cache/
+dist/
+build/
+Audit/Runs/
+Audit/Evidence/
+Audit/Reports/FULL_FLOW_REVIEW.md
+
+# Unity caches and machine-specific settings
+**/[Ll]ibrary/
+**/[Tt]emp/
+**/[Oo]bj/
+**/[Ll]ogs/
+**/[Uu]ser[Ss]ettings/
+**/[Bb]uilds/
+**/[Mm]emoryCaptures/
+**/[Rr]ecordings/
+*.csproj
+*.sln
+*.suo
+*.user
+*.pidb
+*.opendb
+*.VC.db
+UnityProject/Packages/packages-lock.json
+
+# Restore TMP resources from Unity; do not redistribute vendor examples/fonts
+UnityProject/Assets/TextMesh Pro/
+UnityProject/Assets/TextMesh Pro.meta
+UnityProject/Assets/Art/Fonts/
+UnityProject/Assets/Art/Fonts.meta
+UnityProject/Assets/Art/UIPrefab/*/*.Font.mat
+UnityProject/Assets/Art/UIPrefab/*/*.Font.mat.meta

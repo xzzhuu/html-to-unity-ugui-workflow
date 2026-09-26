@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "panelName": "SettingsPanel",
+  "html": "SettingsPanel.html",
+  "outputFolder": "Assets/Art/UIPrefab/SettingsPanel",
+  "assetPrefix": "Assets/Art/UI/Sprite/SettingsPanel/",
+  "fontAsset": null,
+  "boldWeight": 0.12
+}

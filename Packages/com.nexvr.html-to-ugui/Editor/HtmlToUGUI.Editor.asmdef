@@ -1,0 +1,21 @@
+{
+  "name": "HtmlToUGUI.Editor",
+  "rootNamespace": "HtmlToUGUI",
+  "references": [
+    "HtmlToUGUI.Runtime",
+    "Unity.TextMeshPro",
+    "UnityEngine.UI",
+    "UnityEditor.UI"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

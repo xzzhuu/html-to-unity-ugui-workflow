@@ -1,0 +1,41 @@
+const fs = require('fs');
+const path = require('path');
+const { pathToFileURL } = require('url');
+const { chromium } = require('playwright');
+(async () => {
+  const root = path.resolve(__dirname, '..');
+  const browser = await chromium.launch({ channel: 'chrome', headless: true });
+  const passed = [];
+  const check = (condition, name) => { if (!condition) throw new Error(name); passed.push(name); };
+  try {
+    const page = await browser.newPage({ viewport: { width: 1920, height: 1080 } });
+    await page.goto(pathToFileURL(path.join(root,'Examples/TowerCrane/html/TowerCraneDashboardPanel.html')).href);
+    check(await page.locator('.device-item').count() === 4, 'Tower preview creates four dynamic rows');
+    check(await page.locator('.alarm-item').count() === 9, 'Tower preview creates nine dynamic alarm rows');
+    check(await page.locator('.alarm-item > .status-pill > .status-pill-text').count() === 9, 'Alarm status text keeps its intended DOM parents');
+    check(await page.locator('.alarm-item').first().evaluate(e => { const item=e.getBoundingClientRect(), pill=e.querySelector('.status-pill').getBoundingClientRect(); return pill.x-item.x>280 && pill.x+pill.width<=item.x+item.width; }), 'Alarm status pills remain inside the right side of their row');
+    await page.locator('.device-item').nth(1).click();
+    check((await page.locator('[data-binding="Header.DeviceAndUpdate"]').textContent()).includes('TC002'), 'Tower selection updates header');
+    check((await page.locator('[data-binding="History.Height"]').getAttribute('src')).includes('/TC002/'), 'Tower selection updates chart asset');
+    await page.locator('.search').fill('TC004');
+    check(await page.locator('.device-item:visible').count() === 1, 'Tower search filters dynamic rows');
+    await page.setViewportSize({width:1280,height:720});
+    await page.goto(pathToFileURL(path.join(root,'Examples/Inventory/html/InventoryPanel.html')).href);
+    check(await page.locator('.row').count() === 8, 'Inventory preview creates eight rows');
+    await page.locator('.row').nth(1).click();
+    check((await page.locator('.detail-title').textContent()).includes('2') && await page.locator('.use').isEnabled(), 'Inventory selection updates detail and enabled state');
+    await page.locator('.search').fill('标准物品 8');
+    check(await page.locator('.row:visible').count() === 1, 'Inventory search filters rows');
+    await page.locator('.search').fill('不存在');
+    check(await page.locator('.row:visible').count() === 0, 'Inventory search can show an empty list');
+    await page.setViewportSize({width:720,height:1280});
+    await page.goto(pathToFileURL(path.join(root,'Examples/Settings/html/SettingsPanel.html')).href);
+    await page.locator('.name').fill('设备管理');
+    check(await page.locator('.name').inputValue() === '设备管理', 'Settings text input accepts Chinese');
+    await page.locator('.toggle').uncheck();
+    check(!(await page.locator('.toggle').isChecked()), 'Settings checkbox changes state');
+    const report = { count:passed.length, passed };
+    fs.writeFileSync(path.join(root,'Audit/Evidence/browser-regression.json'),JSON.stringify(report,null,2));
+    console.log(JSON.stringify(report));
+  } finally { await browser.close(); }
+})().catch(e => { console.error(e.message); process.exitCode=1; });

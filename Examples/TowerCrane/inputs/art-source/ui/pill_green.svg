@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="64" viewBox="0 0 180 64">
+<defs><linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#08452f"/><stop offset="1" stop-color="#063326"/></linearGradient><filter id="g"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<polygon points="14,2 166,2 178,14 178,50 166,62 14,62 2,50 2,14" fill="url(#f)" stroke="#12bd78" stroke-width="2" filter="url(#g)"/>
+<path d="M22 10H110" stroke="#1ea9ff" opacity=".55"/><path d="M90 54h55" stroke="#0b6097" opacity=".65"/>
+</svg>

@@ -1,0 +1,12 @@
+html,body{margin:0;padding:0;background:#101b2a;font-family:"Microsoft YaHei",sans-serif;color:#eef4ff}
+#SettingsPanel{position:relative;overflow:hidden}
+.title{position:absolute;left:48px;top:72px;width:624px;height:64px;font-size:42px;font-weight:700;color:#eef4ff;line-height:64px}
+.card{position:absolute;left:48px;top:180px;width:624px;height:560px;background-color:#1c2d43}
+.label{position:absolute;left:28px;top:28px;width:480px;height:40px;font-size:24px;color:#eef4ff;line-height:40px}
+.name{position:absolute;left:28px;top:80px;width:568px;height:56px;background-color:#101b2a;color:#eef4ff;font-size:24px;border:0;box-sizing:border-box}
+.toggle{position:absolute;left:556px;top:168px;width:32px;height:32px;margin:0;background-color:#101b2a;color:#00ccff;accent-color:#00ccff}
+.slider{position:absolute;left:28px;top:308px;width:568px;height:24px;margin:0;background-color:#101b2a;color:#00ccff;accent-color:#00ccff}
+.hint{position:absolute;left:28px;top:376px;width:568px;height:144px;font-size:24px;color:#91a8bf;line-height:40px}
+.save{position:absolute;left:48px;top:804px;width:624px;height:72px;background-color:#007aaf;color:#ffffff;font-size:26px;border:0}
+.cancel{position:absolute;left:48px;top:900px;width:624px;height:72px;background-color:#1c2d43;color:#eef4ff;font-size:26px;border:0}
+.footer{position:absolute;left:48px;top:1152px;width:624px;height:48px;font-size:20px;color:#91a8bf;text-align:center;line-height:48px}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta charset="utf-8" /><title>Settings Panel</title><link rel="stylesheet" href="SettingsPanel.css" /></head>
+<body>
+<div id="SettingsPanel" data-root="true" data-asset-prefix="Assets/Art/UI/Sprite/SettingsPanel/" data-ugui="Container" style="width:720px;height:1280px;background-color:#101b2a" data-panel-name="SettingsPanel" data-output-folder="Assets/Art/UIPrefab/SettingsPanel">
+  <span class="title" data-ui-name="Txt_Title" data-ugui="Text" data-binding="Title" id="Txt_Title">系统设置</span>
+  <div class="card" data-ui-name="Group_Settings" data-ugui="Image" id="Group_Settings">
+    <span class="label" data-ui-name="Txt_NameLabel" data-ugui="Text" id="Txt_NameLabel">显示名称</span>
+    <input class="name" data-ui-name="Input_SettingsName" data-ugui="InputField" data-binding="Settings.Name" placeholder="输入名称" id="Input_SettingsName" />
+    <span class="label" style="top:164px" data-ui-name="Txt_NotificationsLabel" data-ugui="Text" id="Txt_NotificationsLabel">启用通知</span>
+    <input type="checkbox" class="toggle" checked="checked" data-ui-name="Toggle_SettingsNotifications" data-ugui="Toggle" data-binding="Settings.Notifications" data-is-on="true" id="Toggle_SettingsNotifications" />
+    <span class="label" style="top:240px" data-ui-name="Txt_VolumeLabel" data-ugui="Text" id="Txt_VolumeLabel">音量</span>
+    <input type="range" class="slider" min="0" max="100" value="65" data-ui-name="Slider_SettingsVolume" data-ugui="Slider" data-binding="Settings.Volume" data-min="0" data-max="100" data-value="65" data-whole-numbers="true" id="Slider_SettingsVolume" />
+    <span class="hint" data-ui-name="Txt_SettingsHint" data-ugui="Text" data-wrap="true" data-binding="Settings.Hint" id="Txt_SettingsHint">设置项由业务层读取并保存。这里演示独立于塔吊业务的原生 TMP 与 UGUI 组件。</span>
+  </div>
+  <button class="save" data-ui-name="Btn_Save" data-ugui="Button" data-binding="Action.Save" id="Btn_Save">保存设置</button>
+  <button class="cancel" data-ui-name="Btn_Cancel" data-ugui="Button" data-binding="Action.Cancel" id="Btn_Cancel">取消</button>
+  <span class="footer" data-ui-name="Txt_Footer" data-ugui="Text" id="Txt_Footer">720 × 1280 · 竖屏面板</span>
+</div>
+</body></html>

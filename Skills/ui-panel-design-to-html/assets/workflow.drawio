@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="01 新目录初始化" id="0">
+    <mxGraphModel dx="1200" dy="1050" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1200" pageHeight="1100" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="a" value="统一 Skill 调用&lt;br/&gt;“新文件目录” / $ui-panel-design-to-html" style="rounded=1;dashed=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="40" width="280" height="85" />
+        </mxCell>
+        <mxCell id="b" value="解析目标目录与已有配置&lt;br/&gt;默认当前目录；推导唯一 *Panel 根名" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="170" width="280" height="85" />
+        </mxCell>
+        <mxCell id="c" value="已有配置是否冲突？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="300" width="280" height="85" />
+        </mxCell>
+        <mxCell id="d" value="解释冲突并保留现有内容&lt;br/&gt;使用已有配置或另选目标目录" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="440" y="300" width="280" height="85" />
+        </mxCell>
+        <mxCell id="e" value="创建固定子目录&lt;br/&gt;inputs / design / html" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="440" width="280" height="85" />
+        </mxCell>
+        <mxCell id="f" value="生成缺失的 XHTML、CSS、JS&lt;br/&gt;组件意义清单、素材清单、导入 JSON" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="570" width="280" height="85" />
+        </mxCell>
+        <mxCell id="g" value="保留已有文件；不复制 Skill 文档&lt;br/&gt;草稿状态 draft-unapproved" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="700" width="280" height="85" />
+        </mxCell>
+        <mxCell id="h" value="结构校验：命名、模板、辅助物体&lt;br/&gt;PNG、引用与输出路径；失败修复" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="440" y="700" width="280" height="85" />
+        </mxCell>
+        <mxCell id="i" value="交付 HTML 入口及创建/保留结果&lt;br/&gt;仅初始化请求到此完成" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="820" y="700" width="280" height="85" />
+        </mxCell>
+        <mxCell id="j" value="需要正式业务 UI？&lt;br/&gt;是 → 第 02 页审核流程" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="820" y="830" width="280" height="85" />
+        </mxCell>
+        <mxCell id="k" value="目录与可运行草稿交付完成&lt;br/&gt;保留 draft-unapproved 状态" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="820" y="960" width="280" height="85" />
+        </mxCell>
+        <mxCell id="e0" value="" source="a" target="b" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e1" value="" source="b" target="c" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e2" value="是" source="c" target="d" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e3" value="否" source="c" target="e" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e4" value="" source="e" target="f" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e5" value="" source="f" target="g" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e6" value="" source="g" target="h" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e7" value="修复缺失" source="h" target="f" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;exitX=0.5;exitY=0;entryX=1;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="580" y="660" />
+              <mxPoint x="580" y="612.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" value="通过" source="h" target="i" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e9" value="" source="i" target="j" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e10" value="否" source="j" target="k" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="02 正式 Panel 设计与 Unity 导入" id="1">
+    <mxGraphModel dx="1200" dy="1050" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1200" pageHeight="1100" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="a" value="需求文档 / 参考图&lt;br/&gt;继承初始化目录与画布配置" style="rounded=1;dashed=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="40" width="280" height="85" />
+        </mxCell>
+        <mxCell id="b" value="制作布局图并列出必要元素&lt;br/&gt;design/layout/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="170" width="280" height="85" />
+        </mxCell>
+        <mxCell id="c" value="用户审核元素完整性及视觉&lt;br/&gt;修改则回到布局图" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="300" width="280" height="85" />
+        </mxCell>
+        <mxCell id="d" value="审批证据 → design/review/&lt;br/&gt;确定组件意义、名称、父级及绑定" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="440" width="280" height="85" />
+        </mxCell>
+        <mxCell id="e" value="拆解动态 Item 与独立 Sprite&lt;br/&gt;更新 elements.json / sprites.json" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="570" width="280" height="85" />
+        </mxCell>
+        <mxCell id="f" value="实现 XHTML 与浏览器预览&lt;br/&gt;匹配审核图的布局、元素与状态" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="440" y="570" width="280" height="85" />
+        </mxCell>
+        <mxCell id="g" value="结构 + 浏览器 + 视觉验收&lt;br/&gt;有偏差修复实现；设计变更重新审批" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="820" y="570" width="280" height="85" />
+        </mxCell>
+        <mxCell id="h" value="审批图与源码哈希、验收记录一致&lt;br/&gt;正式 HTML ready；源码保持外部" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="820" y="700" width="280" height="85" />
+        </mxCell>
+        <mxCell id="i" value="独立 UPM package：外部选择 HTML&lt;br/&gt;Unity 2022.3 + UGUI + TMP" style="rounded=1;dashed=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="440" y="700" width="280" height="85" />
+        </mxCell>
+        <mxCell id="j" value="生成 UGUI/TMP 根 Panel 到 Canvas&lt;br/&gt;图片 → Art/UI/Sprite/{PanelName}" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="440" y="830" width="280" height="85" />
+        </mxCell>
+        <mxCell id="k" value="保存 Panel 与 Item Prefab&lt;br/&gt;业务数据与交互由目标应用实现" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Helvetica;fontSize=14;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="820" y="830" width="280" height="85" />
+        </mxCell>
+        <mxCell id="e0" value="" source="a" target="b" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e1" value="" source="b" target="c" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e2" value="修改" source="c" target="b" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;exitX=0;exitY=0.5;entryX=0;entryY=0.5;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="20" y="342.5" />
+              <mxPoint x="20" y="212.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" value="通过" source="c" target="d" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e4" value="" source="d" target="e" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e5" value="" source="e" target="f" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e6" value="" source="f" target="g" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e7" value="实现偏差" source="g" target="f" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;exitX=0.5;exitY=0;entryX=0.5;entryY=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="960" y="530" />
+              <mxPoint x="580" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" value="通过" source="g" target="h" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e9" value="请求 Unity 转换" source="h" target="i" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e10" value="" source="i" target="j" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e11" value="" source="j" target="k" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontFamily=Helvetica;fontSize=12;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,22 @@
+{
+    "schemaVersion": "html-ugui/1",
+    "panelName": "SettingsPanel",
+    "width": 720.0,
+    "height": 1280.0,
+    "nodes": 13,
+    "bindings": 7,
+    "templates": 0,
+    "visualStatus": "pending-browser-and-unity-review",
+    "errors": [],
+    "warnings": [
+        "Txt_Title: CSS line-height is not reproduced; review or bake decoration to PNG.",
+        "Txt_NameLabel: CSS line-height is not reproduced; review or bake decoration to PNG.",
+        "Input_SettingsName: CSS border is not reproduced; review or bake decoration to PNG.",
+        "Txt_NotificationsLabel: CSS line-height is not reproduced; review or bake decoration to PNG.",
+        "Txt_VolumeLabel: CSS line-height is not reproduced; review or bake decoration to PNG.",
+        "Txt_SettingsHint: CSS line-height is not reproduced; review or bake decoration to PNG.",
+        "Btn_Save: CSS border is not reproduced; review or bake decoration to PNG.",
+        "Btn_Cancel: CSS border is not reproduced; review or bake decoration to PNG.",
+        "Txt_Footer: CSS line-height is not reproduced; review or bake decoration to PNG."
+    ]
+}
