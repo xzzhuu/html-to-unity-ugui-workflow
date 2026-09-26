@@ -1,5 +1,7 @@
 # HTML to Unity UGUI Workflow
 
+[简体中文](README.md) | [English](README.en.md)
+
 [![Verify](https://github.com/xzzhuu/html-to-unity-ugui-workflow/actions/workflows/verify.yml/badge.svg)](https://github.com/xzzhuu/html-to-unity-ugui-workflow/actions/workflows/verify.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -7,7 +9,7 @@
 
 本仓库包含一个 Codex Skill、四组外部 HTML 示例、Python 工具，以及 `com.nexvr.html-to-ugui` 0.2.0 的完整 UPM 源码。设计源文件留在 Unity 工程外；转换器生成图片、Panel / Item Prefab 和通用绑定元数据，业务数据与交互由接入应用实现。
 
-**English:** A reusable workflow from reviewed UI layouts to prepared XHTML and native Unity UGUI/TMP prefabs. Includes a Codex Skill, four examples, Python verification tools and the complete Unity importer package. See the [package guide](Packages/com.nexvr.html-to-ugui/README.md) for installation, supported inputs and runtime boundaries.
+完整英文说明见 [English README](README.en.md)。
 
 ## 功能与边界
 
