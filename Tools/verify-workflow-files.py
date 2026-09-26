@@ -20,12 +20,15 @@ assert not any('TowerCrane' in p.parts or p.name == 'InventoryDemo.cs' for p in 
 for source in list(package.rglob('*.cs')) + list(package.rglob('*.asmdef')):
     assert source.with_suffix(source.suffix + '.meta').is_file(), source
 docs = list(root.glob('*.md'))
-for folder in ('Examples', 'Skills', 'Packages'):
+for folder in ('Examples', 'Skills', 'Packages', 'docs'):
     docs.extend((root / folder).rglob('*.md'))
 docs += [root / 'Audit/README.md', root / 'Audit/Reports/OPEN_SOURCE_READINESS.md', root / 'UnityProject/README.md']
 links = []
 for path in docs:
-    for target in re.findall(r'(?<!!)\[[^\]]*\]\(([^)]+)\)', path.read_text(encoding='utf-8')):
+    text = path.read_text(encoding='utf-8')
+    targets = re.findall(r'!?\[[^\]]*\]\(([^)]+)\)', text)
+    targets += re.findall(r'<img\b[^>]*\bsrc=["\x27]([^"\x27]+)', text)
+    for target in targets:
         target = unquote(target.strip('<>')).split('#')[0]
         if not target or re.match(r'\w+://|app:|mailto:', target):
             continue

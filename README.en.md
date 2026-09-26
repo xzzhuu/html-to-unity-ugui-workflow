@@ -19,6 +19,23 @@ This repository includes a Codex Skill, four external HTML examples, Python tool
 
 TowerCrane is a `converter-example-unapproved` conversion example, and Starter is a `draft-unapproved` draft. Neither is an approved final visual deliverable. Passing structural validation does not establish visual parity or user approval. Browser JavaScript is not converted into Unity application logic.
 
+## Example screenshots
+
+These are actual browser captures of the repository's HTML examples using bundled sample data. They are not Unity runtime screenshots or approved final visual deliverables. The example UI text is currently in Chinese.
+
+### TowerCrane · 1920 × 1080
+
+A device list, six live metric cards, four historical trend charts, and alarm status.
+
+![Tower crane dashboard HTML preview](docs/screenshots/tower-crane-dashboard.png)
+
+| Inventory · 1280 × 720 | Settings · 720 × 1280 |
+| --- | --- |
+| Dynamic item list and selection | Text input, notification toggle, and volume slider |
+| <img src="docs/screenshots/inventory-panel.png" alt="Inventory panel with sample item 3 selected" width="560" /> | <img src="docs/screenshots/settings-panel.png" alt="Portrait settings panel" width="240" /> |
+
+The [complete gallery and reproduction notes](docs/screenshots/README.md) also include a device-switch state and the Starter initialization draft.
+
 ## Quick start
 
 Requirements: **Python 3.10+**. Unity import requires **Unity 2022.3**, UGUI 1.0.0, and TMP 3.0.7. Opening the HTML examples in a browser does not require Unity.

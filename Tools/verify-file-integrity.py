@@ -6,7 +6,7 @@ from pathlib import Path
 from PIL import Image
 root = Path(__file__).resolve().parents[1]
 files = list(root.glob('*.json')) + list(root.glob('*.md'))
-for folder in ('Tools', 'Skills', 'Examples', 'Packages'):
+for folder in ('Tools', 'Skills', 'Examples', 'Packages', 'docs'):
     files.extend(p for p in (root / folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.suffix not in ('.pyc', '.pyo'))
 counts = {'json': 0, 'python': 0, 'png': 0}
 inventory = []

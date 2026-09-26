@@ -4,6 +4,10 @@
 
 ## 示例行为与资源
 
+![塔吊仪表盘 HTML 浏览器预览](../../docs/screenshots/tower-crane-dashboard.png)
+
+[设备切换截图与复现步骤](../../docs/screenshots/README.md)。截图使用内置示例数据，不是 Unity 运行或最终视觉验收证据。
+
 浏览器预览包含 TC001～TC004 四台设备、六个实时指标和九类报警。历史趋势只展示高度、幅度、吊重、风速四项，固定 2×2 排列，没有倾角历史图。浏览器预览脚本支持设备选择和搜索；Unity 导入器不会执行这些 JavaScript，也不会把它们转换为 C#。
 
 PNG 是运行时素材，放在 `html/assets/`；SVG 源图在 `inputs/art-source/`；原始方向参考图在 `inputs/references/`。可见文字由 HTML/TMP 提供，不烘焙到 Sprite。复杂边框使用九宫格；当前 Sprite Border（左、下、右、上）为：panel `24,24,24,24`、card `22,22,22,22`、chart_frame `24,24,24,24`、button `18,18,18,18`、pill `14,14,14,14`。

@@ -21,6 +21,23 @@
 
 TowerCrane 是 `converter-example-unapproved` 转换示例，Starter 是 `draft-unapproved` 草稿。它们没有被标记为用户批准的正式视觉交付。结构校验通过不代表视觉一致性通过，浏览器 JavaScript 也不会转换成 Unity 业务逻辑。
 
+## 示例截图
+
+以下为仓库 HTML 在浏览器中的实际预览，使用内置示例数据；不是 Unity 运行截图或已批准的最终视觉交付。示例界面目前为中文。
+
+### TowerCrane · 1920 × 1080
+
+设备列表、六项实时指标、四张历史趋势图与报警状态。
+
+![塔吊仪表盘 HTML 预览](docs/screenshots/tower-crane-dashboard.png)
+
+| Inventory · 1280 × 720 | Settings · 720 × 1280 |
+| --- | --- |
+| 动态物品列表与条目选择 | 输入框、通知开关与音量滑块 |
+| <img src="docs/screenshots/inventory-panel.png" alt="库存面板：已选择标准物品 3" width="560" /> | <img src="docs/screenshots/settings-panel.png" alt="竖屏设置面板" width="240" /> |
+
+[完整截图与复现说明](docs/screenshots/README.md) 还包含设备切换状态及 Starter 初始化草稿。
+
 ## 快速开始
 
 要求：Python **3.10+**；Unity 导入要求 **2022.3**、UGUI 1.0.0、TMP 3.0.7。浏览器打开示例不要求 Unity。
