@@ -51,6 +51,22 @@ Open the generated `MyUI/Inventory/html/InventoryPanel.html` in your browser, or
 
 ### Install the Codex Skill
 
+Choose either installation method below.
+
+**Option 1: Install with npx (no manual repository clone required)**
+
+Requires Node.js / npm and Git. Use the [Skills CLI](https://github.com/vercel-labs/skills):
+
+```sh
+npx skills add https://github.com/xzzhuu/html-to-unity-ugui-workflow/tree/main/Skills/ui-panel-design-to-html --agent codex --global --copy
+```
+
+`--agent codex` targets Codex, `--global` installs at user scope, and `--copy` copies the complete Skill without requiring symlinks. The Skills CLI manages installation paths and updates. This installs only the Skill, not the Unity package. The Skill's Python tools still require Python 3.10+.
+
+**Option 2: Use the repository installer after cloning**
+
+Run from the repository root:
+
 ```sh
 python -X utf8 Tools/install-global-skills.py
 ```

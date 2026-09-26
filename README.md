@@ -53,6 +53,22 @@ python -X utf8 Skills/ui-panel-design-to-html/scripts/validate_directory.py --ro
 
 ### 安装 Codex Skill
 
+可选择以下任一方式。
+
+**方式一：npx 安装（无需手动克隆仓库）**
+
+需要 Node.js / npm 和 Git，使用 [Skills CLI](https://github.com/vercel-labs/skills)：
+
+```sh
+npx skills add https://github.com/xzzhuu/html-to-unity-ugui-workflow/tree/main/Skills/ui-panel-design-to-html --agent codex --global --copy
+```
+
+`--agent codex` 指定 Codex，`--global` 安装到用户级 Skill 目录，`--copy` 复制完整文件以避免符号链接要求。目录和更新由 Skills CLI 管理；此方式只安装 Skill，不安装 Unity 包。Skill 中的 Python 工具仍需要 Python 3.10+。
+
+**方式二：克隆后使用仓库安装脚本**
+
+在本仓库根目录运行：
+
 ```sh
 python -X utf8 Tools/install-global-skills.py
 ```
