@@ -8,6 +8,11 @@ def serialize_xhtml(document):
     text=ET.tostring(document,encoding='unicode',short_empty_elements=False)
     return re.sub(r'<(img|input|br|hr|meta|link)(\b[^>]*)></\1>',r'<\1\2 />',text,flags=re.I)
 DIRECTORIES=('inputs/references','design/layout','design/review','html/assets/icons','html/assets/sprites','html/assets/textures')
+VISUAL_DIRECTORIES=('inputs/references','design/layout','design/review','design/element-groups','assets/icons','assets/sprites','assets/textures')
+FULL_DIRECTORIES=DIRECTORIES+('design/element-groups',)
+ASSET_PREFIXES={'Button':'Btn','Toggle':'Tgl','InputField':'Inp','Dropdown':'Dpd',
+                'Slider':'Sld','Scrollbar':'Sbr','ScrollView':'Scr','Image':'Img',
+                'RawImage':'RawImg','Text':'Txt'}
 PANEL_NAME=r'[A-Z][A-Za-z0-9]*Panel'
 UI_NAME=r'(?:Group|Txt|Img|RawImg|Btn|Input|Scroll|Toggle|Slider|Item)_[A-Z][A-Za-z0-9]*(?:_[0-9]{2,})?'
 NATIVE={'Container':'RectTransform','Text':'TextMeshProUGUI','Image':'Image','RawImage':'RawImage','Button':'Button','InputField':'TMP_InputField','ScrollView':'ScrollRect','Toggle':'Toggle','Slider':'Slider'}

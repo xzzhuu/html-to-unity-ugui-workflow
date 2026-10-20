@@ -1,12 +1,14 @@
 # Ready HTML → UGUI contract v1
 
+This contract applies only to mode=full, after both panel-preview and reusable-element-sheet approval. For visual-only work, skip this document, HTML/browser/converter steps and use Unity MCP directly. Deliver assets and panel prefabs; do not create or modify C# for appearance.
+
 Each HTML document describes exactly one root Panel. Its exact English PascalCase name ends in Panel and is shared by the root object, main prefab and per-panel folders. All areas, controls and item instances are descendants of that root; only its name determines panel output paths. A child ID ending in Panel remains a child container, not another root Panel.
 
 The editor converter reads XHTML and linked/embedded CSS. It does not run a browser or interpret the screenshot. Design-picture approval belongs to the preparation skill, not the converter.
 
 ## Package
 
-Keep the HTML preparation workspace outside the Unity project. The importer accepts an absolute external HTML path and resolves CSS and source PNGs relative to that file. It copies referenced PNGs to the configured Unity asset destinations; it does not copy HTML, CSS, preview JavaScript, or design-review files into `Assets`.
+Keep the HTML preparation workspace outside the Unity project. The importer accepts an absolute external HTML path and resolves CSS and source PNGs relative to that file. It copies referenced PNGs to the configured Unity asset destinations; it does not copy HTML, CSS or preview JavaScript into `Assets`. After confirmation, use Unity MCP to import the element sheets and complete panel preview images separately as reference-only textures; the converter does not perform this step.
 
 Use the standard workspace: html/{PanelName}.html, its CSS/preview JS, html/assets/, html/elements.json, html/sprites.json, and design/review/ approval, browser evidence and html-acceptance.md/json. [The shared manifest contract](manifests.md) defines the schemas and ready gate.
 
@@ -22,7 +24,7 @@ The HTML itself is sufficient for ordinary conversion:
 <div id="MyPanel" data-root="true" data-ugui="Container"
      data-panel-name="MyPanel" data-asset-prefix="Assets/Art/UI/Sprite/MyPanel/"
      data-output-folder="Assets/Art/UIPrefab/MyPanel"
-     style="width:1280px;height:720px;background-color:#101b2a">
+     style="width:1920px;height:1080px;background-color:#101b2a">
   <span id="Title" data-ui-name="Txt_Title" data-ugui="Text" style="left:40px;top:28px;width:600px;height:64px;font-size:32px;color:#ffffff">系统设置</span>
   <button id="Save" data-ui-name="Btn_Save" data-ugui="Button" data-binding="Action.Save"
       style="left:40px;top:600px;width:240px;height:64px;background-color:#007aaf;font-size:24px;color:#ffffff">保存</button>
@@ -57,7 +59,7 @@ Native text uses the selected TMP font, not browser font lookup. Bake decoration
 | Toggle | Toggle + background Image + Checkmark; data-is-on true/false |
 | Slider | Slider + Fill + Handle; data-min/max/value, data-whole-numbers |
 
-Selectable controls support `data-interactable="false"`. Initial Toggle/Slider visuals use the converter's simple generated geometry; if an approved design requires custom checkbox/track art, extend the component builder and verify it before claiming exact parity. Dropdown, horizontal scroll, UI Toolkit, arbitrary JavaScript behaviors, and full animation conversion are not implemented.
+Selectable controls support `data-interactable="false"`. Initial Toggle/Slider visuals use the converter's simple generated geometry; if an approved design requires custom checkbox/track art, reuse approved sprites and existing native components through Unity MCP, then verify parity; do not extend the builder C# for appearance. Dropdown, horizontal scroll, UI Toolkit, arbitrary JavaScript behaviors, and full animation conversion are not implemented.
 
 `data-binding` must be unique ignoring case within the main panel or each template. `UiBindingMap.Get<T>(key)` retrieves a typed native component. Templates may reuse the same keys as the panel or other templates; they each have a separate binding map.
 
@@ -78,13 +80,13 @@ One template root, safe unique `data-prefab` name, no nested templates. Browser 
 
 ## Assets
 
-`src="assets/icons/save.png"` is the browser source; `data-sprite="Assets/Art/UI/Sprite/MyPanel/icons/save.png"` is the Unity destination. Both must refer to the same actual file. Prefix mapping strips `Assets/Art/UI/Sprite/MyPanel/` and appends the remainder to the HTML-side `assets/` folder. Paths must stay under Assets and must not contain traversal. External Unity-only assets are allowed by the API when present, but portable preparation packages should include their referenced source PNGs.
+`src="assets/icons/Img_Save.png"` is the browser source; `data-sprite="Assets/Art/UI/Sprite/MyPanel/icons/Img_Save.png"` is the Unity destination. Both must refer to the same actual file. Prefix mapping strips `Assets/Art/UI/Sprite/MyPanel/` and appends the remainder to the HTML-side `assets/` folder. Paths must stay under Assets and must not contain traversal. External Unity-only assets are allowed by the API when present, but portable preparation packages should include their referenced source PNGs.
 
 Sprite nodes use `data-nine-slice="true" data-border="18,18,18,18"` in **left,bottom,right,top** order. Do not reuse a file with conflicting borders or both Sprite/Texture roles. Browser stretch and Unity nine-slice may differ: simulate the same slicing in CSS or inspect at every designed size. Stateful Sprite files must be referenced explicitly so they get copied. Runtime state application still belongs to the control or Presenter.
 
-Asset copies compare bytes, not just length/timestamps. Generated Sprite imports use single-sprite mode, no mipmaps, alpha transparency, clamp, and uncompressed textures.
+New runtime PNG widths and heights must each be powers of two; preserve source detail via vector re-authoring or documented transparent padding, without stretching bitmap art. Reference sheets/panel previews retain their original layout resolution and are exempt. Keep original source pixel dimensions and alpha detail; use RectTransform for displayed size rather than downsampling. Check Max Size, compression and platform overrides for unintended quality loss. Asset names use component abbreviation prefixes from [component-naming.md](component-naming.md#素材与元素组图命名); color-only variants share neutral art tinted with Image.color / native Color Tint. Asset copies compare bytes, not just length/timestamps. Generated Sprite imports use single-sprite mode, no mipmaps, alpha transparency, clamp, and uncompressed textures.
 
-The import window and prepared/package entry points also place the saved prefab under the active scene Canvas. Main prefab: `Assets/Art/UIPrefab/<name>/<name>.prefab`; item prefabs: `Assets/Art/UIPrefab/<name>/Items/`. Repeated import reuses the matching connected instance. Save the scene separately. The lower-level `Import` API builds assets only.
+The import window and prepared/package entry points also place the saved prefab under the active scene Canvas. Converter default main prefab: `Assets/Art/UIPrefab/<name>/<name>.prefab`; item prefabs: `Assets/Art/UIPrefab/<name>/Items/`. Repeated import reuses the matching connected instance. Save the scene separately. The lower-level `Import` API builds assets only.
 
 
 ## Unity hierarchy names
@@ -105,6 +107,10 @@ Record each check as pass, fail, or pending with concrete evidence. Do not inven
 
 Review the picture against requirement IDs: visible fields, controls, charts, labels/units, repeated-data representation, and specified empty/loading/error states. Check full-canvas balance, hierarchy, legibility, spacing, contrast, state differentiation, and clipping. Record explicit user approval and the exact approved-picture SHA-256. A machine checklist cannot replace this review.
 
+### Element-sheet approval
+
+Before final export or HTML implementation, obtain explicit approval for independently editable sheets of only the actually required components. Record group definitions, source resolution and approved sheet/material hashes as specified in [manifests.md](manifests.md). Color demonstrations do not require separate colored PNGs.
+
 ### HTML against the approved picture
 
 Every visible approved element and generated helper must have an `elements.json` entry with a concrete purpose, exact Unity name, parent, and native component. The one root name ends in Panel; every source node's `data-ui-name` matches its manifest entry, and generated helpers follow the converter contract. Missing semantic names, ambiguous generic naming, duplicate siblings, or mismatched ownership fail component decomposition. Every approved source element must also have a counterpart in rendered HTML. Trace each binding and item-template requirement. Check missing/extra elements separately from real-vs-placeholder data changes. Verify actual PNG files, alpha edges, dimensions, repeated backgrounds, state variants, border slicing, icon shapes, font appearance, and chart presentation.
@@ -121,4 +127,6 @@ This check is separate from HTML acceptance. Verify zero compiler errors, correc
 
 Record which dimensions, states, and devices were actually exercised. Leave hardware pointer input, build-platform behavior, unsupported controls, or unreviewed visual states pending when they were not tested.
 
-Persist `html-acceptance.json` with `approvedLayoutSha256`, checks, and `filesSha256` for every file under `html/`, plus the human-readable report. Run the shared readiness validator after setting `ready` only when actual review has passed. An unchanged hash proves evidence consistency, not aesthetic quality.
+Persist `html-acceptance.json` with `approvedLayoutSha256`, `approvedElementGroupsSha256`, checks, and `filesSha256` for every file under `html/` plus `design/element-groups.json`, plus the human-readable report. Run the shared readiness validator after setting `ready` only when actual review has passed. An unchanged hash proves evidence consistency, not aesthetic quality.
+
+Follow the target project's UIKit/UIRoot and formal prefab directory conventions. Preserve original GUIDs, bindings and events when replacing an existing panel; do not create an independent ordinary Canvas around the project UI lifecycle. Record actual Unity and VR-device checks separately.

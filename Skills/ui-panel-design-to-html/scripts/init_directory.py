@@ -5,22 +5,27 @@ import json
 from pathlib import Path
 import re
 import xml.etree.ElementTree as ET
-from pipeline_contract import DIRECTORIES, project_elements
+from pipeline_contract import FULL_DIRECTORIES, VISUAL_DIRECTORIES, project_elements
 
-def initialize(root, panel=None, title=None, width=None, height=None):
+def initialize(root, panel=None, title=None, width=None, height=None, mode=None):
     root = Path(root).resolve()
     state_path = root / '.html-directory.json'
     prior = json.loads(state_path.read_text(encoding='utf-8')) if state_path.exists() else {}
     if prior and prior.get('schemaVersion') != 1:
         raise ValueError('Unsupported workspace schemaVersion')
+    mode = mode or prior.get('mode', 'full')
+    if mode not in ('full', 'visual-only'):
+        raise ValueError('Unknown workflow mode')
+    if prior and mode != prior.get('mode', 'full'):
+        raise ValueError('Existing workflow mode differs: initialize another directory')
     inferred = ''.join(part[:1].upper() + part[1:] for part in re.findall('[A-Za-z0-9]+', root.name))
     if not re.fullmatch('[A-Z][A-Za-z0-9]*', inferred or ''):
         inferred = 'Main'
     inferred = inferred if inferred.endswith('Panel') else inferred + 'Panel'
-    config = dict(schemaVersion=1, panelName=panel or prior.get('panelName') or inferred,
+    config = dict(schemaVersion=1, mode=mode, panelName=panel or prior.get('panelName') or inferred,
                   title=title or prior.get('title') or root.name,
-                  width=width if width is not None else prior.get('width',1280),
-                  height=height if height is not None else prior.get('height',720),
+                  width=width if width is not None else prior.get('width',1920),
+                  height=height if height is not None else prior.get('height',1080),
                   status=prior.get('status', 'draft-unapproved'))
     if not re.fullmatch('[A-Z][A-Za-z0-9]*Panel', config['panelName']):
         raise ValueError('Panel name must be English PascalCase ending in Panel')
@@ -28,11 +33,12 @@ def initialize(root, panel=None, title=None, width=None, height=None):
         raise ValueError('Starter canvas minimum is 480 x 320; customize after initialization')
     if prior and any(prior.get(key) != config[key] for key in ('panelName', 'title', 'width', 'height')):
         raise ValueError('Existing configuration differs: preserve it or initialize another directory')
-    for directory in DIRECTORIES:
+    directories = FULL_DIRECTORIES if mode == 'full' else VISUAL_DIRECTORIES
+    for directory in directories:
         target = root / directory
         if not target.resolve().is_relative_to(root):
             raise ValueError('Workspace directory points outside the selected root')
-    for directory in DIRECTORIES:
+    for directory in directories:
         (root/directory).mkdir(parents=True,exist_ok=True)
     name, w, h = config['panelName'], config['width'], config['height']
     esc = html.escape(config['title'])
@@ -58,6 +64,7 @@ def initialize(root, panel=None, title=None, width=None, height=None):
     files = {
         '.html-directory.json': config,
         'inputs/brief.md': '# UI 需求\n\n填写用途、必须显示的元素、动态数据、交互、状态及参考图路径。当前没有业务需求或布局审批。\n',
+        'design/element-groups.json': dict(schemaVersion=1, panelName=name, requiredComponents=[], groups=[], sprites=[]),
         f'html/{name}.html': source,
         f'html/{name}.css': 'body { margin:0; background:#080e17; }\ndiv, span { position:absolute; box-sizing:border-box; }\nspan { font-family:Arial,"Microsoft YaHei",sans-serif; display:block; }\n',
         f'html/{name}.preview.js': 'document.documentElement.dataset.previewReady = "true";\n',
@@ -65,6 +72,8 @@ def initialize(root, panel=None, title=None, width=None, height=None):
         'html/sprites.json': dict(schemaVersion=1, panelName=name, sprites=[]),
         'html/panel.package.json': package,
     }
+    if mode == 'visual-only':
+        files = {key:value for key,value in files.items() if not key.startswith('html/')}
     created, preserved = [], []
     for relative in files:
         target=root/relative
@@ -83,7 +92,8 @@ def initialize(root, panel=None, title=None, width=None, height=None):
         with target.open('x', encoding='utf-8', newline='\n') as stream:
             stream.write(data)
         created.append(relative)
-    return dict(root=str(root), entry=str(root/'html'/f'{name}.html'), status=config['status'], created=created, preserved=preserved)
+    return dict(root=str(root), mode=mode, entry=str(root/'html'/f'{name}.html') if mode=='full' else None,
+                status=config['status'], created=created, preserved=preserved)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
@@ -92,5 +102,6 @@ if __name__ == '__main__':
     parser.add_argument('--title')
     parser.add_argument('--width', type=int)
     parser.add_argument('--height', type=int)
+    parser.add_argument('--mode', choices=('full','visual-only'))
     args = parser.parse_args()
-    print(json.dumps(initialize(args.root, args.panel_name, args.title, args.width, args.height), ensure_ascii=False, indent=2))
+    print(json.dumps(initialize(args.root, args.panel_name, args.title, args.width, args.height, args.mode), ensure_ascii=False, indent=2))
