@@ -1,4 +1,4 @@
 interface:
   display_name: "UI Panel 设计到 HTML 工作流"
-  short_description: "初始化标准目录、审核 UI 布局并交付可验收 HTML"
-  default_prompt: "使用 $ui-panel-design-to-html，先按需要初始化 HTML 工作区，再根据需求生成布局图供我审核；批准后制作语义化组件清单、Sprite 素材和可验收 HTML，必要时准备 Unity 导入。"
+  short_description: "确认面板与元素组图，支持 HTML 转换或 Unity MCP 视觉替换"
+  default_prompt: "使用 $ui-panel-design-to-html，默认以 1920×1080 的纯色画布确认面板预览，标注画布和面板主体宽高，再确认当前实际需要的元素组图；所有元素素材宽高分别使用 2 的幂次方，按组件缩写命名并保留像素细节，同形颜色差异通过 Image.color 实现；VR 元素采用无边缘描线的填充造型，以颜色和留白区分层级。完整流程再制作 HTML；仅视觉优化直接通过 Unity MCP 替换原 Prefab。交付素材、面板预制体，并在确认后将元素组图和完整面板预览作为参考图导入 Unity，不创建视觉 C#。"

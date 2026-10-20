@@ -1,6 +1,6 @@
 # Semantic component naming during decomposition
 
-Read this after the user approves the layout, before producing final HTML. The approval checkpoint concerns layout completeness and visuals; do not add another naming approval gate unless the user asks for one.
+Read this after panel-preview approval, while preparing the required element sheets. Both panel preview and element sheets require user confirmation; naming itself needs no additional approval gate. Asset prefixes below apply to both workflows; existing hierarchy/binding names remain stable.
 
 There is one root UI object, named in English PascalCase ending in `Panel`, such as `InventoryPanel`. Use this exact name for `panelName`, the main prefab, the root hierarchy object and that panel's asset directories. Child regions use `Group`; they are not additional Panels.
 
@@ -52,3 +52,32 @@ Write the manifest's `unityName` into each non-root node's `data-ui-name`, and t
 Check manifest coverage, resolved parent ownership, sibling uniqueness and exact manifest-to-HTML name agreement before delivery. During requested Unity verification, check imported hierarchy and helper names against the same manifest, plus binding and component references. Unresolved meaning, missing names, missing nodes or unexplained generic names keep that part of the package incomplete; settle the meaning from requirements or approved context, asking only when necessary.
 
 The shared schema additionally records sourceType, htmlId, dataSource and states; elementId equals hierarchyPath. Consult [the shared manifest contract](manifests.md) for template sizing/spacing and asset/readiness fields.
+
+## 素材与元素组图命名
+
+新制作或导出的素材及元素组图采用 `<组件缩写>_<语义用途>_<部件或结构状态>.png`，省略不必要段落。部件用英文 PascalCase，不用颜色、位置或无意义序号代替用途。规则针对素材，不要求重命名原有层级物体或业务绑定。
+
+| Unity 组件 | 素材前缀 | 示例 |
+| --- | --- | --- |
+| Button | Btn | Btn_Primary_Background.png |
+| Toggle | Tgl | Tgl_Option_Checkmark.png |
+| InputField / TMP_InputField | Inp | Inp_Search_Background.png |
+| Dropdown / TMP_Dropdown | Dpd | Dpd_Quality_Arrow.png |
+| Slider | Sld | Sld_Volume_Handle.png |
+| Scrollbar | Sbr | Sbr_List_Handle.png |
+| Scroll View / ScrollRect | Scr | Scr_List_Background.png |
+| Image / 跨组件共用图形 | Img | Img_RoundedSurface.png |
+| RawImage / Texture | RawImg | RawImg_Preview_Pattern.png |
+| Text / TMP 的组图 | Txt | Txt_Title_Sheet.png |
+
+此表是映射，不是要求制作全部类型。组图使用相同前缀，例如 `Btn_Primary_Sheet.png`；单个组可包含文字、图标、背景和实际需要的状态。记录里的 componentType 使用左列的规范类型（InputField、Dropdown、ScrollView、Text），不按 TMP 类名重复建组。
+
+专用于按钮的背景用 Btn；多个组件共用同一图形时用 Img，并在使用映射中列出实际拥有者。形状相同、只有颜色差异的 Primary/Danger 等按钮共用一个背景素材，不因为示例语义不同各导出一份。Normal/Pressed 等状态仅在形状、纹理或透明度结构不同时拆分；纯颜色状态用 Image.color / Color Tint。不输出 Btn_Red、Btn_Blue 等仅颜色不同的副本。
+
+保持源文件分辨率与透明细节，尺寸记录在清单中而不是强制写入文件名。已有资产原位改名时通过 Unity AssetDatabase/MCP 保留 meta/GUID；未经授权不批量重命名旧素材。引用旧命名源图时可保留为输入参考，正式新导出文件使用本规则。
+
+所有元素素材贴图宽高使用 2 的幂次方，保留图形细节与原布局。确认后导入 Unity 的参考图沿用组件缩写，例如 Btn_Action_Sheet.png、Img_StartMenuPanel_Preview.png；保留 1920×1080 等原分辨率，不要求 POT。
+
+正式面板预览规则：每个面板单独输出，画布使用纯色背景，不叠加场景、照片、纹理、棋盘格等干扰；在面板主体外标注画布宽×高和主体宽×高。默认画布 1920×1080；素材 POT 像素尺寸不约束 RectTransform 布局尺寸，也不要求预览图改成 POT。确认后将组图和完整面板预览原分辨率导入 Unity 独立参考目录。
+
+VR 素材约束：各元素均使用无边缘描线的填充造型，不制作按钮/底板/内衬等细轮廓或额外 Outline 素材；通过填充色、明暗、透明度与留白表达层级及状态。装饰性细分隔线改用留白。九宫格切片边距和审核尺寸标注线保留；去描边不等于已完成设备抗锯齿验收。
