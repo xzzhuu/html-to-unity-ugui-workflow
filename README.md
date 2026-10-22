@@ -7,7 +7,7 @@
 
 从 UI 需求与布局审核，到可预览 XHTML，再到 Unity 原生 UGUI / TextMesh Pro 的可复用工作流。
 
-本仓库包含一个 Codex Skill、四组外部 HTML 示例、Python 工具，以及 `com.nexvr.html-to-ugui` 0.2.0 的完整 UPM 源码。设计源文件留在 Unity 工程外；转换器生成图片、Panel / Item Prefab 和通用绑定元数据，业务数据与交互由接入应用实现。
+本仓库包含一个 Codex Skill、四组外部 HTML 示例、Python 工具，以及 `com.nexvr.html-to-ugui` 0.3.0 的完整 UPM 源码。设计源文件留在 Unity 工程外；转换器生成图片、Panel / Item Prefab 和通用绑定元数据，业务数据与交互由接入应用实现。
 
 完整英文说明见 [English README](README.en.md)。
 
@@ -95,7 +95,7 @@ https://github.com/xzzhuu/html-to-unity-ugui-workflow.git?path=/Packages/com.nex
 
 导入 TMP Essential Resources 并选择包含所需字符的 TMP 字体，然后用 **Tools → HTML to UGUI → Import Panel...** 选择工程外准备好的 HTML。
 
-图片输出到 `Assets/Art/UI/Sprite/{PanelName}/`；主 Prefab 输出到 `Assets/Art/UIPrefab/{PanelName}/`，动态 Item 在 `Items/`。根 Panel 放在 Canvas 下，场景需要手动保存。详细输入契约与限制见 [包说明](Packages/com.nexvr.html-to-ugui/README.md)。
+默认生成到 `Assets/HtmlToUGUIStage/{PanelName}/`，在 `Assets/HtmlToUGUIStage/StageScene.unity` 预览。使用 **Tools → HTML to UGUI → Stage Panels...** 逐个预览、勾选需要的面板、查看复制计划，再复制到正式目录。正式 Prefab 默认位于 `Assets/Art/UIPrefab/{PanelName}/`，Item 与主 Prefab 同级；图片进入 `Assets/Art/UI/Sprite/{PanelName}/`，报告留在暂存区。字体复用项目 TMP 默认字体和现有材质。详细输入契约与限制见 [包说明](Packages/com.nexvr.html-to-ugui/README.md)。
 
 ## 仓库结构
 

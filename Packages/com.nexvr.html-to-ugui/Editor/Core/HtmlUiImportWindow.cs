@@ -13,6 +13,10 @@ namespace HtmlToUGUI.Editor
     {
         private string html = "", panelName = "Panel", output = "Assets/Art/UIPrefab/{PanelName}", assetPrefix = "Assets/Art/UI/Sprite/{PanelName}/";
         private TMP_FontAsset font;
+        private Material fontMaterial;
+        private bool allowReplacement;
+        private string stagingRoot = UiStageWorkspace.DefaultStagingRoot;
+        private string planText = "";
         private GameObject lastPrefab;
         private string status = "Choose XHTML and a TMP font containing your UI characters.";
         private const string SourceDirectoryKey = "HtmlToUGUI.ExternalSourceDirectory";
@@ -27,64 +31,79 @@ namespace HtmlToUGUI.Editor
         }
         [MenuItem("Tools/HTML to UGUI/Import Panel...")]
         public static void Open() { GetWindow<HtmlUiImportWindow>("HTML to UGUI (TMP)"); }
+        private enum SourceMode { Package, PreparedHtml, ManualHtml }
+        private SourceMode sourceMode;
+        private string packagePath = "";
+        private bool requireApproval = true;
+        private bool overridePackageSettings;
+        private UiImportPlan reviewedPlan;
+        private Vector2 scroll;
         private void OnGUI()
         {
-            html = EditorGUILayout.TextField("External HTML file", html);
-            if (GUILayout.Button("One-click Import panel.package.json"))
+            EditorGUI.BeginChangeCheck();
+            sourceMode = (SourceMode)EditorGUILayout.EnumPopup("Source", sourceMode);
+            var isPackage = sourceMode == SourceMode.Package;
+            if (isPackage) packagePath = EditorGUILayout.TextField("panel.package.json", packagePath);
+            else html = EditorGUILayout.TextField("External XHTML", html);
+            if (GUILayout.Button("Choose Source..."))
             {
-                var package = ChooseExternalSource("Choose external UI package", "json");
-                if (!string.IsNullOrEmpty(package))
+                var selected = ChooseExternalSource("Choose external UI source", isPackage ? "json" : "html");
+                if (!string.IsNullOrEmpty(selected)) { if (isPackage) packagePath = selected; else html = selected; planText = ""; }
+            }
+            if (sourceMode == SourceMode.ManualHtml)
+            {
+                panelName = EditorGUILayout.TextField("Panel name", panelName);
+                output = EditorGUILayout.TextField("Output folder", output);
+                assetPrefix = EditorGUILayout.TextField("Unity asset prefix", assetPrefix);
+                fontMaterial = EditorGUILayout.ObjectField("Shared font material", fontMaterial, typeof(Material), false) as Material;
+            }
+            if (!isPackage) font = EditorGUILayout.ObjectField("TMP font override", font, typeof(TMP_FontAsset), false) as TMP_FontAsset;
+            if (isPackage) overridePackageSettings = EditorGUILayout.Toggle("Override package settings", overridePackageSettings);
+            using (new EditorGUI.DisabledScope(isPackage && !overridePackageSettings))
+            {
+            stagingRoot = EditorGUILayout.TextField("Staging root", stagingRoot);
+            allowReplacement = EditorGUILayout.Toggle("Replace generated prefabs", allowReplacement);
+            requireApproval = EditorGUILayout.Toggle("Require Skill approval", requireApproval);
+            }
+            if (EditorGUI.EndChangeCheck()) { reviewedPlan = null; planText = ""; }
+            EditorGUILayout.HelpBox("Generate into Assets/HtmlToUGUIStage, preview in StageScene, then select panels in Stage Panels to copy into formal folders. Package overrides are explicit. Inspect the plan before replacing staged resources.", MessageType.Info);
+            if (GUILayout.Button("打开面板暂存与复制窗口")) UiStageWindow.Open();
+            if (GUILayout.Button("Inspect Effective Plan (read-only)")) InspectPlan();
+            if (!string.IsNullOrEmpty(planText))
+            {
+                scroll = EditorGUILayout.BeginScrollView(scroll, GUILayout.MaxHeight(220));
+                EditorGUILayout.TextArea(planText);
+                EditorGUILayout.EndScrollView();
+            }
+            if (GUILayout.Button("Validate and Generate Staged Resources"))
+            {
+                try
                 {
-                    try
+                    var request = ResolveRequest();
+                    var plan = HtmlUiImporter.PlanImport(request.htmlPath, request.outputFolder, request.options);
+                    planText = Newtonsoft.Json.JsonConvert.SerializeObject(plan, Newtonsoft.Json.Formatting.Indented);
+                    if (plan.assets.Exists(a => a.action != "create") && reviewedPlan == null)
+                        throw new InvalidOperationException("Inspect the effective plan before changing existing resources.");
+                    var path = HtmlUiImporter.Import(request.htmlPath, request.outputFolder, request.options, reviewedPlan ?? plan);
+                    reviewedPlan = null;
+                    lastPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(path);
+                    status = "Staged resources saved: " + path;
+                    if (path.StartsWith(UiStageWorkspace.Root + "/", StringComparison.Ordinal))
                     {
-                        var path = HtmlUiImporter.ImportPackage(package);
-                        lastPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(path);
-
-                        status = path + "\nPrefab saved and instance placed under Canvas. Save the scene to keep scene changes.";
+                        try { UiStageWorkspace.RebuildScene(request.options.panelName); status += "\nStageScene updated. Use Stage Panels to preview or copy selected panels."; }
+                        catch (Exception preview) { status += "\nResources succeeded; preview update pending: " + preview.Message; }
                     }
-                    catch (Exception ex) { status = ex.Message; Debug.LogException(ex); }
-                }
-            }
-            if (GUILayout.Button("Choose External HTML..."))
-            {
-                var selected = ChooseExternalSource("Choose external HTML source", "html");
-                if (!string.IsNullOrEmpty(selected)) html = selected;
-            }
-            if (GUILayout.Button("Import Prepared HTML"))
-            {
-                try
-                {
-                    var path = HtmlUiImporter.ImportPreparedHtml(html, font);
-                    lastPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(path);
-
-                    status = path + "\nPrefab saved and instance placed under Canvas. Save the scene to keep scene changes.";
-                }
-                catch (Exception ex) { status = ex.Message; Debug.LogException(ex); }
-            }
-            panelName = EditorGUILayout.TextField("Panel name", panelName);
-            output = EditorGUILayout.TextField("Output folder", output);
-            assetPrefix = EditorGUILayout.TextField("Unity asset prefix", assetPrefix);
-            font = EditorGUILayout.ObjectField("TMP font", font, typeof(TMP_FontAsset), false) as TMP_FontAsset;
-            EditorGUILayout.HelpBox("Keep HTML, CSS and preview scripts outside the Unity project. Import reads the selected source folder and copies only referenced image assets into Assets.", MessageType.Info);
-            EditorGUILayout.HelpBox("Fixed pixel design canvas. Import creates native TMP/UGUI components and template prefabs. CSS effects outside the supported subset are reported for review.", MessageType.Info);
-            if (GUILayout.Button("Validate and Import"))
-            {
-                try
-                {
-                    if (font == null) throw new InvalidDataException("Select a TMP font; do not silently use a Latin font for Chinese UI.");
-                    UiPanelScenePlacement.ValidateContext();
-                    var path = HtmlUiImporter.Import(html, output, new HtmlUiImporter.ImportOptions { panelName = panelName, assetPrefix = assetPrefix, font = font });
-                    lastPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(path);
-
-                    UiPanelScenePlacement.Place(path);
-                    status = path + "\nPrefab saved and instance placed under Canvas. Save the scene to keep scene changes.";
                 }
                 catch (Exception ex) { status = ex.Message; Debug.LogException(ex); }
             }
             using (new EditorGUI.DisabledScope(lastPrefab == null))
             {
-                if (GUILayout.Button("Select / Place Panel Under Canvas")) CreatePreview(lastPrefab);
-                if (GUILayout.Button("Capture Unity PNG + Component Audit"))
+                if (GUILayout.Button("在 StageScene 中预览"))
+                {
+                    try { UiStageWorkspace.Preview(lastPrefab.name); status = "Previewing in StageScene."; }
+                    catch (Exception ex) { status = ex.Message; }
+                }
+                if (GUILayout.Button("Capture Isolated Preview + Component Audit"))
                 {
                     var folder = EditorUtility.OpenFolderPanel("Audit evidence folder", Application.dataPath, "");
                     if (!string.IsNullOrEmpty(folder))
@@ -95,6 +114,33 @@ namespace HtmlToUGUI.Editor
                 }
             }
             EditorGUILayout.HelpBox(status, MessageType.None);
+        }
+        private UiImportRequest ResolveRequest()
+        {
+            UiImportRequest request;
+            if (sourceMode == SourceMode.Package) request = HtmlUiImporter.ReadPackage(packagePath);
+            else if (sourceMode == SourceMode.PreparedHtml) request = HtmlUiImporter.ReadPreparedHtml(html, font);
+            else request = new UiImportRequest { htmlPath = html, outputFolder = output,
+                options = new HtmlUiImporter.ImportOptions { panelName = panelName, assetPrefix = assetPrefix, font = font, fontMaterial = fontMaterial } };
+            if (sourceMode != SourceMode.Package || overridePackageSettings)
+            {
+                request.options.stagingRoot = stagingRoot;
+                request.options.allowPrefabReplacement = allowReplacement;
+                request.options.requireSkillApproval = requireApproval;
+            }
+            if (string.IsNullOrWhiteSpace(request.options.stagingRoot)) request.options.stagingRoot = UiStageWorkspace.DefaultStagingRoot;
+            return request;
+        }
+        private void InspectPlan()
+        {
+            try
+            {
+                var request = ResolveRequest();
+                reviewedPlan = HtmlUiImporter.PlanImport(request.htmlPath, request.outputFolder, request.options);
+                planText = Newtonsoft.Json.JsonConvert.SerializeObject(reviewedPlan, Newtonsoft.Json.Formatting.Indented);
+                status = "Read-only plan: verify destinations, overwrite actions, consumers and warnings before importing.";
+            }
+            catch (Exception ex) { status = ex.Message; }
         }
         public static GameObject CreatePreview(GameObject prefab)
         {

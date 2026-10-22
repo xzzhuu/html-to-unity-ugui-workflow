@@ -6,7 +6,7 @@ templates 每项包含 name、itemRootId、parentId、bindingScope、itemSize（
 
 辅助物体也登记：按钮有直接文字时生成 Txt_Label；InputField 生成 Group_TextViewport 及 Txt_Placeholder/Txt_Value；ScrollView 生成 Group_Content；Toggle 生成 Img_Checkmark；Slider 生成 Img_Fill、Group_HandleArea 及 Img_Handle。它们 generated=true、sourceType/htmlId=null；purpose 说明其在所属控件中的作用。
 
-html/sprites.json：schemaVersion=1、panelName、sprites。每项包含 source（相对 html/）、path（Unity 目标）、role（Sprite/Texture）、border（L/B/R/T）、pixelSize、hasAlpha（PNG 格式包含 alpha 通道或透明色）、purpose、usage。source 对应 assets/ 加上 path 在根 Panel Sprite 目录后的相对部分。usage=source 包含 data-sprite、data-texture、data-normal-sprite、data-selected-sprite 引用；纯浏览器预览切换所需额外 PNG 使用 preview-state。清单中后者不会自动被 Unity 复制，运行时需要时应补显式映射或交给业务数据层加载。
+html/sprites.json：schemaVersion=1、panelName、sprites。每项包含 source（相对 html/）、path（Unity 目标）、role（Sprite/Texture）、border（L/B/R/T）、pixelSize、hasAlpha（PNG 格式包含 alpha 通道或透明色）、purpose、usage。source 对应 assets/ 加上 path 在根 Panel Sprite 目录后的相对部分。usage=source 包含 data-sprite、data-texture、data-normal-sprite、data-highlighted-sprite、data-pressed-sprite、data-selected-sprite、data-disabled-sprite 引用；纯浏览器预览切换所需额外 PNG 使用 preview-state。清单中后者不会自动被 Unity 复制，运行时需要时应补显式映射或交给业务数据层加载。
 
 没有图片时 sprites=[]，没有动态项时 templates=[]。SVG 原稿保存在 inputs/art-source/，参考图保存在 inputs/references/，不能当成审批图。
 
@@ -63,7 +63,7 @@ visual-only 不要求 html/ 或 html-acceptance。`design/review/unity-acceptanc
 
 ## POT 尺寸与参考图导入证据
 
-所有新制或本次正式导出的元素素材的 pixelSize 宽、高都必须是 2 的幂次方，长方形合法。保持或提高源图采样细节，通过矢量重制或透明留边处理；有补边时增加 contentRect=[x,y,width,height] 记录有效区域，并据此配置 Sprite 和九宫格。原始组图与面板预览不强制 POT，保留原布局分辨率，不裁切或拉伸。
+所有新制或本次正式导出的元素素材的 pixelSize 宽、高都必须是 2 的幂次方，长方形合法。保持或提高源图采样细节，HTML 路线优先通过矢量重制处理；contentRect=[x,y,width,height] 使用左下角为原点、整数像素单位；x/y 非负，宽高为正且整个矩形在 pixelSize 内。0.3.0 仅支持省略此字段或 [0,0,整图宽,整图高]，透明补边的非整图有效区在 HTML 结构校验和转换器均明确拒绝；visual-only 路线允许边界合法的有效区，但必须通过 Unity 人工适配与实际验收。先重制为无需补边的 POT 素材，或走经人工适配的直接 Unity 路线；不可把未支持的补边登记为可导入。border 相对于整张 PNG 的 L/B/R/T，RectTransform 独立控制显示尺寸。原始组图与面板预览不强制 POT，保留原布局分辨率，不裁切或拉伸。
 
 多面板共用准备包可在 element-groups.json 的 panelPreviews 列出各已确认的面板预览工作区相对路径，逐图沿用真实批准记录；未提供时使用 design/review/layout-approved.png。
 
@@ -74,3 +74,23 @@ visual-only 不要求 html/ 或 html-acceptance。`design/review/unity-acceptanc
 纯色画布配色要求：画布背景必须与面板主体/元素图片主色明显区分，让边界、圆角和透明效果清楚可见；深色面板可使用中性灰底。不同面板可以使用相同的对比底色，不要求各自采用不同颜色。
 
 VR 素材约束：各元素均使用无边缘描线的填充造型，不制作按钮/底板/内衬等细轮廓或额外 Outline 素材；通过填充色、明暗、透明度与留白表达层级及状态。装饰性细分隔线改用留白。九宫格切片边距和审核尺寸标注线保留；去描边不等于已完成设备抗锯齿验收。
+
+## 0.3.0 导入与完成契约
+
+- 初始化生成的 panel.package.json 默认 requireSkillApproval=true、stagingRoot=Assets/HtmlToUGUIStage/{PanelName}、allowPrefabReplacement=false；fontMaterial 可指定项目已有共享材质。旧工作区不自动改写，正式导入前补配置并重新验收。省略 stagingRoot 的旧通用准备包和 Prepared HTML 入口也默认生成到 HtmlToUGUIStage；显式指定的已有暂存路径继续沿用。
+- stagingRoot 同时重定向 Sprite/Texture、Item、主 Prefab 和导入报告，不能仅改 outputFolder；字体直接共享。先查看只读 PlanImport，再导入。默认导入窗口更新 HtmlToUGUIStage/StageScene.unity，Stage Panels 窗口负责切换预览和勾选复制。复制计划包含依赖和目标指纹；执行前复核，批次失败时恢复目标资源。业务 Prefab 通过项目适配受控更新，不能以 GUID 保留推断内部组件或 UnityEvent 保留。
+- HTML 验收比较 html/ 文件集合与逐文件哈希；新增、修改、删除均使原验收失效。候选素材可在组图审核前生成；确认后冻结同一版本，不重复生成再冒用旧哈希。
+- designApproved（两项审批）、artifactReady（HTML ready 或视觉素材就绪）、unityAccepted（Unity 完成证据）、deviceAccepted（目标设备实测）分别报告，不把 HTML ready 当作设备或 Unity 通过。
+- 两条路线都使用上述 unity-acceptance.json 与 referenceImages 契约。full 分支导入后运行 `python scripts/validate_directory.py --root <工作区> --require-unity --unity-project <Unity工程>`；此参数验证完成记录、截图、素材哈希及实际参考图字节，不替代 Unity 实际显示/交互/设备验证。
+- 转换报告包含转换器版本、配置哈希、输入文件哈希、产物路径/GUID/文件及 meta 哈希、计划动作及消费者、警告与待视觉审核状态。报告不包含自身指纹，避免递归哈希。Unity 审批校验不生成确认，也不运行浏览器。
+
+full 的 unity-acceptance.json 另包含 importReport（复制到工作区的实际转换报告路径），filesSha256 覆盖此报告。`--require-unity` 核对报告记录的输入仍为当前版本；指定 `--unity-project` 时还逐个核对实际产物、meta 与 GUID。Unity 验收记录和转换报告是下游证据，不纳入转换报告的上游设计输入哈希，避免自引用。
+
+## 执行门禁与最终接入证据
+
+- full 的 ready 检查强制 requireSkillApproval=true 和安全的 stagingRoot。旧工作区省略 mode 时，Python 与 Unity 均解释为 full；缺少新增门禁配置的旧包需显式补录并重新验收。
+- approval.json 的 previews 数组为每张额外 panelPreviews 登记 source、imageSha256、userApproval；layout-approved.png 继续使用原字段。额外预览未批准或哈希过期时拒绝就绪及严格导入。
+- 两条分支的 unity-acceptance.json 均须包含非空 finalArtifacts，每项为 path（Assets/ 相对路径）、guid（32 位小写十六进制）、sha256、metaSha256，至少一项为最终业务 Prefab；同时登记交付 Item 与本次交付素材。full 另填 sourceImportReportSha256，等于 importReport 文件哈希。转换报告保存暂存产物历史指纹；工程核对针对 finalArtifacts，暂存资源验收接入后可以删除。最终资源变化须重新验收。
+- 校验结果统一输出 designApproved、artifactReady、unityAccepted、deviceAccepted。ready 的旧分支语义继续兼容；缺少 Unity 或设备验证时对应状态不通过。
+- 可选 device-acceptance.json 包含 status=passed|failed|not-tested；实际测试时另填 device、testedAt、reviewer、unityAcceptanceSha256、screenshots 及对应 filesSha256。设备结果绑定当前 Unity 验收和实测截图，未测保持 not-tested，不推导为通过。
+- 默认使用 TMP 当前默认字体及已有材质，不生成字体材质副本；boldWeight 保留为旧包兼容字段，不修改共享材质，文字粗体使用原生 TMP FontStyles。

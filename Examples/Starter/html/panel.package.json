@@ -5,5 +5,9 @@
   "outputFolder": "Assets/Art/UIPrefab/StarterPanel",
   "assetPrefix": "Assets/Art/UI/Sprite/StarterPanel/",
   "fontAsset": null,
-  "boldWeight": 0.12
+  "boldWeight": 0.12,
+  "stagingRoot": "Assets/HtmlToUGUIStage/StarterPanel",
+  "allowPrefabReplacement": false,
+  "requireSkillApproval": false,
+  "fontMaterial": null
 }

@@ -14,6 +14,10 @@ namespace HtmlToUGUI.Editor
     {
         public static string Run()
         {
+            using (var scope = new UiTemporarySceneScope()) return RunIsolated();
+        }
+        private static string RunIsolated()
+        {
             var passed = new List<string>();
             var id = Guid.NewGuid().ToString("N");
             var dir = Path.Combine(Path.GetTempPath(), "HtmlUiRegression-" + id);
@@ -22,7 +26,7 @@ namespace HtmlToUGUI.Editor
             var html = Path.Combine(dir, "panel.html");
             Func<string, string> wrap = content => "<html><head><style>.a{width:20px;height:30px;left:10px;top:5px}.b{width:40px}.a{height:35px}#target{width:60px}</style></head><body><div data-root='true' style='width:320px;height:240px'>" + content + "</div></body></html>";
             Action<bool, string> check = (condition, name) => { if (!condition) throw new Exception("Failed: " + name); passed.Add(name); };
-            var settings = new HtmlUiImporter.ImportOptions { panelName = "RegressionPanel", font = TMP_Settings.defaultFontAsset };
+            var settings = new HtmlUiImporter.ImportOptions { panelName = "RegressionPanel", stagingRoot = null, allowPrefabReplacement = true, font = TMP_Settings.defaultFontAsset };
             try
             {
                 File.WriteAllText(html, wrap("<div id='target' class='b a' data-binding='Target'/><input data-ugui='Toggle' data-is-on='true' data-binding='Switch' style='left:100px;top:0;width:24px;height:24px'/><input data-ugui='Slider' data-binding='Volume' data-min='0' data-max='100' data-value='65' style='left:100px;top:40px;width:180px;height:24px'/><div data-ugui='ScrollView' data-binding='List' style='left:0;top:100px;width:320px;height:100px;content-height:400px'><template data-prefab='Row'><span data-ugui='Text' data-binding='Target' style='left:0;top:0;width:120px;height:40px'>Row</span></template></div>"));
@@ -38,7 +42,7 @@ namespace HtmlToUGUI.Editor
                 check(map.Get<ScrollRect>("List").GetComponent<Image>().raycastTarget, "ScrollView receives pointer events");
                 check(map.Get<ScrollRect>("List").content.sizeDelta.y == 400, "Scrollable content extent");
                 check(prefab.GetComponent<UiTemplateCatalog>() != null && AssetDatabase.LoadAssetAtPath<GameObject>(output + "/Items/Item_Row.prefab") != null, "Generic template catalog and scoped bindings");
-                var instance = UnityEngine.Object.Instantiate(prefab);
+                var instance = UnityEngine.Object.Instantiate(prefab, UiTemporarySceneScope.CreateGameObject("TransientHost").transform, false);
                 try
                 {
                     var item = instance.GetComponent<UiTemplateCatalog>().CreateItem("Row", instance.transform);

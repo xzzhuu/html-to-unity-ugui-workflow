@@ -28,6 +28,10 @@ namespace HtmlToUGUI.Editor
         // Uses a disposable preview scene so the user's open scene is preserved.
         public static Snapshot Capture(GameObject prefab, string outputFolder, Action<GameObject> populate = null)
         {
+            using (var sceneScope = new UiTemporarySceneScope()) return CaptureIsolated(prefab, outputFolder, populate);
+        }
+        private static Snapshot CaptureIsolated(GameObject prefab, string outputFolder, Action<GameObject> populate)
+        {
             Directory.CreateDirectory(outputFolder);
             var scene = EditorSceneManager.NewPreviewScene();
             RenderTexture rt = null;
@@ -38,7 +42,7 @@ namespace HtmlToUGUI.Editor
             {
                 var resolution = prefab.GetComponent<RectTransform>().sizeDelta;
                 var result = new Snapshot { width = Mathf.RoundToInt(resolution.x), height = Mathf.RoundToInt(resolution.y) };
-                var cameraGo = new GameObject("AuditCamera", typeof(Camera));
+                var cameraGo = UiTemporarySceneScope.CreateGameObject("AuditCamera", typeof(Camera));
                 SceneManager.MoveGameObjectToScene(cameraGo, scene);
                 var cam = auditCamera = cameraGo.GetComponent<Camera>();
                 cam.scene = scene;
@@ -49,7 +53,7 @@ namespace HtmlToUGUI.Editor
                 cam.nearClipPlane = .1f; cam.farClipPlane = 1000;
                 rt = new RenderTexture(result.width, result.height, 24);
                 cam.targetTexture = rt;
-                var canvasGo = new GameObject("AuditCanvas", typeof(Canvas));
+                var canvasGo = UiTemporarySceneScope.CreateGameObject("AuditCanvas", typeof(Canvas));
                 SceneManager.MoveGameObjectToScene(canvasGo, scene);
                 var canvas = canvasGo.GetComponent<Canvas>();
                 canvas.renderMode = RenderMode.ScreenSpaceCamera; canvas.worldCamera = cam; canvas.planeDistance = 100;

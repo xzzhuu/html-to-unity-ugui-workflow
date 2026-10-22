@@ -97,6 +97,14 @@ namespace HtmlToUGUI.Editor
                 if (type == "Button" && e.Nodes().OfType<XText>().Any(t => !string.IsNullOrWhiteSpace(t.Value)) &&
                     e.Elements().Any(x => (string)x.Attribute("data-ui-name") == "Txt_Label"))
                     report.errors.Add(label + ": child name collides with generated Txt_Label.");
+                var stateSprites = HtmlUiImporter.StateSpriteAttributes.Any(a => e.Attribute(a) != null);
+                var stateColors = HtmlUiImporter.StateColorAttributes.Any(a => e.Attribute(a) != null);
+                if ((stateSprites || stateColors) && !new[] { "Button", "Toggle", "Slider", "InputField" }.Contains(type))
+                    report.errors.Add(label + ": native states require a Selectable control.");
+                if (stateSprites && stateColors) report.errors.Add(label + ": SpriteSwap and ColorTint cannot be combined.");
+                foreach (var colorAttribute in HtmlUiImporter.StateColorAttributes)
+                    if (e.Attribute(colorAttribute) != null && !Regex.IsMatch((string)e.Attribute(colorAttribute), @"^#[0-9a-fA-F]{6}([0-9a-fA-F]{2})?$"))
+                        report.errors.Add(label + ": state colors require #RRGGBB or #RRGGBBAA.");
                 var s = resolve(e);
                 foreach (var property in new[] { "left", "right", "top", "bottom", "width", "height", "font-size", "content-height" })
                     if (s.ContainsKey(property) && !Regex.IsMatch(s[property], @"^-?\d+(\.\d+)?(px)?$")) report.errors.Add(label + ": pixel value required for " + property + ".");
@@ -111,7 +119,7 @@ namespace HtmlToUGUI.Editor
                 if ((string)e.Attribute("data-nine-slice") == "true" &&
                     (border == null || !Regex.IsMatch(border, @"^\d+(\.\d+)?,\d+(\.\d+)?,\d+(\.\d+)?,\d+(\.\d+)?$")))
                     report.errors.Add(label + ": Nine-slice needs L,B,R,T nonnegative data-border.");
-                foreach (var attribute in new[] { "data-sprite", "data-texture", "data-normal-sprite", "data-selected-sprite" })
+                foreach (var attribute in new[] { "data-sprite", "data-texture" }.Concat(HtmlUiImporter.StateSpriteAttributes))
                 {
                     var path = (string)e.Attribute(attribute);
                     if (string.IsNullOrEmpty(path)) continue;

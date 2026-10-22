@@ -10,7 +10,7 @@ import unittest
 import zlib
 
 from init_directory import initialize
-from validate_directory import validate, definition_digest, file_digest
+from validate_directory import validate, definition_digest, file_digest, validate_content_rect
 
 
 def write_json(path, value):
@@ -83,11 +83,76 @@ class WorkflowTests(unittest.TestCase):
             acceptance['screenshots']=[shot]
             acceptance['referenceImages']=[{'source':source,'unityPath':'Assets/Art/UI/DesignReferences/'+Path(source).name,'sha256':file_digest(self.root/source)} for source in ['design/review/layout-approved.png',group['sheet']]]
             files=[shot]+[s['source'] for s in sprites]
+            acceptance['finalArtifacts']=[dict(path='Assets/Output/SettingsPanel.prefab',guid='a'*32,sha256='b'*64,metaSha256='c'*64)]
             report='unity-acceptance.json'
         files.append('design/element-groups.json')
         acceptance['filesSha256']={source:file_digest(self.root/source) for source in files}
         write_json(self.root/'design/review'/report,acceptance)
         return manifest
+
+    def test_ready_requires_skill_gate_and_staging(self):
+        self.fixture('full')
+        path=self.root/'html/panel.package.json'
+        original=json.loads(path.read_text(encoding='utf-8'))
+        for key,value in [('requireSkillApproval',False),('stagingRoot',None),('stagingRoot','Assets/../Formal')]:
+            package=dict(original);package[key]=value;write_json(path,package)
+            with self.assertRaisesRegex(ValueError,'requires'):
+                validate(self.root,True)
+
+    def test_each_additional_preview_requires_its_own_approval(self):
+        manifest=self.fixture('full')
+        source='design/review/SecondPanel.png';png(self.root/source)
+        manifest['panelPreviews']=['design/review/layout-approved.png',source]
+        write_json(self.root/'design/element-groups.json',manifest)
+        with self.assertRaisesRegex(ValueError,'individual preview approval'):
+            validate(self.root,True)
+        path=self.root/'design/review/approval.json'
+        record=json.loads(path.read_text(encoding='utf-8'))
+        record['previews']=[dict(source=source,imageSha256=file_digest(self.root/source),userApproval='SYNTHETIC TEST ONLY')]
+        write_json(path,record)
+        acceptance_path=self.root/'design/review/html-acceptance.json'
+        acceptance=json.loads(acceptance_path.read_text(encoding='utf-8'))
+        acceptance['filesSha256']['design/element-groups.json']=file_digest(self.root/'design/element-groups.json')
+        write_json(acceptance_path,acceptance)
+        self.assertTrue(validate(self.root,True)['designApproved'])
+        png(self.root/source,128)
+        with self.assertRaisesRegex(ValueError,'individual preview approval'):
+            validate(self.root,True)
+
+    def test_final_prefab_evidence_is_required(self):
+        self.fixture()
+        path=self.root/'design/review/unity-acceptance.json'
+        acceptance=json.loads(path.read_text(encoding='utf-8'));acceptance.pop('finalArtifacts')
+        write_json(path,acceptance)
+        with self.assertRaisesRegex(ValueError,'final business Prefab'):
+            validate(self.root,True)
+
+    def test_device_result_requires_current_unity_evidence(self):
+        self.fixture()
+        result=validate(self.root,True)
+        self.assertTrue(result['designApproved'] and result['artifactReady'] and result['unityAccepted'])
+        self.assertFalse(result['deviceAccepted'])
+        shot='design/review/Device.png';png(self.root/shot)
+        path=self.root/'design/review/device-acceptance.json'
+        write_json(path,dict(status='passed',device='Synthetic headset',testedAt='2026-10-22',reviewer='SYNTHETIC TEST ONLY',
+            unityAcceptanceSha256=file_digest(self.root/'design/review/unity-acceptance.json'),screenshots=[shot],filesSha256={shot:file_digest(self.root/shot)}))
+        self.assertTrue(validate(self.root,True)['deviceAccepted'])
+        (self.root/'design/review/unity-acceptance.json').write_text((self.root/'design/review/unity-acceptance.json').read_text(encoding='utf-8')+' ',encoding='utf-8')
+        with self.assertRaisesRegex(ValueError,'Device acceptance stale'):
+            validate(self.root,True)
+
+    def test_legacy_ready_workspace_omitted_mode_is_full(self):
+        self.fixture('full')
+        path=self.root/'.html-directory.json';state=json.loads(path.read_text(encoding='utf-8'));state.pop('mode');write_json(path,state)
+        self.assertEqual(validate(self.root,True)['mode'],'full')
+
+    def test_visual_material_readiness_is_separate_from_unity_acceptance(self):
+        self.fixture()
+        path=self.root/'.html-directory.json';state=json.loads(path.read_text(encoding='utf-8'));state['status']='draft-unapproved';write_json(path,state)
+        (self.root/'design/review/unity-acceptance.json').unlink()
+        result=validate(self.root)
+        self.assertTrue(result['designApproved'] and result['artifactReady'])
+        self.assertFalse(result['unityAccepted'] or result['deviceAccepted'])
 
     def test_defaults_and_idempotency(self):
         result=initialize(self.root)
@@ -95,6 +160,8 @@ class WorkflowTests(unittest.TestCase):
         self.assertEqual(result['mode'],'full')
         state=json.loads(before[Path('.html-directory.json')])
         self.assertEqual((state['width'],state['height']),(1920,1080))
+        package=json.loads(before[Path('html/panel.package.json')])
+        self.assertEqual(package['stagingRoot'],'Assets/HtmlToUGUIStage/'+state['panelName'])
         self.assertFalse(initialize(self.root)['created'])
         self.assertEqual(before,{p.relative_to(self.root):p.read_bytes() for p in self.root.rglob('*') if p.is_file()})
         self.assertEqual(validate(self.root)['structure'],'passed')
@@ -200,6 +267,117 @@ class WorkflowTests(unittest.TestCase):
         write_json(path,acceptance)
         with self.assertRaisesRegex(ValueError,'imported panel/element reference'):
             validate(self.root,True)
+
+    def test_deleted_and_added_html_files_invalidate_acceptance(self):
+        self.fixture('full')
+        optional=self.root/'html/optional-preview.js'
+        optional.write_text('// optional test script',encoding='utf-8')
+        report=self.root/'design/review/html-acceptance.json'
+        acceptance=json.loads(report.read_text(encoding='utf-8'))
+        acceptance['filesSha256']['html/optional-preview.js']=file_digest(optional)
+        write_json(report,acceptance)
+        validate(self.root,True)
+        optional.unlink()
+        with self.assertRaisesRegex(ValueError,'file set changed'):
+            validate(self.root,True)
+        optional.write_text('// optional test script',encoding='utf-8')
+        (self.root/'html/unreviewed.js').write_text('// new file',encoding='utf-8')
+        with self.assertRaisesRegex(ValueError,'file set changed'):
+            validate(self.root,True)
+
+    def test_content_rect_bounds_types_and_unsupported_padding(self):
+        manifest=self.fixture()
+        for rect in ([-10,999,999,0],[0,0,0,4],[0,0,5,4],[0,0,True,4],[0,0,4.0,4]):
+            with self.subTest(rect=rect):
+                manifest['sprites'][0]['contentRect']=rect
+                write_json(self.root/'design/element-groups.json',manifest)
+                with self.assertRaisesRegex(ValueError,'contentRect'):
+                    validate(self.root)
+
+    def test_padding_is_only_allowed_for_manual_visual_adaptation(self):
+        item={'contentRect':[0,0,3,4]}
+        validate_content_rect(item,4,4,allow_padding=True)
+        with self.assertRaisesRegex(ValueError,'not supported'):
+            validate_content_rect(item,4,4)
+
+    def test_full_texture_content_rect_is_supported(self):
+        manifest=self.fixture()
+        manifest['sprites'][0]['contentRect']=[0,0,4,4]
+        write_json(self.root/'design/element-groups.json',manifest)
+        state=json.loads((self.root/'.html-directory.json').read_text(encoding='utf-8'))
+        state['status']='draft-unapproved'
+        write_json(self.root/'.html-directory.json',state)
+        self.assertEqual(validate(self.root)['structure'],'passed')
+
+    def test_full_ready_does_not_imply_unity_completion(self):
+        self.fixture('full')
+        self.assertEqual(validate(self.root,True)['unityAcceptance'],'not-verified')
+        with self.assertRaises(OSError):
+            validate(self.root,require_unity=True)
+
+    def test_unity_project_reference_bytes_are_verified(self):
+        self.fixture()
+        acceptance=json.loads((self.root/'design/review/unity-acceptance.json').read_text(encoding='utf-8'))
+        project=self.root.parent/'Unity'
+        for item in acceptance['referenceImages']:
+            target=project/item['unityPath']
+            target.parent.mkdir(parents=True,exist_ok=True)
+            target.write_bytes((self.root/item['source']).read_bytes())
+        prefab=project/'Assets/Output/SettingsPanel.prefab';prefab.parent.mkdir(parents=True,exist_ok=True)
+        prefab.write_text('synthetic final prefab',encoding='utf-8')
+        meta=prefab.with_suffix('.prefab.meta');meta.write_text('guid: '+'a'*32+'\n',encoding='utf-8')
+        acceptance['finalArtifacts']=[dict(path='Assets/Output/SettingsPanel.prefab',guid='a'*32,sha256=file_digest(prefab),metaSha256=file_digest(meta))]
+        write_json(self.root/'design/review/unity-acceptance.json',acceptance)
+        validate(self.root,require_unity=True,unity_project=project)
+        target.write_bytes(b'changed')
+        with self.assertRaisesRegex(ValueError,'reference bytes'):
+            validate(self.root,require_unity=True,unity_project=project)
+
+    def test_full_unity_gate_links_report_inputs_and_real_outputs(self):
+        manifest=self.fixture('full')
+        project=self.root.parent/'Unity'
+        shot='design/review/Unity_Test.png'
+        png(self.root/shot)
+        refs=[]
+        for source in ['design/review/layout-approved.png',manifest['groups'][0]['sheet']]:
+            target='Assets/References/'+Path(source).name
+            output=project/target
+            output.parent.mkdir(parents=True,exist_ok=True)
+            output.write_bytes((self.root/source).read_bytes())
+            refs.append(dict(source=source,unityPath=target,sha256=file_digest(self.root/source)))
+        prefab=project/'Assets/Output/SettingsPanel.prefab'
+        prefab.parent.mkdir(parents=True,exist_ok=True)
+        prefab.write_text('synthetic prefab bytes',encoding='utf-8')
+        meta=prefab.with_suffix('.prefab.meta')
+        meta.write_text('fileFormatVersion: 2\nguid: '+'a'*32+'\n',encoding='utf-8')
+        report_source='design/review/unity-import-report.json'
+        write_json(self.root/report_source,dict(converterVersion='0.3.0',
+            inputsSha256={path.relative_to(self.root/'html').as_posix():file_digest(path) for path in (self.root/'html').rglob('*') if path.is_file()},
+            artifacts=[dict(path='Assets/Output/SettingsPanel.prefab',guid='a'*32,sha256=file_digest(prefab),metaSha256=file_digest(meta))]))
+        html_acceptance=json.loads((self.root/'design/review/html-acceptance.json').read_text(encoding='utf-8'))
+        write_json(self.root/'design/review/unity-acceptance.json',dict(status='passed',
+            approvedLayoutSha256=html_acceptance['approvedLayoutSha256'],approvedElementGroupsSha256=html_acceptance['approvedElementGroupsSha256'],
+            checks={key:'passed' for key in ('structure','visual','interactions','references','resolution')},screenshots=[shot],referenceImages=refs,
+            importReport=report_source,sourceImportReportSha256=file_digest(self.root/report_source),
+            finalArtifacts=[dict(path='Assets/Output/SettingsPanel.prefab',guid='a'*32,sha256=file_digest(prefab),metaSha256=file_digest(meta))],
+            filesSha256={source:file_digest(self.root/source) for source in [shot,report_source,'design/element-groups.json']}))
+        validate(self.root,require_unity=True,unity_project=project)
+        original=prefab.read_bytes()
+        prefab.write_text('changed',encoding='utf-8')
+        with self.assertRaisesRegex(ValueError,'artifact bytes changed'):
+            validate(self.root,require_unity=True,unity_project=project)
+        prefab.write_bytes(original)
+        meta.write_text('guid: changed\n',encoding='utf-8')
+        with self.assertRaisesRegex(ValueError,'artifact meta changed'):
+            validate(self.root,require_unity=True,unity_project=project)
+
+    def test_html_native_state_contract_rejects_conflicts(self):
+        self.fixture('full')
+        entry=self.root/'html/SettingsPanel.html'
+        source=entry.read_text(encoding='utf-8')
+        entry.write_text(source.replace('data-root="true"','data-root="true" data-selected-color="#FF0000"'),encoding='utf-8')
+        with self.assertRaisesRegex(ValueError,'Selectable'):
+            validate(self.root)
 
 
 if __name__=='__main__':

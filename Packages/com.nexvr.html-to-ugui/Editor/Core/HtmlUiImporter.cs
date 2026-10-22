@@ -45,11 +45,15 @@ namespace HtmlToUGUI.Editor
             public TMP_FontAsset font;
             public Material fontMaterial;
             public float boldWeight = 0.12f;
+            public bool allowPrefabReplacement;
+            public bool requireSkillApproval;
+            public string stagingRoot = UiStageWorkspace.DefaultStagingRoot;
+            internal string sourceAssetPrefix;
             public Action<GameObject, UiBindingMap, Dictionary<string, string>> configureRoot;
             public Action<string, GameObject, UiBindingMap> configureTemplate;
         }
 
-        public static string Import(string htmlPath, string outputFolder, ImportOptions settings = null)
+        private static string ImportCore(string htmlPath, string outputFolder, ImportOptions settings)
         {
             options = settings ?? new ImportOptions();
             outputFolder = (outputFolder ?? "Assets/Art/UIPrefab/{PanelName}").Replace("{PanelName}", options.panelName);
@@ -61,6 +65,7 @@ namespace HtmlToUGUI.Editor
             ValidateAssetPath(options.assetPrefix + "dummy.png");
             Bindings.Clear(); CssRules.Clear(); CssVariables.Clear(); OrderedRules.Clear(); CssWarnings.Clear();
             var document = XDocument.Load(htmlPath, LoadOptions.PreserveWhitespace);
+            RemapStagedAssets(document, options);
             var htmlDir = Path.GetDirectoryName(Path.GetFullPath(htmlPath));
             LoadLinkedCss(document, htmlDir);
             var report = UiPackageValidator.Validate(document, htmlDir, options.assetPrefix, ResolveStyle);
@@ -79,24 +84,13 @@ namespace HtmlToUGUI.Editor
             var rootStyle = ResolveStyle(sourceRoot);
             var resolution = new Vector2(ReadFloat(rootStyle, "width", 0), ReadFloat(rootStyle, "height", 0));
             EnsureFolder(outputFolder);
-            if (options.font != null && options.fontMaterial == null)
-            {
-                var materialPath = outputFolder + "/" + options.panelName + ".Font.mat";
-                var material = AssetDatabase.LoadAssetAtPath<Material>(materialPath);
-                if (material == null)
-                {
-                    material = new Material(options.font.material);
-                    AssetDatabase.CreateAsset(material, materialPath);
-                }
-                else material.CopyPropertiesFromMaterial(options.font.material);
-                if (material.HasProperty("_WeightBold")) material.SetFloat("_WeightBold", options.boldWeight);
-                options.fontMaterial = material;
-                EditorUtility.SetDirty(material);
-            }
+            // Reuse the font's existing material, including embedded subassets. Never
+            // clone or save shared font resources; CSS font-weight remains native TMP style.
+            if (options.font != null && options.fontMaterial == null) options.fontMaterial = options.font.material;
             PrepareReferencedAssets(document, htmlDir);
             var itemPrefabPaths = BuildTemplatePrefabs(document, outputFolder);
             Bindings.Clear();
-            var rootGo = new GameObject(options.panelName, typeof(RectTransform));
+            var rootGo = UiTemporarySceneScope.CreateGameObject(options.panelName, typeof(RectTransform));
             try
             {
                 var rect = rootGo.GetComponent<RectTransform>();
@@ -117,7 +111,7 @@ namespace HtmlToUGUI.Editor
                 report.panelName = options.panelName;
                 report.width = resolution.x; report.height = resolution.y;
                 File.WriteAllText(outputFolder + "/" + options.panelName + ".import-report.json", JsonUtility.ToJson(report, true));
-                AssetDatabase.SaveAssets(); AssetDatabase.Refresh();
+                AssetDatabase.Refresh();
                 UiPanelScenePlacement.CleanupTransientMeshesForPrefab(path);
                 return path;
             }
@@ -138,6 +132,7 @@ namespace HtmlToUGUI.Editor
                 if (string.IsNullOrEmpty(assetPrefix)) assetPrefix = "Assets/Art/UI/Sprite/" + name + "/";
             }
             var report = UiPackageValidator.Validate(document, htmlDir, assetPrefix.TrimEnd('/') + "/", ResolveStyle);
+            try { ValidateContentRects(htmlDir); } catch (InvalidDataException ex) { report.errors.Add(ex.Message); }
             report.warnings.AddRange(CssWarnings);
             return report;
         }
@@ -214,7 +209,7 @@ namespace HtmlToUGUI.Editor
                     break;
 
                 default:
-                    go = new GameObject(name, typeof(RectTransform));
+                    go = UiTemporarySceneScope.CreateGameObject(name, typeof(RectTransform));
                     go.transform.SetParent(parent, false);
                     ApplyRect(go.GetComponent<RectTransform>(), style, parentSize, element);
                     childParent = go.transform;
@@ -252,6 +247,7 @@ namespace HtmlToUGUI.Editor
             RegisterBinding(element, bindingTarget);
             var selectable = go.GetComponent<Selectable>();
             if (selectable != null) selectable.interactable = (string)element.Attribute("data-interactable") != "false";
+            if (selectable != null) ApplySelectableState(selectable, element, style);
             var tmp = go.GetComponent<TMP_Text>();
             if (tmp != null)
             {
@@ -281,17 +277,17 @@ namespace HtmlToUGUI.Editor
         {
             var result = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
             var itemFolder = outputFolder.TrimEnd('/') + "/Items";
-            EnsureFolder(itemFolder);
 
             foreach (var template in document.Descendants().Where(x => x.Name.LocalName.Equals("template", StringComparison.OrdinalIgnoreCase)))
             {
+                EnsureFolder(itemFolder);
                 var prefabName = ((string)template.Attribute("data-prefab") ?? string.Empty).Trim();
                 var source = template.Elements().FirstOrDefault();
                 if (string.IsNullOrWhiteSpace(prefabName) || source == null)
                     continue;
 
                 Bindings.Clear();
-                var host = new GameObject(prefabName + "_BuildHost", typeof(RectTransform));
+                var host = UiTemporarySceneScope.CreateGameObject(prefabName + "_BuildHost", typeof(RectTransform));
                 GameObject itemGo = null;
                 try
                 {
@@ -331,14 +327,13 @@ namespace HtmlToUGUI.Editor
             }
 
             Bindings.Clear();
-            AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
             return result;
         }
 
         private static GameObject CreateImage(string name, Transform parent, Dictionary<string, string> style)
         {
-            var go = new GameObject(name, typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
+            var go = UiTemporarySceneScope.CreateGameObject(name, typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
             go.transform.SetParent(parent, false);
             var image = go.GetComponent<Image>();
             image.color = ReadBackgroundColor(style, new Color(0.03f, 0.11f, 0.2f, 1f));
@@ -348,7 +343,7 @@ namespace HtmlToUGUI.Editor
 
         private static GameObject CreateRawImage(string name, Transform parent, Dictionary<string, string> style)
         {
-            var go = new GameObject(name, typeof(RectTransform), typeof(CanvasRenderer), typeof(RawImage));
+            var go = UiTemporarySceneScope.CreateGameObject(name, typeof(RectTransform), typeof(CanvasRenderer), typeof(RawImage));
             go.transform.SetParent(parent, false);
             var raw = go.GetComponent<RawImage>();
             raw.color = Color.white;
@@ -358,7 +353,7 @@ namespace HtmlToUGUI.Editor
 
         private static GameObject CreateText(string name, Transform parent, Dictionary<string, string> style, string value)
         {
-            var go = new GameObject(name, typeof(RectTransform), typeof(CanvasRenderer), typeof(TextMeshProUGUI));
+            var go = UiTemporarySceneScope.CreateGameObject(name, typeof(RectTransform), typeof(CanvasRenderer), typeof(TextMeshProUGUI));
             go.transform.SetParent(parent, false);
             var text = go.GetComponent<TextMeshProUGUI>();
             text.text = NormalizeText(value);
@@ -377,7 +372,7 @@ namespace HtmlToUGUI.Editor
 
         private static GameObject CreateButton(string name, Transform parent, Dictionary<string, string> style, string directText, XElement element)
         {
-            var go = new GameObject(name, typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(Button));
+            var go = UiTemporarySceneScope.CreateGameObject(name, typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(Button));
             go.transform.SetParent(parent, false);
             var image = go.GetComponent<Image>();
             image.color = ReadBackgroundColor(style, new Color(0.04f, 0.21f, 0.4f, 1f));
@@ -386,7 +381,7 @@ namespace HtmlToUGUI.Editor
 
             if (!string.IsNullOrWhiteSpace(directText))
             {
-                var labelGo = new GameObject("Txt_Label", typeof(RectTransform), typeof(CanvasRenderer), typeof(TextMeshProUGUI));
+                var labelGo = UiTemporarySceneScope.CreateGameObject("Txt_Label", typeof(RectTransform), typeof(CanvasRenderer), typeof(TextMeshProUGUI));
                 labelGo.transform.SetParent(go.transform, false);
                 var rect = labelGo.GetComponent<RectTransform>();
                 rect.anchorMin = Vector2.zero;
@@ -411,12 +406,12 @@ namespace HtmlToUGUI.Editor
 
         private static GameObject CreateInputField(string name, Transform parent, Dictionary<string, string> style, string placeholderText)
         {
-            var go = new GameObject(name, typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(TMP_InputField));
+            var go = UiTemporarySceneScope.CreateGameObject(name, typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(TMP_InputField));
             go.transform.SetParent(parent, false);
             var image = go.GetComponent<Image>();
             image.color = ReadBackgroundColor(style, new Color(0.02f, 0.09f, 0.16f, 1f));
 
-            var textArea = new GameObject("Group_TextViewport", typeof(RectTransform), typeof(RectMask2D));
+            var textArea = UiTemporarySceneScope.CreateGameObject("Group_TextViewport", typeof(RectTransform), typeof(RectMask2D));
             textArea.transform.SetParent(go.transform, false);
             var areaRect = textArea.GetComponent<RectTransform>();
             areaRect.anchorMin = Vector2.zero;
@@ -448,10 +443,10 @@ namespace HtmlToUGUI.Editor
 
         private static GameObject CreateScrollView(string name, Transform parent, Dictionary<string, string> style, out Transform contentTransform)
         {
-            var go = new GameObject(name, typeof(RectTransform), typeof(RectMask2D), typeof(ScrollRect));
+            var go = UiTemporarySceneScope.CreateGameObject(name, typeof(RectTransform), typeof(RectMask2D), typeof(ScrollRect));
             go.transform.SetParent(parent, false);
 
-            var content = new GameObject("Group_Content", typeof(RectTransform));
+            var content = UiTemporarySceneScope.CreateGameObject("Group_Content", typeof(RectTransform));
             content.transform.SetParent(go.transform, false);
             var contentRect = content.GetComponent<RectTransform>();
             contentRect.anchorMin = new Vector2(0, 1);
@@ -550,7 +545,7 @@ namespace HtmlToUGUI.Editor
             }
 
             image.sprite = sprite;
-            image.color = Color.white;
+            image.color = ReadBackgroundColor(style, Color.white);
             image.type = useNineSlice ? Image.Type.Sliced : Image.Type.Simple;
         }
 
@@ -561,12 +556,21 @@ namespace HtmlToUGUI.Editor
                 return;
 
             var changed = false;
+            int sourceWidth, sourceHeight;
+            importer.GetSourceTextureWidthAndHeight(out sourceWidth, out sourceHeight);
+            var requiredMax = Mathf.NextPowerOfTwo(Mathf.Max(sourceWidth, sourceHeight));
+            if (requiredMax > 16384) throw new InvalidDataException("Texture exceeds supported Max Size: " + spritePath);
+            if (importer.maxTextureSize < requiredMax) { importer.maxTextureSize = requiredMax; changed = true; }
+            if (importer.npotScale != TextureImporterNPOTScale.None) { importer.npotScale = TextureImporterNPOTScale.None; changed = true; }
+            ValidatePlatformOverrides(importer, requiredMax);
+            if (importer.alphaSource != TextureImporterAlphaSource.FromInput) { importer.alphaSource = TextureImporterAlphaSource.FromInput; changed = true; }
             if (importer.textureType != TextureImporterType.Sprite)
             {
                 importer.textureType = TextureImporterType.Sprite;
                 importer.spriteImportMode = SpriteImportMode.Single;
                 changed = true;
             }
+            if (importer.spriteImportMode != SpriteImportMode.Single) { importer.spriteImportMode = SpriteImportMode.Single; changed = true; }
 
             if (importer.spriteBorder != (useNineSlice ? border : Vector4.zero))
             {
@@ -644,22 +648,15 @@ namespace HtmlToUGUI.Editor
                     EnsureRawTextureImporter(texturePath);
                 }
 
-                var normalSprite = ((string)element.Attribute("data-normal-sprite") ?? string.Empty).Trim();
-                if (!string.IsNullOrWhiteSpace(normalSprite))
+                foreach (var attribute in StateSpriteAttributes)
                 {
-                    EnsureAssetCopiedFromHtml(htmlDir, normalSprite);
-                    EnsureSpriteImporter(normalSprite, nineSliceFor(element), ParseBorder(element, Vector4.zero));
-                }
-
-                var selectedSprite = ((string)element.Attribute("data-selected-sprite") ?? string.Empty).Trim();
-                if (!string.IsNullOrWhiteSpace(selectedSprite))
-                {
-                    EnsureAssetCopiedFromHtml(htmlDir, selectedSprite);
-                    EnsureSpriteImporter(selectedSprite, nineSliceFor(element), ParseBorder(element, Vector4.zero));
+                    var stateSprite = ((string)element.Attribute(attribute) ?? string.Empty).Trim();
+                    if (stateSprite.Length == 0) continue;
+                    EnsureAssetCopiedFromHtml(htmlDir, stateSprite);
+                    EnsureSpriteImporter(stateSprite, nineSliceFor(element), ParseBorder(element, Vector4.zero));
                 }
             }
 
-            AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
         }
 
@@ -700,6 +697,14 @@ namespace HtmlToUGUI.Editor
                 return;
 
             var changed = false;
+            int sourceWidth, sourceHeight;
+            importer.GetSourceTextureWidthAndHeight(out sourceWidth, out sourceHeight);
+            var requiredMax = Mathf.NextPowerOfTwo(Mathf.Max(sourceWidth, sourceHeight));
+            if (requiredMax > 16384) throw new InvalidDataException("Texture exceeds supported Max Size: " + assetPath);
+            if (importer.maxTextureSize < requiredMax) { importer.maxTextureSize = requiredMax; changed = true; }
+            if (importer.npotScale != TextureImporterNPOTScale.None) { importer.npotScale = TextureImporterNPOTScale.None; changed = true; }
+            ValidatePlatformOverrides(importer, requiredMax);
+            if (importer.alphaSource != TextureImporterAlphaSource.FromInput) { importer.alphaSource = TextureImporterAlphaSource.FromInput; changed = true; }
             if (importer.textureType != TextureImporterType.Default)
             {
                 importer.textureType = TextureImporterType.Default;

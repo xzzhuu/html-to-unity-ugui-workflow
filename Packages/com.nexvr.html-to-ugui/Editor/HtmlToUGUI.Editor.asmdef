@@ -5,7 +5,8 @@
     "HtmlToUGUI.Runtime",
     "Unity.TextMeshPro",
     "UnityEngine.UI",
-    "UnityEditor.UI"
+    "UnityEditor.UI",
+    "Unity.Newtonsoft.Json"
   ],
   "includePlatforms": [
     "Editor"
