@@ -14,5 +14,8 @@
 | `build-unity-package.py` | 默认将仓库 UPM 源码打包到 `dist/`；支持 `--package` / `--output` |
 | `build-workflow.py` | 重建 draw.io 流程图，默认使用仓库内样式，可读取个人样式覆盖 |
 | `compare-layout.py` | 转发 Skill 的布局比较 CLI；使用 `--help` 查看参数 |
+| `verify-unity-release.py` | 在已配置默认字体、已关闭的 Unity 工程中运行实际 Editor 回归；校验所用包与仓库一致，证据保存于工程外 |
 
 CI 使用前五个校验工具与打包工具，不依赖本机安装记录或历史 Unity 审核日志。Unity 运行、C# 编译和最终视觉效果仍需在 Editor 中验证。
+
+新增手动 `Unity release gate` 工作流使用已配置的 self-hosted Windows/Unity2022 runner；环境需提供 UNITY_EDITOR_PATH 和 UNITY_VALIDATION_PROJECT。普通 Python CI 不替代该 Editor 验证。交互编辑器可直接调用 UiReleaseValidation.Run(工程外证据目录)，无需关闭工程或写临时 Editor 脚本。

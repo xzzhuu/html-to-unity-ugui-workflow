@@ -60,7 +60,8 @@ def initialize(root, panel=None, title=None, width=None, height=None, mode=None)
     for item in elements:
         item.update(purpose=purposes[item['htmlId']],dataSource=None,pictureRegion=None,states=[])
     package = dict(schemaVersion=1, panelName=name, html=f'{name}.html',
-                   outputFolder=f'Assets/Art/UIPrefab/{name}', assetPrefix=f'Assets/Art/UI/Sprite/{name}/', fontAsset=None, boldWeight=.12)
+                   outputFolder=f'Assets/Art/UIPrefab/{name}', assetPrefix=f'Assets/Art/UI/Sprite/{name}/', fontAsset=None, boldWeight=.12, requireSkillApproval=True,
+                   stagingRoot=f'Assets/HtmlToUGUIStage/{name}', allowPrefabReplacement=False, fontMaterial=None)
     files = {
         '.html-directory.json': config,
         'inputs/brief.md': '# UI 需求\n\n填写用途、必须显示的元素、动态数据、交互、状态及参考图路径。当前没有业务需求或布局审批。\n',

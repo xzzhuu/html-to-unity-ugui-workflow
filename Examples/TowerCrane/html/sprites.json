@@ -432,7 +432,7 @@
       ],
       "hasAlpha": true,
       "purpose": "塔吊界面pill_red装饰或状态素材",
-      "usage": "source"
+      "usage": "preview-state"
     },
     {
       "source": "assets/sprites/status_green.png",

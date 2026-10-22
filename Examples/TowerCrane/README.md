@@ -27,7 +27,7 @@ PNG 是运行时素材，放在 `html/assets/`；SVG 源图在 `inputs/art-sourc
 
 实时指标为高度、幅度、回转角度、吊重、倾角和风速，共 3×2 个卡片；每张 `354×118`，水平间距约 19px、垂直间距 8px。历史图为高度、幅度、吊重和风速，固定 2×2 排列，每张 ChartCard `536×304`。报警示例覆盖 BaseCollision、Tilt、WindSpeed、Overload、LeftLimit、RightLimit、FrontLimit、RearLimit、UpperLimit。
 
-示例 CanvasScaler 参考值为 Scale With Screen Size、1920×1080、Expand。导入器只在场景没有可复用的活动根 Canvas 时新建 Canvas；已有 Canvas 的 CanvasScaler 设置会保留。
+示例 CanvasScaler 参考值为 Scale With Screen Size、1920×1080、Expand。0.3.0 导入默认只生成资源；只有显式 Place 操作才复用或新建场景 Canvas，并保留已有 CanvasScaler 设置。
 
 ## 导入后的对象层级
 
@@ -71,3 +71,7 @@ Canvas
 主 Prefab 位于 `Assets/Art/UIPrefab/TowerCraneDashboardPanel/TowerCraneDashboardPanel.prefab`。动态条目 Prefab 位于同目录的 `Items/Item_Device.prefab` 和 `Items/Item_Alarm.prefab`，内部根名与文件名一致；`UiTemplateCatalog` 将 `DeviceItem`、`AlarmItem` 逻辑键指向对应资源。通用导入器不会创建业务数据或运行时列表行，实际列表由接入项目负责。
 
 图片素材导入至 `Assets/Art/UI/Sprite/TowerCraneDashboardPanel/`。完整通用命名规则、流程及 Unity 导入边界分别见 [Skill](../../Skills/ui-panel-design-to-html/SKILL.md) 和独立 package 的 README。Unity 工程中不保存本示例 HTML、CSS、预览 JS、布局图或审核材料。
+
+## 0.3.0 状态语义
+
+DeviceItem 的 data-selected-sprite 对应原生导航 Selected 状态；浏览器设备业务选择仍由预览脚本实现，接入应用需要自行保持业务选择状态。报警 Pill 是普通 Image，不支持 Selectable 状态；红色 Pill 图片登记为 preview-state，不自动复制到 Unity。运行时报警颜色由项目数据层配置 Image.color 或显式加载素材，不能把报警状态误映射为导航 Selected。

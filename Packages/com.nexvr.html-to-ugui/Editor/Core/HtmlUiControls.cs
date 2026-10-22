@@ -30,7 +30,7 @@ namespace HtmlToUGUI.Editor
             var fill = CreateImage("Img_Fill", go.transform, new Dictionary<string, string>());
             Stretch(fill.GetComponent<RectTransform>(), Vector2.zero, Vector2.zero);
             fill.GetComponent<Image>().color = ReadColor(style, "color", new Color(0, .8f, 1));
-            var area = new GameObject("Group_HandleArea", typeof(RectTransform)); area.transform.SetParent(go.transform, false);
+            var area = UiTemporarySceneScope.CreateGameObject("Group_HandleArea", typeof(RectTransform)); area.transform.SetParent(go.transform, false);
             Stretch(area.GetComponent<RectTransform>(), new Vector2(8, 0), new Vector2(-8, 0));
             var handle = CreateImage("Img_Handle", area.transform, new Dictionary<string, string>());
             var hr = handle.GetComponent<RectTransform>(); hr.sizeDelta = new Vector2(16, 24);

@@ -7,7 +7,7 @@
 
 A reusable workflow from UI requirements and layout review to browser-previewable XHTML and native Unity UGUI / TextMesh Pro prefabs.
 
-This repository includes a Codex Skill, four external HTML examples, Python tools, and the complete source for the `com.nexvr.html-to-ugui` 0.2.0 UPM package. Design source files stay outside the Unity project. The importer creates image assets, Panel / Item prefabs, and generic binding metadata; the receiving application implements its own data handling and interactions.
+This repository includes a Codex Skill, four external HTML examples, Python tools, and the complete source for the `com.nexvr.html-to-ugui` 0.3.0 UPM package. Design source files stay outside the Unity project. The importer creates image assets, Panel / Item prefabs, and generic binding metadata; the receiving application implements its own data handling and interactions.
 
 ## Features and boundaries
 
@@ -99,7 +99,7 @@ https://github.com/xzzhuu/html-to-unity-ugui-workflow.git?path=/Packages/com.nex
 
 Import TMP Essential Resources and select a TMP font containing the required glyphs. Then choose **Tools → HTML to UGUI → Import Panel...** and select a prepared HTML file outside the Unity project.
 
-Referenced images are written to `Assets/Art/UI/Sprite/{PanelName}/`. The main prefab is written to `Assets/Art/UIPrefab/{PanelName}/`, with dynamic Item prefabs in `Items/`. The root Panel is placed under a Canvas. Save scene changes manually. See the [package guide](Packages/com.nexvr.html-to-ugui/README.md) for input requirements, outputs, and conversion limits.
+Generation defaults to `Assets/HtmlToUGUIStage/{PanelName}/`. Review panels in `Assets/HtmlToUGUIStage/StageScene.unity` using **Tools → HTML to UGUI → Stage Panels...**, check the panels you want, inspect the copy plan, then copy them to formal folders. Main and Item prefabs share `Assets/Art/UIPrefab/{PanelName}/`; images go to `Assets/Art/UI/Sprite/{PanelName}/`. Reports remain in staging, and fonts/materials reuse existing project resources. See the [package guide](Packages/com.nexvr.html-to-ugui/README.md) for input requirements, outputs, and conversion limits.
 
 ### Open the sample Unity project
 
