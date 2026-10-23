@@ -1,0 +1,30 @@
+{
+  "count": 25,
+  "passed": [
+    "Scan finds valid nested panels, reports invalid JSON and skips dependency folders",
+    "Scanning creates no project stage folder",
+    "Missing project manifest reports its full path once without retrying panels, creating assets or fabricating approvals",
+    "Invalid shared manifest stops batch planning once before panel planning",
+    "Malformed selections fail read-only planning without creating assets",
+    "Package paths outside the selected project are rejected",
+    "Invalid project folder rejected: ..",
+    "Invalid project folder rejected: A/B",
+    "Invalid project folder rejected: C:\\Escape",
+    "Invalid project folder rejected: CON",
+    "Invalid project folder rejected:  ",
+    "Whole-project plan is read-only and every target is under its project folder",
+    "Changing a later package invalidates the batch before the first write",
+    "Duplicate names inside a project are blocked before execution",
+    "Single-package reader supports optional projectName without an explicit stagingRoot",
+    "Selected panels import into distinct project/panel folders with a batch report",
+    "Existing generated Prefabs are protected at project preflight",
+    "Stage discovery exposes project grouping and an unambiguous selection key",
+    "Grouped staged panels still copy and remap into formal resources",
+    "Ambiguous unqualified names are rejected before changing any scene",
+    "Two projects can preview the same panel name in separate hierarchy groups",
+    "Grouped preview selection activates exactly one panel",
+    "Mid-batch source changes retain successful panels and stop without creating the failed panel",
+    "Cancellation between panels is reported without importing the remaining selection",
+    "Project regression preserves the user's active scene and dirty state"
+  ]
+}

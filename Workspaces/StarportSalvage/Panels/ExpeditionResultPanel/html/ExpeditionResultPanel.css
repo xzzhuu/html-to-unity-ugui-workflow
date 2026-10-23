@@ -1,0 +1,21 @@
+html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;background:#89939C}
+.node{position:absolute;box-sizing:border-box;margin:0;padding:0;border:0;font-family:"Microsoft YaHei",sans-serif;line-height:1.4}
+.text{pointer-events:none;white-space:pre-wrap;overflow:hidden;text-align:left}
+.control{cursor:pointer;outline:none}
+.control:hover{filter:brightness(1.08)}
+.control:active{filter:brightness(.88)}
+.control:focus-visible{outline:3px solid #EEF5F7;outline-offset:3px}
+.control:disabled{cursor:default;opacity:.45;filter:none}
+.scroll{overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:#4AD7BB #192E3C}
+.scroll::-webkit-scrollbar{width:5px}.scroll::-webkit-scrollbar-thumb{background:#4AD7BB}
+.input{padding:12px 24px;outline:none}
+.input:focus{outline:2px solid #4AD7BB;outline-offset:-2px}
+.input::placeholder{color:#AAC0CA}
+.icon{mask-size:100% 100%;mask-repeat:no-repeat;-webkit-mask-size:100% 100%}
+.slider{appearance:none;-webkit-appearance:none;background:transparent;accent-color:#4AD7BB;cursor:pointer}
+.slider::-webkit-slider-runnable-track{height:10px;border-radius:5px;background:linear-gradient(to right,#4AD7BB var(--progress),#203745 var(--progress))}
+.slider::-webkit-slider-thumb{appearance:none;width:28px;height:28px;background:#EEF5F7;border-radius:50%;margin-top:-9px}
+.slider:disabled{cursor:default;opacity:.5}
+.toggle{appearance:none;-webkit-appearance:none;width:90px;height:42px;border-radius:21px;background:#36505F;cursor:pointer}
+.toggle::after{content:"";position:absolute;left:5px;top:5px;width:32px;height:32px;border-radius:50%;background:#EEF5F7}
+.toggle:checked{background:#4AD7BB}.toggle:checked::after{left:50px}

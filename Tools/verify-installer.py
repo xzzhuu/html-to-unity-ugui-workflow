@@ -24,6 +24,10 @@ with tempfile.TemporaryDirectory(prefix='skill-install-') as directory:
     installer.install(source,destination)
     assert not (destination/'obsolete.txt').exists() and (destination/'user-note.txt').read_text()=='keep'
     assert installer.install(source,destination,check=True)['passed']
-report={'passed':3,'checks':['Caches not installed','Retired managed file pruned; unknown user note retained','Installed owned files match source']}
+    for target in (source/'nested', source.parent):
+        try: installer.install(source,target)
+        except ValueError: pass
+        else: raise AssertionError('Overlapping source/destination accepted')
+report={'passed':5,'checks':['Caches not installed','Retired managed file pruned; unknown user note retained','Installed owned files match source','Destination inside source rejected','Source inside destination rejected']}
 (root/'Audit/Runs/latest/installer-regression.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps(report))

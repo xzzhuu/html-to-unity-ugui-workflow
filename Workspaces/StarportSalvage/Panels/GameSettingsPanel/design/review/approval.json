@@ -1,0 +1,8 @@
+{
+  "status": "approved",
+  "imageSha256": "68732364c51f83368dbd6403d3bd918e2b6e79e99a58712055d6db434bcfd94b",
+  "userApproval": "确认，进行下一步",
+  "approvedAt": "2026-10-22",
+  "scope": "六面板整体布局与配色 v01；不包含元素组图、未展示状态、HTML或Unity验收",
+  "sourcePreview": "GameSettingsPanel/design/layout/Img_GameSettingsPanel_Preview_v01.png"
+}

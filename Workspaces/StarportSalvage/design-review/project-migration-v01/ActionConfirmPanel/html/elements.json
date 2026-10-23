@@ -1,0 +1,475 @@
+{
+  "schemaVersion": 1,
+  "panelName": "ActionConfirmPanel",
+  "status": "ready",
+  "templates": [],
+  "elements": [
+    {
+      "elementId": "ActionConfirmPanel",
+      "unityName": "ActionConfirmPanel",
+      "parentId": null,
+      "hierarchyPath": "ActionConfirmPanel",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "ActionConfirmPanel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "原生控件辅助节点，所属ActionConfirmPanel",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Btn_ModalBlocker",
+      "unityName": "Btn_ModalBlocker",
+      "parentId": "ActionConfirmPanel",
+      "hierarchyPath": "ActionConfirmPanel/Btn_ModalBlocker",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "ActionConfirmPanel__Btn_ModalBlocker",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "全屏半透明遮罩，原生Button图形拦截底层指针；自身不执行操作",
+      "dataSource": null,
+      "pictureRegion": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody",
+      "unityName": "Group_PanelBody",
+      "parentId": "ActionConfirmPanel",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ActionConfirmPanel__Group_PanelBody",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "PanelBody，用于操作确认",
+      "dataSource": null,
+      "pictureRegion": [
+        600,
+        280,
+        720,
+        520
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody/Txt_ConfirmTitle",
+      "unityName": "Txt_ConfirmTitle",
+      "parentId": "ActionConfirmPanel/Group_PanelBody",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody/Txt_ConfirmTitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ActionConfirmPanel__Txt_ConfirmTitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Confirm.Title",
+      "purpose": "显示确认派遣远征队？",
+      "dataSource": "Confirm.Title",
+      "pictureRegion": [
+        640,
+        316,
+        570,
+        58
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody/Btn_CloseConfirm",
+      "unityName": "Btn_CloseConfirm",
+      "parentId": "ActionConfirmPanel/Group_PanelBody",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody/Btn_CloseConfirm",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "ActionConfirmPanel__Btn_CloseConfirm",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.CloseConfirm",
+      "purpose": "CloseConfirm，用于操作确认",
+      "dataSource": "Action.CloseConfirm",
+      "pictureRegion": [
+        1240,
+        312,
+        48,
+        48
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody/Btn_CloseConfirm/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "ActionConfirmPanel/Group_PanelBody/Btn_CloseConfirm",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody/Btn_CloseConfirm/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属ActionConfirmPanel/Group_PanelBody/Btn_CloseConfirm",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody/Txt_ConfirmMission",
+      "unityName": "Txt_ConfirmMission",
+      "parentId": "ActionConfirmPanel/Group_PanelBody",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody/Txt_ConfirmMission",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ActionConfirmPanel__Txt_ConfirmMission",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Confirm.Mission",
+      "purpose": "显示废弃货运站",
+      "dataSource": "Confirm.Mission",
+      "pictureRegion": [
+        640,
+        378,
+        450,
+        44
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody/Txt_ConfirmRisk",
+      "unityName": "Txt_ConfirmRisk",
+      "parentId": "ActionConfirmPanel/Group_PanelBody",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody/Txt_ConfirmRisk",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ActionConfirmPanel__Txt_ConfirmRisk",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Confirm.Risk",
+      "purpose": "显示低风险",
+      "dataSource": "Confirm.Risk",
+      "pictureRegion": [
+        1126,
+        380,
+        140,
+        34
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody/Group_CostSummary",
+      "unityName": "Group_CostSummary",
+      "parentId": "ActionConfirmPanel/Group_PanelBody",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody/Group_CostSummary",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ActionConfirmPanel__Group_CostSummary",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "CostSummary，用于操作确认",
+      "dataSource": null,
+      "pictureRegion": [
+        640,
+        432,
+        640,
+        100
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody/Group_CostSummary/Txt_ConfirmCreditsLabel",
+      "unityName": "Txt_ConfirmCreditsLabel",
+      "parentId": "ActionConfirmPanel/Group_PanelBody/Group_CostSummary",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody/Group_CostSummary/Txt_ConfirmCreditsLabel",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ActionConfirmPanel__Txt_ConfirmCreditsLabel",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Confirm.CreditsLabel",
+      "purpose": "显示信用点费用",
+      "dataSource": "Confirm.CreditsLabel",
+      "pictureRegion": [
+        664,
+        448,
+        280,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody/Group_CostSummary/Txt_ConfirmCredits",
+      "unityName": "Txt_ConfirmCredits",
+      "parentId": "ActionConfirmPanel/Group_PanelBody/Group_CostSummary",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody/Group_CostSummary/Txt_ConfirmCredits",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ActionConfirmPanel__Txt_ConfirmCredits",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Confirm.Credits",
+      "purpose": "显示100",
+      "dataSource": "Confirm.Credits",
+      "pictureRegion": [
+        664,
+        481,
+        280,
+        44
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody/Group_CostSummary/Txt_ConfirmEnergyLabel",
+      "unityName": "Txt_ConfirmEnergyLabel",
+      "parentId": "ActionConfirmPanel/Group_PanelBody/Group_CostSummary",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody/Group_CostSummary/Txt_ConfirmEnergyLabel",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ActionConfirmPanel__Txt_ConfirmEnergyLabel",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Confirm.EnergyLabel",
+      "purpose": "显示能源费用",
+      "dataSource": "Confirm.EnergyLabel",
+      "pictureRegion": [
+        974,
+        448,
+        280,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody/Group_CostSummary/Txt_ConfirmEnergy",
+      "unityName": "Txt_ConfirmEnergy",
+      "parentId": "ActionConfirmPanel/Group_PanelBody/Group_CostSummary",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody/Group_CostSummary/Txt_ConfirmEnergy",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ActionConfirmPanel__Txt_ConfirmEnergy",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Confirm.Energy",
+      "purpose": "显示20",
+      "dataSource": "Confirm.Energy",
+      "pictureRegion": [
+        974,
+        481,
+        280,
+        44
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody/Txt_ConfirmLoadout",
+      "unityName": "Txt_ConfirmLoadout",
+      "parentId": "ActionConfirmPanel/Group_PanelBody",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody/Txt_ConfirmLoadout",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ActionConfirmPanel__Txt_ConfirmLoadout",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Confirm.Loadout",
+      "purpose": "显示携行：急救包×3、能源电池×2",
+      "dataSource": "Confirm.Loadout",
+      "pictureRegion": [
+        640,
+        558,
+        640,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody/Txt_ConfirmWeight",
+      "unityName": "Txt_ConfirmWeight",
+      "parentId": "ActionConfirmPanel/Group_PanelBody",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody/Txt_ConfirmWeight",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ActionConfirmPanel__Txt_ConfirmWeight",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Confirm.Weight",
+      "purpose": "显示总重7.0 / 20.0kg · 演示耗时3秒",
+      "dataSource": "Confirm.Weight",
+      "pictureRegion": [
+        640,
+        597,
+        640,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody/Txt_ConfirmWarning",
+      "unityName": "Txt_ConfirmWarning",
+      "parentId": "ActionConfirmPanel/Group_PanelBody",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody/Txt_ConfirmWarning",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ActionConfirmPanel__Txt_ConfirmWarning",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Confirm.Warning",
+      "purpose": "显示确认后立即扣除费用；取消不会产生消耗。",
+      "dataSource": "Confirm.Warning",
+      "pictureRegion": [
+        640,
+        646,
+        640,
+        50
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody/Btn_CancelConfirm",
+      "unityName": "Btn_CancelConfirm",
+      "parentId": "ActionConfirmPanel/Group_PanelBody",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody/Btn_CancelConfirm",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "ActionConfirmPanel__Btn_CancelConfirm",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.CancelConfirm",
+      "purpose": "CancelConfirm，用于操作确认",
+      "dataSource": "Action.CancelConfirm",
+      "pictureRegion": [
+        640,
+        710,
+        240,
+        60
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody/Btn_CancelConfirm/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "ActionConfirmPanel/Group_PanelBody/Btn_CancelConfirm",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody/Btn_CancelConfirm/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属ActionConfirmPanel/Group_PanelBody/Btn_CancelConfirm",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody/Btn_Confirm",
+      "unityName": "Btn_Confirm",
+      "parentId": "ActionConfirmPanel/Group_PanelBody",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody/Btn_Confirm",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "ActionConfirmPanel__Btn_Confirm",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.Confirm",
+      "purpose": "Confirm，用于操作确认",
+      "dataSource": "Action.Confirm",
+      "pictureRegion": [
+        904,
+        710,
+        376,
+        60
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Group_PanelBody/Btn_Confirm/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "ActionConfirmPanel/Group_PanelBody/Btn_Confirm",
+      "hierarchyPath": "ActionConfirmPanel/Group_PanelBody/Btn_Confirm/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属ActionConfirmPanel/Group_PanelBody/Btn_Confirm",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ActionConfirmPanel/Txt_Feedback",
+      "unityName": "Txt_Feedback",
+      "parentId": "ActionConfirmPanel",
+      "hierarchyPath": "ActionConfirmPanel/Txt_Feedback",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ActionConfirmPanel__Txt_Feedback",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Feedback.Message",
+      "purpose": "Feedback，用于操作确认",
+      "dataSource": "Feedback.Message",
+      "pictureRegion": [
+        420,
+        970,
+        1000,
+        28
+      ],
+      "states": [
+        "normal"
+      ]
+    }
+  ]
+}

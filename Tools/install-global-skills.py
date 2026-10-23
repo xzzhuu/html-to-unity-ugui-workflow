@@ -17,7 +17,8 @@ def eligible(path):
 
 def install(source,destination,check=False):
     source,destination=Path(source).resolve(),Path(destination).resolve()
-    if source==destination: raise ValueError('Install source cannot equal destination')
+    if source.is_relative_to(destination) or destination.is_relative_to(source):
+        raise ValueError('Install source and destination must not overlap')
     desired={p.relative_to(source).as_posix():p for p in source.rglob('*') if p.is_file() and eligible(p.relative_to(source))}
     previous=json.loads((destination/INDEX).read_text(encoding='utf-8')).get('files',{}) if (destination/INDEX).exists() else {}
     missing=[name for name,path in desired.items() if not (destination/name).is_file() or path.read_bytes()!=(destination/name).read_bytes()]

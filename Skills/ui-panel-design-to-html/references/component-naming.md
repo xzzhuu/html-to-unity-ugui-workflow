@@ -60,19 +60,19 @@ The shared schema additionally records sourceType, htmlId, dataSource and states
 | Unity 组件 | 素材前缀 | 示例 |
 | --- | --- | --- |
 | Button | Btn | Btn_Primary_Background.png |
-| Toggle | Tgl | Tgl_Option_Checkmark.png |
+| Toggle | Tgl | Tgl_Option_Surface_Off.png |
 | InputField / TMP_InputField | Inp | Inp_Search_Background.png |
 | Dropdown / TMP_Dropdown | Dpd | Dpd_Quality_Arrow.png |
 | Slider | Sld | Sld_Volume_Handle.png |
 | Scrollbar | Sbr | Sbr_List_Handle.png |
 | Scroll View / ScrollRect | Scr | Scr_List_Background.png |
-| Image / 跨组件共用图形 | Img | Img_RoundedSurface.png |
+| Image / 独立装饰图形 | Img | Img_RoundedSurface.png |
 | RawImage / Texture | RawImg | RawImg_Preview_Pattern.png |
 | Text / TMP 的组图 | Txt | Txt_Title_Sheet.png |
 
-此表是映射，不是要求制作全部类型。组图使用相同前缀，例如 `Btn_Primary_Sheet.png`；单个组可包含文字、图标、背景和实际需要的状态。记录里的 componentType 使用左列的规范类型（InputField、Dropdown、ScrollView、Text），不按 TMP 类名重复建组。
+此表是映射，不是要求制作全部类型。组图使用相同前缀，例如 `Btn_Primary_Sheet.png`；单个组可包含文字、图标、背景和实际需要的状态。设计组沿用左列类型；游戏素材注册表使用实际 TMP_InputField、TMP_Dropdown、ScrollRect 等类型，不能把不同实际类型自动合并。
 
-专用于按钮的背景用 Btn；多个组件共用同一图形时用 Img，并在使用映射中列出实际拥有者。形状相同、只有颜色差异的 Primary/Danger 等按钮共用一个背景素材，不因为示例语义不同各导出一份。Normal/Pressed 等状态仅在形状、纹理或透明度结构不同时拆分；纯颜色状态用 Image.color / Color Tint。不输出 Btn_Red、Btn_Blue 等仅颜色不同的副本。
+按钮背景和其专属子图标用 Btn，Toggle 用 Tgl；仅同一实际组件类型的对应部件可复用，禁止跨类型共用。独立 Image 用 Img，不能把控件子图形登记为 Image 来绕过隔离。形状相同、只有颜色差异的 Primary/Danger 等按钮共用一个背景素材，不因为示例语义不同各导出一份。Toggle 固定保留 Off/On/Disabled 三张状态整图，不规则形状不得拆几何碎片；其余控件 Normal/Pressed 等状态仅在形状、纹理或透明度结构不同时拆分；纯颜色状态用 Image.color / Color Tint。不输出 Btn_Red、Btn_Blue 等仅颜色不同的副本。
 
 保持源文件分辨率与透明细节，尺寸记录在清单中而不是强制写入文件名。已有资产原位改名时通过 Unity AssetDatabase/MCP 保留 meta/GUID；未经授权不批量重命名旧素材。引用旧命名源图时可保留为输入参考，正式新导出文件使用本规则。
 
@@ -81,3 +81,5 @@ The shared schema additionally records sourceType, htmlId, dataSource and states
 正式面板预览规则：每个面板单独输出，画布使用纯色背景，不叠加场景、照片、纹理、棋盘格等干扰；在面板主体外标注画布宽×高和主体宽×高。默认画布 1920×1080；素材 POT 像素尺寸不约束 RectTransform 布局尺寸，也不要求预览图改成 POT。确认后将组图和完整面板预览原分辨率导入 Unity 独立参考目录。
 
 VR 素材约束：各元素均使用无边缘描线的填充造型，不制作按钮/底板/内衬等细轮廓或额外 Outline 素材；通过填充色、明暗、透明度与留白表达层级及状态。装饰性细分隔线改用留白。九宫格切片边距和审核尺寸标注线保留；去描边不等于已完成设备抗锯齿验收。
+
+游戏级清单、完整部件拆分与规范资产规则见 [项目素材契约](project-assets.md)。

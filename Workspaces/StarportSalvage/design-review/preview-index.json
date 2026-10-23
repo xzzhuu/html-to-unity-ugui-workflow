@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "status": "approved",
+  "panels": [
+    {
+      "panelName": "StarportHomePanel",
+      "title": "星港基地",
+      "status": "approved",
+      "preview": "Panels/StarportHomePanel/design/layout/Img_StarportHomePanel_Preview_v01.png",
+      "sha256": "5c86063f58eac5cacb1799bb6263dd6ffb5f4faab5c9e92982d72c9c9a1cfd61",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "body": [
+        120,
+        80,
+        1680,
+        920
+      ]
+    },
+    {
+      "panelName": "ExpeditionSelectPanel",
+      "title": "远征选择",
+      "status": "approved",
+      "preview": "Panels/ExpeditionSelectPanel/design/layout/Img_ExpeditionSelectPanel_Preview_v01.png",
+      "sha256": "73acb2bffe9146735b5599ff9e7d7fa7435dfe8495d93077e6776376b93a7f47",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "body": [
+        120,
+        80,
+        1680,
+        920
+      ]
+    },
+    {
+      "panelName": "SupplyInventoryPanel",
+      "title": "仓库整备",
+      "status": "approved",
+      "preview": "Panels/SupplyInventoryPanel/design/layout/Img_SupplyInventoryPanel_Preview_v01.png",
+      "sha256": "62e42263e59d77546e05528b2d5809a3c048c9625473b84197dada50132dbfb4",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "body": [
+        120,
+        80,
+        1680,
+        920
+      ]
+    },
+    {
+      "panelName": "GameSettingsPanel",
+      "title": "游戏设置",
+      "status": "approved",
+      "preview": "Panels/GameSettingsPanel/design/layout/Img_GameSettingsPanel_Preview_v01.png",
+      "sha256": "68732364c51f83368dbd6403d3bd918e2b6e79e99a58712055d6db434bcfd94b",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "body": [
+        120,
+        80,
+        1680,
+        920
+      ]
+    },
+    {
+      "panelName": "ActionConfirmPanel",
+      "title": "操作确认",
+      "status": "approved",
+      "preview": "Panels/ActionConfirmPanel/design/layout/Img_ActionConfirmPanel_Preview_v01.png",
+      "sha256": "682e5e76ca0fd7aef842d4c3711b3d7c7b6299c319328b2a557b333557dd1b9e",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "body": [
+        600,
+        280,
+        720,
+        520
+      ]
+    },
+    {
+      "panelName": "ExpeditionResultPanel",
+      "title": "远征结算",
+      "status": "approved",
+      "preview": "Panels/ExpeditionResultPanel/design/layout/Img_ExpeditionResultPanel_Preview_v01.png",
+      "sha256": "fea455db244735a1d176300c960cd55617ea2b74b7907cc6e2cb781856a32a6e",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "body": [
+        120,
+        80,
+        1680,
+        920
+      ]
+    }
+  ],
+  "userApproval": "确认，进行下一步"
+}

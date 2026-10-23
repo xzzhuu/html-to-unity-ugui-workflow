@@ -1,5 +1,7 @@
 # Ready HTML → UGUI contract v1
 
+当前游戏源目录为 `{GameName}/Panels/{PanelName}/html/`；共享 `project.assets.json` 留在游戏根，准备包 `projectDirectory` 从 html/ 回退三级（`../../..`）。批量导入选择游戏根目录。
+
 This contract applies only to mode=full, after both panel-preview and reusable-element-sheet approval. For visual-only work, skip this document, HTML/browser/converter steps and use Unity MCP directly. Deliver assets and panel prefabs; do not create or modify C# for appearance.
 
 Each HTML document describes exactly one root Panel. Its exact English PascalCase name ends in Panel and is shared by the root object, main prefab and per-panel folders. All areas, controls and item instances are descendants of that root; only its name determines panel output paths. A child ID ending in Panel remains a child container, not another root Panel.
@@ -56,10 +58,10 @@ Native text uses the selected TMP font, not browser font lookup. Bake decoration
 | Button | Image + Button; direct text produces TMP Label; child Text/Image allowed |
 | InputField | TMP_InputField, RectMask2D viewport, editable TMP Text + Placeholder |
 | ScrollView | ScrollRect + RectMask2D + transparent raycast Image + Content; vertical scroll |
-| Toggle | Toggle + background Image + Checkmark; data-is-on true/false |
+| Toggle | Toggle + 三态整图 Image + UiToggleStateGraphic；data-is-on true/false；旧技术入口保留 Checkmark |
 | Slider | Slider + Fill + Handle; data-min/max/value, data-whole-numbers |
 
-Selectable controls support `data-interactable="false"`. Initial Toggle/Slider visuals use the converter's simple generated geometry; if an approved design requires custom checkbox/track art, reuse approved sprites and existing native components through Unity MCP, then verify parity; do not extend the builder C# for appearance. Dropdown, horizontal scroll, UI Toolkit, arbitrary JavaScript behaviors, and full animation conversion are not implemented.
+Selectable controls support `data-interactable="false"`. Project Toggle uses data-toggle-off-sprite/data-toggle-on-sprite/data-toggle-disabled-sprite with three full surfaces and no generated Checkmark. Slider supports data-sprite for Track plus data-fill-sprite/data-handle-sprite. These are existing converter capabilities; do not write per-panel appearance scripts. All sprites must use the same border declaration on that source node; differing part borders require existing project Prefab adaptation. Dropdown, horizontal scroll, UI Toolkit, arbitrary JavaScript behaviors, and full animation conversion are not implemented.
 
 `data-binding` must be unique ignoring case within the main panel or each template. `UiBindingMap.Get<T>(key)` retrieves a typed native component. Templates may reuse the same keys as the panel or other templates; they each have a separate binding map.
 
@@ -125,8 +127,20 @@ This check is separate from HTML acceptance. Verify zero compiler errors, correc
 
 `UiVisualAudit.Capture(prefab, output, populate)` uses a disposable preview scene. Populate templates with the same preview data before comparison. `compare-layout.py` compares exported main binding rectangles within one design pixel; it does not cover all unbound decoration or prove image parity. Review screenshots separately. `HtmlUiRegressionChecks.Run()` checks importer behavior and invalid-input rejection; it is not a visual acceptance test.
 
+`Capture` also accepts an optional fourth background color. Use the approved solid canvas color on both sides and identify whether a modal is shown independently or over another screen. Review annotations belong outside runtime UI. Match the data, selected/locked states, icon tints and entire-group opacity before comparing screenshots. Native ColorTint only affects targetGraphic; it does not reproduce CSS opacity on every child.
+
+Complete Toggle state surfaces already contain their track and knob colors: keep their Image tint white rather than multiplying the browser fallback background again. Check native pointer On/Off and Disabled surfaces. For Sliders, explicitly assemble Track, FillArea and HandleArea from the approved parts; a zero-height centered HandleArea prevents vertical stretch, and the handle must render above the fill. Test the actual handle rectangle at minimum, middle and maximum values and keyboard increments.
+
+Nine-slice border metadata does not specify the final visible corner radius. Record the Image pixelsPerUnitMultiplier required by the approved source and target appearance, including Item prefabs. Never infer the corner of arbitrary textured art from CSS alone. Native assembly made through configureRoot/configureTemplate must be reapplied before saving a regenerated delivery and rechecked after formal copying.
+
+Check glyphs in both static text and representative dynamic data with the actual requested TMP font. Record any semantically equivalent character normalization or explicit existing fallback policy; do not silently substitute a font. Keep approval originals while updating the actual modified implementation hashes and the new validation evidence.
+
 Record which dimensions, states, and devices were actually exercised. Leave hardware pointer input, build-platform behavior, unsupported controls, or unreviewed visual states pending when they were not tested.
 
 Persist `html-acceptance.json` with `approvedLayoutSha256`, `approvedElementGroupsSha256`, checks, and `filesSha256` for every file under `html/` plus `design/element-groups.json`, plus the human-readable report. Run the shared readiness validator after setting `ready` only when actual review has passed. An unchanged hash proves evidence consistency, not aesthetic quality.
 
 Follow the target project's UIKit/UIRoot and formal prefab directory conventions. Preserve original GUIDs, bindings and events when replacing an existing panel; do not create an independent ordinary Canvas around the project UI lifecycle. Record actual Unity and VR-device checks separately.
+
+Formal promotion defaults to `Assets/Art/UI/Sprites`. Project shared Sprite output is `{formalSpriteRoot}/{GameName}/{relativePathWithinStagingSprites}`: strip the staging `Sprites/` bucket so the game directory does not contain a repeated `Sprites/` level. RawImage keeps its `Textures/` category. The prepared HTML asset prefix is a source mapping alias; the reviewed copy plan determines the formal destination. Move existing assets through Unity to preserve GUIDs, record current paths and a migration report, and retain original copy reports as historical evidence.
+
+Game imports use projectName and the approved project.assets.json inventory. References may use asset:AssetId; resolve them through the game registry before generation. Use the [project asset contract](project-assets.md) for type ownership, parts, states and synchronization.

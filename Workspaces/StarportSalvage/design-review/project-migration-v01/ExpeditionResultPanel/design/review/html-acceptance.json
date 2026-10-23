@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "approvedLayoutSha256": "fea455db244735a1d176300c960cd55617ea2b74b7907cc6e2cb781856a32a6e",
+  "approvedElementGroupsSha256": "c537604fd158ae5a433dd509affd43ebe02bd94baa34367785b500fba5fa4784",
+  "checks": {
+    "elements": "passed",
+    "naming": "passed",
+    "sprites": "passed",
+    "layout": "passed",
+    "visual": "passed",
+    "interactions": "passed"
+  },
+  "filesSha256": {
+    "html/assets/shared/Img_Confirm.png": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192",
+    "html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "html/assets/shared/Img_Credits.png": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+    "html/assets/shared/Img_ItemAlloy.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "html/assets/shared/Img_ItemChip.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "html/assets/shared/Img_ItemCircuit.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "html/assets/shared/Img_ItemOre.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "html/elements.json": "e01f893c87027042be6cadf8700b52cf9d3528ddda68301d731773f2ffe0a367",
+    "html/ExpeditionResultPanel.css": "d8eebde333e9e6bca273883ade27000805d8ec4552736b514a9ed42d3ca3ddea",
+    "html/ExpeditionResultPanel.html": "6cb98e068bab96bb411a43c6e8368655418f7bcb780f8ba4b8eaa5ec3270b41e",
+    "html/ExpeditionResultPanel.preview.js": "e167322c9926a726720415bb5a37d9d8b67461e8ac20c716f4a2b369f9c623bf",
+    "html/panel.package.json": "957b177d44d80f35f0ffcf282f6262d22236348cb3d0efcd72c3cb750e6fc335",
+    "html/sprites.json": "5ca2d71a39afd8bc95514a8bb80764fbbaf578ca0458304ba0d8d606ceb48401",
+    "design/element-groups.json": "615358b2649d5b26e59c15a3332705ebe583e505e3b005248ac265a8d354fc09",
+    "design/review/browser/default.png": "81e91a8623ba0d9f84627c3344b8fc495c5c46ca1bb35ac6198468bfc21b52bf",
+    "design/review/browser/checks.json": "6edc991a5739ff94bc8a1f6557a4f46791dcbcd42898ecd20eadc8566981fccb"
+  },
+  "screenshots": [
+    "design/review/browser/default.png"
+  ],
+  "browserVersion": "155.0.4283.62",
+  "unityAccepted": false,
+  "notes": "实际浏览器检查与模型视觉复核；像素差分仅用于诊断，不作为自动视觉通过阈值。Unity和设备尚未验证。"
+}

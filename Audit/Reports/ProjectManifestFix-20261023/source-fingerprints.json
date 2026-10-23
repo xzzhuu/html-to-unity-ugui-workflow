@@ -1,0 +1,32 @@
+[
+  {
+    "panel": "ActionConfirmPanel",
+    "status": "imported",
+    "sourceFingerprintsCurrent": true
+  },
+  {
+    "panel": "ExpeditionResultPanel",
+    "status": "imported",
+    "sourceFingerprintsCurrent": true
+  },
+  {
+    "panel": "ExpeditionSelectPanel",
+    "status": "imported",
+    "sourceFingerprintsCurrent": true
+  },
+  {
+    "panel": "GameSettingsPanel",
+    "status": "imported",
+    "sourceFingerprintsCurrent": true
+  },
+  {
+    "panel": "StarportHomePanel",
+    "status": "imported",
+    "sourceFingerprintsCurrent": true
+  },
+  {
+    "panel": "SupplyInventoryPanel",
+    "status": "imported",
+    "sourceFingerprintsCurrent": true
+  }
+]

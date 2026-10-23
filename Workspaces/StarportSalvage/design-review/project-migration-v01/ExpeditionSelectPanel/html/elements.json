@@ -1,0 +1,1428 @@
+{
+  "schemaVersion": 1,
+  "panelName": "ExpeditionSelectPanel",
+  "status": "ready",
+  "templates": [
+    {
+      "name": "MissionEntry",
+      "itemRootId": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content",
+      "bindingScope": "MissionEntry",
+      "itemSize": [
+        540,
+        152
+      ],
+      "stepPx": 174,
+      "dataSource": "missions",
+      "states": [
+        "normal",
+        "selected",
+        "empty",
+        "locked"
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "elementId": "ExpeditionSelectPanel",
+      "unityName": "ExpeditionSelectPanel",
+      "parentId": null,
+      "hierarchyPath": "ExpeditionSelectPanel",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "ExpeditionSelectPanel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "原生控件辅助节点，所属ExpeditionSelectPanel",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody",
+      "unityName": "Group_PanelBody",
+      "parentId": "ExpeditionSelectPanel",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionSelectPanel__Group_PanelBody",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "PanelBody，用于远征选择",
+      "dataSource": null,
+      "pictureRegion": [
+        120,
+        80,
+        1680,
+        920
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Txt_ListTitle",
+      "unityName": "Txt_ListTitle",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Txt_ListTitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_ListTitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示可用远征",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        246,
+        360,
+        40
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Txt_MissionCount",
+      "unityName": "Txt_MissionCount",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Txt_MissionCount",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_MissionCount",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Missions.Count",
+      "purpose": "显示03项",
+      "dataSource": "Missions.Count",
+      "pictureRegion": [
+        560,
+        250,
+        140,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions",
+      "unityName": "Scroll_Missions",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions",
+      "uguiComponent": "ScrollRect",
+      "sourceType": "ScrollView",
+      "htmlId": "ExpeditionSelectPanel__Scroll_Missions",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Missions.List",
+      "purpose": "Missions，用于远征选择",
+      "dataSource": "Missions.List",
+      "pictureRegion": [
+        160,
+        300,
+        540,
+        550
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content",
+      "unityName": "Group_Content",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content",
+      "uguiComponent": "RectTransform",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "承载滚动内容和动态条目，所属ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry",
+      "unityName": "Item_MissionEntry",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "ExpeditionSelectPanel__Item_MissionEntry",
+      "generated": false,
+      "template": "MissionEntry",
+      "bindingKey": "Mission.Select",
+      "purpose": "MissionEntry，用于远征选择",
+      "dataSource": "Mission.Select",
+      "pictureRegion": [
+        0,
+        0,
+        540,
+        152
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry/Img_MissionSelection",
+      "unityName": "Img_MissionSelection",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry/Img_MissionSelection",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionSelectPanel__Img_MissionSelection",
+      "generated": false,
+      "template": "MissionEntry",
+      "bindingKey": "Mission.SelectedMarker",
+      "purpose": "MissionSelection，用于远征选择",
+      "dataSource": "Mission.SelectedMarker",
+      "pictureRegion": [
+        0,
+        20,
+        5,
+        112
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry/Txt_MissionIndex",
+      "unityName": "Txt_MissionIndex",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry/Txt_MissionIndex",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_MissionIndex",
+      "generated": false,
+      "template": "MissionEntry",
+      "bindingKey": "Mission.Index",
+      "purpose": "显示01",
+      "dataSource": "Mission.Index",
+      "pictureRegion": [
+        28,
+        23,
+        48,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry/Txt_MissionCardName",
+      "unityName": "Txt_MissionCardName",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry/Txt_MissionCardName",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_MissionCardName",
+      "generated": false,
+      "template": "MissionEntry",
+      "bindingKey": "Mission.Name",
+      "purpose": "显示废弃货运站",
+      "dataSource": "Mission.Name",
+      "pictureRegion": [
+        84,
+        22,
+        440,
+        44
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry/Txt_MissionCardRisk",
+      "unityName": "Txt_MissionCardRisk",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry/Txt_MissionCardRisk",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_MissionCardRisk",
+      "generated": false,
+      "template": "MissionEntry",
+      "bindingKey": "Mission.Risk",
+      "purpose": "显示低风险 · 预计10分钟",
+      "dataSource": "Mission.Risk",
+      "pictureRegion": [
+        84,
+        74,
+        430,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry/Txt_MissionCardState",
+      "unityName": "Txt_MissionCardState",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry/Txt_MissionCardState",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_MissionCardState",
+      "generated": false,
+      "template": "MissionEntry",
+      "bindingKey": "Mission.State",
+      "purpose": "显示已选中",
+      "dataSource": "Mission.State",
+      "pictureRegion": [
+        84,
+        110,
+        430,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "unityName": "Group_Details",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionSelectPanel__Group_Details",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "Details，用于远征选择",
+      "dataSource": null,
+      "pictureRegion": [
+        732,
+        250,
+        1028,
+        600
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RiskBadge",
+      "unityName": "Txt_RiskBadge",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RiskBadge",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_RiskBadge",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.Risk",
+      "purpose": "显示低风险",
+      "dataSource": "Mission.Risk",
+      "pictureRegion": [
+        786,
+        285,
+        380,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_MissionName",
+      "unityName": "Txt_MissionName",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_MissionName",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_MissionName",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.Name",
+      "purpose": "显示废弃货运站",
+      "dataSource": "Mission.Name",
+      "pictureRegion": [
+        772,
+        340,
+        920,
+        66
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_MissionDescription",
+      "unityName": "Txt_MissionDescription",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_MissionDescription",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_MissionDescription",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.Description",
+      "purpose": "显示回收遗留货箱与基础建材，适合新队长的首次远征。",
+      "dataSource": "Mission.Description",
+      "pictureRegion": [
+        772,
+        411,
+        944,
+        56
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_CreditsCostLabel",
+      "unityName": "Txt_CreditsCostLabel",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_CreditsCostLabel",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_CreditsCostLabel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示信用点费用",
+      "dataSource": null,
+      "pictureRegion": [
+        772,
+        480,
+        300,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_CreditsCost",
+      "unityName": "Txt_CreditsCost",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_CreditsCost",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_CreditsCost",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.CreditsCost",
+      "purpose": "显示100",
+      "dataSource": "Mission.CreditsCost",
+      "pictureRegion": [
+        772,
+        516,
+        300,
+        54
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_EnergyCostLabel",
+      "unityName": "Txt_EnergyCostLabel",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_EnergyCostLabel",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_EnergyCostLabel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示能源费用",
+      "dataSource": null,
+      "pictureRegion": [
+        1090,
+        480,
+        300,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_EnergyCost",
+      "unityName": "Txt_EnergyCost",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_EnergyCost",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_EnergyCost",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.EnergyCost",
+      "purpose": "显示20",
+      "dataSource": "Mission.EnergyCost",
+      "pictureRegion": [
+        1090,
+        516,
+        300,
+        54
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_DurationLabel",
+      "unityName": "Txt_DurationLabel",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_DurationLabel",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_DurationLabel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示预计时长",
+      "dataSource": null,
+      "pictureRegion": [
+        1408,
+        480,
+        300,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_Duration",
+      "unityName": "Txt_Duration",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_Duration",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_Duration",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.Duration",
+      "purpose": "显示10分钟",
+      "dataSource": "Mission.Duration",
+      "pictureRegion": [
+        1408,
+        516,
+        300,
+        54
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardTitle",
+      "unityName": "Txt_RewardTitle",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardTitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_RewardTitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示预计奖励",
+      "dataSource": null,
+      "pictureRegion": [
+        772,
+        588,
+        540,
+        40
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward0Seat",
+      "unityName": "Group_Reward0Seat",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward0Seat",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionSelectPanel__Group_Reward0Seat",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "Reward0Seat，用于远征选择",
+      "dataSource": null,
+      "pictureRegion": [
+        772,
+        638,
+        56,
+        56
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward0Seat/Img_Reward0",
+      "unityName": "Img_Reward0",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward0Seat",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward0Seat/Img_Reward0",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionSelectPanel__Img_Reward0",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.RewardIcon0",
+      "purpose": "Reward0，用于远征选择",
+      "dataSource": "Mission.RewardIcon0",
+      "pictureRegion": [
+        772,
+        638,
+        56,
+        56
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardName0",
+      "unityName": "Txt_RewardName0",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardName0",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_RewardName0",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.RewardName0",
+      "purpose": "显示信用点",
+      "dataSource": "Mission.RewardName0",
+      "pictureRegion": [
+        844,
+        637,
+        230,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardQuantity0",
+      "unityName": "Txt_RewardQuantity0",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardQuantity0",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_RewardQuantity0",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.RewardQuantity0",
+      "purpose": "显示+300",
+      "dataSource": "Mission.RewardQuantity0",
+      "pictureRegion": [
+        844,
+        672,
+        230,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward1Seat",
+      "unityName": "Group_Reward1Seat",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward1Seat",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionSelectPanel__Group_Reward1Seat",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "Reward1Seat，用于远征选择",
+      "dataSource": null,
+      "pictureRegion": [
+        1090,
+        638,
+        56,
+        56
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward1Seat/Img_Reward1",
+      "unityName": "Img_Reward1",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward1Seat",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward1Seat/Img_Reward1",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionSelectPanel__Img_Reward1",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.RewardIcon1",
+      "purpose": "Reward1，用于远征选择",
+      "dataSource": "Mission.RewardIcon1",
+      "pictureRegion": [
+        1090,
+        638,
+        56,
+        56
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardName1",
+      "unityName": "Txt_RewardName1",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardName1",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_RewardName1",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.RewardName1",
+      "purpose": "显示钛矿石",
+      "dataSource": "Mission.RewardName1",
+      "pictureRegion": [
+        1162,
+        637,
+        230,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardQuantity1",
+      "unityName": "Txt_RewardQuantity1",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardQuantity1",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_RewardQuantity1",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.RewardQuantity1",
+      "purpose": "显示×8",
+      "dataSource": "Mission.RewardQuantity1",
+      "pictureRegion": [
+        1162,
+        672,
+        230,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward2Seat",
+      "unityName": "Group_Reward2Seat",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward2Seat",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionSelectPanel__Group_Reward2Seat",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "Reward2Seat，用于远征选择",
+      "dataSource": null,
+      "pictureRegion": [
+        1408,
+        638,
+        56,
+        56
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward2Seat/Img_Reward2",
+      "unityName": "Img_Reward2",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward2Seat",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward2Seat/Img_Reward2",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionSelectPanel__Img_Reward2",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.RewardIcon2",
+      "purpose": "Reward2，用于远征选择",
+      "dataSource": "Mission.RewardIcon2",
+      "pictureRegion": [
+        1408,
+        638,
+        56,
+        56
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardName2",
+      "unityName": "Txt_RewardName2",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardName2",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_RewardName2",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.RewardName2",
+      "purpose": "显示合金板",
+      "dataSource": "Mission.RewardName2",
+      "pictureRegion": [
+        1480,
+        637,
+        230,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardQuantity2",
+      "unityName": "Txt_RewardQuantity2",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardQuantity2",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_RewardQuantity2",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.RewardQuantity2",
+      "purpose": "显示×2",
+      "dataSource": "Mission.RewardQuantity2",
+      "pictureRegion": [
+        1480,
+        672,
+        230,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_Recommended",
+      "unityName": "Txt_Recommended",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_Recommended",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_Recommended",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.Recommended",
+      "purpose": "显示推荐补给：急救包（推荐，非强制）",
+      "dataSource": "Mission.Recommended",
+      "pictureRegion": [
+        772,
+        754,
+        944,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_MissionLoadout",
+      "unityName": "Txt_MissionLoadout",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_MissionLoadout",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_MissionLoadout",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.LoadoutSummary",
+      "purpose": "MissionLoadout，用于远征选择",
+      "dataSource": "Mission.LoadoutSummary",
+      "pictureRegion": [
+        772,
+        794,
+        944,
+        40
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Txt_ListState",
+      "unityName": "Txt_ListState",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Txt_ListState",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_ListState",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Missions.Status",
+      "purpose": "ListState，用于远征选择",
+      "dataSource": "Missions.Status",
+      "pictureRegion": [
+        160,
+        370,
+        540,
+        144
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Btn_RetryMissions",
+      "unityName": "Btn_RetryMissions",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Btn_RetryMissions",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "ExpeditionSelectPanel__Btn_RetryMissions",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.RetryMissions",
+      "purpose": "RetryMissions，用于远征选择",
+      "dataSource": "Action.RetryMissions",
+      "pictureRegion": [
+        160,
+        550,
+        220,
+        60
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Btn_RetryMissions/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Btn_RetryMissions",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Btn_RetryMissions/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属ExpeditionSelectPanel/Group_PanelBody/Btn_RetryMissions",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header",
+      "unityName": "Group_Header",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Header",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "ExpeditionSelectPanel__Group_Header",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "Header，用于远征选择",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        112,
+        1600,
+        108
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_Title",
+      "unityName": "Txt_Title",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_Title",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_Title",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示远征选择",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        112,
+        700,
+        60
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_Subtitle",
+      "unityName": "Txt_Subtitle",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_Subtitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_Subtitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Page.Subtitle",
+      "purpose": "显示任务目录 / 选择目标，查看消耗与预计回收",
+      "dataSource": "Page.Subtitle",
+      "pictureRegion": [
+        160,
+        170,
+        1100,
+        35
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceCreditsLabel",
+      "unityName": "Txt_ResourceCreditsLabel",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceCreditsLabel",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_ResourceCreditsLabel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示信用点",
+      "dataSource": null,
+      "pictureRegion": [
+        980,
+        115,
+        240,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceCredits",
+      "unityName": "Txt_ResourceCredits",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceCredits",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_ResourceCredits",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Player.Credits",
+      "purpose": "显示2,400",
+      "dataSource": "Player.Credits",
+      "pictureRegion": [
+        980,
+        149,
+        270,
+        50
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceEnergyLabel",
+      "unityName": "Txt_ResourceEnergyLabel",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceEnergyLabel",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_ResourceEnergyLabel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示能源",
+      "dataSource": null,
+      "pictureRegion": [
+        1220,
+        115,
+        240,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceEnergy",
+      "unityName": "Txt_ResourceEnergy",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceEnergy",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_ResourceEnergy",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Player.Energy",
+      "purpose": "显示100 / 100",
+      "dataSource": "Player.Energy",
+      "pictureRegion": [
+        1220,
+        149,
+        270,
+        50
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeightLabel",
+      "unityName": "Txt_ResourceLoadoutWeightLabel",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeightLabel",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_ResourceLoadoutWeightLabel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示携行重量",
+      "dataSource": null,
+      "pictureRegion": [
+        1480,
+        115,
+        240,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeight",
+      "unityName": "Txt_ResourceLoadoutWeight",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeight",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_ResourceLoadoutWeight",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Player.LoadoutWeight",
+      "purpose": "显示7.0 / 20.0 kg",
+      "dataSource": "Player.LoadoutWeight",
+      "pictureRegion": [
+        1480,
+        149,
+        270,
+        50
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Img_HeaderDivider",
+      "unityName": "Img_HeaderDivider",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Img_HeaderDivider",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionSelectPanel__Img_HeaderDivider",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "HeaderDivider，用于远征选择",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        218,
+        1600,
+        2
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer",
+      "unityName": "Group_Footer",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "ExpeditionSelectPanel__Group_Footer",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "Footer，用于远征选择",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        890,
+        1600,
+        108
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Txt_Feedback",
+      "unityName": "Txt_Feedback",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Txt_Feedback",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_Feedback",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Feedback.Message",
+      "purpose": "Feedback，用于远征选择",
+      "dataSource": "Feedback.Message",
+      "pictureRegion": [
+        420,
+        970,
+        1000,
+        28
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_ReturnHome",
+      "unityName": "Btn_ReturnHome",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_ReturnHome",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "ExpeditionSelectPanel__Btn_ReturnHome",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.ReturnHome",
+      "purpose": "ReturnHome，用于远征选择",
+      "dataSource": "Action.ReturnHome",
+      "pictureRegion": [
+        160,
+        900,
+        220,
+        60
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_ReturnHome/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_ReturnHome",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_ReturnHome/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_ReturnHome",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_EditLoadout",
+      "unityName": "Btn_EditLoadout",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_EditLoadout",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "ExpeditionSelectPanel__Btn_EditLoadout",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.EditLoadout",
+      "purpose": "EditLoadout，用于远征选择",
+      "dataSource": "Action.EditLoadout",
+      "pictureRegion": [
+        1210,
+        900,
+        244,
+        60
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_EditLoadout/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_EditLoadout",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_EditLoadout/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_EditLoadout",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_StartExpedition",
+      "unityName": "Btn_StartExpedition",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_StartExpedition",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "ExpeditionSelectPanel__Btn_StartExpedition",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.StartExpedition",
+      "purpose": "StartExpedition，用于远征选择",
+      "dataSource": "Action.StartExpedition",
+      "pictureRegion": [
+        1478,
+        900,
+        282,
+        60
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_StartExpedition/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_StartExpedition",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_StartExpedition/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_StartExpedition",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Txt_ResourceDeficit",
+      "unityName": "Txt_ResourceDeficit",
+      "parentId": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Txt_ResourceDeficit",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionSelectPanel__Txt_ResourceDeficit",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Mission.Deficit",
+      "purpose": "显示资源充足，可以派遣",
+      "dataSource": "Mission.Deficit",
+      "pictureRegion": [
+        418,
+        917,
+        760,
+        46
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_IconCatalog",
+      "unityName": "Group_IconCatalog",
+      "parentId": "ExpeditionSelectPanel",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_IconCatalog",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "ExpeditionSelectPanel__Group_IconCatalog",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "IconCatalog，用于远征选择",
+      "dataSource": null,
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_IconCatalog/Img_ItemChip",
+      "unityName": "Img_ItemChip",
+      "parentId": "ExpeditionSelectPanel/Group_IconCatalog",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_IconCatalog/Img_ItemChip",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionSelectPanel__Img_ItemChip",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Source.Img_ItemChip",
+      "purpose": "注册动态Sprite引用，透明不绘制；供接入游戏的数据绑定使用",
+      "dataSource": "Source.Img_ItemChip",
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionSelectPanel/Group_IconCatalog/Img_ItemCircuit",
+      "unityName": "Img_ItemCircuit",
+      "parentId": "ExpeditionSelectPanel/Group_IconCatalog",
+      "hierarchyPath": "ExpeditionSelectPanel/Group_IconCatalog/Img_ItemCircuit",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionSelectPanel__Img_ItemCircuit",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Source.Img_ItemCircuit",
+      "purpose": "注册动态Sprite引用，透明不绘制；供接入游戏的数据绑定使用",
+      "dataSource": "Source.Img_ItemCircuit",
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    }
+  ]
+}

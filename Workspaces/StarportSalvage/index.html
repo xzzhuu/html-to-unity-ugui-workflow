@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>星港拾荒者 · UI演示</title>
+<style>
+html,body{height:100%;margin:0;background:#0b151e;color:#eef5f7;font:14px "Microsoft YaHei",sans-serif;overflow:hidden}
+header{height:52px;box-sizing:border-box;display:flex;align-items:center;gap:16px;padding:0 20px;background:#142330}
+strong{font-size:16px;margin-right:16px}button,select{font:inherit;border:0;border-radius:6px;padding:8px 12px;background:#203745;color:#eef5f7;cursor:pointer}
+button:hover{background:#36505f}.primary{background:#4ad7bb;color:#102b2c}small{margin-left:auto;color:#aac0ca}
+iframe{position:absolute;top:52px;left:0;width:100%;height:calc(100% - 52px);border:0}
+</style></head>
+<body><header><strong>星港拾荒者 · UI演示</strong>
+<button class="primary" id="initial">从初始状态开始</button><button id="prepared">载入整备示例</button>
+<select id="panel" aria-label="选择独立面板"><option value="StarportHomePanel">星港基地</option><option value="ExpeditionSelectPanel">远征选择</option><option value="SupplyInventoryPanel">仓库整备</option><option value="GameSettingsPanel">游戏设置</option><option value="ActionConfirmPanel">确认弹窗</option><option value="ExpeditionResultPanel">远征结算</option></select>
+<select id="fixture" aria-label="选择边界状态"><option value="">边界状态检查…</option><option>Default</option><option>Prepared</option><option>Result</option><option>OneItem</option><option>ManyItems</option><option>EmptyInventory</option><option>SearchEmpty</option><option>Insufficient</option><option>Overweight</option><option>LongText</option><option>Loading</option><option>Error</option><option>EmptyMissions</option></select>
+<small>上方为演示工具栏 · Unity业务逻辑需另行接入</small></header>
+<iframe id="game" title="游戏界面" src="Panels/StarportHomePanel/html/StarportHomePanel.html"></iframe>
+<script>
+const game=document.getElementById('game'),panels=document.getElementById('panel');
+function openPanel(panel,fixture){game.src='Panels/'+panel+'/html/'+panel+'.html'+(fixture?'?fixture='+fixture:'');panels.value=panel;}
+document.getElementById('initial').onclick=()=>openPanel('StarportHomePanel','Default');
+document.getElementById('prepared').onclick=()=>openPanel('SupplyInventoryPanel','Prepared');
+panels.onchange=()=>openPanel(panels.value);
+document.getElementById('fixture').onchange=e=>{if(!e.target.value)return;const n=e.target.value;let p=panels.value;if(['Loading','Error','EmptyMissions','Insufficient'].includes(n))p='ExpeditionSelectPanel';else if(n==='Result')p='ExpeditionResultPanel';else if(!['Default','Prepared'].includes(n))p='SupplyInventoryPanel';openPanel(p,n);e.target.value='';};
+game.onload=()=>{try{panels.value=game.contentWindow.StarportDemo.panel;}catch{}};
+</script></body></html>

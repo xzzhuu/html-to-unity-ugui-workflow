@@ -3,7 +3,7 @@ import argparse, hashlib, json, tarfile
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 parser=argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--package',type=Path,default=root/'Packages/com.nexvr.html-to-ugui')
+parser.add_argument('--package',type=Path,default=root/'Packages/com.nex.html-to-ugui')
 parser.add_argument('--output',type=Path,default=root/'dist')
 args=parser.parse_args()
 package=args.package.resolve()

@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "panelName": "ExpeditionSelectPanel",
+  "sprites": [
+    {
+      "source": "assets/shared/Img_Control_Background.png",
+      "path": "Assets/Art/UI/Sprite/ExpeditionSelectPanel/shared/Img_Control_Background.png",
+      "role": "Sprite",
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "pixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "purpose": "按钮和输入框共用圆角结构",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Img_Credits.png",
+      "path": "Assets/Art/UI/Sprite/ExpeditionSelectPanel/shared/Img_Credits.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        128,
+        128
+      ],
+      "hasAlpha": true,
+      "purpose": "独立操作或资源图形，不包含文字单位",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Img_ItemAlloy.png",
+      "path": "Assets/Art/UI/Sprite/ExpeditionSelectPanel/shared/Img_ItemAlloy.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Img_ItemChip.png",
+      "path": "Assets/Art/UI/Sprite/ExpeditionSelectPanel/shared/Img_ItemChip.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Img_ItemCircuit.png",
+      "path": "Assets/Art/UI/Sprite/ExpeditionSelectPanel/shared/Img_ItemCircuit.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Img_ItemOre.png",
+      "path": "Assets/Art/UI/Sprite/ExpeditionSelectPanel/shared/Img_ItemOre.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Img_RoundedSurface.png",
+      "path": "Assets/Art/UI/Sprite/ExpeditionSelectPanel/shared/Img_RoundedSurface.png",
+      "role": "Sprite",
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "pixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "purpose": "底板、卡片、列表与条目共用中性圆角",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/project/Image/Img_RoundedSurface_Surface_Default.png",
+      "path": "asset:Image_RoundedSurface_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "pixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Button/Btn_RoundedSurface_Surface_Normal.png",
+      "path": "asset:Button_RoundedSurface_Surface_Normal",
+      "role": "Sprite",
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "pixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Button/Surface/Normal",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Image/Img_Credits_Surface_Default.png",
+      "path": "asset:Image_Credits_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        128,
+        128
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Image/Img_ItemOre_Surface_Default.png",
+      "path": "asset:Image_ItemOre_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Image/Img_ItemAlloy_Surface_Default.png",
+      "path": "asset:Image_ItemAlloy_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Button/Btn_Control_Background_Surface_Normal.png",
+      "path": "asset:Button_Control_Background_Surface_Normal",
+      "role": "Sprite",
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "pixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Button/Surface/Normal",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Image/Img_ItemChip_Surface_Default.png",
+      "path": "asset:Image_ItemChip_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Image/Img_ItemCircuit_Surface_Default.png",
+      "path": "asset:Image_ItemCircuit_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    }
+  ]
+}

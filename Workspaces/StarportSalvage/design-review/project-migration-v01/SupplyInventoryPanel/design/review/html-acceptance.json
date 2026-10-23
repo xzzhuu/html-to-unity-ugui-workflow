@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "approvedLayoutSha256": "62e42263e59d77546e05528b2d5809a3c048c9625473b84197dada50132dbfb4",
+  "approvedElementGroupsSha256": "05ef7f748aafb6243aa02d82f9c924c0457802f848614d1e4fc258abfe356079",
+  "checks": {
+    "elements": "passed",
+    "naming": "passed",
+    "sprites": "passed",
+    "layout": "passed",
+    "visual": "passed",
+    "interactions": "passed"
+  },
+  "filesSha256": {
+    "html/assets/shared/Img_Circle.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "html/assets/shared/Img_ItemAlloy.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "html/assets/shared/Img_ItemBattery.png": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+    "html/assets/shared/Img_ItemBeacon.png": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+    "html/assets/shared/Img_ItemChip.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "html/assets/shared/Img_ItemCircuit.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "html/assets/shared/Img_ItemMedkit.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+    "html/assets/shared/Img_ItemOre.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "html/assets/shared/Img_ItemRation.png": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+    "html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "html/assets/shared/Sld_Value_Bar.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "html/elements.json": "b8b91b8da631a9bf990c23104ae41e1238ff81afa08c9e670f88919f5816a038",
+    "html/panel.package.json": "331ef5831bacbad5cb0ca51ae987d8c0a99b8b5d7e374e2d73000e96e05ce5bc",
+    "html/sprites.json": "8552cd845f5ba5fdb288a2df52019281f4529a6419bd93405d901a10751c41f5",
+    "html/SupplyInventoryPanel.css": "d8eebde333e9e6bca273883ade27000805d8ec4552736b514a9ed42d3ca3ddea",
+    "html/SupplyInventoryPanel.html": "654d12b272dd23e815d086717c05c872f18c3a9365e4cd4a64d4e4d3f9534cd4",
+    "html/SupplyInventoryPanel.preview.js": "e167322c9926a726720415bb5a37d9d8b67461e8ac20c716f4a2b369f9c623bf",
+    "design/element-groups.json": "e3ff032e5518f1fdaa2ffab1a761a5c25e25cbd1b4c78eabcbd384c15f185575",
+    "design/review/browser/default.png": "74c04338a4de1e40f12d74fc0276db424a07edd23e11481c117ee7f132cd0283",
+    "design/review/browser/checks.json": "6edc991a5739ff94bc8a1f6557a4f46791dcbcd42898ecd20eadc8566981fccb"
+  },
+  "screenshots": [
+    "design/review/browser/default.png"
+  ],
+  "browserVersion": "155.0.4283.62",
+  "unityAccepted": false,
+  "notes": "实际浏览器检查与模型视觉复核；像素差分仅用于诊断，不作为自动视觉通过阈值。Unity和设备尚未验证。"
+}

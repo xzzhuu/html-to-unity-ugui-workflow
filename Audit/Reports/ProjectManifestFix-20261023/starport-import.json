@@ -1,0 +1,53 @@
+{
+  "projectName": "StarportSalvage",
+  "status": "completed",
+  "reportPath": "Assets/HtmlToUGUIStage/StarportSalvage/Reports/project-import-20261023-130639-3cd28761e8424bb1a771fdd05fe61843.json",
+  "reportError": null,
+  "previewError": null,
+  "assetManifestHash": "b8e4068538f7bdc80708cdf395469fd06bc5e06e32ce0bda5f616f1f499792e4",
+  "assetWarnings": [],
+  "panels": [
+    {
+      "packagePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\ActionConfirmPanel\\html\\panel.package.json",
+      "panelName": "ActionConfirmPanel",
+      "status": "imported",
+      "prefabPath": "Assets/HtmlToUGUIStage/StarportSalvage/ActionConfirmPanel/Prefabs/ActionConfirmPanel.prefab",
+      "error": null
+    },
+    {
+      "packagePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\ExpeditionResultPanel\\html\\panel.package.json",
+      "panelName": "ExpeditionResultPanel",
+      "status": "imported",
+      "prefabPath": "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.prefab",
+      "error": null
+    },
+    {
+      "packagePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\ExpeditionSelectPanel\\html\\panel.package.json",
+      "panelName": "ExpeditionSelectPanel",
+      "status": "imported",
+      "prefabPath": "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.prefab",
+      "error": null
+    },
+    {
+      "packagePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\GameSettingsPanel\\html\\panel.package.json",
+      "panelName": "GameSettingsPanel",
+      "status": "imported",
+      "prefabPath": "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab",
+      "error": null
+    },
+    {
+      "packagePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\StarportHomePanel\\html\\panel.package.json",
+      "panelName": "StarportHomePanel",
+      "status": "imported",
+      "prefabPath": "Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/Prefabs/StarportHomePanel.prefab",
+      "error": null
+    },
+    {
+      "packagePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\SupplyInventoryPanel\\html\\panel.package.json",
+      "panelName": "SupplyInventoryPanel",
+      "status": "imported",
+      "prefabPath": "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab",
+      "error": null
+    }
+  ]
+}

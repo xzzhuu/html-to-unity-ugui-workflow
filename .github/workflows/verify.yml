@@ -33,3 +33,20 @@ jobs:
         with:
           name: upm-package-${{ matrix.os }}-py${{ matrix.python }}
           path: dist/*
+
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run verify:browser
+      - uses: actions/upload-artifact@v7.0.1
+        if: always()
+        with:
+          name: starport-browser-evidence
+          path: Audit/Runs/latest/starport-browser

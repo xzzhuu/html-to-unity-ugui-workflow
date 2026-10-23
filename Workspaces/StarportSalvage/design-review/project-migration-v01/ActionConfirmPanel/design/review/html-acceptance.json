@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "approvedLayoutSha256": "682e5e76ca0fd7aef842d4c3711b3d7c7b6299c319328b2a557b333557dd1b9e",
+  "approvedElementGroupsSha256": "3adcd2a39e0fb14e1acc82462397af60a82d8e4304d3e1cac90b3574e9575412",
+  "checks": {
+    "elements": "passed",
+    "naming": "passed",
+    "sprites": "passed",
+    "layout": "passed",
+    "visual": "passed",
+    "interactions": "passed"
+  },
+  "filesSha256": {
+    "html/ActionConfirmPanel.css": "d8eebde333e9e6bca273883ade27000805d8ec4552736b514a9ed42d3ca3ddea",
+    "html/ActionConfirmPanel.html": "d3657068ace60db6455e2e15100a39c8f8b96c1d100099683790cdb62f7a4a22",
+    "html/ActionConfirmPanel.preview.js": "e167322c9926a726720415bb5a37d9d8b67461e8ac20c716f4a2b369f9c623bf",
+    "html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "html/elements.json": "9b1c79146f09126c863bad8fb74366d3501bd29a539d0a9b6908bc93b4224858",
+    "html/panel.package.json": "40ef75e92ddab095d8bf44ac7a33e1d805edf9bebce3b09e4500d9f4db3196bb",
+    "html/sprites.json": "4494e45ce6a578549a1b3e34988e10c3b7e83cc477b12882640e0e6ab18e85dd",
+    "design/element-groups.json": "7f1dcf2c5a8cc6cbbed77d8731dec3f93115c617f9a075c5e3eea46fe13ce347",
+    "design/review/browser/default.png": "2c29bbe6af5ee1c9ba96f874138d3c518d79f522e40bc245e8eb0b923690b157",
+    "design/review/browser/checks.json": "6edc991a5739ff94bc8a1f6557a4f46791dcbcd42898ecd20eadc8566981fccb"
+  },
+  "screenshots": [
+    "design/review/browser/default.png"
+  ],
+  "browserVersion": "155.0.4283.62",
+  "unityAccepted": false,
+  "notes": "实际浏览器检查与模型视觉复核；像素差分仅用于诊断，不作为自动视觉通过阈值。Unity和设备尚未验证。"
+}

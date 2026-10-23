@@ -7,7 +7,7 @@
 
 从 UI 需求与布局审核，到可预览 XHTML，再到 Unity 原生 UGUI / TextMesh Pro 的可复用工作流。
 
-本仓库包含一个 Codex Skill、四组外部 HTML 示例、Python 工具，以及 `com.nexvr.html-to-ugui` 0.3.0 的完整 UPM 源码。设计源文件留在 Unity 工程外；转换器生成图片、Panel / Item Prefab 和通用绑定元数据，业务数据与交互由接入应用实现。
+本仓库包含一个 Codex Skill、星港六面板的完整制作示例、Python 工具，以及 `com.nex.html-to-ugui` 0.3.0 的完整 UPM 源码。设计源文件留在 Unity 工程外；转换器生成图片、Panel / Item Prefab 和通用绑定元数据，业务数据与交互由接入应用实现。
 
 完整英文说明见 [English README](README.en.md)。
 
@@ -17,26 +17,20 @@
 - 记录元素用途、语义名称、父级、原生组件、绑定与动态 Item 模板。
 - 校验 XHTML、素材、清单、审批记录和就绪状态。
 - 导入准备好的 XHTML 和 PNG 为原生 UGUI/TMP Panel 与 Item Prefab。
+- 选择项目根目录扫描并批量导入多个面板，暂存到 `Assets/HtmlToUGUIStage/{项目名}/{面板名}/`；预览按项目分组。
 - 提供浏览器预览与结构验证；转换器支持有限 CSS 子集，不能保证任意网页自动复刻。
 
-TowerCrane 是 `converter-example-unapproved` 转换示例，Starter 是 `draft-unapproved` 草稿。它们没有被标记为用户批准的正式视觉交付。结构校验通过不代表视觉一致性通过，浏览器 JavaScript 也不会转换成 Unity 业务逻辑。
+星港示例贯穿需求、面板预览确认、九组元素确认、素材导出、六套 HTML、Unity 暂存和正式复制。结构检查、浏览器交互、Unity 视觉与设备验收分别记录；浏览器 JavaScript 不会转换成 Unity 业务逻辑。
 
-## 示例截图
+## 星港制作流程示例
 
-以下为仓库 HTML 在浏览器中的实际预览，使用内置示例数据；不是 Unity 运行截图或已批准的最终视觉交付。示例界面目前为中文。
+从 [星港完整制作流程](docs/game-example/workflow.md) 开始，查看需求、用户批准的原图与素材、HTML、Unity 面板和复验命令。示例包含基地、远征选择、仓库整备、设置、确认弹窗和结算六页，统一使用 1920 × 1080 画布。
 
-### TowerCrane · 1920 × 1080
+| 星港基地 | 仓库整备 | 游戏设置 |
+| --- | --- | --- |
+| ![星港基地](docs/screenshots/starport-home.png) | ![仓库整备](docs/screenshots/starport-inventory.png) | ![游戏设置](docs/screenshots/starport-settings.png) |
 
-设备列表、六项实时指标、四张历史趋势图与报警状态。
-
-![塔吊仪表盘 HTML 预览](docs/screenshots/tower-crane-dashboard.png)
-
-| Inventory · 1280 × 720 | Settings · 720 × 1280 |
-| --- | --- |
-| 动态物品列表与条目选择 | 输入框、通知开关与音量滑块 |
-| <img src="docs/screenshots/inventory-panel.png" alt="库存面板：已选择标准物品 3" width="560" /> | <img src="docs/screenshots/settings-panel.png" alt="竖屏设置面板" width="240" /> |
-
-[完整截图与复现说明](docs/screenshots/README.md) 还包含设备切换状态及 Starter 初始化草稿。
+以上是实际 HTML 浏览器截图；Unity 实际对照与修正见 [视觉验证与转换规范](docs/game-example/conversion-rules.md)。
 
 ## 快速开始
 
@@ -45,11 +39,10 @@ TowerCrane 是 `converter-example-unapproved` 转换示例，Starter 是 `draft-
 ```sh
 git clone https://github.com/xzzhuu/html-to-unity-ugui-workflow.git
 cd html-to-unity-ugui-workflow
-python -X utf8 Skills/ui-panel-design-to-html/scripts/init_directory.py --root ./MyUI/Inventory --panel-name InventoryPanel
-python -X utf8 Skills/ui-panel-design-to-html/scripts/validate_directory.py --root ./MyUI/Inventory
+python -m http.server 8148 --bind 127.0.0.1 --directory Workspaces/StarportSalvage
 ```
 
-在浏览器打开生成的 `MyUI/Inventory/html/InventoryPanel.html`，或直接打开 [Inventory 示例](Examples/Inventory/html/InventoryPanel.html)。初始化会创建未审核草稿。
+在浏览器打开 [星港演示入口](http://127.0.0.1:8148/index.html)。新增游戏按 [工作区目录规则](docs/workspace-layout.md) 初始化；新目录始终为未审核草稿。
 
 ### 安装 Codex Skill
 
@@ -85,26 +78,34 @@ $ui-panel-design-to-html 我以“新文件目录”的身份调用，请初始�
 
 ### 安装 Unity 转换包
 
-在 Package Manager 使用 **Add package from disk**，选择本仓库 `Packages/com.nexvr.html-to-ugui/package.json`。
+在 Package Manager 使用 **Add package from disk**，选择本仓库 `Packages/com.nex.html-to-ugui/package.json`。
 
 或使用 **Add package from git URL**：
 
 ```text
-https://github.com/xzzhuu/html-to-unity-ugui-workflow.git?path=/Packages/com.nexvr.html-to-ugui
+https://github.com/xzzhuu/html-to-unity-ugui-workflow.git?path=/Packages/com.nex.html-to-ugui
 ```
 
-导入 TMP Essential Resources 并选择包含所需字符的 TMP 字体，然后用 **Tools → HTML to UGUI → Import Panel...** 选择工程外准备好的 HTML。
+导入 TMP Essential Resources 并选择包含所需字符的 TMP 字体，然后用 **Tools → HTML to UGUI → 导入单个面板...** 选择工程外准备好的 HTML。
 
-默认生成到 `Assets/HtmlToUGUIStage/{PanelName}/`，在 `Assets/HtmlToUGUIStage/StageScene.unity` 预览。使用 **Tools → HTML to UGUI → Stage Panels...** 逐个预览、勾选需要的面板、查看复制计划，再复制到正式目录。正式 Prefab 默认位于 `Assets/Art/UIPrefab/{PanelName}/`，Item 与主 Prefab 同级；图片进入 `Assets/Art/UI/Sprite/{PanelName}/`，报告留在暂存区。字体复用项目 TMP 默认字体和现有材质。详细输入契约与限制见 [包说明](Packages/com.nexvr.html-to-ugui/README.md)。
+默认生成到 `Assets/HtmlToUGUIStage/{PanelName}/`，在 `Assets/HtmlToUGUIStage/StageScene.unity` 预览。使用 **Tools → HTML to UGUI → 面板暂存与复制...** 逐个预览、勾选需要的面板、查看复制计划，再复制到正式目录。默认勾选“保留面板名称子目录”，主 Prefab 位于 `Assets/Art/UIPrefab/{PanelName}/{PanelName}.prefab`；取消后直接放在 `Assets/Art/UIPrefab/{PanelName}.prefab`。两种模式的 Item 均统一进入 `Assets/Art/UIPrefab/Item/`；图片进入 `Assets/Art/UI/Sprites/{PanelName}/`，报告留在暂存区。本工程字体使用 `PICOSansVFESC SDF` 及其已有共享材质。星港正式根目录指定为 `Assets/Art/UIPrefab/StarportSalvage`。目录示例与 API 见 [正式复制说明](docs/stage-promotion.md)，详细输入契约与限制见 [包说明](Packages/com.nex.html-to-ugui/README.md)。
+
+## 测试工程与游戏工作区
+
+打开克隆目录中的 `UnityProject/`，使用 Unity 2022.3.62f3c1。工程通过相对路径引用仓库内 UPM 包；换机器后按[工程说明](UnityProject/README.md)恢复字体和 TMP 必需资源，并调整可选的 Unity MCP 本机依赖。
+
+[星港拾荒者工作区](Workspaces/StarportSalvage/README.md)的全部 HTML 面板源包位于 `Workspaces/StarportSalvage/Panels/{PanelName}/`。`project.assets.json`、共享素材、设计审核与工具保留在游戏根目录。批量导入选择 `Workspaces/StarportSalvage`，单面板准备包的 `projectDirectory` 为 `../../..`。项目根已有素材清单时，初始化器会自动识别 `Panels/` 并生成相同的项目路径与暂存配置。窗口按钮和菜单子项统一使用中文。
 
 ## 仓库结构
+
+多个面板可使用 **Tools → HTML to UGUI → 导入整个项目...**：选项目目录 → 勾选面板 → 查看汇总计划 → 批量生成。项目目录名可编辑，默认使用所选源目录名称。单面板导入窗口继续可用；旧的平铺暂存内容保留。批量任务逐面板提交，遇到失败或取消时保留成功项并跳过后续项。详细说明见[包说明](Packages/com.nex.html-to-ugui/README.md#import-a-project-containing-multiple-panels)。
 
 | 目录 | 用途 |
 | --- | --- |
 | [Skills/ui-panel-design-to-html](Skills/ui-panel-design-to-html/SKILL.md) | 唯一工作流 Skill、契约、脚本与可编辑流程图 |
-| [Examples](Examples/README.md) | Settings、Inventory、Starter、TowerCrane 外部 HTML |
-| [Packages/com.nexvr.html-to-ugui](Packages/com.nexvr.html-to-ugui/README.md) | Unity Editor 转换器与通用 Runtime 元数据 |
+| [Packages/com.nex.html-to-ugui](Packages/com.nex.html-to-ugui/README.md) | Unity Editor 转换器与通用 Runtime 元数据 |
 | [Tools](Tools/README.md) | 安装、校验、布局比较与打包工具 |
+| [Workspaces](Workspaces/README.md) | 游戏级共享素材、Panels 源包与审核证据 |
 | [UnityProject](UnityProject/README.md) | Unity 2022.3 示例工程；字体资源需自行恢复 |
 | [Audit](Audit/README.md) | 公开分发说明；机器运行结果不进入 Git |
 
@@ -112,6 +113,7 @@ https://github.com/xzzhuu/html-to-unity-ugui-workflow.git?path=/Packages/com.nex
 
 ```sh
 python -m pip install -r requirements-dev.txt
+python -B -X utf8 -m unittest discover -s Skills/ui-panel-design-to-html/scripts -p test_workflow.py
 python -X utf8 Tools/verify-directory-generator.py
 python -X utf8 Tools/verify-preparation-contract.py
 python -X utf8 Tools/verify-installer.py
@@ -120,10 +122,14 @@ python -X utf8 Tools/verify-file-integrity.py
 python -X utf8 Tools/build-unity-package.py
 ```
 
-包文件和逐文件校验报告写入 `dist/`，运行记录写入 `Audit/Runs/latest/`。GitHub Actions 在 Windows / Ubuntu 与 Python 3.10 / 3.12 上执行这些检查并保存包文件；**不包含 Unity Editor 编译或视觉验收**。
+包文件和逐文件校验报告写入 `dist/`，运行记录写入 `Audit/Runs/latest/`。GitHub Actions 在 Windows / Ubuntu 与 Python 3.10 / 3.12 上执行这些检查并保存包文件；独立浏览器任务通过 `npm ci`、`npx playwright install chromium` 和 `npm run verify:browser` 验证星港交互。CI **不包含 Unity Editor 编译或视觉验收**。恢复实际 Unity 工程资源后，运行 `python -B -X utf8 Tools/verify-starport-panels.py --unity-project UnityProject` 检查六面板、Item、图片、字体及交付指纹。
 
 ## 参与与许可
 
 请阅读 [贡献指南](CONTRIBUTING.md)、[行为准则](CODE_OF_CONDUCT.md)、[安全策略](SECURITY.md) 和 [更新记录](CHANGELOG.md)。错误与功能建议可通过 GitHub Issues 提交。
 
 本项目采用 [MIT 许可证](LICENSE)。第三方依赖、字体与 Unity 软件适用各自许可，见 [第三方说明](THIRD_PARTY_NOTICES.md)。
+
+项目作者：**Nex Xie**。历史提交显示名通过 `.mailmap` 按作者邮箱统一；历史提交对象及 SHA 保留。
+
+游戏项目的共享素材库、组件部件拆分、Toggle 三图、单面板/全项目同步去重及正式复制见 [游戏素材契约](docs/project-assets.md)。

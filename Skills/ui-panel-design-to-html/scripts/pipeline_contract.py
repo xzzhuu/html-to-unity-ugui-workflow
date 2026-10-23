@@ -56,6 +56,8 @@ def project_elements(root):
         path=label if is_root else parent+'/'+label
         add(path,NATIVE[kind],node,template)
         helpers=list(HELPERS.get(kind,[]))
+        if kind=='Toggle' and node.get('data-toggle-off-sprite') is not None:
+            helpers=[]  # The three full surfaces replace the generated checkmark.
         if kind=='Button' and ''.join([node.text or '']+[child.tail or '' for child in node]).strip():
             helpers.append(('Txt_Label','TextMeshProUGUI','显示按钮操作文字'))
         for relative,component,purpose in helpers: add(path+'/'+relative,component,template=template,purpose=purpose)

@@ -1,0 +1,200 @@
+{
+  "status": "moved",
+  "reason": "Remove repeated staging Sprites bucket from formal output",
+  "movedImages": 24,
+  "guidsAndFileBytesPreserved": true,
+  "assets": [
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+      "guid": "569c65c1ad5f4dd8965ad73a1a796f72",
+      "sha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+      "metaSha256": "dd8513a59b6dce63e83f098024c9fcb2ee5736d0b24b33e6efb511611b05db02"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Button/ItemMedkit/Btn_ItemMedkit_Icon_Normal_Button_ItemMedkit_Icon_Normal.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Button/ItemMedkit/Btn_ItemMedkit_Icon_Normal_Button_ItemMedkit_Icon_Normal.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Button/ItemMedkit/Btn_ItemMedkit_Icon_Normal_Button_ItemMedkit_Icon_Normal.png",
+      "guid": "91434ec22bf34dc4a3ff63d165390e77",
+      "sha256": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+      "metaSha256": "be7f83de62bda0da1ff44bd4e7b700c9997eaeccc52a8b61a4e41ed9252e939a"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Icon_Normal_Button_RoundedSurface_Icon_Normal.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Icon_Normal_Button_RoundedSurface_Icon_Normal.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Button/RoundedSurface/Btn_RoundedSurface_Icon_Normal_Button_RoundedSurface_Icon_Normal.png",
+      "guid": "7bbc7898912b4eeb974c9c8614dcb8ed",
+      "sha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "metaSha256": "cc385a06dbdd830556822363027c38c1a56cb00c1bdea6980371292fefd5e2d9"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png",
+      "guid": "7dde3168e72649779165e7032cbb6e33",
+      "sha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "metaSha256": "c27ea272b7c5f71d36cf16568205e8959c1091822fb51763a4cde7508b19e6e8"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/Circle/Img_Circle_Surface_Default_Image_Circle_Surface_Default.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Image/Circle/Img_Circle_Surface_Default_Image_Circle_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Image/Circle/Img_Circle_Surface_Default_Image_Circle_Surface_Default.png",
+      "guid": "d31fad7d69694d69a97d7d7b8da89200",
+      "sha256": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+      "metaSha256": "4b7a491965d7f49b849f030a1f08ea4a836b716391f5f1092fcb8dc367818464"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/Confirm/Img_Confirm_Surface_Default_Image_Confirm_Surface_Default.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Image/Confirm/Img_Confirm_Surface_Default_Image_Confirm_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Image/Confirm/Img_Confirm_Surface_Default_Image_Confirm_Surface_Default.png",
+      "guid": "459519c99fa0469daa8e043e76cbadb7",
+      "sha256": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192",
+      "metaSha256": "1f08adece8e4b12157e035024f821af45c7baed029177f3a0f9ca73cac3f807a"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png",
+      "guid": "f95818cf9c924fedbd495dc81f66631c",
+      "sha256": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+      "metaSha256": "e509b8c0e0d966b717cfce9918143f20457991bad7c48be86f17d40dfc0f1de4"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png",
+      "guid": "1025a2438b4b4bbfade88046dc812419",
+      "sha256": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+      "metaSha256": "49b071481d806e256cde1d2c2f318a9b30924381dba6629d7fab90231b6c8bed"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png",
+      "guid": "5919863819194c2aae36b1544a77168e",
+      "sha256": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+      "metaSha256": "a270f9ac529a8d3c28ac6b576d8c7ad5437c1e6c9a726b29d59a4269a10caf7e"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png",
+      "guid": "c1de7c1205534ddc95d1519be9fa79c3",
+      "sha256": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+      "metaSha256": "794b32a38bf805fd898b3d8d8378257a5af4a5fe1805a74ab0166642da5ffc8a"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png",
+      "guid": "20b8d08a0f7c4693a28c721c4902363f",
+      "sha256": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+      "metaSha256": "6cd081ecd7a6f01a444dea9f520dd75186b6ef719eb868157c613d3085e67310"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png",
+      "guid": "88e285470c2e4d23adb84a2bc99dfcdf",
+      "sha256": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+      "metaSha256": "7ed44425fb95df0e139f260d230d963e8b21574a702a421d6a7f729df71d518a"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png",
+      "guid": "72e66db463c84a28a6238b3c782b79d0",
+      "sha256": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+      "metaSha256": "93b3f6ee7b6ba38fd5495ce4e0b110aaebfcbbed2afda147839719b6cff20266"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png",
+      "guid": "bfb2c4fb0ec84be29a7743590f5aeb9b",
+      "sha256": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+      "metaSha256": "836d5bbc76604886e3f9dd6aa8ed27de166a20e8c05da05273a766b28c527282"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png",
+      "guid": "4e27a934fb3a49cfad6bf79cb24088a0",
+      "sha256": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+      "metaSha256": "c6133959197d5143a4bc3b27c77c1e925de885b6ea30c116f81ce714234f1cdf"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+      "guid": "5789c3328dcf4d079a53e068f6997dd0",
+      "sha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "metaSha256": "54ff5ce6210f1b553d42ff55bf7560d5004df118551383812e6c36ff398aedc0"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/Value_Bar/Img_Value_Bar_Surface_Default_Image_Value_Bar_Surface_Default.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Image/Value_Bar/Img_Value_Bar_Surface_Default_Image_Value_Bar_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Image/Value_Bar/Img_Value_Bar_Surface_Default_Image_Value_Bar_Surface_Default.png",
+      "guid": "9d4be7a33a7247f5ab7386189c884ac4",
+      "sha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "metaSha256": "3a5cced5b6a610ef49deb841cf57e74a9871b6ae8c04f455e979f19a61469116"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Slider/Circle/Sld_Circle_Handle_Default_Slider_Circle_Handle_Default.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Slider/Circle/Sld_Circle_Handle_Default_Slider_Circle_Handle_Default.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Slider/Circle/Sld_Circle_Handle_Default_Slider_Circle_Handle_Default.png",
+      "guid": "c90e3168e81e4c2c835659b8d0e0b216",
+      "sha256": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+      "metaSha256": "ff29104676ea7aaac88dd33bf4539ac444d328035d8e001bf7d5963d7d440414"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Fill_Default_Slider_Value_Bar_Fill_Default.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Fill_Default_Slider_Value_Bar_Fill_Default.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Slider/Value_Bar/Sld_Value_Bar_Fill_Default_Slider_Value_Bar_Fill_Default.png",
+      "guid": "629d45f3f3ff4dbab1e0b5c873f17621",
+      "sha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "metaSha256": "3732ab86e5100d46731f87aa2a1cef6f476cf779431b6be40e9984a105f442aa"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Track_Default_Slider_Value_Bar_Track_Default.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Track_Default_Slider_Value_Bar_Track_Default.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Slider/Value_Bar/Sld_Value_Bar_Track_Default_Slider_Value_Bar_Track_Default.png",
+      "guid": "ad168b3c0eec4792b7e7f120a3b57234",
+      "sha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "metaSha256": "22eb9fff1c7cafb5b4268e3c5d75d73106bdeb00bd367abec565d4b8793edb66"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/TMP_InputField/Control_Background/Inp_Control_Background_Surface_Default_TMP_InputField_Control_Background_Surface_Default.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/TMP_InputField/Control_Background/Inp_Control_Background_Surface_Default_TMP_InputField_Control_Background_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/TMP_InputField/Control_Background/Inp_Control_Background_Surface_Default_TMP_InputField_Control_Background_Surface_Default.png",
+      "guid": "1e78b956722b4291a445df24f0b7f220",
+      "sha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+      "metaSha256": "9734ee7464d818a4a996ae40f89958bd6f74bd59adb6feef1471446bd977ee1f"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Disabled_Toggle_Sound_Surface_Disabled.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Disabled_Toggle_Sound_Surface_Disabled.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Toggle/Sound/Tgl_Sound_Surface_Disabled_Toggle_Sound_Surface_Disabled.png",
+      "guid": "b3c13073a8644c61a36d6297ba7deee1",
+      "sha256": "259614e8bc4b5e044b9fded3998b8fb41ac94199cec64a0141933a49c44aec3a",
+      "metaSha256": "d62b6d4239deab4b638b971f4a73df04e53d95f4cd854b450d86057ce6c36844"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Off_Toggle_Sound_Surface_Off.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Off_Toggle_Sound_Surface_Off.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Toggle/Sound/Tgl_Sound_Surface_Off_Toggle_Sound_Surface_Off.png",
+      "guid": "59a4f85c768f4c0b9bf817315afe757f",
+      "sha256": "dd991dbb3ebe7dc320aafbeb83a0f8ff1c32c3cfa5e48fc476a226983f76dffd",
+      "metaSha256": "d9f337d9751fa64a486be3ce6674a1a91fd9cce214adc7c2c2fa4bab0524abb0"
+    },
+    {
+      "priorDeliveryPath": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_On_Toggle_Sound_Surface_On.png",
+      "source": "Assets/Art/UI/Sprites/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_On_Toggle_Sound_Surface_On.png",
+      "destination": "Assets/Art/UI/Sprites/StarportSalvage/Toggle/Sound/Tgl_Sound_Surface_On_Toggle_Sound_Surface_On.png",
+      "guid": "a99e447eba9f439fb4b910976c58f4aa",
+      "sha256": "7e3d245862ddca19f5903cf983dc3b741bea7ab95c21bfc3de6d1f6b8e2e13ee",
+      "metaSha256": "3c1b4bcc7f62dc55ec25a10db7528635150450f8df08fd2d56bbc71ae64fd54d"
+    }
+  ]
+}

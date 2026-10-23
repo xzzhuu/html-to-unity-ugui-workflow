@@ -1,0 +1,975 @@
+{
+  "schemaVersion": 1,
+  "panelName": "ExpeditionResultPanel",
+  "status": "ready",
+  "templates": [
+    {
+      "name": "RewardEntry",
+      "itemRootId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content",
+      "bindingScope": "RewardEntry",
+      "itemSize": [
+        908,
+        108
+      ],
+      "stepPx": 132,
+      "dataSource": "active expedition rewards",
+      "states": [
+        "normal",
+        "selected",
+        "empty",
+        "locked"
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "elementId": "ExpeditionResultPanel",
+      "unityName": "ExpeditionResultPanel",
+      "parentId": null,
+      "hierarchyPath": "ExpeditionResultPanel",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "ExpeditionResultPanel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "原生控件辅助节点，所属ExpeditionResultPanel",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody",
+      "unityName": "Group_PanelBody",
+      "parentId": "ExpeditionResultPanel",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionResultPanel__Group_PanelBody",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "PanelBody，用于远征结算",
+      "dataSource": null,
+      "pictureRegion": [
+        120,
+        80,
+        1680,
+        920
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary",
+      "unityName": "Group_ResultSummary",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionResultPanel__Group_ResultSummary",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "ResultSummary，用于远征结算",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        250,
+        580,
+        600
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Group_ResultSuccessSeat",
+      "unityName": "Group_ResultSuccessSeat",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Group_ResultSuccessSeat",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionResultPanel__Group_ResultSuccessSeat",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "ResultSuccessSeat，用于远征结算",
+      "dataSource": null,
+      "pictureRegion": [
+        200,
+        286,
+        80,
+        80
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Group_ResultSuccessSeat/Img_ResultSuccess",
+      "unityName": "Img_ResultSuccess",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Group_ResultSuccessSeat",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Group_ResultSuccessSeat/Img_ResultSuccess",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionResultPanel__Img_ResultSuccess",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "ResultSuccess，用于远征结算",
+      "dataSource": null,
+      "pictureRegion": [
+        200,
+        286,
+        80,
+        80
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Txt_ResultTitle",
+      "unityName": "Txt_ResultTitle",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Txt_ResultTitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionResultPanel__Txt_ResultTitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Result.Title",
+      "purpose": "显示远征成功",
+      "dataSource": "Result.Title",
+      "pictureRegion": [
+        200,
+        400,
+        500,
+        76
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Txt_ResultMission",
+      "unityName": "Txt_ResultMission",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Txt_ResultMission",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionResultPanel__Txt_ResultMission",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Result.Mission",
+      "purpose": "显示废弃货运站",
+      "dataSource": "Result.Mission",
+      "pictureRegion": [
+        200,
+        474,
+        500,
+        54
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Txt_ResultDescription",
+      "unityName": "Txt_ResultDescription",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Txt_ResultDescription",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionResultPanel__Txt_ResultDescription",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Result.Description",
+      "purpose": "显示远征队已安全返回星港。",
+      "dataSource": "Result.Description",
+      "pictureRegion": [
+        200,
+        532,
+        500,
+        50
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Img_ResultDivider",
+      "unityName": "Img_ResultDivider",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Img_ResultDivider",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionResultPanel__Img_ResultDivider",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "ResultDivider，用于远征结算",
+      "dataSource": null,
+      "pictureRegion": [
+        200,
+        598,
+        500,
+        2
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Txt_CostTitle",
+      "unityName": "Txt_CostTitle",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Txt_CostTitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionResultPanel__Txt_CostTitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示出发费用（已扣除）",
+      "dataSource": null,
+      "pictureRegion": [
+        200,
+        626,
+        500,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Txt_PaidCosts",
+      "unityName": "Txt_PaidCosts",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Txt_PaidCosts",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionResultPanel__Txt_PaidCosts",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Result.PaidCosts",
+      "purpose": "显示信用点100 / 能源20",
+      "dataSource": "Result.PaidCosts",
+      "pictureRegion": [
+        200,
+        670,
+        500,
+        46
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Txt_ConsumptionTitle",
+      "unityName": "Txt_ConsumptionTitle",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Txt_ConsumptionTitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionResultPanel__Txt_ConsumptionTitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示本次补给消耗",
+      "dataSource": null,
+      "pictureRegion": [
+        200,
+        736,
+        500,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Txt_Consumption",
+      "unityName": "Txt_Consumption",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_ResultSummary/Txt_Consumption",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionResultPanel__Txt_Consumption",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Result.Consumption",
+      "purpose": "显示急救包 −1",
+      "dataSource": "Result.Consumption",
+      "pictureRegion": [
+        200,
+        780,
+        500,
+        46
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards",
+      "unityName": "Group_Rewards",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionResultPanel__Group_Rewards",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "Rewards，用于远征结算",
+      "dataSource": null,
+      "pictureRegion": [
+        772,
+        250,
+        988,
+        600
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Txt_RewardsTitle",
+      "unityName": "Txt_RewardsTitle",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Txt_RewardsTitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionResultPanel__Txt_RewardsTitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示回收奖励",
+      "dataSource": null,
+      "pictureRegion": [
+        812,
+        286,
+        560,
+        44
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Txt_RewardNotice",
+      "unityName": "Txt_RewardNotice",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Txt_RewardNotice",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionResultPanel__Txt_RewardNotice",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示领取后一次到账",
+      "dataSource": null,
+      "pictureRegion": [
+        1440,
+        292,
+        280,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards",
+      "unityName": "Scroll_Rewards",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards",
+      "uguiComponent": "ScrollRect",
+      "sourceType": "ScrollView",
+      "htmlId": "ExpeditionResultPanel__Scroll_Rewards",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Rewards.List",
+      "purpose": "Rewards，用于远征结算",
+      "dataSource": "Rewards.List",
+      "pictureRegion": [
+        812,
+        368,
+        908,
+        380
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content",
+      "unityName": "Group_Content",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content",
+      "uguiComponent": "RectTransform",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "承载滚动内容和动态条目，所属ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry",
+      "unityName": "Item_RewardEntry",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "ExpeditionResultPanel__Item_RewardEntry",
+      "generated": false,
+      "template": "RewardEntry",
+      "bindingKey": null,
+      "purpose": "RewardEntry，用于远征结算",
+      "dataSource": null,
+      "pictureRegion": [
+        0,
+        0,
+        908,
+        108
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry/Group_RewardBackground",
+      "unityName": "Group_RewardBackground",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry/Group_RewardBackground",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionResultPanel__Group_RewardBackground",
+      "generated": false,
+      "template": "RewardEntry",
+      "bindingKey": null,
+      "purpose": "RewardBackground，用于远征结算",
+      "dataSource": null,
+      "pictureRegion": [
+        0,
+        0,
+        908,
+        108
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry/Group_RewardIconSeat",
+      "unityName": "Group_RewardIconSeat",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry/Group_RewardIconSeat",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionResultPanel__Group_RewardIconSeat",
+      "generated": false,
+      "template": "RewardEntry",
+      "bindingKey": null,
+      "purpose": "RewardIconSeat，用于远征结算",
+      "dataSource": null,
+      "pictureRegion": [
+        24,
+        24,
+        60,
+        60
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry/Img_RewardIcon",
+      "unityName": "Img_RewardIcon",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry/Img_RewardIcon",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionResultPanel__Img_RewardIcon",
+      "generated": false,
+      "template": "RewardEntry",
+      "bindingKey": "Reward.Icon",
+      "purpose": "RewardIcon，用于远征结算",
+      "dataSource": "Reward.Icon",
+      "pictureRegion": [
+        24,
+        24,
+        60,
+        60
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry/Txt_RewardName",
+      "unityName": "Txt_RewardName",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry/Txt_RewardName",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionResultPanel__Txt_RewardName",
+      "generated": false,
+      "template": "RewardEntry",
+      "bindingKey": "Reward.Name",
+      "purpose": "显示信用点",
+      "dataSource": "Reward.Name",
+      "pictureRegion": [
+        108,
+        34,
+        600,
+        44
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry/Txt_RewardQuantity",
+      "unityName": "Txt_RewardQuantity",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Scroll_Rewards/Group_Content/Item_RewardEntry/Txt_RewardQuantity",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionResultPanel__Txt_RewardQuantity",
+      "generated": false,
+      "template": "RewardEntry",
+      "bindingKey": "Reward.Quantity",
+      "purpose": "显示+300",
+      "dataSource": "Reward.Quantity",
+      "pictureRegion": [
+        762,
+        30,
+        140,
+        48
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Txt_RewardCloseNotice",
+      "unityName": "Txt_RewardCloseNotice",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Rewards/Txt_RewardCloseNotice",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionResultPanel__Txt_RewardCloseNotice",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示关闭后仍可从基地再次查看并领取。",
+      "dataSource": null,
+      "pictureRegion": [
+        812,
+        792,
+        908,
+        38
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Header",
+      "unityName": "Group_Header",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Header",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "ExpeditionResultPanel__Group_Header",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "Header，用于远征结算",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        112,
+        1600,
+        108
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Header/Txt_Title",
+      "unityName": "Txt_Title",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Header/Txt_Title",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionResultPanel__Txt_Title",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示远征结算",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        112,
+        700,
+        60
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Header/Txt_Subtitle",
+      "unityName": "Txt_Subtitle",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Header/Txt_Subtitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionResultPanel__Txt_Subtitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Page.Subtitle",
+      "purpose": "显示回收报告 / 固定结果演示 · 待领取",
+      "dataSource": "Page.Subtitle",
+      "pictureRegion": [
+        160,
+        170,
+        1100,
+        35
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Header/Img_HeaderDivider",
+      "unityName": "Img_HeaderDivider",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Header/Img_HeaderDivider",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionResultPanel__Img_HeaderDivider",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "HeaderDivider，用于远征结算",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        218,
+        1600,
+        2
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Header/Txt_ResultState",
+      "unityName": "Txt_ResultState",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Header/Txt_ResultState",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionResultPanel__Txt_ResultState",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Result.State",
+      "purpose": "显示任务已完成",
+      "dataSource": "Result.State",
+      "pictureRegion": [
+        1512,
+        129,
+        240,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Footer",
+      "unityName": "Group_Footer",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Footer",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "ExpeditionResultPanel__Group_Footer",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "Footer，用于远征结算",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        890,
+        1600,
+        108
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Footer/Txt_Feedback",
+      "unityName": "Txt_Feedback",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Footer/Txt_Feedback",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionResultPanel__Txt_Feedback",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Feedback.Message",
+      "purpose": "Feedback，用于远征结算",
+      "dataSource": "Feedback.Message",
+      "pictureRegion": [
+        420,
+        970,
+        1000,
+        28
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Footer/Btn_Postpone",
+      "unityName": "Btn_Postpone",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Footer/Btn_Postpone",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "ExpeditionResultPanel__Btn_Postpone",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.Postpone",
+      "purpose": "Postpone，用于远征结算",
+      "dataSource": "Action.Postpone",
+      "pictureRegion": [
+        160,
+        900,
+        220,
+        60
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Footer/Btn_Postpone/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Footer/Btn_Postpone",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Footer/Btn_Postpone/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属ExpeditionResultPanel/Group_PanelBody/Group_Footer/Btn_Postpone",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Footer/Txt_ClaimNotice",
+      "unityName": "Txt_ClaimNotice",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Footer/Txt_ClaimNotice",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "ExpeditionResultPanel__Txt_ClaimNotice",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示费用不重复扣除 · 奖励仅可领取一次",
+      "dataSource": null,
+      "pictureRegion": [
+        416,
+        917,
+        940,
+        40
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Footer/Btn_ClaimRewards",
+      "unityName": "Btn_ClaimRewards",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Footer/Btn_ClaimRewards",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "ExpeditionResultPanel__Btn_ClaimRewards",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.ClaimRewards",
+      "purpose": "ClaimRewards，用于远征结算",
+      "dataSource": "Action.ClaimRewards",
+      "pictureRegion": [
+        1380,
+        900,
+        380,
+        60
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_PanelBody/Group_Footer/Btn_ClaimRewards/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "ExpeditionResultPanel/Group_PanelBody/Group_Footer/Btn_ClaimRewards",
+      "hierarchyPath": "ExpeditionResultPanel/Group_PanelBody/Group_Footer/Btn_ClaimRewards/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属ExpeditionResultPanel/Group_PanelBody/Group_Footer/Btn_ClaimRewards",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_IconCatalog",
+      "unityName": "Group_IconCatalog",
+      "parentId": "ExpeditionResultPanel",
+      "hierarchyPath": "ExpeditionResultPanel/Group_IconCatalog",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "ExpeditionResultPanel__Group_IconCatalog",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "IconCatalog，用于远征结算",
+      "dataSource": null,
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_IconCatalog/Img_ItemAlloy",
+      "unityName": "Img_ItemAlloy",
+      "parentId": "ExpeditionResultPanel/Group_IconCatalog",
+      "hierarchyPath": "ExpeditionResultPanel/Group_IconCatalog/Img_ItemAlloy",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionResultPanel__Img_ItemAlloy",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Source.Img_ItemAlloy",
+      "purpose": "注册动态Sprite引用，透明不绘制；供接入游戏的数据绑定使用",
+      "dataSource": "Source.Img_ItemAlloy",
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_IconCatalog/Img_ItemChip",
+      "unityName": "Img_ItemChip",
+      "parentId": "ExpeditionResultPanel/Group_IconCatalog",
+      "hierarchyPath": "ExpeditionResultPanel/Group_IconCatalog/Img_ItemChip",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionResultPanel__Img_ItemChip",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Source.Img_ItemChip",
+      "purpose": "注册动态Sprite引用，透明不绘制；供接入游戏的数据绑定使用",
+      "dataSource": "Source.Img_ItemChip",
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_IconCatalog/Img_ItemCircuit",
+      "unityName": "Img_ItemCircuit",
+      "parentId": "ExpeditionResultPanel/Group_IconCatalog",
+      "hierarchyPath": "ExpeditionResultPanel/Group_IconCatalog/Img_ItemCircuit",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionResultPanel__Img_ItemCircuit",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Source.Img_ItemCircuit",
+      "purpose": "注册动态Sprite引用，透明不绘制；供接入游戏的数据绑定使用",
+      "dataSource": "Source.Img_ItemCircuit",
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "ExpeditionResultPanel/Group_IconCatalog/Img_ItemOre",
+      "unityName": "Img_ItemOre",
+      "parentId": "ExpeditionResultPanel/Group_IconCatalog",
+      "hierarchyPath": "ExpeditionResultPanel/Group_IconCatalog/Img_ItemOre",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "ExpeditionResultPanel__Img_ItemOre",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Source.Img_ItemOre",
+      "purpose": "注册动态Sprite引用，透明不绘制；供接入游戏的数据绑定使用",
+      "dataSource": "Source.Img_ItemOre",
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    }
+  ]
+}

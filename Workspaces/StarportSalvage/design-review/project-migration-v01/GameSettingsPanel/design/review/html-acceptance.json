@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "approvedLayoutSha256": "68732364c51f83368dbd6403d3bd918e2b6e79e99a58712055d6db434bcfd94b",
+  "approvedElementGroupsSha256": "329c01d0bce4cf4d339bd39dfd504893a9d3a7212830476b118db5df12cc5ee8",
+  "checks": {
+    "elements": "passed",
+    "naming": "passed",
+    "sprites": "passed",
+    "layout": "passed",
+    "visual": "passed",
+    "interactions": "passed"
+  },
+  "filesSha256": {
+    "html/assets/shared/Img_Circle.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "html/assets/shared/Sld_Value_Bar.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "html/assets/shared/Tgl_Sound_Track.png": "d542eebd9640a671cd09a9e7934049362a6faec7bc754bbf263b2702045cb0e9",
+    "html/elements.json": "3972dee3f5338a6e9798f77383dfe06a0b1b29fcce3bd9d2e5bd81a4c5f8eeb4",
+    "html/GameSettingsPanel.css": "d8eebde333e9e6bca273883ade27000805d8ec4552736b514a9ed42d3ca3ddea",
+    "html/GameSettingsPanel.html": "a53751347a92d01834471d8635161294e2bd14cd0e9d99551ad50a942f67c621",
+    "html/GameSettingsPanel.preview.js": "e167322c9926a726720415bb5a37d9d8b67461e8ac20c716f4a2b369f9c623bf",
+    "html/panel.package.json": "378e6db108e9e246398e3b33f68127835f061e1a45a91cfda53724159800b580",
+    "html/sprites.json": "35987f7a794ccb757a985a071bcdb6ec7c16c66310469edab907b9cef08b444f",
+    "design/element-groups.json": "74cdcddb8156564add7382384f74c8d476a5f560423ed1ba07390b805b0dd0ca",
+    "design/review/browser/default.png": "5bb2b376aef1a48918dabdb121b586433b101b9d63b304c605b433d2e18611e5",
+    "design/review/browser/checks.json": "6edc991a5739ff94bc8a1f6557a4f46791dcbcd42898ecd20eadc8566981fccb"
+  },
+  "screenshots": [
+    "design/review/browser/default.png"
+  ],
+  "browserVersion": "155.0.4283.62",
+  "unityAccepted": false,
+  "notes": "实际浏览器检查与模型视觉复核；像素差分仅用于诊断，不作为自动视觉通过阈值。Unity和设备尚未验证。"
+}

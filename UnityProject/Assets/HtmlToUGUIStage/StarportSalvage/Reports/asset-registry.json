@@ -1,0 +1,1013 @@
+{
+  "directory": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage",
+  "projectName": "StarportSalvage",
+  "manifestHash": "b8e4068538f7bdc80708cdf395469fd06bc5e06e32ce0bda5f616f1f499792e4",
+  "signature": null,
+  "registryPath": null,
+  "registryHash": null,
+  "entries": [
+    {
+      "definition": {
+        "assetId": "Button_Control_Background_Surface_Normal",
+        "componentType": "Button",
+        "part": "Surface",
+        "styleId": "Control_Background",
+        "state": "Normal",
+        "source": "shared-assets/project/Button/Btn_Control_Background_Surface_Normal.png",
+        "sourceSha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+        "approvalVersion": "element-groups-v01:3adcd2a39e0fb14e1acc82462397af60a82d8e4304d3e1cac90b3574e9575412",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          20.0,
+          20.0,
+          20.0,
+          20.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Button\\Btn_Control_Background_Surface_Normal.png",
+      "sourceHash": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+      "pixelHash": "9eff5d7cd9a942ac031cf0853df4f19a9931e00ae1224c490a1da27a2c628044",
+      "profileHash": "e9f00a4701efac605514f485ecf7926c9c4645184e1d1063a3692c283e465019",
+      "canonicalAssetId": "Button_Control_Background_Surface_Normal",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+      "guid": "45f68e33dc0b68643a9c117992512c2c",
+      "width": 512,
+      "height": 128,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ActionConfirmPanel/Prefabs/ActionConfirmPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/Prefabs/StarportHomePanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/Items/Item_LoadoutEntry.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Button_ItemMedkit_Icon_Normal",
+        "componentType": "Button",
+        "part": "Icon",
+        "styleId": "ItemMedkit",
+        "state": "Normal",
+        "source": "shared-assets/project/Button/Btn_ItemMedkit_Icon_Normal.png",
+        "sourceSha256": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+        "approvalVersion": "element-groups-v01:05ef7f748aafb6243aa02d82f9c924c0457802f848614d1e4fc258abfe356079",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Button\\Btn_ItemMedkit_Icon_Normal.png",
+      "sourceHash": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+      "pixelHash": "3eb70fb7091a18856682d648d17a87728fb72dad9c53d791594aded6140a9f54",
+      "profileHash": "5007264fa2792cf9d319c89e7f9a6795954a0bd306f1e288e939b044b0d530e1",
+      "canonicalAssetId": "Button_ItemMedkit_Icon_Normal",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/ItemMedkit/Btn_ItemMedkit_Icon_Normal_Button_ItemMedkit_Icon_Normal.png",
+      "guid": "e4a87a5c0d670144aa249974352f841f",
+      "width": 256,
+      "height": 256,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/Items/Item_InventoryEntry.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Button_RoundedSurface_Icon_Normal",
+        "componentType": "Button",
+        "part": "Icon",
+        "styleId": "RoundedSurface",
+        "state": "Normal",
+        "source": "shared-assets/project/Button/Btn_RoundedSurface_Icon_Normal.png",
+        "sourceSha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+        "approvalVersion": "element-groups-v01:05ef7f748aafb6243aa02d82f9c924c0457802f848614d1e4fc258abfe356079",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          24.0,
+          24.0,
+          24.0,
+          24.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Button\\Btn_RoundedSurface_Icon_Normal.png",
+      "sourceHash": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "pixelHash": "0e26d78a3e9d3d438cee48590553807a50c78462e1e1526ca51ffc5e0d1808d9",
+      "profileHash": "feee39caf58b6f530f0b0517b46b85aeb3590475b1fd863e5647149b944dc0ca",
+      "canonicalAssetId": "Button_RoundedSurface_Icon_Normal",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Icon_Normal_Button_RoundedSurface_Icon_Normal.png",
+      "guid": "e06cbe0e9ecd1d04dba3ca4a9c5ac8cc",
+      "width": 512,
+      "height": 512,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/Items/Item_InventoryEntry.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Button_RoundedSurface_Surface_Normal",
+        "componentType": "Button",
+        "part": "Surface",
+        "styleId": "RoundedSurface",
+        "state": "Normal",
+        "source": "shared-assets/project/Button/Btn_RoundedSurface_Surface_Normal.png",
+        "sourceSha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+        "approvalVersion": "element-groups-v01:8c56f20a5f245b8f9dcdbaa4355358a98556d838ae9c9878c165d9c4cf8bc23c",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          24.0,
+          24.0,
+          24.0,
+          24.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Button\\Btn_RoundedSurface_Surface_Normal.png",
+      "sourceHash": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "pixelHash": "0e26d78a3e9d3d438cee48590553807a50c78462e1e1526ca51ffc5e0d1808d9",
+      "profileHash": "feee39caf58b6f530f0b0517b46b85aeb3590475b1fd863e5647149b944dc0ca",
+      "canonicalAssetId": "Button_RoundedSurface_Surface_Normal",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png",
+      "guid": "78fcbd84161bee142914caaec9afeb64",
+      "width": 512,
+      "height": 512,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/Items/Item_MissionEntry.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/Items/Item_InventoryEntry.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Image_Circle_Surface_Default",
+        "componentType": "Image",
+        "part": "Surface",
+        "styleId": "Circle",
+        "state": "Default",
+        "source": "shared-assets/project/Image/Img_Circle_Surface_Default.png",
+        "sourceSha256": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+        "approvalVersion": "element-groups-v01:329c01d0bce4cf4d339bd39dfd504893a9d3a7212830476b118db5df12cc5ee8",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Image\\Img_Circle_Surface_Default.png",
+      "sourceHash": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+      "pixelHash": "68268bc25516fe674ae0f6cf85d15ee12662d61027430c243dda41fb6fc5d2fb",
+      "profileHash": "2b85a22d51f372cc947df21825a09d9e045277a8ab7d6b156392bb46055babe5",
+      "canonicalAssetId": "Image_Circle_Surface_Default",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Circle/Img_Circle_Surface_Default_Image_Circle_Surface_Default.png",
+      "guid": "e9513056cb720ba46b911f28f0d4d8ad",
+      "width": 64,
+      "height": 64,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Image_Confirm_Surface_Default",
+        "componentType": "Image",
+        "part": "Surface",
+        "styleId": "Confirm",
+        "state": "Default",
+        "source": "shared-assets/project/Image/Img_Confirm_Surface_Default.png",
+        "sourceSha256": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192",
+        "approvalVersion": "element-groups-v01:c537604fd158ae5a433dd509affd43ebe02bd94baa34367785b500fba5fa4784",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Image\\Img_Confirm_Surface_Default.png",
+      "sourceHash": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192",
+      "pixelHash": "dc03b858fbca8ec2ba97dbc23086ea0d86464fee90aeb91c2c9993cc48249bdb",
+      "profileHash": "8088ef1a3bbe45e1f228bfe464b6ca9e5486a3dcfef9a054097142880f9fac2e",
+      "canonicalAssetId": "Image_Confirm_Surface_Default",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Confirm/Img_Confirm_Surface_Default_Image_Confirm_Surface_Default.png",
+      "guid": "0926a1cdc53086346ac116d2dffbdec9",
+      "width": 128,
+      "height": 128,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Image_Credits_Surface_Default",
+        "componentType": "Image",
+        "part": "Surface",
+        "styleId": "Credits",
+        "state": "Default",
+        "source": "shared-assets/project/Image/Img_Credits_Surface_Default.png",
+        "sourceSha256": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+        "approvalVersion": "element-groups-v01:c537604fd158ae5a433dd509affd43ebe02bd94baa34367785b500fba5fa4784",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Image\\Img_Credits_Surface_Default.png",
+      "sourceHash": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+      "pixelHash": "9b3da3d49b113b9fbe87d7e18b5946a2784c053842a48684fdd746677bf41d13",
+      "profileHash": "8088ef1a3bbe45e1f228bfe464b6ca9e5486a3dcfef9a054097142880f9fac2e",
+      "canonicalAssetId": "Image_Credits_Surface_Default",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png",
+      "guid": "3215a46241199b042a7317ccc5762acc",
+      "width": 128,
+      "height": 128,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/Items/Item_RewardEntry.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Image_ItemAlloy_Surface_Default",
+        "componentType": "Image",
+        "part": "Surface",
+        "styleId": "ItemAlloy",
+        "state": "Default",
+        "source": "shared-assets/project/Image/Img_ItemAlloy_Surface_Default.png",
+        "sourceSha256": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+        "approvalVersion": "element-groups-v01:c537604fd158ae5a433dd509affd43ebe02bd94baa34367785b500fba5fa4784",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Image\\Img_ItemAlloy_Surface_Default.png",
+      "sourceHash": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+      "pixelHash": "79d28baa9624e1665fe8230fbf4dbe2642a963e390980d9158c2583336844851",
+      "profileHash": "5007264fa2792cf9d319c89e7f9a6795954a0bd306f1e288e939b044b0d530e1",
+      "canonicalAssetId": "Image_ItemAlloy_Surface_Default",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png",
+      "guid": "1dfda37c7ae16ce489caceb5a9925752",
+      "width": 256,
+      "height": 256,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Image_ItemBattery_Surface_Default",
+        "componentType": "Image",
+        "part": "Surface",
+        "styleId": "ItemBattery",
+        "state": "Default",
+        "source": "shared-assets/project/Image/Img_ItemBattery_Surface_Default.png",
+        "sourceSha256": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+        "approvalVersion": "element-groups-v01:fc2ea75bd6f008b24d227fcdf085cdeb9e68fd781d3006f589e6c0d7ffcd3ac9",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Image\\Img_ItemBattery_Surface_Default.png",
+      "sourceHash": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+      "pixelHash": "e6185c37b976f71553a5547f3f48320b465286a2704c0566d83b7e3358919542",
+      "profileHash": "5007264fa2792cf9d319c89e7f9a6795954a0bd306f1e288e939b044b0d530e1",
+      "canonicalAssetId": "Image_ItemBattery_Surface_Default",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png",
+      "guid": "8b38b75bde3c7e347baf439c14eca232",
+      "width": 256,
+      "height": 256,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/Prefabs/StarportHomePanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Image_ItemBeacon_Surface_Default",
+        "componentType": "Image",
+        "part": "Surface",
+        "styleId": "ItemBeacon",
+        "state": "Default",
+        "source": "shared-assets/project/Image/Img_ItemBeacon_Surface_Default.png",
+        "sourceSha256": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+        "approvalVersion": "element-groups-v01:fc2ea75bd6f008b24d227fcdf085cdeb9e68fd781d3006f589e6c0d7ffcd3ac9",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Image\\Img_ItemBeacon_Surface_Default.png",
+      "sourceHash": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+      "pixelHash": "587691a08d6785cdeb4442a6e9dbc589657bd6d5bbbf7a3047c034cc8b648a57",
+      "profileHash": "5007264fa2792cf9d319c89e7f9a6795954a0bd306f1e288e939b044b0d530e1",
+      "canonicalAssetId": "Image_ItemBeacon_Surface_Default",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png",
+      "guid": "c7aad4de2b792c64481e9d59bea1c81c",
+      "width": 256,
+      "height": 256,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/Prefabs/StarportHomePanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Image_ItemChip_Surface_Default",
+        "componentType": "Image",
+        "part": "Surface",
+        "styleId": "ItemChip",
+        "state": "Default",
+        "source": "shared-assets/project/Image/Img_ItemChip_Surface_Default.png",
+        "sourceSha256": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+        "approvalVersion": "element-groups-v01:c537604fd158ae5a433dd509affd43ebe02bd94baa34367785b500fba5fa4784",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Image\\Img_ItemChip_Surface_Default.png",
+      "sourceHash": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+      "pixelHash": "54e07f5dea8557cfcf6f984288f8181f4183fcbe0f11cdddbdebde9d07c65eca",
+      "profileHash": "5007264fa2792cf9d319c89e7f9a6795954a0bd306f1e288e939b044b0d530e1",
+      "canonicalAssetId": "Image_ItemChip_Surface_Default",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png",
+      "guid": "5c9cedf82c5522e49bb5e835f1032d2a",
+      "width": 256,
+      "height": 256,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Image_ItemCircuit_Surface_Default",
+        "componentType": "Image",
+        "part": "Surface",
+        "styleId": "ItemCircuit",
+        "state": "Default",
+        "source": "shared-assets/project/Image/Img_ItemCircuit_Surface_Default.png",
+        "sourceSha256": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+        "approvalVersion": "element-groups-v01:c537604fd158ae5a433dd509affd43ebe02bd94baa34367785b500fba5fa4784",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Image\\Img_ItemCircuit_Surface_Default.png",
+      "sourceHash": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+      "pixelHash": "7196405e14ddd5a34c726d8cc1e3ea7947b018fb5080310d9dbb58fbd46f12be",
+      "profileHash": "5007264fa2792cf9d319c89e7f9a6795954a0bd306f1e288e939b044b0d530e1",
+      "canonicalAssetId": "Image_ItemCircuit_Surface_Default",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png",
+      "guid": "608a11c5ed71dc446b77897bd8d5960a",
+      "width": 256,
+      "height": 256,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Image_ItemMedkit_Surface_Default",
+        "componentType": "Image",
+        "part": "Surface",
+        "styleId": "ItemMedkit",
+        "state": "Default",
+        "source": "shared-assets/project/Image/Img_ItemMedkit_Surface_Default.png",
+        "sourceSha256": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+        "approvalVersion": "element-groups-v01:fc2ea75bd6f008b24d227fcdf085cdeb9e68fd781d3006f589e6c0d7ffcd3ac9",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Image\\Img_ItemMedkit_Surface_Default.png",
+      "sourceHash": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+      "pixelHash": "3eb70fb7091a18856682d648d17a87728fb72dad9c53d791594aded6140a9f54",
+      "profileHash": "5007264fa2792cf9d319c89e7f9a6795954a0bd306f1e288e939b044b0d530e1",
+      "canonicalAssetId": "Image_ItemMedkit_Surface_Default",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png",
+      "guid": "6084a8526a62a5548885337902a216a5",
+      "width": 256,
+      "height": 256,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/Prefabs/StarportHomePanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/Items/Item_LoadoutEntry.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Image_ItemOre_Surface_Default",
+        "componentType": "Image",
+        "part": "Surface",
+        "styleId": "ItemOre",
+        "state": "Default",
+        "source": "shared-assets/project/Image/Img_ItemOre_Surface_Default.png",
+        "sourceSha256": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+        "approvalVersion": "element-groups-v01:c537604fd158ae5a433dd509affd43ebe02bd94baa34367785b500fba5fa4784",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Image\\Img_ItemOre_Surface_Default.png",
+      "sourceHash": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+      "pixelHash": "a1fb15022906a14118e924db8e818f669207b5a06f37ecb69165a0265b4e7d22",
+      "profileHash": "5007264fa2792cf9d319c89e7f9a6795954a0bd306f1e288e939b044b0d530e1",
+      "canonicalAssetId": "Image_ItemOre_Surface_Default",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png",
+      "guid": "340ddd5f66806ee44b82178246284616",
+      "width": 256,
+      "height": 256,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Image_ItemRation_Surface_Default",
+        "componentType": "Image",
+        "part": "Surface",
+        "styleId": "ItemRation",
+        "state": "Default",
+        "source": "shared-assets/project/Image/Img_ItemRation_Surface_Default.png",
+        "sourceSha256": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+        "approvalVersion": "element-groups-v01:fc2ea75bd6f008b24d227fcdf085cdeb9e68fd781d3006f589e6c0d7ffcd3ac9",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Image\\Img_ItemRation_Surface_Default.png",
+      "sourceHash": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+      "pixelHash": "5aeb38c1904b59a39935a94099b88ab380099df56fdfbabae7ef9e472edc0779",
+      "profileHash": "5007264fa2792cf9d319c89e7f9a6795954a0bd306f1e288e939b044b0d530e1",
+      "canonicalAssetId": "Image_ItemRation_Surface_Default",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png",
+      "guid": "e2d923b1d2afd364d9cde270c9bc16e6",
+      "width": 256,
+      "height": 256,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/Prefabs/StarportHomePanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Image_RoundedSurface_Surface_Default",
+        "componentType": "Image",
+        "part": "Surface",
+        "styleId": "RoundedSurface",
+        "state": "Default",
+        "source": "shared-assets/project/Image/Img_RoundedSurface_Surface_Default.png",
+        "sourceSha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+        "approvalVersion": "element-groups-v01:3adcd2a39e0fb14e1acc82462397af60a82d8e4304d3e1cac90b3574e9575412",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          24.0,
+          24.0,
+          24.0,
+          24.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Image\\Img_RoundedSurface_Surface_Default.png",
+      "sourceHash": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "pixelHash": "0e26d78a3e9d3d438cee48590553807a50c78462e1e1526ca51ffc5e0d1808d9",
+      "profileHash": "feee39caf58b6f530f0b0517b46b85aeb3590475b1fd863e5647149b944dc0ca",
+      "canonicalAssetId": "Image_RoundedSurface_Surface_Default",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+      "guid": "2e8d7057097b8f04d9a21aa56dd6892a",
+      "width": 512,
+      "height": 512,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ActionConfirmPanel/Prefabs/ActionConfirmPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/Items/Item_RewardEntry.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/Prefabs/StarportHomePanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/Items/Item_LoadoutEntry.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Image_Value_Bar_Surface_Default",
+        "componentType": "Image",
+        "part": "Surface",
+        "styleId": "Value_Bar",
+        "state": "Default",
+        "source": "shared-assets/project/Image/Img_Value_Bar_Surface_Default.png",
+        "sourceSha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+        "approvalVersion": "element-groups-v01:05ef7f748aafb6243aa02d82f9c924c0457802f848614d1e4fc258abfe356079",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          16.0,
+          15.0,
+          16.0,
+          15.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Image\\Img_Value_Bar_Surface_Default.png",
+      "sourceHash": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "pixelHash": "fd1591d979fb60d1900b7898dc35596def3a2e2789e307ffb4cffe95d0ba2168",
+      "profileHash": "bc832f37463fd0d8e189fe3decfa9facc6d52205d4fbbf3cde1d7bef68b035b0",
+      "canonicalAssetId": "Image_Value_Bar_Surface_Default",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Value_Bar/Img_Value_Bar_Surface_Default_Image_Value_Bar_Surface_Default.png",
+      "guid": "0940d40cbdeb1b44d8566726b9bed7f9",
+      "width": 512,
+      "height": 32,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Slider_Circle_Handle_Default",
+        "componentType": "Slider",
+        "part": "Handle",
+        "styleId": "Circle",
+        "state": "Default",
+        "source": "shared-assets/project/Slider/Sld_Circle_Handle_Default.png",
+        "sourceSha256": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+        "approvalVersion": "element-groups-v01:329c01d0bce4cf4d339bd39dfd504893a9d3a7212830476b118db5df12cc5ee8",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          16.0,
+          15.0,
+          16.0,
+          15.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Slider\\Sld_Circle_Handle_Default.png",
+      "sourceHash": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+      "pixelHash": "68268bc25516fe674ae0f6cf85d15ee12662d61027430c243dda41fb6fc5d2fb",
+      "profileHash": "16e08da576186e487df97f04c9654ced98576c71ed65b1632850d48041a2b0ba",
+      "canonicalAssetId": "Slider_Circle_Handle_Default",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Circle/Sld_Circle_Handle_Default_Slider_Circle_Handle_Default.png",
+      "guid": "ee8a6f8109d087e49b67a009030575dc",
+      "width": 64,
+      "height": 64,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Slider_Value_Bar_Fill_Default",
+        "componentType": "Slider",
+        "part": "Fill",
+        "styleId": "Value_Bar",
+        "state": "Default",
+        "source": "shared-assets/project/Slider/Sld_Value_Bar_Fill_Default.png",
+        "sourceSha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+        "approvalVersion": "element-groups-v01:329c01d0bce4cf4d339bd39dfd504893a9d3a7212830476b118db5df12cc5ee8",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          16.0,
+          15.0,
+          16.0,
+          15.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Slider\\Sld_Value_Bar_Fill_Default.png",
+      "sourceHash": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "pixelHash": "fd1591d979fb60d1900b7898dc35596def3a2e2789e307ffb4cffe95d0ba2168",
+      "profileHash": "bc832f37463fd0d8e189fe3decfa9facc6d52205d4fbbf3cde1d7bef68b035b0",
+      "canonicalAssetId": "Slider_Value_Bar_Fill_Default",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Fill_Default_Slider_Value_Bar_Fill_Default.png",
+      "guid": "c37f468571b224642810c10f08840d4c",
+      "width": 512,
+      "height": 32,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Slider_Value_Bar_Track_Default",
+        "componentType": "Slider",
+        "part": "Track",
+        "styleId": "Value_Bar",
+        "state": "Default",
+        "source": "shared-assets/project/Slider/Sld_Value_Bar_Track_Default.png",
+        "sourceSha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+        "approvalVersion": "element-groups-v01:329c01d0bce4cf4d339bd39dfd504893a9d3a7212830476b118db5df12cc5ee8",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          16.0,
+          15.0,
+          16.0,
+          15.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Slider\\Sld_Value_Bar_Track_Default.png",
+      "sourceHash": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "pixelHash": "fd1591d979fb60d1900b7898dc35596def3a2e2789e307ffb4cffe95d0ba2168",
+      "profileHash": "bc832f37463fd0d8e189fe3decfa9facc6d52205d4fbbf3cde1d7bef68b035b0",
+      "canonicalAssetId": "Slider_Value_Bar_Track_Default",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Track_Default_Slider_Value_Bar_Track_Default.png",
+      "guid": "8dd918029cbcfed44828804b57fbfc38",
+      "width": 512,
+      "height": 32,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "TMP_InputField_Control_Background_Surface_Default",
+        "componentType": "TMP_InputField",
+        "part": "Surface",
+        "styleId": "Control_Background",
+        "state": "Default",
+        "source": "shared-assets/project/TMP_InputField/Inp_Control_Background_Surface_Default.png",
+        "sourceSha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+        "approvalVersion": "element-groups-v01:329c01d0bce4cf4d339bd39dfd504893a9d3a7212830476b118db5df12cc5ee8",
+        "approved": true,
+        "tintable": true,
+        "border": [
+          20.0,
+          20.0,
+          20.0,
+          20.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\TMP_InputField\\Inp_Control_Background_Surface_Default.png",
+      "sourceHash": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+      "pixelHash": "9eff5d7cd9a942ac031cf0853df4f19a9931e00ae1224c490a1da27a2c628044",
+      "profileHash": "e9f00a4701efac605514f485ecf7926c9c4645184e1d1063a3692c283e465019",
+      "canonicalAssetId": "TMP_InputField_Control_Background_Surface_Default",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/TMP_InputField/Control_Background/Inp_Control_Background_Surface_Default_TMP_InputField_Control_Background_Surface_Default.png",
+      "guid": "4e14a6055194d434a866d7218f203ff8",
+      "width": 512,
+      "height": 128,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab",
+        "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Toggle_Sound_Surface_Disabled",
+        "componentType": "Toggle",
+        "part": "Surface",
+        "styleId": "Sound",
+        "state": "Disabled",
+        "source": "shared-assets/project/Toggle/Tgl_Sound_Surface_Disabled.png",
+        "sourceSha256": "259614e8bc4b5e044b9fded3998b8fb41ac94199cec64a0141933a49c44aec3a",
+        "approvalVersion": "element-groups-v01:329c01d0bce4cf4d339bd39dfd504893a9d3a7212830476b118db5df12cc5ee8",
+        "approved": true,
+        "tintable": false,
+        "border": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Toggle\\Tgl_Sound_Surface_Disabled.png",
+      "sourceHash": "259614e8bc4b5e044b9fded3998b8fb41ac94199cec64a0141933a49c44aec3a",
+      "pixelHash": "b68318c8ecf603838efa98b981d8c8b4e1defefe3f93df2adea747f6e9e6f2f7",
+      "profileHash": "9f94bff7cf84039c760c425242d57b252fddd2b15f0f54022458a1e8bf0ec92a",
+      "canonicalAssetId": "Toggle_Sound_Surface_Disabled",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Disabled_Toggle_Sound_Surface_Disabled.png",
+      "guid": "26367c56a9288c349855e7f8e9ee6d57",
+      "width": 1024,
+      "height": 512,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Toggle_Sound_Surface_Off",
+        "componentType": "Toggle",
+        "part": "Surface",
+        "styleId": "Sound",
+        "state": "Off",
+        "source": "shared-assets/project/Toggle/Tgl_Sound_Surface_Off.png",
+        "sourceSha256": "dd991dbb3ebe7dc320aafbeb83a0f8ff1c32c3cfa5e48fc476a226983f76dffd",
+        "approvalVersion": "element-groups-v01:329c01d0bce4cf4d339bd39dfd504893a9d3a7212830476b118db5df12cc5ee8",
+        "approved": true,
+        "tintable": false,
+        "border": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Toggle\\Tgl_Sound_Surface_Off.png",
+      "sourceHash": "dd991dbb3ebe7dc320aafbeb83a0f8ff1c32c3cfa5e48fc476a226983f76dffd",
+      "pixelHash": "730e36a0d7e0a56203b127c8a1fdef3161e89994fa05461c0926f0e488524b5e",
+      "profileHash": "9f94bff7cf84039c760c425242d57b252fddd2b15f0f54022458a1e8bf0ec92a",
+      "canonicalAssetId": "Toggle_Sound_Surface_Off",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Off_Toggle_Sound_Surface_Off.png",
+      "guid": "89b0c7944793f1849baafb93847b1f63",
+      "width": 1024,
+      "height": 512,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab"
+      ]
+    },
+    {
+      "definition": {
+        "assetId": "Toggle_Sound_Surface_On",
+        "componentType": "Toggle",
+        "part": "Surface",
+        "styleId": "Sound",
+        "state": "On",
+        "source": "shared-assets/project/Toggle/Tgl_Sound_Surface_On.png",
+        "sourceSha256": "7e3d245862ddca19f5903cf983dc3b741bea7ab95c21bfc3de6d1f6b8e2e13ee",
+        "approvalVersion": "element-groups-v01:329c01d0bce4cf4d339bd39dfd504893a9d3a7212830476b118db5df12cc5ee8",
+        "approved": true,
+        "tintable": false,
+        "border": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "pixelsPerUnit": 100.0,
+        "sRGB": true,
+        "filter": "Bilinear"
+      },
+      "sourcePath": "E:\\html_to_unity_ugui_workflow\\Workspaces\\StarportSalvage\\shared-assets\\project\\Toggle\\Tgl_Sound_Surface_On.png",
+      "sourceHash": "7e3d245862ddca19f5903cf983dc3b741bea7ab95c21bfc3de6d1f6b8e2e13ee",
+      "pixelHash": "52ede5c717a1c6c1a4f7771841caf4eed89d0ca9bc4b61175aa359281191aa7d",
+      "profileHash": "9f94bff7cf84039c760c425242d57b252fddd2b15f0f54022458a1e8bf0ec92a",
+      "canonicalAssetId": "Toggle_Sound_Surface_On",
+      "unityPath": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_On_Toggle_Sound_Surface_On.png",
+      "guid": "3a1b441e8e801d946882a719b2a3729e",
+      "width": 1024,
+      "height": 512,
+      "consumers": [
+        "Assets/HtmlToUGUIStage/StageScene.unity",
+        "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab"
+      ]
+    }
+  ],
+  "writes": [],
+  "targets": {},
+  "warnings": [],
+  "migrations": {},
+  "retiredPaths": []
+}

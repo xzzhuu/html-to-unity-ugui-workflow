@@ -7,7 +7,7 @@ const { chromium } = require('playwright');
   const [input, output, name = path.basename(input || '', '.html')] = process.argv.slice(2);
   if (!input || !output) throw new Error('Usage: node audit-browser.cjs panel.html output-folder [PanelName]');
   fs.mkdirSync(output, { recursive: true });
-  const browser = await chromium.launch({ channel: 'chrome', headless: true });
+  const browser = await chromium.launch({ channel: process.env.HTML_UI_BROWSER_CHANNEL || undefined, headless: true });
   try {
     const page = await browser.newPage({ viewport: { width: 1920, height: 1280 }, deviceScaleFactor: 1 });
     const issues = [];

@@ -64,7 +64,7 @@ page('02 正式 Panel 设计与 Unity 导入',[
 ('g','结构 + 浏览器 + 视觉验收<br/>有偏差修复实现；设计变更重新审批',820,570,'decision'),
 ('h','审批图与源码哈希、验收记录一致<br/>正式 HTML ready；源码保持外部',820,700,'database'),
 ('i','独立 UPM package：外部选择 HTML<br/>Unity 2022.3 + UGUI + TMP',440,700,'external'),
-('j','生成 UGUI/TMP 根 Panel 到 Canvas<br/>图片 → Art/UI/Sprite/{PanelName}',440,830,'service'),
+('j','生成 UGUI/TMP 根 Panel 到 Canvas<br/>图片 → Art/UI/Sprites/{PanelName}',440,830,'service'),
 ('k','保存 Panel 与 Item Prefab<br/>业务数据与交互由目标应用实现',820,830,'database')],
 [('a','b',''),('b','c',''),('c','b','修改'),('c','d','通过'),('d','e',''),('e','f',''),('f','g',''),('g','f','实现偏差'),('g','h','通过'),('h','i','请求 Unity 转换'),('i','j',''),('j','k','')])
 ET.indent(doc)

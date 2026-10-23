@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "approvedLayoutSha256": "5c86063f58eac5cacb1799bb6263dd6ffb5f4faab5c9e92982d72c9c9a1cfd61",
+  "approvedElementGroupsSha256": "fc2ea75bd6f008b24d227fcdf085cdeb9e68fd781d3006f589e6c0d7ffcd3ac9",
+  "checks": {
+    "elements": "passed",
+    "naming": "passed",
+    "sprites": "passed",
+    "layout": "passed",
+    "visual": "passed",
+    "interactions": "passed"
+  },
+  "filesSha256": {
+    "html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "html/assets/shared/Img_ItemBattery.png": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+    "html/assets/shared/Img_ItemBeacon.png": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+    "html/assets/shared/Img_ItemMedkit.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+    "html/assets/shared/Img_ItemRation.png": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+    "html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "html/elements.json": "b86fd693d0646889b30d1677a411e1db12ef629d598be982b7486455a74d9eb6",
+    "html/panel.package.json": "2f18efa6bb944a2b90ac975ec045fb70fa60074ca11fea2d5310c513e2e9c37b",
+    "html/sprites.json": "036a30a931ab4282922ce232966b0d533b4199bc6292070f30074318054aab8a",
+    "html/StarportHomePanel.css": "d8eebde333e9e6bca273883ade27000805d8ec4552736b514a9ed42d3ca3ddea",
+    "html/StarportHomePanel.html": "678134afaac488194c2d35a6ac7217e29d2d35b9572d456bc5e2864e420ebdd7",
+    "html/StarportHomePanel.preview.js": "e167322c9926a726720415bb5a37d9d8b67461e8ac20c716f4a2b369f9c623bf",
+    "design/element-groups.json": "5ec385cf1aa08366f4250b2ba1d5cf29a5f915839ed6455452b565079ffe0bce",
+    "design/review/browser/default.png": "c5c92786fa31675d64086571043517a0b5dc1345490c6223f7fd8a869bec53e3",
+    "design/review/browser/checks.json": "6edc991a5739ff94bc8a1f6557a4f46791dcbcd42898ecd20eadc8566981fccb"
+  },
+  "screenshots": [
+    "design/review/browser/default.png"
+  ],
+  "browserVersion": "155.0.4283.62",
+  "unityAccepted": false,
+  "notes": "实际浏览器检查与模型视觉复核；像素差分仅用于诊断，不作为自动视觉通过阈值。Unity和设备尚未验证。"
+}

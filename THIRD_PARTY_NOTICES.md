@@ -7,6 +7,8 @@
 | Unity Editor 2022.3 | Importer and sample project | [Unity terms](https://unity.com/legal/terms-of-service); installed separately |
 | Unity UGUI / TextMesh Pro | Native UI and text components | Unity Package Manager dependencies; consult their package license files |
 | Pillow | Development image verification and optional comparison tools | [Pillow license](https://github.com/python-pillow/Pillow/blob/main/LICENSE) |
+| Playwright | Development browser interaction tests and screenshots | [Apache-2.0](https://github.com/microsoft/playwright/blob/main/LICENSE) |
+| sharp | Optional historical asset rasterization tools | [Apache-2.0](https://github.com/lovell/sharp/blob/main/LICENSE) |
 | diagrams.net | Optional editing of the workflow diagram | [Apache-2.0](https://github.com/jgraph/drawio/blob/dev/LICENSE); application not bundled |
 
 Unity 自带 TextMesh Pro Examples & Extras、字体和 Essential Resources 不上传；需要时通过 Unity 的 `Window → TextMeshPro → Import TMP Essential Resources` 导入。中文示例需要用户自行选择覆盖相应字符且许可合适的 TMP 字体。

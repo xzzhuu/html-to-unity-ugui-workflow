@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "panelName": "GameSettingsPanel",
+  "html": "GameSettingsPanel.html",
+  "outputFolder": "Assets/Art/UIPrefab/GameSettingsPanel",
+  "assetPrefix": "Assets/Art/UI/Sprite/GameSettingsPanel/",
+  "fontAsset": null,
+  "boldWeight": 0.12,
+  "requireSkillApproval": true,
+  "stagingRoot": "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel",
+  "allowPrefabReplacement": false,
+  "fontMaterial": null,
+  "projectName": "StarportSalvage"
+}

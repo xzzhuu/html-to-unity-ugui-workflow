@@ -7,7 +7,7 @@
 
 A reusable workflow from UI requirements and layout review to browser-previewable XHTML and native Unity UGUI / TextMesh Pro prefabs.
 
-This repository includes a Codex Skill, four external HTML examples, Python tools, and the complete source for the `com.nexvr.html-to-ugui` 0.3.0 UPM package. Design source files stay outside the Unity project. The importer creates image assets, Panel / Item prefabs, and generic binding metadata; the receiving application implements its own data handling and interactions.
+This repository includes a Codex Skill, a complete six-panel Starport example, Python tools, and the complete source for the `com.nex.html-to-ugui` 0.3.0 UPM package. Design source files stay outside the Unity project. The importer creates image assets, Panel / Item prefabs, and generic binding metadata; the receiving application implements its own data handling and interactions.
 
 ## Features and boundaries
 
@@ -15,26 +15,18 @@ This repository includes a Codex Skill, four external HTML examples, Python tool
 - Describe each element's purpose, semantic name, parent, native component, binding, and dynamic Item template.
 - Validate XHTML, assets, manifests, approval records, and readiness status.
 - Import prepared XHTML and PNG assets as native UGUI/TMP Panel and Item prefabs.
+- Scan a project directory, review selected panels together and batch-import them under `Assets/HtmlToUGUIStage/{ProjectName}/{PanelName}/`, with project-grouped previews. See the [project import workflow](Packages/com.nex.html-to-ugui/README.md#import-a-project-containing-multiple-panels).
 - Support browser previews and structural validation. The importer supports a limited CSS subset and does not guarantee faithful conversion of arbitrary web pages.
 
-TowerCrane is a `converter-example-unapproved` conversion example, and Starter is a `draft-unapproved` draft. Neither is an approved final visual deliverable. Passing structural validation does not establish visual parity or user approval. Browser JavaScript is not converted into Unity application logic.
+The Starport example follows the complete requirements → approved panel and element previews → shared assets → HTML → staged Unity → formal copy workflow. See the [walkthrough](docs/game-example/workflow.md) and [visual verification rules](docs/game-example/conversion-rules.md). Browser JavaScript remains preview logic; gameplay integration is separate.
 
-## Example screenshots
+## Starport previews
 
-These are actual browser captures of the repository's HTML examples using bundled sample data. They are not Unity runtime screenshots or approved final visual deliverables. The example UI text is currently in Chinese.
+| Home | Inventory | Settings |
+| --- | --- | --- |
+| ![Home](docs/screenshots/starport-home.png) | ![Inventory](docs/screenshots/starport-inventory.png) | ![Settings](docs/screenshots/starport-settings.png) |
 
-### TowerCrane · 1920 × 1080
-
-A device list, six live metric cards, four historical trend charts, and alarm status.
-
-![Tower crane dashboard HTML preview](docs/screenshots/tower-crane-dashboard.png)
-
-| Inventory · 1280 × 720 | Settings · 720 × 1280 |
-| --- | --- |
-| Dynamic item list and selection | Text input, notification toggle, and volume slider |
-| <img src="docs/screenshots/inventory-panel.png" alt="Inventory panel with sample item 3 selected" width="560" /> | <img src="docs/screenshots/settings-panel.png" alt="Portrait settings panel" width="240" /> |
-
-The [complete gallery and reproduction notes](docs/screenshots/README.md) also include a device-switch state and the Starter initialization draft.
+Actual HTML browser captures at 1920 × 1080. Unity verification is recorded separately.
 
 ## Quick start
 
@@ -43,11 +35,10 @@ Requirements: **Python 3.10+**. Unity import requires **Unity 2022.3**, UGUI 1.0
 ```sh
 git clone https://github.com/xzzhuu/html-to-unity-ugui-workflow.git
 cd html-to-unity-ugui-workflow
-python -X utf8 Skills/ui-panel-design-to-html/scripts/init_directory.py --root ./MyUI/Inventory --panel-name InventoryPanel
-python -X utf8 Skills/ui-panel-design-to-html/scripts/validate_directory.py --root ./MyUI/Inventory
+python -m http.server 8148 --bind 127.0.0.1 --directory Workspaces/StarportSalvage
 ```
 
-Open the generated `MyUI/Inventory/html/InventoryPanel.html` in your browser, or open the [Inventory example](Examples/Inventory/html/InventoryPanel.html) from your local clone. Initialization produces an unapproved draft.
+Open the [Starport launcher](http://127.0.0.1:8148/index.html). New workspaces initialized with the Skill remain unapproved drafts.
 
 ### Install the Codex Skill
 
@@ -89,39 +80,45 @@ The Skill's instructions and supporting reference documents are currently primar
 
 ### Install the Unity importer
 
-In Unity Package Manager, choose **Add package from disk** and select `Packages/com.nexvr.html-to-ugui/package.json` from this repository.
+In Unity Package Manager, choose **Add package from disk** and select `Packages/com.nex.html-to-ugui/package.json` from this repository.
 
 Alternatively, choose **Add package from git URL** and enter:
 
 ```text
-https://github.com/xzzhuu/html-to-unity-ugui-workflow.git?path=/Packages/com.nexvr.html-to-ugui
+https://github.com/xzzhuu/html-to-unity-ugui-workflow.git?path=/Packages/com.nex.html-to-ugui
 ```
 
-Import TMP Essential Resources and select a TMP font containing the required glyphs. Then choose **Tools → HTML to UGUI → Import Panel...** and select a prepared HTML file outside the Unity project.
+Import TMP Essential Resources and select a TMP font containing the required glyphs. Then choose **Tools → HTML to UGUI → 导入单个面板...** and select a prepared HTML file outside the Unity project.
 
-Generation defaults to `Assets/HtmlToUGUIStage/{PanelName}/`. Review panels in `Assets/HtmlToUGUIStage/StageScene.unity` using **Tools → HTML to UGUI → Stage Panels...**, check the panels you want, inspect the copy plan, then copy them to formal folders. Main and Item prefabs share `Assets/Art/UIPrefab/{PanelName}/`; images go to `Assets/Art/UI/Sprite/{PanelName}/`. Reports remain in staging, and fonts/materials reuse existing project resources. See the [package guide](Packages/com.nexvr.html-to-ugui/README.md) for input requirements, outputs, and conversion limits.
+Generation defaults to `Assets/HtmlToUGUIStage/{PanelName}/`. Review panels in `Assets/HtmlToUGUIStage/StageScene.unity` using **Tools → HTML to UGUI → 面板暂存与复制...**, check the panels you want, inspect the copy plan, then copy them to formal folders. The default-enabled **保留面板名称子目录** option puts main Prefabs in `Assets/Art/UIPrefab/{PanelName}/`; disable it to put them directly in `Assets/Art/UIPrefab/`. Both modes put Item Prefabs in `Assets/Art/UIPrefab/Item/`; images go to `Assets/Art/UI/Sprites/{PanelName}/`. Reports remain in staging, and fonts/materials reuse existing project resources. See [promotion options and examples](docs/stage-promotion.md) and the [package guide](Packages/com.nex.html-to-ugui/README.md) for input requirements, outputs, and conversion limits.
 
 ### Open the sample Unity project
 
-Open `UnityProject/` with Unity 2022.3. Its package manifest references the importer within this repository, so it does not require the original author's local package paths or MCP SDK.
+Open `UnityProject/` with Unity 2022.3. Its package manifest references the importer within this repository, so it does not require the original author's local package paths. Unity MCP is an optional local development dependency; remove or adjust its local file reference when using another machine.
 
 Third-party fonts, TMP Essential Resources, and vendor examples are not distributed. Before using the sample scenes and prefabs:
 
 1. Choose **Window → TextMeshPro → Import TMP Essential Resources**.
 2. Prepare a TMP font covering the required characters, including Chinese text where applicable, under an appropriate license.
-3. Reimport the desired HTML from `Examples/`, selecting your font in the importer to rebuild font and material references.
+3. Import the game root `Workspaces/StarportSalvage` after selecting the project TMP default font. This project uses the existing `PICOSansVFESC SDF` and its shared material.
 4. Check the Console, scene, and prefabs, then save the scene.
 
 Existing prefab font references may be missing until reimport. The original sample project used `2022.3.62f3c1`; compatibility with other 2022.3 patch versions has not been reverified. See the [sample project notes](UnityProject/README.md) for details; those notes are currently in Chinese.
+
+## Test project and game workspace
+
+Open `UnityProject/` inside your clone with Unity 2022.3.62f3c1. It references the repository UPM package using a relative path. Restore the licensed font/TMP resources and adjust the optional local Unity MCP dependency as described in the [project notes](UnityProject/README.md). The editor's buttons, window labels, and menu entries use Chinese.
+
+The [Starport workspace](Workspaces/StarportSalvage/README.md) stores every panel package under `Workspaces/StarportSalvage/Panels/{PanelName}/`. Keep `project.assets.json`, shared assets, design reviews, and tools at the game root. Select that root for project import; each panel package resolves it with `projectDirectory: "../../.."`. The initializer detects this layout when the root asset manifest exists.
 
 ## Repository structure
 
 | Directory | Purpose |
 | --- | --- |
 | [Skills/ui-panel-design-to-html](Skills/ui-panel-design-to-html/SKILL.md) | Workflow Skill, contracts, scripts, and editable workflow diagrams |
-| [Examples](Examples/README.md) | External HTML examples: Settings, Inventory, Starter, and TowerCrane |
-| [Packages/com.nexvr.html-to-ugui](Packages/com.nexvr.html-to-ugui/README.md) | Unity Editor importer and generic Runtime metadata |
+| [Packages/com.nex.html-to-ugui](Packages/com.nex.html-to-ugui/README.md) | Unity Editor importer and generic Runtime metadata |
 | [Tools](Tools/README.md) | Installation, validation, layout comparison, and packaging tools |
+| [Workspaces](Workspaces/README.md) | Game-wide shared assets, panel sources under Panels/, and review evidence |
 | [UnityProject](UnityProject/README.md) | Unity 2022.3 sample project; font resources must be restored separately |
 | [Audit](Audit/README.md) | Public distribution notes; machine-specific run results are excluded from Git |
 
@@ -133,6 +130,7 @@ Run these commands from the repository root:
 
 ```sh
 python -m pip install -r requirements-dev.txt
+python -B -X utf8 -m unittest discover -s Skills/ui-panel-design-to-html/scripts -p test_workflow.py
 python -X utf8 Tools/verify-directory-generator.py
 python -X utf8 Tools/verify-preparation-contract.py
 python -X utf8 Tools/verify-installer.py
@@ -143,7 +141,7 @@ python -X utf8 Tools/build-unity-package.py
 
 Package archives and file-by-file verification reports are written to `dist/`. Validation reports are written to `Audit/Runs/latest/`. Both directories are excluded from version control.
 
-GitHub Actions runs these checks on Windows and Ubuntu with Python 3.10 and 3.12, and uploads package artifacts. **These checks do not compile the Unity project or perform visual acceptance testing.** Importer changes still require verification in Unity Editor.
+GitHub Actions runs these checks on Windows and Ubuntu with Python 3.10 and 3.12, and uploads package artifacts. A separate browser job runs the Starport interactions using `npm ci`, `npx playwright install chromium`, and `npm run verify:browser`. **These checks do not compile the Unity project or perform visual acceptance testing.** After restoring the actual Unity project resources, run `python -B -X utf8 Tools/verify-starport-panels.py --unity-project UnityProject` to check all six panels, Items, images, fonts, and delivery fingerprints. Importer changes still require verification in Unity Editor.
 
 ## Contributing and license
 
@@ -152,3 +150,5 @@ Read the [contribution guide](CONTRIBUTING.md), [code of conduct](CODE_OF_CONDUC
 For sensitive security issues, use [private vulnerability reporting](https://github.com/xzzhuu/html-to-unity-ugui-workflow/security/advisories/new) rather than publishing credentials or private project data in an Issue.
 
 This project is distributed under the [MIT license](LICENSE). Third-party dependencies, fonts, and Unity software retain their own licenses; see [third-party notices](THIRD_PARTY_NOTICES.md).
+
+Project author: **Nex Xie**. The root `.mailmap` normalizes historical author display names by email; published commit objects and SHAs are preserved.

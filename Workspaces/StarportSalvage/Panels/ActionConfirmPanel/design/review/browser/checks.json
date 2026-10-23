@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "browser": "155.0.4283.62",
+  "checks": [
+    {
+      "name": "Six independent XHTML pages render without errors",
+      "status": "passed"
+    },
+    {
+      "name": "Default data starts with empty loadout",
+      "status": "passed"
+    },
+    {
+      "name": "Inventory selection, quantity, merge and stock accounting",
+      "status": "passed"
+    },
+    {
+      "name": "Search intersects category, clears detail and preserves zero inventory",
+      "status": "passed"
+    },
+    {
+      "name": "Locked mission and confirmation cancel never charge",
+      "status": "passed"
+    },
+    {
+      "name": "Three-second expedition, same-session result, one-time claim",
+      "status": "passed"
+    },
+    {
+      "name": "Settings reject invalid names, cancel drafts, apply valid values",
+      "status": "passed"
+    },
+    {
+      "name": "Empty, single, thirty items, scroll and long text",
+      "status": "passed"
+    },
+    {
+      "name": "Overweight rejects atomically; zero stock, remove and clear",
+      "status": "passed"
+    },
+    {
+      "name": "Deficits, loading, error/retry and empty missions",
+      "status": "passed"
+    },
+    {
+      "name": "Task snapshot locks loadout; no-medkit result; reset/cancel and Esc",
+      "status": "passed"
+    },
+    {
+      "name": "Uniform scaling at 1280x720 and 1920x1200",
+      "status": "passed"
+    },
+    {
+      "name": "Demo launcher switches panels and fixtures outside the game UI",
+      "status": "passed"
+    },
+    {
+      "name": "Browser console and local resources clean",
+      "status": "passed"
+    }
+  ],
+  "errors": []
+}

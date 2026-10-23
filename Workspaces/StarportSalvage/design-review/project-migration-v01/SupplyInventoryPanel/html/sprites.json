@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "panelName": "SupplyInventoryPanel",
+  "sprites": [
+    {
+      "source": "assets/shared/Img_Circle.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_Circle.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        64,
+        64
+      ],
+      "hasAlpha": true,
+      "purpose": "开关旋钮与滑块手柄共用实心圆",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_Control_Background.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_Control_Background.png",
+      "role": "Sprite",
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "pixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "purpose": "按钮和输入框共用圆角结构",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_ItemAlloy.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_ItemAlloy.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_ItemBattery.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_ItemBattery.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_ItemBeacon.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_ItemBeacon.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_ItemChip.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_ItemChip.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_ItemCircuit.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_ItemCircuit.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_ItemMedkit.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_ItemMedkit.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_ItemOre.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_ItemOre.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_ItemRation.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_ItemRation.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_RoundedSurface.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_RoundedSurface.png",
+      "role": "Sprite",
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "pixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "purpose": "底板、卡片、列表与条目共用中性圆角",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Sld_Value_Bar.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Sld_Value_Bar.png",
+      "role": "Sprite",
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "pixelSize": [
+        512,
+        32
+      ],
+      "hasAlpha": true,
+      "purpose": "滑块轨道和填充共用胶囊形",
+      "usage": "source"
+    }
+  ]
+}

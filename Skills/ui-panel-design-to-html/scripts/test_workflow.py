@@ -11,6 +11,7 @@ import zlib
 
 from init_directory import initialize
 from validate_directory import validate, definition_digest, file_digest, validate_content_rect
+from project_asset_contract import load_project_assets
 
 
 def write_json(path, value):
@@ -35,6 +36,62 @@ class WorkflowTests(unittest.TestCase):
     def tearDown(self):
         self.temp.cleanup()
 
+    def test_initialize_game_panels_resolves_shared_project(self):
+        import xml.etree.ElementTree as ET
+        game = Path(self.temp.name) / 'TestGame'
+        game.mkdir()
+        write_json(game / 'project.assets.json', {'schemaVersion': 1, 'assets': []})
+        panel = game / 'Panels' / 'SettingsPanel'
+        initialize(panel)
+        package_path = panel / 'html/panel.package.json'
+        package = json.loads(package_path.read_text(encoding='utf-8'))
+        self.assertEqual(package['projectName'], 'TestGame')
+        self.assertEqual(package['projectDirectory'], '../../..')
+        self.assertEqual(package['stagingRoot'], 'Assets/HtmlToUGUIStage/TestGame/SettingsPanel')
+        source = next(n for n in ET.parse(panel / 'html/SettingsPanel.html').iter() if n.get('data-root') == 'true')
+        self.assertEqual(source.get('data-project-name'), package['projectName'])
+        self.assertEqual(source.get('data-project-directory'), package['projectDirectory'])
+        self.assertEqual(source.get('data-staging-root'), package['stagingRoot'])
+        validate(panel)
+        before = package_path.read_bytes()
+        initialize(panel)
+        self.assertEqual(before, package_path.read_bytes())
+
+    def test_standalone_html_and_package_share_staging_root(self):
+        import xml.etree.ElementTree as ET
+        initialize(self.root)
+        package = json.loads((self.root/'html/panel.package.json').read_text(encoding='utf-8'))
+        source = next(n for n in ET.parse(self.root/'html/SettingsPanel.html').iter() if n.get('data-root') == 'true')
+        self.assertEqual(source.get('data-staging-root'), package['stagingRoot'])
+
+    def test_checkout_without_empty_scaffolding_keeps_real_requirements(self):
+        initialize(self.root)
+        for directory in ('inputs/references','html/assets/icons','html/assets/sprites','html/assets/textures'):
+            (self.root/directory).rmdir()
+        validate(self.root)
+        (self.root/'design/review').rmdir()
+        with self.assertRaisesRegex(ValueError, 'Missing directory: design/review'):
+            validate(self.root)
+
+    def test_validation_rejects_inconsistent_import_routes(self):
+        initialize(self.root)
+        package_path = self.root/'html/panel.package.json'
+        package = json.loads(package_path.read_text(encoding='utf-8'))
+        for changes in ({'stagingRoot':'Assets/Other'}, {'projectName':'WrongGame'}, {'projectDirectory':'..'}):
+            with self.subTest(changes=changes):
+                write_json(package_path, dict(package, **changes))
+                with self.assertRaisesRegex(ValueError, 'routing|projectDirectory'):
+                    validate(self.root)
+
+    def test_invalid_game_name_leaves_no_partial_workspace(self):
+        game = Path(self.temp.name)/'Invalid Game'
+        game.mkdir()
+        write_json(game/'project.assets.json', {'schemaVersion':1, 'assets':[]})
+        panel = game/'Panels'/'SettingsPanel'
+        with self.assertRaises(ValueError):
+            initialize(panel)
+        self.assertFalse(panel.exists())
+
     def fixture(self, mode='visual-only'):
         initialize(self.root, panel='SettingsPanel', mode=mode)
         png(self.root/'design/review/layout-approved.png')
@@ -49,10 +106,10 @@ class WorkflowTests(unittest.TestCase):
         png(self.root/group['sheet'])
         sprites=[]
         if mode=='visual-only':
-            source='assets/sprites/Img_RoundedSurface.png'
+            source='assets/sprites/Btn_Primary_Surface.png'
             png(self.root/source)
             group['assets']=[source]
-            sprites=[{'source':source, 'componentType':'Image', 'pixelSize':[4,4],
+            sprites=[{'source':source, 'componentType':'Button', 'pixelSize':[4,4],
                       'originalPixelSize':[4,4], 'hasAlpha':True, 'border':[1,1,1,1],
                       'tintable':True, 'purpose':'Shared neutral surface'}]
         manifest={'schemaVersion':1,'panelName':'SettingsPanel','requiredComponents':[kind],
@@ -378,6 +435,83 @@ class WorkflowTests(unittest.TestCase):
         entry.write_text(source.replace('data-root="true"','data-root="true" data-selected-color="#FF0000"'),encoding='utf-8')
         with self.assertRaisesRegex(ValueError,'Selectable'):
             validate(self.root)
+
+    def test_project_asset_mapping_preserves_predicted_component_count(self):
+        self.fixture('full')
+        state_path=self.root/'.html-directory.json'
+        state=json.loads(state_path.read_text(encoding='utf-8'));state['status']='draft-unapproved';write_json(state_path,state)
+        image=self.root/'html/assets/icons/Img_Primary_Surface.png';png(image)
+        package_path=self.root/'html/panel.package.json'
+        package=json.loads(package_path.read_text(encoding='utf-8'))
+        package.update(projectName='SyntheticGame',projectDirectory='..',stagingRoot='Assets/HtmlToUGUIStage/SyntheticGame/SettingsPanel');write_json(package_path,package)
+        write_json(self.root/'project.assets.json',dict(schemaVersion=1,assets=[dict(assetId='Primary',componentType='Image',
+            part='Surface',styleId='Primary',state='Default',source='html/assets/icons/Img_Primary_Surface.png',
+            sourceSha256=file_digest(image),approved=True,approvalVersion='SYNTHETIC TEST ONLY')]))
+        entry=self.root/'html/SettingsPanel.html'
+        entry.write_text(entry.read_text(encoding='utf-8').replace('data-root="true"','data-root="true" data-sprite="asset:Primary" data-project-name="SyntheticGame" data-project-directory=".."').replace('Assets/HtmlToUGUIStage/SettingsPanel','Assets/HtmlToUGUIStage/SyntheticGame/SettingsPanel'),encoding='utf-8')
+        write_json(self.root/'html/sprites.json',dict(schemaVersion=1,panelName='SettingsPanel',sprites=[dict(
+            source='assets/icons/Img_Primary_Surface.png',path='asset:Primary',role='Sprite',border=[0,0,0,0],
+            pixelSize=[4,4],hasAlpha=True,purpose='Synthetic approved root surface',usage='source')]))
+        result=validate(self.root)
+        self.assertIsInstance(result['components'],int)
+        self.assertGreater(result['components'],0)
+
+
+class ProjectAssetTests(unittest.TestCase):
+    def setUp(self):
+        self.temp=tempfile.TemporaryDirectory(prefix='game-assets-tests-')
+        self.root=Path(self.temp.name)
+        png(self.root/'surface.png')
+        self.item=dict(assetId='Primary',componentType='Button',part='Surface',styleId='Primary',state='Normal',
+                       source='surface.png',sourceSha256=file_digest(self.root/'surface.png'),approved=True,approvalVersion='SYNTHETIC TEST ONLY')
+
+    def tearDown(self):
+        self.temp.cleanup()
+
+    def save(self,items):
+        write_json(self.root/'project.assets.json',dict(schemaVersion=1,assets=items))
+
+    def test_full_inventory_checks_unreferenced_approved_sources(self):
+        self.save([self.item])
+        self.assertEqual(set(load_project_assets(self.root)),{'Primary'})
+        png(self.root/'surface.png',color=128)
+        with self.assertRaisesRegex(ValueError,'Approved project asset changed'):
+            load_project_assets(self.root)
+
+    def test_duplicate_identity_and_unapproved_source(self):
+        self.save([self.item,dict(self.item,assetId='primary')])
+        with self.assertRaisesRegex(ValueError,'duplicate'):
+            load_project_assets(self.root)
+        self.save([dict(self.item,approved=False,source='not-created.png')])
+        self.assertEqual(load_project_assets(self.root),{})
+
+    def test_toggle_states_are_explicit_and_aligned(self):
+        states=[dict(self.item,assetId=state,componentType='Toggle',styleId='Option',state=state) for state in ('Off','On','Disabled')]
+        self.save(states)
+        self.assertEqual(len(load_project_assets(self.root)),3)
+        self.save(states[:2])
+        with self.assertRaisesRegex(ValueError,'Off, On and Disabled'):
+            load_project_assets(self.root)
+        self.save([*states[:2],dict(states[2],pivot=[0,0])])
+        with self.assertRaisesRegex(ValueError,'identical canvas'):
+            load_project_assets(self.root)
+
+    def test_project_profile_rejects_non_pot_and_escape(self):
+        png(self.root/'surface.png',width=3)
+        self.save([dict(self.item,sourceSha256=file_digest(self.root/'surface.png'))])
+        with self.assertRaisesRegex(ValueError,'POT'):
+            load_project_assets(self.root)
+        self.save([dict(self.item,source='../outside.png')])
+        with self.assertRaisesRegex(ValueError,'escapes'):
+            load_project_assets(self.root)
+
+    def test_project_import_profile_rejects_wrong_json_types(self):
+        for change in ({'pixelsPerUnit':True}, {'sRGB':'false'}, {'tintable':'false'},
+                       {'approved':'true'}, {'approvalVersion':' '}, {'pivot':[True,.5]}, {'border':[False,0,0,0]}):
+            with self.subTest(change=change):
+                self.save([dict(self.item, **change)])
+                with self.assertRaises(ValueError):
+                    load_project_assets(self.root)
 
 
 if __name__=='__main__':

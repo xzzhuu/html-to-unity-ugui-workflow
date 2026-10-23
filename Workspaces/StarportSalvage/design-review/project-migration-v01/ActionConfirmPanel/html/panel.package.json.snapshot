@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "panelName": "ActionConfirmPanel",
+  "html": "ActionConfirmPanel.html",
+  "outputFolder": "Assets/Art/UIPrefab/ActionConfirmPanel",
+  "assetPrefix": "Assets/Art/UI/Sprite/ActionConfirmPanel/",
+  "fontAsset": null,
+  "boldWeight": 0.12,
+  "requireSkillApproval": true,
+  "stagingRoot": "Assets/HtmlToUGUIStage/StarportSalvage/ActionConfirmPanel",
+  "allowPrefabReplacement": false,
+  "fontMaterial": null,
+  "projectName": "StarportSalvage"
+}

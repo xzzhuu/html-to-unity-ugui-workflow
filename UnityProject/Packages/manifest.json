@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "com.nexvr.html-to-ugui": "file:../../Packages/com.nexvr.html-to-ugui",
+    "com.coplaydev.unity-mcp": "file:D:/SDK/unity-mcp-10.2.0/MCPForUnity",
+    "com.nex.html-to-ugui": "file:../../Packages/com.nex.html-to-ugui",
     "com.unity.collab-proxy": "2.12.4",
     "com.unity.feature.development": "1.0.1",
     "com.unity.textmeshpro": "3.0.7",

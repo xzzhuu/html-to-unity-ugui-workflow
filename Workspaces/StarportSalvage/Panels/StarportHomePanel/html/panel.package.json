@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "panelName": "StarportHomePanel",
+  "html": "StarportHomePanel.html",
+  "outputFolder": "Assets/Art/UIPrefab/StarportHomePanel",
+  "assetPrefix": "Assets/Art/UI/Sprite/StarportHomePanel/",
+  "fontAsset": null,
+  "boldWeight": 0.12,
+  "requireSkillApproval": true,
+  "stagingRoot": "Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel",
+  "allowPrefabReplacement": false,
+  "fontMaterial": null,
+  "projectName": "StarportSalvage",
+  "projectDirectory": "../../.."
+}

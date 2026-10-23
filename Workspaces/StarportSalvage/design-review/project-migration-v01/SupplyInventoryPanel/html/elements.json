@@ -1,0 +1,2162 @@
+{
+  "schemaVersion": 1,
+  "panelName": "SupplyInventoryPanel",
+  "status": "ready",
+  "templates": [
+    {
+      "name": "InventoryEntry",
+      "itemRootId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content",
+      "bindingScope": "InventoryEntry",
+      "itemSize": [
+        620,
+        84
+      ],
+      "stepPx": 96,
+      "dataSource": "inventory filtered by category and search",
+      "states": [
+        "normal",
+        "selected",
+        "empty",
+        "locked"
+      ]
+    },
+    {
+      "name": "LoadoutEntry",
+      "itemRootId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content",
+      "bindingScope": "LoadoutEntry",
+      "itemSize": [
+        436,
+        136
+      ],
+      "stepPx": 148,
+      "dataSource": "planned loadout",
+      "states": [
+        "normal",
+        "selected",
+        "empty",
+        "locked"
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "elementId": "SupplyInventoryPanel",
+      "unityName": "SupplyInventoryPanel",
+      "parentId": null,
+      "hierarchyPath": "SupplyInventoryPanel",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "SupplyInventoryPanel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "原生控件辅助节点，所属SupplyInventoryPanel",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody",
+      "unityName": "Group_PanelBody",
+      "parentId": "SupplyInventoryPanel",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Group_PanelBody",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "PanelBody，用于仓库整备",
+      "dataSource": null,
+      "pictureRegion": [
+        120,
+        80,
+        1680,
+        920
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Btn_CategoryAll",
+      "unityName": "Btn_CategoryAll",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Btn_CategoryAll",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "SupplyInventoryPanel__Btn_CategoryAll",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.CategoryAll",
+      "purpose": "CategoryAll，用于仓库整备",
+      "dataSource": "Action.CategoryAll",
+      "pictureRegion": [
+        160,
+        246,
+        104,
+        56
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Btn_CategoryAll/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Btn_CategoryAll",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Btn_CategoryAll/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属SupplyInventoryPanel/Group_PanelBody/Btn_CategoryAll",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Btn_CategoryMaterial",
+      "unityName": "Btn_CategoryMaterial",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Btn_CategoryMaterial",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "SupplyInventoryPanel__Btn_CategoryMaterial",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.CategoryMaterial",
+      "purpose": "CategoryMaterial，用于仓库整备",
+      "dataSource": "Action.CategoryMaterial",
+      "pictureRegion": [
+        276,
+        246,
+        104,
+        56
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Btn_CategoryMaterial/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Btn_CategoryMaterial",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Btn_CategoryMaterial/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属SupplyInventoryPanel/Group_PanelBody/Btn_CategoryMaterial",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Btn_CategorySupply",
+      "unityName": "Btn_CategorySupply",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Btn_CategorySupply",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "SupplyInventoryPanel__Btn_CategorySupply",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.CategorySupply",
+      "purpose": "CategorySupply，用于仓库整备",
+      "dataSource": "Action.CategorySupply",
+      "pictureRegion": [
+        392,
+        246,
+        104,
+        56
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Btn_CategorySupply/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Btn_CategorySupply",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Btn_CategorySupply/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属SupplyInventoryPanel/Group_PanelBody/Btn_CategorySupply",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Input_ItemSearch",
+      "unityName": "Input_ItemSearch",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Input_ItemSearch",
+      "uguiComponent": "TMP_InputField",
+      "sourceType": "InputField",
+      "htmlId": "SupplyInventoryPanel__Input_ItemSearch",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Filter.Search",
+      "purpose": "ItemSearch，用于仓库整备",
+      "dataSource": "Filter.Search",
+      "pictureRegion": [
+        520,
+        246,
+        290,
+        56
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Input_ItemSearch/Group_TextViewport",
+      "unityName": "Group_TextViewport",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Input_ItemSearch",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Input_ItemSearch/Group_TextViewport",
+      "uguiComponent": "RectTransform",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "裁剪输入文本视口，所属SupplyInventoryPanel/Group_PanelBody/Input_ItemSearch",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Input_ItemSearch/Group_TextViewport/Txt_Placeholder",
+      "unityName": "Txt_Placeholder",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Input_ItemSearch/Group_TextViewport",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Input_ItemSearch/Group_TextViewport/Txt_Placeholder",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示输入提示，所属SupplyInventoryPanel/Group_PanelBody/Input_ItemSearch/Group_TextViewport",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Input_ItemSearch/Group_TextViewport/Txt_Value",
+      "unityName": "Txt_Value",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Input_ItemSearch/Group_TextViewport",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Input_ItemSearch/Group_TextViewport/Txt_Value",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示当前输入文本，所属SupplyInventoryPanel/Group_PanelBody/Input_ItemSearch/Group_TextViewport",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Btn_ClearSearch",
+      "unityName": "Btn_ClearSearch",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Btn_ClearSearch",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "SupplyInventoryPanel__Btn_ClearSearch",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.ClearSearch",
+      "purpose": "ClearSearch，用于仓库整备",
+      "dataSource": "Action.ClearSearch",
+      "pictureRegion": [
+        822,
+        246,
+        88,
+        56
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Btn_ClearSearch/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Btn_ClearSearch",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Btn_ClearSearch/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属SupplyInventoryPanel/Group_PanelBody/Btn_ClearSearch",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Txt_InventoryTitle",
+      "unityName": "Txt_InventoryTitle",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Txt_InventoryTitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_InventoryTitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示仓库物品",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        330,
+        360,
+        40
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Txt_ItemCount",
+      "unityName": "Txt_ItemCount",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Txt_ItemCount",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_ItemCount",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Inventory.Count",
+      "purpose": "显示8类物品",
+      "dataSource": "Inventory.Count",
+      "pictureRegion": [
+        666,
+        334,
+        140,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory",
+      "unityName": "Scroll_Inventory",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory",
+      "uguiComponent": "ScrollRect",
+      "sourceType": "ScrollView",
+      "htmlId": "SupplyInventoryPanel__Scroll_Inventory",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Inventory.List",
+      "purpose": "Inventory，用于仓库整备",
+      "dataSource": "Inventory.List",
+      "pictureRegion": [
+        160,
+        380,
+        620,
+        478
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content",
+      "unityName": "Group_Content",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content",
+      "uguiComponent": "RectTransform",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "承载滚动内容和动态条目，所属SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry",
+      "unityName": "Item_InventoryEntry",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "SupplyInventoryPanel__Item_InventoryEntry",
+      "generated": false,
+      "template": "InventoryEntry",
+      "bindingKey": "Item.Select",
+      "purpose": "InventoryEntry，用于仓库整备",
+      "dataSource": "Item.Select",
+      "pictureRegion": [
+        0,
+        0,
+        620,
+        84
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry/Img_ItemSelection",
+      "unityName": "Img_ItemSelection",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry/Img_ItemSelection",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Img_ItemSelection",
+      "generated": false,
+      "template": "InventoryEntry",
+      "bindingKey": "Item.SelectedMarker",
+      "purpose": "ItemSelection，用于仓库整备",
+      "dataSource": "Item.SelectedMarker",
+      "pictureRegion": [
+        0,
+        12,
+        4,
+        60
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry/Group_InventoryItemSeat",
+      "unityName": "Group_InventoryItemSeat",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry/Group_InventoryItemSeat",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Group_InventoryItemSeat",
+      "generated": false,
+      "template": "InventoryEntry",
+      "bindingKey": null,
+      "purpose": "InventoryItemSeat，用于仓库整备",
+      "dataSource": null,
+      "pictureRegion": [
+        16,
+        14,
+        56,
+        56
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry/Img_InventoryItem",
+      "unityName": "Img_InventoryItem",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry/Img_InventoryItem",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Img_InventoryItem",
+      "generated": false,
+      "template": "InventoryEntry",
+      "bindingKey": "Item.Icon",
+      "purpose": "InventoryItem，用于仓库整备",
+      "dataSource": "Item.Icon",
+      "pictureRegion": [
+        16,
+        14,
+        56,
+        56
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry/Txt_InventoryName",
+      "unityName": "Txt_InventoryName",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry/Txt_InventoryName",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_InventoryName",
+      "generated": false,
+      "template": "InventoryEntry",
+      "bindingKey": "Item.Name",
+      "purpose": "显示急救包",
+      "dataSource": "Item.Name",
+      "pictureRegion": [
+        90,
+        10,
+        410,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry/Txt_InventoryCategory",
+      "unityName": "Txt_InventoryCategory",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry/Txt_InventoryCategory",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_InventoryCategory",
+      "generated": false,
+      "template": "InventoryEntry",
+      "bindingKey": "Item.Category",
+      "purpose": "显示补给 · 普通",
+      "dataSource": "Item.Category",
+      "pictureRegion": [
+        90,
+        47,
+        410,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry/Txt_InventoryQuantity",
+      "unityName": "Txt_InventoryQuantity",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry/Txt_InventoryQuantity",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_InventoryQuantity",
+      "generated": false,
+      "template": "InventoryEntry",
+      "bindingKey": "Item.Quantity",
+      "purpose": "显示×4",
+      "dataSource": "Item.Quantity",
+      "pictureRegion": [
+        512,
+        25,
+        100,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Txt_InventoryState",
+      "unityName": "Txt_InventoryState",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Txt_InventoryState",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_InventoryState",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Inventory.Status",
+      "purpose": "InventoryState，用于仓库整备",
+      "dataSource": "Inventory.Status",
+      "pictureRegion": [
+        164,
+        430,
+        580,
+        160
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Txt_ScrollHint",
+      "unityName": "Txt_ScrollHint",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Txt_ScrollHint",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_ScrollHint",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示滚动查看其余材料 ↓",
+      "dataSource": null,
+      "pictureRegion": [
+        164,
+        867,
+        600,
+        35
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails",
+      "unityName": "Group_ItemDetails",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Group_ItemDetails",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "ItemDetails，用于仓库整备",
+      "dataSource": null,
+      "pictureRegion": [
+        804,
+        330,
+        432,
+        556
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_DetailsTitle",
+      "unityName": "Txt_DetailsTitle",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_DetailsTitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_DetailsTitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示物品详情",
+      "dataSource": null,
+      "pictureRegion": [
+        836,
+        358,
+        368,
+        40
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Group_DetailIconSeat",
+      "unityName": "Group_DetailIconSeat",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Group_DetailIconSeat",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Group_DetailIconSeat",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "DetailIconSeat，用于仓库整备",
+      "dataSource": null,
+      "pictureRegion": [
+        836,
+        412,
+        88,
+        88
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Group_DetailIconSeat/Img_DetailIcon",
+      "unityName": "Img_DetailIcon",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Group_DetailIconSeat",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Group_DetailIconSeat/Img_DetailIcon",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Img_DetailIcon",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Item.DetailIcon",
+      "purpose": "DetailIcon，用于仓库整备",
+      "dataSource": "Item.DetailIcon",
+      "pictureRegion": [
+        836,
+        412,
+        88,
+        88
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_DetailName",
+      "unityName": "Txt_DetailName",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_DetailName",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_DetailName",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Item.DetailName",
+      "purpose": "显示急救包",
+      "dataSource": "Item.DetailName",
+      "pictureRegion": [
+        948,
+        420,
+        256,
+        50
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_DetailRarity",
+      "unityName": "Txt_DetailRarity",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_DetailRarity",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_DetailRarity",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Item.DetailRarity",
+      "purpose": "显示普通补给",
+      "dataSource": "Item.DetailRarity",
+      "pictureRegion": [
+        948,
+        467,
+        256,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Scroll_ItemDescription",
+      "unityName": "Scroll_ItemDescription",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Scroll_ItemDescription",
+      "uguiComponent": "ScrollRect",
+      "sourceType": "ScrollView",
+      "htmlId": "SupplyInventoryPanel__Scroll_ItemDescription",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Item.DescriptionScroll",
+      "purpose": "ItemDescription，用于仓库整备",
+      "dataSource": "Item.DescriptionScroll",
+      "pictureRegion": [
+        836,
+        537,
+        368,
+        76
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Scroll_ItemDescription/Group_Content",
+      "unityName": "Group_Content",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Scroll_ItemDescription",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Scroll_ItemDescription/Group_Content",
+      "uguiComponent": "RectTransform",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "承载滚动内容和动态条目，所属SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Scroll_ItemDescription",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Scroll_ItemDescription/Group_Content/Txt_DetailDescription",
+      "unityName": "Txt_DetailDescription",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Scroll_ItemDescription/Group_Content",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Scroll_ItemDescription/Group_Content/Txt_DetailDescription",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_DetailDescription",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Item.Description",
+      "purpose": "显示成功远征时，若有携带，\n消耗1个。",
+      "dataSource": "Item.Description",
+      "pictureRegion": [
+        836,
+        537,
+        368,
+        76
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_Stock",
+      "unityName": "Txt_Stock",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_Stock",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_Stock",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Item.Stock",
+      "purpose": "显示仓库4 / 已携行3",
+      "dataSource": "Item.Stock",
+      "pictureRegion": [
+        836,
+        624,
+        368,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_ItemWeight",
+      "unityName": "Txt_ItemWeight",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_ItemWeight",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_ItemWeight",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Item.Weight",
+      "purpose": "显示单重1.0kg · 可加入1",
+      "dataSource": "Item.Weight",
+      "pictureRegion": [
+        836,
+        663,
+        368,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_QuantityLabel",
+      "unityName": "Txt_QuantityLabel",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_QuantityLabel",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_QuantityLabel",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Item.QuantityLabel",
+      "purpose": "显示加入数量",
+      "dataSource": "Item.QuantityLabel",
+      "pictureRegion": [
+        836,
+        720,
+        220,
+        34
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_QuantityValue",
+      "unityName": "Txt_QuantityValue",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_QuantityValue",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_QuantityValue",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Supply.QuantityValue",
+      "purpose": "显示1",
+      "dataSource": "Supply.QuantityValue",
+      "pictureRegion": [
+        1120,
+        720,
+        70,
+        34
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Slider_AddQuantity",
+      "unityName": "Slider_AddQuantity",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Slider_AddQuantity",
+      "uguiComponent": "Slider",
+      "sourceType": "Slider",
+      "htmlId": "SupplyInventoryPanel__Slider_AddQuantity",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Supply.AddQuantity",
+      "purpose": "AddQuantity，用于仓库整备",
+      "dataSource": "Supply.AddQuantity",
+      "pictureRegion": [
+        878,
+        752,
+        282,
+        40
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Slider_AddQuantity/Img_Fill",
+      "unityName": "Img_Fill",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Slider_AddQuantity",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Slider_AddQuantity/Img_Fill",
+      "uguiComponent": "Image",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示填充进度，所属SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Slider_AddQuantity",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Slider_AddQuantity/Group_HandleArea",
+      "unityName": "Group_HandleArea",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Slider_AddQuantity",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Slider_AddQuantity/Group_HandleArea",
+      "uguiComponent": "RectTransform",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "限制滑块移动范围，所属SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Slider_AddQuantity",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Slider_AddQuantity/Group_HandleArea/Img_Handle",
+      "unityName": "Img_Handle",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Slider_AddQuantity/Group_HandleArea",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Slider_AddQuantity/Group_HandleArea/Img_Handle",
+      "uguiComponent": "Image",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示拖动滑块，所属SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Slider_AddQuantity/Group_HandleArea",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_DecreaseQuantity",
+      "unityName": "Btn_DecreaseQuantity",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_DecreaseQuantity",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "SupplyInventoryPanel__Btn_DecreaseQuantity",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.DecreaseQuantity",
+      "purpose": "DecreaseQuantity，用于仓库整备",
+      "dataSource": "Action.DecreaseQuantity",
+      "pictureRegion": [
+        836,
+        750,
+        40,
+        42
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_DecreaseQuantity/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_DecreaseQuantity",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_DecreaseQuantity/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_DecreaseQuantity",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_IncreaseQuantity",
+      "unityName": "Btn_IncreaseQuantity",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_IncreaseQuantity",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "SupplyInventoryPanel__Btn_IncreaseQuantity",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.IncreaseQuantity",
+      "purpose": "IncreaseQuantity，用于仓库整备",
+      "dataSource": "Action.IncreaseQuantity",
+      "pictureRegion": [
+        1164,
+        750,
+        40,
+        42
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_IncreaseQuantity/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_IncreaseQuantity",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_IncreaseQuantity/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_IncreaseQuantity",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_QuantityHint",
+      "unityName": "Txt_QuantityHint",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_QuantityHint",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_QuantityHint",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Supply.QuantityHint",
+      "purpose": "显示仅剩1个可加入，数量固定",
+      "dataSource": "Supply.QuantityHint",
+      "pictureRegion": [
+        836,
+        761,
+        368,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_AddSupply",
+      "unityName": "Btn_AddSupply",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_AddSupply",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "SupplyInventoryPanel__Btn_AddSupply",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.AddSupply",
+      "purpose": "AddSupply，用于仓库整备",
+      "dataSource": "Action.AddSupply",
+      "pictureRegion": [
+        836,
+        805,
+        368,
+        60
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_AddSupply/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_AddSupply",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_AddSupply/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_AddSupply",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout",
+      "unityName": "Group_Loadout",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Group_Loadout",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "Loadout，用于仓库整备",
+      "dataSource": null,
+      "pictureRegion": [
+        1260,
+        330,
+        500,
+        556
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Txt_LoadoutTitle",
+      "unityName": "Txt_LoadoutTitle",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Txt_LoadoutTitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_LoadoutTitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示携行清单",
+      "dataSource": null,
+      "pictureRegion": [
+        1292,
+        358,
+        300,
+        40
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Txt_LoadoutCount",
+      "unityName": "Txt_LoadoutCount",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Txt_LoadoutCount",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_LoadoutCount",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Loadout.Count",
+      "purpose": "显示2类",
+      "dataSource": "Loadout.Count",
+      "pictureRegion": [
+        1614,
+        357,
+        100,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout",
+      "unityName": "Scroll_Loadout",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout",
+      "uguiComponent": "ScrollRect",
+      "sourceType": "ScrollView",
+      "htmlId": "SupplyInventoryPanel__Scroll_Loadout",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Loadout.List",
+      "purpose": "Loadout，用于仓库整备",
+      "dataSource": "Loadout.List",
+      "pictureRegion": [
+        1292,
+        420,
+        436,
+        300
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content",
+      "unityName": "Group_Content",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content",
+      "uguiComponent": "RectTransform",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "承载滚动内容和动态条目，所属SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry",
+      "unityName": "Item_LoadoutEntry",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "SupplyInventoryPanel__Item_LoadoutEntry",
+      "generated": false,
+      "template": "LoadoutEntry",
+      "bindingKey": null,
+      "purpose": "LoadoutEntry，用于仓库整备",
+      "dataSource": null,
+      "pictureRegion": [
+        0,
+        0,
+        436,
+        136
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Group_LoadoutIconSeat",
+      "unityName": "Group_LoadoutIconSeat",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Group_LoadoutIconSeat",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Group_LoadoutIconSeat",
+      "generated": false,
+      "template": "LoadoutEntry",
+      "bindingKey": null,
+      "purpose": "LoadoutIconSeat，用于仓库整备",
+      "dataSource": null,
+      "pictureRegion": [
+        0,
+        0,
+        56,
+        56
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Img_LoadoutIcon",
+      "unityName": "Img_LoadoutIcon",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Img_LoadoutIcon",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Img_LoadoutIcon",
+      "generated": false,
+      "template": "LoadoutEntry",
+      "bindingKey": "Supply.Icon",
+      "purpose": "LoadoutIcon，用于仓库整备",
+      "dataSource": "Supply.Icon",
+      "pictureRegion": [
+        0,
+        0,
+        56,
+        56
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Txt_LoadoutName",
+      "unityName": "Txt_LoadoutName",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Txt_LoadoutName",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_LoadoutName",
+      "generated": false,
+      "template": "LoadoutEntry",
+      "bindingKey": "Supply.Name",
+      "purpose": "显示急救包",
+      "dataSource": "Supply.Name",
+      "pictureRegion": [
+        72,
+        0,
+        320,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Txt_LoadoutAmount",
+      "unityName": "Txt_LoadoutAmount",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Txt_LoadoutAmount",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_LoadoutAmount",
+      "generated": false,
+      "template": "LoadoutEntry",
+      "bindingKey": "Supply.Summary",
+      "purpose": "显示×3 / 3.0kg",
+      "dataSource": "Supply.Summary",
+      "pictureRegion": [
+        72,
+        39,
+        340,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Btn_Decrease",
+      "unityName": "Btn_Decrease",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Btn_Decrease",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "SupplyInventoryPanel__Btn_Decrease",
+      "generated": false,
+      "template": "LoadoutEntry",
+      "bindingKey": "Action.Decrease",
+      "purpose": "Decrease，用于仓库整备",
+      "dataSource": "Action.Decrease",
+      "pictureRegion": [
+        72,
+        79,
+        144,
+        48
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Btn_Decrease/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Btn_Decrease",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Btn_Decrease/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": "LoadoutEntry",
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Btn_Decrease",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Btn_Remove",
+      "unityName": "Btn_Remove",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Btn_Remove",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "SupplyInventoryPanel__Btn_Remove",
+      "generated": false,
+      "template": "LoadoutEntry",
+      "bindingKey": "Action.Remove",
+      "purpose": "Remove，用于仓库整备",
+      "dataSource": "Action.Remove",
+      "pictureRegion": [
+        232,
+        79,
+        144,
+        48
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Btn_Remove/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Btn_Remove",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Btn_Remove/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": "LoadoutEntry",
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Btn_Remove",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Txt_LoadoutState",
+      "unityName": "Txt_LoadoutState",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Txt_LoadoutState",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_LoadoutState",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Loadout.Status",
+      "purpose": "显示携行清单为空",
+      "dataSource": "Loadout.Status",
+      "pictureRegion": [
+        1292,
+        470,
+        420,
+        90
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Txt_LoadoutWeight",
+      "unityName": "Txt_LoadoutWeight",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Txt_LoadoutWeight",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_LoadoutWeight",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Loadout.Weight",
+      "purpose": "显示重量7.0 / 20.0kg",
+      "dataSource": "Loadout.Weight",
+      "pictureRegion": [
+        1292,
+        741,
+        436,
+        40
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Group_WeightTrack",
+      "unityName": "Group_WeightTrack",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Group_WeightTrack",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Group_WeightTrack",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "WeightTrack，用于仓库整备",
+      "dataSource": null,
+      "pictureRegion": [
+        1292,
+        788,
+        436,
+        10
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Group_WeightTrack/Img_WeightFill",
+      "unityName": "Img_WeightFill",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Group_WeightTrack",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Group_WeightTrack/Img_WeightFill",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Img_WeightFill",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Loadout.WeightFill",
+      "purpose": "WeightFill，用于仓库整备",
+      "dataSource": "Loadout.WeightFill",
+      "pictureRegion": [
+        1292,
+        788,
+        153,
+        10
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Txt_LoadoutNotice",
+      "unityName": "Txt_LoadoutNotice",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Txt_LoadoutNotice",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_LoadoutNotice",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示清单是计划分配，库存尚未扣除",
+      "dataSource": null,
+      "pictureRegion": [
+        1292,
+        824,
+        436,
+        34
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Header",
+      "unityName": "Group_Header",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Header",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "SupplyInventoryPanel__Group_Header",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "Header，用于仓库整备",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        112,
+        1600,
+        108
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_Title",
+      "unityName": "Txt_Title",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_Title",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_Title",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示仓库整备",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        112,
+        700,
+        60
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_Subtitle",
+      "unityName": "Txt_Subtitle",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_Subtitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_Subtitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Page.Subtitle",
+      "purpose": "显示补给管理 / 库存用于规划，出发整备不扣除仓库物品",
+      "dataSource": "Page.Subtitle",
+      "pictureRegion": [
+        160,
+        170,
+        1100,
+        35
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceCreditsLabel",
+      "unityName": "Txt_ResourceCreditsLabel",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceCreditsLabel",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_ResourceCreditsLabel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示信用点",
+      "dataSource": null,
+      "pictureRegion": [
+        980,
+        115,
+        240,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceCredits",
+      "unityName": "Txt_ResourceCredits",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceCredits",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_ResourceCredits",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Player.Credits",
+      "purpose": "显示2,400",
+      "dataSource": "Player.Credits",
+      "pictureRegion": [
+        980,
+        149,
+        270,
+        50
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceEnergyLabel",
+      "unityName": "Txt_ResourceEnergyLabel",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceEnergyLabel",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_ResourceEnergyLabel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示能源",
+      "dataSource": null,
+      "pictureRegion": [
+        1220,
+        115,
+        240,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceEnergy",
+      "unityName": "Txt_ResourceEnergy",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceEnergy",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_ResourceEnergy",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Player.Energy",
+      "purpose": "显示100 / 100",
+      "dataSource": "Player.Energy",
+      "pictureRegion": [
+        1220,
+        149,
+        270,
+        50
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeightLabel",
+      "unityName": "Txt_ResourceLoadoutWeightLabel",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeightLabel",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_ResourceLoadoutWeightLabel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示携行重量",
+      "dataSource": null,
+      "pictureRegion": [
+        1480,
+        115,
+        240,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeight",
+      "unityName": "Txt_ResourceLoadoutWeight",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeight",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_ResourceLoadoutWeight",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Player.LoadoutWeight",
+      "purpose": "显示7.0 / 20.0 kg",
+      "dataSource": "Player.LoadoutWeight",
+      "pictureRegion": [
+        1480,
+        149,
+        270,
+        50
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Img_HeaderDivider",
+      "unityName": "Img_HeaderDivider",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Header/Img_HeaderDivider",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Img_HeaderDivider",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "HeaderDivider，用于仓库整备",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        218,
+        1600,
+        2
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Footer",
+      "unityName": "Group_Footer",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Footer",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "SupplyInventoryPanel__Group_Footer",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "Footer，用于仓库整备",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        890,
+        1600,
+        108
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Txt_Feedback",
+      "unityName": "Txt_Feedback",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Txt_Feedback",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_Feedback",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Feedback.Message",
+      "purpose": "Feedback，用于仓库整备",
+      "dataSource": "Feedback.Message",
+      "pictureRegion": [
+        420,
+        970,
+        1000,
+        28
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Btn_Return",
+      "unityName": "Btn_Return",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Btn_Return",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "SupplyInventoryPanel__Btn_Return",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.Return",
+      "purpose": "Return，用于仓库整备",
+      "dataSource": "Action.Return",
+      "pictureRegion": [
+        160,
+        916,
+        220,
+        60
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Btn_Return/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Btn_Return",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Btn_Return/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属SupplyInventoryPanel/Group_PanelBody/Group_Footer/Btn_Return",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Txt_SaveNotice",
+      "unityName": "Txt_SaveNotice",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Txt_SaveNotice",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "SupplyInventoryPanel__Txt_SaveNotice",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示更改即时保留 · 仅出发后结算消耗",
+      "dataSource": null,
+      "pictureRegion": [
+        414,
+        933,
+        1040,
+        38
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Btn_ClearLoadout",
+      "unityName": "Btn_ClearLoadout",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Btn_ClearLoadout",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "SupplyInventoryPanel__Btn_ClearLoadout",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.ClearLoadout",
+      "purpose": "ClearLoadout，用于仓库整备",
+      "dataSource": "Action.ClearLoadout",
+      "pictureRegion": [
+        1504,
+        916,
+        256,
+        60
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Btn_ClearLoadout/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Btn_ClearLoadout",
+      "hierarchyPath": "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Btn_ClearLoadout/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属SupplyInventoryPanel/Group_PanelBody/Group_Footer/Btn_ClearLoadout",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_IconCatalog",
+      "unityName": "Group_IconCatalog",
+      "parentId": "SupplyInventoryPanel",
+      "hierarchyPath": "SupplyInventoryPanel/Group_IconCatalog",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "SupplyInventoryPanel__Group_IconCatalog",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "IconCatalog，用于仓库整备",
+      "dataSource": null,
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_IconCatalog/Img_Circle",
+      "unityName": "Img_Circle",
+      "parentId": "SupplyInventoryPanel/Group_IconCatalog",
+      "hierarchyPath": "SupplyInventoryPanel/Group_IconCatalog/Img_Circle",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Img_Circle",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Source.Img_Circle",
+      "purpose": "注册动态Sprite引用，透明不绘制；供接入游戏的数据绑定使用",
+      "dataSource": "Source.Img_Circle",
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_IconCatalog/Img_ItemAlloy",
+      "unityName": "Img_ItemAlloy",
+      "parentId": "SupplyInventoryPanel/Group_IconCatalog",
+      "hierarchyPath": "SupplyInventoryPanel/Group_IconCatalog/Img_ItemAlloy",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Img_ItemAlloy",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Source.Img_ItemAlloy",
+      "purpose": "注册动态Sprite引用，透明不绘制；供接入游戏的数据绑定使用",
+      "dataSource": "Source.Img_ItemAlloy",
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_IconCatalog/Img_ItemBattery",
+      "unityName": "Img_ItemBattery",
+      "parentId": "SupplyInventoryPanel/Group_IconCatalog",
+      "hierarchyPath": "SupplyInventoryPanel/Group_IconCatalog/Img_ItemBattery",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Img_ItemBattery",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Source.Img_ItemBattery",
+      "purpose": "注册动态Sprite引用，透明不绘制；供接入游戏的数据绑定使用",
+      "dataSource": "Source.Img_ItemBattery",
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_IconCatalog/Img_ItemBeacon",
+      "unityName": "Img_ItemBeacon",
+      "parentId": "SupplyInventoryPanel/Group_IconCatalog",
+      "hierarchyPath": "SupplyInventoryPanel/Group_IconCatalog/Img_ItemBeacon",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Img_ItemBeacon",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Source.Img_ItemBeacon",
+      "purpose": "注册动态Sprite引用，透明不绘制；供接入游戏的数据绑定使用",
+      "dataSource": "Source.Img_ItemBeacon",
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_IconCatalog/Img_ItemChip",
+      "unityName": "Img_ItemChip",
+      "parentId": "SupplyInventoryPanel/Group_IconCatalog",
+      "hierarchyPath": "SupplyInventoryPanel/Group_IconCatalog/Img_ItemChip",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Img_ItemChip",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Source.Img_ItemChip",
+      "purpose": "注册动态Sprite引用，透明不绘制；供接入游戏的数据绑定使用",
+      "dataSource": "Source.Img_ItemChip",
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_IconCatalog/Img_ItemCircuit",
+      "unityName": "Img_ItemCircuit",
+      "parentId": "SupplyInventoryPanel/Group_IconCatalog",
+      "hierarchyPath": "SupplyInventoryPanel/Group_IconCatalog/Img_ItemCircuit",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Img_ItemCircuit",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Source.Img_ItemCircuit",
+      "purpose": "注册动态Sprite引用，透明不绘制；供接入游戏的数据绑定使用",
+      "dataSource": "Source.Img_ItemCircuit",
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_IconCatalog/Img_ItemOre",
+      "unityName": "Img_ItemOre",
+      "parentId": "SupplyInventoryPanel/Group_IconCatalog",
+      "hierarchyPath": "SupplyInventoryPanel/Group_IconCatalog/Img_ItemOre",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Img_ItemOre",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Source.Img_ItemOre",
+      "purpose": "注册动态Sprite引用，透明不绘制；供接入游戏的数据绑定使用",
+      "dataSource": "Source.Img_ItemOre",
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "SupplyInventoryPanel/Group_IconCatalog/Img_ItemRation",
+      "unityName": "Img_ItemRation",
+      "parentId": "SupplyInventoryPanel/Group_IconCatalog",
+      "hierarchyPath": "SupplyInventoryPanel/Group_IconCatalog/Img_ItemRation",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "SupplyInventoryPanel__Img_ItemRation",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Source.Img_ItemRation",
+      "purpose": "注册动态Sprite引用，透明不绘制；供接入游戏的数据绑定使用",
+      "dataSource": "Source.Img_ItemRation",
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    }
+  ]
+}
