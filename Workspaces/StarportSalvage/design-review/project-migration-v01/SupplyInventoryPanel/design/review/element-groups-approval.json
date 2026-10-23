@@ -1,0 +1,81 @@
+{
+  "status": "approved",
+  "groups": [
+    {
+      "groupId": "Img_Surface_Sheet",
+      "userApproval": "确定",
+      "imageSha256": "8801f27cb72578e8624aad1229708c7e9c1ab9300d300c9d050a20128c3c6316",
+      "definitionSha256": "32d28376adf48d8b24d66c1c09034f684b15df52336fa9037123c47401ade958",
+      "filesSha256": {
+        "html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006"
+      },
+      "scope": "用户确认九组元素v01；据同一矢量造型导出PNG，切片中心保留修正见素材计划。"
+    },
+    {
+      "groupId": "Btn_Action_Sheet",
+      "userApproval": "确定",
+      "imageSha256": "4ca63a271bb6795164a65535cfbcf5051b451997f75ece1e6fd2bd230f42655b",
+      "definitionSha256": "cd699fbc7ffba475b6364dfe4c6815178149a48f7f6970c8a9944fe715616037",
+      "filesSha256": {
+        "html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b"
+      },
+      "scope": "用户确认九组元素v01；据同一矢量造型导出PNG，切片中心保留修正见素材计划。"
+    },
+    {
+      "groupId": "Inp_Form_Sheet",
+      "userApproval": "确定",
+      "imageSha256": "b3d9b3d6efd2688f76d84b2ff44dc2203ae5a8009245898052db16919711234d",
+      "definitionSha256": "f66f8ef1ab5758e04c49964d235612486ad1f026777d999b251063eb7911f1d1",
+      "filesSha256": {
+        "html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b"
+      },
+      "scope": "用户确认九组元素v01；据同一矢量造型导出PNG，切片中心保留修正见素材计划。"
+    },
+    {
+      "groupId": "Sld_Value_Sheet",
+      "userApproval": "确定",
+      "imageSha256": "96cdbedf077ce5ec5663bd65bc930843ff9f129b660c1c0797c7fe9a7f556772",
+      "definitionSha256": "a41fdbb4e9c451d1dd71b5b39991ef714864498be14cc902696aace885686d80",
+      "filesSha256": {
+        "html/assets/shared/Img_Circle.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+        "html/assets/shared/Sld_Value_Bar.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0"
+      },
+      "scope": "用户确认九组元素v01；据同一矢量造型导出PNG，切片中心保留修正见素材计划。"
+    },
+    {
+      "groupId": "Scr_List_Sheet",
+      "userApproval": "确定",
+      "imageSha256": "36795ae819ccdb50248ca747ae93c35c604bbab1183e669c3adfa05dc512911b",
+      "definitionSha256": "3c4382165e71fc40702993b91183a9fa11348cb3bd21dc6a07aeb508235cdd31",
+      "filesSha256": {
+        "html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006"
+      },
+      "scope": "用户确认九组元素v01；据同一矢量造型导出PNG，切片中心保留修正见素材计划。"
+    },
+    {
+      "groupId": "Img_Item_Sheet",
+      "userApproval": "确定",
+      "imageSha256": "8bdd3230328833fd58a12d9c519fee047a9bc179c0977d8e6edf8c43b1764d88",
+      "definitionSha256": "da08aff39895976ed6523f7ba8a9a07bdd73d4ea9ec1dde2602346f623dfcb54",
+      "filesSha256": {
+        "html/assets/shared/Img_ItemMedkit.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+        "html/assets/shared/Img_ItemBattery.png": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+        "html/assets/shared/Img_ItemRation.png": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+        "html/assets/shared/Img_ItemBeacon.png": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+        "html/assets/shared/Img_ItemOre.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+        "html/assets/shared/Img_ItemAlloy.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+        "html/assets/shared/Img_ItemCircuit.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+        "html/assets/shared/Img_ItemChip.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005"
+      },
+      "scope": "用户确认九组元素v01；据同一矢量造型导出PNG，切片中心保留修正见素材计划。"
+    },
+    {
+      "groupId": "Txt_Typography_Sheet",
+      "userApproval": "确定",
+      "imageSha256": "b17505c5415ed34b71525509b08f37142acff7259a3080136f7c4c4e7c97d4ff",
+      "definitionSha256": "09be18e7600ca7ab826a719f906c5039f9b104639b12d13e50f5d1376e6be38e",
+      "filesSha256": {},
+      "scope": "用户确认九组元素v01；据同一矢量造型导出PNG，切片中心保留修正见素材计划。"
+    }
+  ]
+}

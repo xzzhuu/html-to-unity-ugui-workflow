@@ -1,0 +1,62 @@
+[
+  {
+    "panel": "ActionConfirmPanel",
+    "formalPrefab": "Assets/Art/UIPrefab/StarportSalvage/ActionConfirmPanel/ActionConfirmPanel.prefab",
+    "visibleNodesCompared": 18,
+    "geometryTolerancePx": 1.1,
+    "geometryDifferences": [],
+    "fontGlyphOverflowAndCanvasIssues": [],
+    "font": "PICOSansVFESC SDF",
+    "nativeControlChecks": "not separately exercised"
+  },
+  {
+    "panel": "ExpeditionResultPanel",
+    "formalPrefab": "Assets/Art/UIPrefab/StarportSalvage/ExpeditionResultPanel/ExpeditionResultPanel.prefab",
+    "visibleNodesCompared": 51,
+    "geometryTolerancePx": 1.1,
+    "geometryDifferences": [],
+    "fontGlyphOverflowAndCanvasIssues": [],
+    "font": "PICOSansVFESC SDF",
+    "nativeControlChecks": "not separately exercised"
+  },
+  {
+    "panel": "ExpeditionSelectPanel",
+    "formalPrefab": "Assets/Art/UIPrefab/StarportSalvage/ExpeditionSelectPanel/ExpeditionSelectPanel.prefab",
+    "visibleNodesCompared": 65,
+    "geometryTolerancePx": 1.1,
+    "geometryDifferences": [],
+    "fontGlyphOverflowAndCanvasIssues": [],
+    "font": "PICOSansVFESC SDF",
+    "nativeControlChecks": "not separately exercised"
+  },
+  {
+    "panel": "GameSettingsPanel",
+    "formalPrefab": "Assets/Art/UIPrefab/StarportSalvage/GameSettingsPanel/GameSettingsPanel.prefab",
+    "visibleNodesCompared": 38,
+    "geometryTolerancePx": 1.1,
+    "geometryDifferences": [],
+    "fontGlyphOverflowAndCanvasIssues": [],
+    "font": "PICOSansVFESC SDF",
+    "nativeControlChecks": "Toggle pointer On/Off/Disabled and Slider 0/50/80/100 plus keyboard 50 to 51 passed"
+  },
+  {
+    "panel": "StarportHomePanel",
+    "formalPrefab": "Assets/Art/UIPrefab/StarportSalvage/StarportHomePanel/StarportHomePanel.prefab",
+    "visibleNodesCompared": 45,
+    "geometryTolerancePx": 1.1,
+    "geometryDifferences": [],
+    "fontGlyphOverflowAndCanvasIssues": [],
+    "font": "PICOSansVFESC SDF",
+    "nativeControlChecks": "not separately exercised"
+  },
+  {
+    "panel": "SupplyInventoryPanel",
+    "formalPrefab": "Assets/Art/UIPrefab/StarportSalvage/SupplyInventoryPanel/SupplyInventoryPanel.prefab",
+    "visibleNodesCompared": 120,
+    "geometryTolerancePx": 1.1,
+    "geometryDifferences": [],
+    "fontGlyphOverflowAndCanvasIssues": [],
+    "font": "PICOSansVFESC SDF",
+    "nativeControlChecks": "not separately exercised"
+  }
+]

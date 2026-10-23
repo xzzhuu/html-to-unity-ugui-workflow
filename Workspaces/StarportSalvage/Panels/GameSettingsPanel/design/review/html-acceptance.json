@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "approvedLayoutSha256": "68732364c51f83368dbd6403d3bd918e2b6e79e99a58712055d6db434bcfd94b",
+  "approvedElementGroupsSha256": "94995600e1b4da9281ecc4cb9d068724bf124c2af1dff9a67b352399b5cce386",
+  "checks": {
+    "elements": "passed",
+    "naming": "passed",
+    "sprites": "passed",
+    "layout": "passed",
+    "visual": "passed",
+    "interactions": "passed"
+  },
+  "filesSha256": {
+    "html/assets/project/Button/Btn_Control_Background_Surface_Normal.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "html/assets/project/Image/Img_Circle_Surface_Default.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "html/assets/project/Image/Img_RoundedSurface_Surface_Default.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "html/assets/project/Slider/Sld_Circle_Handle_Default.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "html/assets/project/Slider/Sld_Value_Bar_Fill_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "html/assets/project/Slider/Sld_Value_Bar_Track_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "html/assets/project/TMP_InputField/Inp_Control_Background_Surface_Default.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "html/assets/project/Toggle/Tgl_Sound_Surface_Disabled.png": "259614e8bc4b5e044b9fded3998b8fb41ac94199cec64a0141933a49c44aec3a",
+    "html/assets/project/Toggle/Tgl_Sound_Surface_Off.png": "dd991dbb3ebe7dc320aafbeb83a0f8ff1c32c3cfa5e48fc476a226983f76dffd",
+    "html/assets/project/Toggle/Tgl_Sound_Surface_On.png": "7e3d245862ddca19f5903cf983dc3b741bea7ab95c21bfc3de6d1f6b8e2e13ee",
+    "html/assets/shared/Img_Circle.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "html/assets/shared/Sld_Value_Bar.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "html/assets/shared/Tgl_Sound_Track.png": "d542eebd9640a671cd09a9e7934049362a6faec7bc754bbf263b2702045cb0e9",
+    "html/elements.json": "44680e8277675e488564e6aa06f4cb85052b5f3491ac58ebbc2fe23368ccd101",
+    "html/GameSettingsPanel.css": "d8eebde333e9e6bca273883ade27000805d8ec4552736b514a9ed42d3ca3ddea",
+    "html/GameSettingsPanel.html": "e8aa8667be6afde80ff597be6dc1c9fef80065d44317bc4266bf2e2b2abaa2e7",
+    "html/GameSettingsPanel.preview.js": "d2086cd14716f26ae50d9ad3d4474c957c1c017a02a2079d96c884bbb34cfaa1",
+    "html/panel.package.json": "f23170fde07eb972cbad87b532ab0701943aac1bf81d4525cdaf7eb78e67dd3d",
+    "html/sprites.json": "626f297df298eaa5d1f3b5c8d7754eedfad0e83ef12057404a9ae99a7f00087e",
+    "design/element-groups.json": "5e0ebe04072beb7c388b963b09f6721ae1abe56004ea336f20c7bf5702ab64a7",
+    "design/review/browser/default.png": "5bb2b376aef1a48918dabdb121b586433b101b9d63b304c605b433d2e18611e5",
+    "design/review/browser/checks.json": "6edc991a5739ff94bc8a1f6557a4f46791dcbcd42898ecd20eadc8566981fccb"
+  },
+  "screenshots": [
+    "design/review/browser/default.png"
+  ],
+  "browserVersion": "155.0.4283.62",
+  "unityAccepted": false,
+  "notes": "实际浏览器检查与模型视觉复核；像素差分仅用于诊断，不作为自动视觉通过阈值。Unity和设备尚未验证。",
+  "migrationOriginalAcceptance": "design-review/project-migration-v01/GameSettingsPanel/design/review/html-acceptance.json",
+  "migrationValidation": {
+    "browserChecks": 14,
+    "defaultScreenshotPixelsUnchanged": true,
+    "projectAssetManifestSha256": "b8e4068538f7bdc80708cdf395469fd06bc5e06e32ce0bda5f616f1f499792e4"
+  },
+  "directoryMigration": {
+    "date": "2026-10-24",
+    "previousPackageSha256": "dd7c3e8f61d982b5ff9c1d40e9e087114d0ad9b1aa6e28781689b913b0aead8e",
+    "source": "Panels/GameSettingsPanel",
+    "changes": [
+      "projectDirectory: ../.. -> ../../..",
+      "归档审批来源链接增加一级父目录；批准图像与批准原文不变",
+      "HTML根属性与准备包的项目名、项目根和暂存路径一致；无布局或素材变化"
+    ],
+    "designPixelsChanged": false,
+    "userApproval": "沿用现有设计批准，仅迁移目录与项目清单相对路径"
+  },
+  "technicalCorrections": [
+    {
+      "date": "2026-10-24",
+      "reason": "User selected PICOSansVFESC SDF; replace unsupported mathematical minus U+2212 with ASCII hyphen-minus U+002D without changing numeric meaning or layout approval.",
+      "files": [
+        "html/GameSettingsPanel.preview.js"
+      ],
+      "verification": "Browser interaction and Unity visual comparison in current workflow review."
+    }
+  ]
+}

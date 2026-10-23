@@ -23,8 +23,10 @@ description: 用于 Unity UI 面板预览、实际所需元素组图与素材确
 - **每张面板预览使用纯色画布背景，画布颜色必须与面板主体/元素图片的主色明显区分**，以清楚显示边界、圆角和透明效果。例如深色面板使用中性灰色画布；不把面板主色直接作为画布色。各面板可复用同一合适的对比底色，不必各用不同颜色。不叠加庭院场景、照片、纹理、棋盘格或其他环境装饰。每个面板单独输出，清楚标注画布宽×高和面板主体宽×高，标注放在主体外，不遮挡界面。透明度在纯色底上检查；额外明暗背景验证若实际需要，另存验收证据，不混入供确认的正式面板预览。
 - **VR 项目的所有元素组件素材不设计边缘描线、轮廓线或细描边框**，包括按钮、底板、内衬和进度图形；不额外导出 Outline/Border 轮廓素材。使用实色/半透明填充、明暗、间距与留白区分层级和状态，保留平滑 Alpha 圆角。装饰性细分隔线优先改为留白。九宫格 border 是切片边距元数据，可正常使用；审核图的尺寸标注线不属于运行时素材。实际 VR 锯齿仍须设备验证，不因去掉描边宣称已解决。
 - **多面板总览必须清楚显示每张完整画布的独立区域**：保留整个 1920×1080 范围，以一致比例展示，用与画布不同色的间隔区或审核边界框分开。不得把同色画布无缝拼接，也不得把每个面板分别裁切放大到看似一样大。标明主体宽高，以及占画布宽、高的百分比；必要时补充面积占比。画布边界框和尺寸标注仅用于审核，不属于 VR 运行时组件的描边。
-- 相同形状仅颜色不同，只输出一份白色或统一中性色素材，保留透明度，用各物体的 `Image.color` 改色；按钮颜色状态使用原生 Selectable Color Tint。形状、纹理或透明度结构不同才增加素材；真实多色图案不强行合并为单色遮罩。
-- **素材、元素组图使用组件缩写前缀**，例如 `Btn_Primary_Background.png`、`Tgl_Option_Checkmark.png`。跨组件共用素材用 `Img`。完整映射与命名规则见 [组件与素材命名](references/component-naming.md#素材与元素组图命名)。不为了素材命名批量改动现有物体名、绑定或 GUID。
+- 同一实际组件类型、同一部件内，相同形状仅颜色不同，只输出一份白色或统一中性色素材，保留透明度，用各物体的 `Image.color` 改色；按钮颜色状态使用原生 Selectable Color Tint。形状、纹理或透明度结构不同才增加素材；真实多色图案不强行合并为单色遮罩。
+- **素材、元素组图使用组件缩写前缀**，例如 `Btn_Primary_Background.png`、`Tgl_Option_Surface_Off.png`。禁止跨组件类型复用；Button/Toggle 的子 Image 按所属控件分类，不能用 `Img` 绕过。完整映射与命名规则见 [组件与素材命名](references/component-naming.md#素材与元素组图命名)。不为了素材命名批量改动现有物体名、绑定或 GUID。
+- Toggle 每个样式提供 Off/On/Disabled 三张完整 Surface，状态图同画布与对齐；不规则造型不拆成几何碎片，不再叠加 Checkmark。三图是项目契约，Selected 不是 On。使用转换器已有的通用 `UiToggleStateGraphic`；需要 DisabledOn/DisabledOff 或 Mixed 时报告契约差异，不生成面板专属脚本。
+- 游戏级素材同步、部件拆分、去重与三态规则见 [项目素材契约](references/project-assets.md)。单面板和全部面板生成前都必须先同步当前游戏所有已确认素材。
 - 文字保留为 TMP，普通界面沿用项目 UIKit/UIRoot 管理和正式 Prefab 路径。保护 GUID、组件引用、UnityEvent 和序列化字段；不绕开项目流程创建独立普通 Canvas。
 
 ## 共用步骤与确认节点
@@ -44,7 +46,7 @@ description: 用于 Unity UI 面板预览、实际所需元素组图与素材确
 
 元素组图确认后，读取 [HTML 契约](references/html-contract.md)，确定语义化物体名、原生类型、绑定、动态 Item 和辅助节点，生成 HTML/CSS/预览 JS 及清单。按确认尺寸对照面板和组图验收布局、外观及实际需要的状态；用现有比较脚本辅助判断。只有两次审批与 HTML 验收证据有效时标记 `ready`。
 
-用户要求转换时，使用项目已有 `com.nexvr.html-to-ugui`，按其 README 操作；不擅自安装依赖。需要编辑器操作时使用可用的 Unity MCP 工作流。HTML/CSS/JS、清单和确认记录保留在工程外；已确认的元素组图和完整面板预览另导入 Unity 作为参考图。先查看只读导入计划，默认 stagingRoot=Assets/HtmlToUGUIStage/{PanelName}，将 Sprite、Item、主 Prefab 与报告整批生成到暂存目录。Skill 包开启 requireSkillApproval，字体复用项目 TMP 默认字体及现有材质。导入窗口更新 Assets/HtmlToUGUIStage/StageScene.unity，原场景保持不变。通过 Tools → HTML to UGUI → Stage Panels 窗口逐个预览面板，勾选需要的面板并查看复制计划后，才复制到正式目录；复制会重定向 Item 和图片引用，保留暂存内容。正式目录仅包含运行资源，复制记录保留于暂存目录。已有业务面板仍需项目适配以保护业务引用及事件。已有组件不能支持的视觉细节通过原生组件及素材装配；无法实现时报告具体差距，不扩展转换器 C# 或生成替代脚本。
+用户要求转换时，使用项目已有 `com.nex.html-to-ugui`，按其 README 操作；不擅自安装依赖。需要编辑器操作时使用可用的 Unity MCP 工作流。HTML/CSS/JS、清单和确认记录保留在工程外；已确认的元素组图和完整面板预览另导入 Unity 作为参考图。新游戏设置 projectName 与项目根目录 project.assets.json，先查看只读计划，再统一同步到 Assets/HtmlToUGUIStage/{GameName}/Sprites（RawImage 使用 Textures）；所选面板的 Item、主 Prefab 与报告生成到 {GameName}/{PanelName}。单面板也检查整个项目素材全集；未设置 projectName 的旧示例保留旧布局，不作为新游戏流程。Skill 包开启 requireSkillApproval，字体复用项目 TMP 默认字体及现有材质。导入窗口更新 Assets/HtmlToUGUIStage/StageScene.unity，原场景保持不变。通过 Tools → HTML to UGUI → 面板暂存与复制 窗口逐个预览面板，勾选需要的面板并查看复制计划后，才复制到正式目录；复制会重定向 Item 和图片引用，保留暂存内容。正式目录仅包含运行资源，复制记录保留于暂存目录。已有业务面板仍需项目适配以保护业务引用及事件。已有组件不能支持的视觉细节通过原生组件及素材装配；无法实现时报告具体差距，不扩展转换器 C# 或生成替代脚本。
 
 HTML `ready` 只代表可导入，不等于 Unity 验收完成。导入后查看实际 Unity 截图，核对布局、文字、素材、原生状态、引用和交互，再运行 `--require-unity --unity-project <Unity工程>` 核对完成证据，分别记录设计批准、交付就绪、Unity 验收和设备实测状态；通过后记录“导入转换完成”。
 
@@ -57,6 +59,8 @@ HTML `ready` 只代表可导入，不等于 Unity 验收完成。导入后查看
 核对实际 Unity 拼接效果、必要状态、文字、引用与原有交互，保存 Prefab 并记录“导入替换完成”。Unity MCP 不可用或工具无法保留关键引用时，停在已确认素材阶段并报告具体阻塞，不切换 HTML 路线或生成脚本绕过。
 
 ## 初始化与验证
+
+当前仓库测试工程为 `E:/html_to_unity_ugui_workflow/UnityProject`。游戏源包统一使用 `Workspaces/{GameName}/Panels/{PanelName}/`；游戏根保留 `project.assets.json`、共享素材、项目审核与工具。初始化器在已有项目清单的 `Panels/` 下自动设置 projectName、相对 html/ 的 `projectDirectory=../../..` 及游戏暂存路径。批量导入选择游戏根目录。仓库以星港六面板的完整制作流程为示例，旧 Example 三面板已移除。编辑器菜单为“导入单个面板...”“导入整个项目...”“面板暂存与复制...”。
 
 从本 Skill 目录运行：
 

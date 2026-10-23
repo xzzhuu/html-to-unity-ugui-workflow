@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "panelName": "ExpeditionSelectPanel",
+  "requiredComponents": [
+    "Button",
+    "ScrollView",
+    "Image",
+    "Text"
+  ],
+  "groups": [
+    {
+      "groupId": "Img_Surface_Sheet",
+      "componentType": "Image",
+      "purpose": "底板与卡片",
+      "usedBy": [
+        "ExpeditionSelectPanel/Group_PanelBody",
+        "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward0Seat",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward1Seat",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward2Seat"
+      ],
+      "sheet": "design/element-groups/Img_Surface_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_RoundedSurface.png"
+      ]
+    },
+    {
+      "groupId": "Btn_Action_Sheet",
+      "componentType": "Button",
+      "purpose": "按钮结构与状态",
+      "usedBy": [
+        "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry",
+        "ExpeditionSelectPanel/Group_PanelBody/Btn_RetryMissions",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_ReturnHome",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_EditLoadout",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Btn_StartExpedition"
+      ],
+      "sheet": "design/element-groups/Btn_Action_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_Control_Background.png"
+      ]
+    },
+    {
+      "groupId": "Scr_List_Sheet",
+      "componentType": "ScrollView",
+      "purpose": "动态列表与条目",
+      "usedBy": [
+        "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions"
+      ],
+      "sheet": "design/element-groups/Scr_List_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_RoundedSurface.png"
+      ]
+    },
+    {
+      "groupId": "Img_Item_Sheet",
+      "componentType": "Image",
+      "purpose": "八种物品图标",
+      "usedBy": [
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward1Seat/Img_Reward1",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward2Seat/Img_Reward2",
+        "ExpeditionSelectPanel/Group_IconCatalog/Img_ItemChip",
+        "ExpeditionSelectPanel/Group_IconCatalog/Img_ItemCircuit"
+      ],
+      "sheet": "design/element-groups/Img_Item_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_ItemOre.png",
+        "html/assets/shared/Img_ItemAlloy.png",
+        "html/assets/shared/Img_ItemCircuit.png",
+        "html/assets/shared/Img_ItemChip.png"
+      ]
+    },
+    {
+      "groupId": "Img_Utility_Sheet",
+      "componentType": "Image",
+      "purpose": "资源与操作图标",
+      "usedBy": [
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Group_Reward0Seat/Img_Reward0"
+      ],
+      "sheet": "design/element-groups/Img_Utility_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_Credits.png"
+      ]
+    },
+    {
+      "groupId": "Txt_Typography_Sheet",
+      "componentType": "Text",
+      "purpose": "文字层级与反馈",
+      "usedBy": [
+        "ExpeditionSelectPanel/Group_PanelBody/Txt_ListTitle",
+        "ExpeditionSelectPanel/Group_PanelBody/Txt_MissionCount",
+        "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry/Txt_MissionIndex",
+        "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry/Txt_MissionCardName",
+        "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry/Txt_MissionCardRisk",
+        "ExpeditionSelectPanel/Group_PanelBody/Scroll_Missions/Group_Content/Item_MissionEntry/Txt_MissionCardState",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RiskBadge",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_MissionName",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_MissionDescription",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_CreditsCostLabel",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_CreditsCost",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_EnergyCostLabel",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_EnergyCost",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_DurationLabel",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_Duration",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardTitle",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardName0",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardQuantity0",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardName1",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardQuantity1",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardName2",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_RewardQuantity2",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_Recommended",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Details/Txt_MissionLoadout",
+        "ExpeditionSelectPanel/Group_PanelBody/Txt_ListState",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_Title",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_Subtitle",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceCreditsLabel",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceCredits",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceEnergyLabel",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceEnergy",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeightLabel",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeight",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Txt_Feedback",
+        "ExpeditionSelectPanel/Group_PanelBody/Group_Footer/Txt_ResourceDeficit"
+      ],
+      "sheet": "design/element-groups/Txt_Typography_Sheet.png",
+      "assets": []
+    }
+  ],
+  "sprites": [
+    {
+      "source": "html/assets/shared/Img_Control_Background.png",
+      "componentType": "Image",
+      "pixelSize": [
+        512,
+        128
+      ],
+      "originalPixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "tintable": true,
+      "purpose": "按钮和输入框共用圆角结构"
+    },
+    {
+      "source": "html/assets/shared/Img_Credits.png",
+      "componentType": "Image",
+      "pixelSize": [
+        128,
+        128
+      ],
+      "originalPixelSize": [
+        128,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "独立操作或资源图形，不包含文字单位"
+    },
+    {
+      "source": "html/assets/shared/Img_ItemAlloy.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "独立物品轮廓，与底座及文字分层"
+    },
+    {
+      "source": "html/assets/shared/Img_ItemChip.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "独立物品轮廓，与底座及文字分层"
+    },
+    {
+      "source": "html/assets/shared/Img_ItemCircuit.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "独立物品轮廓，与底座及文字分层"
+    },
+    {
+      "source": "html/assets/shared/Img_ItemOre.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "独立物品轮廓，与底座及文字分层"
+    },
+    {
+      "source": "html/assets/shared/Img_RoundedSurface.png",
+      "componentType": "Image",
+      "pixelSize": [
+        512,
+        512
+      ],
+      "originalPixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "tintable": true,
+      "purpose": "底板、卡片、列表与条目共用中性圆角"
+    }
+  ]
+}

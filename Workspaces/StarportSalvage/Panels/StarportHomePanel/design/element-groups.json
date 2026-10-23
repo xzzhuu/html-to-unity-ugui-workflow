@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "panelName": "StarportHomePanel",
+  "requiredComponents": [
+    "Button",
+    "Image",
+    "Text"
+  ],
+  "groups": [
+    {
+      "groupId": "Img_Surface_Sheet",
+      "componentType": "Image",
+      "purpose": "底板与卡片",
+      "usedBy": [
+        "StarportHomePanel/Group_PanelBody",
+        "StarportHomePanel/Group_PanelBody/Group_Main",
+        "StarportHomePanel/Group_PanelBody/Group_Main/Group_OnlineBadge",
+        "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus",
+        "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Group_SummaryMedkitSeat",
+        "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Group_SummaryBatterySeat"
+      ],
+      "sheet": "design/element-groups/Img_Surface_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_RoundedSurface.png",
+        "html/assets/project/Image/Img_RoundedSurface_Surface_Default.png",
+        "html/assets/project/Image/Img_ItemMedkit_Surface_Default.png",
+        "html/assets/project/Image/Img_ItemBattery_Surface_Default.png",
+        "html/assets/project/Image/Img_ItemBeacon_Surface_Default.png",
+        "html/assets/project/Image/Img_ItemRation_Surface_Default.png"
+      ]
+    },
+    {
+      "groupId": "Btn_Action_Sheet",
+      "componentType": "Button",
+      "purpose": "按钮结构与状态",
+      "usedBy": [
+        "StarportHomePanel/Group_PanelBody/Group_Main/Btn_OpenExpeditions",
+        "StarportHomePanel/Group_PanelBody/Group_Main/Btn_OpenInventory",
+        "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Btn_ViewResult",
+        "StarportHomePanel/Group_PanelBody/Group_Footer/Btn_OpenSettings",
+        "StarportHomePanel/Group_PanelBody/Group_Footer/Btn_ResetDemo"
+      ],
+      "sheet": "design/element-groups/Btn_Action_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_Control_Background.png",
+        "html/assets/project/Button/Btn_Control_Background_Surface_Normal.png"
+      ]
+    },
+    {
+      "groupId": "Img_Item_Sheet",
+      "componentType": "Image",
+      "purpose": "八种物品图标",
+      "usedBy": [
+        "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Group_SummaryMedkitSeat/Img_SummaryMedkit",
+        "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Group_SummaryBatterySeat/Img_SummaryBattery",
+        "StarportHomePanel/Group_IconCatalog/Img_ItemBeacon",
+        "StarportHomePanel/Group_IconCatalog/Img_ItemRation"
+      ],
+      "sheet": "design/element-groups/Img_Item_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_ItemMedkit.png",
+        "html/assets/shared/Img_ItemBattery.png",
+        "html/assets/shared/Img_ItemRation.png",
+        "html/assets/shared/Img_ItemBeacon.png"
+      ]
+    },
+    {
+      "groupId": "Txt_Typography_Sheet",
+      "componentType": "Text",
+      "purpose": "文字层级与反馈",
+      "usedBy": [
+        "StarportHomePanel/Group_PanelBody/Group_Main/Txt_Online",
+        "StarportHomePanel/Group_PanelBody/Group_Main/Txt_GameName",
+        "StarportHomePanel/Group_PanelBody/Group_Main/Txt_GameEnglish",
+        "StarportHomePanel/Group_PanelBody/Group_Main/Txt_Welcome",
+        "StarportHomePanel/Group_PanelBody/Group_Main/Txt_Introduction",
+        "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_ControlTitle",
+        "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_TaskState",
+        "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_TaskHeadline",
+        "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_TaskDescription",
+        "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_LoadoutTitle",
+        "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_SummaryNameMedkit",
+        "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_SummaryQuantityMedkit",
+        "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_SummaryNameBattery",
+        "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_SummaryQuantityBattery",
+        "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_LoadoutSummary",
+        "StarportHomePanel/Group_PanelBody/Group_Header/Txt_Title",
+        "StarportHomePanel/Group_PanelBody/Group_Header/Txt_Subtitle",
+        "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceCreditsLabel",
+        "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceCredits",
+        "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceEnergyLabel",
+        "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceEnergy",
+        "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeightLabel",
+        "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeight",
+        "StarportHomePanel/Group_PanelBody/Group_Footer/Txt_Feedback",
+        "StarportHomePanel/Group_PanelBody/Group_Footer/Txt_DemoNotice"
+      ],
+      "sheet": "design/element-groups/Txt_Typography_Sheet.png",
+      "assets": []
+    }
+  ],
+  "sprites": [
+    {
+      "source": "html/assets/shared/Img_Control_Background.png",
+      "componentType": "Image",
+      "pixelSize": [
+        512,
+        128
+      ],
+      "originalPixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "tintable": true,
+      "purpose": "按钮和输入框共用圆角结构"
+    },
+    {
+      "source": "html/assets/shared/Img_ItemBattery.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "独立物品轮廓，与底座及文字分层"
+    },
+    {
+      "source": "html/assets/shared/Img_ItemBeacon.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "独立物品轮廓，与底座及文字分层"
+    },
+    {
+      "source": "html/assets/shared/Img_ItemMedkit.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "独立物品轮廓，与底座及文字分层"
+    },
+    {
+      "source": "html/assets/shared/Img_ItemRation.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "独立物品轮廓，与底座及文字分层"
+    },
+    {
+      "source": "html/assets/shared/Img_RoundedSurface.png",
+      "componentType": "Image",
+      "pixelSize": [
+        512,
+        512
+      ],
+      "originalPixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "tintable": true,
+      "purpose": "底板、卡片、列表与条目共用中性圆角"
+    },
+    {
+      "source": "html/assets/project/Image/Img_RoundedSurface_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        512,
+        512
+      ],
+      "originalPixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    },
+    {
+      "source": "html/assets/project/Button/Btn_Control_Background_Surface_Normal.png",
+      "componentType": "Button",
+      "pixelSize": [
+        512,
+        128
+      ],
+      "originalPixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Button/Surface/Normal"
+    },
+    {
+      "source": "html/assets/project/Image/Img_ItemMedkit_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    },
+    {
+      "source": "html/assets/project/Image/Img_ItemBattery_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    },
+    {
+      "source": "html/assets/project/Image/Img_ItemBeacon_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    },
+    {
+      "source": "html/assets/project/Image/Img_ItemRation_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    }
+  ]
+}

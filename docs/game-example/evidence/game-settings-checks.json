@@ -1,0 +1,298 @@
+{
+  "path": "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab",
+  "guid": "6295c90da75e2c24e94dce0ccf1cfae3",
+  "bindingCount": 16,
+  "missingBindings": 0,
+  "tests": [
+    {
+      "value": 0,
+      "handleX": 740,
+      "handleY": 543,
+      "width": 28,
+      "height": 28,
+      "fillWidth": 0
+    },
+    {
+      "value": 50,
+      "handleX": 1026,
+      "handleY": 543,
+      "width": 28,
+      "height": 28,
+      "fillWidth": 300
+    },
+    {
+      "value": 80,
+      "handleX": 1197.6,
+      "handleY": 543,
+      "width": 28,
+      "height": 28,
+      "fillWidth": 480
+    },
+    {
+      "value": 100,
+      "handleX": 1312,
+      "handleY": 543,
+      "width": 28,
+      "height": 28,
+      "fillWidth": 600
+    },
+    {
+      "toggleClicks": "on-off-on passed",
+      "persistedEventState": "RuntimeOnly",
+      "sliderKeyboard": "50 to 51 passed",
+      "mode": "isolated editor preview, RuntimeOnly callback enabled on disposable copy"
+    }
+  ],
+  "captures": [
+    {
+      "value": 0,
+      "issues": []
+    },
+    {
+      "value": 50,
+      "issues": []
+    },
+    {
+      "value": 80,
+      "issues": []
+    },
+    {
+      "value": 100,
+      "issues": []
+    }
+  ],
+  "soundOffIssues": [],
+  "hierarchy": [
+    {
+      "name": "GameSettingsPanel",
+      "parent": null
+    },
+    {
+      "name": "Group_PanelBody",
+      "parent": "GameSettingsPanel"
+    },
+    {
+      "name": "Group_SettingsForm",
+      "parent": "Group_PanelBody"
+    },
+    {
+      "name": "Txt_SettingsExplanation",
+      "parent": "Group_SettingsForm"
+    },
+    {
+      "name": "Group_CaptainNameRow",
+      "parent": "Group_SettingsForm"
+    },
+    {
+      "name": "Txt_NameTitle",
+      "parent": "Group_CaptainNameRow"
+    },
+    {
+      "name": "Txt_NameHint",
+      "parent": "Group_CaptainNameRow"
+    },
+    {
+      "name": "Input_CaptainName",
+      "parent": "Group_CaptainNameRow"
+    },
+    {
+      "name": "Group_TextViewport",
+      "parent": "Input_CaptainName"
+    },
+    {
+      "name": "Txt_Placeholder",
+      "parent": "Group_TextViewport"
+    },
+    {
+      "name": "Txt_Value",
+      "parent": "Group_TextViewport"
+    },
+    {
+      "name": "Txt_NameCounter",
+      "parent": "Group_CaptainNameRow"
+    },
+    {
+      "name": "Txt_NameError",
+      "parent": "Group_CaptainNameRow"
+    },
+    {
+      "name": "Group_SoundRow",
+      "parent": "Group_SettingsForm"
+    },
+    {
+      "name": "Txt_SoundTitle",
+      "parent": "Group_SoundRow"
+    },
+    {
+      "name": "Txt_SoundHint",
+      "parent": "Group_SoundRow"
+    },
+    {
+      "name": "Toggle_Sound",
+      "parent": "Group_SoundRow"
+    },
+    {
+      "name": "Img_OffKnob",
+      "parent": "Toggle_Sound"
+    },
+    {
+      "name": "Group_OnState",
+      "parent": "Toggle_Sound"
+    },
+    {
+      "name": "Img_Checkmark",
+      "parent": "Group_OnState"
+    },
+    {
+      "name": "Img_OnKnob",
+      "parent": "Group_OnState"
+    },
+    {
+      "name": "Txt_SoundState",
+      "parent": "Group_SoundRow"
+    },
+    {
+      "name": "Group_VolumeRow",
+      "parent": "Group_SettingsForm"
+    },
+    {
+      "name": "Txt_VolumeTitle",
+      "parent": "Group_VolumeRow"
+    },
+    {
+      "name": "Txt_VolumeHint",
+      "parent": "Group_VolumeRow"
+    },
+    {
+      "name": "Slider_MasterVolume",
+      "parent": "Group_VolumeRow"
+    },
+    {
+      "name": "Img_TrackBackground",
+      "parent": "Slider_MasterVolume"
+    },
+    {
+      "name": "Group_FillArea",
+      "parent": "Slider_MasterVolume"
+    },
+    {
+      "name": "Img_Fill",
+      "parent": "Group_FillArea"
+    },
+    {
+      "name": "Group_HandleArea",
+      "parent": "Slider_MasterVolume"
+    },
+    {
+      "name": "Img_Handle",
+      "parent": "Group_HandleArea"
+    },
+    {
+      "name": "Txt_MasterVolume",
+      "parent": "Group_VolumeRow"
+    },
+    {
+      "name": "Group_QualityRow",
+      "parent": "Group_SettingsForm"
+    },
+    {
+      "name": "Txt_QualityTitle",
+      "parent": "Group_QualityRow"
+    },
+    {
+      "name": "Txt_QualityHint",
+      "parent": "Group_QualityRow"
+    },
+    {
+      "name": "Btn_QualityLow",
+      "parent": "Group_QualityRow"
+    },
+    {
+      "name": "Txt_Label",
+      "parent": "Btn_QualityLow"
+    },
+    {
+      "name": "Btn_QualityMedium",
+      "parent": "Group_QualityRow"
+    },
+    {
+      "name": "Txt_Label",
+      "parent": "Btn_QualityMedium"
+    },
+    {
+      "name": "Btn_QualityHigh",
+      "parent": "Group_QualityRow"
+    },
+    {
+      "name": "Txt_Label",
+      "parent": "Btn_QualityHigh"
+    },
+    {
+      "name": "Group_Header",
+      "parent": "Group_PanelBody"
+    },
+    {
+      "name": "Txt_Title",
+      "parent": "Group_Header"
+    },
+    {
+      "name": "Txt_Subtitle",
+      "parent": "Group_Header"
+    },
+    {
+      "name": "Img_HeaderDivider",
+      "parent": "Group_Header"
+    },
+    {
+      "name": "Txt_SettingsNotice",
+      "parent": "Group_Header"
+    },
+    {
+      "name": "Group_Footer",
+      "parent": "Group_PanelBody"
+    },
+    {
+      "name": "Txt_Feedback",
+      "parent": "Group_Footer"
+    },
+    {
+      "name": "Btn_ResetDefaults",
+      "parent": "Group_Footer"
+    },
+    {
+      "name": "Txt_Label",
+      "parent": "Btn_ResetDefaults"
+    },
+    {
+      "name": "Btn_CancelSettings",
+      "parent": "Group_Footer"
+    },
+    {
+      "name": "Txt_Label",
+      "parent": "Btn_CancelSettings"
+    },
+    {
+      "name": "Btn_ApplySettings",
+      "parent": "Group_Footer"
+    },
+    {
+      "name": "Txt_Label",
+      "parent": "Btn_ApplySettings"
+    },
+    {
+      "name": "Group_IconCatalog",
+      "parent": "GameSettingsPanel"
+    },
+    {
+      "name": "Img_Circle",
+      "parent": "Group_IconCatalog"
+    }
+  ],
+  "sceneDirty": false,
+  "bindingFileIdsPreserved": true,
+  "fingerprints": {
+    "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab": "6b6489050ae251a42690e2db6374e9039be5a3c4711afbd95eeea9a5a9f3e965",
+    "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab.meta": "9781a2475bec5624ba5f358fe21a050baac2eea0b4fac885bcc81e349c8d2a36"
+  },
+  "scope": "Current GameSettingsPanel native repair; not full project Unity acceptance. Numeric/state labels populated for screenshots, business wiring pending."
+}

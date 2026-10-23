@@ -1,0 +1,630 @@
+{
+  "schemaVersion": 1,
+  "status": "exported",
+  "assets": [
+    {
+      "name": "Img_RoundedSurface.png",
+      "componentType": "Image",
+      "pixelSize": [
+        512,
+        512
+      ],
+      "originalPixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_RoundedSurface.png",
+      "groups": [
+        "Img_Surface_Sheet",
+        "Scr_List_Sheet"
+      ],
+      "purpose": "底板、卡片、列表与条目共用中性圆角",
+      "status": "exported",
+      "sha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006"
+    },
+    {
+      "name": "Img_Control_Background.png",
+      "componentType": "Image",
+      "pixelSize": [
+        512,
+        128
+      ],
+      "originalPixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_Control_Background.png",
+      "groups": [
+        "Btn_Action_Sheet",
+        "Inp_Form_Sheet"
+      ],
+      "purpose": "按钮和输入框共用圆角结构",
+      "status": "exported",
+      "sha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b"
+    },
+    {
+      "name": "Tgl_Sound_Track.png",
+      "componentType": "Toggle",
+      "pixelSize": [
+        128,
+        64
+      ],
+      "originalPixelSize": [
+        128,
+        64
+      ],
+      "hasAlpha": true,
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Tgl_Sound_Track.png",
+      "groups": [
+        "Tgl_Sound_Sheet"
+      ],
+      "purpose": "开关轨道，开关状态用tint与旋钮位置组合",
+      "status": "exported",
+      "sha256": "d542eebd9640a671cd09a9e7934049362a6faec7bc754bbf263b2702045cb0e9"
+    },
+    {
+      "name": "Img_Circle.png",
+      "componentType": "Image",
+      "pixelSize": [
+        64,
+        64
+      ],
+      "originalPixelSize": [
+        64,
+        64
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_Circle.png",
+      "groups": [
+        "Tgl_Sound_Sheet",
+        "Sld_Value_Sheet"
+      ],
+      "purpose": "开关旋钮与滑块手柄共用实心圆",
+      "status": "exported",
+      "sha256": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc"
+    },
+    {
+      "name": "Sld_Value_Bar.png",
+      "componentType": "Slider",
+      "pixelSize": [
+        512,
+        32
+      ],
+      "originalPixelSize": [
+        512,
+        32
+      ],
+      "hasAlpha": true,
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Sld_Value_Bar.png",
+      "groups": [
+        "Sld_Value_Sheet"
+      ],
+      "purpose": "滑块轨道和填充共用胶囊形",
+      "status": "exported",
+      "sha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0"
+    },
+    {
+      "name": "Img_ItemMedkit.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_ItemMedkit.png",
+      "groups": [
+        "Img_Item_Sheet"
+      ],
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "status": "exported",
+      "sha256": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853"
+    },
+    {
+      "name": "Img_ItemBattery.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_ItemBattery.png",
+      "groups": [
+        "Img_Item_Sheet"
+      ],
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "status": "exported",
+      "sha256": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d"
+    },
+    {
+      "name": "Img_ItemRation.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_ItemRation.png",
+      "groups": [
+        "Img_Item_Sheet"
+      ],
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "status": "exported",
+      "sha256": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285"
+    },
+    {
+      "name": "Img_ItemBeacon.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_ItemBeacon.png",
+      "groups": [
+        "Img_Item_Sheet"
+      ],
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "status": "exported",
+      "sha256": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec"
+    },
+    {
+      "name": "Img_ItemOre.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_ItemOre.png",
+      "groups": [
+        "Img_Item_Sheet"
+      ],
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "status": "exported",
+      "sha256": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b"
+    },
+    {
+      "name": "Img_ItemAlloy.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_ItemAlloy.png",
+      "groups": [
+        "Img_Item_Sheet"
+      ],
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "status": "exported",
+      "sha256": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb"
+    },
+    {
+      "name": "Img_ItemCircuit.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_ItemCircuit.png",
+      "groups": [
+        "Img_Item_Sheet"
+      ],
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "status": "exported",
+      "sha256": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f"
+    },
+    {
+      "name": "Img_ItemChip.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_ItemChip.png",
+      "groups": [
+        "Img_Item_Sheet"
+      ],
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "status": "exported",
+      "sha256": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005"
+    },
+    {
+      "name": "Img_NavigateBack.png",
+      "componentType": "Image",
+      "pixelSize": [
+        128,
+        128
+      ],
+      "originalPixelSize": [
+        128,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_NavigateBack.png",
+      "groups": [
+        "Img_Utility_Sheet"
+      ],
+      "purpose": "独立操作或资源图形，不包含文字单位",
+      "status": "exported",
+      "sha256": "124cbf824f90fa62570899075df2afe6a9dcdc3129d86879bcd89464bb8e309c"
+    },
+    {
+      "name": "Img_Close.png",
+      "componentType": "Image",
+      "pixelSize": [
+        128,
+        128
+      ],
+      "originalPixelSize": [
+        128,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_Close.png",
+      "groups": [
+        "Img_Utility_Sheet"
+      ],
+      "purpose": "独立操作或资源图形，不包含文字单位",
+      "status": "exported",
+      "sha256": "2e8e7e858634003a6f48c0803a587d8bf4e8e814e030ac32bf4ea9506cf9bcdd"
+    },
+    {
+      "name": "Img_Search.png",
+      "componentType": "Image",
+      "pixelSize": [
+        128,
+        128
+      ],
+      "originalPixelSize": [
+        128,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_Search.png",
+      "groups": [
+        "Img_Utility_Sheet"
+      ],
+      "purpose": "独立操作或资源图形，不包含文字单位",
+      "status": "exported",
+      "sha256": "38ffd1740be797dca0c64f602c3a82b745baf55039487a6b7573891d0fe21d5b"
+    },
+    {
+      "name": "Img_Confirm.png",
+      "componentType": "Image",
+      "pixelSize": [
+        128,
+        128
+      ],
+      "originalPixelSize": [
+        128,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_Confirm.png",
+      "groups": [
+        "Img_Utility_Sheet"
+      ],
+      "purpose": "独立操作或资源图形，不包含文字单位",
+      "status": "exported",
+      "sha256": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192"
+    },
+    {
+      "name": "Img_Risk.png",
+      "componentType": "Image",
+      "pixelSize": [
+        128,
+        128
+      ],
+      "originalPixelSize": [
+        128,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_Risk.png",
+      "groups": [
+        "Img_Utility_Sheet"
+      ],
+      "purpose": "独立操作或资源图形，不包含文字单位",
+      "status": "exported",
+      "sha256": "f013cf3f60c72dc870909ec69a16361b7a15de17e3f379804e1f02326d33c528"
+    },
+    {
+      "name": "Img_Lock.png",
+      "componentType": "Image",
+      "pixelSize": [
+        128,
+        128
+      ],
+      "originalPixelSize": [
+        128,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_Lock.png",
+      "groups": [
+        "Img_Utility_Sheet"
+      ],
+      "purpose": "独立操作或资源图形，不包含文字单位",
+      "status": "exported",
+      "sha256": "d95760f18744a4071ffccc0e7d80a794e9b8f2f60224c040fd5429867c08138a"
+    },
+    {
+      "name": "Img_Energy.png",
+      "componentType": "Image",
+      "pixelSize": [
+        128,
+        128
+      ],
+      "originalPixelSize": [
+        128,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_Energy.png",
+      "groups": [
+        "Img_Utility_Sheet"
+      ],
+      "purpose": "独立操作或资源图形，不包含文字单位",
+      "status": "exported",
+      "sha256": "1e52de77b4d51617e333f3531b40b8694432f1ee885358f53c0db2378da7232f"
+    },
+    {
+      "name": "Img_Weight.png",
+      "componentType": "Image",
+      "pixelSize": [
+        128,
+        128
+      ],
+      "originalPixelSize": [
+        128,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_Weight.png",
+      "groups": [
+        "Img_Utility_Sheet"
+      ],
+      "purpose": "独立操作或资源图形，不包含文字单位",
+      "status": "exported",
+      "sha256": "913a947609a6ee374e15c2de307fe500022fcba18e3367a6e6af9f07a6c42518"
+    },
+    {
+      "name": "Img_Credits.png",
+      "componentType": "Image",
+      "pixelSize": [
+        128,
+        128
+      ],
+      "originalPixelSize": [
+        128,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "fullTexture": true,
+      "proposedSource": "html/assets/shared/Img_Credits.png",
+      "groups": [
+        "Img_Utility_Sheet"
+      ],
+      "purpose": "独立操作或资源图形，不包含文字单位",
+      "status": "exported",
+      "sha256": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0"
+    }
+  ],
+  "notes": "仅尺寸/复用/边距计划，不是已导出文件清单。组图批准后精确导出并补录各准备包sprites元数据。",
+  "userApproval": "确定",
+  "technicalAdaptations": [
+    "Sld_Value_Bar上下切片从16改为15px，保留中心2px，显示轮廓不变。"
+  ]
+}

@@ -214,7 +214,15 @@ def validate(root,require_ready=False,mode=None,require_unity=False,unity_projec
     actual_mode=state.get('mode','full')
     require(actual_mode in ('full','visual-only') and (mode is None or mode==actual_mode),'Workflow mode mismatch')
     mode=actual_mode
-    for directory in (DIRECTORIES if mode=='full' else VISUAL_DIRECTORIES): require((root/directory).is_dir(),'Missing directory: '+directory)
+    # Git does not store empty scaffolding directories. Actual referenced assets
+    # are still required below; do not add unapproved files to HTML acceptance.
+    optional_empty={'inputs/references','html/assets/icons','html/assets/sprites','html/assets/textures',
+                    'assets/icons','assets/sprites','assets/textures'}
+    for directory in (DIRECTORIES if mode=='full' else VISUAL_DIRECTORIES):
+        path=root/directory
+        if directory in optional_empty and not path.exists():
+            continue
+        require(path.is_dir(),'Missing directory: '+directory)
     name=state.get('panelName','')
     require(state.get('schemaVersion')==1 and re.fullmatch(PANEL_NAME,name) is not None,'Invalid workspace identity')
     require(all(isinstance(state.get(axis),int) and state[axis]>0 for axis in ('width','height')),'Invalid canvas dimensions')
@@ -277,16 +285,29 @@ def validate(root,require_ready=False,mode=None,require_unity=False,unity_projec
     if ready:
         require(package.get('requireSkillApproval') is True,'Skill ready package requires requireSkillApproval=true')
         require(isinstance(package.get('stagingRoot'),str) and package['stagingRoot'].startswith('Assets/') and not any(part in ('','..','.') for part in package['stagingRoot'].split('/')),'Skill ready package requires a safe stagingRoot')
+    for field, attribute in (('projectName','data-project-name'), ('projectDirectory','data-project-directory'), ('stagingRoot','data-staging-root')):
+        fallback = 'Assets/HtmlToUGUIStage/'+name if field == 'stagingRoot' else ''
+        prepared = package.get(field) or fallback
+        direct = source.get(attribute) or fallback
+        require(isinstance(prepared,str) and prepared.replace('{PanelName}',name)==direct.replace('{PanelName}',name),'HTML/package import routing mismatch: '+field)
+    project_name = package.get('projectName')
+    if project_name:
+        require(re.fullmatch(r'[\w-]+',project_name) is not None and not re.fullmatch(r'(CON|PRN|AUX|NUL|COM[1-9]|LPT[1-9])',project_name,re.I),'Invalid project directory name')
+        require((package.get('stagingRoot') or '').replace('{PanelName}',name)=='Assets/HtmlToUGUIStage/'+project_name+'/'+name,'Project import routing must use its game staging directory')
+    require(not package.get('projectDirectory') or bool(project_name),'projectDirectory requires projectName')
     require(package.get('assetPrefix')==prefix and package.get('outputFolder')==output,'Package Unity output mismatch')
     sprites=read_json(root/'html/sprites.json')
     require(sprites.get('schemaVersion')==1 and sprites.get('panelName')==name,'Sprite manifest identity mismatch')
+    from project_asset_contract import load_project_assets, find_project_directory
+    project_assets = load_project_assets(find_project_directory(entry.parent,package)) if package.get('projectName') else {}
     destinations,source_assets={},set()
     for item in sprites['sprites']:
         destination=item['path']
-        require(destination.startswith(prefix) and '..' not in destination.split('/'),'Invalid Unity image destination')
+        project_id=destination[6:] if destination.startswith('asset:') else None
+        require((project_id in project_assets if project_id else destination.startswith(prefix) and '..' not in destination.split('/')),'Invalid Unity image destination')
         require(destination.casefold() not in destinations,'Duplicate image destination')
         file=local_file(entry.parent,item['source'],root)
-        require(file.suffix.lower()=='.png' and item['source']=='assets/'+destination[len(prefix):],'PNG source/destination mismatch')
+        require(file.suffix.lower()=='.png' and (file_digest(file)==project_assets[project_id]['sourceSha256'] if project_id else item['source']=='assets/'+destination[len(prefix):]),'PNG source/destination mismatch')
         width,height,alpha=png_info(file)
         validate_content_rect(item,width,height)
         require(item.get('pixelSize')==[width,height] and item.get('hasAlpha')==alpha,'Image metadata mismatch: '+item['source'])
@@ -298,20 +319,42 @@ def validate(root,require_ready=False,mode=None,require_unity=False,unity_projec
         destinations[destination.casefold()]=item
         source_assets.add(file)
     mappings=set()
+    owners={}
+    parents={child:parent for parent in source.iter() for child in parent}
     for node in source.iter():
         states=('normal','highlighted','pressed','selected','disabled')
         has_sprites=any(node.get('data-'+state+'-sprite') is not None for state in states)
         has_colors=any(node.get('data-'+state+'-color') is not None for state in states)
+        toggle_attributes=['data-toggle-'+state+'-sprite' for state in ('off','on','disabled')]
+        toggle_states=any(node.get(key) is not None for key in toggle_attributes)
+        require(not toggle_states or (node.get('data-ugui')=='Toggle' and all(node.get(key) for key in toggle_attributes) and len({node.get(key) for key in toggle_attributes})==3),'Toggle requires three distinct Off/On/Disabled surfaces')
+        require(not toggle_states or not(has_sprites or node.get('data-sprite') or node.get('data-checkmark-sprite')),'Full Toggle cannot mix background, Checkmark or SpriteSwap art')
+        require(not project_name or node.get('data-ugui')!='Toggle' or toggle_states,'Project Toggle requires three full surfaces')
         require(not(has_sprites and has_colors),'SpriteSwap and ColorTint cannot be combined')
         require(not(has_sprites or has_colors) or node.get('data-ugui') in ('Button','Toggle','Slider','InputField'),'Native states require a Selectable control')
         for state_name in states:
             value=node.get('data-'+state_name+'-color')
             require(value is None or re.fullmatch(r'#[0-9a-fA-F]{6}(?:[0-9a-fA-F]{2})?',value) is not None,'State colors require #RRGGBB or #RRGGBBAA')
-        for attribute,role in [('data-sprite','Sprite'),('data-texture','Texture')]+[('data-'+state+'-sprite','Sprite') for state in ('normal','highlighted','pressed','selected','disabled')]:
+        for attribute,role in [('data-sprite','Sprite'),('data-texture','Texture')]+[('data-'+state+'-sprite','Sprite') for state in states]+[(key,'Sprite') for key in toggle_attributes+['data-fill-sprite','data-handle-sprite','data-checkmark-sprite']]:
             destination=node.get(attribute)
             if destination:
                 item=destinations.get(destination.casefold())
                 require(item is not None and item['role']==role,'Missing/wrong-role image mapping: '+destination)
+                owner=node.get('data-ugui','Container')
+                if owner=='Image':
+                    parent=parents.get(node)
+                    while parent is not None:
+                        if parent.get('data-ugui') in ('Button','Toggle','Slider','InputField','Dropdown','Scrollbar'):
+                            owner=parent.get('data-ugui'); break
+                        parent=parents.get(parent)
+                owner={'InputField':'TMP_InputField','ScrollView':'ScrollRect','Container':'Image'}.get(owner,owner)
+                require(destination not in owners or owners[destination]==owner,'Cross-component image reuse forbidden: '+destination)
+                owners[destination]=owner
+                if destination.startswith('asset:'):
+                    definition=project_assets[destination[6:]]
+                    require(definition['componentType']==owner,'Project asset component ownership mismatch: '+destination)
+                    expected_state={'data-toggle-off-sprite':'Off','data-toggle-on-sprite':'On','data-toggle-disabled-sprite':'Disabled'}.get(attribute)
+                    require(expected_state is None or (definition['part']=='Surface' and definition['state']==expected_state),'Toggle surface state mismatch')
                 border=[float(p) for p in node.get('data-border','0,0,0,0').split(',')] if node.get('data-nine-slice')=='true' else [0,0,0,0]
                 require(item['border']==border,'Image border mismatch: '+destination)
                 mappings.add(destination.casefold())

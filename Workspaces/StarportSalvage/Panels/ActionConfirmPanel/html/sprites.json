@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "panelName": "ActionConfirmPanel",
+  "sprites": [
+    {
+      "source": "assets/shared/Img_Control_Background.png",
+      "path": "Assets/Art/UI/Sprite/ActionConfirmPanel/shared/Img_Control_Background.png",
+      "role": "Sprite",
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "pixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "purpose": "按钮和输入框共用圆角结构",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Img_RoundedSurface.png",
+      "path": "Assets/Art/UI/Sprite/ActionConfirmPanel/shared/Img_RoundedSurface.png",
+      "role": "Sprite",
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "pixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "purpose": "底板、卡片、列表与条目共用中性圆角",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/project/Image/Img_RoundedSurface_Surface_Default.png",
+      "path": "asset:Image_RoundedSurface_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "pixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Button/Btn_Control_Background_Surface_Normal.png",
+      "path": "asset:Button_Control_Background_Surface_Normal",
+      "role": "Sprite",
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "pixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Button/Surface/Normal",
+      "usage": "source"
+    }
+  ]
+}

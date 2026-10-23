@@ -1,10 +1,12 @@
 # 统一准备包契约 v1
 
+当前游戏源目录为 `{GameName}/Panels/{PanelName}/html/`；共享 `project.assets.json` 留在游戏根，准备包 `projectDirectory` 从 html/ 回退三级（`../../..`）。批量导入选择游戏根目录。
+
 html/elements.json：schemaVersion=1、panelName、status、templates、elements。每项元素包含 elementId（等于 hierarchyPath）、unityName、purpose、parentId、hierarchyPath、uguiComponent、sourceType、htmlId、generated、template、bindingKey、dataSource、pictureRegion、states。源节点具有唯一 HTML id、显式 data-ugui 及语义化 data-ui-name。Text 对应 TextMeshProUGUI，InputField 对应 TMP_InputField，Container 对应 RectTransform。
 
 templates 每项包含 name、itemRootId、parentId、bindingScope、itemSize（宽高像素）、stepPx（行步长）、dataSource、states。逻辑路径指向唯一根 Panel 中未来所属列表 Content；template 隔离 Item 绑定。模板键和 Item 名称分别唯一，防止覆盖预制体。条目不是独立 Panel。
 
-辅助物体也登记：按钮有直接文字时生成 Txt_Label；InputField 生成 Group_TextViewport 及 Txt_Placeholder/Txt_Value；ScrollView 生成 Group_Content；Toggle 生成 Img_Checkmark；Slider 生成 Img_Fill、Group_HandleArea 及 Img_Handle。它们 generated=true、sourceType/htmlId=null；purpose 说明其在所属控件中的作用。
+辅助物体也登记：按钮有直接文字时生成 Txt_Label；InputField 生成 Group_TextViewport 及 Txt_Placeholder/Txt_Value；ScrollView 生成 Group_Content；旧技术 Toggle 生成 Img_Checkmark，三张完整状态图的 Toggle 不生成 Checkmark；Slider 生成 Img_Fill、Group_HandleArea 及 Img_Handle。它们 generated=true、sourceType/htmlId=null；purpose 说明其在所属控件中的作用。
 
 html/sprites.json：schemaVersion=1、panelName、sprites。每项包含 source（相对 html/）、path（Unity 目标）、role（Sprite/Texture）、border（L/B/R/T）、pixelSize、hasAlpha（PNG 格式包含 alpha 通道或透明色）、purpose、usage。source 对应 assets/ 加上 path 在根 Panel Sprite 目录后的相对部分。usage=source 包含 data-sprite、data-texture、data-normal-sprite、data-highlighted-sprite、data-pressed-sprite、data-selected-sprite、data-disabled-sprite 引用；纯浏览器预览切换所需额外 PNG 使用 preview-state。清单中后者不会自动被 Unity 复制，运行时需要时应补显式映射或交给业务数据层加载。
 
@@ -33,7 +35,7 @@ design/review/html-acceptance.json：status=passed、approvedLayoutSha256、appr
 - sheet：工作区相对 PNG 路径，位于 design/element-groups/，文件名使用组件缩写，例如 Btn_Primary_Sheet.png。
 - assets：本组引用的 sprites[].source 列表；纯文字组允许空列表。共享素材可以被多组引用。
 
-每个 sprite：source、componentType、pixelSize、originalPixelSize、hasAlpha、border、tintable、purpose。source 相对工作区，full 位于 html/assets/，visual-only 位于 assets/。文件名使用对应组件前缀，跨组件共用图形登记为 Image/Img。border 仍按 L/B/R/T。pixelSize 是实际导出尺寸；originalPixelSize 是输入源尺寸，新制图填其原生制作尺寸。若降采样，记录 resolutionChangeReason，说明为何必要；默认保留原始像素。此记录不能代替 VR 清晰度检查。tintable=true 表示中性图可通过 Image.color 改色；多色图可填 false。
+每个 sprite：source、componentType、pixelSize、originalPixelSize、hasAlpha、border、tintable、purpose。source 相对工作区，full 位于 html/assets/，visual-only 位于 assets/。文件名使用对应组件前缀，同一实际组件类型内复用；禁止跨组件共用图形或将控件子图形改登记为 Image/Img。border 仍按 L/B/R/T。pixelSize 是实际导出尺寸；originalPixelSize 是输入源尺寸，新制图填其原生制作尺寸。若降采样，记录 resolutionChangeReason，说明为何必要；默认保留原始像素。此记录不能代替 VR 清晰度检查。tintable=true 表示中性图可通过 Image.color 改色；多色图可填 false。
 
 每个素材必须归属于实际组；每个 requiredComponents 类型在 ready 前必须有组覆盖。不要通过填写虚构需求让额外组件通过校验。示意配色共用素材，不把颜色变体添加到 sprites。
 
@@ -77,8 +79,8 @@ VR 素材约束：各元素均使用无边缘描线的填充造型，不制作�
 
 ## 0.3.0 导入与完成契约
 
-- 初始化生成的 panel.package.json 默认 requireSkillApproval=true、stagingRoot=Assets/HtmlToUGUIStage/{PanelName}、allowPrefabReplacement=false；fontMaterial 可指定项目已有共享材质。旧工作区不自动改写，正式导入前补配置并重新验收。省略 stagingRoot 的旧通用准备包和 Prepared HTML 入口也默认生成到 HtmlToUGUIStage；显式指定的已有暂存路径继续沿用。
-- stagingRoot 同时重定向 Sprite/Texture、Item、主 Prefab 和导入报告，不能仅改 outputFolder；字体直接共享。先查看只读 PlanImport，再导入。默认导入窗口更新 HtmlToUGUIStage/StageScene.unity，Stage Panels 窗口负责切换预览和勾选复制。复制计划包含依赖和目标指纹；执行前复核，批次失败时恢复目标资源。业务 Prefab 通过项目适配受控更新，不能以 GUID 保留推断内部组件或 UnityEvent 保留。
+- 初始化生成的 panel.package.json 默认 requireSkillApproval=true、stagingRoot=Assets/HtmlToUGUIStage/{PanelName}、allowPrefabReplacement=false；fontMaterial 可指定项目已有共享材质。旧工作区不自动改写；正式游戏导入前补 projectName、项目素材清单及配置，并重新验收。省略 stagingRoot 的旧通用准备包和 Prepared HTML 入口也默认生成到 HtmlToUGUIStage；显式指定的已有暂存路径继续沿用。
+- stagingRoot 同时重定向 Sprite/Texture、Item、主 Prefab 和导入报告，不能仅改 outputFolder；字体直接共享。先查看只读 PlanImport，再导入。默认导入窗口更新 HtmlToUGUIStage/StageScene.unity，面板暂存与复制 窗口负责切换预览和勾选复制。复制计划包含依赖和目标指纹；执行前复核，批次失败时恢复目标资源。业务 Prefab 通过项目适配受控更新，不能以 GUID 保留推断内部组件或 UnityEvent 保留。
 - HTML 验收比较 html/ 文件集合与逐文件哈希；新增、修改、删除均使原验收失效。候选素材可在组图审核前生成；确认后冻结同一版本，不重复生成再冒用旧哈希。
 - designApproved（两项审批）、artifactReady（HTML ready 或视觉素材就绪）、unityAccepted（Unity 完成证据）、deviceAccepted（目标设备实测）分别报告，不把 HTML ready 当作设备或 Unity 通过。
 - 两条路线都使用上述 unity-acceptance.json 与 referenceImages 契约。full 分支导入后运行 `python scripts/validate_directory.py --root <工作区> --require-unity --unity-project <Unity工程>`；此参数验证完成记录、截图、素材哈希及实际参考图字节，不替代 Unity 实际显示/交互/设备验证。
@@ -94,3 +96,9 @@ full 的 unity-acceptance.json 另包含 importReport（复制到工作区的实
 - 校验结果统一输出 designApproved、artifactReady、unityAccepted、deviceAccepted。ready 的旧分支语义继续兼容；缺少 Unity 或设备验证时对应状态不通过。
 - 可选 device-acceptance.json 包含 status=passed|failed|not-tested；实际测试时另填 device、testedAt、reviewer、unityAcceptanceSha256、screenshots 及对应 filesSha256。设备结果绑定当前 Unity 验收和实测截图，未测保持 not-tested，不推导为通过。
 - 默认使用 TMP 当前默认字体及已有材质，不生成字体材质副本；boldWeight 保留为旧包兼容字段，不修改共享材质，文字粗体使用原生 TMP FontStyles。
+
+## 游戏级素材清单
+
+新游戏在外部项目根目录维护 `project.assets.json`，准备包设置 `projectName`，可用相对 `projectDirectory` 或向上查找确定项目根目录。所有已确认素材在任何面板生成前统一同步到 `Assets/HtmlToUGUIStage/{GameName}/Sprites`（RawImage 为 Textures）。单面板与全部面板走同一同步器，全集检查、增量写入、同类型/部件/状态去重。详情见 [项目素材契约](project-assets.md)。
+
+HTML 与 sprites.json 的 path 可以使用 `asset:AssetId`，sprites.json 的 source 保留本面板浏览器副本，哈希必须与项目批准源一致。设计批准、元素组图批准和 HTML 验收仍按原清单版本执行；不能用新建项目注册表替代用户批准。

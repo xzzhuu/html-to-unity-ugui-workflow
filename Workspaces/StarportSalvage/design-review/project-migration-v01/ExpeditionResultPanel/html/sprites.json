@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "panelName": "ExpeditionResultPanel",
+  "sprites": [
+    {
+      "source": "assets/shared/Img_Confirm.png",
+      "path": "Assets/Art/UI/Sprite/ExpeditionResultPanel/shared/Img_Confirm.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        128,
+        128
+      ],
+      "hasAlpha": true,
+      "purpose": "独立操作或资源图形，不包含文字单位",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_Control_Background.png",
+      "path": "Assets/Art/UI/Sprite/ExpeditionResultPanel/shared/Img_Control_Background.png",
+      "role": "Sprite",
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "pixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "purpose": "按钮和输入框共用圆角结构",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_Credits.png",
+      "path": "Assets/Art/UI/Sprite/ExpeditionResultPanel/shared/Img_Credits.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        128,
+        128
+      ],
+      "hasAlpha": true,
+      "purpose": "独立操作或资源图形，不包含文字单位",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_ItemAlloy.png",
+      "path": "Assets/Art/UI/Sprite/ExpeditionResultPanel/shared/Img_ItemAlloy.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_ItemChip.png",
+      "path": "Assets/Art/UI/Sprite/ExpeditionResultPanel/shared/Img_ItemChip.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_ItemCircuit.png",
+      "path": "Assets/Art/UI/Sprite/ExpeditionResultPanel/shared/Img_ItemCircuit.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_ItemOre.png",
+      "path": "Assets/Art/UI/Sprite/ExpeditionResultPanel/shared/Img_ItemOre.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_RoundedSurface.png",
+      "path": "Assets/Art/UI/Sprite/ExpeditionResultPanel/shared/Img_RoundedSurface.png",
+      "role": "Sprite",
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "pixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "purpose": "底板、卡片、列表与条目共用中性圆角",
+      "usage": "source"
+    }
+  ]
+}

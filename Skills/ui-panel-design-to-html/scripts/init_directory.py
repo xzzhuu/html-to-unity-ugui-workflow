@@ -2,6 +2,7 @@
 import argparse
 import html
 import json
+import os
 from pathlib import Path
 import re
 import xml.etree.ElementTree as ET
@@ -38,13 +39,25 @@ def initialize(root, panel=None, title=None, width=None, height=None, mode=None)
         target = root / directory
         if not target.resolve().is_relative_to(root):
             raise ValueError('Workspace directory points outside the selected root')
-    for directory in directories:
-        (root/directory).mkdir(parents=True,exist_ok=True)
     name, w, h = config['panelName'], config['width'], config['height']
+    # A game keeps its complete asset manifest at the root and panel sources in Panels/.
+    project = root.parent.parent if root.parent.name == 'Panels' else None
+    if project is not None and not (project / 'project.assets.json').is_file():
+        project = None
+    project_attributes = ''
+    staging_root = f'Assets/HtmlToUGUIStage/{name}'
+    if project is not None:
+        if not re.fullmatch(r'[\w-]+', project.name) or re.fullmatch(r'(CON|PRN|AUX|NUL|COM[1-9]|LPT[1-9])', project.name, re.I):
+            raise ValueError('Project name must be a safe Unity directory name')
+        staging_root = f'Assets/HtmlToUGUIStage/{project.name}/{name}'
+        project_relative = Path(os.path.relpath(project, root / 'html')).as_posix()
+        project_attributes = f' data-project-name="{html.escape(project.name)}" data-project-directory="{project_relative}" data-staging-root="{staging_root}"'
+    else:
+        project_attributes = f' data-staging-root="{staging_root}"'
     esc = html.escape(config['title'])
     source = f'''<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta charset="utf-8"/><title>{esc}</title><link rel="stylesheet" href="{name}.css"/></head><body>
-<div id="{name}" data-root="true" data-panel-name="{name}" data-ugui="Container" data-asset-prefix="Assets/Art/UI/Sprite/{name}/" data-output-folder="Assets/Art/UIPrefab/{name}" style="width:{w}px;height:{h}px;background-color:#101b2a">
+<div id="{name}" data-root="true" data-panel-name="{name}" data-ugui="Container" data-asset-prefix="Assets/Art/UI/Sprite/{name}/" data-output-folder="Assets/Art/UIPrefab/{name}"{project_attributes} style="width:{w}px;height:{h}px;background-color:#101b2a">
  <div id="Header" data-ui-name="Group_Header" data-ugui="Container" style="left:32px;top:24px;width:{w-64}px;height:64px">
   <span id="Title" data-ui-name="Txt_Title" data-ugui="Text" style="left:0px;top:0px;width:{w-64}px;height:64px;font-size:30px;color:#ffffff">{esc}</span>
  </div>
@@ -61,7 +74,9 @@ def initialize(root, panel=None, title=None, width=None, height=None, mode=None)
         item.update(purpose=purposes[item['htmlId']],dataSource=None,pictureRegion=None,states=[])
     package = dict(schemaVersion=1, panelName=name, html=f'{name}.html',
                    outputFolder=f'Assets/Art/UIPrefab/{name}', assetPrefix=f'Assets/Art/UI/Sprite/{name}/', fontAsset=None, boldWeight=.12, requireSkillApproval=True,
-                   stagingRoot=f'Assets/HtmlToUGUIStage/{name}', allowPrefabReplacement=False, fontMaterial=None)
+                   stagingRoot=staging_root, allowPrefabReplacement=False, fontMaterial=None)
+    if project is not None:
+        package.update(projectName=project.name, projectDirectory=project_relative)
     files = {
         '.html-directory.json': config,
         'inputs/brief.md': '# UI 需求\n\n填写用途、必须显示的元素、动态数据、交互、状态及参考图路径。当前没有业务需求或布局审批。\n',
@@ -82,6 +97,9 @@ def initialize(root, panel=None, title=None, width=None, height=None, mode=None)
             raise ValueError('Output escapes workspace or is a symlink: '+relative)
         if target.exists() and not target.is_file():
             raise ValueError('Expected file but found directory: '+relative)
+    # Complete preflight before creating even empty workspace directories.
+    for directory in directories:
+        (root/directory).mkdir(parents=True,exist_ok=True)
     for relative, content in files.items():
         target = root / relative
         if target.exists():

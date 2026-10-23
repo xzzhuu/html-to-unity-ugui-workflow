@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "approvedLayoutSha256": "73acb2bffe9146735b5599ff9e7d7fa7435dfe8495d93077e6776376b93a7f47",
+  "approvedElementGroupsSha256": "673e6e28a23774febc1afe7101de015be48a711e6fd5633019c6a07781412bf4",
+  "checks": {
+    "elements": "passed",
+    "naming": "passed",
+    "sprites": "passed",
+    "layout": "passed",
+    "visual": "passed",
+    "interactions": "passed"
+  },
+  "filesSha256": {
+    "html/assets/project/Button/Btn_Control_Background_Surface_Normal.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "html/assets/project/Button/Btn_RoundedSurface_Surface_Normal.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "html/assets/project/Image/Img_Credits_Surface_Default.png": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+    "html/assets/project/Image/Img_ItemAlloy_Surface_Default.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "html/assets/project/Image/Img_ItemChip_Surface_Default.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "html/assets/project/Image/Img_ItemCircuit_Surface_Default.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "html/assets/project/Image/Img_ItemOre_Surface_Default.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "html/assets/project/Image/Img_RoundedSurface_Surface_Default.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "html/assets/shared/Img_Credits.png": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+    "html/assets/shared/Img_ItemAlloy.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "html/assets/shared/Img_ItemChip.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "html/assets/shared/Img_ItemCircuit.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "html/assets/shared/Img_ItemOre.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "html/elements.json": "cac7cd07bdd073dc7a59faae4a787d9e477794250de6c0da638399e80a6463d0",
+    "html/ExpeditionSelectPanel.css": "d8eebde333e9e6bca273883ade27000805d8ec4552736b514a9ed42d3ca3ddea",
+    "html/ExpeditionSelectPanel.html": "a4e9c9375985e1b4e39c1ce0f5bb8e809558f4b928e9568be38c4d8a43aec001",
+    "html/ExpeditionSelectPanel.preview.js": "d2086cd14716f26ae50d9ad3d4474c957c1c017a02a2079d96c884bbb34cfaa1",
+    "html/panel.package.json": "8d233f66fbe275cd3a1b9f6f171064f1819d7b5b5f12a31ba21cc1850b8eb953",
+    "html/sprites.json": "2f8294e33e9dfff6c637ee4dee89794ae5f6996d53dfc27fece8bb8d098d1d4d",
+    "design/element-groups.json": "9d85729687f297069c624b9096236e2ea72e2604ac7cebc0e8d2a55f23712983",
+    "design/review/browser/default.png": "08c929ed13a2210fe3dd4c53e63befe0e534b53bc6b3fdc8891c212ace5bf7da",
+    "design/review/browser/checks.json": "6edc991a5739ff94bc8a1f6557a4f46791dcbcd42898ecd20eadc8566981fccb"
+  },
+  "screenshots": [
+    "design/review/browser/default.png"
+  ],
+  "browserVersion": "155.0.4283.62",
+  "unityAccepted": false,
+  "notes": "实际浏览器检查与模型视觉复核；像素差分仅用于诊断，不作为自动视觉通过阈值。Unity和设备尚未验证。",
+  "migrationOriginalAcceptance": "design-review/project-migration-v01/ExpeditionSelectPanel/design/review/html-acceptance.json",
+  "migrationValidation": {
+    "browserChecks": 14,
+    "defaultScreenshotPixelsUnchanged": true,
+    "projectAssetManifestSha256": "b8e4068538f7bdc80708cdf395469fd06bc5e06e32ce0bda5f616f1f499792e4"
+  },
+  "directoryMigration": {
+    "date": "2026-10-24",
+    "previousPackageSha256": "4c03e774edc243cc4944c9dab4cc1d3aa9e5ab25eed5b433c9f80a4f55278acf",
+    "source": "Panels/ExpeditionSelectPanel",
+    "changes": [
+      "projectDirectory: ../.. -> ../../..",
+      "归档审批来源链接增加一级父目录；批准图像与批准原文不变",
+      "HTML根属性与准备包的项目名、项目根和暂存路径一致；无布局或素材变化"
+    ],
+    "designPixelsChanged": false,
+    "userApproval": "沿用现有设计批准，仅迁移目录与项目清单相对路径"
+  },
+  "technicalCorrections": [
+    {
+      "date": "2026-10-24",
+      "reason": "User selected PICOSansVFESC SDF; replace unsupported mathematical minus U+2212 with ASCII hyphen-minus U+002D without changing numeric meaning or layout approval.",
+      "files": [
+        "html/ExpeditionSelectPanel.preview.js"
+      ],
+      "verification": "Browser interaction and Unity visual comparison in current workflow review."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "panelName": "ActionConfirmPanel",
+  "sprites": [
+    {
+      "source": "assets/shared/Img_Control_Background.png",
+      "path": "Assets/Art/UI/Sprite/ActionConfirmPanel/shared/Img_Control_Background.png",
+      "role": "Sprite",
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "pixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "purpose": "按钮和输入框共用圆角结构",
+      "usage": "source"
+    },
+    {
+      "source": "assets/shared/Img_RoundedSurface.png",
+      "path": "Assets/Art/UI/Sprite/ActionConfirmPanel/shared/Img_RoundedSurface.png",
+      "role": "Sprite",
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "pixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "purpose": "底板、卡片、列表与条目共用中性圆角",
+      "usage": "source"
+    }
+  ]
+}

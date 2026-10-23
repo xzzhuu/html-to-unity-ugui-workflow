@@ -1,0 +1,435 @@
+{
+  "schemaVersion": 1,
+  "panelName": "GameSettingsPanel",
+  "requiredComponents": [
+    "Button",
+    "InputField",
+    "Toggle",
+    "Slider",
+    "Image",
+    "Text"
+  ],
+  "groups": [
+    {
+      "groupId": "Img_Surface_Sheet",
+      "componentType": "Image",
+      "purpose": "底板与卡片",
+      "usedBy": [
+        "GameSettingsPanel/Group_PanelBody",
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm"
+      ],
+      "sheet": "design/element-groups/Img_Surface_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_RoundedSurface.png",
+        "html/assets/project/Image/Img_RoundedSurface_Surface_Default.png",
+        "html/assets/project/Image/Img_Circle_Surface_Default.png"
+      ]
+    },
+    {
+      "groupId": "Btn_Action_Sheet",
+      "componentType": "Button",
+      "purpose": "按钮结构与状态",
+      "usedBy": [
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityLow",
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityMedium",
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityHigh",
+        "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_ResetDefaults",
+        "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_CancelSettings",
+        "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_ApplySettings"
+      ],
+      "sheet": "design/element-groups/Btn_Action_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_Control_Background.png",
+        "html/assets/project/Button/Btn_Control_Background_Surface_Normal.png"
+      ]
+    },
+    {
+      "groupId": "Inp_Form_Sheet",
+      "componentType": "InputField",
+      "purpose": "搜索与名称输入",
+      "usedBy": [
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Input_CaptainName"
+      ],
+      "sheet": "design/element-groups/Inp_Form_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_Control_Background.png",
+        "html/assets/project/TMP_InputField/Inp_Control_Background_Surface_Default.png"
+      ]
+    },
+    {
+      "groupId": "Tgl_Sound_Sheet",
+      "componentType": "Toggle",
+      "purpose": "音效开关",
+      "usedBy": [
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow/Toggle_Sound"
+      ],
+      "sheet": "design/element-groups/Tgl_Sound_Sheet.png",
+      "assets": [
+        "html/assets/shared/Tgl_Sound_Track.png",
+        "html/assets/shared/Img_Circle.png",
+        "html/assets/project/Toggle/Tgl_Sound_Surface_Off.png",
+        "html/assets/project/Toggle/Tgl_Sound_Surface_On.png",
+        "html/assets/project/Toggle/Tgl_Sound_Surface_Disabled.png"
+      ]
+    },
+    {
+      "groupId": "Sld_Value_Sheet",
+      "componentType": "Slider",
+      "purpose": "音量、数量与重量",
+      "usedBy": [
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Slider_MasterVolume"
+      ],
+      "sheet": "design/element-groups/Sld_Value_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_Circle.png",
+        "html/assets/shared/Sld_Value_Bar.png",
+        "html/assets/project/Slider/Sld_Value_Bar_Track_Default.png",
+        "html/assets/project/Slider/Sld_Value_Bar_Fill_Default.png",
+        "html/assets/project/Slider/Sld_Circle_Handle_Default.png"
+      ]
+    },
+    {
+      "groupId": "Txt_Typography_Sheet",
+      "componentType": "Text",
+      "purpose": "文字层级与反馈",
+      "usedBy": [
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Txt_SettingsExplanation",
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Txt_NameTitle",
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Txt_NameHint",
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Txt_NameCounter",
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Txt_NameError",
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow/Txt_SoundTitle",
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow/Txt_SoundHint",
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow/Txt_SoundState",
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Txt_VolumeTitle",
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Txt_VolumeHint",
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Txt_MasterVolume",
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Txt_QualityTitle",
+        "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Txt_QualityHint",
+        "GameSettingsPanel/Group_PanelBody/Group_Header/Txt_Title",
+        "GameSettingsPanel/Group_PanelBody/Group_Header/Txt_Subtitle",
+        "GameSettingsPanel/Group_PanelBody/Group_Header/Txt_SettingsNotice",
+        "GameSettingsPanel/Group_PanelBody/Group_Footer/Txt_Feedback"
+      ],
+      "sheet": "design/element-groups/Txt_Typography_Sheet.png",
+      "assets": []
+    }
+  ],
+  "sprites": [
+    {
+      "source": "html/assets/shared/Img_Circle.png",
+      "componentType": "Image",
+      "pixelSize": [
+        64,
+        64
+      ],
+      "originalPixelSize": [
+        64,
+        64
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "开关旋钮与滑块手柄共用实心圆"
+    },
+    {
+      "source": "html/assets/shared/Img_Control_Background.png",
+      "componentType": "Image",
+      "pixelSize": [
+        512,
+        128
+      ],
+      "originalPixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "tintable": true,
+      "purpose": "按钮和输入框共用圆角结构"
+    },
+    {
+      "source": "html/assets/shared/Img_RoundedSurface.png",
+      "componentType": "Image",
+      "pixelSize": [
+        512,
+        512
+      ],
+      "originalPixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "tintable": true,
+      "purpose": "底板、卡片、列表与条目共用中性圆角"
+    },
+    {
+      "source": "html/assets/shared/Sld_Value_Bar.png",
+      "componentType": "Slider",
+      "pixelSize": [
+        512,
+        32
+      ],
+      "originalPixelSize": [
+        512,
+        32
+      ],
+      "hasAlpha": true,
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "tintable": true,
+      "purpose": "滑块轨道和填充共用胶囊形"
+    },
+    {
+      "source": "html/assets/shared/Tgl_Sound_Track.png",
+      "componentType": "Toggle",
+      "pixelSize": [
+        128,
+        64
+      ],
+      "originalPixelSize": [
+        128,
+        64
+      ],
+      "hasAlpha": true,
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "tintable": true,
+      "purpose": "开关轨道，开关状态用tint与旋钮位置组合"
+    },
+    {
+      "source": "html/assets/project/Image/Img_RoundedSurface_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        512,
+        512
+      ],
+      "originalPixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    },
+    {
+      "source": "html/assets/project/TMP_InputField/Inp_Control_Background_Surface_Default.png",
+      "componentType": "InputField",
+      "pixelSize": [
+        512,
+        128
+      ],
+      "originalPixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；TMP_InputField/Surface/Default"
+    },
+    {
+      "source": "html/assets/project/Toggle/Tgl_Sound_Surface_Off.png",
+      "componentType": "Toggle",
+      "pixelSize": [
+        1024,
+        512
+      ],
+      "originalPixelSize": [
+        1024,
+        512
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": false,
+      "purpose": "沿用已批准v01素材；Toggle/Surface/Off"
+    },
+    {
+      "source": "html/assets/project/Toggle/Tgl_Sound_Surface_On.png",
+      "componentType": "Toggle",
+      "pixelSize": [
+        1024,
+        512
+      ],
+      "originalPixelSize": [
+        1024,
+        512
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": false,
+      "purpose": "沿用已批准v01素材；Toggle/Surface/On"
+    },
+    {
+      "source": "html/assets/project/Toggle/Tgl_Sound_Surface_Disabled.png",
+      "componentType": "Toggle",
+      "pixelSize": [
+        1024,
+        512
+      ],
+      "originalPixelSize": [
+        1024,
+        512
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": false,
+      "purpose": "沿用已批准v01素材；Toggle/Surface/Disabled"
+    },
+    {
+      "source": "html/assets/project/Slider/Sld_Value_Bar_Track_Default.png",
+      "componentType": "Slider",
+      "pixelSize": [
+        512,
+        32
+      ],
+      "originalPixelSize": [
+        512,
+        32
+      ],
+      "hasAlpha": true,
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Slider/Track/Default"
+    },
+    {
+      "source": "html/assets/project/Slider/Sld_Value_Bar_Fill_Default.png",
+      "componentType": "Slider",
+      "pixelSize": [
+        512,
+        32
+      ],
+      "originalPixelSize": [
+        512,
+        32
+      ],
+      "hasAlpha": true,
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Slider/Fill/Default"
+    },
+    {
+      "source": "html/assets/project/Slider/Sld_Circle_Handle_Default.png",
+      "componentType": "Slider",
+      "pixelSize": [
+        64,
+        64
+      ],
+      "originalPixelSize": [
+        64,
+        64
+      ],
+      "hasAlpha": true,
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Slider/Handle/Default"
+    },
+    {
+      "source": "html/assets/project/Button/Btn_Control_Background_Surface_Normal.png",
+      "componentType": "Button",
+      "pixelSize": [
+        512,
+        128
+      ],
+      "originalPixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Button/Surface/Normal"
+    },
+    {
+      "source": "html/assets/project/Image/Img_Circle_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        64,
+        64
+      ],
+      "originalPixelSize": [
+        64,
+        64
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    }
+  ]
+}

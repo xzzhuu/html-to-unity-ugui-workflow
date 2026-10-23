@@ -1,0 +1,72 @@
+{
+  "status": "approved",
+  "groups": [
+    {
+      "groupId": "Img_Surface_Sheet",
+      "userApproval": "确定",
+      "imageSha256": "8801f27cb72578e8624aad1229708c7e9c1ab9300d300c9d050a20128c3c6316",
+      "definitionSha256": "752c08db4eeed4ad11e05c7054eba5d891db6c0ef12789701addbcc98100233d",
+      "filesSha256": {
+        "html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+        "html/assets/project/Image/Img_RoundedSurface_Surface_Default.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+        "html/assets/project/Image/Img_ItemMedkit_Surface_Default.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+        "html/assets/project/Image/Img_ItemBattery_Surface_Default.png": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+        "html/assets/project/Image/Img_ItemBeacon_Surface_Default.png": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+        "html/assets/project/Image/Img_ItemRation_Surface_Default.png": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285"
+      },
+      "scope": "用户确认九组元素v01；据同一矢量造型导出PNG，切片中心保留修正见素材计划。",
+      "migration": {
+        "originalApprovalSha256": "fc2ea75bd6f008b24d227fcdf085cdeb9e68fd781d3006f589e6c0d7ffcd3ac9",
+        "originalRecord": "../../../../design-review/project-migration-v01/StarportHomePanel/design/review/element-groups-approval.json",
+        "basis": "既有用户批准v01；仅组件归属拆分及已展示状态的整图合成，原图/配色/几何不变。无新增用户确认。"
+      }
+    },
+    {
+      "groupId": "Btn_Action_Sheet",
+      "userApproval": "确定",
+      "imageSha256": "4ca63a271bb6795164a65535cfbcf5051b451997f75ece1e6fd2bd230f42655b",
+      "definitionSha256": "dbc20d36b7049aec066409d5a4dea6b8ea5d447b013e2e51e6efc8b5249fef2e",
+      "filesSha256": {
+        "html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+        "html/assets/project/Button/Btn_Control_Background_Surface_Normal.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b"
+      },
+      "scope": "用户确认九组元素v01；据同一矢量造型导出PNG，切片中心保留修正见素材计划。",
+      "migration": {
+        "originalApprovalSha256": "fc2ea75bd6f008b24d227fcdf085cdeb9e68fd781d3006f589e6c0d7ffcd3ac9",
+        "originalRecord": "../../../../design-review/project-migration-v01/StarportHomePanel/design/review/element-groups-approval.json",
+        "basis": "既有用户批准v01；仅组件归属拆分及已展示状态的整图合成，原图/配色/几何不变。无新增用户确认。"
+      }
+    },
+    {
+      "groupId": "Img_Item_Sheet",
+      "userApproval": "确定",
+      "imageSha256": "8bdd3230328833fd58a12d9c519fee047a9bc179c0977d8e6edf8c43b1764d88",
+      "definitionSha256": "fafca9217b3d4103376201641395eca6c1ba99600c360e3df98fb375463c9a8c",
+      "filesSha256": {
+        "html/assets/shared/Img_ItemMedkit.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+        "html/assets/shared/Img_ItemBattery.png": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+        "html/assets/shared/Img_ItemRation.png": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+        "html/assets/shared/Img_ItemBeacon.png": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec"
+      },
+      "scope": "用户确认九组元素v01；据同一矢量造型导出PNG，切片中心保留修正见素材计划。",
+      "migration": {
+        "originalApprovalSha256": "fc2ea75bd6f008b24d227fcdf085cdeb9e68fd781d3006f589e6c0d7ffcd3ac9",
+        "originalRecord": "../../../../design-review/project-migration-v01/StarportHomePanel/design/review/element-groups-approval.json",
+        "basis": "既有用户批准v01；仅组件归属拆分及已展示状态的整图合成，原图/配色/几何不变。无新增用户确认。"
+      }
+    },
+    {
+      "groupId": "Txt_Typography_Sheet",
+      "userApproval": "确定",
+      "imageSha256": "b17505c5415ed34b71525509b08f37142acff7259a3080136f7c4c4e7c97d4ff",
+      "definitionSha256": "bd06fb187005e252c7fe16a6d4b4d8bde0cedd3efac2f35522b7efea6b6f73fd",
+      "filesSha256": {},
+      "scope": "用户确认九组元素v01；据同一矢量造型导出PNG，切片中心保留修正见素材计划。",
+      "migration": {
+        "originalApprovalSha256": "fc2ea75bd6f008b24d227fcdf085cdeb9e68fd781d3006f589e6c0d7ffcd3ac9",
+        "originalRecord": "../../../../design-review/project-migration-v01/StarportHomePanel/design/review/element-groups-approval.json",
+        "basis": "既有用户批准v01；仅组件归属拆分及已展示状态的整图合成，原图/配色/几何不变。无新增用户确认。"
+      }
+    }
+  ]
+}

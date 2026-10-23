@@ -1,0 +1,8 @@
+{
+  "status": "approved",
+  "imageSha256": "682e5e76ca0fd7aef842d4c3711b3d7c7b6299c319328b2a557b333557dd1b9e",
+  "userApproval": "确认，进行下一步",
+  "approvedAt": "2026-10-22",
+  "scope": "六面板整体布局与配色 v01；不包含元素组图、未展示状态、HTML或Unity验收",
+  "sourcePreview": "ActionConfirmPanel/design/layout/Img_ActionConfirmPanel_Preview_v01.png"
+}

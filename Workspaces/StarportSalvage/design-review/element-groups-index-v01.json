@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "status": "approved",
+  "groups": [
+    {
+      "groupId": "Img_Surface_Sheet",
+      "componentType": "Image",
+      "title": "底板与卡片",
+      "sheet": "design-review/element-groups-v01/Img_Surface_Sheet.png",
+      "sha256": "8801f27cb72578e8624aad1229708c7e9c1ab9300d300c9d050a20128c3c6316",
+      "status": "approved"
+    },
+    {
+      "groupId": "Btn_Action_Sheet",
+      "componentType": "Button",
+      "title": "按钮结构与状态",
+      "sheet": "design-review/element-groups-v01/Btn_Action_Sheet.png",
+      "sha256": "4ca63a271bb6795164a65535cfbcf5051b451997f75ece1e6fd2bd230f42655b",
+      "status": "approved"
+    },
+    {
+      "groupId": "Inp_Form_Sheet",
+      "componentType": "InputField",
+      "title": "搜索与名称输入",
+      "sheet": "design-review/element-groups-v01/Inp_Form_Sheet.png",
+      "sha256": "b3d9b3d6efd2688f76d84b2ff44dc2203ae5a8009245898052db16919711234d",
+      "status": "approved"
+    },
+    {
+      "groupId": "Tgl_Sound_Sheet",
+      "componentType": "Toggle",
+      "title": "音效开关",
+      "sheet": "design-review/element-groups-v01/Tgl_Sound_Sheet.png",
+      "sha256": "c523080c049d269e6b442111022216034b5388f60770b74c7dcc149b053311fd",
+      "status": "approved"
+    },
+    {
+      "groupId": "Sld_Value_Sheet",
+      "componentType": "Slider",
+      "title": "音量、数量与重量",
+      "sheet": "design-review/element-groups-v01/Sld_Value_Sheet.png",
+      "sha256": "96cdbedf077ce5ec5663bd65bc930843ff9f129b660c1c0797c7fe9a7f556772",
+      "status": "approved"
+    },
+    {
+      "groupId": "Scr_List_Sheet",
+      "componentType": "ScrollView",
+      "title": "动态列表与条目",
+      "sheet": "design-review/element-groups-v01/Scr_List_Sheet.png",
+      "sha256": "36795ae819ccdb50248ca747ae93c35c604bbab1183e669c3adfa05dc512911b",
+      "status": "approved"
+    },
+    {
+      "groupId": "Img_Item_Sheet",
+      "componentType": "Image",
+      "title": "八种物品图标",
+      "sheet": "design-review/element-groups-v01/Img_Item_Sheet.png",
+      "sha256": "8bdd3230328833fd58a12d9c519fee047a9bc179c0977d8e6edf8c43b1764d88",
+      "status": "approved"
+    },
+    {
+      "groupId": "Img_Utility_Sheet",
+      "componentType": "Image",
+      "title": "资源与操作图标",
+      "sheet": "design-review/element-groups-v01/Img_Utility_Sheet.png",
+      "sha256": "87307b740a4d2c3b4d8be69e3eba2c364fc8346bec3b6daea5b89172cd53f411",
+      "status": "approved"
+    },
+    {
+      "groupId": "Txt_Typography_Sheet",
+      "componentType": "Text",
+      "title": "文字层级与反馈",
+      "sheet": "design-review/element-groups-v01/Txt_Typography_Sheet.png",
+      "sha256": "b17505c5415ed34b71525509b08f37142acff7259a3080136f7c4c4e7c97d4ff",
+      "status": "approved"
+    }
+  ],
+  "exportStatus": "exported",
+  "notes": "组图内示意图形并非最终素材；确认后按同一造型与尺寸导出，补录清单元数据。",
+  "userApproval": "确定"
+}

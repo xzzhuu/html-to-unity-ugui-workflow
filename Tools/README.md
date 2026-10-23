@@ -8,7 +8,8 @@
 | `verify-directory-generator.py` | 初始化、覆盖保护和审批状态回归 |
 | `verify-preparation-contract.py` | 无效元素、模板、路径与素材的拒绝检查 |
 | `verify-installer.py` | 安装器在临时目录的清理与用户文件保护 |
-| `verify-workflow-files.py` | 四个示例、文档内链与通用包边界 |
+| `verify-workflow-files.py` | 星港六面板、新增游戏的路径与就绪记录、维护文档（含 Tools、Workspaces、审核报告及工程流程文档）内链与通用包边界 |
+| `verify-starport-panels.py` | 星港六页、四个 Item、正式/暂存目录、共享图、PICOSans 字体/材质、允许的通用组件、报告及产物指纹、旧 Example 残留；支持 `--unity-project` |
 | `verify-file-integrity.py` | JSON / Python / PNG 格式和文件哈希；需要 Pillow |
 | `verify-global-install.py` | 可选：已安装全局 Skill 的目录独立性；需先安装 Skill |
 | `build-unity-package.py` | 默认将仓库 UPM 源码打包到 `dist/`；支持 `--package` / `--output` |
@@ -16,6 +17,18 @@
 | `compare-layout.py` | 转发 Skill 的布局比较 CLI；使用 `--help` 查看参数 |
 | `verify-unity-release.py` | 在已配置默认字体、已关闭的 Unity 工程中运行实际 Editor 回归；校验所用包与仓库一致，证据保存于工程外 |
 
-CI 使用前五个校验工具与打包工具，不依赖本机安装记录或历史 Unity 审核日志。Unity 运行、C# 编译和最终视觉效果仍需在 Editor 中验证。
+CI 使用 Python 校验、打包工具和星港浏览器交互测试，不依赖本机安装记录或历史 Unity 审核日志。Unity 运行、C# 编译和最终视觉效果仍需在 Editor 中验证。
 
 新增手动 `Unity release gate` 工作流使用已配置的 self-hosted Windows/Unity2022 runner；环境需提供 UNITY_EDITOR_PATH 和 UNITY_VALIDATION_PROJECT。普通 Python CI 不替代该 Editor 验证。交互编辑器可直接调用 UiReleaseValidation.Run(工程外证据目录)，无需关闭工程或写临时 Editor 脚本。
+
+游戏级素材回归已纳入 UiReleaseValidation：检查全游戏同步、组件隔离、Toggle 三图、共享身份分化、重复引用迁移和失败恢复。清单与操作规范见 [游戏素材契约](../docs/project-assets.md)。
+
+## 浏览器复验
+
+仓库根目录运行 `npm ci`、`npx playwright install chromium` 后，运行 `npm run verify:browser`，检查星港六面板的 14 项真实流程。已有 Chrome 或 Edge 时，可设置 `HTML_UI_BROWSER_CHANNEL=chrome` 或 `msedge` 使用现有浏览器。
+
+测试工具自行启动可用端口的本机服务并在结束时关闭；`npm run verify:starport` 是同一入口。已有服务时可用 `STARPORT_BASE_URL` 指定其他端口；`STARPORT_EVIDENCE_DIR` 可指定输出目录，默认写入忽略目录 `Audit/Runs/latest/starport-browser/`，不会覆盖已批准的设计审核证据。`sharp` 仅供历史素材导出工具使用，不要为复验重新导出已批准素材。
+
+`verify-workflow-files.py` 同时检查新增游戏和新增面板的 `Workspaces/{GameName}/Panels/{PanelName}/` 路径与项目配置；星港原有六面板要求 ready，新增草稿只进行结构检查。
+
+`capture-starport-reference.cjs` 从运行的星港 HTTP 预览导出截图、节点矩形、文字、颜色、模板和禁用透明度，供 Unity 使用相同数据做对照。设置 `STARPORT_BASE_URL` 与 `STARPORT_EVIDENCE_DIR` 后运行；它不修改源包或批准图。实际转换规则见 [视觉验证与转换规范](../docs/game-example/conversion-rules.md)。

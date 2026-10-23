@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "panelName": "ExpeditionResultPanel",
+  "html": "ExpeditionResultPanel.html",
+  "outputFolder": "Assets/Art/UIPrefab/ExpeditionResultPanel",
+  "assetPrefix": "Assets/Art/UI/Sprite/ExpeditionResultPanel/",
+  "fontAsset": null,
+  "boldWeight": 0.12,
+  "requireSkillApproval": true,
+  "stagingRoot": "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel",
+  "allowPrefabReplacement": false,
+  "fontMaterial": null,
+  "projectName": "StarportSalvage",
+  "projectDirectory": "../../.."
+}

@@ -1,0 +1,564 @@
+{
+  "schemaVersion": 1,
+  "panelName": "SupplyInventoryPanel",
+  "sprites": [
+    {
+      "source": "assets/shared/Img_Circle.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_Circle.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        64,
+        64
+      ],
+      "hasAlpha": true,
+      "purpose": "开关旋钮与滑块手柄共用实心圆",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Img_Control_Background.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_Control_Background.png",
+      "role": "Sprite",
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "pixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "purpose": "按钮和输入框共用圆角结构",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Img_ItemAlloy.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_ItemAlloy.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Img_ItemBattery.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_ItemBattery.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Img_ItemBeacon.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_ItemBeacon.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Img_ItemChip.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_ItemChip.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Img_ItemCircuit.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_ItemCircuit.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Img_ItemMedkit.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_ItemMedkit.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Img_ItemOre.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_ItemOre.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Img_ItemRation.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_ItemRation.png",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "独立物品轮廓，与底座及文字分层",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Img_RoundedSurface.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Img_RoundedSurface.png",
+      "role": "Sprite",
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "pixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "purpose": "底板、卡片、列表与条目共用中性圆角",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/shared/Sld_Value_Bar.png",
+      "path": "Assets/Art/UI/Sprite/SupplyInventoryPanel/shared/Sld_Value_Bar.png",
+      "role": "Sprite",
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "pixelSize": [
+        512,
+        32
+      ],
+      "hasAlpha": true,
+      "purpose": "滑块轨道和填充共用胶囊形",
+      "usage": "preview-state"
+    },
+    {
+      "source": "assets/project/Image/Img_RoundedSurface_Surface_Default.png",
+      "path": "asset:Image_RoundedSurface_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "pixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Button/Btn_Control_Background_Surface_Normal.png",
+      "path": "asset:Button_Control_Background_Surface_Normal",
+      "role": "Sprite",
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "pixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Button/Surface/Normal",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/TMP_InputField/Inp_Control_Background_Surface_Default.png",
+      "path": "asset:TMP_InputField_Control_Background_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "pixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；TMP_InputField/Surface/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Button/Btn_RoundedSurface_Surface_Normal.png",
+      "path": "asset:Button_RoundedSurface_Surface_Normal",
+      "role": "Sprite",
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "pixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Button/Surface/Normal",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Button/Btn_RoundedSurface_Icon_Normal.png",
+      "path": "asset:Button_RoundedSurface_Icon_Normal",
+      "role": "Sprite",
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "pixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Button/Icon/Normal",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Button/Btn_ItemMedkit_Icon_Normal.png",
+      "path": "asset:Button_ItemMedkit_Icon_Normal",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Button/Icon/Normal",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Image/Img_ItemMedkit_Surface_Default.png",
+      "path": "asset:Image_ItemMedkit_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Slider/Sld_Value_Bar_Track_Default.png",
+      "path": "asset:Slider_Value_Bar_Track_Default",
+      "role": "Sprite",
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "pixelSize": [
+        512,
+        32
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Slider/Track/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Slider/Sld_Value_Bar_Fill_Default.png",
+      "path": "asset:Slider_Value_Bar_Fill_Default",
+      "role": "Sprite",
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "pixelSize": [
+        512,
+        32
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Slider/Fill/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Slider/Sld_Circle_Handle_Default.png",
+      "path": "asset:Slider_Circle_Handle_Default",
+      "role": "Sprite",
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "pixelSize": [
+        64,
+        64
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Slider/Handle/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Image/Img_Value_Bar_Surface_Default.png",
+      "path": "asset:Image_Value_Bar_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "pixelSize": [
+        512,
+        32
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Image/Img_Circle_Surface_Default.png",
+      "path": "asset:Image_Circle_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        64,
+        64
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Image/Img_ItemAlloy_Surface_Default.png",
+      "path": "asset:Image_ItemAlloy_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Image/Img_ItemBattery_Surface_Default.png",
+      "path": "asset:Image_ItemBattery_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Image/Img_ItemBeacon_Surface_Default.png",
+      "path": "asset:Image_ItemBeacon_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Image/Img_ItemChip_Surface_Default.png",
+      "path": "asset:Image_ItemChip_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Image/Img_ItemCircuit_Surface_Default.png",
+      "path": "asset:Image_ItemCircuit_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Image/Img_ItemOre_Surface_Default.png",
+      "path": "asset:Image_ItemOre_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    },
+    {
+      "source": "assets/project/Image/Img_ItemRation_Surface_Default.png",
+      "path": "asset:Image_ItemRation_Surface_Default",
+      "role": "Sprite",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default",
+      "usage": "source"
+    }
+  ]
+}

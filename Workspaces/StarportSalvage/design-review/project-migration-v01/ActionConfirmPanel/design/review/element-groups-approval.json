@@ -1,0 +1,33 @@
+{
+  "status": "approved",
+  "groups": [
+    {
+      "groupId": "Img_Surface_Sheet",
+      "userApproval": "确定",
+      "imageSha256": "8801f27cb72578e8624aad1229708c7e9c1ab9300d300c9d050a20128c3c6316",
+      "definitionSha256": "4ea4fabcea97299e7432ec0f9cc1b51ecd919fce00004fb1ca90e43880b0d189",
+      "filesSha256": {
+        "html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006"
+      },
+      "scope": "用户确认九组元素v01；据同一矢量造型导出PNG，切片中心保留修正见素材计划。"
+    },
+    {
+      "groupId": "Btn_Action_Sheet",
+      "userApproval": "确定",
+      "imageSha256": "4ca63a271bb6795164a65535cfbcf5051b451997f75ece1e6fd2bd230f42655b",
+      "definitionSha256": "7dad93cc7c2c0b8d9cd11b198a971a24a7e82c3f82c9b7cfa70c3344c5da0225",
+      "filesSha256": {
+        "html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b"
+      },
+      "scope": "用户确认九组元素v01；据同一矢量造型导出PNG，切片中心保留修正见素材计划。"
+    },
+    {
+      "groupId": "Txt_Typography_Sheet",
+      "userApproval": "确定",
+      "imageSha256": "b17505c5415ed34b71525509b08f37142acff7259a3080136f7c4c4e7c97d4ff",
+      "definitionSha256": "8401ee09ca2a2c0b9fb4f44781bc6fc30a810891455fc5bd7e00cca180d82471",
+      "filesSha256": {},
+      "scope": "用户确认九组元素v01；据同一矢量造型导出PNG，切片中心保留修正见素材计划。"
+    }
+  ]
+}

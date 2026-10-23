@@ -1,0 +1,7 @@
+{
+  "source": "docs/game-example",
+  "sha256": {
+    "game-requirements.md": "52a7d80e99e3ba039d056e4fc55e4aeab3c5f9a5d9848eac7e1b22f2f342a935",
+    "ui-requirements.md": "905b1396728e2e51226592b28d816baab06500c95994ebf9cbc1c264d518e72e"
+  }
+}

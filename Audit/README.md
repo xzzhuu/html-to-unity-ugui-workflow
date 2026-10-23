@@ -1,7 +1,7 @@
 # 审核记录
 
-[公开分发准备记录](Reports/OPEN_SOURCE_READINESS.md) 说明此次开源整理、分发范围和验证边界。
+现行示例为星港六面板。完整制作步骤见 [流程示例](../docs/game-example/workflow.md)，实际 Unity/HTML 对照与修正见 [转换规范](../docs/game-example/conversion-rules.md)，本轮分析见 [工作流检查报告](Reports/WORKFLOW_REVIEW_20261024.md)。
 
-自动运行结果写入 `Runs/latest/`，不进入版本控制。历史本机记录及迁移证据保留在本机，并被 `.gitignore` 排除；里面的机器路径和旧 GUID 检查不能替代全新克隆验证。
+自动运行结果位于 `Runs/`，不进入 Git。原 Example 三面板及专属报告已退役；删除前归档保存在本轮本机运行目录。旧项目整理、工程迁移和素材清单修复报告仅描述发生时的工程与验证范围。
 
-现行工作流见 [Skill](../Skills/ui-panel-design-to-html/SKILL.md)，Unity 导入见 [包说明](../Packages/com.nexvr.html-to-ugui/README.md)。
+[公开分发说明](Reports/OPEN_SOURCE_READINESS.md) 记录许可与依赖边界。[素材清单修复记录](Reports/PROJECT_MANIFEST_FIX_20261023.md) 保留原始确认来源；历史证据不替代当前实际验证。

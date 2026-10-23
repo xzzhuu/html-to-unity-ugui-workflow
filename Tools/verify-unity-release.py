@@ -17,9 +17,9 @@ if evidence.is_relative_to(project/'Assets'):
     parser.error('Evidence must stay outside Assets')
 if (project/'Temp/UnityLockfile').exists():
     parser.error('Close the validation project before batch execution')
-source=Path(__file__).resolve().parents[1]/'Packages/com.nexvr.html-to-ugui'
+source=Path(__file__).resolve().parents[1]/'Packages/com.nex.html-to-ugui'
 manifest=json.loads((project/'Packages/manifest.json').read_text(encoding='utf-8-sig'))
-dependency=manifest['dependencies'].get('com.nexvr.html-to-ugui','')
+dependency=manifest['dependencies'].get('com.nex.html-to-ugui','')
 if not dependency.startswith('file:'):
     parser.error('Validation project must reference this local package via file:')
 installed=Path(dependency[5:])

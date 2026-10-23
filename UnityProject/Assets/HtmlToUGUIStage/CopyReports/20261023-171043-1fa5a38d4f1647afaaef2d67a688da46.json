@@ -1,0 +1,592 @@
+{
+  "status": "copied",
+  "mode": "copy",
+  "sourceRetained": true,
+  "signature": "fda202aed5cab03e531fe2f95a008db2efeb38b6d38033475dc3093fafbb7a49",
+  "keepPanelNameSubdirectory": true,
+  "assets": [
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+      "action": "create",
+      "sourceSha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+      "sourceMetaSha256": "d82372f54ddcffde1a119f1cabe5c28e3df6bc2ab56ec456bbb13a376c2f69e5",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/ItemMedkit/Btn_ItemMedkit_Icon_Normal_Button_ItemMedkit_Icon_Normal.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Button/ItemMedkit/Btn_ItemMedkit_Icon_Normal_Button_ItemMedkit_Icon_Normal.png",
+      "action": "create",
+      "sourceSha256": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+      "sourceMetaSha256": "79af71807267b7ee45a962a09fd462ee20cd462119677b52c00582686059a2b5",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Icon_Normal_Button_RoundedSurface_Icon_Normal.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Icon_Normal_Button_RoundedSurface_Icon_Normal.png",
+      "action": "create",
+      "sourceSha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "sourceMetaSha256": "c833b3e5da7b2a68700c8deaca2959e436f505dc1da72db70c8835fe36963896",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png",
+      "action": "create",
+      "sourceSha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "sourceMetaSha256": "cce47198acbb71328b90658b73f4591c92f4e7398abe7adf161e688b2e7d0b90",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Circle/Img_Circle_Surface_Default_Image_Circle_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/Circle/Img_Circle_Surface_Default_Image_Circle_Surface_Default.png",
+      "action": "create",
+      "sourceSha256": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+      "sourceMetaSha256": "be92d217274d8906eae03a07549844524c9f64cf8155f144536a72804debce59",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Confirm/Img_Confirm_Surface_Default_Image_Confirm_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/Confirm/Img_Confirm_Surface_Default_Image_Confirm_Surface_Default.png",
+      "action": "create",
+      "sourceSha256": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192",
+      "sourceMetaSha256": "0b79b079d4c6e68d5cfb6fc0f2949695f4c274bfe8f41e1d881dc1b9537361f3",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png",
+      "action": "create",
+      "sourceSha256": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+      "sourceMetaSha256": "635d87b9f68b91892549add82b977a53758dca2a6432ca1cb752e1b8728f3d4f",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png",
+      "action": "create",
+      "sourceSha256": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+      "sourceMetaSha256": "b4f5beec964ccfbe308c1a83b17c3b0f29f1153489d8ae8d121db63f5a1a42c5",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png",
+      "action": "create",
+      "sourceSha256": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+      "sourceMetaSha256": "a69a8ce4bf03ccde9b4d42ffb46a157164e720361b9e0f50bbf63f2bc7b0e1d8",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png",
+      "action": "create",
+      "sourceSha256": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+      "sourceMetaSha256": "c36a81244fd90803baddf22f634213cc7d40308a8a57d3f070fe23cf4f0123a2",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png",
+      "action": "create",
+      "sourceSha256": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+      "sourceMetaSha256": "fc78d451b116fb85428e11805b8a75c5d7924f0dcecb029da0f8b7fbd4a8bb79",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png",
+      "action": "create",
+      "sourceSha256": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+      "sourceMetaSha256": "fbe9c808b22e3372da6f7b05d03ee902ee373c864190fd634e138b96ecb31610",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png",
+      "action": "create",
+      "sourceSha256": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+      "sourceMetaSha256": "aa28e0d21e7321baff7be63ed7106530d0232b17541e024ce30bfa8c5543e768",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png",
+      "action": "create",
+      "sourceSha256": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+      "sourceMetaSha256": "4c52c1fd21bf543f9d9b8955022b03ed073118c23402e71cd385a3b51a041e27",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png",
+      "action": "create",
+      "sourceSha256": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+      "sourceMetaSha256": "87f7a4d025cd824460afe71bac8a288b580750b6b83ec13f36c85b18a1ca7803",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+      "action": "create",
+      "sourceSha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "sourceMetaSha256": "82cf7f8a2deb4ae38722aff170b671ecb5c9e644cd1aa1c60e9f3533554c714a",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Value_Bar/Img_Value_Bar_Surface_Default_Image_Value_Bar_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/Value_Bar/Img_Value_Bar_Surface_Default_Image_Value_Bar_Surface_Default.png",
+      "action": "create",
+      "sourceSha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "sourceMetaSha256": "53fa9ca49dad4c087f731dfaeb2373d613b844d47aef50ba48533d5c561e5b86",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Circle/Sld_Circle_Handle_Default_Slider_Circle_Handle_Default.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Slider/Circle/Sld_Circle_Handle_Default_Slider_Circle_Handle_Default.png",
+      "action": "create",
+      "sourceSha256": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+      "sourceMetaSha256": "d15e290042fdd749ac4b8739ba4033ca88ab84ea3be061ee7b0299f98512427d",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Fill_Default_Slider_Value_Bar_Fill_Default.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Fill_Default_Slider_Value_Bar_Fill_Default.png",
+      "action": "create",
+      "sourceSha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "sourceMetaSha256": "8ae74bf7180ad53a77fbe5c8b8e3600acfb09fc1698d7d50cb14a1c11ac516f6",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Track_Default_Slider_Value_Bar_Track_Default.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Track_Default_Slider_Value_Bar_Track_Default.png",
+      "action": "create",
+      "sourceSha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "sourceMetaSha256": "7058e27fee384a27dd631a301e80e78986fc1a0177cd972ea10fd95e5c298920",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/TMP_InputField/Control_Background/Inp_Control_Background_Surface_Default_TMP_InputField_Control_Background_Surface_Default.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/TMP_InputField/Control_Background/Inp_Control_Background_Surface_Default_TMP_InputField_Control_Background_Surface_Default.png",
+      "action": "create",
+      "sourceSha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+      "sourceMetaSha256": "741ef433b0fdfc0f8eefa60453865651150b4637ef246d2be0c033de3a96d1ea",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Disabled_Toggle_Sound_Surface_Disabled.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Disabled_Toggle_Sound_Surface_Disabled.png",
+      "action": "create",
+      "sourceSha256": "259614e8bc4b5e044b9fded3998b8fb41ac94199cec64a0141933a49c44aec3a",
+      "sourceMetaSha256": "5f00ffccc7c3db36a480389725e9857fed18cd23cf093b2fa71a14f4b0289ee2",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Off_Toggle_Sound_Surface_Off.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Off_Toggle_Sound_Surface_Off.png",
+      "action": "create",
+      "sourceSha256": "dd991dbb3ebe7dc320aafbeb83a0f8ff1c32c3cfa5e48fc476a226983f76dffd",
+      "sourceMetaSha256": "56365f6bed347398966c3847efde4de016eda3ac785f9dc7111e9cf82c48dbfe",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_On_Toggle_Sound_Surface_On.png",
+      "destination": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_On_Toggle_Sound_Surface_On.png",
+      "action": "create",
+      "sourceSha256": "7e3d245862ddca19f5903cf983dc3b741bea7ab95c21bfc3de6d1f6b8e2e13ee",
+      "sourceMetaSha256": "03c27898419300e0667f55441ad00ea8556cb0bb7eff749e0c0ddc10408b3196",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/ActionConfirmPanel/Prefabs/ActionConfirmPanel.prefab",
+      "destination": "Assets/Art/UIPrefab/StarportSalvage/ActionConfirmPanel/ActionConfirmPanel.prefab",
+      "action": "create",
+      "sourceSha256": "07751c87244a8bb5d7dd6b7c56da87ed698a5e1cbdd12fbf5d2ddafb89a8f5a1",
+      "sourceMetaSha256": "efd53a066e66a1cf048dd545e7358fb6f343d053b387b3ba81b820f6891f546a",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.prefab",
+      "destination": "Assets/Art/UIPrefab/StarportSalvage/ExpeditionResultPanel/ExpeditionResultPanel.prefab",
+      "action": "create",
+      "sourceSha256": "89783d2f46147a33760acb5285c83b4e42437c4db77009c1ee7a11a24aaeee34",
+      "sourceMetaSha256": "d90b76eaeabd9eca0865306f9ebde93336b84b2b9816774cf32ec080fe4c8af1",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.prefab",
+      "destination": "Assets/Art/UIPrefab/StarportSalvage/ExpeditionSelectPanel/ExpeditionSelectPanel.prefab",
+      "action": "create",
+      "sourceSha256": "b320e6c06a350cf66aa3a33a5b313f218f3a9233a664e6dd53e500e207211ccc",
+      "sourceMetaSha256": "a6f7d833eb3ab1893217b92826d597c9c86d51b96739a0d8d57f533f068ee6e0",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab",
+      "destination": "Assets/Art/UIPrefab/StarportSalvage/GameSettingsPanel/GameSettingsPanel.prefab",
+      "action": "create",
+      "sourceSha256": "4f35d728bca0ac06db7bbe4ddadff74c35fea6bc13e5bde891a7e8dd37cd4860",
+      "sourceMetaSha256": "da5a128d56db4acb7c30d2c5204eb2de475409b73d2997508e45bbab22c38dd4",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/Items/Item_InventoryEntry.prefab",
+      "destination": "Assets/Art/UIPrefab/StarportSalvage/Item/Item_InventoryEntry.prefab",
+      "action": "create",
+      "sourceSha256": "c6792f94f57353e5a9c514b9c7d8a7069607e447c4ee9c34f6bb1899f1cb421a",
+      "sourceMetaSha256": "67beaa288228953b7cfc0a93dc6052b91ec20772d5bedc530fd19e7530d142cf",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/Items/Item_LoadoutEntry.prefab",
+      "destination": "Assets/Art/UIPrefab/StarportSalvage/Item/Item_LoadoutEntry.prefab",
+      "action": "create",
+      "sourceSha256": "fd0a208cdbd134da9ce6a0c00e4855870e0b311ef38334a71a57e934876192d6",
+      "sourceMetaSha256": "3f049efd47f142257e0796545e8e700eb142acc3a934a7f2e18daea56e4322e7",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/Items/Item_MissionEntry.prefab",
+      "destination": "Assets/Art/UIPrefab/StarportSalvage/Item/Item_MissionEntry.prefab",
+      "action": "create",
+      "sourceSha256": "1db40f105926bfdbcacbbe2835e1be0d69876aa26853c9bb7750929126a71ca3",
+      "sourceMetaSha256": "a1ace6c74eb09ce8232d7a4a798eb2a86e734d4c074dba7b600e58135f9264f3",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/Items/Item_RewardEntry.prefab",
+      "destination": "Assets/Art/UIPrefab/StarportSalvage/Item/Item_RewardEntry.prefab",
+      "action": "create",
+      "sourceSha256": "bacf01adbee0d72b847f9c667e29ceb6f8b186325fe7ed9b3894c7142291c6b5",
+      "sourceMetaSha256": "68a338ddf310a45430e6e1b5d262aab2a309967eb153cab476dc223d0942d187",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/Prefabs/StarportHomePanel.prefab",
+      "destination": "Assets/Art/UIPrefab/StarportSalvage/StarportHomePanel/StarportHomePanel.prefab",
+      "action": "create",
+      "sourceSha256": "54142244c3f4f676ce5c43e5fb79e8d339a0cae52daa9904ab8a14ba97c10004",
+      "sourceMetaSha256": "fe89238b36e9c03eba8ea73b223a5620957feaf3e89aa04ff2535dbd3b7ca8a6",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    },
+    {
+      "source": "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab",
+      "destination": "Assets/Art/UIPrefab/StarportSalvage/SupplyInventoryPanel/SupplyInventoryPanel.prefab",
+      "action": "create",
+      "sourceSha256": "4d3608db255e7bda90dec37413a18942aafa5be31f792015f5dc3551771706c9",
+      "sourceMetaSha256": "55c20bc198e7a6423ecdc64911d94f2eea1480dd6b2dca1bb6c6091fadd8d8c5",
+      "destinationSha256": null,
+      "destinationMetaSha256": null,
+      "consumers": []
+    }
+  ],
+  "dependencyChecks": [
+    "Manual: verify SpriteAtlas packing/loading, material/animation references and Sprite subasset IDs.",
+    "Manual: verify AssetBundle rules, Resources and string-based resource configuration; these are not automatically modified.",
+    "Manual: validate final scenes, business bindings/events and runtime loading; exclude staging scenes/resources from build collection."
+  ],
+  "panels": [
+    {
+      "panelName": "ActionConfirmPanel",
+      "prefabPath": "Assets/HtmlToUGUIStage/StarportSalvage/ActionConfirmPanel/Prefabs/ActionConfirmPanel.prefab",
+      "sourceImportReportSha256": "6ebd2eb306bdb2f8209ef55a2771c15ed8d359736de2d3b1362feeb2cffb1a08"
+    },
+    {
+      "panelName": "ExpeditionResultPanel",
+      "prefabPath": "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.prefab",
+      "sourceImportReportSha256": "cb18c2086206c0393ee33210ce636efa5392be4eff0b8693694465a1c4641bff"
+    },
+    {
+      "panelName": "ExpeditionSelectPanel",
+      "prefabPath": "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.prefab",
+      "sourceImportReportSha256": "472c5a5afa11ce2cc4410f8b0f9e09db7c0450b2253b10afec6152d7ed557db3"
+    },
+    {
+      "panelName": "GameSettingsPanel",
+      "prefabPath": "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab",
+      "sourceImportReportSha256": "dad1007899e9e7b566489cb43c52173f8eb2f1eeff6717a4c33a30434ea60b7a"
+    },
+    {
+      "panelName": "StarportHomePanel",
+      "prefabPath": "Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/Prefabs/StarportHomePanel.prefab",
+      "sourceImportReportSha256": "7d5207763ded50993b6eb35923d7e0ebf123ddeb404160e69f0160694c5ecf84"
+    },
+    {
+      "panelName": "SupplyInventoryPanel",
+      "prefabPath": "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab",
+      "sourceImportReportSha256": "1e2a716a3d80eb0def9abdb9b67e1f42a6a9ed2931b7d0ad9a2b3ad5f40b8133"
+    }
+  ],
+  "finalArtifacts": [
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+      "guid": "569c65c1ad5f4dd8965ad73a1a796f72",
+      "sha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+      "metaSha256": "dd8513a59b6dce63e83f098024c9fcb2ee5736d0b24b33e6efb511611b05db02"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Button/ItemMedkit/Btn_ItemMedkit_Icon_Normal_Button_ItemMedkit_Icon_Normal.png",
+      "guid": "91434ec22bf34dc4a3ff63d165390e77",
+      "sha256": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+      "metaSha256": "be7f83de62bda0da1ff44bd4e7b700c9997eaeccc52a8b61a4e41ed9252e939a"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Icon_Normal_Button_RoundedSurface_Icon_Normal.png",
+      "guid": "7bbc7898912b4eeb974c9c8614dcb8ed",
+      "sha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "metaSha256": "cc385a06dbdd830556822363027c38c1a56cb00c1bdea6980371292fefd5e2d9"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png",
+      "guid": "7dde3168e72649779165e7032cbb6e33",
+      "sha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "metaSha256": "c27ea272b7c5f71d36cf16568205e8959c1091822fb51763a4cde7508b19e6e8"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/Circle/Img_Circle_Surface_Default_Image_Circle_Surface_Default.png",
+      "guid": "d31fad7d69694d69a97d7d7b8da89200",
+      "sha256": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+      "metaSha256": "4b7a491965d7f49b849f030a1f08ea4a836b716391f5f1092fcb8dc367818464"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/Confirm/Img_Confirm_Surface_Default_Image_Confirm_Surface_Default.png",
+      "guid": "459519c99fa0469daa8e043e76cbadb7",
+      "sha256": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192",
+      "metaSha256": "1f08adece8e4b12157e035024f821af45c7baed029177f3a0f9ca73cac3f807a"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png",
+      "guid": "f95818cf9c924fedbd495dc81f66631c",
+      "sha256": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+      "metaSha256": "e509b8c0e0d966b717cfce9918143f20457991bad7c48be86f17d40dfc0f1de4"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png",
+      "guid": "1025a2438b4b4bbfade88046dc812419",
+      "sha256": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+      "metaSha256": "49b071481d806e256cde1d2c2f318a9b30924381dba6629d7fab90231b6c8bed"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png",
+      "guid": "5919863819194c2aae36b1544a77168e",
+      "sha256": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+      "metaSha256": "a270f9ac529a8d3c28ac6b576d8c7ad5437c1e6c9a726b29d59a4269a10caf7e"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png",
+      "guid": "c1de7c1205534ddc95d1519be9fa79c3",
+      "sha256": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+      "metaSha256": "794b32a38bf805fd898b3d8d8378257a5af4a5fe1805a74ab0166642da5ffc8a"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png",
+      "guid": "20b8d08a0f7c4693a28c721c4902363f",
+      "sha256": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+      "metaSha256": "6cd081ecd7a6f01a444dea9f520dd75186b6ef719eb868157c613d3085e67310"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png",
+      "guid": "88e285470c2e4d23adb84a2bc99dfcdf",
+      "sha256": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+      "metaSha256": "7ed44425fb95df0e139f260d230d963e8b21574a702a421d6a7f729df71d518a"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png",
+      "guid": "72e66db463c84a28a6238b3c782b79d0",
+      "sha256": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+      "metaSha256": "93b3f6ee7b6ba38fd5495ce4e0b110aaebfcbbed2afda147839719b6cff20266"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png",
+      "guid": "bfb2c4fb0ec84be29a7743590f5aeb9b",
+      "sha256": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+      "metaSha256": "836d5bbc76604886e3f9dd6aa8ed27de166a20e8c05da05273a766b28c527282"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png",
+      "guid": "4e27a934fb3a49cfad6bf79cb24088a0",
+      "sha256": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+      "metaSha256": "c6133959197d5143a4bc3b27c77c1e925de885b6ea30c116f81ce714234f1cdf"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+      "guid": "5789c3328dcf4d079a53e068f6997dd0",
+      "sha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "metaSha256": "54ff5ce6210f1b553d42ff55bf7560d5004df118551383812e6c36ff398aedc0"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Image/Value_Bar/Img_Value_Bar_Surface_Default_Image_Value_Bar_Surface_Default.png",
+      "guid": "9d4be7a33a7247f5ab7386189c884ac4",
+      "sha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "metaSha256": "3a5cced5b6a610ef49deb841cf57e74a9871b6ae8c04f455e979f19a61469116"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Slider/Circle/Sld_Circle_Handle_Default_Slider_Circle_Handle_Default.png",
+      "guid": "c90e3168e81e4c2c835659b8d0e0b216",
+      "sha256": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+      "metaSha256": "ff29104676ea7aaac88dd33bf4539ac444d328035d8e001bf7d5963d7d440414"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Fill_Default_Slider_Value_Bar_Fill_Default.png",
+      "guid": "629d45f3f3ff4dbab1e0b5c873f17621",
+      "sha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "metaSha256": "3732ab86e5100d46731f87aa2a1cef6f476cf779431b6be40e9984a105f442aa"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Track_Default_Slider_Value_Bar_Track_Default.png",
+      "guid": "ad168b3c0eec4792b7e7f120a3b57234",
+      "sha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "metaSha256": "22eb9fff1c7cafb5b4268e3c5d75d73106bdeb00bd367abec565d4b8793edb66"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/TMP_InputField/Control_Background/Inp_Control_Background_Surface_Default_TMP_InputField_Control_Background_Surface_Default.png",
+      "guid": "1e78b956722b4291a445df24f0b7f220",
+      "sha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+      "metaSha256": "9734ee7464d818a4a996ae40f89958bd6f74bd59adb6feef1471446bd977ee1f"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Disabled_Toggle_Sound_Surface_Disabled.png",
+      "guid": "b3c13073a8644c61a36d6297ba7deee1",
+      "sha256": "259614e8bc4b5e044b9fded3998b8fb41ac94199cec64a0141933a49c44aec3a",
+      "metaSha256": "d62b6d4239deab4b638b971f4a73df04e53d95f4cd854b450d86057ce6c36844"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Off_Toggle_Sound_Surface_Off.png",
+      "guid": "59a4f85c768f4c0b9bf817315afe757f",
+      "sha256": "dd991dbb3ebe7dc320aafbeb83a0f8ff1c32c3cfa5e48fc476a226983f76dffd",
+      "metaSha256": "d9f337d9751fa64a486be3ce6674a1a91fd9cce214adc7c2c2fa4bab0524abb0"
+    },
+    {
+      "path": "Assets/Art/UI/Sprite/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_On_Toggle_Sound_Surface_On.png",
+      "guid": "a99e447eba9f439fb4b910976c58f4aa",
+      "sha256": "7e3d245862ddca19f5903cf983dc3b741bea7ab95c21bfc3de6d1f6b8e2e13ee",
+      "metaSha256": "3c1b4bcc7f62dc55ec25a10db7528635150450f8df08fd2d56bbc71ae64fd54d"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/ActionConfirmPanel/ActionConfirmPanel.prefab",
+      "guid": "f364c2fab9906364383f10266e9fa7c9",
+      "sha256": "1fa77c0f163d58a2ecde675cf9237b40de363eb231645561eb6263ef8fcd3722",
+      "metaSha256": "5aebccddc9ab84b3d5259da6df6dffff2479bb7daec7f5dabbc8c07c39a34cdc"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/ExpeditionResultPanel/ExpeditionResultPanel.prefab",
+      "guid": "6933b562961e0274a85532a312049300",
+      "sha256": "30455fb335f866001618d8b4454656a9804bcf8fe62915241297afd2de8fd6ac",
+      "metaSha256": "7f477f21ee0a25405f7c3a732fd7a9c98e511291082f561e44f3f6b52f3f68f1"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/ExpeditionSelectPanel/ExpeditionSelectPanel.prefab",
+      "guid": "6e07dea7ff0bde446adf1c99a90e6981",
+      "sha256": "cf047f5d1e0e21e7cf2b20e2c20ab588151de45ff69adaad15cedfabd0eab973",
+      "metaSha256": "a94c4a4b11450f7b545b574da8915fba27dab639660b0a46e31d3b2fb0c54378"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/GameSettingsPanel/GameSettingsPanel.prefab",
+      "guid": "eb21d846e82e2844cbde84ae51882e8e",
+      "sha256": "a82778cc4d4bf4875689146b27e31de651350207d8a710b34f1646a05299f525",
+      "metaSha256": "9604e37c168485df25d970b721a4cd2c11623d2a3c56f2e317a5b2db80e19c1c"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/Item/Item_InventoryEntry.prefab",
+      "guid": "aeb7ee1e7fc8cdc4c8bec9ad2e209518",
+      "sha256": "3bed9cfd5819afb68c170245d59eef5bbd45a1845f11e3e6dd6c5acbaf854b48",
+      "metaSha256": "8022da32a7ea279950f94723ebc470c0027e3c2ccc60089fa888b56c2fcb4e4b"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/Item/Item_LoadoutEntry.prefab",
+      "guid": "11332a04d33f242488198f8be12d4eda",
+      "sha256": "e591c8339ac76d39384044971195422052d803006ee6751f85c201cd0932f530",
+      "metaSha256": "10d11566c6f06358348549cf9ed7171303c91df44fcd973fb677b0dd88e008b8"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/Item/Item_MissionEntry.prefab",
+      "guid": "bc365f4ca8279bd498e7f2a777c0bcf2",
+      "sha256": "1444edd625fc9d3ca93f0ab43eab8831dfb8d504d75b37b7bdee0e68c5ca4a14",
+      "metaSha256": "e1fbc3c405cd875b1a5717b06fd899f291b94ce83db0ef9b60c7dd354bf8523a"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/Item/Item_RewardEntry.prefab",
+      "guid": "0ede1396e7112aa4599eacf90c9af879",
+      "sha256": "f3a3de6d7872da89ee0f2b4588122ba6804748ee35974323c653a775e6dd2ec3",
+      "metaSha256": "0dc46d5afcf08e38ed6d5ccc1a2002a66d85470da7846a4f028aa45a94cb616b"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/StarportHomePanel/StarportHomePanel.prefab",
+      "guid": "d12e8363b202b32428a3526e9b1afb86",
+      "sha256": "b19d2317d251ae82e30c48e742f25939c3da6f14fa5414a057a0e30c7c3e1de4",
+      "metaSha256": "9ad5bf109a79d76656660703ad6eb0023088146fc130b9859a2550aa043eb85a"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/SupplyInventoryPanel/SupplyInventoryPanel.prefab",
+      "guid": "f572acc8155c63e47985ad9f0d531bf7",
+      "sha256": "a3f29f231686dbf2739076de27643f607216f7ea4aeaa3a2f85c38c070dbfd03",
+      "metaSha256": "5c6261332b60887311ab75ca5fd88c3cf5331580719e9c661218368cfab2348c"
+    }
+  ]
+}

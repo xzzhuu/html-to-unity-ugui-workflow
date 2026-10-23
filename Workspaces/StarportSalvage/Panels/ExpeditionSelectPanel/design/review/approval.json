@@ -1,0 +1,8 @@
+{
+  "status": "approved",
+  "imageSha256": "73acb2bffe9146735b5599ff9e7d7fa7435dfe8495d93077e6776376b93a7f47",
+  "userApproval": "确认，进行下一步",
+  "approvedAt": "2026-10-22",
+  "scope": "六面板整体布局与配色 v01；不包含元素组图、未展示状态、HTML或Unity验收",
+  "sourcePreview": "ExpeditionSelectPanel/design/layout/Img_ExpeditionSelectPanel_Preview_v01.png"
+}

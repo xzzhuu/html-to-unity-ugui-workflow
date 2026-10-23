@@ -1,5 +1,7 @@
 # 工作区与执行说明
 
+当前游戏源目录为 `{GameName}/Panels/{PanelName}/html/`；共享 `project.assets.json` 留在游戏根，准备包 `projectDirectory` 从 html/ 回退三级（`../../..`）。批量导入选择游戏根目录。
+
 ## 调用与模式
 
 保留全局 Skill 的完整目录，脚本只依赖 Python 标准库；不要求 Unity 或 npm 才能初始化。工具路径从已加载 Skill 所在目录解析，不假设某个用户的包安装位置。
@@ -47,6 +49,8 @@ python scripts/validate_directory.py --root <工作区> --require-ready
 
 ## Unity 操作边界
 
+Git 不记录空目录。克隆后的工作区可以缺少未使用的 `inputs/references` 和素材类型空目录；初始化器仍会创建这些目录，实际引用的文件、设计与验收目录继续严格校验。不要为了保留空素材目录向已批准的 HTML 文件集合添加占位文件。
+
 遵守目标项目的 UIKit/UIRoot、Prefab 固定目录、默认 TMP 字体与 SCM 规范。只更新本次授权的素材和 Prefab，保留 GUID、绑定和 UnityEvent，不自动保存无关场景或改变 XR/平台配置。
 
 full 转换器位置从目标项目实际 Package 配置核实；按其 README 及项目准入规则操作。默认生成目录只是转换器默认值，正式面板归位遵守项目规则。转换器不支持的实际所需控件通过现有原生组件与 MCP 装配；无法完成时报告差距，不扩展 C#。
@@ -71,8 +75,10 @@ VR 素材约束：各元素均使用无边缘描线的填充造型，不制作�
 
 制作前记录本项目的正式/暂存路径、物体命名与绑定、TMP 字体/共享材质、列表组件和加载方式。通用产物保留语义命名，项目适配器负责映射既有对象；普通 ScrollRect 不会自动转换成 LoopScrollRect，数据源和复用逻辑由项目接线。不要为适配强制批量改名已有业务物体。
 
-panel.package.json 的 stagingRoot 默认是 Assets/HtmlToUGUIStage/{PanelName}，重定向全部生成资源；fontMaterial 复用现有材质而不克隆、不改写它。导入窗口先选择来源并查看计划，再生成暂存资源并更新持久的 StageScene，原活动场景保持不变。Tools → HTML to UGUI → Stage Panels 打开暂存与复制窗口：每个面板有独立复选框与预览按钮；预览在 StageScene 中一次显示一个面板。选中需要的面板、查看复制计划，再复制到正式目录。主 Prefab 和 Item 同级，图片进入正式 Sprite 目录；字体共享，报告留在暂存区。复制已有生成资源需要显式开启替换；业务 Prefab 更新仍由项目适配负责。Capture Isolated Preview 可继续作为截图证据工具。
+panel.package.json 的 stagingRoot 默认是 Assets/HtmlToUGUIStage/{PanelName}，重定向全部生成资源；fontMaterial 复用现有材质而不克隆、不改写它。导入窗口先选择来源并查看计划，再生成暂存资源并更新持久的 StageScene，原活动场景保持不变。Tools → HTML to UGUI → 面板暂存与复制 打开暂存与复制窗口：每个面板有独立复选框与预览按钮；预览在 StageScene 中一次显示一个面板。选中需要的面板、查看复制计划，再复制到正式目录。默认勾选“保留面板名称子目录”，主 Prefab 进入 Assets/Art/UIPrefab/{PanelName}/；取消后直接进入 Assets/Art/UIPrefab/。Item 在两种模式下都进入 Assets/Art/UIPrefab/Item/，图片进入正式 Sprite 目录；字体共享，报告留在暂存区。不同来源的同名 Item 会阻止复制，先在源清单中改名并重新生成。复制已有生成资源需要显式开启替换；业务 Prefab 更新仍由项目适配负责。捕获独立预览并检查组件 可继续作为截图证据工具。
 
 更新已有业务 Prefab 时保留原组件并受控迁移视觉；转换器默认拒绝覆盖已有 Prefab。allowPrefabReplacement 仅用于可丢弃的生成产物重建，不能保证保留内部引用与 UnityEvent。导入异常时恢复本批计划资源及 meta；不提供编辑器崩溃/断电恢复，使用版本控制和整批暂存。
 
 “素材导出”指拆分 PNG 和验收资料交付；此工具没有 UGUI→HTML 反向导出功能。
+
+新游戏的单面板与全部面板生成入口都先读取 project.assets.json，统一同步游戏全部已确认素材，再生成所选 Prefab。旧面板独立目录只保留给底层技术 API；正式规则见 [项目素材契约](project-assets.md)。

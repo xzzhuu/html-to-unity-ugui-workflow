@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "panelName": "SupplyInventoryPanel",
+  "html": "SupplyInventoryPanel.html",
+  "outputFolder": "Assets/Art/UIPrefab/SupplyInventoryPanel",
+  "assetPrefix": "Assets/Art/UI/Sprite/SupplyInventoryPanel/",
+  "fontAsset": null,
+  "boldWeight": 0.12,
+  "requireSkillApproval": true,
+  "stagingRoot": "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel",
+  "allowPrefabReplacement": false,
+  "fontMaterial": null,
+  "projectName": "StarportSalvage",
+  "projectDirectory": "../../.."
+}

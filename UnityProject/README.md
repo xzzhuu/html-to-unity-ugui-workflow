@@ -1,14 +1,24 @@
-# Unity sample project
+# 星港 UI 转换测试工程
 
-使用 Unity 2022.3 打开此目录。原始本机工程版本为 `2022.3.62f3c1`；其他 2022.3 补丁版的兼容性尚未重新验证。
+打开克隆目录下的 `UnityProject/`，使用 Unity 2022.3.62f3c1。当前维护者的验证位置为 `E:/html_to_unity_ugui_workflow/UnityProject`，不是其他机器的路径要求。通过 `Packages/manifest.json` 中的相对路径引用仓库 `Packages/com.nex.html-to-ugui`。Unity MCP 是可选本机开发依赖，换机器后需调整或移除其 SDK 路径。
 
-`Packages/manifest.json` 通过 `file:../../Packages/com.nexvr.html-to-ugui` 引用仓库内的包，路径相对于项目 `Packages/`。Unity 会在首次打开时重新解析依赖与生成 lock 文件。本机 Unity MCP SDK 不属于示例运行依赖。
+当前示例为星港六面板，原 Example 三面板及相关正式、暂存资源已删除。完整需求、批准、素材、HTML、导入、视觉纠正与正式复制见 [制作流程](../docs/game-example/workflow.md)。
 
-本工程保留示例 Prefab、PNG 和场景，但不分发第三方字体、TMP Essential Resources 和厂商示例。首次打开需：
+| 位置 | 内容 |
+| --- | --- |
+| `Assets/HtmlToUGUIStage/StarportSalvage` | 六页暂存主面板、四个 Item、24 张共享 PNG 与转换报告 |
+| `Assets/HtmlToUGUIStage/StageScene.unity` | 六页可切换预览，保存固定数据集的演示快照 |
+| `Assets/Art/UIPrefab/StarportSalvage` | 六个正式主 Prefab 与 `Item/` 下四个 Item |
+| `Assets/Art/UI/Sprites/StarportSalvage` | 正式共享图片，面板引用已重定向 |
 
-1. 用 `Window → TextMeshPro → Import TMP Essential Resources` 恢复 TMP 必需资源。
-2. 自行准备具有中文字符的 TMP 字体资源。
-3. 从 `../Examples/` 重新导入所需 HTML，在导入窗口选择字体，以重建字体和材质引用。
-4. 检查 Console、场景和 Prefab，手动保存场景。
+字体统一使用现有 `Assets/Art/Fonts/PICOSansVFESC SDF.asset` 及其共享材质，它也是当前 TMP 默认字体。字体、TMP Essential Resources 和厂商示例不随仓库公开分发。新机器需恢复 TMP 必需资源，并自行准备获许可的对应字体；不要直接提交本机字体资源。
 
-现有 Prefab 的字体引用可能在重新导入前缺失。不要将本机旧字体直接提交；确认许可后再引入替代资源。仅运行 Python 验证无法确认工程能在新机器中编译或达到视觉一致性。
+通过 **Tools → HTML to UGUI → 导入整个项目...** 选择仓库 `Workspaces/StarportSalvage`。查看只读计划后生成，按 [转换规范](../docs/game-example/conversion-rules.md) 重新应用圆角和 Slider 原生装配，再核验截图与引用后复制到正式目录。普通全量重建不会自动保留这些项目适配。
+
+从仓库根运行：
+
+```sh
+python -B -X utf8 Tools/verify-starport-panels.py --unity-project UnityProject
+```
+
+[交付清单](../Workspaces/StarportSalvage/unity-delivery.json) 记录正式/暂存资源、字体和来源报告指纹。业务数据、页面导航、设置服务和结算接线由游戏层实现；当前 StageScene 的数据快照不等于完整游戏。Editor 原生控件和视觉检查与 VR 设备验收分别记录。

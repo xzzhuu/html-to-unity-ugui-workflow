@@ -1,0 +1,1102 @@
+{
+  "schemaVersion": 1,
+  "panelName": "GameSettingsPanel",
+  "status": "ready",
+  "templates": [],
+  "elements": [
+    {
+      "elementId": "GameSettingsPanel",
+      "unityName": "GameSettingsPanel",
+      "parentId": null,
+      "hierarchyPath": "GameSettingsPanel",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "GameSettingsPanel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "原生控件辅助节点，所属GameSettingsPanel",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody",
+      "unityName": "Group_PanelBody",
+      "parentId": "GameSettingsPanel",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "GameSettingsPanel__Group_PanelBody",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "PanelBody，用于游戏设置",
+      "dataSource": null,
+      "pictureRegion": [
+        120,
+        80,
+        1680,
+        920
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm",
+      "unityName": "Group_SettingsForm",
+      "parentId": "GameSettingsPanel/Group_PanelBody",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "GameSettingsPanel__Group_SettingsForm",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "SettingsForm，用于游戏设置",
+      "dataSource": null,
+      "pictureRegion": [
+        300,
+        258,
+        1320,
+        540
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Txt_SettingsExplanation",
+      "unityName": "Txt_SettingsExplanation",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Txt_SettingsExplanation",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "GameSettingsPanel__Txt_SettingsExplanation",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示说明：本阶段为演示设置，尚未接入真实音频与画质服务。",
+      "dataSource": null,
+      "pictureRegion": [
+        340,
+        742,
+        1220,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow",
+      "unityName": "Group_CaptainNameRow",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "GameSettingsPanel__Group_CaptainNameRow",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "CaptainNameRow，用于游戏设置",
+      "dataSource": null,
+      "pictureRegion": [
+        340,
+        294,
+        1240,
+        106
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Txt_NameTitle",
+      "unityName": "Txt_NameTitle",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Txt_NameTitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "GameSettingsPanel__Txt_NameTitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示队长名称",
+      "dataSource": null,
+      "pictureRegion": [
+        340,
+        300,
+        360,
+        44
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Txt_NameHint",
+      "unityName": "Txt_NameHint",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Txt_NameHint",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "GameSettingsPanel__Txt_NameHint",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示1～12个字符",
+      "dataSource": null,
+      "pictureRegion": [
+        340,
+        344,
+        360,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Input_CaptainName",
+      "unityName": "Input_CaptainName",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Input_CaptainName",
+      "uguiComponent": "TMP_InputField",
+      "sourceType": "InputField",
+      "htmlId": "GameSettingsPanel__Input_CaptainName",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Settings.CaptainName",
+      "purpose": "CaptainName，用于游戏设置",
+      "dataSource": "Settings.CaptainName",
+      "pictureRegion": [
+        740,
+        294,
+        740,
+        64
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Input_CaptainName/Group_TextViewport",
+      "unityName": "Group_TextViewport",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Input_CaptainName",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Input_CaptainName/Group_TextViewport",
+      "uguiComponent": "RectTransform",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "裁剪输入文本视口，所属GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Input_CaptainName",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Input_CaptainName/Group_TextViewport/Txt_Placeholder",
+      "unityName": "Txt_Placeholder",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Input_CaptainName/Group_TextViewport",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Input_CaptainName/Group_TextViewport/Txt_Placeholder",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示输入提示，所属GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Input_CaptainName/Group_TextViewport",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Input_CaptainName/Group_TextViewport/Txt_Value",
+      "unityName": "Txt_Value",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Input_CaptainName/Group_TextViewport",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Input_CaptainName/Group_TextViewport/Txt_Value",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示当前输入文本，所属GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Input_CaptainName/Group_TextViewport",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Txt_NameCounter",
+      "unityName": "Txt_NameCounter",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Txt_NameCounter",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "GameSettingsPanel__Txt_NameCounter",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Settings.NameCounter",
+      "purpose": "显示2/12",
+      "dataSource": "Settings.NameCounter",
+      "pictureRegion": [
+        1394,
+        312,
+        100,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Txt_NameError",
+      "unityName": "Txt_NameError",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_CaptainNameRow/Txt_NameError",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "GameSettingsPanel__Txt_NameError",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Settings.NameError",
+      "purpose": "NameError，用于游戏设置",
+      "dataSource": "Settings.NameError",
+      "pictureRegion": [
+        740,
+        368,
+        800,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow",
+      "unityName": "Group_SoundRow",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "GameSettingsPanel__Group_SoundRow",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "SoundRow，用于游戏设置",
+      "dataSource": null,
+      "pictureRegion": [
+        340,
+        414,
+        1240,
+        88
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow/Txt_SoundTitle",
+      "unityName": "Txt_SoundTitle",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow/Txt_SoundTitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "GameSettingsPanel__Txt_SoundTitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示游戏音效",
+      "dataSource": null,
+      "pictureRegion": [
+        340,
+        414,
+        360,
+        44
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow/Txt_SoundHint",
+      "unityName": "Txt_SoundHint",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow/Txt_SoundHint",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "GameSettingsPanel__Txt_SoundHint",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示保存开关状态",
+      "dataSource": null,
+      "pictureRegion": [
+        340,
+        458,
+        360,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow/Toggle_Sound",
+      "unityName": "Toggle_Sound",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow/Toggle_Sound",
+      "uguiComponent": "Toggle",
+      "sourceType": "Toggle",
+      "htmlId": "GameSettingsPanel__Toggle_Sound",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Settings.SoundEnabled",
+      "purpose": "Sound，用于游戏设置",
+      "dataSource": "Settings.SoundEnabled",
+      "pictureRegion": [
+        740,
+        420,
+        90,
+        42
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow/Txt_SoundState",
+      "unityName": "Txt_SoundState",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_SoundRow/Txt_SoundState",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "GameSettingsPanel__Txt_SoundState",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Settings.SoundState",
+      "purpose": "显示开启",
+      "dataSource": "Settings.SoundState",
+      "pictureRegion": [
+        852,
+        424,
+        320,
+        40
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow",
+      "unityName": "Group_VolumeRow",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "GameSettingsPanel__Group_VolumeRow",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "VolumeRow，用于游戏设置",
+      "dataSource": null,
+      "pictureRegion": [
+        340,
+        526,
+        1240,
+        96
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Txt_VolumeTitle",
+      "unityName": "Txt_VolumeTitle",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Txt_VolumeTitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "GameSettingsPanel__Txt_VolumeTitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示主音量",
+      "dataSource": null,
+      "pictureRegion": [
+        340,
+        526,
+        360,
+        44
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Txt_VolumeHint",
+      "unityName": "Txt_VolumeHint",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Txt_VolumeHint",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "GameSettingsPanel__Txt_VolumeHint",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示调整全局音量",
+      "dataSource": null,
+      "pictureRegion": [
+        340,
+        570,
+        360,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Slider_MasterVolume",
+      "unityName": "Slider_MasterVolume",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Slider_MasterVolume",
+      "uguiComponent": "Slider",
+      "sourceType": "Slider",
+      "htmlId": "GameSettingsPanel__Slider_MasterVolume",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Settings.MasterVolume",
+      "purpose": "MasterVolume，用于游戏设置",
+      "dataSource": "Settings.MasterVolume",
+      "pictureRegion": [
+        740,
+        537,
+        600,
+        40
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Slider_MasterVolume/Img_Fill",
+      "unityName": "Img_Fill",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Slider_MasterVolume",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Slider_MasterVolume/Img_Fill",
+      "uguiComponent": "Image",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示填充进度，所属GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Slider_MasterVolume",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Slider_MasterVolume/Group_HandleArea",
+      "unityName": "Group_HandleArea",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Slider_MasterVolume",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Slider_MasterVolume/Group_HandleArea",
+      "uguiComponent": "RectTransform",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "限制滑块移动范围，所属GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Slider_MasterVolume",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Slider_MasterVolume/Group_HandleArea/Img_Handle",
+      "unityName": "Img_Handle",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Slider_MasterVolume/Group_HandleArea",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Slider_MasterVolume/Group_HandleArea/Img_Handle",
+      "uguiComponent": "Image",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示拖动滑块，所属GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Slider_MasterVolume/Group_HandleArea",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Txt_MasterVolume",
+      "unityName": "Txt_MasterVolume",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_VolumeRow/Txt_MasterVolume",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "GameSettingsPanel__Txt_MasterVolume",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Settings.VolumeLabel",
+      "purpose": "显示80%",
+      "dataSource": "Settings.VolumeLabel",
+      "pictureRegion": [
+        1390,
+        537,
+        180,
+        50
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow",
+      "unityName": "Group_QualityRow",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "GameSettingsPanel__Group_QualityRow",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "QualityRow，用于游戏设置",
+      "dataSource": null,
+      "pictureRegion": [
+        340,
+        646,
+        1240,
+        96
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Txt_QualityTitle",
+      "unityName": "Txt_QualityTitle",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Txt_QualityTitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "GameSettingsPanel__Txt_QualityTitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示画质档位",
+      "dataSource": null,
+      "pictureRegion": [
+        340,
+        646,
+        360,
+        44
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Txt_QualityHint",
+      "unityName": "Txt_QualityHint",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Txt_QualityHint",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "GameSettingsPanel__Txt_QualityHint",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示本示例保存偏好数值",
+      "dataSource": null,
+      "pictureRegion": [
+        340,
+        690,
+        360,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityLow",
+      "unityName": "Btn_QualityLow",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityLow",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "GameSettingsPanel__Btn_QualityLow",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.QualityLow",
+      "purpose": "QualityLow，用于游戏设置",
+      "dataSource": "Action.QualityLow",
+      "pictureRegion": [
+        740,
+        646,
+        196,
+        64
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityLow/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityLow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityLow/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityLow",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityMedium",
+      "unityName": "Btn_QualityMedium",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityMedium",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "GameSettingsPanel__Btn_QualityMedium",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.QualityMedium",
+      "purpose": "QualityMedium，用于游戏设置",
+      "dataSource": "Action.QualityMedium",
+      "pictureRegion": [
+        960,
+        646,
+        196,
+        64
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityMedium/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityMedium",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityMedium/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityMedium",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityHigh",
+      "unityName": "Btn_QualityHigh",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityHigh",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "GameSettingsPanel__Btn_QualityHigh",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.QualityHigh",
+      "purpose": "QualityHigh，用于游戏设置",
+      "dataSource": "Action.QualityHigh",
+      "pictureRegion": [
+        1180,
+        646,
+        196,
+        64
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityHigh/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityHigh",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityHigh/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属GameSettingsPanel/Group_PanelBody/Group_SettingsForm/Group_QualityRow/Btn_QualityHigh",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_Header",
+      "unityName": "Group_Header",
+      "parentId": "GameSettingsPanel/Group_PanelBody",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_Header",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "GameSettingsPanel__Group_Header",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "Header，用于游戏设置",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        112,
+        1600,
+        108
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_Header/Txt_Title",
+      "unityName": "Txt_Title",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_Header/Txt_Title",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "GameSettingsPanel__Txt_Title",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示游戏设置",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        112,
+        700,
+        60
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_Header/Txt_Subtitle",
+      "unityName": "Txt_Subtitle",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_Header/Txt_Subtitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "GameSettingsPanel__Txt_Subtitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Page.Subtitle",
+      "purpose": "显示偏好设置 / 点击应用后生效；取消将放弃当前修改",
+      "dataSource": "Page.Subtitle",
+      "pictureRegion": [
+        160,
+        170,
+        1100,
+        35
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_Header/Img_HeaderDivider",
+      "unityName": "Img_HeaderDivider",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_Header/Img_HeaderDivider",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "GameSettingsPanel__Img_HeaderDivider",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "HeaderDivider，用于游戏设置",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        218,
+        1600,
+        2
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_Header/Txt_SettingsNotice",
+      "unityName": "Txt_SettingsNotice",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_Header/Txt_SettingsNotice",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "GameSettingsPanel__Txt_SettingsNotice",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示本地演示设置",
+      "dataSource": null,
+      "pictureRegion": [
+        1460,
+        126,
+        280,
+        38
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_Footer",
+      "unityName": "Group_Footer",
+      "parentId": "GameSettingsPanel/Group_PanelBody",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_Footer",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "GameSettingsPanel__Group_Footer",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "Footer，用于游戏设置",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        890,
+        1600,
+        108
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_Footer/Txt_Feedback",
+      "unityName": "Txt_Feedback",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_Footer/Txt_Feedback",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "GameSettingsPanel__Txt_Feedback",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Feedback.Message",
+      "purpose": "Feedback，用于游戏设置",
+      "dataSource": "Feedback.Message",
+      "pictureRegion": [
+        420,
+        970,
+        1000,
+        28
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_ResetDefaults",
+      "unityName": "Btn_ResetDefaults",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_ResetDefaults",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "GameSettingsPanel__Btn_ResetDefaults",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.ResetDefaults",
+      "purpose": "ResetDefaults，用于游戏设置",
+      "dataSource": "Action.ResetDefaults",
+      "pictureRegion": [
+        300,
+        890,
+        240,
+        60
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_ResetDefaults/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_ResetDefaults",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_ResetDefaults/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_ResetDefaults",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_CancelSettings",
+      "unityName": "Btn_CancelSettings",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_CancelSettings",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "GameSettingsPanel__Btn_CancelSettings",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.CancelSettings",
+      "purpose": "CancelSettings，用于游戏设置",
+      "dataSource": "Action.CancelSettings",
+      "pictureRegion": [
+        1090,
+        890,
+        240,
+        60
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_CancelSettings/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_CancelSettings",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_CancelSettings/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_CancelSettings",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_ApplySettings",
+      "unityName": "Btn_ApplySettings",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_ApplySettings",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "GameSettingsPanel__Btn_ApplySettings",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.ApplySettings",
+      "purpose": "ApplySettings，用于游戏设置",
+      "dataSource": "Action.ApplySettings",
+      "pictureRegion": [
+        1354,
+        890,
+        266,
+        60
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_ApplySettings/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_ApplySettings",
+      "hierarchyPath": "GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_ApplySettings/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属GameSettingsPanel/Group_PanelBody/Group_Footer/Btn_ApplySettings",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_IconCatalog",
+      "unityName": "Group_IconCatalog",
+      "parentId": "GameSettingsPanel",
+      "hierarchyPath": "GameSettingsPanel/Group_IconCatalog",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "GameSettingsPanel__Group_IconCatalog",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "IconCatalog，用于游戏设置",
+      "dataSource": null,
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "GameSettingsPanel/Group_IconCatalog/Img_Circle",
+      "unityName": "Img_Circle",
+      "parentId": "GameSettingsPanel/Group_IconCatalog",
+      "hierarchyPath": "GameSettingsPanel/Group_IconCatalog/Img_Circle",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "GameSettingsPanel__Img_Circle",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Source.Img_Circle",
+      "purpose": "注册动态Sprite引用，透明不绘制；供接入游戏的数据绑定使用",
+      "dataSource": "Source.Img_Circle",
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    }
+  ]
+}

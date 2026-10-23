@@ -1,0 +1,11 @@
+{
+  "status": "pending-visual-review",
+  "width": 1920,
+  "height": 1080,
+  "meanAbsoluteRgbDifference": [
+    2.8963498263888887,
+    3.014293499228395,
+    2.9934620949074073
+  ],
+  "note": "Inspect completeness and visual appearance; these metrics do not establish approval."
+}

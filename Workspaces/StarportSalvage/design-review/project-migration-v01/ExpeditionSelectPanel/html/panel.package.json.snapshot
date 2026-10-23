@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "panelName": "ExpeditionSelectPanel",
+  "html": "ExpeditionSelectPanel.html",
+  "outputFolder": "Assets/Art/UIPrefab/ExpeditionSelectPanel",
+  "assetPrefix": "Assets/Art/UI/Sprite/ExpeditionSelectPanel/",
+  "fontAsset": null,
+  "boldWeight": 0.12,
+  "requireSkillApproval": true,
+  "stagingRoot": "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel",
+  "allowPrefabReplacement": false,
+  "fontMaterial": null,
+  "projectName": "StarportSalvage"
+}

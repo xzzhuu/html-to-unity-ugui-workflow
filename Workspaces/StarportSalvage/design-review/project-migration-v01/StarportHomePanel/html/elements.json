@@ -1,0 +1,1156 @@
+{
+  "schemaVersion": 1,
+  "panelName": "StarportHomePanel",
+  "status": "ready",
+  "templates": [],
+  "elements": [
+    {
+      "elementId": "StarportHomePanel",
+      "unityName": "StarportHomePanel",
+      "parentId": null,
+      "hierarchyPath": "StarportHomePanel",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "StarportHomePanel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "原生控件辅助节点，所属StarportHomePanel",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody",
+      "unityName": "Group_PanelBody",
+      "parentId": "StarportHomePanel",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "StarportHomePanel__Group_PanelBody",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "PanelBody，用于星港基地",
+      "dataSource": null,
+      "pictureRegion": [
+        120,
+        80,
+        1680,
+        920
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Main",
+      "unityName": "Group_Main",
+      "parentId": "StarportHomePanel/Group_PanelBody",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Main",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "StarportHomePanel__Group_Main",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "Main，用于星港基地",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        250,
+        960,
+        600
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Main/Group_OnlineBadge",
+      "unityName": "Group_OnlineBadge",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Main",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Main/Group_OnlineBadge",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "StarportHomePanel__Group_OnlineBadge",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "OnlineBadge，用于星港基地",
+      "dataSource": null,
+      "pictureRegion": [
+        200,
+        286,
+        276,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Main/Txt_Online",
+      "unityName": "Txt_Online",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Main",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Main/Txt_Online",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_Online",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示星港在线 · 系统就绪",
+      "dataSource": null,
+      "pictureRegion": [
+        214,
+        289,
+        340,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Main/Txt_GameName",
+      "unityName": "Txt_GameName",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Main",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Main/Txt_GameName",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_GameName",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示星港拾荒者",
+      "dataSource": null,
+      "pictureRegion": [
+        200,
+        364,
+        880,
+        112
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Main/Txt_GameEnglish",
+      "unityName": "Txt_GameEnglish",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Main",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Main/Txt_GameEnglish",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_GameEnglish",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示STARPORT / SALVAGE DIVISION",
+      "dataSource": null,
+      "pictureRegion": [
+        205,
+        466,
+        840,
+        40
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Main/Txt_Welcome",
+      "unityName": "Txt_Welcome",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Main",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Main/Txt_Welcome",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_Welcome",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示整备补给，回收失落资源。",
+      "dataSource": null,
+      "pictureRegion": [
+        205,
+        538,
+        820,
+        55
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Main/Txt_Introduction",
+      "unityName": "Txt_Introduction",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Main",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Main/Txt_Introduction",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_Introduction",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示选择目的地，规划携行，让每一次远征都有收获。",
+      "dataSource": null,
+      "pictureRegion": [
+        205,
+        592,
+        840,
+        45
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Main/Btn_OpenExpeditions",
+      "unityName": "Btn_OpenExpeditions",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Main",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Main/Btn_OpenExpeditions",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "StarportHomePanel__Btn_OpenExpeditions",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.OpenExpeditions",
+      "purpose": "OpenExpeditions，用于星港基地",
+      "dataSource": "Action.OpenExpeditions",
+      "pictureRegion": [
+        205,
+        714,
+        360,
+        76
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Main/Btn_OpenExpeditions/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Main/Btn_OpenExpeditions",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Main/Btn_OpenExpeditions/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属StarportHomePanel/Group_PanelBody/Group_Main/Btn_OpenExpeditions",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Main/Btn_OpenInventory",
+      "unityName": "Btn_OpenInventory",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Main",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Main/Btn_OpenInventory",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "StarportHomePanel__Btn_OpenInventory",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.OpenInventory",
+      "purpose": "OpenInventory，用于星港基地",
+      "dataSource": "Action.OpenInventory",
+      "pictureRegion": [
+        589,
+        714,
+        300,
+        76
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Main/Btn_OpenInventory/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Main/Btn_OpenInventory",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Main/Btn_OpenInventory/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属StarportHomePanel/Group_PanelBody/Group_Main/Btn_OpenInventory",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus",
+      "unityName": "Group_ExpeditionStatus",
+      "parentId": "StarportHomePanel/Group_PanelBody",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "StarportHomePanel__Group_ExpeditionStatus",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "ExpeditionStatus，用于星港基地",
+      "dataSource": null,
+      "pictureRegion": [
+        1152,
+        250,
+        608,
+        600
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_ControlTitle",
+      "unityName": "Txt_ControlTitle",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_ControlTitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_ControlTitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示远征控制",
+      "dataSource": null,
+      "pictureRegion": [
+        1188,
+        286,
+        340,
+        45
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_TaskState",
+      "unityName": "Txt_TaskState",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_TaskState",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_TaskState",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Task.State",
+      "purpose": "显示待命",
+      "dataSource": "Task.State",
+      "pictureRegion": [
+        1580,
+        289,
+        140,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_TaskHeadline",
+      "unityName": "Txt_TaskHeadline",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_TaskHeadline",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_TaskHeadline",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Task.Headline",
+      "purpose": "显示尚未派遣远征队",
+      "dataSource": "Task.Headline",
+      "pictureRegion": [
+        1188,
+        364,
+        536,
+        60
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_TaskDescription",
+      "unityName": "Txt_TaskDescription",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_TaskDescription",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_TaskDescription",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Task.Description",
+      "purpose": "显示从低风险货运站开始第一趟回收。",
+      "dataSource": "Task.Description",
+      "pictureRegion": [
+        1188,
+        424,
+        536,
+        58
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Img_StatusDivider",
+      "unityName": "Img_StatusDivider",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Img_StatusDivider",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "StarportHomePanel__Img_StatusDivider",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "StatusDivider，用于星港基地",
+      "dataSource": null,
+      "pictureRegion": [
+        1188,
+        490,
+        536,
+        2
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_LoadoutTitle",
+      "unityName": "Txt_LoadoutTitle",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_LoadoutTitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_LoadoutTitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示已准备补给",
+      "dataSource": null,
+      "pictureRegion": [
+        1188,
+        524,
+        480,
+        36
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Group_SummaryMedkitSeat",
+      "unityName": "Group_SummaryMedkitSeat",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Group_SummaryMedkitSeat",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "StarportHomePanel__Group_SummaryMedkitSeat",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "SummaryMedkitSeat，用于星港基地",
+      "dataSource": null,
+      "pictureRegion": [
+        1188,
+        574,
+        56,
+        56
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Group_SummaryMedkitSeat/Img_SummaryMedkit",
+      "unityName": "Img_SummaryMedkit",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Group_SummaryMedkitSeat",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Group_SummaryMedkitSeat/Img_SummaryMedkit",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "StarportHomePanel__Img_SummaryMedkit",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "SummaryMedkit，用于星港基地",
+      "dataSource": null,
+      "pictureRegion": [
+        1188,
+        574,
+        56,
+        56
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_SummaryNameMedkit",
+      "unityName": "Txt_SummaryNameMedkit",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_SummaryNameMedkit",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_SummaryNameMedkit",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示急救包",
+      "dataSource": null,
+      "pictureRegion": [
+        1260,
+        580,
+        320,
+        42
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_SummaryQuantityMedkit",
+      "unityName": "Txt_SummaryQuantityMedkit",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_SummaryQuantityMedkit",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_SummaryQuantityMedkit",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Loadout.Medkit",
+      "purpose": "显示× 0",
+      "dataSource": "Loadout.Medkit",
+      "pictureRegion": [
+        1636,
+        580,
+        92,
+        42
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Group_SummaryBatterySeat",
+      "unityName": "Group_SummaryBatterySeat",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Group_SummaryBatterySeat",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "StarportHomePanel__Group_SummaryBatterySeat",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "SummaryBatterySeat，用于星港基地",
+      "dataSource": null,
+      "pictureRegion": [
+        1188,
+        652,
+        56,
+        56
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Group_SummaryBatterySeat/Img_SummaryBattery",
+      "unityName": "Img_SummaryBattery",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Group_SummaryBatterySeat",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Group_SummaryBatterySeat/Img_SummaryBattery",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "StarportHomePanel__Img_SummaryBattery",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "SummaryBattery，用于星港基地",
+      "dataSource": null,
+      "pictureRegion": [
+        1188,
+        652,
+        56,
+        56
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_SummaryNameBattery",
+      "unityName": "Txt_SummaryNameBattery",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_SummaryNameBattery",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_SummaryNameBattery",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示能源电池",
+      "dataSource": null,
+      "pictureRegion": [
+        1260,
+        658,
+        320,
+        42
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_SummaryQuantityBattery",
+      "unityName": "Txt_SummaryQuantityBattery",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_SummaryQuantityBattery",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_SummaryQuantityBattery",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Loadout.Battery",
+      "purpose": "显示× 0",
+      "dataSource": "Loadout.Battery",
+      "pictureRegion": [
+        1636,
+        658,
+        92,
+        42
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_LoadoutSummary",
+      "unityName": "Txt_LoadoutSummary",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Txt_LoadoutSummary",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_LoadoutSummary",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Loadout.Summary",
+      "purpose": "显示携行0.0kg / 上限20.0kg",
+      "dataSource": "Loadout.Summary",
+      "pictureRegion": [
+        1188,
+        752,
+        536,
+        40
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Btn_ViewResult",
+      "unityName": "Btn_ViewResult",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Btn_ViewResult",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "StarportHomePanel__Btn_ViewResult",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.ViewResult",
+      "purpose": "ViewResult，用于星港基地",
+      "dataSource": "Action.ViewResult",
+      "pictureRegion": [
+        1188,
+        754,
+        320,
+        60
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Btn_ViewResult/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Btn_ViewResult",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Btn_ViewResult/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属StarportHomePanel/Group_PanelBody/Group_ExpeditionStatus/Btn_ViewResult",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Header",
+      "unityName": "Group_Header",
+      "parentId": "StarportHomePanel/Group_PanelBody",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Header",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "StarportHomePanel__Group_Header",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "Header，用于星港基地",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        112,
+        1600,
+        108
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Header/Txt_Title",
+      "unityName": "Txt_Title",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Header/Txt_Title",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_Title",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示星港基地",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        112,
+        700,
+        60
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Header/Txt_Subtitle",
+      "unityName": "Txt_Subtitle",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Header/Txt_Subtitle",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_Subtitle",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Page.Subtitle",
+      "purpose": "显示指挥终端 / 林岚队长，欢迎返回星港",
+      "dataSource": "Page.Subtitle",
+      "pictureRegion": [
+        160,
+        170,
+        1100,
+        35
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceCreditsLabel",
+      "unityName": "Txt_ResourceCreditsLabel",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceCreditsLabel",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_ResourceCreditsLabel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示信用点",
+      "dataSource": null,
+      "pictureRegion": [
+        980,
+        115,
+        240,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceCredits",
+      "unityName": "Txt_ResourceCredits",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceCredits",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_ResourceCredits",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Player.Credits",
+      "purpose": "显示2,400",
+      "dataSource": "Player.Credits",
+      "pictureRegion": [
+        980,
+        149,
+        270,
+        50
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceEnergyLabel",
+      "unityName": "Txt_ResourceEnergyLabel",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceEnergyLabel",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_ResourceEnergyLabel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示能源",
+      "dataSource": null,
+      "pictureRegion": [
+        1220,
+        115,
+        240,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceEnergy",
+      "unityName": "Txt_ResourceEnergy",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceEnergy",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_ResourceEnergy",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Player.Energy",
+      "purpose": "显示100 / 100",
+      "dataSource": "Player.Energy",
+      "pictureRegion": [
+        1220,
+        149,
+        270,
+        50
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeightLabel",
+      "unityName": "Txt_ResourceLoadoutWeightLabel",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeightLabel",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_ResourceLoadoutWeightLabel",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示携行重量",
+      "dataSource": null,
+      "pictureRegion": [
+        1480,
+        115,
+        240,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeight",
+      "unityName": "Txt_ResourceLoadoutWeight",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeight",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_ResourceLoadoutWeight",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Player.LoadoutWeight",
+      "purpose": "显示7.0 / 20.0 kg",
+      "dataSource": "Player.LoadoutWeight",
+      "pictureRegion": [
+        1480,
+        149,
+        270,
+        50
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Header/Img_HeaderDivider",
+      "unityName": "Img_HeaderDivider",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Header",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Header/Img_HeaderDivider",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "StarportHomePanel__Img_HeaderDivider",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "HeaderDivider，用于星港基地",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        218,
+        1600,
+        2
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Footer",
+      "unityName": "Group_Footer",
+      "parentId": "StarportHomePanel/Group_PanelBody",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Footer",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "StarportHomePanel__Group_Footer",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "Footer，用于星港基地",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        890,
+        1600,
+        108
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Footer/Txt_Feedback",
+      "unityName": "Txt_Feedback",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Footer/Txt_Feedback",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_Feedback",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Feedback.Message",
+      "purpose": "Feedback，用于星港基地",
+      "dataSource": "Feedback.Message",
+      "pictureRegion": [
+        420,
+        970,
+        1000,
+        28
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Footer/Txt_DemoNotice",
+      "unityName": "Txt_DemoNotice",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Footer/Txt_DemoNotice",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": "Text",
+      "htmlId": "StarportHomePanel__Txt_DemoNotice",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示演示模式 / 远征使用固定结果与3秒模拟",
+      "dataSource": null,
+      "pictureRegion": [
+        160,
+        925,
+        1080,
+        35
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Footer/Btn_OpenSettings",
+      "unityName": "Btn_OpenSettings",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Footer/Btn_OpenSettings",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "StarportHomePanel__Btn_OpenSettings",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.OpenSettings",
+      "purpose": "OpenSettings，用于星港基地",
+      "dataSource": "Action.OpenSettings",
+      "pictureRegion": [
+        1300,
+        900,
+        180,
+        60
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Footer/Btn_OpenSettings/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Footer/Btn_OpenSettings",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Footer/Btn_OpenSettings/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属StarportHomePanel/Group_PanelBody/Group_Footer/Btn_OpenSettings",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Footer/Btn_ResetDemo",
+      "unityName": "Btn_ResetDemo",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Footer",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Footer/Btn_ResetDemo",
+      "uguiComponent": "Button",
+      "sourceType": "Button",
+      "htmlId": "StarportHomePanel__Btn_ResetDemo",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Action.ResetDemo",
+      "purpose": "ResetDemo，用于星港基地",
+      "dataSource": "Action.ResetDemo",
+      "pictureRegion": [
+        1504,
+        900,
+        256,
+        60
+      ],
+      "states": [
+        "normal",
+        "disabled"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_PanelBody/Group_Footer/Btn_ResetDemo/Txt_Label",
+      "unityName": "Txt_Label",
+      "parentId": "StarportHomePanel/Group_PanelBody/Group_Footer/Btn_ResetDemo",
+      "hierarchyPath": "StarportHomePanel/Group_PanelBody/Group_Footer/Btn_ResetDemo/Txt_Label",
+      "uguiComponent": "TextMeshProUGUI",
+      "sourceType": null,
+      "htmlId": null,
+      "generated": true,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "显示按钮操作文字，所属StarportHomePanel/Group_PanelBody/Group_Footer/Btn_ResetDemo",
+      "dataSource": null,
+      "pictureRegion": null,
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_IconCatalog",
+      "unityName": "Group_IconCatalog",
+      "parentId": "StarportHomePanel",
+      "hierarchyPath": "StarportHomePanel/Group_IconCatalog",
+      "uguiComponent": "RectTransform",
+      "sourceType": "Container",
+      "htmlId": "StarportHomePanel__Group_IconCatalog",
+      "generated": false,
+      "template": null,
+      "bindingKey": null,
+      "purpose": "IconCatalog，用于星港基地",
+      "dataSource": null,
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_IconCatalog/Img_ItemBeacon",
+      "unityName": "Img_ItemBeacon",
+      "parentId": "StarportHomePanel/Group_IconCatalog",
+      "hierarchyPath": "StarportHomePanel/Group_IconCatalog/Img_ItemBeacon",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "StarportHomePanel__Img_ItemBeacon",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Source.Img_ItemBeacon",
+      "purpose": "注册动态Sprite引用，透明不绘制；供接入游戏的数据绑定使用",
+      "dataSource": "Source.Img_ItemBeacon",
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    },
+    {
+      "elementId": "StarportHomePanel/Group_IconCatalog/Img_ItemRation",
+      "unityName": "Img_ItemRation",
+      "parentId": "StarportHomePanel/Group_IconCatalog",
+      "hierarchyPath": "StarportHomePanel/Group_IconCatalog/Img_ItemRation",
+      "uguiComponent": "Image",
+      "sourceType": "Image",
+      "htmlId": "StarportHomePanel__Img_ItemRation",
+      "generated": false,
+      "template": null,
+      "bindingKey": "Source.Img_ItemRation",
+      "purpose": "注册动态Sprite引用，透明不绘制；供接入游戏的数据绑定使用",
+      "dataSource": "Source.Img_ItemRation",
+      "pictureRegion": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "states": [
+        "normal"
+      ]
+    }
+  ]
+}

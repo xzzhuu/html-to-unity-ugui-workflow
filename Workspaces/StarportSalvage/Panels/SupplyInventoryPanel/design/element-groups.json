@@ -1,0 +1,837 @@
+{
+  "schemaVersion": 1,
+  "panelName": "SupplyInventoryPanel",
+  "requiredComponents": [
+    "Button",
+    "InputField",
+    "ScrollView",
+    "Slider",
+    "Image",
+    "Text"
+  ],
+  "groups": [
+    {
+      "groupId": "Img_Surface_Sheet",
+      "componentType": "Image",
+      "purpose": "底板与卡片",
+      "usedBy": [
+        "SupplyInventoryPanel/Group_PanelBody",
+        "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry",
+        "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry/Group_InventoryItemSeat",
+        "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails",
+        "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Group_DetailIconSeat",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Loadout",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Group_LoadoutIconSeat",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Group_WeightTrack"
+      ],
+      "sheet": "design/element-groups/Img_Surface_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_RoundedSurface.png",
+        "html/assets/project/Image/Img_RoundedSurface_Surface_Default.png",
+        "html/assets/project/Image/Img_ItemMedkit_Surface_Default.png",
+        "html/assets/project/Image/Img_Value_Bar_Surface_Default.png",
+        "html/assets/project/Image/Img_Circle_Surface_Default.png",
+        "html/assets/project/Image/Img_ItemAlloy_Surface_Default.png",
+        "html/assets/project/Image/Img_ItemBattery_Surface_Default.png",
+        "html/assets/project/Image/Img_ItemBeacon_Surface_Default.png",
+        "html/assets/project/Image/Img_ItemChip_Surface_Default.png",
+        "html/assets/project/Image/Img_ItemCircuit_Surface_Default.png",
+        "html/assets/project/Image/Img_ItemOre_Surface_Default.png",
+        "html/assets/project/Image/Img_ItemRation_Surface_Default.png"
+      ]
+    },
+    {
+      "groupId": "Btn_Action_Sheet",
+      "componentType": "Button",
+      "purpose": "按钮结构与状态",
+      "usedBy": [
+        "SupplyInventoryPanel/Group_PanelBody/Btn_CategoryAll",
+        "SupplyInventoryPanel/Group_PanelBody/Btn_CategoryMaterial",
+        "SupplyInventoryPanel/Group_PanelBody/Btn_CategorySupply",
+        "SupplyInventoryPanel/Group_PanelBody/Btn_ClearSearch",
+        "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry",
+        "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_DecreaseQuantity",
+        "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_IncreaseQuantity",
+        "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Btn_AddSupply",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Btn_Decrease",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Btn_Remove",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Btn_Return",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Btn_ClearLoadout"
+      ],
+      "sheet": "design/element-groups/Btn_Action_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_Control_Background.png",
+        "html/assets/project/Button/Btn_Control_Background_Surface_Normal.png",
+        "html/assets/project/Button/Btn_RoundedSurface_Surface_Normal.png",
+        "html/assets/project/Button/Btn_RoundedSurface_Icon_Normal.png",
+        "html/assets/project/Button/Btn_ItemMedkit_Icon_Normal.png"
+      ]
+    },
+    {
+      "groupId": "Inp_Form_Sheet",
+      "componentType": "InputField",
+      "purpose": "搜索与名称输入",
+      "usedBy": [
+        "SupplyInventoryPanel/Group_PanelBody/Input_ItemSearch"
+      ],
+      "sheet": "design/element-groups/Inp_Form_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_Control_Background.png",
+        "html/assets/project/TMP_InputField/Inp_Control_Background_Surface_Default.png"
+      ]
+    },
+    {
+      "groupId": "Sld_Value_Sheet",
+      "componentType": "Slider",
+      "purpose": "音量、数量与重量",
+      "usedBy": [
+        "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Slider_AddQuantity"
+      ],
+      "sheet": "design/element-groups/Sld_Value_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_Circle.png",
+        "html/assets/shared/Sld_Value_Bar.png",
+        "html/assets/project/Slider/Sld_Value_Bar_Track_Default.png",
+        "html/assets/project/Slider/Sld_Value_Bar_Fill_Default.png",
+        "html/assets/project/Slider/Sld_Circle_Handle_Default.png"
+      ]
+    },
+    {
+      "groupId": "Scr_List_Sheet",
+      "componentType": "ScrollView",
+      "purpose": "动态列表与条目",
+      "usedBy": [
+        "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory",
+        "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Scroll_ItemDescription",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout"
+      ],
+      "sheet": "design/element-groups/Scr_List_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_RoundedSurface.png"
+      ]
+    },
+    {
+      "groupId": "Img_Item_Sheet",
+      "componentType": "Image",
+      "purpose": "八种物品图标",
+      "usedBy": [
+        "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry/Img_InventoryItem",
+        "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Group_DetailIconSeat/Img_DetailIcon",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Img_LoadoutIcon",
+        "SupplyInventoryPanel/Group_IconCatalog/Img_ItemAlloy",
+        "SupplyInventoryPanel/Group_IconCatalog/Img_ItemBattery",
+        "SupplyInventoryPanel/Group_IconCatalog/Img_ItemBeacon",
+        "SupplyInventoryPanel/Group_IconCatalog/Img_ItemChip",
+        "SupplyInventoryPanel/Group_IconCatalog/Img_ItemCircuit",
+        "SupplyInventoryPanel/Group_IconCatalog/Img_ItemOre",
+        "SupplyInventoryPanel/Group_IconCatalog/Img_ItemRation"
+      ],
+      "sheet": "design/element-groups/Img_Item_Sheet.png",
+      "assets": [
+        "html/assets/shared/Img_ItemMedkit.png",
+        "html/assets/shared/Img_ItemBattery.png",
+        "html/assets/shared/Img_ItemRation.png",
+        "html/assets/shared/Img_ItemBeacon.png",
+        "html/assets/shared/Img_ItemOre.png",
+        "html/assets/shared/Img_ItemAlloy.png",
+        "html/assets/shared/Img_ItemCircuit.png",
+        "html/assets/shared/Img_ItemChip.png"
+      ]
+    },
+    {
+      "groupId": "Txt_Typography_Sheet",
+      "componentType": "Text",
+      "purpose": "文字层级与反馈",
+      "usedBy": [
+        "SupplyInventoryPanel/Group_PanelBody/Txt_InventoryTitle",
+        "SupplyInventoryPanel/Group_PanelBody/Txt_ItemCount",
+        "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry/Txt_InventoryName",
+        "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry/Txt_InventoryCategory",
+        "SupplyInventoryPanel/Group_PanelBody/Scroll_Inventory/Group_Content/Item_InventoryEntry/Txt_InventoryQuantity",
+        "SupplyInventoryPanel/Group_PanelBody/Txt_InventoryState",
+        "SupplyInventoryPanel/Group_PanelBody/Txt_ScrollHint",
+        "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_DetailsTitle",
+        "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_DetailName",
+        "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_DetailRarity",
+        "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Scroll_ItemDescription/Group_Content/Txt_DetailDescription",
+        "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_Stock",
+        "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_ItemWeight",
+        "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_QuantityLabel",
+        "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_QuantityValue",
+        "SupplyInventoryPanel/Group_PanelBody/Group_ItemDetails/Txt_QuantityHint",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Txt_LoadoutTitle",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Txt_LoadoutCount",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Txt_LoadoutName",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Scroll_Loadout/Group_Content/Item_LoadoutEntry/Txt_LoadoutAmount",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Txt_LoadoutState",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Txt_LoadoutWeight",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Loadout/Txt_LoadoutNotice",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_Title",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_Subtitle",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceCreditsLabel",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceCredits",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceEnergyLabel",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceEnergy",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeightLabel",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeight",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Txt_Feedback",
+        "SupplyInventoryPanel/Group_PanelBody/Group_Footer/Txt_SaveNotice"
+      ],
+      "sheet": "design/element-groups/Txt_Typography_Sheet.png",
+      "assets": []
+    }
+  ],
+  "sprites": [
+    {
+      "source": "html/assets/shared/Img_Circle.png",
+      "componentType": "Image",
+      "pixelSize": [
+        64,
+        64
+      ],
+      "originalPixelSize": [
+        64,
+        64
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "开关旋钮与滑块手柄共用实心圆"
+    },
+    {
+      "source": "html/assets/shared/Img_Control_Background.png",
+      "componentType": "Image",
+      "pixelSize": [
+        512,
+        128
+      ],
+      "originalPixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "tintable": true,
+      "purpose": "按钮和输入框共用圆角结构"
+    },
+    {
+      "source": "html/assets/shared/Img_ItemAlloy.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "独立物品轮廓，与底座及文字分层"
+    },
+    {
+      "source": "html/assets/shared/Img_ItemBattery.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "独立物品轮廓，与底座及文字分层"
+    },
+    {
+      "source": "html/assets/shared/Img_ItemBeacon.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "独立物品轮廓，与底座及文字分层"
+    },
+    {
+      "source": "html/assets/shared/Img_ItemChip.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "独立物品轮廓，与底座及文字分层"
+    },
+    {
+      "source": "html/assets/shared/Img_ItemCircuit.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "独立物品轮廓，与底座及文字分层"
+    },
+    {
+      "source": "html/assets/shared/Img_ItemMedkit.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "独立物品轮廓，与底座及文字分层"
+    },
+    {
+      "source": "html/assets/shared/Img_ItemOre.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "独立物品轮廓，与底座及文字分层"
+    },
+    {
+      "source": "html/assets/shared/Img_ItemRation.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "独立物品轮廓，与底座及文字分层"
+    },
+    {
+      "source": "html/assets/shared/Img_RoundedSurface.png",
+      "componentType": "Image",
+      "pixelSize": [
+        512,
+        512
+      ],
+      "originalPixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "tintable": true,
+      "purpose": "底板、卡片、列表与条目共用中性圆角"
+    },
+    {
+      "source": "html/assets/shared/Sld_Value_Bar.png",
+      "componentType": "Slider",
+      "pixelSize": [
+        512,
+        32
+      ],
+      "originalPixelSize": [
+        512,
+        32
+      ],
+      "hasAlpha": true,
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "tintable": true,
+      "purpose": "滑块轨道和填充共用胶囊形"
+    },
+    {
+      "source": "html/assets/project/Image/Img_RoundedSurface_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        512,
+        512
+      ],
+      "originalPixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    },
+    {
+      "source": "html/assets/project/Button/Btn_Control_Background_Surface_Normal.png",
+      "componentType": "Button",
+      "pixelSize": [
+        512,
+        128
+      ],
+      "originalPixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Button/Surface/Normal"
+    },
+    {
+      "source": "html/assets/project/TMP_InputField/Inp_Control_Background_Surface_Default.png",
+      "componentType": "InputField",
+      "pixelSize": [
+        512,
+        128
+      ],
+      "originalPixelSize": [
+        512,
+        128
+      ],
+      "hasAlpha": true,
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；TMP_InputField/Surface/Default"
+    },
+    {
+      "source": "html/assets/project/Button/Btn_RoundedSurface_Surface_Normal.png",
+      "componentType": "Button",
+      "pixelSize": [
+        512,
+        512
+      ],
+      "originalPixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Button/Surface/Normal"
+    },
+    {
+      "source": "html/assets/project/Button/Btn_RoundedSurface_Icon_Normal.png",
+      "componentType": "Button",
+      "pixelSize": [
+        512,
+        512
+      ],
+      "originalPixelSize": [
+        512,
+        512
+      ],
+      "hasAlpha": true,
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Button/Icon/Normal"
+    },
+    {
+      "source": "html/assets/project/Button/Btn_ItemMedkit_Icon_Normal.png",
+      "componentType": "Button",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Button/Icon/Normal"
+    },
+    {
+      "source": "html/assets/project/Image/Img_ItemMedkit_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    },
+    {
+      "source": "html/assets/project/Slider/Sld_Value_Bar_Track_Default.png",
+      "componentType": "Slider",
+      "pixelSize": [
+        512,
+        32
+      ],
+      "originalPixelSize": [
+        512,
+        32
+      ],
+      "hasAlpha": true,
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Slider/Track/Default"
+    },
+    {
+      "source": "html/assets/project/Slider/Sld_Value_Bar_Fill_Default.png",
+      "componentType": "Slider",
+      "pixelSize": [
+        512,
+        32
+      ],
+      "originalPixelSize": [
+        512,
+        32
+      ],
+      "hasAlpha": true,
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Slider/Fill/Default"
+    },
+    {
+      "source": "html/assets/project/Slider/Sld_Circle_Handle_Default.png",
+      "componentType": "Slider",
+      "pixelSize": [
+        64,
+        64
+      ],
+      "originalPixelSize": [
+        64,
+        64
+      ],
+      "hasAlpha": true,
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Slider/Handle/Default"
+    },
+    {
+      "source": "html/assets/project/Image/Img_Value_Bar_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        512,
+        32
+      ],
+      "originalPixelSize": [
+        512,
+        32
+      ],
+      "hasAlpha": true,
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    },
+    {
+      "source": "html/assets/project/Image/Img_Circle_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        64,
+        64
+      ],
+      "originalPixelSize": [
+        64,
+        64
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    },
+    {
+      "source": "html/assets/project/Image/Img_ItemAlloy_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    },
+    {
+      "source": "html/assets/project/Image/Img_ItemBattery_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    },
+    {
+      "source": "html/assets/project/Image/Img_ItemBeacon_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    },
+    {
+      "source": "html/assets/project/Image/Img_ItemChip_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    },
+    {
+      "source": "html/assets/project/Image/Img_ItemCircuit_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    },
+    {
+      "source": "html/assets/project/Image/Img_ItemOre_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    },
+    {
+      "source": "html/assets/project/Image/Img_ItemRation_Surface_Default.png",
+      "componentType": "Image",
+      "pixelSize": [
+        256,
+        256
+      ],
+      "originalPixelSize": [
+        256,
+        256
+      ],
+      "hasAlpha": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tintable": true,
+      "purpose": "沿用已批准v01素材；Image/Surface/Default"
+    }
+  ]
+}
