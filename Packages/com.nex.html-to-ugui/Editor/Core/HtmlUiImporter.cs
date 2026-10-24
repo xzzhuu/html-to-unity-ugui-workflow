@@ -51,6 +51,7 @@ namespace HtmlToUGUI.Editor
             public string projectName, projectDirectory;
             internal UiProjectAssetPlan library;
             internal bool libraryAlreadySynced;
+            internal Newtonsoft.Json.Linq.JObject nativeAssembly;
             internal string sourceAssetPrefix;
             public Action<GameObject, UiBindingMap, Dictionary<string, string>> configureRoot;
             public Action<string, GameObject, UiBindingMap> configureTemplate;
@@ -69,6 +70,7 @@ namespace HtmlToUGUI.Editor
             Bindings.Clear(); CssRules.Clear(); CssVariables.Clear(); OrderedRules.Clear(); CssWarnings.Clear();
             var document = XDocument.Load(htmlPath, LoadOptions.PreserveWhitespace);
             RemapStagedAssets(document, options, htmlPath);
+            options.nativeAssembly = UiNativeAssembly.Load(options.projectDirectory, options.library);
             var htmlDir = Path.GetDirectoryName(Path.GetFullPath(htmlPath));
             LoadLinkedCss(document, htmlDir);
             var report = UiPackageValidator.Validate(document, htmlDir, options.assetPrefix, ResolveStyle, options.library);
@@ -108,6 +110,7 @@ namespace HtmlToUGUI.Editor
                     rootGo.AddComponent<UiTemplateCatalog>().EditorSetTemplates(itemPrefabPaths.Select(p =>
                         new UiTemplateCatalog.Entry { name = p.Key, prefab = AssetDatabase.LoadAssetAtPath<GameObject>(p.Value) }).ToList());
                 }
+                UiNativeAssembly.Apply(rootGo, options.nativeAssembly, options.library);
                 if (options.configureRoot != null) options.configureRoot(rootGo, map, itemPrefabPaths);
                 var path = outputFolder.TrimEnd('/') + "/" + options.panelName + ".prefab";
                 if (PrefabUtility.SaveAsPrefabAsset(rootGo, path) == null) throw new IOException("Prefab save failed: " + path);
@@ -316,6 +319,7 @@ namespace HtmlToUGUI.Editor
                 map.EditorSetEntries(new List<UiBindingMap.Entry>(Bindings));
                 EditorUtility.SetDirty(map);
 
+                UiNativeAssembly.Apply(itemGo, options.nativeAssembly, options.library);
                 if (options.configureTemplate != null) options.configureTemplate(prefabName, itemGo, map);
 
                 var prefabPath = itemFolder + "/" + itemGo.name + ".prefab";
@@ -551,6 +555,7 @@ namespace HtmlToUGUI.Editor
             image.sprite = sprite;
             image.color = ReadBackgroundColor(style, Color.white);
             image.type = useNineSlice ? Image.Type.Sliced : Image.Type.Simple;
+            UiNativeAssembly.ApplyRadius(image, style, options.nativeAssembly);
         }
 
         private static void EnsureSpriteImporter(string spritePath, bool useNineSlice, Vector4 border)

@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "projectName": "StarportSalvage",
+  "target": "UnityEditor",
+  "deviceRequired": false,
+  "requestedBy": "user",
+  "instruction": "就以StarportSalvage为主，Unity编辑器测试即可"
+}

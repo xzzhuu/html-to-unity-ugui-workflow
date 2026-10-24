@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "projectName": "StarportSalvage",
+  "status": "active",
+  "screens": [
+    {
+      "panelName": "StarportHomePanel",
+      "title": "星港基地",
+      "implemented": true,
+      "requirementId": "UI-01",
+      "entryPoints": [
+        "startup",
+        "return"
+      ],
+      "actions": [
+        "Action.OpenExpeditions",
+        "Action.OpenInventory",
+        "Action.OpenSettings",
+        "Action.ResetDemo",
+        "Action.ViewResult"
+      ],
+      "states": [
+        "default",
+        "running",
+        "pending-result"
+      ],
+      "fixtures": [
+        "Default",
+        "Prepared"
+      ],
+      "tests": [
+        "Six independent XHTML pages render without errors",
+        "Default data starts with empty loadout",
+        "Three-second expedition, same-session result, one-time claim",
+        "Task snapshot locks loadout; no-medkit result; reset/cancel and Esc",
+        "Demo launcher switches panels and fixtures outside the game UI",
+        "Browser console and local resources clean",
+        "Declared fixture contract matches actual browser state"
+      ],
+      "templates": []
+    },
+    {
+      "panelName": "ExpeditionSelectPanel",
+      "title": "远征选择",
+      "implemented": true,
+      "requirementId": "UI-02",
+      "entryPoints": [
+        "StarportHomePanel"
+      ],
+      "actions": [
+        "Action.EditLoadout",
+        "Action.RetryMissions",
+        "Action.ReturnHome",
+        "Action.StartExpedition"
+      ],
+      "states": [
+        "default",
+        "selected",
+        "locked",
+        "insufficient",
+        "loading",
+        "error",
+        "empty"
+      ],
+      "fixtures": [
+        "Default",
+        "Prepared",
+        "Insufficient",
+        "Loading",
+        "Error",
+        "EmptyMissions"
+      ],
+      "tests": [
+        "Six independent XHTML pages render without errors",
+        "Locked mission and confirmation cancel never charge",
+        "Three-second expedition, same-session result, one-time claim",
+        "Deficits, loading, error/retry and empty missions",
+        "Task snapshot locks loadout; no-medkit result; reset/cancel and Esc",
+        "Demo launcher switches panels and fixtures outside the game UI",
+        "Browser console and local resources clean",
+        "Declared fixture contract matches actual browser state"
+      ],
+      "templates": [
+        "MissionEntry"
+      ]
+    },
+    {
+      "panelName": "SupplyInventoryPanel",
+      "title": "仓库整备",
+      "implemented": true,
+      "requirementId": "UI-03",
+      "entryPoints": [
+        "StarportHomePanel"
+      ],
+      "actions": [
+        "Action.AddSupply",
+        "Action.CategoryAll",
+        "Action.CategoryMaterial",
+        "Action.CategorySupply",
+        "Action.ClearLoadout",
+        "Action.ClearSearch",
+        "Action.Decrease",
+        "Action.DecreaseQuantity",
+        "Action.IncreaseQuantity",
+        "Action.Remove",
+        "Action.Return"
+      ],
+      "states": [
+        "default",
+        "selected",
+        "empty",
+        "one-item",
+        "many-items",
+        "long-text",
+        "overweight",
+        "search-empty",
+        "zero-stock"
+      ],
+      "fixtures": [
+        "Default",
+        "Prepared",
+        "OneItem",
+        "ManyItems",
+        "EmptyInventory",
+        "SearchEmpty",
+        "Overweight",
+        "LongText"
+      ],
+      "tests": [
+        "Six independent XHTML pages render without errors",
+        "Default data starts with empty loadout",
+        "Inventory selection, quantity, merge and stock accounting",
+        "Search intersects category, clears detail and preserves zero inventory",
+        "Three-second expedition, same-session result, one-time claim",
+        "Empty, single, thirty items, scroll and long text",
+        "Overweight rejects atomically; zero stock, remove and clear",
+        "Task snapshot locks loadout; no-medkit result; reset/cancel and Esc",
+        "Uniform scaling at 1280x720 and 1920x1200",
+        "Demo launcher switches panels and fixtures outside the game UI",
+        "Browser console and local resources clean",
+        "Declared fixture contract matches actual browser state"
+      ],
+      "templates": [
+        "InventoryEntry",
+        "LoadoutEntry"
+      ],
+      "fixturePresentation": [
+        {
+          "kind": "text-length",
+          "sourceBinding": "Item.DetailName",
+          "targetBinding": "Item.DetailName",
+          "threshold": 8,
+          "short": {
+            "fontSize": 32,
+            "height": 50
+          },
+          "long": {
+            "fontSize": 22,
+            "height": 86,
+            "fontSizeMin": 20
+          }
+        },
+        {
+          "kind": "text-length",
+          "sourceBinding": "Item.DetailName",
+          "targetBinding": "Item.DetailRarity",
+          "threshold": 8,
+          "short": {
+            "canvasY": 467
+          },
+          "long": {
+            "canvasY": 507
+          }
+        },
+        {
+          "kind": "text-height",
+          "sourceBinding": "Item.Description",
+          "targetBinding": "Item.Description",
+          "minimumHeight": 76,
+          "charactersPerLine": 16,
+          "lineHeight": 32
+        },
+        {
+          "kind": "ratio-width",
+          "targetBinding": "Loadout.WeightFill",
+          "numerator": "loadoutWeight",
+          "denominator": "capacity",
+          "maximumWidth": 436
+        }
+      ]
+    },
+    {
+      "panelName": "GameSettingsPanel",
+      "title": "游戏设置",
+      "implemented": true,
+      "requirementId": "UI-04",
+      "entryPoints": [
+        "StarportHomePanel"
+      ],
+      "actions": [
+        "Action.ApplySettings",
+        "Action.CancelSettings",
+        "Action.QualityHigh",
+        "Action.QualityLow",
+        "Action.QualityMedium",
+        "Action.ResetDefaults"
+      ],
+      "states": [
+        "draft",
+        "applied",
+        "cancelled",
+        "invalid-name",
+        "toggle-off",
+        "slider-min",
+        "slider-max"
+      ],
+      "fixtures": [
+        "Default",
+        "Prepared"
+      ],
+      "tests": [
+        "Six independent XHTML pages render without errors",
+        "Settings reject invalid names, cancel drafts, apply valid values",
+        "Demo launcher switches panels and fixtures outside the game UI",
+        "Browser console and local resources clean",
+        "Declared fixture contract matches actual browser state"
+      ],
+      "templates": []
+    },
+    {
+      "panelName": "ActionConfirmPanel",
+      "title": "操作确认",
+      "implemented": true,
+      "requirementId": "UI-05",
+      "entryPoints": [
+        "StarportHomePanel"
+      ],
+      "actions": [
+        "Action.CancelConfirm",
+        "Action.CloseConfirm",
+        "Action.Confirm"
+      ],
+      "states": [
+        "start",
+        "clear",
+        "reset",
+        "cancel",
+        "modal"
+      ],
+      "fixtures": [
+        "Prepared"
+      ],
+      "tests": [
+        "Six independent XHTML pages render without errors",
+        "Locked mission and confirmation cancel never charge",
+        "Three-second expedition, same-session result, one-time claim",
+        "Overweight rejects atomically; zero stock, remove and clear",
+        "Task snapshot locks loadout; no-medkit result; reset/cancel and Esc",
+        "Demo launcher switches panels and fixtures outside the game UI",
+        "Browser console and local resources clean",
+        "Declared fixture contract matches actual browser state"
+      ],
+      "templates": []
+    },
+    {
+      "panelName": "ExpeditionResultPanel",
+      "title": "远征结算",
+      "implemented": true,
+      "requirementId": "UI-06",
+      "entryPoints": [
+        "StarportHomePanel"
+      ],
+      "actions": [
+        "Action.ClaimRewards",
+        "Action.Postpone"
+      ],
+      "states": [
+        "pending",
+        "rewards",
+        "claimed"
+      ],
+      "fixtures": [
+        "Result"
+      ],
+      "tests": [
+        "Six independent XHTML pages render without errors",
+        "Three-second expedition, same-session result, one-time claim",
+        "Task snapshot locks loadout; no-medkit result; reset/cancel and Esc",
+        "Demo launcher switches panels and fixtures outside the game UI",
+        "Browser console and local resources clean",
+        "Declared fixture contract matches actual browser state"
+      ],
+      "templates": [
+        "RewardEntry"
+      ]
+    }
+  ],
+  "source": "Existing approved v01 design; no visual changes"
+}

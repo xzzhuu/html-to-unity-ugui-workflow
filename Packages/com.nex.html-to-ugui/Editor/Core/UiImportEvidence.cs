@@ -28,10 +28,21 @@ namespace HtmlToUGUI.Editor
         }
         private static JObject JsonFile(string path) { return JObject.Parse(File.ReadAllText(path)); }
         private static void Require(bool passed, string message) { if (!passed) throw new InvalidDataException(message); }
-        private static Dictionary<string, string> CollectInputFingerprints(string htmlDirectory)
+        private static Dictionary<string, string> CollectInputFingerprints(string htmlDirectory,string projectDirectory=null)
         {
             var files = new HashSet<string>(Directory.GetFiles(htmlDirectory, "*", SearchOption.AllDirectories).Select(Path.GetFullPath));
             var root = Directory.GetParent(htmlDirectory).FullName;
+            var packagePath = Path.Combine(htmlDirectory, "panel.package.json");
+            if (string.IsNullOrEmpty(projectDirectory) && File.Exists(packagePath))
+            {
+                var package = JsonFile(packagePath);
+                if (!string.IsNullOrEmpty((string)package["projectName"]))
+                {
+                    projectDirectory = string.IsNullOrEmpty((string)package["projectDirectory"])?UiProjectAssets.FindDirectory(Path.Combine(htmlDirectory,(string)package["html"])):
+                        Path.GetFullPath(Path.Combine(htmlDirectory,(string)package["projectDirectory"]));
+                }
+            }
+            if(!string.IsNullOrEmpty(projectDirectory))foreach(var contract in UiNativeAssembly.ContractFiles(projectDirectory))files.Add(contract);
             foreach (var source in new[] { "design/element-groups.json", "design/review/approval.json", "design/review/element-groups-approval.json", "design/review/html-acceptance.json", "design/review/layout-approved.png" })
             {
                 var path = Path.GetFullPath(Path.Combine(root, source));
@@ -137,7 +148,7 @@ namespace HtmlToUGUI.Editor
 
         private static void WriteImportEvidence(string prefabPath, UiImportPlan plan, ImportOptions settings)
         {
-            var currentInputs = CollectInputFingerprints(Path.GetDirectoryName(plan.html));
+            var currentInputs = CollectInputFingerprints(Path.GetDirectoryName(plan.html),settings.projectDirectory);
             Require(plan.inputsSha256.Count == currentInputs.Count && plan.inputsSha256.All(p => currentInputs.ContainsKey(p.Key) && currentInputs[p.Key] == p.Value),
                 "Inputs changed during conversion; outputs have been rolled back.");
             var reportPath = Path.ChangeExtension(prefabPath, ".import-report.json");
@@ -147,6 +158,7 @@ namespace HtmlToUGUI.Editor
             report["skillApprovalVerified"] = settings.requireSkillApproval;
             report["configuration"] = JObject.FromObject(new { settings.panelName, settings.assetPrefix, plan.outputFolder,
                 settings.stagingRoot, settings.allowPrefabReplacement, settings.requireSkillApproval, settings.boldWeight,
+                nativeAssembly = settings.nativeAssembly,
                 font = AssetDatabase.GetAssetPath(settings.font), fontMaterial = AssetDatabase.GetAssetPath(settings.fontMaterial) });
             using (var hash = SHA256.Create()) report["configurationSha256"] = BitConverter.ToString(hash.ComputeHash(System.Text.Encoding.UTF8.GetBytes(report["configuration"].ToString(Formatting.None)))).Replace("-", "").ToLowerInvariant();
             var inputs = new JObject();

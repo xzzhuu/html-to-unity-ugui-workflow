@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "panels": {
+    "ActionConfirmPanel": [
+      {
+        "source": "design/element-groups/Btn_Action_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Btn_Action_Sheet_4ca63a27.png",
+        "sha256": "4ca63a271bb6795164a65535cfbcf5051b451997f75ece1e6fd2bd230f42655b"
+      },
+      {
+        "source": "design/element-groups/Img_Surface_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Surface_Sheet_8801f27c.png",
+        "sha256": "8801f27cb72578e8624aad1229708c7e9c1ab9300d300c9d050a20128c3c6316"
+      },
+      {
+        "source": "design/element-groups/Txt_Typography_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Txt_Typography_Sheet_b17505c5.png",
+        "sha256": "b17505c5415ed34b71525509b08f37142acff7259a3080136f7c4c4e7c97d4ff"
+      },
+      {
+        "source": "design/review/layout-approved.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/Panels/ActionConfirmPanel_Approved.png",
+        "sha256": "682e5e76ca0fd7aef842d4c3711b3d7c7b6299c319328b2a557b333557dd1b9e"
+      }
+    ],
+    "ExpeditionResultPanel": [
+      {
+        "source": "design/element-groups/Btn_Action_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Btn_Action_Sheet_4ca63a27.png",
+        "sha256": "4ca63a271bb6795164a65535cfbcf5051b451997f75ece1e6fd2bd230f42655b"
+      },
+      {
+        "source": "design/element-groups/Img_Item_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Item_Sheet_8bdd3230.png",
+        "sha256": "8bdd3230328833fd58a12d9c519fee047a9bc179c0977d8e6edf8c43b1764d88"
+      },
+      {
+        "source": "design/element-groups/Img_Surface_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Surface_Sheet_8801f27c.png",
+        "sha256": "8801f27cb72578e8624aad1229708c7e9c1ab9300d300c9d050a20128c3c6316"
+      },
+      {
+        "source": "design/element-groups/Img_Utility_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Utility_Sheet_87307b74.png",
+        "sha256": "87307b740a4d2c3b4d8be69e3eba2c364fc8346bec3b6daea5b89172cd53f411"
+      },
+      {
+        "source": "design/element-groups/Scr_List_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Scr_List_Sheet_36795ae8.png",
+        "sha256": "36795ae819ccdb50248ca747ae93c35c604bbab1183e669c3adfa05dc512911b"
+      },
+      {
+        "source": "design/element-groups/Txt_Typography_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Txt_Typography_Sheet_b17505c5.png",
+        "sha256": "b17505c5415ed34b71525509b08f37142acff7259a3080136f7c4c4e7c97d4ff"
+      },
+      {
+        "source": "design/review/layout-approved.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/Panels/ExpeditionResultPanel_Approved.png",
+        "sha256": "fea455db244735a1d176300c960cd55617ea2b74b7907cc6e2cb781856a32a6e"
+      }
+    ],
+    "ExpeditionSelectPanel": [
+      {
+        "source": "design/element-groups/Btn_Action_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Btn_Action_Sheet_4ca63a27.png",
+        "sha256": "4ca63a271bb6795164a65535cfbcf5051b451997f75ece1e6fd2bd230f42655b"
+      },
+      {
+        "source": "design/element-groups/Img_Item_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Item_Sheet_8bdd3230.png",
+        "sha256": "8bdd3230328833fd58a12d9c519fee047a9bc179c0977d8e6edf8c43b1764d88"
+      },
+      {
+        "source": "design/element-groups/Img_Surface_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Surface_Sheet_8801f27c.png",
+        "sha256": "8801f27cb72578e8624aad1229708c7e9c1ab9300d300c9d050a20128c3c6316"
+      },
+      {
+        "source": "design/element-groups/Img_Utility_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Utility_Sheet_87307b74.png",
+        "sha256": "87307b740a4d2c3b4d8be69e3eba2c364fc8346bec3b6daea5b89172cd53f411"
+      },
+      {
+        "source": "design/element-groups/Scr_List_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Scr_List_Sheet_36795ae8.png",
+        "sha256": "36795ae819ccdb50248ca747ae93c35c604bbab1183e669c3adfa05dc512911b"
+      },
+      {
+        "source": "design/element-groups/Txt_Typography_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Txt_Typography_Sheet_b17505c5.png",
+        "sha256": "b17505c5415ed34b71525509b08f37142acff7259a3080136f7c4c4e7c97d4ff"
+      },
+      {
+        "source": "design/review/layout-approved.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/Panels/ExpeditionSelectPanel_Approved.png",
+        "sha256": "73acb2bffe9146735b5599ff9e7d7fa7435dfe8495d93077e6776376b93a7f47"
+      }
+    ],
+    "GameSettingsPanel": [
+      {
+        "source": "design/element-groups/Btn_Action_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Btn_Action_Sheet_4ca63a27.png",
+        "sha256": "4ca63a271bb6795164a65535cfbcf5051b451997f75ece1e6fd2bd230f42655b"
+      },
+      {
+        "source": "design/element-groups/Img_Surface_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Surface_Sheet_8801f27c.png",
+        "sha256": "8801f27cb72578e8624aad1229708c7e9c1ab9300d300c9d050a20128c3c6316"
+      },
+      {
+        "source": "design/element-groups/Inp_Form_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Inp_Form_Sheet_b3d9b3d6.png",
+        "sha256": "b3d9b3d6efd2688f76d84b2ff44dc2203ae5a8009245898052db16919711234d"
+      },
+      {
+        "source": "design/element-groups/Sld_Value_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Sld_Value_Sheet_96cdbedf.png",
+        "sha256": "96cdbedf077ce5ec5663bd65bc930843ff9f129b660c1c0797c7fe9a7f556772"
+      },
+      {
+        "source": "design/element-groups/Tgl_Sound_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Tgl_Sound_Sheet_c523080c.png",
+        "sha256": "c523080c049d269e6b442111022216034b5388f60770b74c7dcc149b053311fd"
+      },
+      {
+        "source": "design/element-groups/Txt_Typography_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Txt_Typography_Sheet_b17505c5.png",
+        "sha256": "b17505c5415ed34b71525509b08f37142acff7259a3080136f7c4c4e7c97d4ff"
+      },
+      {
+        "source": "design/review/layout-approved.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/Panels/GameSettingsPanel_Approved.png",
+        "sha256": "68732364c51f83368dbd6403d3bd918e2b6e79e99a58712055d6db434bcfd94b"
+      }
+    ],
+    "StarportHomePanel": [
+      {
+        "source": "design/element-groups/Btn_Action_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Btn_Action_Sheet_4ca63a27.png",
+        "sha256": "4ca63a271bb6795164a65535cfbcf5051b451997f75ece1e6fd2bd230f42655b"
+      },
+      {
+        "source": "design/element-groups/Img_Item_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Item_Sheet_8bdd3230.png",
+        "sha256": "8bdd3230328833fd58a12d9c519fee047a9bc179c0977d8e6edf8c43b1764d88"
+      },
+      {
+        "source": "design/element-groups/Img_Surface_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Surface_Sheet_8801f27c.png",
+        "sha256": "8801f27cb72578e8624aad1229708c7e9c1ab9300d300c9d050a20128c3c6316"
+      },
+      {
+        "source": "design/element-groups/Txt_Typography_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Txt_Typography_Sheet_b17505c5.png",
+        "sha256": "b17505c5415ed34b71525509b08f37142acff7259a3080136f7c4c4e7c97d4ff"
+      },
+      {
+        "source": "design/review/layout-approved.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/Panels/StarportHomePanel_Approved.png",
+        "sha256": "5c86063f58eac5cacb1799bb6263dd6ffb5f4faab5c9e92982d72c9c9a1cfd61"
+      }
+    ],
+    "SupplyInventoryPanel": [
+      {
+        "source": "design/element-groups/Btn_Action_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Btn_Action_Sheet_4ca63a27.png",
+        "sha256": "4ca63a271bb6795164a65535cfbcf5051b451997f75ece1e6fd2bd230f42655b"
+      },
+      {
+        "source": "design/element-groups/Img_Item_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Item_Sheet_8bdd3230.png",
+        "sha256": "8bdd3230328833fd58a12d9c519fee047a9bc179c0977d8e6edf8c43b1764d88"
+      },
+      {
+        "source": "design/element-groups/Img_Surface_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Surface_Sheet_8801f27c.png",
+        "sha256": "8801f27cb72578e8624aad1229708c7e9c1ab9300d300c9d050a20128c3c6316"
+      },
+      {
+        "source": "design/element-groups/Inp_Form_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Inp_Form_Sheet_b3d9b3d6.png",
+        "sha256": "b3d9b3d6efd2688f76d84b2ff44dc2203ae5a8009245898052db16919711234d"
+      },
+      {
+        "source": "design/element-groups/Scr_List_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Scr_List_Sheet_36795ae8.png",
+        "sha256": "36795ae819ccdb50248ca747ae93c35c604bbab1183e669c3adfa05dc512911b"
+      },
+      {
+        "source": "design/element-groups/Sld_Value_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Sld_Value_Sheet_96cdbedf.png",
+        "sha256": "96cdbedf077ce5ec5663bd65bc930843ff9f129b660c1c0797c7fe9a7f556772"
+      },
+      {
+        "source": "design/element-groups/Txt_Typography_Sheet.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Txt_Typography_Sheet_b17505c5.png",
+        "sha256": "b17505c5415ed34b71525509b08f37142acff7259a3080136f7c4c4e7c97d4ff"
+      },
+      {
+        "source": "design/review/layout-approved.png",
+        "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/Panels/SupplyInventoryPanel_Approved.png",
+        "sha256": "62e42263e59d77546e05528b2d5809a3c048c9625473b84197dada50132dbfb4"
+      }
+    ]
+  }
+}

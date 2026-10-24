@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "scope": "editor-demo",
+  "target": "UnityEditor",
+  "reviewedAt": "2026-10-24T15:20:14.702745+00:00",
+  "nativeAcceptanceSha256": "0af810f17237d16a72c2358cc15724a5669751132243e5f90f7dd6e99b666c45",
+  "evidence": "design-review/editor/editor-flow.json",
+  "evidenceSha256": "a430b675fa29d933c09e965e5b161d403667d365a9ed5a631424c815875ba878",
+  "notes": "Actual delivered Prefabs and native UI events in isolated Editor scenes; deterministic three-second test clock; in-memory demo session."
+}

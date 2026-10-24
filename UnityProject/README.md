@@ -21,4 +21,4 @@
 python -B -X utf8 Tools/verify-starport-panels.py --unity-project UnityProject
 ```
 
-[交付清单](../Workspaces/StarportSalvage/unity-delivery.json) 记录正式/暂存资源、字体和来源报告指纹。业务数据、页面导航、设置服务和结算接线由游戏层实现；当前 StageScene 的数据快照不等于完整游戏。Editor 原生控件和视觉检查与 VR 设备验收分别记录。
+[交付清单](../Workspaces/StarportSalvage/unity-delivery.json) 记录正式/暂存资源、字体和来源报告指纹。菜单“HTML转UGUI → 星港示例 → 运行编辑器业务验收”使用实际正式 Prefab、原生事件与内存演示状态，覆盖六页导航、整备、设置、三秒远征和一次性结算。适配器位于 Assets/Editor/StarportSalvage；StageScene 仍保留原快照。用户指定本轮仅验收 Unity 编辑器，结果见 [完成报告](../Audit/Reports/WORKFLOW_COMPLETION_20261024.md)。

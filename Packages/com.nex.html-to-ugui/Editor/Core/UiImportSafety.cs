@@ -99,6 +99,7 @@ namespace HtmlToUGUI.Editor
             ValidateAssetPath(settings.assetPrefix + "dummy.png");
             var doc = XDocument.Load(htmlPath);
             RemapStagedAssets(doc, settings, htmlPath);
+            settings.nativeAssembly = UiNativeAssembly.Load(settings.projectDirectory, settings.library);
             CssRules.Clear(); CssVariables.Clear(); OrderedRules.Clear(); CssWarnings.Clear();
             var dir = Path.GetDirectoryName(Path.GetFullPath(htmlPath));
             LoadLinkedCss(doc, dir);
@@ -109,11 +110,12 @@ namespace HtmlToUGUI.Editor
             plan.configuration = new { settings.panelName, settings.assetPrefix, outputFolder, settings.stagingRoot,
                 settings.allowPrefabReplacement, settings.requireSkillApproval, settings.boldWeight,
                 settings.projectName, settings.projectDirectory,
+                nativeAssembly = settings.nativeAssembly,
                 font = AssetDatabase.GetAssetPath(settings.font != null ? settings.font : TMP_Settings.defaultFontAsset),
                 fontMaterial = AssetDatabase.GetAssetPath(settings.fontMaterial) };
             plan.configurationSha256 = ConfigurationDigest(plan.configuration);
             plan.assetDependencyHash = AssetDatabase.GlobalArtifactDependencyVersion.ToString();
-            plan.inputsSha256 = CollectInputFingerprints(dir);
+            plan.inputsSha256 = CollectInputFingerprints(dir,settings.projectDirectory);
             plan.warnings.AddRange(report.warnings.Concat(CssWarnings));
             Action<string, string> add = (path, source) =>
             {

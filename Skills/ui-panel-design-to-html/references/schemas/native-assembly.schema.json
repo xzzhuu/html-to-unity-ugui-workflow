@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Game native-assembly contract v1",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "projectName",
+    "status",
+    "rounding"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "projectName": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "active"
+      ]
+    },
+    "rounding": {
+      "type": "object",
+      "required": [
+        "fromCssRadius"
+      ],
+      "properties": {
+        "fromCssRadius": {
+          "type": "boolean"
+        }
+      }
+    },
+    "slider": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "required": [
+        "trackHeight",
+        "handleSize",
+        "trackRadius",
+        "trackAssetId",
+        "handleAssetId",
+        "trackColorToken",
+        "fillColorToken",
+        "handleColorToken"
+      ],
+      "properties": {
+        "trackHeight": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 3.402823466e+38,
+          "minimum": 1.401298464e-45
+        },
+        "handleSize": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 3.402823466e+38,
+          "minimum": 1.401298464e-45
+        },
+        "trackRadius": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 3.402823466e+38,
+          "minimum": 1.401298464e-45
+        },
+        "trackAssetId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "handleAssetId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "trackColorToken": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fillColorToken": {
+          "type": "string",
+          "minLength": 1
+        },
+        "handleColorToken": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

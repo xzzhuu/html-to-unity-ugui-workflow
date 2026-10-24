@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "projectName": "StarportSalvage",
+  "target": "UnityEditor",
+  "initial": {
+    "captain": "林岚",
+    "credits": 2400,
+    "energy": 100,
+    "capacity": 20
+  },
+  "durationSeconds": 3,
+  "items": [
+    {
+      "id": "medkit",
+      "name": "急救包",
+      "category": "Supply",
+      "rarity": "普通",
+      "qty": 4,
+      "weight": 1,
+      "icon": "Img_ItemMedkit.png",
+      "description": "成功远征时，若有携带，\n消耗1个。"
+    },
+    {
+      "id": "battery",
+      "name": "能源电池",
+      "category": "Supply",
+      "rarity": "优良",
+      "qty": 2,
+      "weight": 2,
+      "icon": "Img_ItemBattery.png",
+      "description": "储存应急能源。\n演示结算不消耗。"
+    },
+    {
+      "id": "ration",
+      "name": "压缩口粮",
+      "category": "Supply",
+      "rarity": "普通",
+      "qty": 12,
+      "weight": 0.5,
+      "icon": "Img_ItemRation.png",
+      "description": "轻便的远征食品。\n演示结算不消耗。"
+    },
+    {
+      "id": "beacon",
+      "name": "应急信标",
+      "category": "Supply",
+      "rarity": "稀有",
+      "qty": 0,
+      "weight": 3,
+      "icon": "Img_ItemBeacon.png",
+      "description": "发出紧急求援信号。\n当前暂无库存。"
+    },
+    {
+      "id": "ore",
+      "name": "钛矿石",
+      "category": "Material",
+      "rarity": "普通",
+      "qty": 20,
+      "weight": 0,
+      "icon": "Img_ItemOre.png",
+      "description": "基础制造材料。"
+    },
+    {
+      "id": "alloy",
+      "name": "合金板",
+      "category": "Material",
+      "rarity": "优良",
+      "qty": 5,
+      "weight": 0,
+      "icon": "Img_ItemAlloy.png",
+      "description": "用于星港设施修复。"
+    },
+    {
+      "id": "circuit",
+      "name": "电路板",
+      "category": "Material",
+      "rarity": "优良",
+      "qty": 3,
+      "weight": 0,
+      "icon": "Img_ItemCircuit.png",
+      "description": "电子设备制造材料。"
+    },
+    {
+      "id": "chip",
+      "name": "数据芯片",
+      "category": "Material",
+      "rarity": "稀有",
+      "qty": 1,
+      "weight": 0,
+      "icon": "Img_ItemChip.png",
+      "description": "保存科技资料的载体。"
+    }
+  ],
+  "missions": [
+    {
+      "id": "cargo",
+      "name": "废弃货运站",
+      "risk": "低风险",
+      "credits": 100,
+      "energy": 20,
+      "duration": 10,
+      "unlocked": true,
+      "description": "回收遗留货箱与基础建材，适合新队长的首次远征。",
+      "recommended": "急救包",
+      "rewards": [
+        [
+          "credits",
+          300
+        ],
+        [
+          "ore",
+          8
+        ],
+        [
+          "alloy",
+          2
+        ]
+      ]
+    },
+    {
+      "id": "signal",
+      "name": "失联信号塔",
+      "risk": "中风险",
+      "credits": 200,
+      "energy": 35,
+      "duration": 20,
+      "unlocked": true,
+      "description": "搜索失联信号源，回收电子元件与科技资料。",
+      "recommended": "急救包、能源电池",
+      "rewards": [
+        [
+          "credits",
+          600
+        ],
+        [
+          "circuit",
+          3
+        ],
+        [
+          "chip",
+          1
+        ]
+      ]
+    },
+    {
+      "id": "reactor",
+      "name": "旧反应堆核心区",
+      "risk": "高风险",
+      "credits": 400,
+      "energy": 60,
+      "duration": 30,
+      "unlocked": false,
+      "description": "高辐射区域仍在封锁中。",
+      "recommended": "后续版本开放",
+      "rewards": [
+        [
+          "credits",
+          1200
+        ],
+        [
+          "alloy",
+          6
+        ],
+        [
+          "chip",
+          2
+        ]
+      ]
+    }
+  ]
+}

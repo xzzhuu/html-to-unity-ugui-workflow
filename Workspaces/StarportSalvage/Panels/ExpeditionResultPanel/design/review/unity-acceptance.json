@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 2,
+  "status": "passed",
+  "scope": "native-ui",
+  "reviewer": "Codex: actual fixture image review and native component checks",
+  "reviewedAt": "2026-10-24T23:05:58.251686+08:00",
+  "approvedLayoutSha256": "fea455db244735a1d176300c960cd55617ea2b74b7907cc6e2cb781856a32a6e",
+  "approvedElementGroupsSha256": "116ca7da6a2ea399910565336bea83458d3fc579613e400957561034c2ecb05d",
+  "checks": {
+    "structure": "passed",
+    "visual": "passed",
+    "interactions": "passed",
+    "references": "passed",
+    "resolution": "passed"
+  },
+  "screenshots": [
+    "design/review/unity/1280x720/actual.png",
+    "design/review/unity/1920x1080/actual.png",
+    "design/review/unity/1920x1200/actual.png"
+  ],
+  "evidenceFiles": [
+    "design/review/unity/1280x720/geometry.json",
+    "design/review/unity/1280x720/native-audit.json",
+    "design/review/unity/1920x1080/geometry.json",
+    "design/review/unity/1920x1080/native-audit.json",
+    "design/review/unity/1920x1200/geometry.json",
+    "design/review/unity/1920x1200/native-audit.json",
+    "design/review/unity/browser-reference.json"
+  ],
+  "matrixCases": [
+    {
+      "fixture": "Result",
+      "viewport": "1280x720",
+      "reference": "design/review/unity/browser-reference.json",
+      "audit": "design/review/unity/1280x720/native-audit.json",
+      "screenshot": "design/review/unity/1280x720/actual.png",
+      "geometry": "design/review/unity/1280x720/geometry.json"
+    },
+    {
+      "fixture": "Result",
+      "viewport": "1920x1080",
+      "reference": "design/review/unity/browser-reference.json",
+      "audit": "design/review/unity/1920x1080/native-audit.json",
+      "screenshot": "design/review/unity/1920x1080/actual.png",
+      "geometry": "design/review/unity/1920x1080/geometry.json"
+    },
+    {
+      "fixture": "Result",
+      "viewport": "1920x1200",
+      "reference": "design/review/unity/browser-reference.json",
+      "audit": "design/review/unity/1920x1200/native-audit.json",
+      "screenshot": "design/review/unity/1920x1200/actual.png",
+      "geometry": "design/review/unity/1920x1200/geometry.json"
+    }
+  ],
+  "referenceImages": [
+    {
+      "source": "design/element-groups/Btn_Action_Sheet.png",
+      "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Btn_Action_Sheet_4ca63a27.png",
+      "sha256": "4ca63a271bb6795164a65535cfbcf5051b451997f75ece1e6fd2bd230f42655b",
+      "guid": "943356e1d333b284eb888e764c415c4d",
+      "metaSha256": "e10ab24c1314ef267368dacac0af2be3326cbcc88421cf55cd431b480f1e570f"
+    },
+    {
+      "source": "design/element-groups/Img_Item_Sheet.png",
+      "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Item_Sheet_8bdd3230.png",
+      "sha256": "8bdd3230328833fd58a12d9c519fee047a9bc179c0977d8e6edf8c43b1764d88",
+      "guid": "4761049c837393548ae0dfaff28f77a0",
+      "metaSha256": "acd3c698ff060cf9bb8684039bec5fb9a9b23d5f97c34a717d862b62434c94ca"
+    },
+    {
+      "source": "design/element-groups/Img_Surface_Sheet.png",
+      "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Surface_Sheet_8801f27c.png",
+      "sha256": "8801f27cb72578e8624aad1229708c7e9c1ab9300d300c9d050a20128c3c6316",
+      "guid": "049dfdd88f3f4c84f91e3a44f15c722a",
+      "metaSha256": "e89979a88ead75898e54af5aa9f12d0ba96acb03f8257afcc55be5e225c78758"
+    },
+    {
+      "source": "design/element-groups/Img_Utility_Sheet.png",
+      "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Utility_Sheet_87307b74.png",
+      "sha256": "87307b740a4d2c3b4d8be69e3eba2c364fc8346bec3b6daea5b89172cd53f411",
+      "guid": "1001199f5f05f624c8b4d00038d6b67a",
+      "metaSha256": "7e3228f60705dd612299d7876fd6db0b66d2f42571dfc80dd4e59bcfa77542c9"
+    },
+    {
+      "source": "design/element-groups/Scr_List_Sheet.png",
+      "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Scr_List_Sheet_36795ae8.png",
+      "sha256": "36795ae819ccdb50248ca747ae93c35c604bbab1183e669c3adfa05dc512911b",
+      "guid": "6665d12c864805942a1e4f2bb7a54bc4",
+      "metaSha256": "961bf62f82a44171b6c36e2285efd57df59212134f6bd712bd97af958d70547a"
+    },
+    {
+      "source": "design/element-groups/Txt_Typography_Sheet.png",
+      "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Txt_Typography_Sheet_b17505c5.png",
+      "sha256": "b17505c5415ed34b71525509b08f37142acff7259a3080136f7c4c4e7c97d4ff",
+      "guid": "1fc5a2a5af04e3840bb8661d2e6cf467",
+      "metaSha256": "08edf74dea86b8d90e1e2bdd688e3335fd584b9f08e8b49dad2e37b1dc9e2ed7"
+    },
+    {
+      "source": "design/review/layout-approved.png",
+      "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/Panels/ExpeditionResultPanel_Approved.png",
+      "sha256": "fea455db244735a1d176300c960cd55617ea2b74b7907cc6e2cb781856a32a6e",
+      "guid": "38d4019ff3f606941bd7b40fb77453f2",
+      "metaSha256": "0253e35cfbcece0d8393ee30c0777418a2fab96d4535e7f761eeee91439a170f"
+    }
+  ],
+  "importReport": "design/review/unity-import-report.json",
+  "sourceImportReportSha256": "cb18c2086206c0393ee33210ce636efa5392be4eff0b8693694465a1c4641bff",
+  "finalArtifacts": [
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+      "guid": "569c65c1ad5f4dd8965ad73a1a796f72",
+      "sha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+      "metaSha256": "dd8513a59b6dce63e83f098024c9fcb2ee5736d0b24b33e6efb511611b05db02"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png",
+      "guid": "88e285470c2e4d23adb84a2bc99dfcdf",
+      "sha256": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+      "metaSha256": "7ed44425fb95df0e139f260d230d963e8b21574a702a421d6a7f729df71d518a"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/Item/Item_RewardEntry.prefab",
+      "guid": "0ede1396e7112aa4599eacf90c9af879",
+      "sha256": "f3a3de6d7872da89ee0f2b4588122ba6804748ee35974323c653a775e6dd2ec3",
+      "metaSha256": "0dc46d5afcf08e38ed6d5ccc1a2002a66d85470da7846a4f028aa45a94cb616b"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/Confirm/Img_Confirm_Surface_Default_Image_Confirm_Surface_Default.png",
+      "guid": "459519c99fa0469daa8e043e76cbadb7",
+      "sha256": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192",
+      "metaSha256": "1f08adece8e4b12157e035024f821af45c7baed029177f3a0f9ca73cac3f807a"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png",
+      "guid": "bfb2c4fb0ec84be29a7743590f5aeb9b",
+      "sha256": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+      "metaSha256": "836d5bbc76604886e3f9dd6aa8ed27de166a20e8c05da05273a766b28c527282"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png",
+      "guid": "f95818cf9c924fedbd495dc81f66631c",
+      "sha256": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+      "metaSha256": "e509b8c0e0d966b717cfce9918143f20457991bad7c48be86f17d40dfc0f1de4"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+      "guid": "5789c3328dcf4d079a53e068f6997dd0",
+      "sha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "metaSha256": "54ff5ce6210f1b553d42ff55bf7560d5004df118551383812e6c36ff398aedc0"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png",
+      "guid": "20b8d08a0f7c4693a28c721c4902363f",
+      "sha256": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+      "metaSha256": "6cd081ecd7a6f01a444dea9f520dd75186b6ef719eb868157c613d3085e67310"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png",
+      "guid": "1025a2438b4b4bbfade88046dc812419",
+      "sha256": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+      "metaSha256": "49b071481d806e256cde1d2c2f318a9b30924381dba6629d7fab90231b6c8bed"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/ExpeditionResultPanel/ExpeditionResultPanel.prefab",
+      "guid": "6933b562961e0274a85532a312049300",
+      "sha256": "30455fb335f866001618d8b4454656a9804bcf8fe62915241297afd2de8fd6ac",
+      "metaSha256": "7f477f21ee0a25405f7c3a732fd7a9c98e511291082f561e44f3f6b52f3f68f1"
+    }
+  ],
+  "externalDependencies": [
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+      "guid": "68e6db2ebdc24f95958faec2be5558d6",
+      "sha256": "bbae422625f31bfa560ac5ce44c402fafd16dba55d496c6279ca985b652b58bf",
+      "metaSha256": "0897fb06d170043fffa2d28783b347bbaee87a3f09f08374ca44b2c3848697d6"
+    },
+    {
+      "path": "Assets/Art/Fonts/PICOSansVFESC SDF.asset",
+      "guid": "0d4b74244fad09f49a610da1b3997090",
+      "sha256": "a570ee2423b581a62d0f680c2078309f4752472cf8298bdd95ba595648c0e249",
+      "metaSha256": "920dc39fd3bf9f733d8705a0d50fcffbe4eb8ebdbb68b7f6511d18cb904858b6"
+    },
+    {
+      "path": "Assets/Art/Fonts/PICOSansVFESC.ttf",
+      "guid": "509b550acb51047439bd7ef6789149aa",
+      "sha256": "c1d60dcfc0ec5060700e417425b2cdda3aae139bfed333b7d283623158c705cf",
+      "metaSha256": "28b4efb42db79e14e4c9d4aa5b10e5f5a3585830db59ab2d08951992d46affa9"
+    }
+  ],
+  "gameContractsSha256": {
+    "contracts/fixtures.json": "5857653de2960bbdcb1438c842133a049f87a82c0d614566b4ca02b15e9e0cc8",
+    "contracts/native-assembly.json": "9987ba240163c83922754ca59976e29e8414cb0fb11b4a7c72466c8d6eba0a43",
+    "contracts/screens.json": "1e6229d775bd2109d8a50d46f125d5d8623b645a731e0c9694f9784ff4f86f35",
+    "contracts/style.json": "19a2bbc036d375363199989f10278c182e090c2e4fa93e9a385dda25b26e3588"
+  },
+  "gameInputsSha256": {
+    "contracts/fixtures.json": "5857653de2960bbdcb1438c842133a049f87a82c0d614566b4ca02b15e9e0cc8",
+    "contracts/native-assembly.json": "9987ba240163c83922754ca59976e29e8414cb0fb11b4a7c72466c8d6eba0a43",
+    "contracts/screens.json": "1e6229d775bd2109d8a50d46f125d5d8623b645a731e0c9694f9784ff4f86f35",
+    "contracts/style.json": "19a2bbc036d375363199989f10278c182e090c2e4fa93e9a385dda25b26e3588",
+    "project.assets.json": "b8e4068538f7bdc80708cdf395469fd06bc5e06e32ce0bda5f616f1f499792e4",
+    "shared-assets/project/Button/Btn_Control_Background_Surface_Normal.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "shared-assets/project/Button/Btn_ItemMedkit_Icon_Normal.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+    "shared-assets/project/Button/Btn_RoundedSurface_Icon_Normal.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "shared-assets/project/Button/Btn_RoundedSurface_Surface_Normal.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "shared-assets/project/Image/Img_Circle_Surface_Default.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "shared-assets/project/Image/Img_Confirm_Surface_Default.png": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192",
+    "shared-assets/project/Image/Img_Credits_Surface_Default.png": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+    "shared-assets/project/Image/Img_ItemAlloy_Surface_Default.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "shared-assets/project/Image/Img_ItemBattery_Surface_Default.png": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+    "shared-assets/project/Image/Img_ItemBeacon_Surface_Default.png": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+    "shared-assets/project/Image/Img_ItemChip_Surface_Default.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "shared-assets/project/Image/Img_ItemCircuit_Surface_Default.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "shared-assets/project/Image/Img_ItemMedkit_Surface_Default.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+    "shared-assets/project/Image/Img_ItemOre_Surface_Default.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "shared-assets/project/Image/Img_ItemRation_Surface_Default.png": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+    "shared-assets/project/Image/Img_RoundedSurface_Surface_Default.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "shared-assets/project/Image/Img_Value_Bar_Surface_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "shared-assets/project/Slider/Sld_Circle_Handle_Default.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "shared-assets/project/Slider/Sld_Value_Bar_Fill_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "shared-assets/project/Slider/Sld_Value_Bar_Track_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "shared-assets/project/TMP_InputField/Inp_Control_Background_Surface_Default.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "shared-assets/project/Toggle/Tgl_Sound_Surface_Disabled.png": "259614e8bc4b5e044b9fded3998b8fb41ac94199cec64a0141933a49c44aec3a",
+    "shared-assets/project/Toggle/Tgl_Sound_Surface_Off.png": "dd991dbb3ebe7dc320aafbeb83a0f8ff1c32c3cfa5e48fc476a226983f76dffd",
+    "shared-assets/project/Toggle/Tgl_Sound_Surface_On.png": "7e3d245862ddca19f5903cf983dc3b741bea7ab95c21bfc3de6d1f6b8e2e13ee"
+  },
+  "filesSha256": {
+    "html/assets/project/Image/Img_ItemCircuit_Surface_Default.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "design/review/unity/1920x1080/native-audit.json": "169f702dadfc0aa8c01a26ca857214f472721ee8988867f65e806bac6bb60bf2",
+    "design/review/unity/1280x720/native-audit.json": "57ea2a5bd3b53db2814d09d1e1c2e805be08e3776f6a71b825402a93a759c0ff",
+    "html/assets/shared/Img_ItemCircuit.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "html/assets/project/Image/Img_ItemAlloy_Surface_Default.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "html/assets/project/Image/Img_RoundedSurface_Surface_Default.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "html/assets/project/Image/Img_Credits_Surface_Default.png": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+    "html/assets/project/Image/Img_Confirm_Surface_Default.png": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192",
+    "html/assets/project/Image/Img_ItemChip_Surface_Default.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "design/element-groups.json": "2f855ce774d207283deb70956f5220d5b08449ef0db69b005fe4245d1c45fb25",
+    "html/assets/shared/Img_ItemOre.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "design/review/unity/1920x1080/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/browser-reference.json": "72204824bd82cdd2dc2bf2bc5a23b0565626a99f9457d3dcfa23ef8661b54939",
+    "design/review/unity-import-report.json": "cb18c2086206c0393ee33210ce636efa5392be4eff0b8693694465a1c4641bff",
+    "design/review/unity/1920x1200/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "html/assets/shared/Img_Credits.png": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+    "html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "html/assets/shared/Img_ItemAlloy.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "html/assets/project/Image/Img_ItemOre_Surface_Default.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "design/review/unity/1920x1200/native-audit.json": "63fc23769edb72df44317747c991413ba9912a362c2e9158a5c9b46bb0534877",
+    "html/assets/project/Button/Btn_Control_Background_Surface_Normal.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "html/assets/shared/Img_ItemChip.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "design/review/unity/1920x1080/actual.png": "d1da14c0d7175490c59e01d511e5d0a6fed5d5129dcbd59282553e32a96d92af",
+    "design/review/unity/1280x720/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "html/assets/shared/Img_Confirm.png": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192",
+    "design/review/unity/1280x720/actual.png": "0a682ad0759386c26cff240bccb378125dec654b54c93d3865948ddbd92b4a2f",
+    "design/review/unity/1920x1200/actual.png": "d5044bd1dfa0c440eff23e48c8f6b50568432aca6449a4bbcb74f834c4766f9e"
+  },
+  "testedResolutions": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "mode": "isolated-uniform-fit"
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "mode": "isolated-uniform-fit"
+    },
+    {
+      "width": 1920,
+      "height": 1200,
+      "mode": "isolated-uniform-fit"
+    }
+  ],
+  "testedFixtures": [
+    "Result"
+  ],
+  "businessIntegration": {
+    "status": "not-checked",
+    "reason": "Game-service wiring is outside native UI acceptance"
+  },
+  "device": {
+    "status": "not-checked",
+    "reason": "No target-device run"
+  },
+  "notes": "All declared native fixtures and viewports are covered; dynamic presentation uses declared fixture rules. Existing business callbacks are isolated. This does not certify game services or device behavior."
+}

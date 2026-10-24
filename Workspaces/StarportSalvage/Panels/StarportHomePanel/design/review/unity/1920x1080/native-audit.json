@@ -1,0 +1,519 @@
+{
+  "prefab": "Assets/Art/UIPrefab/StarportSalvage/StarportHomePanel/StarportHomePanel.prefab",
+  "referenceSha256": "e4af671eeb2c7eef45e97da88b8e2cc10fcf1f3f72b412f11ed32b3aaa39ad86",
+  "nodes": [
+    {
+      "path": "",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1920.0,
+      "height": 1080.0
+    },
+    {
+      "path": "Group_PanelBody",
+      "row": -1,
+      "visible": true,
+      "x": 120.0,
+      "y": 80.0,
+      "width": 1680.0,
+      "height": 920.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Main",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 250.0,
+      "width": 960.0,
+      "height": 600.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Main/Group_OnlineBadge",
+      "row": -1,
+      "visible": true,
+      "x": 200.0,
+      "y": 286.0,
+      "width": 276.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Main/Txt_Online",
+      "row": -1,
+      "visible": true,
+      "x": 214.0,
+      "y": 289.0,
+      "width": 340.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Main/Txt_GameName",
+      "row": -1,
+      "visible": true,
+      "x": 200.0,
+      "y": 364.0,
+      "width": 880.0,
+      "height": 112.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Main/Txt_GameEnglish",
+      "row": -1,
+      "visible": true,
+      "x": 205.0,
+      "y": 466.0,
+      "width": 840.0,
+      "height": 40.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Main/Txt_Welcome",
+      "row": -1,
+      "visible": true,
+      "x": 205.0,
+      "y": 538.0,
+      "width": 820.0,
+      "height": 55.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Main/Txt_Introduction",
+      "row": -1,
+      "visible": true,
+      "x": 205.0,
+      "y": 592.0,
+      "width": 840.0,
+      "height": 45.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Main/Btn_OpenExpeditions",
+      "row": -1,
+      "visible": true,
+      "x": 205.0,
+      "y": 714.0,
+      "width": 360.0,
+      "height": 76.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Main/Btn_OpenInventory",
+      "row": -1,
+      "visible": true,
+      "x": 589.0,
+      "y": 714.0,
+      "width": 300.0,
+      "height": 76.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ExpeditionStatus",
+      "row": -1,
+      "visible": true,
+      "x": 1152.0,
+      "y": 250.0,
+      "width": 608.0,
+      "height": 600.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ExpeditionStatus/Txt_ControlTitle",
+      "row": -1,
+      "visible": true,
+      "x": 1188.0,
+      "y": 286.0,
+      "width": 340.0,
+      "height": 45.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ExpeditionStatus/Txt_TaskState",
+      "row": -1,
+      "visible": true,
+      "x": 1580.0,
+      "y": 289.0,
+      "width": 140.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ExpeditionStatus/Txt_TaskHeadline",
+      "row": -1,
+      "visible": true,
+      "x": 1188.0,
+      "y": 364.0,
+      "width": 536.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ExpeditionStatus/Txt_TaskDescription",
+      "row": -1,
+      "visible": true,
+      "x": 1188.0,
+      "y": 424.0,
+      "width": 536.0,
+      "height": 58.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ExpeditionStatus/Img_StatusDivider",
+      "row": -1,
+      "visible": true,
+      "x": 1188.0,
+      "y": 490.0,
+      "width": 536.0,
+      "height": 2.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ExpeditionStatus/Txt_LoadoutTitle",
+      "row": -1,
+      "visible": true,
+      "x": 1188.0,
+      "y": 524.0,
+      "width": 480.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ExpeditionStatus/Group_SummaryMedkitSeat",
+      "row": -1,
+      "visible": true,
+      "x": 1188.0,
+      "y": 574.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ExpeditionStatus/Group_SummaryMedkitSeat/Img_SummaryMedkit",
+      "row": -1,
+      "visible": true,
+      "x": 1188.0,
+      "y": 574.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ExpeditionStatus/Txt_SummaryNameMedkit",
+      "row": -1,
+      "visible": true,
+      "x": 1260.0,
+      "y": 580.0,
+      "width": 320.0,
+      "height": 42.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ExpeditionStatus/Txt_SummaryQuantityMedkit",
+      "row": -1,
+      "visible": true,
+      "x": 1636.0,
+      "y": 580.0,
+      "width": 92.0,
+      "height": 42.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ExpeditionStatus/Group_SummaryBatterySeat",
+      "row": -1,
+      "visible": true,
+      "x": 1188.0,
+      "y": 652.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ExpeditionStatus/Group_SummaryBatterySeat/Img_SummaryBattery",
+      "row": -1,
+      "visible": true,
+      "x": 1188.0,
+      "y": 652.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ExpeditionStatus/Txt_SummaryNameBattery",
+      "row": -1,
+      "visible": true,
+      "x": 1260.0,
+      "y": 658.0,
+      "width": 320.0,
+      "height": 42.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ExpeditionStatus/Txt_SummaryQuantityBattery",
+      "row": -1,
+      "visible": true,
+      "x": 1636.0,
+      "y": 658.0,
+      "width": 92.0,
+      "height": 42.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ExpeditionStatus/Txt_LoadoutSummary",
+      "row": -1,
+      "visible": true,
+      "x": 1188.0,
+      "y": 752.0,
+      "width": 536.0,
+      "height": 40.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ExpeditionStatus/Btn_ViewResult",
+      "row": -1,
+      "visible": false,
+      "x": 1188.0,
+      "y": 754.0,
+      "width": 320.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 112.0,
+      "width": 1600.0,
+      "height": 108.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_Title",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 112.0,
+      "width": 700.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_Subtitle",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 170.0,
+      "width": 1100.0,
+      "height": 35.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceCreditsLabel",
+      "row": -1,
+      "visible": true,
+      "x": 980.0,
+      "y": 115.0,
+      "width": 240.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceCredits",
+      "row": -1,
+      "visible": true,
+      "x": 980.0,
+      "y": 149.0,
+      "width": 270.0,
+      "height": 50.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceEnergyLabel",
+      "row": -1,
+      "visible": true,
+      "x": 1220.0,
+      "y": 115.0,
+      "width": 240.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceEnergy",
+      "row": -1,
+      "visible": true,
+      "x": 1220.0,
+      "y": 149.0,
+      "width": 270.0,
+      "height": 50.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeightLabel",
+      "row": -1,
+      "visible": true,
+      "x": 1480.0,
+      "y": 115.0,
+      "width": 240.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeight",
+      "row": -1,
+      "visible": true,
+      "x": 1480.0,
+      "y": 149.0,
+      "width": 270.0,
+      "height": 50.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Img_HeaderDivider",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 218.0,
+      "width": 1600.0,
+      "height": 2.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Footer",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 890.0,
+      "width": 1600.0,
+      "height": 108.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Footer/Txt_Feedback",
+      "row": -1,
+      "visible": true,
+      "x": 420.0,
+      "y": 970.0,
+      "width": 1000.0,
+      "height": 28.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Footer/Txt_DemoNotice",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 925.0,
+      "width": 1080.0,
+      "height": 35.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Footer/Btn_OpenSettings",
+      "row": -1,
+      "visible": true,
+      "x": 1300.0,
+      "y": 900.0,
+      "width": 180.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Footer/Btn_ResetDemo",
+      "row": -1,
+      "visible": true,
+      "x": 1504.0,
+      "y": 900.0,
+      "width": 256.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_IconCatalog",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 32.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_IconCatalog/Img_ItemBeacon",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 32.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_IconCatalog/Img_ItemRation",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 32.0,
+      "height": 32.0
+    }
+  ],
+  "schemaVersion": 2,
+  "fixture": "Prepared",
+  "prefabSha256": "b19d2317d251ae82e30c48e742f25939c3da6f14fa5414a057a0e30c7c3e1de4",
+  "prefabMetaSha256": "9ad5bf109a79d76656660703ad6eb0023088146fc130b9859a2550aa043eb85a",
+  "converterVersion": "0.4.1",
+  "dependencies": [
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png",
+    "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+    "Assets/Art/UI/Sprites/StarportSalvage/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+    "Assets/Art/UIPrefab/StarportSalvage/StarportHomePanel/StarportHomePanel.prefab",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png",
+    "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd",
+    "Packages/com.unity.textmeshpro/Scripts/Runtime/TextMeshProUGUI.cs",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png",
+    "Assets/Art/Fonts/PICOSansVFESC SDF.asset",
+    "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Text Component Icon.psd",
+    "Packages/com.unity.ugui/Runtime/UI/Core/Button.cs",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+    "Packages/com.unity.ugui/Runtime/UI/Core/Image.cs",
+    "Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_FontAsset.cs",
+    "Assets/Art/Fonts/PICOSansVFESC.ttf",
+    "Packages/com.nex.html-to-ugui/Runtime/Core/UiBindingMap.cs"
+  ],
+  "width": 1920,
+  "height": 1080,
+  "issues": [],
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "nativeControls": [
+    "Btn_OpenExpeditions: pointer click + disabled",
+    "Btn_OpenInventory: pointer click + disabled",
+    "Btn_OpenSettings: pointer click + disabled",
+    "Btn_ResetDemo: pointer click + disabled"
+  ],
+  "status": "passed",
+  "screenshotSha256": "da0d464c1b2deef2e5203594e6526ec6d26d35d1d81c0d34c75972fb2731033f",
+  "artifacts": [
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png",
+      "guid": "4e27a934fb3a49cfad6bf79cb24088a0",
+      "sha256": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+      "metaSha256": "c6133959197d5143a4bc3b27c77c1e925de885b6ea30c116f81ce714234f1cdf"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png",
+      "guid": "72e66db463c84a28a6238b3c782b79d0",
+      "sha256": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+      "metaSha256": "93b3f6ee7b6ba38fd5495ce4e0b110aaebfcbbed2afda147839719b6cff20266"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+      "guid": "68e6db2ebdc24f95958faec2be5558d6",
+      "sha256": "bbae422625f31bfa560ac5ce44c402fafd16dba55d496c6279ca985b652b58bf",
+      "metaSha256": "0897fb06d170043fffa2d28783b347bbaee87a3f09f08374ca44b2c3848697d6"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+      "guid": "569c65c1ad5f4dd8965ad73a1a796f72",
+      "sha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+      "metaSha256": "dd8513a59b6dce63e83f098024c9fcb2ee5736d0b24b33e6efb511611b05db02"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/StarportHomePanel/StarportHomePanel.prefab",
+      "guid": "d12e8363b202b32428a3526e9b1afb86",
+      "sha256": "b19d2317d251ae82e30c48e742f25939c3da6f14fa5414a057a0e30c7c3e1de4",
+      "metaSha256": "9ad5bf109a79d76656660703ad6eb0023088146fc130b9859a2550aa043eb85a"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png",
+      "guid": "5919863819194c2aae36b1544a77168e",
+      "sha256": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+      "metaSha256": "a270f9ac529a8d3c28ac6b576d8c7ad5437c1e6c9a726b29d59a4269a10caf7e"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png",
+      "guid": "c1de7c1205534ddc95d1519be9fa79c3",
+      "sha256": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+      "metaSha256": "794b32a38bf805fd898b3d8d8378257a5af4a5fe1805a74ab0166642da5ffc8a"
+    },
+    {
+      "path": "Assets/Art/Fonts/PICOSansVFESC SDF.asset",
+      "guid": "0d4b74244fad09f49a610da1b3997090",
+      "sha256": "a570ee2423b581a62d0f680c2078309f4752472cf8298bdd95ba595648c0e249",
+      "metaSha256": "920dc39fd3bf9f733d8705a0d50fcffbe4eb8ebdbb68b7f6511d18cb904858b6"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+      "guid": "5789c3328dcf4d079a53e068f6997dd0",
+      "sha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "metaSha256": "54ff5ce6210f1b553d42ff55bf7560d5004df118551383812e6c36ff398aedc0"
+    },
+    {
+      "path": "Assets/Art/Fonts/PICOSansVFESC.ttf",
+      "guid": "509b550acb51047439bd7ef6789149aa",
+      "sha256": "c1d60dcfc0ec5060700e417425b2cdda3aae139bfed333b7d283623158c705cf",
+      "metaSha256": "28b4efb42db79e14e4c9d4aa5b10e5f5a3585830db59ab2d08951992d46affa9"
+    }
+  ]
+}

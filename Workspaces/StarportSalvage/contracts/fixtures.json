@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "projectName": "StarportSalvage",
+  "source": "Existing preview_runtime.js fixture behavior",
+  "fixtures": [
+    {
+      "id": "Default",
+      "panelName": "StarportHomePanel",
+      "expected": {
+        "credits": 2400,
+        "loadout": {}
+      }
+    },
+    {
+      "id": "Prepared",
+      "panelName": "SupplyInventoryPanel",
+      "expected": {
+        "loadout.medkit": 3,
+        "loadout.battery": 2
+      }
+    },
+    {
+      "id": "Result",
+      "panelName": "ExpeditionResultPanel",
+      "expected": {
+        "credits": 2300,
+        "energy": 80,
+        "active.phase": "pending"
+      }
+    },
+    {
+      "id": "OneItem",
+      "panelName": "SupplyInventoryPanel",
+      "expected": {
+        "inventory.length": 1
+      }
+    },
+    {
+      "id": "ManyItems",
+      "panelName": "SupplyInventoryPanel",
+      "expected": {
+        "inventory.length": 30
+      }
+    },
+    {
+      "id": "EmptyInventory",
+      "panelName": "SupplyInventoryPanel",
+      "expected": {
+        "inventory.length": 0
+      }
+    },
+    {
+      "id": "SearchEmpty",
+      "panelName": "SupplyInventoryPanel",
+      "expected": {
+        "view.search": "不存在的物品"
+      }
+    },
+    {
+      "id": "Insufficient",
+      "panelName": "ExpeditionSelectPanel",
+      "expected": {
+        "credits": 50,
+        "energy": 10
+      }
+    },
+    {
+      "id": "Overweight",
+      "panelName": "SupplyInventoryPanel",
+      "expected": {
+        "capacity": 10
+      }
+    },
+    {
+      "id": "LongText",
+      "panelName": "SupplyInventoryPanel",
+      "expected": {
+        "captain": "星港回收探索队第一任队长"
+      }
+    },
+    {
+      "id": "Loading",
+      "panelName": "ExpeditionSelectPanel",
+      "expected": {
+        "dataState": "loading"
+      }
+    },
+    {
+      "id": "Error",
+      "panelName": "ExpeditionSelectPanel",
+      "expected": {
+        "dataState": "error"
+      }
+    },
+    {
+      "id": "EmptyMissions",
+      "panelName": "ExpeditionSelectPanel",
+      "expected": {
+        "dataState": "empty"
+      }
+    }
+  ]
+}

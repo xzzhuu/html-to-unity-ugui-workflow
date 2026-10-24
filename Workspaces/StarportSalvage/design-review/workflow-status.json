@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "projectName": "StarportSalvage",
+  "scope": "native-ui",
+  "status": "passed",
+  "editorVerification": "passed",
+  "contractErrors": [],
+  "panels": [
+    {
+      "panelName": "ActionConfirmPanel",
+      "design": {
+        "status": "passed"
+      },
+      "html": {
+        "status": "passed"
+      },
+      "unity": {
+        "status": "passed",
+        "evidence": "unity-acceptance.json",
+        "scope": "native-ui"
+      },
+      "fixtureCoverage": {
+        "declared": [
+          "Prepared"
+        ],
+        "nativeTested": [
+          "Prepared"
+        ],
+        "nativePending": []
+      },
+      "businessIntegration": {
+        "status": "passed",
+        "scope": "editor-demo",
+        "target": "UnityEditor",
+        "checks": 63,
+        "evidence": "design-review/editor/editor-flow.json"
+      },
+      "device": {
+        "status": "not-applicable",
+        "reason": "User requested Unity Editor testing only"
+      }
+    },
+    {
+      "panelName": "ExpeditionResultPanel",
+      "design": {
+        "status": "passed"
+      },
+      "html": {
+        "status": "passed"
+      },
+      "unity": {
+        "status": "passed",
+        "evidence": "unity-acceptance.json",
+        "scope": "native-ui"
+      },
+      "fixtureCoverage": {
+        "declared": [
+          "Result"
+        ],
+        "nativeTested": [
+          "Result"
+        ],
+        "nativePending": []
+      },
+      "businessIntegration": {
+        "status": "passed",
+        "scope": "editor-demo",
+        "target": "UnityEditor",
+        "checks": 63,
+        "evidence": "design-review/editor/editor-flow.json"
+      },
+      "device": {
+        "status": "not-applicable",
+        "reason": "User requested Unity Editor testing only"
+      }
+    },
+    {
+      "panelName": "ExpeditionSelectPanel",
+      "design": {
+        "status": "passed"
+      },
+      "html": {
+        "status": "passed"
+      },
+      "unity": {
+        "status": "passed",
+        "evidence": "unity-acceptance.json",
+        "scope": "native-ui"
+      },
+      "fixtureCoverage": {
+        "declared": [
+          "Default",
+          "Prepared",
+          "Insufficient",
+          "Loading",
+          "Error",
+          "EmptyMissions"
+        ],
+        "nativeTested": [
+          "Default",
+          "EmptyMissions",
+          "Error",
+          "Insufficient",
+          "Loading",
+          "Prepared"
+        ],
+        "nativePending": []
+      },
+      "businessIntegration": {
+        "status": "passed",
+        "scope": "editor-demo",
+        "target": "UnityEditor",
+        "checks": 63,
+        "evidence": "design-review/editor/editor-flow.json"
+      },
+      "device": {
+        "status": "not-applicable",
+        "reason": "User requested Unity Editor testing only"
+      }
+    },
+    {
+      "panelName": "GameSettingsPanel",
+      "design": {
+        "status": "passed"
+      },
+      "html": {
+        "status": "passed"
+      },
+      "unity": {
+        "status": "passed",
+        "evidence": "unity-acceptance.json",
+        "scope": "native-ui"
+      },
+      "fixtureCoverage": {
+        "declared": [
+          "Default",
+          "Prepared"
+        ],
+        "nativeTested": [
+          "Default",
+          "Prepared"
+        ],
+        "nativePending": []
+      },
+      "businessIntegration": {
+        "status": "passed",
+        "scope": "editor-demo",
+        "target": "UnityEditor",
+        "checks": 63,
+        "evidence": "design-review/editor/editor-flow.json"
+      },
+      "device": {
+        "status": "not-applicable",
+        "reason": "User requested Unity Editor testing only"
+      }
+    },
+    {
+      "panelName": "StarportHomePanel",
+      "design": {
+        "status": "passed"
+      },
+      "html": {
+        "status": "passed"
+      },
+      "unity": {
+        "status": "passed",
+        "evidence": "unity-acceptance.json",
+        "scope": "native-ui"
+      },
+      "fixtureCoverage": {
+        "declared": [
+          "Default",
+          "Prepared"
+        ],
+        "nativeTested": [
+          "Default",
+          "Prepared"
+        ],
+        "nativePending": []
+      },
+      "businessIntegration": {
+        "status": "passed",
+        "scope": "editor-demo",
+        "target": "UnityEditor",
+        "checks": 63,
+        "evidence": "design-review/editor/editor-flow.json"
+      },
+      "device": {
+        "status": "not-applicable",
+        "reason": "User requested Unity Editor testing only"
+      }
+    },
+    {
+      "panelName": "SupplyInventoryPanel",
+      "design": {
+        "status": "passed"
+      },
+      "html": {
+        "status": "passed"
+      },
+      "unity": {
+        "status": "passed",
+        "evidence": "unity-acceptance.json",
+        "scope": "native-ui"
+      },
+      "fixtureCoverage": {
+        "declared": [
+          "Default",
+          "Prepared",
+          "OneItem",
+          "ManyItems",
+          "EmptyInventory",
+          "SearchEmpty",
+          "Overweight",
+          "LongText"
+        ],
+        "nativeTested": [
+          "Default",
+          "EmptyInventory",
+          "LongText",
+          "ManyItems",
+          "OneItem",
+          "Overweight",
+          "Prepared",
+          "SearchEmpty"
+        ],
+        "nativePending": []
+      },
+      "businessIntegration": {
+        "status": "passed",
+        "scope": "editor-demo",
+        "target": "UnityEditor",
+        "checks": 63,
+        "evidence": "design-review/editor/editor-flow.json"
+      },
+      "device": {
+        "status": "not-applicable",
+        "reason": "User requested Unity Editor testing only"
+      }
+    }
+  ]
+}

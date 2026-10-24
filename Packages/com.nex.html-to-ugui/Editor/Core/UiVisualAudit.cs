@@ -22,15 +22,16 @@ namespace HtmlToUGUI.Editor
         {
             public string schemaVersion = "html-ugui/1", status = "pending-visual-review";
             public int width, height;
+            public int viewportWidth, viewportHeight;
             public List<Node> bindings = new List<Node>();
             public List<string> issues = new List<string>();
         }
         // Uses a disposable preview scene so the user's open scene is preserved.
-        public static Snapshot Capture(GameObject prefab, string outputFolder, Action<GameObject> populate = null, Color? background = null)
+        public static Snapshot Capture(GameObject prefab, string outputFolder, Action<GameObject> populate = null, Color? background = null, int outputWidth = 0, int outputHeight = 0)
         {
-            using (var sceneScope = new UiTemporarySceneScope()) return CaptureIsolated(prefab, outputFolder, populate, background);
+            using (var sceneScope = new UiTemporarySceneScope()) return CaptureIsolated(prefab, outputFolder, populate, background, outputWidth, outputHeight);
         }
-        private static Snapshot CaptureIsolated(GameObject prefab, string outputFolder, Action<GameObject> populate, Color? background)
+        private static Snapshot CaptureIsolated(GameObject prefab, string outputFolder, Action<GameObject> populate, Color? background, int outputWidth, int outputHeight)
         {
             Directory.CreateDirectory(outputFolder);
             var scene = EditorSceneManager.NewPreviewScene();
@@ -42,6 +43,10 @@ namespace HtmlToUGUI.Editor
             {
                 var resolution = prefab.GetComponent<RectTransform>().sizeDelta;
                 var result = new Snapshot { width = Mathf.RoundToInt(resolution.x), height = Mathf.RoundToInt(resolution.y) };
+                result.viewportWidth = outputWidth == 0 ? result.width : outputWidth;
+                result.viewportHeight = outputHeight == 0 ? result.height : outputHeight;
+                if (result.viewportWidth <= 0 || result.viewportHeight <= 0 || result.viewportWidth > 8192 || result.viewportHeight > 8192)
+                    throw new ArgumentException("Audit viewport must be between 1 and 8192 pixels per axis.");
                 var cameraGo = UiTemporarySceneScope.CreateGameObject("AuditCamera", typeof(Camera));
                 SceneManager.MoveGameObjectToScene(cameraGo, scene);
                 var cam = auditCamera = cameraGo.GetComponent<Camera>();
@@ -49,9 +54,9 @@ namespace HtmlToUGUI.Editor
                 cam.clearFlags = CameraClearFlags.SolidColor;
                 cam.backgroundColor = background ?? Color.black;
                 cam.transform.position = new Vector3(0, 0, -100);
-                cam.orthographic = true; cam.orthographicSize = resolution.y / 2;
+                cam.orthographic = true; cam.orthographicSize = result.viewportHeight / 2f;
                 cam.nearClipPlane = .1f; cam.farClipPlane = 1000;
-                rt = new RenderTexture(result.width, result.height, 24);
+                rt = new RenderTexture(result.viewportWidth, result.viewportHeight, 24);
                 cam.targetTexture = rt;
                 var canvasGo = UiTemporarySceneScope.CreateGameObject("AuditCanvas", typeof(Canvas));
                 SceneManager.MoveGameObjectToScene(canvasGo, scene);
@@ -61,6 +66,7 @@ namespace HtmlToUGUI.Editor
                 var root = instance.GetComponent<RectTransform>();
                 root.anchorMin = root.anchorMax = root.pivot = new Vector2(.5f, .5f);
                 root.anchoredPosition = Vector2.zero; root.sizeDelta = resolution;
+                root.localScale = Vector3.one * Mathf.Min(result.viewportWidth / resolution.x, result.viewportHeight / resolution.y);
                 if (populate != null) populate(instance);
                 Canvas.ForceUpdateCanvases();
                 foreach (var text in instance.GetComponentsInChildren<TMP_Text>(true))
@@ -89,8 +95,8 @@ namespace HtmlToUGUI.Editor
                         result.issues.Add(entry.key + ": outside design canvas");
                 }
                 cam.Render(); RenderTexture.active = rt;
-                pixels = new Texture2D(result.width, result.height, TextureFormat.RGB24, false);
-                pixels.ReadPixels(new Rect(0, 0, result.width, result.height), 0, 0); pixels.Apply();
+                pixels = new Texture2D(result.viewportWidth, result.viewportHeight, TextureFormat.RGB24, false);
+                pixels.ReadPixels(new Rect(0, 0, result.viewportWidth, result.viewportHeight), 0, 0); pixels.Apply();
                 File.WriteAllBytes(Path.Combine(outputFolder, prefab.name + ".unity.png"), pixels.EncodeToPNG());
                 File.WriteAllText(Path.Combine(outputFolder, prefab.name + ".unity.json"), JsonUtility.ToJson(result, true));
                 return result;

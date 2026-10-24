@@ -1,0 +1,1149 @@
+{
+  "schemaVersion": 1,
+  "projectName": "StarportSalvage",
+  "target": "UnityEditor",
+  "scope": "editor-demo",
+  "status": "passed",
+  "clock": "deterministic test clock, three-second boundary",
+  "unityVersion": "2022.3.62f3c1",
+  "checks": [
+    {
+      "name": "home navigation",
+      "status": "passed"
+    },
+    {
+      "name": "01-home: all declared Button bindings wired",
+      "status": "passed"
+    },
+    {
+      "name": "locked mission disabled",
+      "status": "passed"
+    },
+    {
+      "name": "disabled start has no effect",
+      "status": "passed"
+    },
+    {
+      "name": "inventory remembers origin",
+      "status": "passed"
+    },
+    {
+      "name": "02-missions: all declared Button bindings wired",
+      "status": "passed"
+    },
+    {
+      "name": "slider and add supply",
+      "status": "passed"
+    },
+    {
+      "name": "merge loadout weight",
+      "status": "passed"
+    },
+    {
+      "name": "inventory return origin",
+      "status": "passed"
+    },
+    {
+      "name": "03-prepare: all declared Button bindings wired",
+      "status": "passed"
+    },
+    {
+      "name": "opening confirm charges nothing",
+      "status": "passed"
+    },
+    {
+      "name": "04-confirm-open: all declared Button bindings wired",
+      "status": "passed"
+    },
+    {
+      "name": "cancel preserves resources",
+      "status": "passed"
+    },
+    {
+      "name": "05-confirm-cancel: all declared Button bindings wired",
+      "status": "passed"
+    },
+    {
+      "name": "dispatch charges once",
+      "status": "passed"
+    },
+    {
+      "name": "duplicate confirm is inert",
+      "status": "passed"
+    },
+    {
+      "name": "06-dispatch: all declared Button bindings wired",
+      "status": "passed"
+    },
+    {
+      "name": "running loadout is locked",
+      "status": "passed"
+    },
+    {
+      "name": "07-running: all declared Button bindings wired",
+      "status": "passed"
+    },
+    {
+      "name": "not complete before three seconds",
+      "status": "passed"
+    },
+    {
+      "name": "complete at three seconds",
+      "status": "passed"
+    },
+    {
+      "name": "pending blocks redispatch",
+      "status": "passed"
+    },
+    {
+      "name": "pending result navigation",
+      "status": "passed"
+    },
+    {
+      "name": "08-pending: all declared Button bindings wired",
+      "status": "passed"
+    },
+    {
+      "name": "real reward Items populated",
+      "status": "passed"
+    },
+    {
+      "name": "result uses dispatched mission snapshot after selection changes",
+      "status": "passed"
+    },
+    {
+      "name": "postpone preserves pending result",
+      "status": "passed"
+    },
+    {
+      "name": "09-result: all declared Button bindings wired",
+      "status": "passed"
+    },
+    {
+      "name": "reward exactly once",
+      "status": "passed"
+    },
+    {
+      "name": "inventory rewards and one medkit consumed",
+      "status": "passed"
+    },
+    {
+      "name": "10-claim: all declared Button bindings wired",
+      "status": "passed"
+    },
+    {
+      "name": "search empty native list",
+      "status": "passed"
+    },
+    {
+      "name": "material filter",
+      "status": "passed"
+    },
+    {
+      "name": "materials cannot be carried",
+      "status": "passed"
+    },
+    {
+      "name": "zero-stock disabled",
+      "status": "passed"
+    },
+    {
+      "name": "decrease native Item action",
+      "status": "passed"
+    },
+    {
+      "name": "remove native Item action",
+      "status": "passed"
+    },
+    {
+      "name": "11-filters: all declared Button bindings wired",
+      "status": "passed"
+    },
+    {
+      "name": "clear preserves warehouse",
+      "status": "passed"
+    },
+    {
+      "name": "12-clear: all declared Button bindings wired",
+      "status": "passed"
+    },
+    {
+      "name": "overweight rejection atomic",
+      "status": "passed"
+    },
+    {
+      "name": "empty captain rejected",
+      "status": "passed"
+    },
+    {
+      "name": "quality selection updates native visuals",
+      "status": "passed"
+    },
+    {
+      "name": "native settings applied",
+      "status": "passed"
+    },
+    {
+      "name": "13-settings: all declared Button bindings wired",
+      "status": "passed"
+    },
+    {
+      "name": "cancel discards settings draft",
+      "status": "passed"
+    },
+    {
+      "name": "14-settings-cancel: all declared Button bindings wired",
+      "status": "passed"
+    },
+    {
+      "name": "overlong captain rejected",
+      "status": "passed"
+    },
+    {
+      "name": "control character rejected",
+      "status": "passed"
+    },
+    {
+      "name": "unicode scalar boundary accepted",
+      "status": "passed"
+    },
+    {
+      "name": "confirmation revalidates resources atomically",
+      "status": "passed"
+    },
+    {
+      "name": "data unavailable blocks start: loading",
+      "status": "passed"
+    },
+    {
+      "name": "data unavailable blocks start: error",
+      "status": "passed"
+    },
+    {
+      "name": "data unavailable blocks start: empty",
+      "status": "passed"
+    },
+    {
+      "name": "retry loads native mission list",
+      "status": "passed"
+    },
+    {
+      "name": "15-retry: all declared Button bindings wired",
+      "status": "passed"
+    },
+    {
+      "name": "no-medkit expedition has no consumption",
+      "status": "passed"
+    },
+    {
+      "name": "second mission uses its own costs and rewards",
+      "status": "passed"
+    },
+    {
+      "name": "escape dismisses modal",
+      "status": "passed"
+    },
+    {
+      "name": "escape returns inventory origin",
+      "status": "passed"
+    },
+    {
+      "name": "reset restores complete session",
+      "status": "passed"
+    },
+    {
+      "name": "16-reset: all declared Button bindings wired",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/ActionConfirmPanel/ActionConfirmPanel.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/ActionConfirmPanel/ActionConfirmPanel.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/ExpeditionResultPanel/ExpeditionResultPanel.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/ExpeditionResultPanel/ExpeditionResultPanel.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/ExpeditionSelectPanel/ExpeditionSelectPanel.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/ExpeditionSelectPanel/ExpeditionSelectPanel.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/GameSettingsPanel/GameSettingsPanel.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/GameSettingsPanel/GameSettingsPanel.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/Item/Item_InventoryEntry.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/Item/Item_InventoryEntry.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/Item/Item_LoadoutEntry.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/Item/Item_LoadoutEntry.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/Item/Item_MissionEntry.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/Item/Item_MissionEntry.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/Item/Item_RewardEntry.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/Item/Item_RewardEntry.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/StarportHomePanel/StarportHomePanel.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/StarportHomePanel/StarportHomePanel.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/SupplyInventoryPanel/SupplyInventoryPanel.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UIPrefab/StarportSalvage/SupplyInventoryPanel/SupplyInventoryPanel.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Button/ItemMedkit/Btn_ItemMedkit_Icon_Normal_Button_ItemMedkit_Icon_Normal.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Button/ItemMedkit/Btn_ItemMedkit_Icon_Normal_Button_ItemMedkit_Icon_Normal.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Button/RoundedSurface/Btn_RoundedSurface_Icon_Normal_Button_RoundedSurface_Icon_Normal.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Button/RoundedSurface/Btn_RoundedSurface_Icon_Normal_Button_RoundedSurface_Icon_Normal.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/Circle/Img_Circle_Surface_Default_Image_Circle_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/Circle/Img_Circle_Surface_Default_Image_Circle_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/Confirm/Img_Confirm_Surface_Default_Image_Confirm_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/Confirm/Img_Confirm_Surface_Default_Image_Confirm_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/Value_Bar/Img_Value_Bar_Surface_Default_Image_Value_Bar_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Image/Value_Bar/Img_Value_Bar_Surface_Default_Image_Value_Bar_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Slider/Circle/Sld_Circle_Handle_Default_Slider_Circle_Handle_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Slider/Circle/Sld_Circle_Handle_Default_Slider_Circle_Handle_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Slider/Value_Bar/Sld_Value_Bar_Fill_Default_Slider_Value_Bar_Fill_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Slider/Value_Bar/Sld_Value_Bar_Fill_Default_Slider_Value_Bar_Fill_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Slider/Value_Bar/Sld_Value_Bar_Track_Default_Slider_Value_Bar_Track_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Slider/Value_Bar/Sld_Value_Bar_Track_Default_Slider_Value_Bar_Track_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/TMP_InputField/Control_Background/Inp_Control_Background_Surface_Default_TMP_InputField_Control_Background_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/TMP_InputField/Control_Background/Inp_Control_Background_Surface_Default_TMP_InputField_Control_Background_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Toggle/Sound/Tgl_Sound_Surface_Disabled_Toggle_Sound_Surface_Disabled.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Toggle/Sound/Tgl_Sound_Surface_Disabled_Toggle_Sound_Surface_Disabled.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Toggle/Sound/Tgl_Sound_Surface_Off_Toggle_Sound_Surface_Off.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Toggle/Sound/Tgl_Sound_Surface_Off_Toggle_Sound_Surface_Off.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Toggle/Sound/Tgl_Sound_Surface_On_Toggle_Sound_Surface_On.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/Art/UI/Sprites/StarportSalvage/Toggle/Sound/Tgl_Sound_Surface_On_Toggle_Sound_Surface_On.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/ActionConfirmPanel/Prefabs/ActionConfirmPanel.import-report.json",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/ActionConfirmPanel/Prefabs/ActionConfirmPanel.import-report.json.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/ActionConfirmPanel/Prefabs/ActionConfirmPanel.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/ActionConfirmPanel/Prefabs/ActionConfirmPanel.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.import-report.json",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.import-report.json.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/Items/Item_RewardEntry.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/Items/Item_RewardEntry.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.import-report.json",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.import-report.json.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/Items/Item_MissionEntry.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/Items/Item_MissionEntry.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.import-report.json",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.import-report.json.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Reports/asset-registry.json",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Reports/asset-registry.json.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Reports/project-import-20261023-165401-aa32eded74734085a3c7b0a28e2788f1.json",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Reports/project-import-20261023-165401-aa32eded74734085a3c7b0a28e2788f1.json.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Reports/project-import-20261023-165656-fbd53f9e777a4252b01171d8dcb88f94.json",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Reports/project-import-20261023-165656-fbd53f9e777a4252b01171d8dcb88f94.json.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/ItemMedkit/Btn_ItemMedkit_Icon_Normal_Button_ItemMedkit_Icon_Normal.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/ItemMedkit/Btn_ItemMedkit_Icon_Normal_Button_ItemMedkit_Icon_Normal.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Icon_Normal_Button_RoundedSurface_Icon_Normal.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Icon_Normal_Button_RoundedSurface_Icon_Normal.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Circle/Img_Circle_Surface_Default_Image_Circle_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Circle/Img_Circle_Surface_Default_Image_Circle_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Confirm/Img_Confirm_Surface_Default_Image_Confirm_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Confirm/Img_Confirm_Surface_Default_Image_Confirm_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Value_Bar/Img_Value_Bar_Surface_Default_Image_Value_Bar_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Value_Bar/Img_Value_Bar_Surface_Default_Image_Value_Bar_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Circle/Sld_Circle_Handle_Default_Slider_Circle_Handle_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Circle/Sld_Circle_Handle_Default_Slider_Circle_Handle_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Fill_Default_Slider_Value_Bar_Fill_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Fill_Default_Slider_Value_Bar_Fill_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Track_Default_Slider_Value_Bar_Track_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Track_Default_Slider_Value_Bar_Track_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/TMP_InputField/Control_Background/Inp_Control_Background_Surface_Default_TMP_InputField_Control_Background_Surface_Default.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/TMP_InputField/Control_Background/Inp_Control_Background_Surface_Default_TMP_InputField_Control_Background_Surface_Default.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Disabled_Toggle_Sound_Surface_Disabled.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Disabled_Toggle_Sound_Surface_Disabled.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Off_Toggle_Sound_Surface_Off.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Off_Toggle_Sound_Surface_Off.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_On_Toggle_Sound_Surface_On.png",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_On_Toggle_Sound_Surface_On.png.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/Prefabs/StarportHomePanel.import-report.json",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/Prefabs/StarportHomePanel.import-report.json.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/Prefabs/StarportHomePanel.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/Prefabs/StarportHomePanel.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/Items/Item_InventoryEntry.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/Items/Item_InventoryEntry.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/Items/Item_LoadoutEntry.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/Items/Item_LoadoutEntry.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.import-report.json",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.import-report.json.meta",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab",
+      "status": "passed"
+    },
+    {
+      "name": "asset unchanged: Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab.meta",
+      "status": "passed"
+    },
+    {
+      "name": "active scene and dirty state preserved",
+      "status": "passed"
+    }
+  ],
+  "screenshots": [
+    {
+      "panel": "StarportHomePanel",
+      "step": "01-home",
+      "path": "01-home/StarportHomePanel.unity.png",
+      "sha256": "2ab1ffa40c2c2f23bffba5e541b644b23bf10b86b54226fe6ed03075e2b8479b"
+    },
+    {
+      "panel": "ExpeditionSelectPanel",
+      "step": "02-missions",
+      "path": "02-missions/ExpeditionSelectPanel.unity.png",
+      "sha256": "7e7f100cd0c3ff2a403c88e8cb979102ba32b9af3eb9d6d4407f37f99fb3a8db"
+    },
+    {
+      "panel": "SupplyInventoryPanel",
+      "step": "03-prepare",
+      "path": "03-prepare/SupplyInventoryPanel.unity.png",
+      "sha256": "9548bcd415be7b463c467e426af8ca358dc2e972748d03a93b4128eea0a78eeb"
+    },
+    {
+      "panel": "ExpeditionSelectPanel",
+      "step": "04-confirm-open",
+      "path": "04-confirm-open/ExpeditionSelectPanel.unity.png",
+      "sha256": "a998fc77da0c68419d3376fcad7946d6cb8062272e6d8183b7bcd1a4fb393efe"
+    },
+    {
+      "panel": "ActionConfirmPanel",
+      "step": "05-confirm-cancel",
+      "path": "05-confirm-cancel/ActionConfirmPanel.unity.png",
+      "sha256": "1840a822ffa755a1471de3c2fc8af337b2c0360365c0aef37a3484835caa3485"
+    },
+    {
+      "panel": "ActionConfirmPanel",
+      "step": "06-dispatch",
+      "path": "06-dispatch/ActionConfirmPanel.unity.png",
+      "sha256": "1840a822ffa755a1471de3c2fc8af337b2c0360365c0aef37a3484835caa3485"
+    },
+    {
+      "panel": "SupplyInventoryPanel",
+      "step": "07-running",
+      "path": "07-running/SupplyInventoryPanel.unity.png",
+      "sha256": "8ea2d20869533759f4f95b97ba52ed42bb1d255b03739d07f4db80300a7208f5"
+    },
+    {
+      "panel": "StarportHomePanel",
+      "step": "08-pending",
+      "path": "08-pending/StarportHomePanel.unity.png",
+      "sha256": "52d86462f837bd6965e5a8daadb028c550017e28cda12b71d51a7d66cbcc83ad"
+    },
+    {
+      "panel": "ExpeditionResultPanel",
+      "step": "09-result",
+      "path": "09-result/ExpeditionResultPanel.unity.png",
+      "sha256": "d1da14c0d7175490c59e01d511e5d0a6fed5d5129dcbd59282553e32a96d92af"
+    },
+    {
+      "panel": "ExpeditionResultPanel",
+      "step": "10-claim",
+      "path": "10-claim/ExpeditionResultPanel.unity.png",
+      "sha256": "d1da14c0d7175490c59e01d511e5d0a6fed5d5129dcbd59282553e32a96d92af"
+    },
+    {
+      "panel": "SupplyInventoryPanel",
+      "step": "11-filters",
+      "path": "11-filters/SupplyInventoryPanel.unity.png",
+      "sha256": "2ace828e1dc6faf301013bb6baac52f6d4fe8f134668e3fcaead5c284ca8dc67"
+    },
+    {
+      "panel": "ActionConfirmPanel",
+      "step": "12-clear",
+      "path": "12-clear/ActionConfirmPanel.unity.png",
+      "sha256": "161ef1409979386a573106df0e37573b440b5e3e3d66804751d7563051369208"
+    },
+    {
+      "panel": "GameSettingsPanel",
+      "step": "13-settings",
+      "path": "13-settings/GameSettingsPanel.unity.png",
+      "sha256": "a07648098882911f35fb3f02ca1cf3db4d4d4056e59367366d71fa2b6fe6a61c"
+    },
+    {
+      "panel": "GameSettingsPanel",
+      "step": "14-settings-cancel",
+      "path": "14-settings-cancel/GameSettingsPanel.unity.png",
+      "sha256": "5dca34a43dab40cfc238f96b06d4d5a1408e3a724ce9393a512d0d28b4131a60"
+    },
+    {
+      "panel": "ExpeditionSelectPanel",
+      "step": "15-retry",
+      "path": "15-retry/ExpeditionSelectPanel.unity.png",
+      "sha256": "d511ff5079d463c7aa5556e6d340eeda74f169fc2e376d225f8ee09916e7faeb"
+    },
+    {
+      "panel": "ActionConfirmPanel",
+      "step": "16-reset",
+      "path": "16-reset/ActionConfirmPanel.unity.png",
+      "sha256": "f6f39d770d2f097e95962933ec398261a4fbe6c23cf17441599b2030ab534e5d"
+    }
+  ],
+  "panels": [
+    "StarportHomePanel",
+    "ExpeditionSelectPanel",
+    "SupplyInventoryPanel",
+    "GameSettingsPanel",
+    "ActionConfirmPanel",
+    "ExpeditionResultPanel"
+  ],
+  "inputFilesSha256": {
+    "design-tools/editor-demo-data.json": "24b0ec2e2b2e3f5c957e60ffbcc8c14277f8b4c7d227375332f0e54646ec02c1",
+    "design-tools/preview_runtime.js": "d2086cd14716f26ae50d9ad3d4474c957c1c017a02a2079d96c884bbb34cfaa1",
+    "contracts/screens.json": "1e6229d775bd2109d8a50d46f125d5d8623b645a731e0c9694f9784ff4f86f35",
+    "contracts/style.json": "19a2bbc036d375363199989f10278c182e090c2e4fa93e9a385dda25b26e3588"
+  },
+  "adapterPath": "Assets/Editor/StarportSalvage/StarportEditorFlowChecks.cs",
+  "adapterSha256": "0e645bf4e6221bb319ce0d05bcc8ebc58282c8bd65bbd0cd7193cb9ad099470a",
+  "protectedAssetsSha256": {
+    "Assets/Art/UIPrefab/StarportSalvage/ActionConfirmPanel/ActionConfirmPanel.prefab": "1fa77c0f163d58a2ecde675cf9237b40de363eb231645561eb6263ef8fcd3722",
+    "Assets/Art/UIPrefab/StarportSalvage/ActionConfirmPanel/ActionConfirmPanel.prefab.meta": "5aebccddc9ab84b3d5259da6df6dffff2479bb7daec7f5dabbc8c07c39a34cdc",
+    "Assets/Art/UIPrefab/StarportSalvage/ExpeditionResultPanel/ExpeditionResultPanel.prefab": "30455fb335f866001618d8b4454656a9804bcf8fe62915241297afd2de8fd6ac",
+    "Assets/Art/UIPrefab/StarportSalvage/ExpeditionResultPanel/ExpeditionResultPanel.prefab.meta": "7f477f21ee0a25405f7c3a732fd7a9c98e511291082f561e44f3f6b52f3f68f1",
+    "Assets/Art/UIPrefab/StarportSalvage/ExpeditionSelectPanel/ExpeditionSelectPanel.prefab": "cf047f5d1e0e21e7cf2b20e2c20ab588151de45ff69adaad15cedfabd0eab973",
+    "Assets/Art/UIPrefab/StarportSalvage/ExpeditionSelectPanel/ExpeditionSelectPanel.prefab.meta": "a94c4a4b11450f7b545b574da8915fba27dab639660b0a46e31d3b2fb0c54378",
+    "Assets/Art/UIPrefab/StarportSalvage/GameSettingsPanel/GameSettingsPanel.prefab": "a82778cc4d4bf4875689146b27e31de651350207d8a710b34f1646a05299f525",
+    "Assets/Art/UIPrefab/StarportSalvage/GameSettingsPanel/GameSettingsPanel.prefab.meta": "9604e37c168485df25d970b721a4cd2c11623d2a3c56f2e317a5b2db80e19c1c",
+    "Assets/Art/UIPrefab/StarportSalvage/Item/Item_InventoryEntry.prefab": "3bed9cfd5819afb68c170245d59eef5bbd45a1845f11e3e6dd6c5acbaf854b48",
+    "Assets/Art/UIPrefab/StarportSalvage/Item/Item_InventoryEntry.prefab.meta": "8022da32a7ea279950f94723ebc470c0027e3c2ccc60089fa888b56c2fcb4e4b",
+    "Assets/Art/UIPrefab/StarportSalvage/Item/Item_LoadoutEntry.prefab": "e591c8339ac76d39384044971195422052d803006ee6751f85c201cd0932f530",
+    "Assets/Art/UIPrefab/StarportSalvage/Item/Item_LoadoutEntry.prefab.meta": "10d11566c6f06358348549cf9ed7171303c91df44fcd973fb677b0dd88e008b8",
+    "Assets/Art/UIPrefab/StarportSalvage/Item/Item_MissionEntry.prefab": "1444edd625fc9d3ca93f0ab43eab8831dfb8d504d75b37b7bdee0e68c5ca4a14",
+    "Assets/Art/UIPrefab/StarportSalvage/Item/Item_MissionEntry.prefab.meta": "e1fbc3c405cd875b1a5717b06fd899f291b94ce83db0ef9b60c7dd354bf8523a",
+    "Assets/Art/UIPrefab/StarportSalvage/Item/Item_RewardEntry.prefab": "f3a3de6d7872da89ee0f2b4588122ba6804748ee35974323c653a775e6dd2ec3",
+    "Assets/Art/UIPrefab/StarportSalvage/Item/Item_RewardEntry.prefab.meta": "0dc46d5afcf08e38ed6d5ccc1a2002a66d85470da7846a4f028aa45a94cb616b",
+    "Assets/Art/UIPrefab/StarportSalvage/StarportHomePanel/StarportHomePanel.prefab": "b19d2317d251ae82e30c48e742f25939c3da6f14fa5414a057a0e30c7c3e1de4",
+    "Assets/Art/UIPrefab/StarportSalvage/StarportHomePanel/StarportHomePanel.prefab.meta": "9ad5bf109a79d76656660703ad6eb0023088146fc130b9859a2550aa043eb85a",
+    "Assets/Art/UIPrefab/StarportSalvage/SupplyInventoryPanel/SupplyInventoryPanel.prefab": "a3f29f231686dbf2739076de27643f607216f7ea4aeaa3a2f85c38c070dbfd03",
+    "Assets/Art/UIPrefab/StarportSalvage/SupplyInventoryPanel/SupplyInventoryPanel.prefab.meta": "5c6261332b60887311ab75ca5fd88c3cf5331580719e9c661218368cfab2348c",
+    "Assets/Art/UI/Sprites/StarportSalvage/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Assets/Art/UI/Sprites/StarportSalvage/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png.meta": "dd8513a59b6dce63e83f098024c9fcb2ee5736d0b24b33e6efb511611b05db02",
+    "Assets/Art/UI/Sprites/StarportSalvage/Button/ItemMedkit/Btn_ItemMedkit_Icon_Normal_Button_ItemMedkit_Icon_Normal.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+    "Assets/Art/UI/Sprites/StarportSalvage/Button/ItemMedkit/Btn_ItemMedkit_Icon_Normal_Button_ItemMedkit_Icon_Normal.png.meta": "be7f83de62bda0da1ff44bd4e7b700c9997eaeccc52a8b61a4e41ed9252e939a",
+    "Assets/Art/UI/Sprites/StarportSalvage/Button/RoundedSurface/Btn_RoundedSurface_Icon_Normal_Button_RoundedSurface_Icon_Normal.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Assets/Art/UI/Sprites/StarportSalvage/Button/RoundedSurface/Btn_RoundedSurface_Icon_Normal_Button_RoundedSurface_Icon_Normal.png.meta": "cc385a06dbdd830556822363027c38c1a56cb00c1bdea6980371292fefd5e2d9",
+    "Assets/Art/UI/Sprites/StarportSalvage/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Assets/Art/UI/Sprites/StarportSalvage/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png.meta": "c27ea272b7c5f71d36cf16568205e8959c1091822fb51763a4cde7508b19e6e8",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/Circle/Img_Circle_Surface_Default_Image_Circle_Surface_Default.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/Circle/Img_Circle_Surface_Default_Image_Circle_Surface_Default.png.meta": "4b7a491965d7f49b849f030a1f08ea4a836b716391f5f1092fcb8dc367818464",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/Confirm/Img_Confirm_Surface_Default_Image_Confirm_Surface_Default.png": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/Confirm/Img_Confirm_Surface_Default_Image_Confirm_Surface_Default.png.meta": "1f08adece8e4b12157e035024f821af45c7baed029177f3a0f9ca73cac3f807a",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png.meta": "e509b8c0e0d966b717cfce9918143f20457991bad7c48be86f17d40dfc0f1de4",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png.meta": "49b071481d806e256cde1d2c2f318a9b30924381dba6629d7fab90231b6c8bed",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png.meta": "a270f9ac529a8d3c28ac6b576d8c7ad5437c1e6c9a726b29d59a4269a10caf7e",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png.meta": "794b32a38bf805fd898b3d8d8378257a5af4a5fe1805a74ab0166642da5ffc8a",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png.meta": "6cd081ecd7a6f01a444dea9f520dd75186b6ef719eb868157c613d3085e67310",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png.meta": "7ed44425fb95df0e139f260d230d963e8b21574a702a421d6a7f729df71d518a",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png.meta": "93b3f6ee7b6ba38fd5495ce4e0b110aaebfcbbed2afda147839719b6cff20266",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png.meta": "836d5bbc76604886e3f9dd6aa8ed27de166a20e8c05da05273a766b28c527282",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png.meta": "c6133959197d5143a4bc3b27c77c1e925de885b6ea30c116f81ce714234f1cdf",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png.meta": "54ff5ce6210f1b553d42ff55bf7560d5004df118551383812e6c36ff398aedc0",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/Value_Bar/Img_Value_Bar_Surface_Default_Image_Value_Bar_Surface_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/Value_Bar/Img_Value_Bar_Surface_Default_Image_Value_Bar_Surface_Default.png.meta": "3a5cced5b6a610ef49deb841cf57e74a9871b6ae8c04f455e979f19a61469116",
+    "Assets/Art/UI/Sprites/StarportSalvage/Slider/Circle/Sld_Circle_Handle_Default_Slider_Circle_Handle_Default.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "Assets/Art/UI/Sprites/StarportSalvage/Slider/Circle/Sld_Circle_Handle_Default_Slider_Circle_Handle_Default.png.meta": "ff29104676ea7aaac88dd33bf4539ac444d328035d8e001bf7d5963d7d440414",
+    "Assets/Art/UI/Sprites/StarportSalvage/Slider/Value_Bar/Sld_Value_Bar_Fill_Default_Slider_Value_Bar_Fill_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "Assets/Art/UI/Sprites/StarportSalvage/Slider/Value_Bar/Sld_Value_Bar_Fill_Default_Slider_Value_Bar_Fill_Default.png.meta": "3732ab86e5100d46731f87aa2a1cef6f476cf779431b6be40e9984a105f442aa",
+    "Assets/Art/UI/Sprites/StarportSalvage/Slider/Value_Bar/Sld_Value_Bar_Track_Default_Slider_Value_Bar_Track_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "Assets/Art/UI/Sprites/StarportSalvage/Slider/Value_Bar/Sld_Value_Bar_Track_Default_Slider_Value_Bar_Track_Default.png.meta": "22eb9fff1c7cafb5b4268e3c5d75d73106bdeb00bd367abec565d4b8793edb66",
+    "Assets/Art/UI/Sprites/StarportSalvage/TMP_InputField/Control_Background/Inp_Control_Background_Surface_Default_TMP_InputField_Control_Background_Surface_Default.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Assets/Art/UI/Sprites/StarportSalvage/TMP_InputField/Control_Background/Inp_Control_Background_Surface_Default_TMP_InputField_Control_Background_Surface_Default.png.meta": "9734ee7464d818a4a996ae40f89958bd6f74bd59adb6feef1471446bd977ee1f",
+    "Assets/Art/UI/Sprites/StarportSalvage/Toggle/Sound/Tgl_Sound_Surface_Disabled_Toggle_Sound_Surface_Disabled.png": "259614e8bc4b5e044b9fded3998b8fb41ac94199cec64a0141933a49c44aec3a",
+    "Assets/Art/UI/Sprites/StarportSalvage/Toggle/Sound/Tgl_Sound_Surface_Disabled_Toggle_Sound_Surface_Disabled.png.meta": "d62b6d4239deab4b638b971f4a73df04e53d95f4cd854b450d86057ce6c36844",
+    "Assets/Art/UI/Sprites/StarportSalvage/Toggle/Sound/Tgl_Sound_Surface_Off_Toggle_Sound_Surface_Off.png": "dd991dbb3ebe7dc320aafbeb83a0f8ff1c32c3cfa5e48fc476a226983f76dffd",
+    "Assets/Art/UI/Sprites/StarportSalvage/Toggle/Sound/Tgl_Sound_Surface_Off_Toggle_Sound_Surface_Off.png.meta": "d9f337d9751fa64a486be3ce6674a1a91fd9cce214adc7c2c2fa4bab0524abb0",
+    "Assets/Art/UI/Sprites/StarportSalvage/Toggle/Sound/Tgl_Sound_Surface_On_Toggle_Sound_Surface_On.png": "7e3d245862ddca19f5903cf983dc3b741bea7ab95c21bfc3de6d1f6b8e2e13ee",
+    "Assets/Art/UI/Sprites/StarportSalvage/Toggle/Sound/Tgl_Sound_Surface_On_Toggle_Sound_Surface_On.png.meta": "3c1b4bcc7f62dc55ec25a10db7528635150450f8df08fd2d56bbc71ae64fd54d",
+    "Assets/HtmlToUGUIStage/StarportSalvage/ActionConfirmPanel/Prefabs/ActionConfirmPanel.import-report.json": "6ebd2eb306bdb2f8209ef55a2771c15ed8d359736de2d3b1362feeb2cffb1a08",
+    "Assets/HtmlToUGUIStage/StarportSalvage/ActionConfirmPanel/Prefabs/ActionConfirmPanel.import-report.json.meta": "8643eead5a9588106dc50fbf818dc3b1deccb7a58c79d640bb895f7b823d553a",
+    "Assets/HtmlToUGUIStage/StarportSalvage/ActionConfirmPanel/Prefabs/ActionConfirmPanel.prefab": "07751c87244a8bb5d7dd6b7c56da87ed698a5e1cbdd12fbf5d2ddafb89a8f5a1",
+    "Assets/HtmlToUGUIStage/StarportSalvage/ActionConfirmPanel/Prefabs/ActionConfirmPanel.prefab.meta": "efd53a066e66a1cf048dd545e7358fb6f343d053b387b3ba81b820f6891f546a",
+    "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.import-report.json": "cb18c2086206c0393ee33210ce636efa5392be4eff0b8693694465a1c4641bff",
+    "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.import-report.json.meta": "8639a402dfeedb5f3b42a15ce9b9725c641c8fcdd78e839b7c86484034b2ed93",
+    "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.prefab": "89783d2f46147a33760acb5285c83b4e42437c4db77009c1ee7a11a24aaeee34",
+    "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/ExpeditionResultPanel.prefab.meta": "d90b76eaeabd9eca0865306f9ebde93336b84b2b9816774cf32ec080fe4c8af1",
+    "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/Items/Item_RewardEntry.prefab": "bacf01adbee0d72b847f9c667e29ceb6f8b186325fe7ed9b3894c7142291c6b5",
+    "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionResultPanel/Prefabs/Items/Item_RewardEntry.prefab.meta": "68a338ddf310a45430e6e1b5d262aab2a309967eb153cab476dc223d0942d187",
+    "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.import-report.json": "472c5a5afa11ce2cc4410f8b0f9e09db7c0450b2253b10afec6152d7ed557db3",
+    "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.import-report.json.meta": "6a8095339ccdcbc75c28af0c16590cc4ccdeb1d4809263e0f2afbefffa5c74cb",
+    "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.prefab": "b320e6c06a350cf66aa3a33a5b313f218f3a9233a664e6dd53e500e207211ccc",
+    "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/ExpeditionSelectPanel.prefab.meta": "a6f7d833eb3ab1893217b92826d597c9c86d51b96739a0d8d57f533f068ee6e0",
+    "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/Items/Item_MissionEntry.prefab": "1db40f105926bfdbcacbbe2835e1be0d69876aa26853c9bb7750929126a71ca3",
+    "Assets/HtmlToUGUIStage/StarportSalvage/ExpeditionSelectPanel/Prefabs/Items/Item_MissionEntry.prefab.meta": "a1ace6c74eb09ce8232d7a4a798eb2a86e734d4c074dba7b600e58135f9264f3",
+    "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.import-report.json": "dad1007899e9e7b566489cb43c52173f8eb2f1eeff6717a4c33a30434ea60b7a",
+    "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.import-report.json.meta": "bc87890eee29adbf5ba619bffa2575ecb543cc352c8ae173c03be84ba9d01fef",
+    "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab": "4f35d728bca0ac06db7bbe4ddadff74c35fea6bc13e5bde891a7e8dd37cd4860",
+    "Assets/HtmlToUGUIStage/StarportSalvage/GameSettingsPanel/Prefabs/GameSettingsPanel.prefab.meta": "da5a128d56db4acb7c30d2c5204eb2de475409b73d2997508e45bbab22c38dd4",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Reports/asset-registry.json": "1e8cf1ff11b3d1f17fb23240a89d25bef0929bc18bf173729d7938e6f44185e7",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Reports/asset-registry.json.meta": "e24d8e5acd2dd26a325fe0c531c72ce2b0af0dba930af18cb75402ccc14a2ef3",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Reports/project-import-20261023-165401-aa32eded74734085a3c7b0a28e2788f1.json": "4a5347ff860bcb56927e6e6869fc486bf7086f230998cc18bf3ad895614abb1f",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Reports/project-import-20261023-165401-aa32eded74734085a3c7b0a28e2788f1.json.meta": "0133ac1f0102fa5e2c1f226899adafd7f0ef4b4a9bf20f113c1e08088808717d",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Reports/project-import-20261023-165656-fbd53f9e777a4252b01171d8dcb88f94.json": "1ad4d84a50c354f61065ddeea9ff7d7e9eb36f1339cbcbf021174e5f29e05739",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Reports/project-import-20261023-165656-fbd53f9e777a4252b01171d8dcb88f94.json.meta": "ea3de5b0d5ea2d282335e1dbf0892896eb2c1a9d4ba9c3fd8233ce7743d1670d",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png.meta": "d82372f54ddcffde1a119f1cabe5c28e3df6bc2ab56ec456bbb13a376c2f69e5",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/ItemMedkit/Btn_ItemMedkit_Icon_Normal_Button_ItemMedkit_Icon_Normal.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/ItemMedkit/Btn_ItemMedkit_Icon_Normal_Button_ItemMedkit_Icon_Normal.png.meta": "79af71807267b7ee45a962a09fd462ee20cd462119677b52c00582686059a2b5",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Icon_Normal_Button_RoundedSurface_Icon_Normal.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Icon_Normal_Button_RoundedSurface_Icon_Normal.png.meta": "c833b3e5da7b2a68700c8deaca2959e436f505dc1da72db70c8835fe36963896",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png.meta": "cce47198acbb71328b90658b73f4591c92f4e7398abe7adf161e688b2e7d0b90",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Circle/Img_Circle_Surface_Default_Image_Circle_Surface_Default.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Circle/Img_Circle_Surface_Default_Image_Circle_Surface_Default.png.meta": "be92d217274d8906eae03a07549844524c9f64cf8155f144536a72804debce59",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Confirm/Img_Confirm_Surface_Default_Image_Confirm_Surface_Default.png": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Confirm/Img_Confirm_Surface_Default_Image_Confirm_Surface_Default.png.meta": "0b79b079d4c6e68d5cfb6fc0f2949695f4c274bfe8f41e1d881dc1b9537361f3",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png.meta": "635d87b9f68b91892549add82b977a53758dca2a6432ca1cb752e1b8728f3d4f",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png.meta": "b4f5beec964ccfbe308c1a83b17c3b0f29f1153489d8ae8d121db63f5a1a42c5",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png.meta": "a69a8ce4bf03ccde9b4d42ffb46a157164e720361b9e0f50bbf63f2bc7b0e1d8",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png.meta": "c36a81244fd90803baddf22f634213cc7d40308a8a57d3f070fe23cf4f0123a2",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png.meta": "fc78d451b116fb85428e11805b8a75c5d7924f0dcecb029da0f8b7fbd4a8bb79",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png.meta": "fbe9c808b22e3372da6f7b05d03ee902ee373c864190fd634e138b96ecb31610",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png.meta": "aa28e0d21e7321baff7be63ed7106530d0232b17541e024ce30bfa8c5543e768",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png.meta": "4c52c1fd21bf543f9d9b8955022b03ed073118c23402e71cd385a3b51a041e27",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png.meta": "87f7a4d025cd824460afe71bac8a288b580750b6b83ec13f36c85b18a1ca7803",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png.meta": "82cf7f8a2deb4ae38722aff170b671ecb5c9e644cd1aa1c60e9f3533554c714a",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Value_Bar/Img_Value_Bar_Surface_Default_Image_Value_Bar_Surface_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Image/Value_Bar/Img_Value_Bar_Surface_Default_Image_Value_Bar_Surface_Default.png.meta": "53fa9ca49dad4c087f731dfaeb2373d613b844d47aef50ba48533d5c561e5b86",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Circle/Sld_Circle_Handle_Default_Slider_Circle_Handle_Default.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Circle/Sld_Circle_Handle_Default_Slider_Circle_Handle_Default.png.meta": "d15e290042fdd749ac4b8739ba4033ca88ab84ea3be061ee7b0299f98512427d",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Fill_Default_Slider_Value_Bar_Fill_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Fill_Default_Slider_Value_Bar_Fill_Default.png.meta": "8ae74bf7180ad53a77fbe5c8b8e3600acfb09fc1698d7d50cb14a1c11ac516f6",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Track_Default_Slider_Value_Bar_Track_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Slider/Value_Bar/Sld_Value_Bar_Track_Default_Slider_Value_Bar_Track_Default.png.meta": "7058e27fee384a27dd631a301e80e78986fc1a0177cd972ea10fd95e5c298920",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/TMP_InputField/Control_Background/Inp_Control_Background_Surface_Default_TMP_InputField_Control_Background_Surface_Default.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/TMP_InputField/Control_Background/Inp_Control_Background_Surface_Default_TMP_InputField_Control_Background_Surface_Default.png.meta": "741ef433b0fdfc0f8eefa60453865651150b4637ef246d2be0c033de3a96d1ea",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Disabled_Toggle_Sound_Surface_Disabled.png": "259614e8bc4b5e044b9fded3998b8fb41ac94199cec64a0141933a49c44aec3a",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Disabled_Toggle_Sound_Surface_Disabled.png.meta": "5f00ffccc7c3db36a480389725e9857fed18cd23cf093b2fa71a14f4b0289ee2",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Off_Toggle_Sound_Surface_Off.png": "dd991dbb3ebe7dc320aafbeb83a0f8ff1c32c3cfa5e48fc476a226983f76dffd",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_Off_Toggle_Sound_Surface_Off.png.meta": "56365f6bed347398966c3847efde4de016eda3ac785f9dc7111e9cf82c48dbfe",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_On_Toggle_Sound_Surface_On.png": "7e3d245862ddca19f5903cf983dc3b741bea7ab95c21bfc3de6d1f6b8e2e13ee",
+    "Assets/HtmlToUGUIStage/StarportSalvage/Sprites/Toggle/Sound/Tgl_Sound_Surface_On_Toggle_Sound_Surface_On.png.meta": "03c27898419300e0667f55441ad00ea8556cb0bb7eff749e0c0ddc10408b3196",
+    "Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/Prefabs/StarportHomePanel.import-report.json": "7d5207763ded50993b6eb35923d7e0ebf123ddeb404160e69f0160694c5ecf84",
+    "Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/Prefabs/StarportHomePanel.import-report.json.meta": "2c0bf284fbe1ac90db527c283803693403633187f276e17f0c7ab5c126c28f13",
+    "Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/Prefabs/StarportHomePanel.prefab": "54142244c3f4f676ce5c43e5fb79e8d339a0cae52daa9904ab8a14ba97c10004",
+    "Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/Prefabs/StarportHomePanel.prefab.meta": "fe89238b36e9c03eba8ea73b223a5620957feaf3e89aa04ff2535dbd3b7ca8a6",
+    "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/Items/Item_InventoryEntry.prefab": "c6792f94f57353e5a9c514b9c7d8a7069607e447c4ee9c34f6bb1899f1cb421a",
+    "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/Items/Item_InventoryEntry.prefab.meta": "67beaa288228953b7cfc0a93dc6052b91ec20772d5bedc530fd19e7530d142cf",
+    "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/Items/Item_LoadoutEntry.prefab": "fd0a208cdbd134da9ce6a0c00e4855870e0b311ef38334a71a57e934876192d6",
+    "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/Items/Item_LoadoutEntry.prefab.meta": "3f049efd47f142257e0796545e8e700eb142acc3a934a7f2e18daea56e4322e7",
+    "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.import-report.json": "1e2a716a3d80eb0def9abdb9b67e1f42a6a9ed2931b7d0ad9a2b3ad5f40b8133",
+    "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.import-report.json.meta": "13a881e6ec12c0e823b32e6f033d9baf095eca9e475bd2d55e98a2dbc960e5df",
+    "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab": "4d3608db255e7bda90dec37413a18942aafa5be31f792015f5dc3551771706c9",
+    "Assets/HtmlToUGUIStage/StarportSalvage/SupplyInventoryPanel/Prefabs/SupplyInventoryPanel.prefab.meta": "55c20bc198e7a6423ecdc64911d94f2eea1480dd6b2dca1bb6c6091fadd8d8c5"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "com.nex.html-to-ugui",
-  "version": "0.3.0",
+  "version": "0.4.1",
   "displayName": "HTML to UGUI (TMP)",
   "description": "Convert external prepared XHTML and referenced images to native UGUI/TMP root and item prefabs. No project business logic is generated.",
   "unity": "2022.3",

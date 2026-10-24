@@ -8,7 +8,7 @@
 
 ```sh
 python -m pip install -r requirements-dev.txt
-python -B -X utf8 -m unittest discover -s Skills/ui-panel-design-to-html/scripts -p test_workflow.py
+python -B -X utf8 -m unittest discover -s Skills/ui-panel-design-to-html/scripts -p "test*.py"
 python -X utf8 Tools/verify-directory-generator.py
 python -X utf8 Tools/verify-preparation-contract.py
 python -X utf8 Tools/verify-installer.py

@@ -32,9 +32,10 @@ namespace HtmlToUGUI.Editor
             var stage = UiStageRegressionChecks.Run(Path.Combine(full, "stage"));
             var project = UiProjectImportRegressionChecks.Run(Path.Combine(full, "project"));
             var assets = UiProjectAssetRegressionChecks.Run(Path.Combine(full, "assets"));
+            var workflow = UiWorkflowRegressionChecks.Run(Path.Combine(full, "workflow"));
             var result = JsonConvert.SerializeObject(new { status = "passed", unityVersion = Application.unityVersion,
                 converterVersion = UnityEditor.PackageManager.PackageInfo.FindForAssembly(typeof(HtmlUiImporter).Assembly).version,
-                defaultFont = AssetDatabase.GetAssetPath(TMP_Settings.defaultFontAsset), contract = JsonConvert.DeserializeObject(contract), stage = JsonConvert.DeserializeObject(stage), project = JsonConvert.DeserializeObject(project), assets = JsonConvert.DeserializeObject(assets)
+                defaultFont = AssetDatabase.GetAssetPath(TMP_Settings.defaultFontAsset), contract = JsonConvert.DeserializeObject(contract), stage = JsonConvert.DeserializeObject(stage), project = JsonConvert.DeserializeObject(project), assets = JsonConvert.DeserializeObject(assets), workflow = JsonConvert.DeserializeObject(workflow)
             }, Formatting.Indented);
             File.WriteAllText(successPath, result);
             return result;

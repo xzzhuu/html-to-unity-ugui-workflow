@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "active-valid",
+      "expected": "accepted",
+      "changes": {}
+    },
+    {
+      "id": "draft-future-asset",
+      "expected": "ignored",
+      "changes": {
+        "config.status": "draft",
+        "config.slider.trackAssetId": "Future"
+      }
+    },
+    {
+      "id": "case-insensitive-id",
+      "expected": "accepted",
+      "changes": {
+        "config.slider.trackAssetId": "track"
+      }
+    },
+    {
+      "id": "schema-boolean",
+      "expected": "rejected",
+      "changes": {
+        "config.schemaVersion": true
+      }
+    },
+    {
+      "id": "schema-unsupported",
+      "expected": "rejected",
+      "changes": {
+        "config.schemaVersion": 2
+      }
+    },
+    {
+      "id": "wrong-project",
+      "expected": "rejected",
+      "changes": {
+        "config.projectName": "OtherGame"
+      }
+    },
+    {
+      "id": "wrong-status",
+      "expected": "rejected",
+      "changes": {
+        "config.status": "approved"
+      }
+    },
+    {
+      "id": "rounding-string",
+      "expected": "rejected",
+      "changes": {
+        "config.rounding.fromCssRadius": "false"
+      }
+    },
+    {
+      "id": "slider-boolean",
+      "expected": "rejected",
+      "changes": {
+        "config.slider": true
+      }
+    },
+    {
+      "id": "height-boolean",
+      "expected": "rejected",
+      "changes": {
+        "config.slider.trackHeight": true
+      }
+    },
+    {
+      "id": "height-zero",
+      "expected": "rejected",
+      "changes": {
+        "config.slider.trackHeight": 0
+      }
+    },
+    {
+      "id": "height-negative",
+      "expected": "rejected",
+      "changes": {
+        "config.slider.trackHeight": -1
+      }
+    },
+    {
+      "id": "height-string",
+      "expected": "rejected",
+      "changes": {
+        "config.slider.trackHeight": "10"
+      }
+    },
+    {
+      "id": "float-overflow",
+      "expected": "rejected",
+      "changes": {
+        "config.slider.trackHeight": 1e+40
+      }
+    },
+    {
+      "id": "float-underflow",
+      "expected": "rejected",
+      "changes": {
+        "config.slider.trackHeight": 1e-50
+      }
+    },
+    {
+      "id": "unknown-asset",
+      "expected": "rejected",
+      "changes": {
+        "config.slider.trackAssetId": "Missing"
+      }
+    },
+    {
+      "id": "wrong-part",
+      "expected": "rejected",
+      "changes": {
+        "config.slider.trackAssetId": "Handle"
+      }
+    },
+    {
+      "id": "wrong-component",
+      "expected": "rejected",
+      "changes": {
+        "assets.Track.componentType": "Image"
+      }
+    },
+    {
+      "id": "unapproved-asset",
+      "expected": "rejected",
+      "changes": {
+        "assets.Track.approved": false
+      }
+    },
+    {
+      "id": "unknown-token",
+      "expected": "rejected",
+      "changes": {
+        "config.slider.trackColorToken": "missing"
+      }
+    },
+    {
+      "id": "token-boolean",
+      "expected": "rejected",
+      "changes": {
+        "config.slider.trackColorToken": true
+      }
+    },
+    {
+      "id": "named-color",
+      "expected": "rejected",
+      "changes": {
+        "style.colors.card": "red"
+      }
+    },
+    {
+      "id": "numeric-color",
+      "expected": "rejected",
+      "changes": {
+        "style.colors.card": 123
+      }
+    }
+  ]
+}

@@ -1,0 +1,1095 @@
+{
+  "schemaVersion": 1,
+  "projectName": "StarportSalvage",
+  "files": {
+    "Panels/ActionConfirmPanel/design/element-groups.json": "e9c05d6fd07f2f74f0dbdaaecf1fc1bb8560e708b169eaded1f54a1ec8dc061a",
+    "Panels/ActionConfirmPanel/design/review/approval.json": "99d09ca4d8c874fc3d213e101b0182a356d07cccf3df3e1c497488741314e2e0",
+    "Panels/ActionConfirmPanel/design/review/element-groups-approval.json": "ad8d458f8711b93ea64380f1cde0ed1cf98a9494f1569a4421acc1cc5a36783c",
+    "Panels/ActionConfirmPanel/html/ActionConfirmPanel.css": "d8eebde333e9e6bca273883ade27000805d8ec4552736b514a9ed42d3ca3ddea",
+    "Panels/ActionConfirmPanel/html/ActionConfirmPanel.html": "d9d42144240014f7f758ca974b3669b668fa0edc3d9c6391a848912c6fcbf018",
+    "Panels/ActionConfirmPanel/html/ActionConfirmPanel.preview.js": "d2086cd14716f26ae50d9ad3d4474c957c1c017a02a2079d96c884bbb34cfaa1",
+    "Panels/ActionConfirmPanel/html/assets/project/Button/Btn_Control_Background_Surface_Normal.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Panels/ActionConfirmPanel/html/assets/project/Image/Img_RoundedSurface_Surface_Default.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Panels/ActionConfirmPanel/html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Panels/ActionConfirmPanel/html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Panels/ActionConfirmPanel/html/elements.json": "9b1c79146f09126c863bad8fb74366d3501bd29a539d0a9b6908bc93b4224858",
+    "Panels/ActionConfirmPanel/html/panel.package.json": "fe964fb6f8a8097a46ea6156abb9aef59dd600803883fca887c0c0b130b02f88",
+    "Panels/ActionConfirmPanel/html/sprites.json": "3adc214020cd7a36dc94c4a501808f59e18ed4b7bb6da654b74e10a878d5b221",
+    "Panels/ActionConfirmPanel/inputs/art-source/Img_Close.svg": "e512eb0dbc5ace2f1acc94284b3e1362377ad8469e07f3aeaf7afdd09bc11327",
+    "Panels/ActionConfirmPanel/inputs/art-source/Img_Confirm.svg": "b8cdbcdf86fc44ba93e627b1876dbf6fb79e98faea61972baaf4fa9f46859a2a",
+    "Panels/ActionConfirmPanel/inputs/art-source/Img_Control_Background.svg": "14de4aca48132660e044f170f567fd0447c2d924f8099bbcbe657ffb960d3bf6",
+    "Panels/ActionConfirmPanel/inputs/art-source/Img_Credits.svg": "4abd0e3ba20705a78fbe21b28fc1a6c69fdc4e2f4c6916476899e3011231c354",
+    "Panels/ActionConfirmPanel/inputs/art-source/Img_Energy.svg": "2624aa03c49b6a47c58c9548f094717cafe26dd5ec0eeba36a319659b9d7a26e",
+    "Panels/ActionConfirmPanel/inputs/art-source/Img_Lock.svg": "33758b961cae3de31a9fefca100a36a70b28b5f5dced458e255caceb929b8445",
+    "Panels/ActionConfirmPanel/inputs/art-source/Img_NavigateBack.svg": "cac24ed7b5d5e1a44f614a1e4ea8ef9c2b24448197bf8012aea85a3ae3d5e321",
+    "Panels/ActionConfirmPanel/inputs/art-source/Img_Risk.svg": "1d93fc17d0db2b41a3a50f9199f0d74ebe4df5cd2548d5dd28e3cd0a2a3d548d",
+    "Panels/ActionConfirmPanel/inputs/art-source/Img_RoundedSurface.svg": "e3e0febd5823320a4818c544c92b7e13602ccf145cd354a971f09893898b0994",
+    "Panels/ActionConfirmPanel/inputs/art-source/Img_Search.svg": "51f54fdf92e029506f4c6519bdf85c82b5203b3271aee1f335dbb556daee4594",
+    "Panels/ActionConfirmPanel/inputs/art-source/Img_Weight.svg": "9722c82e2a5ff1262f832d2025eeeb3d0d11a00eba931da3c9a07b11fce2a2eb",
+    "Panels/ActionConfirmPanel/inputs/brief.md": "b0ed4e5e29c448194c8a28896298ad73f5ea1b6a84243d6d38898b3d771cc1c1",
+    "Panels/ExpeditionResultPanel/design/element-groups.json": "2f855ce774d207283deb70956f5220d5b08449ef0db69b005fe4245d1c45fb25",
+    "Panels/ExpeditionResultPanel/design/review/approval.json": "9ccf4e2059f89ab726715b60d48126735b42062e4600f4e8ddad92d672456d66",
+    "Panels/ExpeditionResultPanel/design/review/element-groups-approval.json": "116ca7da6a2ea399910565336bea83458d3fc579613e400957561034c2ecb05d",
+    "Panels/ExpeditionResultPanel/html/ExpeditionResultPanel.css": "d8eebde333e9e6bca273883ade27000805d8ec4552736b514a9ed42d3ca3ddea",
+    "Panels/ExpeditionResultPanel/html/ExpeditionResultPanel.html": "3710e9d657d0a9baac450357397053706a20f0a920df1de59d487bcc888b04ea",
+    "Panels/ExpeditionResultPanel/html/ExpeditionResultPanel.preview.js": "d2086cd14716f26ae50d9ad3d4474c957c1c017a02a2079d96c884bbb34cfaa1",
+    "Panels/ExpeditionResultPanel/html/assets/project/Button/Btn_Control_Background_Surface_Normal.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Panels/ExpeditionResultPanel/html/assets/project/Image/Img_Confirm_Surface_Default.png": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192",
+    "Panels/ExpeditionResultPanel/html/assets/project/Image/Img_Credits_Surface_Default.png": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+    "Panels/ExpeditionResultPanel/html/assets/project/Image/Img_ItemAlloy_Surface_Default.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "Panels/ExpeditionResultPanel/html/assets/project/Image/Img_ItemChip_Surface_Default.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "Panels/ExpeditionResultPanel/html/assets/project/Image/Img_ItemCircuit_Surface_Default.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "Panels/ExpeditionResultPanel/html/assets/project/Image/Img_ItemOre_Surface_Default.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "Panels/ExpeditionResultPanel/html/assets/project/Image/Img_RoundedSurface_Surface_Default.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Panels/ExpeditionResultPanel/html/assets/shared/Img_Confirm.png": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192",
+    "Panels/ExpeditionResultPanel/html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Panels/ExpeditionResultPanel/html/assets/shared/Img_Credits.png": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+    "Panels/ExpeditionResultPanel/html/assets/shared/Img_ItemAlloy.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "Panels/ExpeditionResultPanel/html/assets/shared/Img_ItemChip.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "Panels/ExpeditionResultPanel/html/assets/shared/Img_ItemCircuit.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "Panels/ExpeditionResultPanel/html/assets/shared/Img_ItemOre.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "Panels/ExpeditionResultPanel/html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Panels/ExpeditionResultPanel/html/elements.json": "e01f893c87027042be6cadf8700b52cf9d3528ddda68301d731773f2ffe0a367",
+    "Panels/ExpeditionResultPanel/html/panel.package.json": "92c2bce56d417a5236c3d07a21b5f30ac2bfd571b70ec4bc4687d35af57507cb",
+    "Panels/ExpeditionResultPanel/html/sprites.json": "7aced0f199771fd5afb1816dec1ca7d3116f729e6f2baa89914b5836a5b5edac",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_Close.svg": "e512eb0dbc5ace2f1acc94284b3e1362377ad8469e07f3aeaf7afdd09bc11327",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_Confirm.svg": "b8cdbcdf86fc44ba93e627b1876dbf6fb79e98faea61972baaf4fa9f46859a2a",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_Control_Background.svg": "14de4aca48132660e044f170f567fd0447c2d924f8099bbcbe657ffb960d3bf6",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_Credits.svg": "4abd0e3ba20705a78fbe21b28fc1a6c69fdc4e2f4c6916476899e3011231c354",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_Energy.svg": "2624aa03c49b6a47c58c9548f094717cafe26dd5ec0eeba36a319659b9d7a26e",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_ItemAlloy.svg": "14ab599477661e689a5b2ab680d1b147cbf86a5fa30b341038d2760ccde5638a",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_ItemBattery.svg": "ec1fa42515071242ff088bbddec7259cf0becc2dfc0f383611fdd0cff5164ea8",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_ItemBeacon.svg": "6fbb63b622c4a975946f17c149a7ba12ddfd8bc0005b91d56ecfca2b62fd97c8",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_ItemChip.svg": "3c765972f2d27a259bd68ad35ecd19775b2156e6e8261c75e0de671ece2128d3",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_ItemCircuit.svg": "b619569b1185a531f5040e0c236e517edea7680aaa021fd058377e41237e9288",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_ItemMedkit.svg": "56e8c2d6010e83936b8b1df5a53cfc8838abb021eace7236b649057c24dea538",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_ItemOre.svg": "27094d273860030920bf67fa2598141fe9e8b0db57640b2f013577738b57a590",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_ItemRation.svg": "50bd59b802d8990e361de9999d7c374c863c7bc6e9efafbb965c266c21ee0972",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_Lock.svg": "33758b961cae3de31a9fefca100a36a70b28b5f5dced458e255caceb929b8445",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_NavigateBack.svg": "cac24ed7b5d5e1a44f614a1e4ea8ef9c2b24448197bf8012aea85a3ae3d5e321",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_Risk.svg": "1d93fc17d0db2b41a3a50f9199f0d74ebe4df5cd2548d5dd28e3cd0a2a3d548d",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_RoundedSurface.svg": "e3e0febd5823320a4818c544c92b7e13602ccf145cd354a971f09893898b0994",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_Search.svg": "51f54fdf92e029506f4c6519bdf85c82b5203b3271aee1f335dbb556daee4594",
+    "Panels/ExpeditionResultPanel/inputs/art-source/Img_Weight.svg": "9722c82e2a5ff1262f832d2025eeeb3d0d11a00eba931da3c9a07b11fce2a2eb",
+    "Panels/ExpeditionResultPanel/inputs/brief.md": "a35fc1a7450a6ebf2ff5632bb16b04dac013cabc5dd0c80b9070bb6eb3243d89",
+    "Panels/ExpeditionSelectPanel/design/element-groups.json": "9d85729687f297069c624b9096236e2ea72e2604ac7cebc0e8d2a55f23712983",
+    "Panels/ExpeditionSelectPanel/design/review/approval.json": "d34de7de72d34bdd664766575f093f2f5d405e9232b343399dca8f328dfcd8fd",
+    "Panels/ExpeditionSelectPanel/design/review/element-groups-approval.json": "673e6e28a23774febc1afe7101de015be48a711e6fd5633019c6a07781412bf4",
+    "Panels/ExpeditionSelectPanel/html/ExpeditionSelectPanel.css": "d8eebde333e9e6bca273883ade27000805d8ec4552736b514a9ed42d3ca3ddea",
+    "Panels/ExpeditionSelectPanel/html/ExpeditionSelectPanel.html": "a4e9c9375985e1b4e39c1ce0f5bb8e809558f4b928e9568be38c4d8a43aec001",
+    "Panels/ExpeditionSelectPanel/html/ExpeditionSelectPanel.preview.js": "d2086cd14716f26ae50d9ad3d4474c957c1c017a02a2079d96c884bbb34cfaa1",
+    "Panels/ExpeditionSelectPanel/html/assets/project/Button/Btn_Control_Background_Surface_Normal.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Panels/ExpeditionSelectPanel/html/assets/project/Button/Btn_RoundedSurface_Surface_Normal.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Panels/ExpeditionSelectPanel/html/assets/project/Image/Img_Credits_Surface_Default.png": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+    "Panels/ExpeditionSelectPanel/html/assets/project/Image/Img_ItemAlloy_Surface_Default.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "Panels/ExpeditionSelectPanel/html/assets/project/Image/Img_ItemChip_Surface_Default.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "Panels/ExpeditionSelectPanel/html/assets/project/Image/Img_ItemCircuit_Surface_Default.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "Panels/ExpeditionSelectPanel/html/assets/project/Image/Img_ItemOre_Surface_Default.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "Panels/ExpeditionSelectPanel/html/assets/project/Image/Img_RoundedSurface_Surface_Default.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Panels/ExpeditionSelectPanel/html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Panels/ExpeditionSelectPanel/html/assets/shared/Img_Credits.png": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+    "Panels/ExpeditionSelectPanel/html/assets/shared/Img_ItemAlloy.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "Panels/ExpeditionSelectPanel/html/assets/shared/Img_ItemChip.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "Panels/ExpeditionSelectPanel/html/assets/shared/Img_ItemCircuit.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "Panels/ExpeditionSelectPanel/html/assets/shared/Img_ItemOre.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "Panels/ExpeditionSelectPanel/html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Panels/ExpeditionSelectPanel/html/elements.json": "cac7cd07bdd073dc7a59faae4a787d9e477794250de6c0da638399e80a6463d0",
+    "Panels/ExpeditionSelectPanel/html/panel.package.json": "8d233f66fbe275cd3a1b9f6f171064f1819d7b5b5f12a31ba21cc1850b8eb953",
+    "Panels/ExpeditionSelectPanel/html/sprites.json": "2f8294e33e9dfff6c637ee4dee89794ae5f6996d53dfc27fece8bb8d098d1d4d",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_Close.svg": "e512eb0dbc5ace2f1acc94284b3e1362377ad8469e07f3aeaf7afdd09bc11327",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_Confirm.svg": "b8cdbcdf86fc44ba93e627b1876dbf6fb79e98faea61972baaf4fa9f46859a2a",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_Control_Background.svg": "14de4aca48132660e044f170f567fd0447c2d924f8099bbcbe657ffb960d3bf6",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_Credits.svg": "4abd0e3ba20705a78fbe21b28fc1a6c69fdc4e2f4c6916476899e3011231c354",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_Energy.svg": "2624aa03c49b6a47c58c9548f094717cafe26dd5ec0eeba36a319659b9d7a26e",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_ItemAlloy.svg": "14ab599477661e689a5b2ab680d1b147cbf86a5fa30b341038d2760ccde5638a",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_ItemBattery.svg": "ec1fa42515071242ff088bbddec7259cf0becc2dfc0f383611fdd0cff5164ea8",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_ItemBeacon.svg": "6fbb63b622c4a975946f17c149a7ba12ddfd8bc0005b91d56ecfca2b62fd97c8",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_ItemChip.svg": "3c765972f2d27a259bd68ad35ecd19775b2156e6e8261c75e0de671ece2128d3",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_ItemCircuit.svg": "b619569b1185a531f5040e0c236e517edea7680aaa021fd058377e41237e9288",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_ItemMedkit.svg": "56e8c2d6010e83936b8b1df5a53cfc8838abb021eace7236b649057c24dea538",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_ItemOre.svg": "27094d273860030920bf67fa2598141fe9e8b0db57640b2f013577738b57a590",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_ItemRation.svg": "50bd59b802d8990e361de9999d7c374c863c7bc6e9efafbb965c266c21ee0972",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_Lock.svg": "33758b961cae3de31a9fefca100a36a70b28b5f5dced458e255caceb929b8445",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_NavigateBack.svg": "cac24ed7b5d5e1a44f614a1e4ea8ef9c2b24448197bf8012aea85a3ae3d5e321",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_Risk.svg": "1d93fc17d0db2b41a3a50f9199f0d74ebe4df5cd2548d5dd28e3cd0a2a3d548d",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_RoundedSurface.svg": "e3e0febd5823320a4818c544c92b7e13602ccf145cd354a971f09893898b0994",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_Search.svg": "51f54fdf92e029506f4c6519bdf85c82b5203b3271aee1f335dbb556daee4594",
+    "Panels/ExpeditionSelectPanel/inputs/art-source/Img_Weight.svg": "9722c82e2a5ff1262f832d2025eeeb3d0d11a00eba931da3c9a07b11fce2a2eb",
+    "Panels/ExpeditionSelectPanel/inputs/brief.md": "5eb18b6e8dfa13b0542c7105a43f7f12ec0cd07981e3dbd07533e1835e848e3c",
+    "Panels/GameSettingsPanel/design/element-groups.json": "5e0ebe04072beb7c388b963b09f6721ae1abe56004ea336f20c7bf5702ab64a7",
+    "Panels/GameSettingsPanel/design/review/approval.json": "a2868cb03f327874f9cd82a9608f8647f32bc0a02693d30501a90956a157e557",
+    "Panels/GameSettingsPanel/design/review/element-groups-approval.json": "94995600e1b4da9281ecc4cb9d068724bf124c2af1dff9a67b352399b5cce386",
+    "Panels/GameSettingsPanel/html/GameSettingsPanel.css": "d8eebde333e9e6bca273883ade27000805d8ec4552736b514a9ed42d3ca3ddea",
+    "Panels/GameSettingsPanel/html/GameSettingsPanel.html": "e8aa8667be6afde80ff597be6dc1c9fef80065d44317bc4266bf2e2b2abaa2e7",
+    "Panels/GameSettingsPanel/html/GameSettingsPanel.preview.js": "d2086cd14716f26ae50d9ad3d4474c957c1c017a02a2079d96c884bbb34cfaa1",
+    "Panels/GameSettingsPanel/html/assets/project/Button/Btn_Control_Background_Surface_Normal.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Panels/GameSettingsPanel/html/assets/project/Image/Img_Circle_Surface_Default.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "Panels/GameSettingsPanel/html/assets/project/Image/Img_RoundedSurface_Surface_Default.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Panels/GameSettingsPanel/html/assets/project/Slider/Sld_Circle_Handle_Default.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "Panels/GameSettingsPanel/html/assets/project/Slider/Sld_Value_Bar_Fill_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "Panels/GameSettingsPanel/html/assets/project/Slider/Sld_Value_Bar_Track_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "Panels/GameSettingsPanel/html/assets/project/TMP_InputField/Inp_Control_Background_Surface_Default.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Panels/GameSettingsPanel/html/assets/project/Toggle/Tgl_Sound_Surface_Disabled.png": "259614e8bc4b5e044b9fded3998b8fb41ac94199cec64a0141933a49c44aec3a",
+    "Panels/GameSettingsPanel/html/assets/project/Toggle/Tgl_Sound_Surface_Off.png": "dd991dbb3ebe7dc320aafbeb83a0f8ff1c32c3cfa5e48fc476a226983f76dffd",
+    "Panels/GameSettingsPanel/html/assets/project/Toggle/Tgl_Sound_Surface_On.png": "7e3d245862ddca19f5903cf983dc3b741bea7ab95c21bfc3de6d1f6b8e2e13ee",
+    "Panels/GameSettingsPanel/html/assets/shared/Img_Circle.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "Panels/GameSettingsPanel/html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Panels/GameSettingsPanel/html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Panels/GameSettingsPanel/html/assets/shared/Sld_Value_Bar.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "Panels/GameSettingsPanel/html/assets/shared/Tgl_Sound_Track.png": "d542eebd9640a671cd09a9e7934049362a6faec7bc754bbf263b2702045cb0e9",
+    "Panels/GameSettingsPanel/html/elements.json": "44680e8277675e488564e6aa06f4cb85052b5f3491ac58ebbc2fe23368ccd101",
+    "Panels/GameSettingsPanel/html/panel.package.json": "f23170fde07eb972cbad87b532ab0701943aac1bf81d4525cdaf7eb78e67dd3d",
+    "Panels/GameSettingsPanel/html/sprites.json": "626f297df298eaa5d1f3b5c8d7754eedfad0e83ef12057404a9ae99a7f00087e",
+    "Panels/GameSettingsPanel/inputs/art-source/Img_Circle.svg": "357979943bb96ff0a67ce29674137146ee36b1d84effb6eb9f1cfbb12af94715",
+    "Panels/GameSettingsPanel/inputs/art-source/Img_Control_Background.svg": "14de4aca48132660e044f170f567fd0447c2d924f8099bbcbe657ffb960d3bf6",
+    "Panels/GameSettingsPanel/inputs/art-source/Img_RoundedSurface.svg": "e3e0febd5823320a4818c544c92b7e13602ccf145cd354a971f09893898b0994",
+    "Panels/GameSettingsPanel/inputs/art-source/Sld_Value_Bar.svg": "6d3c6285d0657cc8225c09d90f90c7c108bd27a555b772748ea9282d1d2ef9d7",
+    "Panels/GameSettingsPanel/inputs/art-source/Tgl_Sound_Track.svg": "16283b369ab8032d1e1f0e3d2c62e3f62bedf01fd052f7cea90b673b5399e4f8",
+    "Panels/GameSettingsPanel/inputs/brief.md": "e060c5d2f21f9c791eeed0e2918b374e47a1068c49013d5a4d0cb2e3f20d3890",
+    "Panels/StarportHomePanel/design/element-groups.json": "0a16291fa58de104c1593cdd795cd637ec6a62df4fbd9bfc1a900e8c4204898a",
+    "Panels/StarportHomePanel/design/review/approval.json": "f3eaf6a6912819e1b5c722fe56c62687ac3a29ef579a1898c56d8f7ee84914d7",
+    "Panels/StarportHomePanel/design/review/element-groups-approval.json": "4ae415a8921f7ffaaabdb06710e04be270ff909768e8a98e4940573578a43e37",
+    "Panels/StarportHomePanel/html/StarportHomePanel.css": "d8eebde333e9e6bca273883ade27000805d8ec4552736b514a9ed42d3ca3ddea",
+    "Panels/StarportHomePanel/html/StarportHomePanel.html": "f74d09505208c0224920f557afc10ebba49704b27392dd4a00d14ec3f6e75550",
+    "Panels/StarportHomePanel/html/StarportHomePanel.preview.js": "d2086cd14716f26ae50d9ad3d4474c957c1c017a02a2079d96c884bbb34cfaa1",
+    "Panels/StarportHomePanel/html/assets/project/Button/Btn_Control_Background_Surface_Normal.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Panels/StarportHomePanel/html/assets/project/Image/Img_ItemBattery_Surface_Default.png": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+    "Panels/StarportHomePanel/html/assets/project/Image/Img_ItemBeacon_Surface_Default.png": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+    "Panels/StarportHomePanel/html/assets/project/Image/Img_ItemMedkit_Surface_Default.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+    "Panels/StarportHomePanel/html/assets/project/Image/Img_ItemRation_Surface_Default.png": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+    "Panels/StarportHomePanel/html/assets/project/Image/Img_RoundedSurface_Surface_Default.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Panels/StarportHomePanel/html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Panels/StarportHomePanel/html/assets/shared/Img_ItemBattery.png": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+    "Panels/StarportHomePanel/html/assets/shared/Img_ItemBeacon.png": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+    "Panels/StarportHomePanel/html/assets/shared/Img_ItemMedkit.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+    "Panels/StarportHomePanel/html/assets/shared/Img_ItemRation.png": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+    "Panels/StarportHomePanel/html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Panels/StarportHomePanel/html/elements.json": "b86fd693d0646889b30d1677a411e1db12ef629d598be982b7486455a74d9eb6",
+    "Panels/StarportHomePanel/html/panel.package.json": "f6495dc7026ec1cfecead032eee31d5de4998fa057c3512b482a6a2b2277ae1a",
+    "Panels/StarportHomePanel/html/sprites.json": "6ded6a57fbbd8a39bcbe4b245f57a2bada599953df8166a2f736f7308b5d28d9",
+    "Panels/StarportHomePanel/inputs/art-source/Img_Close.svg": "e512eb0dbc5ace2f1acc94284b3e1362377ad8469e07f3aeaf7afdd09bc11327",
+    "Panels/StarportHomePanel/inputs/art-source/Img_Confirm.svg": "b8cdbcdf86fc44ba93e627b1876dbf6fb79e98faea61972baaf4fa9f46859a2a",
+    "Panels/StarportHomePanel/inputs/art-source/Img_Control_Background.svg": "14de4aca48132660e044f170f567fd0447c2d924f8099bbcbe657ffb960d3bf6",
+    "Panels/StarportHomePanel/inputs/art-source/Img_Credits.svg": "4abd0e3ba20705a78fbe21b28fc1a6c69fdc4e2f4c6916476899e3011231c354",
+    "Panels/StarportHomePanel/inputs/art-source/Img_Energy.svg": "2624aa03c49b6a47c58c9548f094717cafe26dd5ec0eeba36a319659b9d7a26e",
+    "Panels/StarportHomePanel/inputs/art-source/Img_ItemAlloy.svg": "14ab599477661e689a5b2ab680d1b147cbf86a5fa30b341038d2760ccde5638a",
+    "Panels/StarportHomePanel/inputs/art-source/Img_ItemBattery.svg": "ec1fa42515071242ff088bbddec7259cf0becc2dfc0f383611fdd0cff5164ea8",
+    "Panels/StarportHomePanel/inputs/art-source/Img_ItemBeacon.svg": "6fbb63b622c4a975946f17c149a7ba12ddfd8bc0005b91d56ecfca2b62fd97c8",
+    "Panels/StarportHomePanel/inputs/art-source/Img_ItemChip.svg": "3c765972f2d27a259bd68ad35ecd19775b2156e6e8261c75e0de671ece2128d3",
+    "Panels/StarportHomePanel/inputs/art-source/Img_ItemCircuit.svg": "b619569b1185a531f5040e0c236e517edea7680aaa021fd058377e41237e9288",
+    "Panels/StarportHomePanel/inputs/art-source/Img_ItemMedkit.svg": "56e8c2d6010e83936b8b1df5a53cfc8838abb021eace7236b649057c24dea538",
+    "Panels/StarportHomePanel/inputs/art-source/Img_ItemOre.svg": "27094d273860030920bf67fa2598141fe9e8b0db57640b2f013577738b57a590",
+    "Panels/StarportHomePanel/inputs/art-source/Img_ItemRation.svg": "50bd59b802d8990e361de9999d7c374c863c7bc6e9efafbb965c266c21ee0972",
+    "Panels/StarportHomePanel/inputs/art-source/Img_Lock.svg": "33758b961cae3de31a9fefca100a36a70b28b5f5dced458e255caceb929b8445",
+    "Panels/StarportHomePanel/inputs/art-source/Img_NavigateBack.svg": "cac24ed7b5d5e1a44f614a1e4ea8ef9c2b24448197bf8012aea85a3ae3d5e321",
+    "Panels/StarportHomePanel/inputs/art-source/Img_Risk.svg": "1d93fc17d0db2b41a3a50f9199f0d74ebe4df5cd2548d5dd28e3cd0a2a3d548d",
+    "Panels/StarportHomePanel/inputs/art-source/Img_RoundedSurface.svg": "e3e0febd5823320a4818c544c92b7e13602ccf145cd354a971f09893898b0994",
+    "Panels/StarportHomePanel/inputs/art-source/Img_Search.svg": "51f54fdf92e029506f4c6519bdf85c82b5203b3271aee1f335dbb556daee4594",
+    "Panels/StarportHomePanel/inputs/art-source/Img_Weight.svg": "9722c82e2a5ff1262f832d2025eeeb3d0d11a00eba931da3c9a07b11fce2a2eb",
+    "Panels/StarportHomePanel/inputs/brief.md": "7b60a0fff5ca33856562ebaf4c1a29af43c226a3efdd8420c0c62e6ca3394b9e",
+    "Panels/SupplyInventoryPanel/design/element-groups.json": "a6e54e031125629635641480668227ba4eec6bffd4ab319f127586d990437836",
+    "Panels/SupplyInventoryPanel/design/review/approval.json": "4671c8c88ca92930cfa9fb7ae9922d5c3b12e6da5a6b49199d8a64a7cb07f49b",
+    "Panels/SupplyInventoryPanel/design/review/element-groups-approval.json": "cf5f28401e75e656f164426860fd43dc58f121b13788e6527608cecbf1dc3902",
+    "Panels/SupplyInventoryPanel/html/SupplyInventoryPanel.css": "d8eebde333e9e6bca273883ade27000805d8ec4552736b514a9ed42d3ca3ddea",
+    "Panels/SupplyInventoryPanel/html/SupplyInventoryPanel.html": "3d6d4c10c7bff979a193830569390f051556ac0c71591d37df8eedd840c8ef6d",
+    "Panels/SupplyInventoryPanel/html/SupplyInventoryPanel.preview.js": "d2086cd14716f26ae50d9ad3d4474c957c1c017a02a2079d96c884bbb34cfaa1",
+    "Panels/SupplyInventoryPanel/html/assets/project/Button/Btn_Control_Background_Surface_Normal.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Panels/SupplyInventoryPanel/html/assets/project/Button/Btn_ItemMedkit_Icon_Normal.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+    "Panels/SupplyInventoryPanel/html/assets/project/Button/Btn_RoundedSurface_Icon_Normal.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Panels/SupplyInventoryPanel/html/assets/project/Button/Btn_RoundedSurface_Surface_Normal.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Panels/SupplyInventoryPanel/html/assets/project/Image/Img_Circle_Surface_Default.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "Panels/SupplyInventoryPanel/html/assets/project/Image/Img_ItemAlloy_Surface_Default.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "Panels/SupplyInventoryPanel/html/assets/project/Image/Img_ItemBattery_Surface_Default.png": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+    "Panels/SupplyInventoryPanel/html/assets/project/Image/Img_ItemBeacon_Surface_Default.png": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+    "Panels/SupplyInventoryPanel/html/assets/project/Image/Img_ItemChip_Surface_Default.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "Panels/SupplyInventoryPanel/html/assets/project/Image/Img_ItemCircuit_Surface_Default.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "Panels/SupplyInventoryPanel/html/assets/project/Image/Img_ItemMedkit_Surface_Default.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+    "Panels/SupplyInventoryPanel/html/assets/project/Image/Img_ItemOre_Surface_Default.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "Panels/SupplyInventoryPanel/html/assets/project/Image/Img_ItemRation_Surface_Default.png": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+    "Panels/SupplyInventoryPanel/html/assets/project/Image/Img_RoundedSurface_Surface_Default.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Panels/SupplyInventoryPanel/html/assets/project/Image/Img_Value_Bar_Surface_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "Panels/SupplyInventoryPanel/html/assets/project/Slider/Sld_Circle_Handle_Default.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "Panels/SupplyInventoryPanel/html/assets/project/Slider/Sld_Value_Bar_Fill_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "Panels/SupplyInventoryPanel/html/assets/project/Slider/Sld_Value_Bar_Track_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "Panels/SupplyInventoryPanel/html/assets/project/TMP_InputField/Inp_Control_Background_Surface_Default.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Panels/SupplyInventoryPanel/html/assets/shared/Img_Circle.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "Panels/SupplyInventoryPanel/html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "Panels/SupplyInventoryPanel/html/assets/shared/Img_ItemAlloy.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "Panels/SupplyInventoryPanel/html/assets/shared/Img_ItemBattery.png": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+    "Panels/SupplyInventoryPanel/html/assets/shared/Img_ItemBeacon.png": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+    "Panels/SupplyInventoryPanel/html/assets/shared/Img_ItemChip.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "Panels/SupplyInventoryPanel/html/assets/shared/Img_ItemCircuit.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "Panels/SupplyInventoryPanel/html/assets/shared/Img_ItemMedkit.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+    "Panels/SupplyInventoryPanel/html/assets/shared/Img_ItemOre.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "Panels/SupplyInventoryPanel/html/assets/shared/Img_ItemRation.png": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+    "Panels/SupplyInventoryPanel/html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "Panels/SupplyInventoryPanel/html/assets/shared/Sld_Value_Bar.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "Panels/SupplyInventoryPanel/html/elements.json": "b8b91b8da631a9bf990c23104ae41e1238ff81afa08c9e670f88919f5816a038",
+    "Panels/SupplyInventoryPanel/html/panel.package.json": "989a9272ca2e3a8426ec05c1307cebba11c8d4271f3e39b7b4e6e18fcee31e99",
+    "Panels/SupplyInventoryPanel/html/sprites.json": "5e3505b2d6c523583c4f3d830d48c3a68205eb047ea235d29ad8bfe3c5b6748b",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_Circle.svg": "357979943bb96ff0a67ce29674137146ee36b1d84effb6eb9f1cfbb12af94715",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_Close.svg": "e512eb0dbc5ace2f1acc94284b3e1362377ad8469e07f3aeaf7afdd09bc11327",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_Confirm.svg": "b8cdbcdf86fc44ba93e627b1876dbf6fb79e98faea61972baaf4fa9f46859a2a",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_Control_Background.svg": "14de4aca48132660e044f170f567fd0447c2d924f8099bbcbe657ffb960d3bf6",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_Credits.svg": "4abd0e3ba20705a78fbe21b28fc1a6c69fdc4e2f4c6916476899e3011231c354",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_Energy.svg": "2624aa03c49b6a47c58c9548f094717cafe26dd5ec0eeba36a319659b9d7a26e",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_ItemAlloy.svg": "14ab599477661e689a5b2ab680d1b147cbf86a5fa30b341038d2760ccde5638a",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_ItemBattery.svg": "ec1fa42515071242ff088bbddec7259cf0becc2dfc0f383611fdd0cff5164ea8",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_ItemBeacon.svg": "6fbb63b622c4a975946f17c149a7ba12ddfd8bc0005b91d56ecfca2b62fd97c8",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_ItemChip.svg": "3c765972f2d27a259bd68ad35ecd19775b2156e6e8261c75e0de671ece2128d3",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_ItemCircuit.svg": "b619569b1185a531f5040e0c236e517edea7680aaa021fd058377e41237e9288",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_ItemMedkit.svg": "56e8c2d6010e83936b8b1df5a53cfc8838abb021eace7236b649057c24dea538",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_ItemOre.svg": "27094d273860030920bf67fa2598141fe9e8b0db57640b2f013577738b57a590",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_ItemRation.svg": "50bd59b802d8990e361de9999d7c374c863c7bc6e9efafbb965c266c21ee0972",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_Lock.svg": "33758b961cae3de31a9fefca100a36a70b28b5f5dced458e255caceb929b8445",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_NavigateBack.svg": "cac24ed7b5d5e1a44f614a1e4ea8ef9c2b24448197bf8012aea85a3ae3d5e321",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_Risk.svg": "1d93fc17d0db2b41a3a50f9199f0d74ebe4df5cd2548d5dd28e3cd0a2a3d548d",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_RoundedSurface.svg": "e3e0febd5823320a4818c544c92b7e13602ccf145cd354a971f09893898b0994",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_Search.svg": "51f54fdf92e029506f4c6519bdf85c82b5203b3271aee1f335dbb556daee4594",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Img_Weight.svg": "9722c82e2a5ff1262f832d2025eeeb3d0d11a00eba931da3c9a07b11fce2a2eb",
+    "Panels/SupplyInventoryPanel/inputs/art-source/Sld_Value_Bar.svg": "6d3c6285d0657cc8225c09d90f90c7c108bd27a555b772748ea9282d1d2ef9d7",
+    "Panels/SupplyInventoryPanel/inputs/brief.md": "f7693110a1201a3fa8046114d41c4a0b58f5ec81cb2b849f5c0b05f17156528c",
+    "contracts/fixtures.json": "5857653de2960bbdcb1438c842133a049f87a82c0d614566b4ca02b15e9e0cc8",
+    "contracts/native-assembly.json": "9987ba240163c83922754ca59976e29e8414cb0fb11b4a7c72466c8d6eba0a43",
+    "contracts/screens.json": "1e6229d775bd2109d8a50d46f125d5d8623b645a731e0c9694f9784ff4f86f35",
+    "contracts/style.json": "19a2bbc036d375363199989f10278c182e090c2e4fa93e9a385dda25b26e3588",
+    "design-tools/build_html.py": "069732c36209c3537d20666d260c6752d9a3e7ef7c9c9ff401a565c4fb1b677a",
+    "design-tools/editor-demo-data.json": "24b0ec2e2b2e3f5c957e60ffbcc8c14277f8b4c7d227375332f0e54646ec02c1",
+    "design-tools/export_assets.py": "38a08601ea8c527d02c6834b9ae167e0050d398e199b304b417e71312b2edf94",
+    "design-tools/finalize_evidence.py": "3f94b0a8723092fd3f5c7a4400c8251fe5773e68b4198d464e1f89ce8597023d",
+    "design-tools/migrate_project_assets.py": "b259655001e4c7346bb559802e5b49dae7537df9950e8537ae6bbec0c68227db",
+    "design-tools/prepare_review.py": "908dc7519a737ead90cb9bb106250bcd37c434fd8e64a18e2c90dd5a5f6f7aaf",
+    "design-tools/preview_runtime.js": "d2086cd14716f26ae50d9ad3d4474c957c1c017a02a2079d96c884bbb34cfaa1",
+    "design-tools/rasterize_assets.cjs": "0ad164c6b135ea960530eb830f865067d554b95833887e339f6db6b0e87205e8",
+    "design-tools/render_element_sheets.py": "83e9601e5a30cfa2dd1681a50375c6484b9fc0b86421ef4207183e4bb64a55bc",
+    "design-tools/render_previews.py": "d92b628f28d75482299146100cd4e17f10b8928f725dcf1fab039064fbd69a86",
+    "design-tools/templates/base.css": "e77787bec430719d05ac979fb66cb0d25cce69619e1dcdb6f211e2e637be31ba",
+    "design-tools/verify_browser.cjs": "02534d4a9737af843b1da142d15aef623aad3fbbd306916350469c98f64a41e8",
+    "project.assets.json": "b8e4068538f7bdc80708cdf395469fd06bc5e06e32ce0bda5f616f1f499792e4",
+    "shared-art-source/Img_Circle.svg": "357979943bb96ff0a67ce29674137146ee36b1d84effb6eb9f1cfbb12af94715",
+    "shared-art-source/Img_Close.svg": "e512eb0dbc5ace2f1acc94284b3e1362377ad8469e07f3aeaf7afdd09bc11327",
+    "shared-art-source/Img_Confirm.svg": "b8cdbcdf86fc44ba93e627b1876dbf6fb79e98faea61972baaf4fa9f46859a2a",
+    "shared-art-source/Img_Control_Background.svg": "14de4aca48132660e044f170f567fd0447c2d924f8099bbcbe657ffb960d3bf6",
+    "shared-art-source/Img_Credits.svg": "4abd0e3ba20705a78fbe21b28fc1a6c69fdc4e2f4c6916476899e3011231c354",
+    "shared-art-source/Img_Energy.svg": "2624aa03c49b6a47c58c9548f094717cafe26dd5ec0eeba36a319659b9d7a26e",
+    "shared-art-source/Img_ItemAlloy.svg": "14ab599477661e689a5b2ab680d1b147cbf86a5fa30b341038d2760ccde5638a",
+    "shared-art-source/Img_ItemBattery.svg": "ec1fa42515071242ff088bbddec7259cf0becc2dfc0f383611fdd0cff5164ea8",
+    "shared-art-source/Img_ItemBeacon.svg": "6fbb63b622c4a975946f17c149a7ba12ddfd8bc0005b91d56ecfca2b62fd97c8",
+    "shared-art-source/Img_ItemChip.svg": "3c765972f2d27a259bd68ad35ecd19775b2156e6e8261c75e0de671ece2128d3",
+    "shared-art-source/Img_ItemCircuit.svg": "b619569b1185a531f5040e0c236e517edea7680aaa021fd058377e41237e9288",
+    "shared-art-source/Img_ItemMedkit.svg": "56e8c2d6010e83936b8b1df5a53cfc8838abb021eace7236b649057c24dea538",
+    "shared-art-source/Img_ItemOre.svg": "27094d273860030920bf67fa2598141fe9e8b0db57640b2f013577738b57a590",
+    "shared-art-source/Img_ItemRation.svg": "50bd59b802d8990e361de9999d7c374c863c7bc6e9efafbb965c266c21ee0972",
+    "shared-art-source/Img_Lock.svg": "33758b961cae3de31a9fefca100a36a70b28b5f5dced458e255caceb929b8445",
+    "shared-art-source/Img_NavigateBack.svg": "cac24ed7b5d5e1a44f614a1e4ea8ef9c2b24448197bf8012aea85a3ae3d5e321",
+    "shared-art-source/Img_Risk.svg": "1d93fc17d0db2b41a3a50f9199f0d74ebe4df5cd2548d5dd28e3cd0a2a3d548d",
+    "shared-art-source/Img_RoundedSurface.svg": "e3e0febd5823320a4818c544c92b7e13602ccf145cd354a971f09893898b0994",
+    "shared-art-source/Img_Search.svg": "51f54fdf92e029506f4c6519bdf85c82b5203b3271aee1f335dbb556daee4594",
+    "shared-art-source/Img_Weight.svg": "9722c82e2a5ff1262f832d2025eeeb3d0d11a00eba931da3c9a07b11fce2a2eb",
+    "shared-art-source/Sld_Value_Bar.svg": "6d3c6285d0657cc8225c09d90f90c7c108bd27a555b772748ea9282d1d2ef9d7",
+    "shared-art-source/Tgl_Sound_Track.svg": "16283b369ab8032d1e1f0e3d2c62e3f62bedf01fd052f7cea90b673b5399e4f8",
+    "shared-assets/project/Button/Btn_Control_Background_Surface_Normal.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "shared-assets/project/Button/Btn_ItemMedkit_Icon_Normal.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+    "shared-assets/project/Button/Btn_RoundedSurface_Icon_Normal.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "shared-assets/project/Button/Btn_RoundedSurface_Surface_Normal.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "shared-assets/project/Image/Img_Circle_Surface_Default.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "shared-assets/project/Image/Img_Confirm_Surface_Default.png": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192",
+    "shared-assets/project/Image/Img_Credits_Surface_Default.png": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+    "shared-assets/project/Image/Img_ItemAlloy_Surface_Default.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "shared-assets/project/Image/Img_ItemBattery_Surface_Default.png": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+    "shared-assets/project/Image/Img_ItemBeacon_Surface_Default.png": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+    "shared-assets/project/Image/Img_ItemChip_Surface_Default.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "shared-assets/project/Image/Img_ItemCircuit_Surface_Default.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "shared-assets/project/Image/Img_ItemMedkit_Surface_Default.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+    "shared-assets/project/Image/Img_ItemOre_Surface_Default.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "shared-assets/project/Image/Img_ItemRation_Surface_Default.png": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+    "shared-assets/project/Image/Img_RoundedSurface_Surface_Default.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "shared-assets/project/Image/Img_Value_Bar_Surface_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "shared-assets/project/Slider/Sld_Circle_Handle_Default.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "shared-assets/project/Slider/Sld_Value_Bar_Fill_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "shared-assets/project/Slider/Sld_Value_Bar_Track_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "shared-assets/project/TMP_InputField/Inp_Control_Background_Surface_Default.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "shared-assets/project/Toggle/Tgl_Sound_Surface_Disabled.png": "259614e8bc4b5e044b9fded3998b8fb41ac94199cec64a0141933a49c44aec3a",
+    "shared-assets/project/Toggle/Tgl_Sound_Surface_Off.png": "dd991dbb3ebe7dc320aafbeb83a0f8ff1c32c3cfa5e48fc476a226983f76dffd",
+    "shared-assets/project/Toggle/Tgl_Sound_Surface_On.png": "7e3d245862ddca19f5903cf983dc3b741bea7ab95c21bfc3de6d1f6b8e2e13ee"
+  },
+  "assetDefinitions": {
+    "button_control_background_surface_normal": {
+      "assetId": "Button_Control_Background_Surface_Normal",
+      "componentType": "Button",
+      "part": "Surface",
+      "styleId": "Control_Background",
+      "state": "Normal",
+      "source": "shared-assets/project/Button/Btn_Control_Background_Surface_Normal.png",
+      "sourceSha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:3adcd2a39e0fb14e1acc82462397af60a82d8e4304d3e1cac90b3574e9575412",
+      "tintable": true,
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "button_itemmedkit_icon_normal": {
+      "assetId": "Button_ItemMedkit_Icon_Normal",
+      "componentType": "Button",
+      "part": "Icon",
+      "styleId": "ItemMedkit",
+      "state": "Normal",
+      "source": "shared-assets/project/Button/Btn_ItemMedkit_Icon_Normal.png",
+      "sourceSha256": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:05ef7f748aafb6243aa02d82f9c924c0457802f848614d1e4fc258abfe356079",
+      "tintable": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "button_roundedsurface_icon_normal": {
+      "assetId": "Button_RoundedSurface_Icon_Normal",
+      "componentType": "Button",
+      "part": "Icon",
+      "styleId": "RoundedSurface",
+      "state": "Normal",
+      "source": "shared-assets/project/Button/Btn_RoundedSurface_Icon_Normal.png",
+      "sourceSha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:05ef7f748aafb6243aa02d82f9c924c0457802f848614d1e4fc258abfe356079",
+      "tintable": true,
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "button_roundedsurface_surface_normal": {
+      "assetId": "Button_RoundedSurface_Surface_Normal",
+      "componentType": "Button",
+      "part": "Surface",
+      "styleId": "RoundedSurface",
+      "state": "Normal",
+      "source": "shared-assets/project/Button/Btn_RoundedSurface_Surface_Normal.png",
+      "sourceSha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:8c56f20a5f245b8f9dcdbaa4355358a98556d838ae9c9878c165d9c4cf8bc23c",
+      "tintable": true,
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "image_circle_surface_default": {
+      "assetId": "Image_Circle_Surface_Default",
+      "componentType": "Image",
+      "part": "Surface",
+      "styleId": "Circle",
+      "state": "Default",
+      "source": "shared-assets/project/Image/Img_Circle_Surface_Default.png",
+      "sourceSha256": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:329c01d0bce4cf4d339bd39dfd504893a9d3a7212830476b118db5df12cc5ee8",
+      "tintable": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "image_confirm_surface_default": {
+      "assetId": "Image_Confirm_Surface_Default",
+      "componentType": "Image",
+      "part": "Surface",
+      "styleId": "Confirm",
+      "state": "Default",
+      "source": "shared-assets/project/Image/Img_Confirm_Surface_Default.png",
+      "sourceSha256": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:c537604fd158ae5a433dd509affd43ebe02bd94baa34367785b500fba5fa4784",
+      "tintable": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "image_credits_surface_default": {
+      "assetId": "Image_Credits_Surface_Default",
+      "componentType": "Image",
+      "part": "Surface",
+      "styleId": "Credits",
+      "state": "Default",
+      "source": "shared-assets/project/Image/Img_Credits_Surface_Default.png",
+      "sourceSha256": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:c537604fd158ae5a433dd509affd43ebe02bd94baa34367785b500fba5fa4784",
+      "tintable": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "image_itemalloy_surface_default": {
+      "assetId": "Image_ItemAlloy_Surface_Default",
+      "componentType": "Image",
+      "part": "Surface",
+      "styleId": "ItemAlloy",
+      "state": "Default",
+      "source": "shared-assets/project/Image/Img_ItemAlloy_Surface_Default.png",
+      "sourceSha256": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:c537604fd158ae5a433dd509affd43ebe02bd94baa34367785b500fba5fa4784",
+      "tintable": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "image_itembattery_surface_default": {
+      "assetId": "Image_ItemBattery_Surface_Default",
+      "componentType": "Image",
+      "part": "Surface",
+      "styleId": "ItemBattery",
+      "state": "Default",
+      "source": "shared-assets/project/Image/Img_ItemBattery_Surface_Default.png",
+      "sourceSha256": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:fc2ea75bd6f008b24d227fcdf085cdeb9e68fd781d3006f589e6c0d7ffcd3ac9",
+      "tintable": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "image_itembeacon_surface_default": {
+      "assetId": "Image_ItemBeacon_Surface_Default",
+      "componentType": "Image",
+      "part": "Surface",
+      "styleId": "ItemBeacon",
+      "state": "Default",
+      "source": "shared-assets/project/Image/Img_ItemBeacon_Surface_Default.png",
+      "sourceSha256": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:fc2ea75bd6f008b24d227fcdf085cdeb9e68fd781d3006f589e6c0d7ffcd3ac9",
+      "tintable": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "image_itemchip_surface_default": {
+      "assetId": "Image_ItemChip_Surface_Default",
+      "componentType": "Image",
+      "part": "Surface",
+      "styleId": "ItemChip",
+      "state": "Default",
+      "source": "shared-assets/project/Image/Img_ItemChip_Surface_Default.png",
+      "sourceSha256": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:c537604fd158ae5a433dd509affd43ebe02bd94baa34367785b500fba5fa4784",
+      "tintable": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "image_itemcircuit_surface_default": {
+      "assetId": "Image_ItemCircuit_Surface_Default",
+      "componentType": "Image",
+      "part": "Surface",
+      "styleId": "ItemCircuit",
+      "state": "Default",
+      "source": "shared-assets/project/Image/Img_ItemCircuit_Surface_Default.png",
+      "sourceSha256": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:c537604fd158ae5a433dd509affd43ebe02bd94baa34367785b500fba5fa4784",
+      "tintable": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "image_itemmedkit_surface_default": {
+      "assetId": "Image_ItemMedkit_Surface_Default",
+      "componentType": "Image",
+      "part": "Surface",
+      "styleId": "ItemMedkit",
+      "state": "Default",
+      "source": "shared-assets/project/Image/Img_ItemMedkit_Surface_Default.png",
+      "sourceSha256": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:fc2ea75bd6f008b24d227fcdf085cdeb9e68fd781d3006f589e6c0d7ffcd3ac9",
+      "tintable": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "image_itemore_surface_default": {
+      "assetId": "Image_ItemOre_Surface_Default",
+      "componentType": "Image",
+      "part": "Surface",
+      "styleId": "ItemOre",
+      "state": "Default",
+      "source": "shared-assets/project/Image/Img_ItemOre_Surface_Default.png",
+      "sourceSha256": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:c537604fd158ae5a433dd509affd43ebe02bd94baa34367785b500fba5fa4784",
+      "tintable": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "image_itemration_surface_default": {
+      "assetId": "Image_ItemRation_Surface_Default",
+      "componentType": "Image",
+      "part": "Surface",
+      "styleId": "ItemRation",
+      "state": "Default",
+      "source": "shared-assets/project/Image/Img_ItemRation_Surface_Default.png",
+      "sourceSha256": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:fc2ea75bd6f008b24d227fcdf085cdeb9e68fd781d3006f589e6c0d7ffcd3ac9",
+      "tintable": true,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "image_roundedsurface_surface_default": {
+      "assetId": "Image_RoundedSurface_Surface_Default",
+      "componentType": "Image",
+      "part": "Surface",
+      "styleId": "RoundedSurface",
+      "state": "Default",
+      "source": "shared-assets/project/Image/Img_RoundedSurface_Surface_Default.png",
+      "sourceSha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:3adcd2a39e0fb14e1acc82462397af60a82d8e4304d3e1cac90b3574e9575412",
+      "tintable": true,
+      "border": [
+        24,
+        24,
+        24,
+        24
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "image_value_bar_surface_default": {
+      "assetId": "Image_Value_Bar_Surface_Default",
+      "componentType": "Image",
+      "part": "Surface",
+      "styleId": "Value_Bar",
+      "state": "Default",
+      "source": "shared-assets/project/Image/Img_Value_Bar_Surface_Default.png",
+      "sourceSha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:05ef7f748aafb6243aa02d82f9c924c0457802f848614d1e4fc258abfe356079",
+      "tintable": true,
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "slider_circle_handle_default": {
+      "assetId": "Slider_Circle_Handle_Default",
+      "componentType": "Slider",
+      "part": "Handle",
+      "styleId": "Circle",
+      "state": "Default",
+      "source": "shared-assets/project/Slider/Sld_Circle_Handle_Default.png",
+      "sourceSha256": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:329c01d0bce4cf4d339bd39dfd504893a9d3a7212830476b118db5df12cc5ee8",
+      "tintable": true,
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "slider_value_bar_fill_default": {
+      "assetId": "Slider_Value_Bar_Fill_Default",
+      "componentType": "Slider",
+      "part": "Fill",
+      "styleId": "Value_Bar",
+      "state": "Default",
+      "source": "shared-assets/project/Slider/Sld_Value_Bar_Fill_Default.png",
+      "sourceSha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:329c01d0bce4cf4d339bd39dfd504893a9d3a7212830476b118db5df12cc5ee8",
+      "tintable": true,
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "slider_value_bar_track_default": {
+      "assetId": "Slider_Value_Bar_Track_Default",
+      "componentType": "Slider",
+      "part": "Track",
+      "styleId": "Value_Bar",
+      "state": "Default",
+      "source": "shared-assets/project/Slider/Sld_Value_Bar_Track_Default.png",
+      "sourceSha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:329c01d0bce4cf4d339bd39dfd504893a9d3a7212830476b118db5df12cc5ee8",
+      "tintable": true,
+      "border": [
+        16,
+        15,
+        16,
+        15
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "tmp_inputfield_control_background_surface_default": {
+      "assetId": "TMP_InputField_Control_Background_Surface_Default",
+      "componentType": "TMP_InputField",
+      "part": "Surface",
+      "styleId": "Control_Background",
+      "state": "Default",
+      "source": "shared-assets/project/TMP_InputField/Inp_Control_Background_Surface_Default.png",
+      "sourceSha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:329c01d0bce4cf4d339bd39dfd504893a9d3a7212830476b118db5df12cc5ee8",
+      "tintable": true,
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "toggle_sound_surface_disabled": {
+      "assetId": "Toggle_Sound_Surface_Disabled",
+      "componentType": "Toggle",
+      "part": "Surface",
+      "styleId": "Sound",
+      "state": "Disabled",
+      "source": "shared-assets/project/Toggle/Tgl_Sound_Surface_Disabled.png",
+      "sourceSha256": "259614e8bc4b5e044b9fded3998b8fb41ac94199cec64a0141933a49c44aec3a",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:329c01d0bce4cf4d339bd39dfd504893a9d3a7212830476b118db5df12cc5ee8",
+      "tintable": false,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "toggle_sound_surface_off": {
+      "assetId": "Toggle_Sound_Surface_Off",
+      "componentType": "Toggle",
+      "part": "Surface",
+      "styleId": "Sound",
+      "state": "Off",
+      "source": "shared-assets/project/Toggle/Tgl_Sound_Surface_Off.png",
+      "sourceSha256": "dd991dbb3ebe7dc320aafbeb83a0f8ff1c32c3cfa5e48fc476a226983f76dffd",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:329c01d0bce4cf4d339bd39dfd504893a9d3a7212830476b118db5df12cc5ee8",
+      "tintable": false,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    },
+    "toggle_sound_surface_on": {
+      "assetId": "Toggle_Sound_Surface_On",
+      "componentType": "Toggle",
+      "part": "Surface",
+      "styleId": "Sound",
+      "state": "On",
+      "source": "shared-assets/project/Toggle/Tgl_Sound_Surface_On.png",
+      "sourceSha256": "7e3d245862ddca19f5903cf983dc3b741bea7ab95c21bfc3de6d1f6b8e2e13ee",
+      "approved": true,
+      "approvalVersion": "element-groups-v01:329c01d0bce4cf4d339bd39dfd504893a9d3a7212830476b118db5df12cc5ee8",
+      "tintable": false,
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "sRGB": true,
+      "filter": "Bilinear"
+    }
+  },
+  "assetSources": {
+    "shared-assets/project/Button/Btn_Control_Background_Surface_Normal.png": [
+      "button_control_background_surface_normal"
+    ],
+    "shared-assets/project/Button/Btn_ItemMedkit_Icon_Normal.png": [
+      "button_itemmedkit_icon_normal"
+    ],
+    "shared-assets/project/Button/Btn_RoundedSurface_Icon_Normal.png": [
+      "button_roundedsurface_icon_normal"
+    ],
+    "shared-assets/project/Button/Btn_RoundedSurface_Surface_Normal.png": [
+      "button_roundedsurface_surface_normal"
+    ],
+    "shared-assets/project/Image/Img_Circle_Surface_Default.png": [
+      "image_circle_surface_default"
+    ],
+    "shared-assets/project/Image/Img_Confirm_Surface_Default.png": [
+      "image_confirm_surface_default"
+    ],
+    "shared-assets/project/Image/Img_Credits_Surface_Default.png": [
+      "image_credits_surface_default"
+    ],
+    "shared-assets/project/Image/Img_ItemAlloy_Surface_Default.png": [
+      "image_itemalloy_surface_default"
+    ],
+    "shared-assets/project/Image/Img_ItemBattery_Surface_Default.png": [
+      "image_itembattery_surface_default"
+    ],
+    "shared-assets/project/Image/Img_ItemBeacon_Surface_Default.png": [
+      "image_itembeacon_surface_default"
+    ],
+    "shared-assets/project/Image/Img_ItemChip_Surface_Default.png": [
+      "image_itemchip_surface_default"
+    ],
+    "shared-assets/project/Image/Img_ItemCircuit_Surface_Default.png": [
+      "image_itemcircuit_surface_default"
+    ],
+    "shared-assets/project/Image/Img_ItemMedkit_Surface_Default.png": [
+      "image_itemmedkit_surface_default"
+    ],
+    "shared-assets/project/Image/Img_ItemOre_Surface_Default.png": [
+      "image_itemore_surface_default"
+    ],
+    "shared-assets/project/Image/Img_ItemRation_Surface_Default.png": [
+      "image_itemration_surface_default"
+    ],
+    "shared-assets/project/Image/Img_RoundedSurface_Surface_Default.png": [
+      "image_roundedsurface_surface_default"
+    ],
+    "shared-assets/project/Image/Img_Value_Bar_Surface_Default.png": [
+      "image_value_bar_surface_default"
+    ],
+    "shared-assets/project/Slider/Sld_Circle_Handle_Default.png": [
+      "slider_circle_handle_default"
+    ],
+    "shared-assets/project/Slider/Sld_Value_Bar_Fill_Default.png": [
+      "slider_value_bar_fill_default"
+    ],
+    "shared-assets/project/Slider/Sld_Value_Bar_Track_Default.png": [
+      "slider_value_bar_track_default"
+    ],
+    "shared-assets/project/TMP_InputField/Inp_Control_Background_Surface_Default.png": [
+      "tmp_inputfield_control_background_surface_default"
+    ],
+    "shared-assets/project/Toggle/Tgl_Sound_Surface_Disabled.png": [
+      "toggle_sound_surface_disabled"
+    ],
+    "shared-assets/project/Toggle/Tgl_Sound_Surface_Off.png": [
+      "toggle_sound_surface_off"
+    ],
+    "shared-assets/project/Toggle/Tgl_Sound_Surface_On.png": [
+      "toggle_sound_surface_on"
+    ]
+  },
+  "assetConsumers": {
+    "image_roundedsurface_surface_default": [
+      "ActionConfirmPanel",
+      "ExpeditionResultPanel",
+      "ExpeditionSelectPanel",
+      "GameSettingsPanel",
+      "StarportHomePanel",
+      "SupplyInventoryPanel"
+    ],
+    "button_control_background_surface_normal": [
+      "ActionConfirmPanel",
+      "ExpeditionResultPanel",
+      "ExpeditionSelectPanel",
+      "GameSettingsPanel",
+      "StarportHomePanel",
+      "SupplyInventoryPanel"
+    ],
+    "image_confirm_surface_default": [
+      "ExpeditionResultPanel"
+    ],
+    "image_credits_surface_default": [
+      "ExpeditionResultPanel",
+      "ExpeditionSelectPanel"
+    ],
+    "image_itemalloy_surface_default": [
+      "ExpeditionResultPanel",
+      "ExpeditionSelectPanel",
+      "SupplyInventoryPanel"
+    ],
+    "image_itemchip_surface_default": [
+      "ExpeditionResultPanel",
+      "ExpeditionSelectPanel",
+      "SupplyInventoryPanel"
+    ],
+    "image_itemcircuit_surface_default": [
+      "ExpeditionResultPanel",
+      "ExpeditionSelectPanel",
+      "SupplyInventoryPanel"
+    ],
+    "image_itemore_surface_default": [
+      "ExpeditionResultPanel",
+      "ExpeditionSelectPanel",
+      "SupplyInventoryPanel"
+    ],
+    "button_roundedsurface_surface_normal": [
+      "ExpeditionSelectPanel",
+      "SupplyInventoryPanel"
+    ],
+    "tmp_inputfield_control_background_surface_default": [
+      "GameSettingsPanel",
+      "SupplyInventoryPanel"
+    ],
+    "toggle_sound_surface_off": [
+      "GameSettingsPanel"
+    ],
+    "toggle_sound_surface_on": [
+      "GameSettingsPanel"
+    ],
+    "toggle_sound_surface_disabled": [
+      "GameSettingsPanel"
+    ],
+    "slider_value_bar_track_default": [
+      "GameSettingsPanel",
+      "SupplyInventoryPanel"
+    ],
+    "slider_value_bar_fill_default": [
+      "GameSettingsPanel",
+      "SupplyInventoryPanel"
+    ],
+    "slider_circle_handle_default": [
+      "GameSettingsPanel",
+      "SupplyInventoryPanel"
+    ],
+    "image_circle_surface_default": [
+      "GameSettingsPanel",
+      "SupplyInventoryPanel"
+    ],
+    "image_itemmedkit_surface_default": [
+      "StarportHomePanel",
+      "SupplyInventoryPanel"
+    ],
+    "image_itembattery_surface_default": [
+      "StarportHomePanel",
+      "SupplyInventoryPanel"
+    ],
+    "image_itembeacon_surface_default": [
+      "StarportHomePanel",
+      "SupplyInventoryPanel"
+    ],
+    "image_itemration_surface_default": [
+      "StarportHomePanel",
+      "SupplyInventoryPanel"
+    ],
+    "button_roundedsurface_icon_normal": [
+      "SupplyInventoryPanel"
+    ],
+    "button_itemmedkit_icon_normal": [
+      "SupplyInventoryPanel"
+    ],
+    "image_value_bar_surface_default": [
+      "SupplyInventoryPanel"
+    ]
+  }
+}

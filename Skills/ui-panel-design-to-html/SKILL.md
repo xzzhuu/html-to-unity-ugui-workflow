@@ -73,6 +73,8 @@ python scripts/validate_directory.py --root <工作区> --require-ready
 
 默认 `full`；已有工作区自动沿用模式、分辨率和配置，不覆盖现有文件。可指定 `--panel-name`、`--title`、`--width`、`--height`。视觉分支只创建需求、设计和素材目录，没有 HTML 入口。详细目录、证据和校验语义见 [使用说明](references/usage.md)。
 
+新增游戏、多面板风格维护或重新导入时，读取 [游戏契约与统一验收](references/game-contracts.md)。使用游戏级 style/screens/native-assembly 契约及状态、影响计划工具；沿用已有需求和真实批准，不额外制造阶段审批。0.4.1 可按已启用的游戏配置重放原生圆角与 Slider 装配，仍须检查实际图像和业务引用。
+
 ## 交付与验收边界
 
 项目内交付元素素材、面板预制体，以及确认后的元素组图和完整面板预览参考图，并保留 Unity 自动维护的 meta。参考图默认放在 `Assets/Art/UI/DesignReferences/{设计集}/ElementGroups/` 与 `Panels/`，按项目规范适配。以 Texture/Default 导入，关闭 mipmaps，NPOT 缩放设为 None，Max Size 足以容纳原图；保持原分辨率与比例，不作为可交互面板整图替代物，不挂到运行时 Prefab，也不新增展示 Canvas。清单、确认记录与程序源码继续保留在工程外。额外组件 Prefab、字体或材质资产仅在用户明确需要时交付，不主动扩展资产体系。
