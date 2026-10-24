@@ -1,0 +1,1423 @@
+{
+  "prefab": "Assets/Art/UIPrefab/StarportSalvage/SupplyInventoryPanel/SupplyInventoryPanel.prefab",
+  "referenceSha256": "d659e61ee9460769d16b818d3bc44efee13bb50ee1f55111b0d898c8b10096a6",
+  "nodes": [
+    {
+      "path": "",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1920.0,
+      "height": 1080.0
+    },
+    {
+      "path": "Group_PanelBody",
+      "row": -1,
+      "visible": true,
+      "x": 120.0,
+      "y": 80.0,
+      "width": 1680.0,
+      "height": 920.0
+    },
+    {
+      "path": "Group_PanelBody/Btn_CategoryAll",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 246.0,
+      "width": 104.0,
+      "height": 56.0
+    },
+    {
+      "path": "Group_PanelBody/Btn_CategoryMaterial",
+      "row": -1,
+      "visible": true,
+      "x": 276.0,
+      "y": 246.0,
+      "width": 104.0,
+      "height": 56.0
+    },
+    {
+      "path": "Group_PanelBody/Btn_CategorySupply",
+      "row": -1,
+      "visible": true,
+      "x": 392.0,
+      "y": 246.0,
+      "width": 104.0,
+      "height": 56.0
+    },
+    {
+      "path": "Group_PanelBody/Input_ItemSearch",
+      "row": -1,
+      "visible": true,
+      "x": 520.0,
+      "y": 246.0,
+      "width": 290.0,
+      "height": 56.0
+    },
+    {
+      "path": "Group_PanelBody/Btn_ClearSearch",
+      "row": -1,
+      "visible": true,
+      "x": 822.0,
+      "y": 246.0,
+      "width": 88.0,
+      "height": 56.0
+    },
+    {
+      "path": "Group_PanelBody/Txt_InventoryTitle",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 330.0,
+      "width": 360.0,
+      "height": 40.0
+    },
+    {
+      "path": "Group_PanelBody/Txt_ItemCount",
+      "row": -1,
+      "visible": true,
+      "x": 666.0,
+      "y": 334.0,
+      "width": 140.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Scroll_Inventory",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 380.0,
+      "width": 620.0,
+      "height": 478.0
+    },
+    {
+      "path": "",
+      "row": 0,
+      "visible": true,
+      "x": 160.0,
+      "y": 380.0,
+      "width": 620.0,
+      "height": 84.0
+    },
+    {
+      "path": "Img_ItemSelection",
+      "row": 0,
+      "visible": true,
+      "x": 160.0,
+      "y": 392.0,
+      "width": 4.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_InventoryItemSeat",
+      "row": 0,
+      "visible": true,
+      "x": 176.0,
+      "y": 394.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Img_InventoryItem",
+      "row": 0,
+      "visible": true,
+      "x": 176.0,
+      "y": 394.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Txt_InventoryName",
+      "row": 0,
+      "visible": true,
+      "x": 250.0,
+      "y": 390.0,
+      "width": 410.0,
+      "height": 36.0
+    },
+    {
+      "path": "Txt_InventoryCategory",
+      "row": 0,
+      "visible": true,
+      "x": 250.0,
+      "y": 427.0,
+      "width": 410.0,
+      "height": 32.0
+    },
+    {
+      "path": "Txt_InventoryQuantity",
+      "row": 0,
+      "visible": true,
+      "x": 672.0,
+      "y": 405.0,
+      "width": 100.0,
+      "height": 36.0
+    },
+    {
+      "path": "",
+      "row": 1,
+      "visible": true,
+      "x": 160.0,
+      "y": 476.0,
+      "width": 620.0,
+      "height": 84.0
+    },
+    {
+      "path": "Img_ItemSelection",
+      "row": 1,
+      "visible": false,
+      "x": 160.0,
+      "y": 488.0,
+      "width": 4.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_InventoryItemSeat",
+      "row": 1,
+      "visible": true,
+      "x": 176.0,
+      "y": 490.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Img_InventoryItem",
+      "row": 1,
+      "visible": true,
+      "x": 176.0,
+      "y": 490.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Txt_InventoryName",
+      "row": 1,
+      "visible": true,
+      "x": 250.0,
+      "y": 486.0,
+      "width": 410.0,
+      "height": 36.0
+    },
+    {
+      "path": "Txt_InventoryCategory",
+      "row": 1,
+      "visible": true,
+      "x": 250.0,
+      "y": 523.0,
+      "width": 410.0,
+      "height": 32.0
+    },
+    {
+      "path": "Txt_InventoryQuantity",
+      "row": 1,
+      "visible": true,
+      "x": 672.0,
+      "y": 501.0,
+      "width": 100.0,
+      "height": 36.0
+    },
+    {
+      "path": "",
+      "row": 2,
+      "visible": true,
+      "x": 160.0,
+      "y": 572.0,
+      "width": 620.0,
+      "height": 84.0
+    },
+    {
+      "path": "Img_ItemSelection",
+      "row": 2,
+      "visible": false,
+      "x": 160.0,
+      "y": 584.0,
+      "width": 4.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_InventoryItemSeat",
+      "row": 2,
+      "visible": true,
+      "x": 176.0,
+      "y": 586.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Img_InventoryItem",
+      "row": 2,
+      "visible": true,
+      "x": 176.0,
+      "y": 586.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Txt_InventoryName",
+      "row": 2,
+      "visible": true,
+      "x": 250.0,
+      "y": 582.0,
+      "width": 410.0,
+      "height": 36.0
+    },
+    {
+      "path": "Txt_InventoryCategory",
+      "row": 2,
+      "visible": true,
+      "x": 250.0,
+      "y": 619.0,
+      "width": 410.0,
+      "height": 32.0
+    },
+    {
+      "path": "Txt_InventoryQuantity",
+      "row": 2,
+      "visible": true,
+      "x": 672.0,
+      "y": 597.0,
+      "width": 100.0,
+      "height": 36.0
+    },
+    {
+      "path": "",
+      "row": 3,
+      "visible": true,
+      "x": 160.0,
+      "y": 668.0,
+      "width": 620.0,
+      "height": 84.0
+    },
+    {
+      "path": "Img_ItemSelection",
+      "row": 3,
+      "visible": false,
+      "x": 160.0,
+      "y": 680.0,
+      "width": 4.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_InventoryItemSeat",
+      "row": 3,
+      "visible": true,
+      "x": 176.0,
+      "y": 682.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Img_InventoryItem",
+      "row": 3,
+      "visible": true,
+      "x": 176.0,
+      "y": 682.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Txt_InventoryName",
+      "row": 3,
+      "visible": true,
+      "x": 250.0,
+      "y": 678.0,
+      "width": 410.0,
+      "height": 36.0
+    },
+    {
+      "path": "Txt_InventoryCategory",
+      "row": 3,
+      "visible": true,
+      "x": 250.0,
+      "y": 715.0,
+      "width": 410.0,
+      "height": 32.0
+    },
+    {
+      "path": "Txt_InventoryQuantity",
+      "row": 3,
+      "visible": true,
+      "x": 672.0,
+      "y": 693.0,
+      "width": 100.0,
+      "height": 36.0
+    },
+    {
+      "path": "",
+      "row": 4,
+      "visible": true,
+      "x": 160.0,
+      "y": 764.0,
+      "width": 620.0,
+      "height": 84.0
+    },
+    {
+      "path": "Img_ItemSelection",
+      "row": 4,
+      "visible": false,
+      "x": 160.0,
+      "y": 776.0,
+      "width": 4.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_InventoryItemSeat",
+      "row": 4,
+      "visible": true,
+      "x": 176.0,
+      "y": 778.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Img_InventoryItem",
+      "row": 4,
+      "visible": true,
+      "x": 176.0,
+      "y": 778.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Txt_InventoryName",
+      "row": 4,
+      "visible": true,
+      "x": 250.0,
+      "y": 774.0,
+      "width": 410.0,
+      "height": 36.0
+    },
+    {
+      "path": "Txt_InventoryCategory",
+      "row": 4,
+      "visible": true,
+      "x": 250.0,
+      "y": 811.0,
+      "width": 410.0,
+      "height": 32.0
+    },
+    {
+      "path": "Txt_InventoryQuantity",
+      "row": 4,
+      "visible": true,
+      "x": 672.0,
+      "y": 789.0,
+      "width": 100.0,
+      "height": 36.0
+    },
+    {
+      "path": "",
+      "row": 5,
+      "visible": true,
+      "x": 160.0,
+      "y": 860.0,
+      "width": 620.0,
+      "height": 84.0
+    },
+    {
+      "path": "Img_ItemSelection",
+      "row": 5,
+      "visible": false,
+      "x": 160.0,
+      "y": 872.0,
+      "width": 4.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_InventoryItemSeat",
+      "row": 5,
+      "visible": true,
+      "x": 176.0,
+      "y": 874.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Img_InventoryItem",
+      "row": 5,
+      "visible": true,
+      "x": 176.0,
+      "y": 874.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Txt_InventoryName",
+      "row": 5,
+      "visible": true,
+      "x": 250.0,
+      "y": 870.0,
+      "width": 410.0,
+      "height": 36.0
+    },
+    {
+      "path": "Txt_InventoryCategory",
+      "row": 5,
+      "visible": true,
+      "x": 250.0,
+      "y": 907.0,
+      "width": 410.0,
+      "height": 32.0
+    },
+    {
+      "path": "Txt_InventoryQuantity",
+      "row": 5,
+      "visible": true,
+      "x": 672.0,
+      "y": 885.0,
+      "width": 100.0,
+      "height": 36.0
+    },
+    {
+      "path": "",
+      "row": 6,
+      "visible": true,
+      "x": 160.0,
+      "y": 956.0,
+      "width": 620.0,
+      "height": 84.0
+    },
+    {
+      "path": "Img_ItemSelection",
+      "row": 6,
+      "visible": false,
+      "x": 160.0,
+      "y": 968.0,
+      "width": 4.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_InventoryItemSeat",
+      "row": 6,
+      "visible": true,
+      "x": 176.0,
+      "y": 970.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Img_InventoryItem",
+      "row": 6,
+      "visible": true,
+      "x": 176.0,
+      "y": 970.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Txt_InventoryName",
+      "row": 6,
+      "visible": true,
+      "x": 250.0,
+      "y": 966.0,
+      "width": 410.0,
+      "height": 36.0
+    },
+    {
+      "path": "Txt_InventoryCategory",
+      "row": 6,
+      "visible": true,
+      "x": 250.0,
+      "y": 1003.0,
+      "width": 410.0,
+      "height": 32.0
+    },
+    {
+      "path": "Txt_InventoryQuantity",
+      "row": 6,
+      "visible": true,
+      "x": 672.0,
+      "y": 981.0,
+      "width": 100.0,
+      "height": 36.0
+    },
+    {
+      "path": "",
+      "row": 7,
+      "visible": true,
+      "x": 160.0,
+      "y": 1052.0,
+      "width": 620.0,
+      "height": 84.0
+    },
+    {
+      "path": "Img_ItemSelection",
+      "row": 7,
+      "visible": false,
+      "x": 160.0,
+      "y": 1064.0,
+      "width": 4.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_InventoryItemSeat",
+      "row": 7,
+      "visible": true,
+      "x": 176.0,
+      "y": 1066.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Img_InventoryItem",
+      "row": 7,
+      "visible": true,
+      "x": 176.0,
+      "y": 1066.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Txt_InventoryName",
+      "row": 7,
+      "visible": true,
+      "x": 250.0,
+      "y": 1062.0,
+      "width": 410.0,
+      "height": 36.0
+    },
+    {
+      "path": "Txt_InventoryCategory",
+      "row": 7,
+      "visible": true,
+      "x": 250.0,
+      "y": 1099.0,
+      "width": 410.0,
+      "height": 32.0
+    },
+    {
+      "path": "Txt_InventoryQuantity",
+      "row": 7,
+      "visible": true,
+      "x": 672.0,
+      "y": 1077.0,
+      "width": 100.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Txt_InventoryState",
+      "row": -1,
+      "visible": false,
+      "x": 164.0,
+      "y": 430.0,
+      "width": 580.0,
+      "height": 160.0
+    },
+    {
+      "path": "Group_PanelBody/Txt_ScrollHint",
+      "row": -1,
+      "visible": true,
+      "x": 164.0,
+      "y": 867.0,
+      "width": 600.0,
+      "height": 35.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ItemDetails",
+      "row": -1,
+      "visible": true,
+      "x": 804.0,
+      "y": 330.0,
+      "width": 432.0,
+      "height": 556.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ItemDetails/Txt_DetailsTitle",
+      "row": -1,
+      "visible": true,
+      "x": 836.0,
+      "y": 358.0,
+      "width": 368.0,
+      "height": 40.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ItemDetails/Group_DetailIconSeat",
+      "row": -1,
+      "visible": true,
+      "x": 836.0,
+      "y": 412.0,
+      "width": 88.0,
+      "height": 88.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ItemDetails/Group_DetailIconSeat/Img_DetailIcon",
+      "row": -1,
+      "visible": true,
+      "x": 836.0,
+      "y": 412.0,
+      "width": 88.0,
+      "height": 88.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ItemDetails/Txt_DetailName",
+      "row": -1,
+      "visible": true,
+      "x": 948.0,
+      "y": 420.0,
+      "width": 256.0,
+      "height": 50.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ItemDetails/Txt_DetailRarity",
+      "row": -1,
+      "visible": true,
+      "x": 948.0,
+      "y": 467.0,
+      "width": 256.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ItemDetails/Scroll_ItemDescription",
+      "row": -1,
+      "visible": true,
+      "x": 836.0,
+      "y": 537.0,
+      "width": 368.0,
+      "height": 76.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ItemDetails/Scroll_ItemDescription/Group_Content/Txt_DetailDescription",
+      "row": -1,
+      "visible": true,
+      "x": 836.0,
+      "y": 537.0,
+      "width": 368.0,
+      "height": 76.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ItemDetails/Txt_Stock",
+      "row": -1,
+      "visible": true,
+      "x": 836.0,
+      "y": 624.0,
+      "width": 368.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ItemDetails/Txt_ItemWeight",
+      "row": -1,
+      "visible": true,
+      "x": 836.0,
+      "y": 663.0,
+      "width": 368.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ItemDetails/Txt_QuantityLabel",
+      "row": -1,
+      "visible": true,
+      "x": 836.0,
+      "y": 720.0,
+      "width": 220.0,
+      "height": 34.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ItemDetails/Txt_QuantityValue",
+      "row": -1,
+      "visible": true,
+      "x": 1120.0,
+      "y": 720.0,
+      "width": 70.0,
+      "height": 34.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ItemDetails/Slider_AddQuantity",
+      "row": -1,
+      "visible": false,
+      "x": 878.0,
+      "y": 752.0,
+      "width": 282.0,
+      "height": 40.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ItemDetails/Btn_DecreaseQuantity",
+      "row": -1,
+      "visible": false,
+      "x": 836.0,
+      "y": 750.0,
+      "width": 40.0,
+      "height": 42.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ItemDetails/Btn_IncreaseQuantity",
+      "row": -1,
+      "visible": false,
+      "x": 1164.0,
+      "y": 750.0,
+      "width": 40.0,
+      "height": 42.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ItemDetails/Txt_QuantityHint",
+      "row": -1,
+      "visible": true,
+      "x": 836.0,
+      "y": 761.0,
+      "width": 368.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Group_ItemDetails/Btn_AddSupply",
+      "row": -1,
+      "visible": true,
+      "x": 836.0,
+      "y": 805.0,
+      "width": 368.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Loadout",
+      "row": -1,
+      "visible": true,
+      "x": 1260.0,
+      "y": 330.0,
+      "width": 500.0,
+      "height": 556.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Loadout/Txt_LoadoutTitle",
+      "row": -1,
+      "visible": true,
+      "x": 1292.0,
+      "y": 358.0,
+      "width": 300.0,
+      "height": 40.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Loadout/Txt_LoadoutCount",
+      "row": -1,
+      "visible": true,
+      "x": 1614.0,
+      "y": 357.0,
+      "width": 100.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Loadout/Scroll_Loadout",
+      "row": -1,
+      "visible": true,
+      "x": 1292.0,
+      "y": 420.0,
+      "width": 436.0,
+      "height": 300.0
+    },
+    {
+      "path": "",
+      "row": 8,
+      "visible": true,
+      "x": 1292.0,
+      "y": 420.0,
+      "width": 436.0,
+      "height": 136.0
+    },
+    {
+      "path": "Group_LoadoutIconSeat",
+      "row": 8,
+      "visible": true,
+      "x": 1292.0,
+      "y": 420.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Img_LoadoutIcon",
+      "row": 8,
+      "visible": true,
+      "x": 1292.0,
+      "y": 420.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Txt_LoadoutName",
+      "row": 8,
+      "visible": true,
+      "x": 1364.0,
+      "y": 420.0,
+      "width": 320.0,
+      "height": 36.0
+    },
+    {
+      "path": "Txt_LoadoutAmount",
+      "row": 8,
+      "visible": true,
+      "x": 1364.0,
+      "y": 459.0,
+      "width": 340.0,
+      "height": 32.0
+    },
+    {
+      "path": "Btn_Decrease",
+      "row": 8,
+      "visible": true,
+      "x": 1364.0,
+      "y": 499.0,
+      "width": 144.0,
+      "height": 48.0
+    },
+    {
+      "path": "Btn_Remove",
+      "row": 8,
+      "visible": true,
+      "x": 1524.0,
+      "y": 499.0,
+      "width": 144.0,
+      "height": 48.0
+    },
+    {
+      "path": "",
+      "row": 9,
+      "visible": true,
+      "x": 1292.0,
+      "y": 568.0,
+      "width": 436.0,
+      "height": 136.0
+    },
+    {
+      "path": "Group_LoadoutIconSeat",
+      "row": 9,
+      "visible": true,
+      "x": 1292.0,
+      "y": 568.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Img_LoadoutIcon",
+      "row": 9,
+      "visible": true,
+      "x": 1292.0,
+      "y": 568.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Txt_LoadoutName",
+      "row": 9,
+      "visible": true,
+      "x": 1364.0,
+      "y": 568.0,
+      "width": 320.0,
+      "height": 36.0
+    },
+    {
+      "path": "Txt_LoadoutAmount",
+      "row": 9,
+      "visible": true,
+      "x": 1364.0,
+      "y": 607.0,
+      "width": 340.0,
+      "height": 32.0
+    },
+    {
+      "path": "Btn_Decrease",
+      "row": 9,
+      "visible": true,
+      "x": 1364.0,
+      "y": 647.0,
+      "width": 144.0,
+      "height": 48.0
+    },
+    {
+      "path": "Btn_Remove",
+      "row": 9,
+      "visible": true,
+      "x": 1524.0,
+      "y": 647.0,
+      "width": 144.0,
+      "height": 48.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Loadout/Txt_LoadoutState",
+      "row": -1,
+      "visible": false,
+      "x": 1292.0,
+      "y": 470.0,
+      "width": 420.0,
+      "height": 90.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Loadout/Txt_LoadoutWeight",
+      "row": -1,
+      "visible": true,
+      "x": 1292.0,
+      "y": 741.0,
+      "width": 436.0,
+      "height": 40.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Loadout/Group_WeightTrack",
+      "row": -1,
+      "visible": true,
+      "x": 1292.0,
+      "y": 788.0,
+      "width": 436.0,
+      "height": 10.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Loadout/Group_WeightTrack/Img_WeightFill",
+      "row": -1,
+      "visible": true,
+      "x": 1292.0,
+      "y": 788.0,
+      "width": 152.599976,
+      "height": 10.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Loadout/Txt_LoadoutNotice",
+      "row": -1,
+      "visible": true,
+      "x": 1292.0,
+      "y": 824.0,
+      "width": 436.0,
+      "height": 34.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 112.0,
+      "width": 1600.0,
+      "height": 108.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_Title",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 112.0,
+      "width": 700.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_Subtitle",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 170.0,
+      "width": 1100.0,
+      "height": 35.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceCreditsLabel",
+      "row": -1,
+      "visible": true,
+      "x": 980.0,
+      "y": 115.0,
+      "width": 240.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceCredits",
+      "row": -1,
+      "visible": true,
+      "x": 980.0,
+      "y": 149.0,
+      "width": 270.0,
+      "height": 50.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceEnergyLabel",
+      "row": -1,
+      "visible": true,
+      "x": 1220.0,
+      "y": 115.0,
+      "width": 240.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceEnergy",
+      "row": -1,
+      "visible": true,
+      "x": 1220.0,
+      "y": 149.0,
+      "width": 270.0,
+      "height": 50.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeightLabel",
+      "row": -1,
+      "visible": true,
+      "x": 1480.0,
+      "y": 115.0,
+      "width": 240.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeight",
+      "row": -1,
+      "visible": true,
+      "x": 1480.0,
+      "y": 149.0,
+      "width": 270.0,
+      "height": 50.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Img_HeaderDivider",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 218.0,
+      "width": 1600.0,
+      "height": 2.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Footer",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 890.0,
+      "width": 1600.0,
+      "height": 108.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Footer/Txt_Feedback",
+      "row": -1,
+      "visible": true,
+      "x": 420.0,
+      "y": 970.0,
+      "width": 1000.0,
+      "height": 28.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Footer/Btn_Return",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 916.0,
+      "width": 220.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Footer/Txt_SaveNotice",
+      "row": -1,
+      "visible": true,
+      "x": 414.0,
+      "y": 933.0,
+      "width": 1040.0,
+      "height": 38.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Footer/Btn_ClearLoadout",
+      "row": -1,
+      "visible": true,
+      "x": 1504.0,
+      "y": 916.0,
+      "width": 256.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_IconCatalog",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 32.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_IconCatalog/Img_Circle",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 32.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_IconCatalog/Img_ItemAlloy",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 32.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_IconCatalog/Img_ItemBattery",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 32.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_IconCatalog/Img_ItemBeacon",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 32.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_IconCatalog/Img_ItemChip",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 32.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_IconCatalog/Img_ItemCircuit",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 32.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_IconCatalog/Img_ItemOre",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 32.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_IconCatalog/Img_ItemRation",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 32.0,
+      "height": 32.0
+    }
+  ],
+  "schemaVersion": 2,
+  "fixture": "Prepared",
+  "prefabSha256": "a3f29f231686dbf2739076de27643f607216f7ea4aeaa3a2f85c38c070dbfd03",
+  "prefabMetaSha256": "5c6261332b60887311ab75ca5fd88c3cf5331580719e9c661218368cfab2348c",
+  "converterVersion": "0.4.1",
+  "dependencies": [
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png",
+    "Packages/com.unity.ugui/Runtime/UI/Core/Slider.cs",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png",
+    "Assets/Art/UI/Sprites/StarportSalvage/Slider/Circle/Sld_Circle_Handle_Default_Slider_Circle_Handle_Default.png",
+    "Assets/Art/UI/Sprites/StarportSalvage/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png",
+    "Assets/Art/UIPrefab/StarportSalvage/Item/Item_InventoryEntry.prefab",
+    "Assets/Art/UI/Sprites/StarportSalvage/TMP_InputField/Control_Background/Inp_Control_Background_Surface_Default_TMP_InputField_Control_Background_Surface_Default.png",
+    "Assets/Art/UI/Sprites/StarportSalvage/Button/ItemMedkit/Btn_ItemMedkit_Icon_Normal_Button_ItemMedkit_Icon_Normal.png",
+    "Assets/Art/UI/Sprites/StarportSalvage/Slider/Value_Bar/Sld_Value_Bar_Track_Default_Slider_Value_Bar_Track_Default.png",
+    "Packages/com.unity.ugui/Runtime/UI/Core/ScrollRect.cs",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png",
+    "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Input Field Icon.psd",
+    "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd",
+    "Packages/com.unity.textmeshpro/Scripts/Runtime/TextMeshProUGUI.cs",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png",
+    "Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_InputField.cs",
+    "Assets/Art/Fonts/PICOSansVFESC SDF.asset",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png",
+    "Assets/Art/UI/Sprites/StarportSalvage/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/Value_Bar/Img_Value_Bar_Surface_Default_Image_Value_Bar_Surface_Default.png",
+    "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Text Component Icon.psd",
+    "Assets/Art/UIPrefab/StarportSalvage/SupplyInventoryPanel/SupplyInventoryPanel.prefab",
+    "Assets/Art/UIPrefab/StarportSalvage/Item/Item_LoadoutEntry.prefab",
+    "Packages/com.unity.ugui/Runtime/UI/Core/Button.cs",
+    "Packages/com.nex.html-to-ugui/Runtime/Core/UiTemplateCatalog.cs",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/Circle/Img_Circle_Surface_Default_Image_Circle_Surface_Default.png",
+    "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+    "Packages/com.unity.ugui/Runtime/UI/Core/RectMask2D.cs",
+    "Packages/com.unity.ugui/Runtime/UI/Core/Image.cs",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png",
+    "Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_FontAsset.cs",
+    "Packages/com.nex.html-to-ugui/Runtime/Core/UiBindingMap.cs",
+    "Assets/Art/UI/Sprites/StarportSalvage/Slider/Value_Bar/Sld_Value_Bar_Fill_Default_Slider_Value_Bar_Fill_Default.png",
+    "Assets/Art/UI/Sprites/StarportSalvage/Button/RoundedSurface/Btn_RoundedSurface_Icon_Normal_Button_RoundedSurface_Icon_Normal.png",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png",
+    "Assets/Art/Fonts/PICOSansVFESC.ttf"
+  ],
+  "width": 1920,
+  "height": 1080,
+  "issues": [],
+  "viewportWidth": 1920,
+  "viewportHeight": 1200,
+  "nativeControls": [
+    "Btn_CategoryAll: pointer click + disabled",
+    "Btn_CategoryMaterial: pointer click + disabled",
+    "Btn_CategorySupply: pointer click + disabled",
+    "Btn_ClearSearch: pointer click + disabled",
+    "Item_InventoryEntry_01: pointer click + disabled",
+    "Item_InventoryEntry_02: pointer click + disabled",
+    "Item_InventoryEntry_03: pointer click + disabled",
+    "Item_InventoryEntry_04: pointer click + disabled",
+    "Item_InventoryEntry_05: pointer click + disabled",
+    "Item_InventoryEntry_06: pointer click + disabled",
+    "Item_InventoryEntry_07: pointer click + disabled",
+    "Item_InventoryEntry_08: pointer click + disabled",
+    "Btn_AddSupply: pointer click + disabled",
+    "Btn_Decrease: pointer click + disabled",
+    "Btn_Remove: pointer click + disabled",
+    "Btn_Decrease: pointer click + disabled",
+    "Btn_Remove: pointer click + disabled",
+    "Btn_Return: pointer click + disabled",
+    "Btn_ClearLoadout: pointer click + disabled",
+    "Input_ItemSearch: editable text (business validation excluded)",
+    "Scroll_Inventory: content/viewport + normalized scroll",
+    "Scroll_ItemDescription: content/viewport + normalized scroll",
+    "Scroll_Loadout: content/viewport + normalized scroll"
+  ],
+  "status": "passed",
+  "screenshotSha256": "8fb25a9686e2aa46c73b5758bb34e30f71124e230456b2911718fc681b1a744d",
+  "artifacts": [
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemRation/Img_ItemRation_Surface_Default_Image_ItemRation_Surface_Default.png",
+      "guid": "4e27a934fb3a49cfad6bf79cb24088a0",
+      "sha256": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+      "metaSha256": "c6133959197d5143a4bc3b27c77c1e925de885b6ea30c116f81ce714234f1cdf"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemMedkit/Img_ItemMedkit_Surface_Default_Image_ItemMedkit_Surface_Default.png",
+      "guid": "72e66db463c84a28a6238b3c782b79d0",
+      "sha256": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+      "metaSha256": "93b3f6ee7b6ba38fd5495ce4e0b110aaebfcbbed2afda147839719b6cff20266"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Slider/Circle/Sld_Circle_Handle_Default_Slider_Circle_Handle_Default.png",
+      "guid": "c90e3168e81e4c2c835659b8d0e0b216",
+      "sha256": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+      "metaSha256": "ff29104676ea7aaac88dd33bf4539ac444d328035d8e001bf7d5963d7d440414"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+      "guid": "569c65c1ad5f4dd8965ad73a1a796f72",
+      "sha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+      "metaSha256": "dd8513a59b6dce63e83f098024c9fcb2ee5736d0b24b33e6efb511611b05db02"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png",
+      "guid": "88e285470c2e4d23adb84a2bc99dfcdf",
+      "sha256": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+      "metaSha256": "7ed44425fb95df0e139f260d230d963e8b21574a702a421d6a7f729df71d518a"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/Item/Item_InventoryEntry.prefab",
+      "guid": "aeb7ee1e7fc8cdc4c8bec9ad2e209518",
+      "sha256": "3bed9cfd5819afb68c170245d59eef5bbd45a1845f11e3e6dd6c5acbaf854b48",
+      "metaSha256": "8022da32a7ea279950f94723ebc470c0027e3c2ccc60089fa888b56c2fcb4e4b"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/TMP_InputField/Control_Background/Inp_Control_Background_Surface_Default_TMP_InputField_Control_Background_Surface_Default.png",
+      "guid": "1e78b956722b4291a445df24f0b7f220",
+      "sha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+      "metaSha256": "9734ee7464d818a4a996ae40f89958bd6f74bd59adb6feef1471446bd977ee1f"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Button/ItemMedkit/Btn_ItemMedkit_Icon_Normal_Button_ItemMedkit_Icon_Normal.png",
+      "guid": "91434ec22bf34dc4a3ff63d165390e77",
+      "sha256": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+      "metaSha256": "be7f83de62bda0da1ff44bd4e7b700c9997eaeccc52a8b61a4e41ed9252e939a"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Slider/Value_Bar/Sld_Value_Bar_Track_Default_Slider_Value_Bar_Track_Default.png",
+      "guid": "ad168b3c0eec4792b7e7f120a3b57234",
+      "sha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "metaSha256": "22eb9fff1c7cafb5b4268e3c5d75d73106bdeb00bd367abec565d4b8793edb66"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBattery/Img_ItemBattery_Surface_Default_Image_ItemBattery_Surface_Default.png",
+      "guid": "5919863819194c2aae36b1544a77168e",
+      "sha256": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+      "metaSha256": "a270f9ac529a8d3c28ac6b576d8c7ad5437c1e6c9a726b29d59a4269a10caf7e"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemBeacon/Img_ItemBeacon_Surface_Default_Image_ItemBeacon_Surface_Default.png",
+      "guid": "c1de7c1205534ddc95d1519be9fa79c3",
+      "sha256": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+      "metaSha256": "794b32a38bf805fd898b3d8d8378257a5af4a5fe1805a74ab0166642da5ffc8a"
+    },
+    {
+      "path": "Assets/Art/Fonts/PICOSansVFESC SDF.asset",
+      "guid": "0d4b74244fad09f49a610da1b3997090",
+      "sha256": "a570ee2423b581a62d0f680c2078309f4752472cf8298bdd95ba595648c0e249",
+      "metaSha256": "920dc39fd3bf9f733d8705a0d50fcffbe4eb8ebdbb68b7f6511d18cb904858b6"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png",
+      "guid": "bfb2c4fb0ec84be29a7743590f5aeb9b",
+      "sha256": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+      "metaSha256": "836d5bbc76604886e3f9dd6aa8ed27de166a20e8c05da05273a766b28c527282"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png",
+      "guid": "7dde3168e72649779165e7032cbb6e33",
+      "sha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "metaSha256": "c27ea272b7c5f71d36cf16568205e8959c1091822fb51763a4cde7508b19e6e8"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/Value_Bar/Img_Value_Bar_Surface_Default_Image_Value_Bar_Surface_Default.png",
+      "guid": "9d4be7a33a7247f5ab7386189c884ac4",
+      "sha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "metaSha256": "3a5cced5b6a610ef49deb841cf57e74a9871b6ae8c04f455e979f19a61469116"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/SupplyInventoryPanel/SupplyInventoryPanel.prefab",
+      "guid": "f572acc8155c63e47985ad9f0d531bf7",
+      "sha256": "a3f29f231686dbf2739076de27643f607216f7ea4aeaa3a2f85c38c070dbfd03",
+      "metaSha256": "5c6261332b60887311ab75ca5fd88c3cf5331580719e9c661218368cfab2348c"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/Item/Item_LoadoutEntry.prefab",
+      "guid": "11332a04d33f242488198f8be12d4eda",
+      "sha256": "e591c8339ac76d39384044971195422052d803006ee6751f85c201cd0932f530",
+      "metaSha256": "10d11566c6f06358348549cf9ed7171303c91df44fcd973fb677b0dd88e008b8"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+      "guid": "5789c3328dcf4d079a53e068f6997dd0",
+      "sha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "metaSha256": "54ff5ce6210f1b553d42ff55bf7560d5004df118551383812e6c36ff398aedc0"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/Circle/Img_Circle_Surface_Default_Image_Circle_Surface_Default.png",
+      "guid": "d31fad7d69694d69a97d7d7b8da89200",
+      "sha256": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+      "metaSha256": "4b7a491965d7f49b849f030a1f08ea4a836b716391f5f1092fcb8dc367818464"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+      "guid": "68e6db2ebdc24f95958faec2be5558d6",
+      "sha256": "bbae422625f31bfa560ac5ce44c402fafd16dba55d496c6279ca985b652b58bf",
+      "metaSha256": "0897fb06d170043fffa2d28783b347bbaee87a3f09f08374ca44b2c3848697d6"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png",
+      "guid": "20b8d08a0f7c4693a28c721c4902363f",
+      "sha256": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+      "metaSha256": "6cd081ecd7a6f01a444dea9f520dd75186b6ef719eb868157c613d3085e67310"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Slider/Value_Bar/Sld_Value_Bar_Fill_Default_Slider_Value_Bar_Fill_Default.png",
+      "guid": "629d45f3f3ff4dbab1e0b5c873f17621",
+      "sha256": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+      "metaSha256": "3732ab86e5100d46731f87aa2a1cef6f476cf779431b6be40e9984a105f442aa"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Button/RoundedSurface/Btn_RoundedSurface_Icon_Normal_Button_RoundedSurface_Icon_Normal.png",
+      "guid": "7bbc7898912b4eeb974c9c8614dcb8ed",
+      "sha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "metaSha256": "cc385a06dbdd830556822363027c38c1a56cb00c1bdea6980371292fefd5e2d9"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png",
+      "guid": "1025a2438b4b4bbfade88046dc812419",
+      "sha256": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+      "metaSha256": "49b071481d806e256cde1d2c2f318a9b30924381dba6629d7fab90231b6c8bed"
+    },
+    {
+      "path": "Assets/Art/Fonts/PICOSansVFESC.ttf",
+      "guid": "509b550acb51047439bd7ef6789149aa",
+      "sha256": "c1d60dcfc0ec5060700e417425b2cdda3aae139bfed333b7d283623158c705cf",
+      "metaSha256": "28b4efb42db79e14e4c9d4aa5b10e5f5a3585830db59ab2d08951992d46affa9"
+    }
+  ]
+}

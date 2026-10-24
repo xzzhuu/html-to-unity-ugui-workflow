@@ -1,0 +1,249 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Game screens contract v1",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "projectName",
+    "status",
+    "screens"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "projectName": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "active"
+      ]
+    },
+    "screens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "panelName",
+          "entryPoints",
+          "actions",
+          "states",
+          "fixtures",
+          "tests"
+        ],
+        "properties": {
+          "panelName": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Za-z0-9]*Panel$"
+          },
+          "entryPoints": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "states": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "fixtures": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tests": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "fixturePresentation": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "required": [
+                    "kind",
+                    "targetBinding",
+                    "sourceBinding",
+                    "threshold",
+                    "short",
+                    "long"
+                  ],
+                  "properties": {
+                    "targetBinding": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "sourceBinding": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "kind": {
+                      "const": "text-length"
+                    },
+                    "threshold": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 2147483647
+                    },
+                    "short": {
+                      "type": "object",
+                      "minProperties": 1,
+                      "additionalProperties": false,
+                      "properties": {
+                        "fontSize": {
+                          "type": "number",
+                          "exclusiveMinimum": 0,
+                          "maximum": 3.402823466e+38
+                        },
+                        "fontSizeMin": {
+                          "type": "number",
+                          "exclusiveMinimum": 0,
+                          "maximum": 3.402823466e+38
+                        },
+                        "height": {
+                          "type": "number",
+                          "exclusiveMinimum": 0,
+                          "maximum": 3.402823466e+38
+                        },
+                        "canvasY": {
+                          "type": "number",
+                          "minimum": 0
+                        }
+                      },
+                      "dependentRequired": {
+                        "fontSizeMin": [
+                          "fontSize"
+                        ]
+                      }
+                    },
+                    "long": {
+                      "type": "object",
+                      "minProperties": 1,
+                      "additionalProperties": false,
+                      "properties": {
+                        "fontSize": {
+                          "type": "number",
+                          "exclusiveMinimum": 0,
+                          "maximum": 3.402823466e+38
+                        },
+                        "fontSizeMin": {
+                          "type": "number",
+                          "exclusiveMinimum": 0,
+                          "maximum": 3.402823466e+38
+                        },
+                        "height": {
+                          "type": "number",
+                          "exclusiveMinimum": 0,
+                          "maximum": 3.402823466e+38
+                        },
+                        "canvasY": {
+                          "type": "number",
+                          "minimum": 0
+                        }
+                      },
+                      "dependentRequired": {
+                        "fontSizeMin": [
+                          "fontSize"
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "required": [
+                    "kind",
+                    "targetBinding",
+                    "sourceBinding",
+                    "minimumHeight",
+                    "charactersPerLine",
+                    "lineHeight"
+                  ],
+                  "properties": {
+                    "targetBinding": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "sourceBinding": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "kind": {
+                      "const": "text-height"
+                    },
+                    "minimumHeight": {
+                      "type": "number",
+                      "exclusiveMinimum": 0,
+                      "maximum": 3.402823466e+38
+                    },
+                    "charactersPerLine": {
+                      "type": "number",
+                      "exclusiveMinimum": 0,
+                      "maximum": 3.402823466e+38
+                    },
+                    "lineHeight": {
+                      "type": "number",
+                      "exclusiveMinimum": 0,
+                      "maximum": 3.402823466e+38
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "required": [
+                    "kind",
+                    "targetBinding",
+                    "numerator",
+                    "denominator",
+                    "maximumWidth"
+                  ],
+                  "properties": {
+                    "targetBinding": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "sourceBinding": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "kind": {
+                      "const": "ratio-width"
+                    },
+                    "numerator": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "denominator": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "maximumWidth": {
+                      "type": "number",
+                      "exclusiveMinimum": 0,
+                      "maximum": 3.402823466e+38
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

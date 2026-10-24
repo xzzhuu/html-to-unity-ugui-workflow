@@ -1,0 +1,239 @@
+{
+  "prefab": "Assets/Art/UIPrefab/StarportSalvage/ActionConfirmPanel/ActionConfirmPanel.prefab",
+  "referenceSha256": "491c35d986180d4ed64bc7091062ce219cbfd940507741d75fd9f388a984d7ef",
+  "nodes": [
+    {
+      "path": "",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1920.0,
+      "height": 1080.0
+    },
+    {
+      "path": "Btn_ModalBlocker",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1920.00012,
+      "height": 1080.0
+    },
+    {
+      "path": "Group_PanelBody",
+      "row": -1,
+      "visible": true,
+      "x": 600.0,
+      "y": 280.0,
+      "width": 720.0,
+      "height": 520.0
+    },
+    {
+      "path": "Group_PanelBody/Txt_ConfirmTitle",
+      "row": -1,
+      "visible": true,
+      "x": 640.0,
+      "y": 316.0,
+      "width": 570.0,
+      "height": 58.0
+    },
+    {
+      "path": "Group_PanelBody/Btn_CloseConfirm",
+      "row": -1,
+      "visible": true,
+      "x": 1240.0,
+      "y": 312.0,
+      "width": 48.0,
+      "height": 48.0
+    },
+    {
+      "path": "Group_PanelBody/Txt_ConfirmMission",
+      "row": -1,
+      "visible": true,
+      "x": 640.0,
+      "y": 378.0,
+      "width": 450.0,
+      "height": 44.0
+    },
+    {
+      "path": "Group_PanelBody/Txt_ConfirmRisk",
+      "row": -1,
+      "visible": true,
+      "x": 1126.0,
+      "y": 380.0,
+      "width": 140.000031,
+      "height": 33.9999847
+    },
+    {
+      "path": "Group_PanelBody/Group_CostSummary",
+      "row": -1,
+      "visible": true,
+      "x": 640.0,
+      "y": 432.0,
+      "width": 640.0,
+      "height": 100.0
+    },
+    {
+      "path": "Group_PanelBody/Group_CostSummary/Txt_ConfirmCreditsLabel",
+      "row": -1,
+      "visible": true,
+      "x": 664.0,
+      "y": 448.0,
+      "width": 280.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Group_CostSummary/Txt_ConfirmCredits",
+      "row": -1,
+      "visible": true,
+      "x": 664.0,
+      "y": 481.0,
+      "width": 280.0,
+      "height": 44.0
+    },
+    {
+      "path": "Group_PanelBody/Group_CostSummary/Txt_ConfirmEnergyLabel",
+      "row": -1,
+      "visible": true,
+      "x": 974.0,
+      "y": 448.0,
+      "width": 280.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Group_CostSummary/Txt_ConfirmEnergy",
+      "row": -1,
+      "visible": true,
+      "x": 974.0,
+      "y": 481.0,
+      "width": 280.0,
+      "height": 44.0
+    },
+    {
+      "path": "Group_PanelBody/Txt_ConfirmLoadout",
+      "row": -1,
+      "visible": true,
+      "x": 640.0,
+      "y": 558.0,
+      "width": 640.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Txt_ConfirmWeight",
+      "row": -1,
+      "visible": true,
+      "x": 640.0,
+      "y": 597.0,
+      "width": 640.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Txt_ConfirmWarning",
+      "row": -1,
+      "visible": true,
+      "x": 640.0,
+      "y": 646.0,
+      "width": 640.0,
+      "height": 50.0000076
+    },
+    {
+      "path": "Group_PanelBody/Btn_CancelConfirm",
+      "row": -1,
+      "visible": true,
+      "x": 640.0,
+      "y": 710.0,
+      "width": 240.0,
+      "height": 60.0000153
+    },
+    {
+      "path": "Group_PanelBody/Btn_Confirm",
+      "row": -1,
+      "visible": true,
+      "x": 904.0,
+      "y": 710.0,
+      "width": 376.0,
+      "height": 60.0000153
+    },
+    {
+      "path": "Txt_Feedback",
+      "row": -1,
+      "visible": true,
+      "x": 420.0,
+      "y": 970.0,
+      "width": 1000.0,
+      "height": 27.99997
+    }
+  ],
+  "schemaVersion": 2,
+  "fixture": "Prepared",
+  "prefabSha256": "1fa77c0f163d58a2ecde675cf9237b40de363eb231645561eb6263ef8fcd3722",
+  "prefabMetaSha256": "5aebccddc9ab84b3d5259da6df6dffff2479bb7daec7f5dabbc8c07c39a34cdc",
+  "converterVersion": "0.4.1",
+  "dependencies": [
+    "Assets/Art/UIPrefab/StarportSalvage/ActionConfirmPanel/ActionConfirmPanel.prefab",
+    "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+    "Assets/Art/UI/Sprites/StarportSalvage/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+    "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd",
+    "Packages/com.unity.textmeshpro/Scripts/Runtime/TextMeshProUGUI.cs",
+    "Assets/Art/Fonts/PICOSansVFESC SDF.asset",
+    "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Text Component Icon.psd",
+    "Packages/com.unity.ugui/Runtime/UI/Core/Button.cs",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+    "Packages/com.unity.ugui/Runtime/UI/Core/Image.cs",
+    "Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_FontAsset.cs",
+    "Assets/Art/Fonts/PICOSansVFESC.ttf",
+    "Packages/com.nex.html-to-ugui/Runtime/Core/UiBindingMap.cs"
+  ],
+  "width": 1920,
+  "height": 1080,
+  "issues": [],
+  "viewportWidth": 1280,
+  "viewportHeight": 720,
+  "nativeControls": [
+    "Btn_ModalBlocker: pointer click + disabled",
+    "Btn_CloseConfirm: pointer click + disabled",
+    "Btn_CancelConfirm: pointer click + disabled",
+    "Btn_Confirm: pointer click + disabled"
+  ],
+  "status": "passed",
+  "screenshotSha256": "7fdf0f1e770198d7ef6ee5f60e646176ee5496219dec083d5ca11705e6bb5b39",
+  "artifacts": [
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/ActionConfirmPanel/ActionConfirmPanel.prefab",
+      "guid": "f364c2fab9906364383f10266e9fa7c9",
+      "sha256": "1fa77c0f163d58a2ecde675cf9237b40de363eb231645561eb6263ef8fcd3722",
+      "metaSha256": "5aebccddc9ab84b3d5259da6df6dffff2479bb7daec7f5dabbc8c07c39a34cdc"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+      "guid": "68e6db2ebdc24f95958faec2be5558d6",
+      "sha256": "bbae422625f31bfa560ac5ce44c402fafd16dba55d496c6279ca985b652b58bf",
+      "metaSha256": "0897fb06d170043fffa2d28783b347bbaee87a3f09f08374ca44b2c3848697d6"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+      "guid": "569c65c1ad5f4dd8965ad73a1a796f72",
+      "sha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+      "metaSha256": "dd8513a59b6dce63e83f098024c9fcb2ee5736d0b24b33e6efb511611b05db02"
+    },
+    {
+      "path": "Assets/Art/Fonts/PICOSansVFESC SDF.asset",
+      "guid": "0d4b74244fad09f49a610da1b3997090",
+      "sha256": "a570ee2423b581a62d0f680c2078309f4752472cf8298bdd95ba595648c0e249",
+      "metaSha256": "920dc39fd3bf9f733d8705a0d50fcffbe4eb8ebdbb68b7f6511d18cb904858b6"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+      "guid": "5789c3328dcf4d079a53e068f6997dd0",
+      "sha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "metaSha256": "54ff5ce6210f1b553d42ff55bf7560d5004df118551383812e6c36ff398aedc0"
+    },
+    {
+      "path": "Assets/Art/Fonts/PICOSansVFESC.ttf",
+      "guid": "509b550acb51047439bd7ef6789149aa",
+      "sha256": "c1d60dcfc0ec5060700e417425b2cdda3aae139bfed333b7d283623158c705cf",
+      "metaSha256": "28b4efb42db79e14e4c9d4aa5b10e5f5a3585830db59ab2d08951992d46affa9"
+    }
+  ]
+}

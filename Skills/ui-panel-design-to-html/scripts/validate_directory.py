@@ -11,13 +11,16 @@ import xml.etree.ElementTree as ET
 from pipeline_contract import DIRECTORIES,VISUAL_DIRECTORIES,ASSET_PREFIXES,PANEL_NAME,local_tag,project_elements,require
 
 def read_json(path):
-    return json.loads(path.read_text(encoding='utf-8-sig'))
+    value=json.loads(path.read_text(encoding='utf-8-sig'))
+    require(isinstance(value,dict),'Expected JSON object: '+str(path))
+    return value
 
 def local_file(base,reference,workspace):
     url=urlsplit(reference)
     require(not url.scheme and not url.netloc and not unquote(url.path).startswith(('/','\\')),'Use portable relative references: '+reference)
-    path=(base/unquote(url.path)).resolve()
-    require(path.is_relative_to(workspace) and path.is_file(),'Missing/outside source file: '+reference)
+    path=(Path(base)/unquote(url.path)).resolve()
+    boundary=Path(workspace).resolve()
+    require(path.is_relative_to(boundary) and path.is_file(),'Missing/outside source file: '+reference)
     return path
 
 def png_info(path):
@@ -156,15 +159,20 @@ def validate_groups(root,name,mode,ready):
     return len(groups)
 
 def validate_unity_acceptance(root,unity_project=None,require_import_report=False):
+    root=Path(root).resolve()
     digest=validate_layout_approval(root)
     acceptance=read_json(root/'design/review/unity-acceptance.json')
+    require(isinstance(acceptance,dict),'Unity acceptance must be an object')
+    version=acceptance.get('schemaVersion',1)
+    require(type(version) is int and version in (1,2),'Unsupported Unity acceptance schemaVersion')
+    require(isinstance(acceptance.get('filesSha256'),dict),'Missing Unity evidence fingerprints')
     require(acceptance.get('status')=='passed','Unity acceptance is not complete')
     require(acceptance.get('approvedLayoutSha256')==digest and acceptance.get('approvedElementGroupsSha256')==file_digest(root/'design/review/element-groups-approval.json'),'Unity acceptance approval stale')
     require(all(acceptance.get('checks',{}).get(key)=='passed' for key in ('structure','visual','interactions','references','resolution')),'Unity acceptance checks incomplete')
     screenshots=acceptance.get('screenshots')
     require(isinstance(screenshots,list) and bool(screenshots),'Missing Unity screenshot evidence')
     manifest=read_json(root/'design/element-groups.json')
-    files=['design/element-groups.json']+[item['source'] for item in manifest['sprites']]+screenshots
+    files=['design/element-groups.json']+[item['source'] for item in manifest['sprites']]+screenshots+acceptance.get('evidenceFiles',[])
     for source in files:
         require(acceptance.get('filesSha256',{}).get(source)==file_digest(local_file(root,source,root)),'Unity acceptance stale: '+source)
     previews=manifest.get('panelPreviews',['design/review/layout-approved.png'])
@@ -187,18 +195,81 @@ def validate_unity_acceptance(root,unity_project=None,require_import_report=Fals
         report=read_json(report_path)
         require(acceptance.get('sourceImportReportSha256')==file_digest(report_path),'Final artifact import provenance mismatch')
         require(bool(report.get('converterVersion')) and bool(report.get('artifacts')) and isinstance(report.get('inputsSha256'),dict),'Incomplete converter provenance')
+        input_root=root
+        package=read_json(root/'html/panel.package.json')
+        if package.get('projectName') and package.get('projectDirectory'):
+            candidate=(root/'html'/package['projectDirectory']).resolve()
+            require(candidate.name==package['projectName'] and (candidate/'project.assets.json').is_file(),'Invalid game input root')
+            input_root=candidate
         for source,digest in report['inputsSha256'].items():
-            require(digest==file_digest(local_file(root/'html',source,root)),'Unity import source changed: '+source)
+            require(digest==file_digest(local_file(root/'html',source,input_root)),'Unity import source changed: '+source)
+        require(isinstance(acceptance.get('gameContractsSha256',{}),dict),'Invalid game contract fingerprints')
+        for source,digest in acceptance.get('gameContractsSha256',{}).items():
+            require(digest==file_digest(local_file(input_root,source,input_root)),'Unity game contract stale: '+source)
+    if version==2:
+        require(require_import_report,'Version 2 native acceptance requires import provenance')
+        validate_native_matrix(root,input_root,acceptance)
     if unity_project is not None:
         project=Path(unity_project).resolve()
         for item in refs:
             target=(project/item['unityPath']).resolve()
             require(target.is_relative_to(project/'Assets') and target.is_file(),'Missing/outside Unity reference image')
             require(file_digest(target)==item['sha256'],'Unity reference bytes differ from accepted source')
+            if item.get('metaSha256'):
+                verify_project_artifact(project,dict(path=item['unityPath'],guid=item['guid'],sha256=item['sha256'],metaSha256=item['metaSha256']))
         if report is not None:
             require(acceptance.get('sourceImportReportSha256')==file_digest(report_path),'Final artifact import provenance mismatch')
-        for item in final_artifacts: verify_project_artifact(project,item)
+        for item in final_artifacts+acceptance.get('externalDependencies',[]): verify_project_artifact(project,item)
     return 'recorded-evidence-consistent'
+
+def validate_native_matrix(root,game,acceptance):
+    import importlib.util
+    from PIL import Image
+    from game_workflow import read,inside
+    inputs=acceptance.get('gameInputsSha256')
+    require(isinstance(inputs,dict) and 'project.assets.json' in inputs,'Missing native game input fingerprints')
+    for source,digest in inputs.items():require(file_digest(inside(game,source))==digest,'Native game input changed: '+source)
+    cases=acceptance.get('matrixCases')
+    require(isinstance(cases,list) and bool(cases),'Missing native fixture matrix')
+    tested=acceptance.get('testedFixtures');resolutions=acceptance.get('testedResolutions')
+    require(isinstance(tested,list) and bool(tested) and all(isinstance(f,str) for f in tested) and len(tested)==len(set(tested)),'Invalid tested fixture identities')
+    require(isinstance(resolutions,list) and bool(resolutions),'Missing tested resolutions')
+    viewports={}
+    for item in resolutions:
+        require(isinstance(item,dict) and all(type(item.get(k)) is int and 0<item[k]<=8192 for k in ('width','height')),'Invalid tested resolution')
+        key=str(item['width'])+'x'+str(item['height']);require(key not in viewports,'Duplicate tested resolution');viewports[key]=(item['width'],item['height'])
+    screens=read(inside(game,'contracts/screens.json'))['screens'];matching=[p for p in screens if p.get('panelName')==root.name]
+    require(len(matching)==1 and set(tested)==set(matching[0]['fixtures']),'Native fixture coverage is incomplete')
+    expected={(f,v) for f in tested for v in viewports};seen=set()
+    artifacts=acceptance['finalArtifacts']+acceptance.get('externalDependencies',[])
+    require(isinstance(acceptance.get('externalDependencies',[]),list),'Invalid external native dependencies')
+    known={a['path']:a for a in artifacts};require(len(known)==len(artifacts),'Duplicate native dependency fingerprint')
+    for artifact in artifacts:validate_artifact_record(artifact)
+    spec=importlib.util.spec_from_file_location('native_geometry_compare',Path(__file__).with_name('compare-layout.py'))
+    comparator=importlib.util.module_from_spec(spec);spec.loader.exec_module(comparator)
+    protected=set(acceptance['screenshots']+acceptance.get('evidenceFiles',[]))
+    for case in cases:
+        require(isinstance(case,dict),'Invalid native matrix case')
+        key=(case.get('fixture'),case.get('viewport'))
+        require(all(isinstance(value,str) for value in key) and key in expected and key not in seen,'Missing/duplicate/unexpected native matrix identity')
+        seen.add(key)
+        require(all(isinstance(case.get(field),str) and case[field] in protected for field in ('reference','audit','screenshot','geometry')),'Native case files are not fingerprinted')
+        source=read_json(local_file(root,case['reference'],root));audit=read_json(local_file(root,case['audit'],root))
+        require(source.get('panel')==root.name and source.get('fixture')==key[0] and bool(source.get('nodes')),'Native reference identity mismatch')
+        require(audit.get('schemaVersion')==2 and audit.get('status')=='passed' and bool(audit.get('nativeControls')) and audit.get('fixture')==key[0],'Native audit is incomplete')
+        require(audit.get('referenceSha256')==file_digest(local_file(root,case['reference'],root)),'Native reference fingerprint mismatch')
+        shot=local_file(root,case['screenshot'],root)
+        require(audit.get('screenshotSha256')==file_digest(shot),'Native screenshot fingerprint mismatch')
+        with Image.open(shot) as image:
+            require(image.size==viewports[key[1]] and image.size==(audit.get('viewportWidth'),audit.get('viewportHeight')),'Native screenshot viewport mismatch');image.verify()
+        path=audit.get('prefab');require(path in known and path.endswith('.prefab'),'Native audit prefab is not a final artifact')
+        require(audit.get('prefabSha256')==known[path]['sha256'] and audit.get('prefabMetaSha256')==known[path]['metaSha256'],'Native audit prefab bytes are stale')
+        require(isinstance(audit.get('artifacts'),list) and {a['path']:a for a in audit['artifacts']}==known,'Native dependency coverage mismatch')
+        current={p.relative_to(root).as_posix():file_digest(p) for p in (root/'html').rglob('*') if p.is_file()}
+        require(source.get('sourceFilesSha256')==current and source.get('gameInputsSha256')==inputs,'Native browser source is stale')
+        require(comparator.compare(source,audit,1.1)['status']=='pass','Native fixture geometry no longer matches')
+    require(seen==expected,'Native matrix does not cover every fixture and viewport')
+
 
 def design_approval_state(root,name,mode):
     try:
@@ -383,7 +454,10 @@ def validate(root,require_ready=False,mode=None,require_unity=False,unity_projec
         common=read_json(root/'design/element-groups.json')
         require({local_file(root,item['source'],root) for item in common['sprites']}==source_assets,'HTML/group material coverage mismatch')
     if require_unity: validate_unity_acceptance(root,unity_project,require_import_report=True)
-    return dict(mode=mode,designApproved=design_approved,artifactReady=ready,unityAccepted=require_unity,deviceAccepted=device_state(root)=='passed' if require_unity else False,deviceVerification=device_state(root) if require_unity else 'not-verified',unityAcceptance='recorded-evidence-consistent' if require_unity else 'not-verified',entry=str(entry),groups=group_count,components=len(expected),templates=len(templates),sprites=len(destinations),structure='passed',status=state['status'],visualAcceptance=readiness)
+    from game_workflow import evidence_state
+    unity=evidence_state(root,unity_project)
+    accepted=unity['status']=='passed'
+    return dict(mode=mode,designApproved=design_approved,artifactReady=ready,unityAccepted=accepted,unityVerification=unity,deviceAccepted=device_state(root)=='passed' if accepted else False,deviceVerification=device_state(root) if accepted else 'not-verified',unityAcceptance='recorded-evidence-consistent' if accepted else 'not-verified',entry=str(entry),groups=group_count,components=len(expected),templates=len(templates),sprites=len(destinations),structure='passed',status=state['status'],visualAcceptance=readiness)
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)

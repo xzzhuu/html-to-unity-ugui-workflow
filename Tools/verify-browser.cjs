@@ -29,7 +29,8 @@ let server;
       await once(server, 'listening');
       process.env.STARPORT_BASE_URL = `http://127.0.0.1:${server.address().port}/`;
     }
-    await require('../Workspaces/StarportSalvage/design-tools/verify_browser.cjs')();
+    if(process.argv.includes('--capture-matrix')) await require('./capture-starport-reference.cjs')({matrix:true});
+    else await (process.argv.includes('--capture-reference') ? require('./capture-starport-reference.cjs') : require('../Workspaces/StarportSalvage/design-tools/verify_browser.cjs'))();
   } finally {
     if (server) await new Promise(resolve => server.close(resolve));
   }

@@ -2,7 +2,8 @@
 const fs=require('fs'),path=require('path'),assert=require('assert/strict');
 const {chromium}=require('playwright');
 const root=path.resolve(__dirname,'..'),evidence=process.env.STARPORT_EVIDENCE_DIR?path.resolve(process.env.STARPORT_EVIDENCE_DIR):path.resolve(root,'../../Audit/Runs/latest/starport-browser');fs.mkdirSync(evidence,{recursive:true});
-const panels=['StarportHomePanel','ExpeditionSelectPanel','SupplyInventoryPanel','GameSettingsPanel','ActionConfirmPanel','ExpeditionResultPanel'];
+const screens=JSON.parse(fs.readFileSync(path.join(root,'contracts/screens.json'),'utf8'));
+const panels=screens.screens.filter(s=>s.implemented).map(s=>s.panelName);
 const base=(process.env.STARPORT_BASE_URL || 'http://127.0.0.1:8148/').replace(/\/?$/, '/');
 const url=(p,f)=>base+'Panels/'+p+'/html/'+p+'.html'+(f?'?fixture='+f:'');
 const checks=[],errors=[];
@@ -28,6 +29,14 @@ async function main(){
    assert.equal(await page.locator('[data-root]').count(),1);assert.equal(await page.locator('[data-root]').evaluate(n=>n.offsetWidth),1920);
    for(const img of await page.locator('.icon').evaluateAll(ns=>ns.map(n=>getComputedStyle(n).maskImage)))assert.ok(img.includes('.png'));
   }
+ });
+ await test('Editor demo data matches actual browser defaults and mission rows',async()=>{
+  const demo=JSON.parse(fs.readFileSync(path.join(root,'design-tools/editor-demo-data.json'),'utf8'));
+  await visit('StarportHomePanel','Default');const initial=await state();
+  for(const [key,value] of Object.entries(demo.initial))assert.deepEqual(initial[key],value);
+  assert.deepEqual(initial.inventory,demo.items);assert.equal(demo.durationSeconds,3);
+  await visit('ExpeditionSelectPanel','Default');
+  for(const mission of demo.missions){await page.locator(`[data-preview-template="MissionEntry"][data-item-id="${mission.id}"]`).click();assert.equal(await b('Mission.Name').innerText(),mission.name);assert.equal(Number(await b('Mission.CreditsCost').innerText()),mission.credits);assert.equal(Number(await b('Mission.EnergyCost').innerText()),mission.energy);}
  });
  await test('Default data starts with empty loadout',async()=>{await visit(panels[0],'Default');const s=await state();assert.equal(s.credits,2400);assert.deepEqual(s.loadout,{});assert.equal(await b('Player.LoadoutWeight').innerText(),'0.0 / 20.0 kg');});
  await test('Inventory selection, quantity, merge and stock accounting',async()=>{
@@ -98,8 +107,14 @@ async function main(){
   await page.locator('#fixture').selectOption('Overweight');await frame.waitForFunction(()=>window.StarportDemo?.state().fixture==='Overweight');assert.equal(await frame.evaluate(()=>StarportDemo.state().capacity),10);
   await page.locator('#initial').click();await frame.waitForFunction(()=>window.StarportDemo?.panel==='StarportHomePanel');assert.equal(await frame.evaluate(()=>StarportDemo.state().credits),2400);await shot('Launcher');
  });
+ await test('Declared fixture contract matches actual browser state',async()=>{
+  const cases=JSON.parse(fs.readFileSync(path.join(root,'contracts/fixtures.json'),'utf8')).fixtures;
+  for(const item of cases){await visit(item.panelName,item.id);const actual=await state();
+   for(const [key,expected] of Object.entries(item.expected)){const value=key.split('.').reduce((v,k)=>k==='length'?v.length:v?.[k],actual);assert.deepEqual(value,expected,`${item.id}.${key}`);}
+  }
+ });
  await test('Browser console and local resources clean',async()=>assert.deepEqual(errors,[]));
- fs.writeFileSync(path.join(evidence,'checks.json'),JSON.stringify({status:'passed',browser:await browser.version(),checks,errors},null,2));
+ fs.writeFileSync(path.join(evidence,'checks.json'),JSON.stringify({status:'passed',browser:await browser.version(),contractSha256:require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root,'contracts/fixtures.json'))).digest('hex'),checks,errors},null,2));
  await browser.close();
 }
 async function run(){try{await main();}catch(e){fs.writeFileSync(path.join(evidence,'checks.json'),JSON.stringify({status:'failed',checks,errors,error:e.stack},null,2));if(page)await shot('Failure').catch(()=>{});if(browser)await browser.close();throw e;}}

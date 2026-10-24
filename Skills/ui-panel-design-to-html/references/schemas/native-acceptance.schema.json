@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Native UI acceptance v2",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "status",
+    "scope",
+    "matrixCases",
+    "finalArtifacts",
+    "externalDependencies",
+    "gameInputsSha256",
+    "filesSha256",
+    "testedFixtures",
+    "testedResolutions"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "status": {
+      "enum": [
+        "passed",
+        "failed"
+      ]
+    },
+    "scope": {
+      "const": "native-ui"
+    },
+    "matrixCases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "fixture",
+          "viewport",
+          "reference",
+          "audit",
+          "screenshot",
+          "geometry"
+        ]
+      }
+    },
+    "finalArtifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "guid",
+          "sha256",
+          "metaSha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^Assets/"
+          },
+          "guid": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{32}$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "metaSha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "externalDependencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "guid",
+          "sha256",
+          "metaSha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^Assets/"
+          },
+          "guid": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{32}$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "metaSha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "gameInputsSha256": {
+      "type": "object"
+    },
+    "filesSha256": {
+      "type": "object"
+    },
+    "testedFixtures": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "testedResolutions": {
+      "type": "array",
+      "minItems": 1
+    }
+  }
+}

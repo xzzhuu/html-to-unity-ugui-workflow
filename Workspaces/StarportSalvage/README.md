@@ -1,6 +1,6 @@
 # 星港拾荒者 · UI 示例工作区
 
-当前阶段：六面板布局与九组元素已由用户确认；正式PNG、六套HTML与浏览器验收已完成。2026-10-24 已在当前测试工程完成六面板导入、原生装配、实际视觉对照与正式复制；字体使用 PICOSansVFESC SDF。游戏层接线与设备验收仍待进行。
+当前阶段：六面板布局与九组元素已由用户确认；正式PNG、六套HTML与浏览器验收已完成。2026-10-24 已在当前测试工程完成六面板导入、原生装配、实际视觉对照与正式复制；字体使用 PICOSansVFESC SDF。已补齐 Unity Editor 内业务接线与完整流程验收，覆盖六面板；本轮按用户要求仅验收 Unity 编辑器。当前状态见 [完成报告](../../Audit/Reports/WORKFLOW_COMPLETION_20261024.md)。
 
 ## 目录规则（2026-10-24）
 
@@ -70,7 +70,7 @@ python -m http.server 8148 --bind 127.0.0.1 --directory Workspaces/StarportSalva
 
 审核标注位于浏览器预览层，不进入运行时面板节点。动态图片通过透明Group_IconCatalog原生Image注册显式Sprite引用，供转换器收集依赖。原生确认弹窗包含全屏输入遮罩。
 
-已保存真实布局批准、元素批准及HTML验收；designApproved=true、artifactReady=true、unityAccepted=false、deviceAccepted=false。暂存导入成功单独登记，不替代完整Unity验收。
+已保存真实布局/元素批准、HTML 及完整 Unity 原生矩阵验收；designApproved=true、artifactReady=true、unityAccepted=true。独立 Editor 业务验收也已通过，详见 design-review/workflow-status.json；设备按本轮用户指定范围记为不适用，deviceAccepted=false。
 
 ## 项目素材兼容修复（2026-10-23）
 
@@ -84,7 +84,7 @@ python -m http.server 8148 --bind 127.0.0.1 --directory Workspaces/StarportSalva
 
 各package启用requireSkillApproval=true，暂存根为Assets/HtmlToUGUIStage/StarportSalvage/{PanelName}，默认禁止覆盖Prefab。后续通过既有转换器查看只读计划，再暂存导入、装配原生组件、核对截图与引用；正式复制后检查最终资源。
 
-六页实际 Unity 截图已与 HTML 和批准预览对照；修正开关重复染色、圆角比例、滑块几何与遮挡、数学减号缺字。游戏层另行实现数据、导航、列表实例和事件、设置服务及一次性结算。[制作流程](../../docs/game-example/workflow.md) 与 [转换规范及对照图](../../docs/game-example/conversion-rules.md) 记录本次参数、验证和重新导入边界。[unity-delivery.json](unity-delivery.json) 记录正式与暂存产物指纹。
+六页实际 Unity 截图已与 HTML 和批准预览对照；修正开关重复染色、圆角比例、滑块几何与遮挡、数学减号缺字。测试工程的 Editor 业务适配器已接通内存演示数据、导航、列表事件、设置和一次性结算，并在隔离场景执行原生事件测试；正式游戏接入时继续由游戏层提供服务。[制作流程](../../docs/game-example/workflow.md) 与 [转换规范及对照图](../../docs/game-example/conversion-rules.md) 记录本次参数、验证和重新导入边界。[unity-delivery.json](unity-delivery.json) 记录正式与暂存产物指纹。
 
 design-tools中的render_previews.py、render_element_sheets.py、prepare_review.py是历史设计阶段工具，勿在批准后重新运行以覆盖冻结记录。正式修改须更新受影响的审批/清单与验收证据。
 

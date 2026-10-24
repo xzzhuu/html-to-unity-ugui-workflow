@@ -62,7 +62,7 @@ expected |= {f'Assets/Art/UIPrefab/StarportSalvage/Item/Item_{p}.prefab' for p i
 actual = {p.relative_to(project).as_posix() for p in (project/'Assets/Art/UIPrefab/StarportSalvage').rglob('*.prefab')}
 assert actual == expected
 for panel in panels:
-    validate(game/'Panels'/panel, require_ready=True)
+    validate(game/'Panels'/panel, require_ready=True, require_unity=True, unity_project=project)
 for record in delivery['sourceImportReports']:
     assert digest(project/record['path']) == record['sha256'], 'Import report changed'
 report = project/delivery['copyReport']

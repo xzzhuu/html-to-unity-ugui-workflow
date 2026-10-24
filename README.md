@@ -7,7 +7,7 @@
 
 从 UI 需求与布局审核，到可预览 XHTML，再到 Unity 原生 UGUI / TextMesh Pro 的可复用工作流。
 
-本仓库包含一个 Codex Skill、星港六面板的完整制作示例、Python 工具，以及 `com.nex.html-to-ugui` 0.3.0 的完整 UPM 源码。设计源文件留在 Unity 工程外；转换器生成图片、Panel / Item Prefab 和通用绑定元数据，业务数据与交互由接入应用实现。
+本仓库包含一个 Codex Skill、星港六面板的完整制作示例、Python 工具，以及 `com.nex.html-to-ugui` 0.4.1 的完整 UPM 源码。设计源文件留在 Unity 工程外；转换器生成图片、Panel / Item Prefab 和通用绑定元数据，业务数据与交互由接入应用实现。
 
 完整英文说明见 [English README](README.en.md)。
 
@@ -113,7 +113,7 @@ https://github.com/xzzhuu/html-to-unity-ugui-workflow.git?path=/Packages/com.nex
 
 ```sh
 python -m pip install -r requirements-dev.txt
-python -B -X utf8 -m unittest discover -s Skills/ui-panel-design-to-html/scripts -p test_workflow.py
+python -B -X utf8 -m unittest discover -s Skills/ui-panel-design-to-html/scripts -p "test*.py"
 python -X utf8 Tools/verify-directory-generator.py
 python -X utf8 Tools/verify-preparation-contract.py
 python -X utf8 Tools/verify-installer.py

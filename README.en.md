@@ -7,7 +7,7 @@
 
 A reusable workflow from UI requirements and layout review to browser-previewable XHTML and native Unity UGUI / TextMesh Pro prefabs.
 
-This repository includes a Codex Skill, a complete six-panel Starport example, Python tools, and the complete source for the `com.nex.html-to-ugui` 0.3.0 UPM package. Design source files stay outside the Unity project. The importer creates image assets, Panel / Item prefabs, and generic binding metadata; the receiving application implements its own data handling and interactions.
+This repository includes a Codex Skill, a complete six-panel Starport example, Python tools, and the complete source for the `com.nex.html-to-ugui` 0.4.1 UPM package. Design source files stay outside the Unity project. The importer creates image assets, Panel / Item prefabs, and generic binding metadata; the receiving application implements its own data handling and interactions.
 
 ## Features and boundaries
 
@@ -130,7 +130,7 @@ Run these commands from the repository root:
 
 ```sh
 python -m pip install -r requirements-dev.txt
-python -B -X utf8 -m unittest discover -s Skills/ui-panel-design-to-html/scripts -p test_workflow.py
+python -B -X utf8 -m unittest discover -s Skills/ui-panel-design-to-html/scripts -p "test*.py"
 python -X utf8 Tools/verify-directory-generator.py
 python -X utf8 Tools/verify-preparation-contract.py
 python -X utf8 Tools/verify-installer.py

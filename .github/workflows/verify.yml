@@ -22,7 +22,8 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - run: python -m pip install -r requirements-dev.txt
-      - run: python -X utf8 -m unittest discover -s Skills/ui-panel-design-to-html/scripts -p test_workflow.py
+      - run: python -X utf8 -m unittest discover -s Skills/ui-panel-design-to-html/scripts -p "test*.py"
+      - run: python -X utf8 Tools/game-workflow.py check --root Workspaces/StarportSalvage
       - run: python -X utf8 Tools/verify-directory-generator.py
       - run: python -X utf8 Tools/verify-preparation-contract.py
       - run: python -X utf8 Tools/verify-installer.py

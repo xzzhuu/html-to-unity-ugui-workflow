@@ -1,6 +1,6 @@
 # 星港基地 / StarportHomePanel
 
-状态：整体预览与元素组图v01已获真实确认；HTML已完成并通过浏览器验收，Unity待验证。
+状态：整体预览与元素组图v01已获真实确认；HTML已完成并通过浏览器验收，原生 UI 已完成标准验收；业务接线与设备仍未测。
 
 ## 需求依据
 
@@ -24,7 +24,7 @@
 - 画布 1920×1080；主体 1680×920，位置(120,80)。
 - 预览：[v01](../design/layout/Img_StarportHomePanel_Preview_v01.png)。
 - 运行文本保持 TMP；正式素材 POT；同形色差共用中性素材；动态项使用原生纵向 ScrollRect。
-- 独立准备目录保留在 Unity 外，暂存目标 Assets/HtmlToUGUIStage/StarportHomePanel/。
+- 独立准备目录保留在 Unity 外，暂存目标 Assets/HtmlToUGUIStage/StarportSalvage/StarportHomePanel/。
 - 现有HTML是已验收实现；审核标注由浏览器层提供，源码可供转换。
 
 ## 样本口径

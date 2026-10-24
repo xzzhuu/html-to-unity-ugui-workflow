@@ -1,4 +1,4 @@
-# HTML to UGUI (TMP) 0.3.0
+# HTML to UGUI (TMP) 0.4.1
 
 当前游戏源目录为 `{GameName}/Panels/{PanelName}/html/`；共享 `project.assets.json` 留在游戏根，准备包 `projectDirectory` 从 html/ 回退三级（`../../..`）。批量导入选择游戏根目录。
 
@@ -51,6 +51,10 @@ Use **面板暂存与复制...** to preview one staged panel at a time in StageS
 ## Conversion and runtime boundary
 
 The converter builds native UGUI/TMP components and copies referenced PNG files; it does not render the HTML in a browser. Its CSS support is intentionally limited. Unsupported selectors or visual effects are reported in `import-report.json`; a successful structural import does not prove visual parity. Compare the resulting Unity view against the approved layout and HTML preview.
+
+Version 0.4.1 optionally reads game-owned `contracts/native-assembly.json` and `contracts/style.json` in project mode. An `active` recipe can derive symmetric Sliced Image corner scaling from CSS radius and assemble independent native Slider track/fill/handle parts using Slider-owned project asset IDs and style color tokens. A `draft` recipe is not applied. Contract files and resolved settings enter the reviewed plan and input fingerprints. Assembly runs before the existing integration callbacks and only modifies newly generated objects. No game-specific runtime component is added. Reimport checks should compare effective structure and rendering; Unity may change internal fileIDs while retaining the Prefab GUID.
+
+`UiReferenceAudit.Run(prefabPath, browserReferenceJson, outputDirectory, outputWidth, outputHeight)` captures an isolated fixture, checks complete source-node geometry and native controls, and supports uniform-fit viewport checks. It does not execute existing business callbacks or certify game-service wiring or target-device behavior.
 
 The package may attach generic `UiBindingMap` and `UiTemplateCatalog` metadata. `data-binding` values identify UI elements; the binding map provides typed lookup, and the catalog references generated Item Prefabs. They do not fetch domain data, perform application actions, instantiate runtime rows, or implement a Panel Presenter. The receiving application owns its data, event handling, and runtime list construction.
 

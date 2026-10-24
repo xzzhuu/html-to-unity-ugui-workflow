@@ -11,28 +11,9 @@ PLAN=json.loads((ROOT/'design-review/sprite-export-plan-v01.json').read_text(enc
 ASSETS={x['name']:x for x in PLAN['assets']}
 def write(path,data):path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
-BASECSS='''html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;background:#89939C}
-.node{position:absolute;box-sizing:border-box;margin:0;padding:0;border:0;font-family:"Microsoft YaHei",sans-serif;line-height:1.4}
-.text{pointer-events:none;white-space:pre-wrap;overflow:hidden;text-align:left}
-.control{cursor:pointer;outline:none}
-.control:hover{filter:brightness(1.08)}
-.control:active{filter:brightness(.88)}
-.control:focus-visible{outline:3px solid #EEF5F7;outline-offset:3px}
-.control:disabled{cursor:default;opacity:.45;filter:none}
-.scroll{overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:#4AD7BB #192E3C}
-.scroll::-webkit-scrollbar{width:5px}.scroll::-webkit-scrollbar-thumb{background:#4AD7BB}
-.input{padding:12px 24px;outline:none}
-.input:focus{outline:2px solid #4AD7BB;outline-offset:-2px}
-.input::placeholder{color:#AAC0CA}
-.icon{mask-size:100% 100%;mask-repeat:no-repeat;-webkit-mask-size:100% 100%}
-.slider{appearance:none;-webkit-appearance:none;background:transparent;accent-color:#4AD7BB;cursor:pointer}
-.slider::-webkit-slider-runnable-track{height:10px;border-radius:5px;background:linear-gradient(to right,#4AD7BB var(--progress),#203745 var(--progress))}
-.slider::-webkit-slider-thumb{appearance:none;width:28px;height:28px;background:#EEF5F7;border-radius:50%;margin-top:-9px}
-.slider:disabled{cursor:default;opacity:.5}
-.toggle{appearance:none;-webkit-appearance:none;width:90px;height:42px;border-radius:21px;background:#36505F;cursor:pointer}
-.toggle::after{content:"";position:absolute;left:5px;top:5px;width:32px;height:32px;border-radius:50%;background:#EEF5F7}
-.toggle:checked{background:#4AD7BB}.toggle:checked::after{left:50px}
-'''
+from game_workflow import read, render_tokens, font_size
+STYLE=read(ROOT/'contracts/style.json')
+BASECSS=render_tokens((ROOT/'design-tools/templates/base.css').read_text(encoding='utf-8'), STYLE)
 
 class Panel:
  def __init__(self,name,title,number,modal=False):
@@ -53,13 +34,14 @@ class Panel:
    n=self.node('Btn_ModalBlocker','Button',0,0,1920,1080,bg='#050C14B8',extra={'data-interactable':'false','disabled':'disabled'})
    n.set('data-purpose','全屏半透明遮罩，原生Button图形拦截底层指针；自身不执行操作')
    self.specs[n.get('id')]['purpose']=n.get('data-purpose')
-  self.surface('PanelBody',600 if modal else 120,280 if modal else 80,720 if modal else 1680,520 if modal else 920,'base',r=20)
+  self.surface('PanelBody',600 if modal else 120,280 if modal else 80,720 if modal else 1680,520 if modal else 920,'base',r=STYLE['geometry']['panelRadius'])
   self.label('Feedback','',420,970,1000,28,20,'amber',bind='Feedback.Message')
   ET.SubElement(body,'script',{'src':name+'.preview.js'})
 
  def node(self,name,kind,x,y,w,h,*,text=None,color=None,bg=None,size=24,bold=False,bind=None,parent=None,tag=None,extra=None,klass=''):
   parent=parent if parent is not None else self.root
   px,py=self.positions.get(id(parent),(0,0))
+  size=font_size(size,STYLE)
   tags={'Text':'span','Button':'button','InputField':'input','Toggle':'input','Slider':'input'}
   attrs={'id':self.name+'__'+name,'data-ui-name':name,'data-ugui':kind,'class':'node '+klass,
    'style':f'left:{x-px}px;top:{y-py}px;width:{w}px;height:{h}px;font-size:{size}px;color:{C.get(color,color) if color else C["text"]};font-weight:{700 if bold else 400};',
@@ -92,7 +74,7 @@ class Panel:
  def button(self,name,text,x,y,w,h=60,primary=False,danger=False,bind=None,parent=None):
   n=self.node('Btn_'+name,'Button',x,y,w,h,text=text,size=24,color='ink' if primary else ('red' if danger else 'text'),
     bg='teal' if primary else ('#50343C' if danger else 'card'),bold=True,bind=bind or 'Action.'+name,parent=parent,klass='control')
-  self.sprite(n,'Img_Control_Background.png');n.set('style',n.get('style')+'border-radius:10px;text-align:center;');return n
+  self.sprite(n,'Img_Control_Background.png');n.set('style',n.get('style')+f"border-radius:{STYLE['geometry']['buttonRadius']}px;text-align:center;");return n
  def icon(self,name,file,x,y,size=56,color='teal',parent=None,bind=None,seat=True):
   if any(k in file for k in ['Ore','Alloy','Chip','Credits']):color='amber'
   if seat:self.surface(name+'Seat',x,y,size,size,'deep',10,parent)
@@ -109,7 +91,7 @@ class Panel:
   self.line('HeaderDivider',160,218,1600)
  def input(self,name,x,y,w,value='',placeholder='',bind=None):
   n=self.node('Input_'+name,'InputField',x,y,w,64,bg='card',bind=bind or 'Input.'+name,klass='input',extra={'type':'text','value':value,'placeholder':placeholder,'data-placeholder':placeholder})
-  self.sprite(n,'Img_Control_Background.png');n.set('style',n.get('style')+'border-radius:8px;');return n
+  self.sprite(n,'Img_Control_Background.png');n.set('style',n.get('style')+f"border-radius:{STYLE['geometry']['inputRadius']}px;");return n
  def slider(self,name,x,y,w,value,maxval=100,minval=0,bind=None):
   n=self.node('Slider_'+name,'Slider',x,y,w,40,bind=bind or 'Slider.'+name,klass='slider',extra={
    'type':'range','min':str(minval),'max':str(maxval),'step':'1','value':str(value),'data-min':str(minval),'data-max':str(maxval),'data-value':str(value),'data-whole-numbers':'true'})

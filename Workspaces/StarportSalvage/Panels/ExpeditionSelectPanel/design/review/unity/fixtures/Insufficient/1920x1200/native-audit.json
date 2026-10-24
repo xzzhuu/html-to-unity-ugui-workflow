@@ -1,0 +1,753 @@
+{
+  "prefab": "Assets/Art/UIPrefab/StarportSalvage/ExpeditionSelectPanel/ExpeditionSelectPanel.prefab",
+  "referenceSha256": "063e76266bd5cfa28e31bdf52948d32eebb2cdd684b30fbf1935c0fa7456b539",
+  "nodes": [
+    {
+      "path": "",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 1920.0,
+      "height": 1080.0
+    },
+    {
+      "path": "Group_PanelBody",
+      "row": -1,
+      "visible": true,
+      "x": 120.0,
+      "y": 80.0,
+      "width": 1680.0,
+      "height": 920.0
+    },
+    {
+      "path": "Group_PanelBody/Txt_ListTitle",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 246.0,
+      "width": 360.0,
+      "height": 40.0
+    },
+    {
+      "path": "Group_PanelBody/Txt_MissionCount",
+      "row": -1,
+      "visible": true,
+      "x": 560.0,
+      "y": 250.0,
+      "width": 140.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Scroll_Missions",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 300.0,
+      "width": 540.0,
+      "height": 550.0
+    },
+    {
+      "path": "",
+      "row": 0,
+      "visible": true,
+      "x": 160.0,
+      "y": 300.0,
+      "width": 540.0,
+      "height": 152.0
+    },
+    {
+      "path": "Img_MissionSelection",
+      "row": 0,
+      "visible": true,
+      "x": 160.0,
+      "y": 320.0,
+      "width": 5.0,
+      "height": 112.0
+    },
+    {
+      "path": "Txt_MissionIndex",
+      "row": 0,
+      "visible": true,
+      "x": 188.0,
+      "y": 323.0,
+      "width": 48.0,
+      "height": 36.0
+    },
+    {
+      "path": "Txt_MissionCardName",
+      "row": 0,
+      "visible": true,
+      "x": 244.0,
+      "y": 322.0,
+      "width": 440.0,
+      "height": 44.0
+    },
+    {
+      "path": "Txt_MissionCardRisk",
+      "row": 0,
+      "visible": true,
+      "x": 244.0,
+      "y": 374.0,
+      "width": 430.0,
+      "height": 36.0
+    },
+    {
+      "path": "Txt_MissionCardState",
+      "row": 0,
+      "visible": true,
+      "x": 244.0,
+      "y": 410.0,
+      "width": 430.0,
+      "height": 32.0
+    },
+    {
+      "path": "",
+      "row": 1,
+      "visible": true,
+      "x": 160.0,
+      "y": 474.0,
+      "width": 540.0,
+      "height": 152.0
+    },
+    {
+      "path": "Img_MissionSelection",
+      "row": 1,
+      "visible": false,
+      "x": 160.0,
+      "y": 494.0,
+      "width": 5.0,
+      "height": 112.0
+    },
+    {
+      "path": "Txt_MissionIndex",
+      "row": 1,
+      "visible": true,
+      "x": 188.0,
+      "y": 497.0,
+      "width": 48.0,
+      "height": 36.0
+    },
+    {
+      "path": "Txt_MissionCardName",
+      "row": 1,
+      "visible": true,
+      "x": 244.0,
+      "y": 496.0,
+      "width": 440.0,
+      "height": 44.0
+    },
+    {
+      "path": "Txt_MissionCardRisk",
+      "row": 1,
+      "visible": true,
+      "x": 244.0,
+      "y": 548.0,
+      "width": 430.0,
+      "height": 36.0
+    },
+    {
+      "path": "Txt_MissionCardState",
+      "row": 1,
+      "visible": true,
+      "x": 244.0,
+      "y": 584.0,
+      "width": 430.0,
+      "height": 32.0
+    },
+    {
+      "path": "",
+      "row": 2,
+      "visible": true,
+      "x": 160.0,
+      "y": 648.0,
+      "width": 540.0,
+      "height": 152.0
+    },
+    {
+      "path": "Img_MissionSelection",
+      "row": 2,
+      "visible": false,
+      "x": 160.0,
+      "y": 668.0,
+      "width": 5.0,
+      "height": 112.0
+    },
+    {
+      "path": "Txt_MissionIndex",
+      "row": 2,
+      "visible": true,
+      "x": 188.0,
+      "y": 671.0,
+      "width": 48.0,
+      "height": 36.0
+    },
+    {
+      "path": "Txt_MissionCardName",
+      "row": 2,
+      "visible": true,
+      "x": 244.0,
+      "y": 670.0,
+      "width": 440.0,
+      "height": 44.0
+    },
+    {
+      "path": "Txt_MissionCardRisk",
+      "row": 2,
+      "visible": true,
+      "x": 244.0,
+      "y": 722.0,
+      "width": 430.0,
+      "height": 36.0
+    },
+    {
+      "path": "Txt_MissionCardState",
+      "row": 2,
+      "visible": true,
+      "x": 244.0,
+      "y": 758.0,
+      "width": 430.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details",
+      "row": -1,
+      "visible": true,
+      "x": 732.0,
+      "y": 250.0,
+      "width": 1028.0,
+      "height": 600.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_RiskBadge",
+      "row": -1,
+      "visible": true,
+      "x": 786.0,
+      "y": 285.0,
+      "width": 380.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_MissionName",
+      "row": -1,
+      "visible": true,
+      "x": 772.0,
+      "y": 340.0,
+      "width": 920.0,
+      "height": 66.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_MissionDescription",
+      "row": -1,
+      "visible": true,
+      "x": 772.0,
+      "y": 411.0,
+      "width": 944.0,
+      "height": 56.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_CreditsCostLabel",
+      "row": -1,
+      "visible": true,
+      "x": 772.0,
+      "y": 480.0,
+      "width": 300.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_CreditsCost",
+      "row": -1,
+      "visible": true,
+      "x": 772.0,
+      "y": 516.0,
+      "width": 300.0,
+      "height": 54.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_EnergyCostLabel",
+      "row": -1,
+      "visible": true,
+      "x": 1090.0,
+      "y": 480.0,
+      "width": 300.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_EnergyCost",
+      "row": -1,
+      "visible": true,
+      "x": 1090.0,
+      "y": 516.0,
+      "width": 300.0,
+      "height": 54.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_DurationLabel",
+      "row": -1,
+      "visible": true,
+      "x": 1408.0,
+      "y": 480.0,
+      "width": 300.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_Duration",
+      "row": -1,
+      "visible": true,
+      "x": 1408.0,
+      "y": 516.0,
+      "width": 300.0,
+      "height": 54.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_RewardTitle",
+      "row": -1,
+      "visible": true,
+      "x": 772.0,
+      "y": 588.0,
+      "width": 540.0,
+      "height": 40.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Group_Reward0Seat",
+      "row": -1,
+      "visible": true,
+      "x": 772.0,
+      "y": 638.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Group_Reward0Seat/Img_Reward0",
+      "row": -1,
+      "visible": true,
+      "x": 772.0,
+      "y": 638.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_RewardName0",
+      "row": -1,
+      "visible": true,
+      "x": 844.0,
+      "y": 637.0,
+      "width": 230.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_RewardQuantity0",
+      "row": -1,
+      "visible": true,
+      "x": 844.0,
+      "y": 672.0,
+      "width": 230.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Group_Reward1Seat",
+      "row": -1,
+      "visible": true,
+      "x": 1090.0,
+      "y": 638.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Group_Reward1Seat/Img_Reward1",
+      "row": -1,
+      "visible": true,
+      "x": 1090.0,
+      "y": 638.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_RewardName1",
+      "row": -1,
+      "visible": true,
+      "x": 1162.0,
+      "y": 637.0,
+      "width": 230.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_RewardQuantity1",
+      "row": -1,
+      "visible": true,
+      "x": 1162.0,
+      "y": 672.0,
+      "width": 230.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Group_Reward2Seat",
+      "row": -1,
+      "visible": true,
+      "x": 1408.0,
+      "y": 638.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Group_Reward2Seat/Img_Reward2",
+      "row": -1,
+      "visible": true,
+      "x": 1408.0,
+      "y": 638.0,
+      "width": 56.0,
+      "height": 56.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_RewardName2",
+      "row": -1,
+      "visible": true,
+      "x": 1480.0,
+      "y": 637.0,
+      "width": 230.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_RewardQuantity2",
+      "row": -1,
+      "visible": true,
+      "x": 1480.0,
+      "y": 672.0,
+      "width": 230.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_Recommended",
+      "row": -1,
+      "visible": true,
+      "x": 772.0,
+      "y": 754.0,
+      "width": 944.0,
+      "height": 36.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Details/Txt_MissionLoadout",
+      "row": -1,
+      "visible": true,
+      "x": 772.0,
+      "y": 794.0,
+      "width": 944.0,
+      "height": 40.0
+    },
+    {
+      "path": "Group_PanelBody/Txt_ListState",
+      "row": -1,
+      "visible": false,
+      "x": 160.0,
+      "y": 370.0,
+      "width": 540.0,
+      "height": 144.0
+    },
+    {
+      "path": "Group_PanelBody/Btn_RetryMissions",
+      "row": -1,
+      "visible": false,
+      "x": 160.0,
+      "y": 550.0,
+      "width": 220.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 112.0,
+      "width": 1600.0,
+      "height": 108.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_Title",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 112.0,
+      "width": 700.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_Subtitle",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 170.0,
+      "width": 1100.0,
+      "height": 35.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceCreditsLabel",
+      "row": -1,
+      "visible": true,
+      "x": 980.0,
+      "y": 115.0,
+      "width": 240.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceCredits",
+      "row": -1,
+      "visible": true,
+      "x": 980.0,
+      "y": 149.0,
+      "width": 270.0,
+      "height": 50.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceEnergyLabel",
+      "row": -1,
+      "visible": true,
+      "x": 1220.0,
+      "y": 115.0,
+      "width": 240.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceEnergy",
+      "row": -1,
+      "visible": true,
+      "x": 1220.0,
+      "y": 149.0,
+      "width": 270.0,
+      "height": 50.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeightLabel",
+      "row": -1,
+      "visible": true,
+      "x": 1480.0,
+      "y": 115.0,
+      "width": 240.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Txt_ResourceLoadoutWeight",
+      "row": -1,
+      "visible": true,
+      "x": 1480.0,
+      "y": 149.0,
+      "width": 270.0,
+      "height": 50.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Header/Img_HeaderDivider",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 218.0,
+      "width": 1600.0,
+      "height": 2.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Footer",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 890.0,
+      "width": 1600.0,
+      "height": 108.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Footer/Txt_Feedback",
+      "row": -1,
+      "visible": true,
+      "x": 420.0,
+      "y": 970.0,
+      "width": 1000.0,
+      "height": 28.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Footer/Btn_ReturnHome",
+      "row": -1,
+      "visible": true,
+      "x": 160.0,
+      "y": 900.0,
+      "width": 220.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Footer/Btn_EditLoadout",
+      "row": -1,
+      "visible": true,
+      "x": 1210.0,
+      "y": 900.0,
+      "width": 244.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Footer/Btn_StartExpedition",
+      "row": -1,
+      "visible": true,
+      "x": 1478.0,
+      "y": 900.0,
+      "width": 282.0,
+      "height": 60.0
+    },
+    {
+      "path": "Group_PanelBody/Group_Footer/Txt_ResourceDeficit",
+      "row": -1,
+      "visible": true,
+      "x": 418.0,
+      "y": 917.0,
+      "width": 760.0,
+      "height": 46.0
+    },
+    {
+      "path": "Group_IconCatalog",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 32.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_IconCatalog/Img_ItemChip",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 32.0,
+      "height": 32.0
+    },
+    {
+      "path": "Group_IconCatalog/Img_ItemCircuit",
+      "row": -1,
+      "visible": true,
+      "x": 0.0,
+      "y": 0.0,
+      "width": 32.0,
+      "height": 32.0
+    }
+  ],
+  "schemaVersion": 2,
+  "fixture": "Insufficient",
+  "prefabSha256": "cf047f5d1e0e21e7cf2b20e2c20ab588151de45ff69adaad15cedfabd0eab973",
+  "prefabMetaSha256": "a94c4a4b11450f7b545b574da8915fba27dab639660b0a46e31d3b2fb0c54378",
+  "converterVersion": "0.4.1",
+  "dependencies": [
+    "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+    "Assets/Art/UI/Sprites/StarportSalvage/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png",
+    "Packages/com.unity.ugui/Runtime/UI/Core/ScrollRect.cs",
+    "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd",
+    "Packages/com.unity.textmeshpro/Scripts/Runtime/TextMeshProUGUI.cs",
+    "Assets/Art/Fonts/PICOSansVFESC SDF.asset",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png",
+    "Assets/Art/UIPrefab/StarportSalvage/ExpeditionSelectPanel/ExpeditionSelectPanel.prefab",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png",
+    "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Text Component Icon.psd",
+    "Packages/com.unity.ugui/Runtime/UI/Core/Button.cs",
+    "Packages/com.nex.html-to-ugui/Runtime/Core/UiTemplateCatalog.cs",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+    "Packages/com.unity.ugui/Runtime/UI/Core/RectMask2D.cs",
+    "Packages/com.unity.ugui/Runtime/UI/Core/Image.cs",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png",
+    "Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_FontAsset.cs",
+    "Packages/com.nex.html-to-ugui/Runtime/Core/UiBindingMap.cs",
+    "Assets/Art/UIPrefab/StarportSalvage/Item/Item_MissionEntry.prefab",
+    "Assets/Art/Fonts/PICOSansVFESC.ttf",
+    "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png",
+    "Assets/Art/UI/Sprites/StarportSalvage/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png"
+  ],
+  "width": 1920,
+  "height": 1080,
+  "issues": [],
+  "viewportWidth": 1920,
+  "viewportHeight": 1200,
+  "nativeControls": [
+    "Item_MissionEntry_01: pointer click + disabled",
+    "Item_MissionEntry_02: pointer click + disabled",
+    "Item_MissionEntry_03: pointer click + disabled",
+    "Btn_ReturnHome: pointer click + disabled",
+    "Btn_EditLoadout: pointer click + disabled",
+    "Btn_StartExpedition: pointer click + disabled",
+    "Scroll_Missions: content/viewport + normalized scroll"
+  ],
+  "status": "passed",
+  "screenshotSha256": "a1de8de5fa95e948776e55d7dd051df3ad7047454038c98ceb7a8b76705c3602",
+  "artifacts": [
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+      "guid": "68e6db2ebdc24f95958faec2be5558d6",
+      "sha256": "bbae422625f31bfa560ac5ce44c402fafd16dba55d496c6279ca985b652b58bf",
+      "metaSha256": "0897fb06d170043fffa2d28783b347bbaee87a3f09f08374ca44b2c3848697d6"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+      "guid": "569c65c1ad5f4dd8965ad73a1a796f72",
+      "sha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+      "metaSha256": "dd8513a59b6dce63e83f098024c9fcb2ee5736d0b24b33e6efb511611b05db02"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png",
+      "guid": "88e285470c2e4d23adb84a2bc99dfcdf",
+      "sha256": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+      "metaSha256": "7ed44425fb95df0e139f260d230d963e8b21574a702a421d6a7f729df71d518a"
+    },
+    {
+      "path": "Assets/Art/Fonts/PICOSansVFESC SDF.asset",
+      "guid": "0d4b74244fad09f49a610da1b3997090",
+      "sha256": "a570ee2423b581a62d0f680c2078309f4752472cf8298bdd95ba595648c0e249",
+      "metaSha256": "920dc39fd3bf9f733d8705a0d50fcffbe4eb8ebdbb68b7f6511d18cb904858b6"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png",
+      "guid": "bfb2c4fb0ec84be29a7743590f5aeb9b",
+      "sha256": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+      "metaSha256": "836d5bbc76604886e3f9dd6aa8ed27de166a20e8c05da05273a766b28c527282"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/ExpeditionSelectPanel/ExpeditionSelectPanel.prefab",
+      "guid": "6e07dea7ff0bde446adf1c99a90e6981",
+      "sha256": "cf047f5d1e0e21e7cf2b20e2c20ab588151de45ff69adaad15cedfabd0eab973",
+      "metaSha256": "a94c4a4b11450f7b545b574da8915fba27dab639660b0a46e31d3b2fb0c54378"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png",
+      "guid": "f95818cf9c924fedbd495dc81f66631c",
+      "sha256": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+      "metaSha256": "e509b8c0e0d966b717cfce9918143f20457991bad7c48be86f17d40dfc0f1de4"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+      "guid": "5789c3328dcf4d079a53e068f6997dd0",
+      "sha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "metaSha256": "54ff5ce6210f1b553d42ff55bf7560d5004df118551383812e6c36ff398aedc0"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png",
+      "guid": "20b8d08a0f7c4693a28c721c4902363f",
+      "sha256": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+      "metaSha256": "6cd081ecd7a6f01a444dea9f520dd75186b6ef719eb868157c613d3085e67310"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/Item/Item_MissionEntry.prefab",
+      "guid": "bc365f4ca8279bd498e7f2a777c0bcf2",
+      "sha256": "1444edd625fc9d3ca93f0ab43eab8831dfb8d504d75b37b7bdee0e68c5ca4a14",
+      "metaSha256": "e1fbc3c405cd875b1a5717b06fd899f291b94ce83db0ef9b60c7dd354bf8523a"
+    },
+    {
+      "path": "Assets/Art/Fonts/PICOSansVFESC.ttf",
+      "guid": "509b550acb51047439bd7ef6789149aa",
+      "sha256": "c1d60dcfc0ec5060700e417425b2cdda3aae139bfed333b7d283623158c705cf",
+      "metaSha256": "28b4efb42db79e14e4c9d4aa5b10e5f5a3585830db59ab2d08951992d46affa9"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png",
+      "guid": "1025a2438b4b4bbfade88046dc812419",
+      "sha256": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+      "metaSha256": "49b071481d806e256cde1d2c2f318a9b30924381dba6629d7fab90231b6c8bed"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png",
+      "guid": "7dde3168e72649779165e7032cbb6e33",
+      "sha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "metaSha256": "c27ea272b7c5f71d36cf16568205e8959c1091822fb51763a4cde7508b19e6e8"
+    }
+  ]
+}

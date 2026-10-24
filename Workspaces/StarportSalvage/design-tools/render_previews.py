@@ -5,21 +5,20 @@ import json
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
-FONT = 'C:/Windows/Fonts/msyh.ttc'
-BOLD = 'C:/Windows/Fonts/msyhbd.ttc'
-C = dict(canvas='#89939C', base='#142330', card='#203745', deep='#192E3C',
-         text='#EEF5F7', muted='#AAC0CA', teal='#4AD7BB', amber='#F2B65C',
-         red='#F07878', line='#36505F', ink='#102B2C')
-PANELS = [
- ('StarportHomePanel', '星港基地', '01'),
- ('ExpeditionSelectPanel', '远征选择', '02'),
- ('SupplyInventoryPanel', '仓库整备', '03'),
- ('GameSettingsPanel', '游戏设置', '04'),
- ('ActionConfirmPanel', '操作确认', '05'),
- ('ExpeditionResultPanel', '远征结算', '06')]
+import os, sys
+sys.path.insert(0, str(ROOT.parents[1]/'Skills/ui-panel-design-to-html/scripts'))
+from game_workflow import read, font_size
+STYLE = read(ROOT/'contracts/style.json')
+FONT = os.environ.get('HTML_UI_PREVIEW_FONT', STYLE['previewFonts']['regular'])
+BOLD = os.environ.get('HTML_UI_PREVIEW_FONT_BOLD', STYLE['previewFonts']['bold'])
+C = dict(STYLE['colors'], canvas=STYLE['canvas']['background'])
+PANELS = [(p['panelName'],p['title'],p['number']) for p in STYLE['panels']]
 
 def f(size=24, bold=False):
-    return ImageFont.truetype(BOLD if bold else FONT, size)
+    path = BOLD if bold else FONT
+    if not Path(path).is_file():
+        raise ValueError('Preview font missing; configure contracts/style.json or HTML_UI_PREVIEW_FONT(_BOLD): '+path)
+    return ImageFont.truetype(path, font_size(size, STYLE))
 
 class Board:
     def __init__(self, key, title, number, modal=False):
@@ -29,7 +28,7 @@ class Board:
         self.text(120,24,'STARPORT SALVAGE  /  UI DESIGN REVIEW',20,'ink',True)
         self.text(1310,24,f'{number}  /  {title}  /  v01 待确认',20,'ink')
         self.box(600 if modal else 120,280 if modal else 80,
-                 720 if modal else 1680,520 if modal else 920,'base',20)
+                 720 if modal else 1680,520 if modal else 920,'base',STYLE['geometry']['panelRadius'])
         dim = '主体 720 × 520  /  宽 37.5% · 高 48.1%' if modal else '主体 1680 × 920  /  宽 87.5% · 高 85.2%'
         self.text(120,1025,'画布 1920 × 1080   /   '+dim,20,'ink')
         self.text(1440,1025,'静态设计预览 · 非运行界面',20,'ink')
@@ -45,7 +44,7 @@ class Board:
         self.d.line((x,y,x2,y2),fill=C.get(color,color),width=width)
 
     def button(self,x,y,w,label,primary=False,danger=False,h=60):
-        self.box(x,y,w,h,'teal' if primary else ('#50343C' if danger else 'card'),10)
+        self.box(x,y,w,h,'teal' if primary else ('#50343C' if danger else 'card'),STYLE['geometry']['buttonRadius'])
         tw=self.d.textlength(label,font=f(24,True))
         self.text(x+(w-tw)/2,y+(h-34)/2,label,24,'ink' if primary else ('red' if danger else 'text'),True)
 

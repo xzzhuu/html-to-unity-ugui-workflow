@@ -24,7 +24,7 @@ python -m http.server 8148 --bind 127.0.0.1 --directory Workspaces/StarportSalva
 4. 按 [转换规范与实际对照](conversion-rules.md) 装配圆角和滑块。当前成果通过已有 `configureRoot/configureTemplate` 导入接入钩子完成原生装配，随后生成真实报告和指纹；没有创建星港视觉脚本。通用开关重复染色问题已修复在转换器中。
 5. 在隔离场景载入与浏览器相同的数据集，实例化 Item，统一画布、背景和状态，捕获 Unity 截图。检查文字、素材、层级、输入、开关、滑块和滚动区域；然后复验正式副本。
 
-**重新导入时必须重新应用原生装配。** HTML 不包含浏览器伪元素的 UGUI 实现。普通全量导入会重建滑块默认结构；只设置字体或复制旧截图不能保留本轮装配。具体参数见转换规范。
+**重新导入使用游戏原生装配契约。** 0.4.1 项目导入自动读取游戏根 `contracts/native-assembly.json`，按 style 颜色和已确认 Sprite 重放圆角及 Slider。HTML 的伪元素仍不会直接转换；未启用契约的旧包继续采用默认原生结构。重导入后检查原生部件、状态和实际图像，不能复制旧截图作为本轮验证。契约、范围和工具入口见 [统一验收说明](../../Skills/ui-panel-design-to-html/references/game-contracts.md)。
 
 ## 正式复制与验证
 
@@ -49,4 +49,4 @@ python -B -X utf8 Tools/verify-workflow-files.py
 python -B -X utf8 Tools/verify-starport-panels.py --unity-project UnityProject
 ```
 
-当前交付包含 6 个主面板、4 个 Item、24 张共享 PNG。StageScene 保留六页的示例数据快照供切换预览；快照不实现 Unity 游戏业务。HTML 的完整交互演示、Unity 原生控件验证和正式游戏的导航、数据服务、一次性结算仍是不同层次。当前记录不包含 VR 设备实测。
+当前交付包含 6 个主面板、4 个 Item、24 张共享 PNG。StageScene 保留六页的示例数据快照供切换预览。测试工程菜单“HTML转UGUI → 星港示例 → 运行编辑器业务验收”会以实际正式 Prefab 和原生事件执行整备、派遣、结算、设置等流程，并保存隔离截图。业务适配器位于 Assets/Editor/StarportSalvage，不挂到正式资源；内存演示状态与三秒测试时钟用于本轮编辑器验收。完整结果见 [完成报告](../../Audit/Reports/WORKFLOW_COMPLETION_20261024.md)。本轮用户选择 Unity 编辑器测试，设备状态记为不适用。

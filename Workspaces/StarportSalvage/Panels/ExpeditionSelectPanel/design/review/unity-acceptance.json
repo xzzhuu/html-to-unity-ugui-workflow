@@ -1,0 +1,511 @@
+{
+  "schemaVersion": 2,
+  "status": "passed",
+  "scope": "native-ui",
+  "reviewer": "Codex: actual fixture image review and native component checks",
+  "reviewedAt": "2026-10-24T23:06:00.578394+08:00",
+  "approvedLayoutSha256": "73acb2bffe9146735b5599ff9e7d7fa7435dfe8495d93077e6776376b93a7f47",
+  "approvedElementGroupsSha256": "673e6e28a23774febc1afe7101de015be48a711e6fd5633019c6a07781412bf4",
+  "checks": {
+    "structure": "passed",
+    "visual": "passed",
+    "interactions": "passed",
+    "references": "passed",
+    "resolution": "passed"
+  },
+  "screenshots": [
+    "design/review/unity/fixtures/Default/1280x720/actual.png",
+    "design/review/unity/fixtures/Default/1920x1080/actual.png",
+    "design/review/unity/fixtures/Default/1920x1200/actual.png",
+    "design/review/unity/fixtures/EmptyMissions/1280x720/actual.png",
+    "design/review/unity/fixtures/EmptyMissions/1920x1080/actual.png",
+    "design/review/unity/fixtures/EmptyMissions/1920x1200/actual.png",
+    "design/review/unity/fixtures/Error/1280x720/actual.png",
+    "design/review/unity/fixtures/Error/1920x1080/actual.png",
+    "design/review/unity/fixtures/Error/1920x1200/actual.png",
+    "design/review/unity/fixtures/Insufficient/1280x720/actual.png",
+    "design/review/unity/fixtures/Insufficient/1920x1080/actual.png",
+    "design/review/unity/fixtures/Insufficient/1920x1200/actual.png",
+    "design/review/unity/fixtures/Loading/1280x720/actual.png",
+    "design/review/unity/fixtures/Loading/1920x1080/actual.png",
+    "design/review/unity/fixtures/Loading/1920x1200/actual.png",
+    "design/review/unity/1280x720/actual.png",
+    "design/review/unity/1920x1080/actual.png",
+    "design/review/unity/1920x1200/actual.png"
+  ],
+  "evidenceFiles": [
+    "design/review/unity/1280x720/geometry.json",
+    "design/review/unity/1280x720/native-audit.json",
+    "design/review/unity/1920x1080/geometry.json",
+    "design/review/unity/1920x1080/native-audit.json",
+    "design/review/unity/1920x1200/geometry.json",
+    "design/review/unity/1920x1200/native-audit.json",
+    "design/review/unity/browser-reference.json",
+    "design/review/unity/fixtures/Default/1280x720/geometry.json",
+    "design/review/unity/fixtures/Default/1280x720/native-audit.json",
+    "design/review/unity/fixtures/Default/1920x1080/geometry.json",
+    "design/review/unity/fixtures/Default/1920x1080/native-audit.json",
+    "design/review/unity/fixtures/Default/1920x1200/geometry.json",
+    "design/review/unity/fixtures/Default/1920x1200/native-audit.json",
+    "design/review/unity/fixtures/Default/browser-reference.json",
+    "design/review/unity/fixtures/EmptyMissions/1280x720/geometry.json",
+    "design/review/unity/fixtures/EmptyMissions/1280x720/native-audit.json",
+    "design/review/unity/fixtures/EmptyMissions/1920x1080/geometry.json",
+    "design/review/unity/fixtures/EmptyMissions/1920x1080/native-audit.json",
+    "design/review/unity/fixtures/EmptyMissions/1920x1200/geometry.json",
+    "design/review/unity/fixtures/EmptyMissions/1920x1200/native-audit.json",
+    "design/review/unity/fixtures/EmptyMissions/browser-reference.json",
+    "design/review/unity/fixtures/Error/1280x720/geometry.json",
+    "design/review/unity/fixtures/Error/1280x720/native-audit.json",
+    "design/review/unity/fixtures/Error/1920x1080/geometry.json",
+    "design/review/unity/fixtures/Error/1920x1080/native-audit.json",
+    "design/review/unity/fixtures/Error/1920x1200/geometry.json",
+    "design/review/unity/fixtures/Error/1920x1200/native-audit.json",
+    "design/review/unity/fixtures/Error/browser-reference.json",
+    "design/review/unity/fixtures/Insufficient/1280x720/geometry.json",
+    "design/review/unity/fixtures/Insufficient/1280x720/native-audit.json",
+    "design/review/unity/fixtures/Insufficient/1920x1080/geometry.json",
+    "design/review/unity/fixtures/Insufficient/1920x1080/native-audit.json",
+    "design/review/unity/fixtures/Insufficient/1920x1200/geometry.json",
+    "design/review/unity/fixtures/Insufficient/1920x1200/native-audit.json",
+    "design/review/unity/fixtures/Insufficient/browser-reference.json",
+    "design/review/unity/fixtures/Loading/1280x720/geometry.json",
+    "design/review/unity/fixtures/Loading/1280x720/native-audit.json",
+    "design/review/unity/fixtures/Loading/1920x1080/geometry.json",
+    "design/review/unity/fixtures/Loading/1920x1080/native-audit.json",
+    "design/review/unity/fixtures/Loading/1920x1200/geometry.json",
+    "design/review/unity/fixtures/Loading/1920x1200/native-audit.json",
+    "design/review/unity/fixtures/Loading/browser-reference.json"
+  ],
+  "matrixCases": [
+    {
+      "fixture": "Default",
+      "viewport": "1280x720",
+      "reference": "design/review/unity/fixtures/Default/browser-reference.json",
+      "audit": "design/review/unity/fixtures/Default/1280x720/native-audit.json",
+      "screenshot": "design/review/unity/fixtures/Default/1280x720/actual.png",
+      "geometry": "design/review/unity/fixtures/Default/1280x720/geometry.json"
+    },
+    {
+      "fixture": "Default",
+      "viewport": "1920x1080",
+      "reference": "design/review/unity/fixtures/Default/browser-reference.json",
+      "audit": "design/review/unity/fixtures/Default/1920x1080/native-audit.json",
+      "screenshot": "design/review/unity/fixtures/Default/1920x1080/actual.png",
+      "geometry": "design/review/unity/fixtures/Default/1920x1080/geometry.json"
+    },
+    {
+      "fixture": "Default",
+      "viewport": "1920x1200",
+      "reference": "design/review/unity/fixtures/Default/browser-reference.json",
+      "audit": "design/review/unity/fixtures/Default/1920x1200/native-audit.json",
+      "screenshot": "design/review/unity/fixtures/Default/1920x1200/actual.png",
+      "geometry": "design/review/unity/fixtures/Default/1920x1200/geometry.json"
+    },
+    {
+      "fixture": "EmptyMissions",
+      "viewport": "1280x720",
+      "reference": "design/review/unity/fixtures/EmptyMissions/browser-reference.json",
+      "audit": "design/review/unity/fixtures/EmptyMissions/1280x720/native-audit.json",
+      "screenshot": "design/review/unity/fixtures/EmptyMissions/1280x720/actual.png",
+      "geometry": "design/review/unity/fixtures/EmptyMissions/1280x720/geometry.json"
+    },
+    {
+      "fixture": "EmptyMissions",
+      "viewport": "1920x1080",
+      "reference": "design/review/unity/fixtures/EmptyMissions/browser-reference.json",
+      "audit": "design/review/unity/fixtures/EmptyMissions/1920x1080/native-audit.json",
+      "screenshot": "design/review/unity/fixtures/EmptyMissions/1920x1080/actual.png",
+      "geometry": "design/review/unity/fixtures/EmptyMissions/1920x1080/geometry.json"
+    },
+    {
+      "fixture": "EmptyMissions",
+      "viewport": "1920x1200",
+      "reference": "design/review/unity/fixtures/EmptyMissions/browser-reference.json",
+      "audit": "design/review/unity/fixtures/EmptyMissions/1920x1200/native-audit.json",
+      "screenshot": "design/review/unity/fixtures/EmptyMissions/1920x1200/actual.png",
+      "geometry": "design/review/unity/fixtures/EmptyMissions/1920x1200/geometry.json"
+    },
+    {
+      "fixture": "Error",
+      "viewport": "1280x720",
+      "reference": "design/review/unity/fixtures/Error/browser-reference.json",
+      "audit": "design/review/unity/fixtures/Error/1280x720/native-audit.json",
+      "screenshot": "design/review/unity/fixtures/Error/1280x720/actual.png",
+      "geometry": "design/review/unity/fixtures/Error/1280x720/geometry.json"
+    },
+    {
+      "fixture": "Error",
+      "viewport": "1920x1080",
+      "reference": "design/review/unity/fixtures/Error/browser-reference.json",
+      "audit": "design/review/unity/fixtures/Error/1920x1080/native-audit.json",
+      "screenshot": "design/review/unity/fixtures/Error/1920x1080/actual.png",
+      "geometry": "design/review/unity/fixtures/Error/1920x1080/geometry.json"
+    },
+    {
+      "fixture": "Error",
+      "viewport": "1920x1200",
+      "reference": "design/review/unity/fixtures/Error/browser-reference.json",
+      "audit": "design/review/unity/fixtures/Error/1920x1200/native-audit.json",
+      "screenshot": "design/review/unity/fixtures/Error/1920x1200/actual.png",
+      "geometry": "design/review/unity/fixtures/Error/1920x1200/geometry.json"
+    },
+    {
+      "fixture": "Insufficient",
+      "viewport": "1280x720",
+      "reference": "design/review/unity/fixtures/Insufficient/browser-reference.json",
+      "audit": "design/review/unity/fixtures/Insufficient/1280x720/native-audit.json",
+      "screenshot": "design/review/unity/fixtures/Insufficient/1280x720/actual.png",
+      "geometry": "design/review/unity/fixtures/Insufficient/1280x720/geometry.json"
+    },
+    {
+      "fixture": "Insufficient",
+      "viewport": "1920x1080",
+      "reference": "design/review/unity/fixtures/Insufficient/browser-reference.json",
+      "audit": "design/review/unity/fixtures/Insufficient/1920x1080/native-audit.json",
+      "screenshot": "design/review/unity/fixtures/Insufficient/1920x1080/actual.png",
+      "geometry": "design/review/unity/fixtures/Insufficient/1920x1080/geometry.json"
+    },
+    {
+      "fixture": "Insufficient",
+      "viewport": "1920x1200",
+      "reference": "design/review/unity/fixtures/Insufficient/browser-reference.json",
+      "audit": "design/review/unity/fixtures/Insufficient/1920x1200/native-audit.json",
+      "screenshot": "design/review/unity/fixtures/Insufficient/1920x1200/actual.png",
+      "geometry": "design/review/unity/fixtures/Insufficient/1920x1200/geometry.json"
+    },
+    {
+      "fixture": "Loading",
+      "viewport": "1280x720",
+      "reference": "design/review/unity/fixtures/Loading/browser-reference.json",
+      "audit": "design/review/unity/fixtures/Loading/1280x720/native-audit.json",
+      "screenshot": "design/review/unity/fixtures/Loading/1280x720/actual.png",
+      "geometry": "design/review/unity/fixtures/Loading/1280x720/geometry.json"
+    },
+    {
+      "fixture": "Loading",
+      "viewport": "1920x1080",
+      "reference": "design/review/unity/fixtures/Loading/browser-reference.json",
+      "audit": "design/review/unity/fixtures/Loading/1920x1080/native-audit.json",
+      "screenshot": "design/review/unity/fixtures/Loading/1920x1080/actual.png",
+      "geometry": "design/review/unity/fixtures/Loading/1920x1080/geometry.json"
+    },
+    {
+      "fixture": "Loading",
+      "viewport": "1920x1200",
+      "reference": "design/review/unity/fixtures/Loading/browser-reference.json",
+      "audit": "design/review/unity/fixtures/Loading/1920x1200/native-audit.json",
+      "screenshot": "design/review/unity/fixtures/Loading/1920x1200/actual.png",
+      "geometry": "design/review/unity/fixtures/Loading/1920x1200/geometry.json"
+    },
+    {
+      "fixture": "Prepared",
+      "viewport": "1280x720",
+      "reference": "design/review/unity/browser-reference.json",
+      "audit": "design/review/unity/1280x720/native-audit.json",
+      "screenshot": "design/review/unity/1280x720/actual.png",
+      "geometry": "design/review/unity/1280x720/geometry.json"
+    },
+    {
+      "fixture": "Prepared",
+      "viewport": "1920x1080",
+      "reference": "design/review/unity/browser-reference.json",
+      "audit": "design/review/unity/1920x1080/native-audit.json",
+      "screenshot": "design/review/unity/1920x1080/actual.png",
+      "geometry": "design/review/unity/1920x1080/geometry.json"
+    },
+    {
+      "fixture": "Prepared",
+      "viewport": "1920x1200",
+      "reference": "design/review/unity/browser-reference.json",
+      "audit": "design/review/unity/1920x1200/native-audit.json",
+      "screenshot": "design/review/unity/1920x1200/actual.png",
+      "geometry": "design/review/unity/1920x1200/geometry.json"
+    }
+  ],
+  "referenceImages": [
+    {
+      "source": "design/element-groups/Btn_Action_Sheet.png",
+      "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Btn_Action_Sheet_4ca63a27.png",
+      "sha256": "4ca63a271bb6795164a65535cfbcf5051b451997f75ece1e6fd2bd230f42655b",
+      "guid": "943356e1d333b284eb888e764c415c4d",
+      "metaSha256": "e10ab24c1314ef267368dacac0af2be3326cbcc88421cf55cd431b480f1e570f"
+    },
+    {
+      "source": "design/element-groups/Img_Item_Sheet.png",
+      "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Item_Sheet_8bdd3230.png",
+      "sha256": "8bdd3230328833fd58a12d9c519fee047a9bc179c0977d8e6edf8c43b1764d88",
+      "guid": "4761049c837393548ae0dfaff28f77a0",
+      "metaSha256": "acd3c698ff060cf9bb8684039bec5fb9a9b23d5f97c34a717d862b62434c94ca"
+    },
+    {
+      "source": "design/element-groups/Img_Surface_Sheet.png",
+      "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Surface_Sheet_8801f27c.png",
+      "sha256": "8801f27cb72578e8624aad1229708c7e9c1ab9300d300c9d050a20128c3c6316",
+      "guid": "049dfdd88f3f4c84f91e3a44f15c722a",
+      "metaSha256": "e89979a88ead75898e54af5aa9f12d0ba96acb03f8257afcc55be5e225c78758"
+    },
+    {
+      "source": "design/element-groups/Img_Utility_Sheet.png",
+      "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Img_Utility_Sheet_87307b74.png",
+      "sha256": "87307b740a4d2c3b4d8be69e3eba2c364fc8346bec3b6daea5b89172cd53f411",
+      "guid": "1001199f5f05f624c8b4d00038d6b67a",
+      "metaSha256": "7e3228f60705dd612299d7876fd6db0b66d2f42571dfc80dd4e59bcfa77542c9"
+    },
+    {
+      "source": "design/element-groups/Scr_List_Sheet.png",
+      "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Scr_List_Sheet_36795ae8.png",
+      "sha256": "36795ae819ccdb50248ca747ae93c35c604bbab1183e669c3adfa05dc512911b",
+      "guid": "6665d12c864805942a1e4f2bb7a54bc4",
+      "metaSha256": "961bf62f82a44171b6c36e2285efd57df59212134f6bd712bd97af958d70547a"
+    },
+    {
+      "source": "design/element-groups/Txt_Typography_Sheet.png",
+      "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/ElementGroups/Txt_Typography_Sheet_b17505c5.png",
+      "sha256": "b17505c5415ed34b71525509b08f37142acff7259a3080136f7c4c4e7c97d4ff",
+      "guid": "1fc5a2a5af04e3840bb8661d2e6cf467",
+      "metaSha256": "08edf74dea86b8d90e1e2bdd688e3335fd584b9f08e8b49dad2e37b1dc9e2ed7"
+    },
+    {
+      "source": "design/review/layout-approved.png",
+      "unityPath": "Assets/Art/UI/DesignReferences/StarportSalvage/Panels/ExpeditionSelectPanel_Approved.png",
+      "sha256": "73acb2bffe9146735b5599ff9e7d7fa7435dfe8495d93077e6776376b93a7f47",
+      "guid": "80bd4f900729fa64db1240a4be294927",
+      "metaSha256": "0ead581c042f969ac5179b51b8d5314ea6f79e016ea266108df8b758d90686b6"
+    }
+  ],
+  "importReport": "design/review/unity-import-report.json",
+  "sourceImportReportSha256": "472c5a5afa11ce2cc4410f8b0f9e09db7c0450b2253b10afec6152d7ed557db3",
+  "finalArtifacts": [
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Button/Control_Background/Btn_Control_Background_Surface_Normal_Button_Control_Background_Surface_Normal.png",
+      "guid": "569c65c1ad5f4dd8965ad73a1a796f72",
+      "sha256": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+      "metaSha256": "dd8513a59b6dce63e83f098024c9fcb2ee5736d0b24b33e6efb511611b05db02"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemCircuit/Img_ItemCircuit_Surface_Default_Image_ItemCircuit_Surface_Default.png",
+      "guid": "88e285470c2e4d23adb84a2bc99dfcdf",
+      "sha256": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+      "metaSha256": "7ed44425fb95df0e139f260d230d963e8b21574a702a421d6a7f729df71d518a"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemOre/Img_ItemOre_Surface_Default_Image_ItemOre_Surface_Default.png",
+      "guid": "bfb2c4fb0ec84be29a7743590f5aeb9b",
+      "sha256": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+      "metaSha256": "836d5bbc76604886e3f9dd6aa8ed27de166a20e8c05da05273a766b28c527282"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/ExpeditionSelectPanel/ExpeditionSelectPanel.prefab",
+      "guid": "6e07dea7ff0bde446adf1c99a90e6981",
+      "sha256": "cf047f5d1e0e21e7cf2b20e2c20ab588151de45ff69adaad15cedfabd0eab973",
+      "metaSha256": "a94c4a4b11450f7b545b574da8915fba27dab639660b0a46e31d3b2fb0c54378"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/Credits/Img_Credits_Surface_Default_Image_Credits_Surface_Default.png",
+      "guid": "f95818cf9c924fedbd495dc81f66631c",
+      "sha256": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+      "metaSha256": "e509b8c0e0d966b717cfce9918143f20457991bad7c48be86f17d40dfc0f1de4"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/RoundedSurface/Img_RoundedSurface_Surface_Default_Image_RoundedSurface_Surface_Default.png",
+      "guid": "5789c3328dcf4d079a53e068f6997dd0",
+      "sha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "metaSha256": "54ff5ce6210f1b553d42ff55bf7560d5004df118551383812e6c36ff398aedc0"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemChip/Img_ItemChip_Surface_Default_Image_ItemChip_Surface_Default.png",
+      "guid": "20b8d08a0f7c4693a28c721c4902363f",
+      "sha256": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+      "metaSha256": "6cd081ecd7a6f01a444dea9f520dd75186b6ef719eb868157c613d3085e67310"
+    },
+    {
+      "path": "Assets/Art/UIPrefab/StarportSalvage/Item/Item_MissionEntry.prefab",
+      "guid": "bc365f4ca8279bd498e7f2a777c0bcf2",
+      "sha256": "1444edd625fc9d3ca93f0ab43eab8831dfb8d504d75b37b7bdee0e68c5ca4a14",
+      "metaSha256": "e1fbc3c405cd875b1a5717b06fd899f291b94ce83db0ef9b60c7dd354bf8523a"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Image/ItemAlloy/Img_ItemAlloy_Surface_Default_Image_ItemAlloy_Surface_Default.png",
+      "guid": "1025a2438b4b4bbfade88046dc812419",
+      "sha256": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+      "metaSha256": "49b071481d806e256cde1d2c2f318a9b30924381dba6629d7fab90231b6c8bed"
+    },
+    {
+      "path": "Assets/Art/UI/Sprites/StarportSalvage/Button/RoundedSurface/Btn_RoundedSurface_Surface_Normal_Button_RoundedSurface_Surface_Normal.png",
+      "guid": "7dde3168e72649779165e7032cbb6e33",
+      "sha256": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+      "metaSha256": "c27ea272b7c5f71d36cf16568205e8959c1091822fb51763a4cde7508b19e6e8"
+    }
+  ],
+  "externalDependencies": [
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+      "guid": "68e6db2ebdc24f95958faec2be5558d6",
+      "sha256": "bbae422625f31bfa560ac5ce44c402fafd16dba55d496c6279ca985b652b58bf",
+      "metaSha256": "0897fb06d170043fffa2d28783b347bbaee87a3f09f08374ca44b2c3848697d6"
+    },
+    {
+      "path": "Assets/Art/Fonts/PICOSansVFESC SDF.asset",
+      "guid": "0d4b74244fad09f49a610da1b3997090",
+      "sha256": "a570ee2423b581a62d0f680c2078309f4752472cf8298bdd95ba595648c0e249",
+      "metaSha256": "920dc39fd3bf9f733d8705a0d50fcffbe4eb8ebdbb68b7f6511d18cb904858b6"
+    },
+    {
+      "path": "Assets/Art/Fonts/PICOSansVFESC.ttf",
+      "guid": "509b550acb51047439bd7ef6789149aa",
+      "sha256": "c1d60dcfc0ec5060700e417425b2cdda3aae139bfed333b7d283623158c705cf",
+      "metaSha256": "28b4efb42db79e14e4c9d4aa5b10e5f5a3585830db59ab2d08951992d46affa9"
+    }
+  ],
+  "gameContractsSha256": {
+    "contracts/fixtures.json": "5857653de2960bbdcb1438c842133a049f87a82c0d614566b4ca02b15e9e0cc8",
+    "contracts/native-assembly.json": "9987ba240163c83922754ca59976e29e8414cb0fb11b4a7c72466c8d6eba0a43",
+    "contracts/screens.json": "1e6229d775bd2109d8a50d46f125d5d8623b645a731e0c9694f9784ff4f86f35",
+    "contracts/style.json": "19a2bbc036d375363199989f10278c182e090c2e4fa93e9a385dda25b26e3588"
+  },
+  "gameInputsSha256": {
+    "contracts/fixtures.json": "5857653de2960bbdcb1438c842133a049f87a82c0d614566b4ca02b15e9e0cc8",
+    "contracts/native-assembly.json": "9987ba240163c83922754ca59976e29e8414cb0fb11b4a7c72466c8d6eba0a43",
+    "contracts/screens.json": "1e6229d775bd2109d8a50d46f125d5d8623b645a731e0c9694f9784ff4f86f35",
+    "contracts/style.json": "19a2bbc036d375363199989f10278c182e090c2e4fa93e9a385dda25b26e3588",
+    "project.assets.json": "b8e4068538f7bdc80708cdf395469fd06bc5e06e32ce0bda5f616f1f499792e4",
+    "shared-assets/project/Button/Btn_Control_Background_Surface_Normal.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "shared-assets/project/Button/Btn_ItemMedkit_Icon_Normal.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+    "shared-assets/project/Button/Btn_RoundedSurface_Icon_Normal.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "shared-assets/project/Button/Btn_RoundedSurface_Surface_Normal.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "shared-assets/project/Image/Img_Circle_Surface_Default.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "shared-assets/project/Image/Img_Confirm_Surface_Default.png": "2ecabad0dfa37e07d582e05ebb12d5045ab78b2841ce0e24ba405d888a10e192",
+    "shared-assets/project/Image/Img_Credits_Surface_Default.png": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+    "shared-assets/project/Image/Img_ItemAlloy_Surface_Default.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "shared-assets/project/Image/Img_ItemBattery_Surface_Default.png": "44b963ed7caf074b1d2be18d02e8401c0116effcc5809688894303c20a2fd64d",
+    "shared-assets/project/Image/Img_ItemBeacon_Surface_Default.png": "5220e02cb21f0a8f2f73f49220ade35180fb5922da352f537e15e8191d8c39ec",
+    "shared-assets/project/Image/Img_ItemChip_Surface_Default.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "shared-assets/project/Image/Img_ItemCircuit_Surface_Default.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "shared-assets/project/Image/Img_ItemMedkit_Surface_Default.png": "eb65664c3274dde83d4590a393303aa45176ea5af9f561e662bc6ae6aa6d1853",
+    "shared-assets/project/Image/Img_ItemOre_Surface_Default.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "shared-assets/project/Image/Img_ItemRation_Surface_Default.png": "87c394aba8a8c7a9b42e6f01c4ba3fc23e9b3c8ff89f0ae3ae0e13b8ad41c285",
+    "shared-assets/project/Image/Img_RoundedSurface_Surface_Default.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "shared-assets/project/Image/Img_Value_Bar_Surface_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "shared-assets/project/Slider/Sld_Circle_Handle_Default.png": "a19666ccb025b1543937637cab33306a06b2c55cf8568731b85007fdad717fbc",
+    "shared-assets/project/Slider/Sld_Value_Bar_Fill_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "shared-assets/project/Slider/Sld_Value_Bar_Track_Default.png": "3b166105486e1d209dee53a0148ddd69c9c9de272509cc30c3e01e01443f9bb0",
+    "shared-assets/project/TMP_InputField/Inp_Control_Background_Surface_Default.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "shared-assets/project/Toggle/Tgl_Sound_Surface_Disabled.png": "259614e8bc4b5e044b9fded3998b8fb41ac94199cec64a0141933a49c44aec3a",
+    "shared-assets/project/Toggle/Tgl_Sound_Surface_Off.png": "dd991dbb3ebe7dc320aafbeb83a0f8ff1c32c3cfa5e48fc476a226983f76dffd",
+    "shared-assets/project/Toggle/Tgl_Sound_Surface_On.png": "7e3d245862ddca19f5903cf983dc3b741bea7ab95c21bfc3de6d1f6b8e2e13ee"
+  },
+  "filesSha256": {
+    "design/review/unity/fixtures/EmptyMissions/1920x1200/native-audit.json": "5b6cde00f0ed003826514a1adf344e73bff5e9789de45696be6b4a4eab9f9c2f",
+    "design/review/unity/fixtures/Loading/1920x1080/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/fixtures/EmptyMissions/1920x1080/actual.png": "208b7e192403cdd558802668cbad75ed415211ed7b420298a3ebbcf62d045571",
+    "design/review/unity/fixtures/Error/1920x1080/actual.png": "109203394088072405aa629bf72969dee89859f5913b0d4608fef4e8b7b0e7b9",
+    "html/assets/project/Image/Img_Credits_Surface_Default.png": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+    "design/review/unity/fixtures/EmptyMissions/1920x1080/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/fixtures/Default/1920x1080/native-audit.json": "1dbcc358a52ecfd429da13bfcd410ee293245aa721d700633be4d18659b03252",
+    "html/assets/shared/Img_ItemOre.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "design/review/unity/fixtures/Default/1920x1200/native-audit.json": "5c8eeeda80f2a5ac96bd6febe7e74b93d3e268b7cdbdc0a6a2577258131beb69",
+    "design/review/unity/fixtures/EmptyMissions/1280x720/native-audit.json": "b07d3537ba0391efd31835af0d0d3b3f394b461e3474ae529e19e8ef3afb0d5f",
+    "html/assets/shared/Img_RoundedSurface.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "design/review/unity/fixtures/Error/1280x720/actual.png": "d3f009109472caf9ed1009719a2cf14d037d6f0eb3e65f7db778a92f8fd9de10",
+    "design/review/unity/fixtures/Loading/1920x1200/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/1280x720/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/fixtures/EmptyMissions/1920x1200/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/1920x1200/native-audit.json": "5af40d841468311d19a84672a010fbc9ab63e46dabde3a5abb645c9cf49947ad",
+    "design/review/unity/fixtures/Error/1280x720/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/fixtures/Loading/browser-reference.json": "4a4551efc0a72832ef269dbd65c1f7acd33c5d226fb5dcd2675acb200fa34170",
+    "design/review/unity/1920x1080/native-audit.json": "d81370b75dca91d175ea0c90fdae4fc396325a6ed843fb796fa34ae360a2cfe9",
+    "design/review/unity/fixtures/Default/1920x1200/actual.png": "51a9f77b20532691e38d453435f0ff345e00db026b767bc71921072ad65bdfb6",
+    "design/review/unity/1280x720/native-audit.json": "618d61af92aef324d05cb39f8769258171bf7f135b1c2eea41eafcab685c3d20",
+    "design/review/unity/fixtures/Default/browser-reference.json": "48b670ee093160c24aba2c4807230636f5f024e559e0c3d695600f710fba41c6",
+    "html/assets/shared/Img_ItemCircuit.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "html/assets/project/Image/Img_ItemAlloy_Surface_Default.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "html/assets/project/Image/Img_RoundedSurface_Surface_Default.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "design/review/unity/fixtures/Default/1920x1080/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/fixtures/Loading/1280x720/actual.png": "0d14886fc7201ec69380261a4b9c4bd1fe77875d44d879bc6de4b90af02a0b0e",
+    "design/review/unity/fixtures/Loading/1920x1080/actual.png": "442ca5657c85edfd74dc8f303632bd3f28e0bf1b60bb408bacb692c81000e176",
+    "design/review/unity/browser-reference.json": "534d66268a75556d3aa1f8c41bb5227265c4fe5360889fe029e40cc678262cc1",
+    "design/review/unity/fixtures/Error/1920x1080/native-audit.json": "ec7f8d5bbdda81495da8ac22521b6ba6b524e298dc919fac6ff3d5e91c255575",
+    "design/review/unity/fixtures/Insufficient/1920x1080/actual.png": "205d1dd8735fad7e0c86333ef9f12cea9acf50c0df96d6cf75b1dff584a82af3",
+    "design/review/unity/fixtures/EmptyMissions/1280x720/actual.png": "e6abc67794672b448cf065199eef842439f2189b684e2e6b632c8183b5a21c40",
+    "design/review/unity/fixtures/EmptyMissions/browser-reference.json": "4cba593e701fab8034a18027685d5b3c20663526407730e6eb16a9f84fab443e",
+    "html/assets/project/Button/Btn_Control_Background_Surface_Normal.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "design/review/unity/fixtures/Error/browser-reference.json": "8b13e6f542d6936d00ffa15610a3d75942887991eab5984604f7f2447dc753b2",
+    "design/review/unity/fixtures/EmptyMissions/1280x720/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/fixtures/Insufficient/1280x720/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/1920x1080/actual.png": "65e7b52cfb399dd23e83878a235fd3391b5eaf6b1eebbec818f124fe034b3691",
+    "design/review/unity/fixtures/Loading/1920x1080/native-audit.json": "95b959b43361c30621c09d532ff0c3486c53313ae854b988d22ba868cb37af6a",
+    "design/review/unity/fixtures/Default/1280x720/native-audit.json": "bf63480bf842102e4ff68b9314d86b2bf2d29f802ab8bb736b24104f060bcde2",
+    "design/review/unity/fixtures/Default/1280x720/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/1280x720/actual.png": "59d330053647fb6dc4cacd2097f161ffdf5ca2c8e14d072269fa6d69837b347e",
+    "design/review/unity/fixtures/Error/1920x1080/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/fixtures/Loading/1280x720/native-audit.json": "0ebea418383b804a3b9abd4dfee8b191d8734e99615f960f175d26c2547c33ef",
+    "design/review/unity/fixtures/Insufficient/1920x1200/native-audit.json": "dd37ee55ab71546d659f16db949a9341113f4cee15f96e671eba5479b8150e94",
+    "design/review/unity/fixtures/Default/1280x720/actual.png": "3ec36dbf353ef99cc37c9492b0fead4725f372ebd5ad9b8af6e6d4a25ecf86cf",
+    "design/review/unity/fixtures/Loading/1920x1200/actual.png": "951142a7952cfdb3b3d37d60a0a8db6fb4a713ae93141a4a7d888c92428217f1",
+    "design/review/unity/fixtures/Insufficient/browser-reference.json": "063e76266bd5cfa28e31bdf52948d32eebb2cdd684b30fbf1935c0fa7456b539",
+    "design/review/unity/1920x1080/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/1920x1200/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/fixtures/Error/1920x1200/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/fixtures/Error/1920x1200/actual.png": "f193b8d49fd67efb6766ddf6ffbff58b00072699bfb0da22123f778120d2ba21",
+    "html/assets/shared/Img_ItemAlloy.png": "dd681deee62e704dcd80788b9fad98ba6cfc33c9a40bb41efb81260be25e07eb",
+    "html/assets/project/Image/Img_ItemOre_Surface_Default.png": "4b65a49412e4eaf5cd070f93018e2e9d7a923a95ef837bde850a39c81729ee2b",
+    "design/review/unity/fixtures/Insufficient/1280x720/native-audit.json": "36759db19d3fafc2ee7ed5ad2e330cbcbdd01f7f22f141aec70e62a2d6ebf271",
+    "html/assets/project/Button/Btn_RoundedSurface_Surface_Normal.png": "c3699a00cc8f7802279bcf60c892657d315cdcac6919270d865d58f004de5006",
+    "html/assets/shared/Img_ItemChip.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "design/review/unity/fixtures/EmptyMissions/1920x1080/native-audit.json": "12a3d215f5e63ffbe8ab1e88db36cb65a1a6b14a328d49eb6d39516a3bd276ee",
+    "design/review/unity/fixtures/Loading/1920x1200/native-audit.json": "60b9db9bbfe81f62ab82250a42be8525947fae286a26dc65135ae4a2c01a86bb",
+    "design/review/unity/fixtures/Insufficient/1920x1080/native-audit.json": "81288306f433138932ce760766afa04c45fef23bdf8a60bcf3e2767b98cc9aa7",
+    "html/assets/project/Image/Img_ItemCircuit_Surface_Default.png": "2cf39cab894e3ab78159df5264fe7652f0f713c5df124a0b3344c250b4c4be8f",
+    "design/review/unity/fixtures/Insufficient/1920x1200/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/fixtures/Default/1920x1200/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/fixtures/Default/1920x1080/actual.png": "58f14e082620f814fbfb60254eaeda473c13d7b34ef4bdb0796fa576a50f3c00",
+    "html/assets/shared/Img_Control_Background.png": "85eb9478db601f0cef00694815c50bfa5388e1cf83122a714824091976d1326b",
+    "design/review/unity/fixtures/EmptyMissions/1920x1200/actual.png": "91528dcb71936fc7aba05e503aa625e54cd408aa7b34c50f042f122c41bb9ba8",
+    "html/assets/project/Image/Img_ItemChip_Surface_Default.png": "253ee404addda411be2166e62e7c4536966f750258f48ff27d0f837200f97005",
+    "design/element-groups.json": "9d85729687f297069c624b9096236e2ea72e2604ac7cebc0e8d2a55f23712983",
+    "design/review/unity/fixtures/Insufficient/1920x1080/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity-import-report.json": "472c5a5afa11ce2cc4410f8b0f9e09db7c0450b2253b10afec6152d7ed557db3",
+    "design/review/unity/fixtures/Error/1920x1200/native-audit.json": "5839ea1c3e023b7d480fbf601654288242998c03967e435d5ea0badac9c79c08",
+    "design/review/unity/fixtures/Insufficient/1280x720/actual.png": "cd2946e446758283e8d1a05f773e191a7b2265363ef36494faf604d8f643702e",
+    "html/assets/shared/Img_Credits.png": "5e3016819cf8b6ede99f8fcdd3b8af562a2ead2f7db91428983cf3a44f6117c0",
+    "design/review/unity/fixtures/Insufficient/1920x1200/actual.png": "a1de8de5fa95e948776e55d7dd051df3ad7047454038c98ceb7a8b76705c3602",
+    "design/review/unity/fixtures/Loading/1280x720/geometry.json": "fc6993e29dabbd382c31ba122c8c71bcd95e59a482af7f691762216a565eaa74",
+    "design/review/unity/fixtures/Error/1280x720/native-audit.json": "a20f4bf674f14f1aae4461e07be6cf2c753b0555b91c80cb3d5f125eaa331482",
+    "design/review/unity/1920x1200/actual.png": "8b1a8d04db0a03a13f8fd69a7cdc5cce594ce725175302e59840c05703769c4f"
+  },
+  "testedResolutions": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "mode": "isolated-uniform-fit"
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "mode": "isolated-uniform-fit"
+    },
+    {
+      "width": 1920,
+      "height": 1200,
+      "mode": "isolated-uniform-fit"
+    }
+  ],
+  "testedFixtures": [
+    "Default",
+    "EmptyMissions",
+    "Error",
+    "Insufficient",
+    "Loading",
+    "Prepared"
+  ],
+  "businessIntegration": {
+    "status": "not-checked",
+    "reason": "Game-service wiring is outside native UI acceptance"
+  },
+  "device": {
+    "status": "not-checked",
+    "reason": "No target-device run"
+  },
+  "notes": "All declared native fixtures and viewports are covered; dynamic presentation uses declared fixture rules. Existing business callbacks are isolated. This does not certify game services or device behavior."
+}

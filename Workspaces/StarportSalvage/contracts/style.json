@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "projectName": "StarportSalvage",
+  "status": "active",
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "background": "#89939C"
+  },
+  "platform": {
+    "target": "PC",
+    "outlineAllowed": true
+  },
+  "colors": {
+    "base": "#142330",
+    "card": "#203745",
+    "deep": "#192E3C",
+    "text": "#EEF5F7",
+    "muted": "#AAC0CA",
+    "teal": "#4AD7BB",
+    "amber": "#F2B65C",
+    "red": "#F07878",
+    "line": "#36505F",
+    "ink": "#102B2C"
+  },
+  "typography": {
+    "title": 40,
+    "section": 28,
+    "body": 24,
+    "auxiliary": 20
+  },
+  "spacing": {
+    "unit": 8,
+    "content": 24,
+    "section": 32
+  },
+  "geometry": {
+    "panelRadius": 20,
+    "buttonRadius": 10,
+    "inputRadius": 8
+  },
+  "previewFonts": {
+    "regular": "C:/Windows/Fonts/msyh.ttc",
+    "bold": "C:/Windows/Fonts/msyhbd.ttc"
+  },
+  "panels": [
+    {
+      "panelName": "StarportHomePanel",
+      "title": "星港基地",
+      "number": "01"
+    },
+    {
+      "panelName": "ExpeditionSelectPanel",
+      "title": "远征选择",
+      "number": "02"
+    },
+    {
+      "panelName": "SupplyInventoryPanel",
+      "title": "仓库整备",
+      "number": "03"
+    },
+    {
+      "panelName": "GameSettingsPanel",
+      "title": "游戏设置",
+      "number": "04"
+    },
+    {
+      "panelName": "ActionConfirmPanel",
+      "title": "操作确认",
+      "number": "05"
+    },
+    {
+      "panelName": "ExpeditionResultPanel",
+      "title": "远征结算",
+      "number": "06"
+    }
+  ],
+  "source": "Existing approved v01 design; no visual changes"
+}

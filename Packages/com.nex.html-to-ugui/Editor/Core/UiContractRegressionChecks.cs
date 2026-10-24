@@ -101,7 +101,7 @@ namespace HtmlToUGUI.Editor
                 check(!Directory.Exists(formalOutput) && !Directory.Exists(prefix), "Staging leaves formal asset locations untouched");
                 var reportPath = Path.ChangeExtension(path, ".import-report.json");
                 var report = JObject.Parse(File.ReadAllText(reportPath));
-                check((string)report["converterVersion"] == "0.3.0" && report["configurationSha256"] != null && report["inputsSha256"]["ValidationPanel.html"] != null, "Report records converter, configuration and input fingerprints");
+                check((string)report["converterVersion"] == UnityEditor.PackageManager.PackageInfo.FindForAssembly(typeof(HtmlUiImporter).Assembly).version && report["configurationSha256"] != null && report["inputsSha256"]["ValidationPanel.html"] != null, "Report records converter, configuration and input fingerprints");
                 check(report["artifacts"].All(a => File.Exists((string)a["path"]) && (string)a["sha256"] == HtmlUiImporter.Sha256((string)a["path"]) && !string.IsNullOrEmpty((string)a["guid"])), "Output fingerprints match actual Unity resources and GUIDs");
                 var blocked = false;
                 try { HtmlUiImporter.Import(html, formalOutput, settings); } catch (InvalidDataException) { blocked = true; }

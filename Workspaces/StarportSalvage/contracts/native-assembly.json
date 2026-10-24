@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "projectName": "StarportSalvage",
+  "status": "active",
+  "rounding": {
+    "fromCssRadius": true
+  },
+  "slider": {
+    "trackHeight": 10,
+    "handleSize": 28,
+    "trackRadius": 5,
+    "trackAssetId": "Slider_Value_Bar_Track_Default",
+    "handleAssetId": "Slider_Circle_Handle_Default",
+    "trackColorToken": "card",
+    "fillColorToken": "teal",
+    "handleColorToken": "text"
+  },
+  "source": "Existing approved v01 design; no visual changes"
+}

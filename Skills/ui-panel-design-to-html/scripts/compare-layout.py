@@ -1,19 +1,36 @@
 """Compare browser and Unity binding geometry; image review is a separate gate."""
 import argparse
 import json
+import math
 from pathlib import Path
 
 
 def compare(browser, unity, tolerance=1.0):
+    if not math.isfinite(tolerance) or tolerance<0:
+        raise ValueError('Tolerance must be finite and nonnegative')
     result = {'status': 'pass', 'tolerancePx': tolerance, 'differences': [], 'visualStatus': 'pending-human-or-agent-image-review'}
     for axis in ('width', 'height'):
         if browser[axis] != unity[axis]:
             result['differences'].append(f'Canvas {axis}: {browser[axis]} != {unity[axis]}')
-    left = {b['key']: b for b in browser['bindings']}
-    right = {b['key']: b for b in unity['bindings']}
+    def index(snapshot,label):
+        indexed={}
+        for node in snapshot.get('nodes',snapshot.get('bindings',[])):
+            key=(str(node.get('row',-1))+'::'+node['path']) if 'path' in node else node['key']
+            if key in indexed:result['differences'].append(label+': duplicate node '+str(key))
+            if any(type(node.get(axis)) not in (int,float) or not math.isfinite(node[axis]) for axis in ('x','y','width','height')):
+                result['differences'].append(label+': invalid geometry '+str(key))
+            indexed[key]=node
+        return indexed
+    left=index(browser,'browser');right=index(unity,'Unity')
     for key in sorted(left.keys() | right.keys()):
         if key not in left or key not in right:
             result['differences'].append(f'{key}: missing in {"browser" if key not in left else "Unity"}')
+            continue
+        if left[key].get('visible',True)!=right[key].get('visible',True):
+            result['differences'].append(str(key)+': visibility differs')
+        if left[key].get('visible',True)==right[key].get('visible',True)==False:
+            continue
+        if any(type(node.get(axis)) not in (int,float) or not math.isfinite(node[axis]) for node in (left[key],right[key]) for axis in ('x','y','width','height')):
             continue
         for axis in ('x', 'y', 'width', 'height'):
             delta = abs(left[key][axis] - right[key][axis])
