@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from PIL import Image
 from game_workflow import write,sha
-from validate_directory import validate_native_matrix
+from validate_directory import validate_native_matrix,local_file
 
 
 class NativeMatrixEvidenceTests(unittest.TestCase):
@@ -35,6 +35,13 @@ class NativeMatrixEvidenceTests(unittest.TestCase):
     def check(self):validate_native_matrix(self.panel,self.game,self.acceptance)
 
     def test_complete_consistent_matrix_passes(self):self.check()
+
+    def test_source_boundary_resolves_aliases_without_allowing_escape(self):
+        boundary=self.panel/'html'/'..'
+        self.assertEqual(local_file(self.panel,self.relative('browser.json'),boundary),
+                         (self.directory/'browser.json').resolve())
+        with self.assertRaisesRegex(ValueError,'Missing/outside source file'):
+            local_file(self.panel,'../../project.assets.json',boundary)
 
     def test_missing_viewport_is_not_complete(self):
         self.acceptance['testedResolutions'].append(dict(width=200,height=100))

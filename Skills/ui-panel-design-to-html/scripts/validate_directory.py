@@ -18,8 +18,9 @@ def read_json(path):
 def local_file(base,reference,workspace):
     url=urlsplit(reference)
     require(not url.scheme and not url.netloc and not unquote(url.path).startswith(('/','\\')),'Use portable relative references: '+reference)
-    path=(base/unquote(url.path)).resolve()
-    require(path.is_relative_to(workspace) and path.is_file(),'Missing/outside source file: '+reference)
+    path=(Path(base)/unquote(url.path)).resolve()
+    boundary=Path(workspace).resolve()
+    require(path.is_relative_to(boundary) and path.is_file(),'Missing/outside source file: '+reference)
     return path
 
 def png_info(path):
