@@ -26,6 +26,8 @@ design/review/html-acceptance.json：status=passed、approvedLayoutSha256、appr
 
 `.html-directory.json` 保留兼容文件名；新增 mode=full|visual-only，旧文件省略时视为 full。新工作区默认 width=1920、height=1080，已有配置不自动改变。HTML 专属字段与上方旧契约仅属于 full。
 
+面板主体按 [尺寸档位与画布占比](../SKILL.md#面板尺寸档位与画布占比)组织。工作区 width/height 表示完整画布，主体档位和宽高在需求/布局/预览元数据中分别记录；B/C 主体不覆盖工作区画布尺寸。D 记录当前文案的实际尺寸与自适应说明，W 记录本地布局尺寸及预览比例。
+
 `design/element-groups.json`：schemaVersion=1、panelName、requiredComponents、groups、sprites。requiredComponents 只列当前项目实际需要的类型，取 Button/Toggle/InputField/Dropdown/Slider/Scrollbar/ScrollView/Image/RawImage/Text 的实际子集；不是固定全量清单。
 
 每个 group：
@@ -92,13 +94,13 @@ full 的 unity-acceptance.json 另包含 importReport（复制到工作区的实
 
 - full 的 ready 检查强制 requireSkillApproval=true 和安全的 stagingRoot。旧工作区省略 mode 时，Python 与 Unity 均解释为 full；缺少新增门禁配置的旧包需显式补录并重新验收。
 - approval.json 的 previews 数组为每张额外 panelPreviews 登记 source、imageSha256、userApproval；layout-approved.png 继续使用原字段。额外预览未批准或哈希过期时拒绝就绪及严格导入。
-- 两条分支的 unity-acceptance.json 均须包含非空 finalArtifacts，每项为 path（Assets/ 相对路径）、guid（32 位小写十六进制）、sha256、metaSha256，至少一项为最终业务 Prefab；同时登记交付 Item 与本次交付素材。full 另填 sourceImportReportSha256，等于 importReport 文件哈希。转换报告保存暂存产物历史指纹；工程核对针对 finalArtifacts，暂存资源验收接入后可以删除。最终资源变化须重新验收。
+- 两条分支的 unity-acceptance.json 均须包含非空 finalArtifacts，每项为 path（Assets/ 相对路径）、guid（32 位小写十六进制）、sha256、metaSha256，至少一项为最终业务 Prefab；同时登记交付 Item 与本次交付素材。full 另填 sourceImportReportSha256，等于 importReport 文件哈希。转换报告保存暂存产物历史指纹；工程核对针对 finalArtifacts。暂存区与 StageScene 是持久预览工作区，不作为测试残留自动删除；只有用户明确要求清理具体资源并核对依赖、复制记录和证据保留后，才处理授权范围。最终资源变化须重新验收。
 - 校验结果统一输出 designApproved、artifactReady、unityAccepted、deviceAccepted。ready 的旧分支语义继续兼容；缺少 Unity 或设备验证时对应状态不通过。
 - 可选 device-acceptance.json 包含 status=passed|failed|not-tested；实际测试时另填 device、testedAt、reviewer、unityAcceptanceSha256、screenshots 及对应 filesSha256。设备结果绑定当前 Unity 验收和实测截图，未测保持 not-tested，不推导为通过。
 - 默认使用 TMP 当前默认字体及已有材质，不生成字体材质副本；boldWeight 保留为旧包兼容字段，不修改共享材质，文字粗体使用原生 TMP FontStyles。
 
 ## 游戏级素材清单
 
-新游戏在外部项目根目录维护 `project.assets.json`，准备包设置 `projectName`，可用相对 `projectDirectory` 或向上查找确定项目根目录。所有已确认素材在任何面板生成前统一同步到 `Assets/HtmlToUGUIStage/{GameName}/Sprites`（RawImage 为 Textures）。单面板与全部面板走同一同步器，全集检查、增量写入、同类型/部件/状态去重。详情见 [项目素材契约](project-assets.md)。
+新游戏在外部项目根目录维护 `project.assets.json`，准备包设置 `projectName`，可用相对 `projectDirectory` 或向上查找确定项目根目录。所有已确认素材在任何 Unity Prefab 生成/导入前统一同步到 `Assets/HtmlToUGUIStage/{GameName}/Sprites`（RawImage 为 Textures）；设计预览阶段只读核对，不提前写入 Unity。单面板与全部面板走同一同步器，全集检查、增量写入、同类型/部件/状态去重。详情见 [项目素材契约](project-assets.md)。
 
 HTML 与 sprites.json 的 path 可以使用 `asset:AssetId`，sprites.json 的 source 保留本面板浏览器副本，哈希必须与项目批准源一致。设计批准、元素组图批准和 HTML 验收仍按原清单版本执行；不能用新建项目注册表替代用户批准。

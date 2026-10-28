@@ -9,8 +9,11 @@
 | Pillow | Development image verification and optional comparison tools | [Pillow license](https://github.com/python-pillow/Pillow/blob/main/LICENSE) |
 | Playwright | Development browser interaction tests and screenshots | [Apache-2.0](https://github.com/microsoft/playwright/blob/main/LICENSE) |
 | sharp | Optional historical asset rasterization tools | [Apache-2.0](https://github.com/lovell/sharp/blob/main/LICENSE) |
+| Fluent UI System Icons (Filled) | Bundled SVG icons used in unapproved XR style references | [Pinned sources and hashes](Skills/ui-panel-design-to-html/assets/icon-library/sources.json); [bundled MIT license](Skills/ui-panel-design-to-html/assets/icon-library/fluent-filled/LICENSE.txt) |
 | diagrams.net | Optional editing of the workflow diagram | [Apache-2.0](https://github.com/jgraph/drawio/blob/dev/LICENSE); application not bundled |
 
 Unity 自带 TextMesh Pro Examples & Extras、字体和 Essential Resources 不上传；需要时通过 Unity 的 `Window → TextMeshPro → Import TMP Essential Resources` 导入。中文示例需要用户自行选择覆盖相应字符且许可合适的 TMP 字体。
 
 历史机器日志、回滚快照和本机 SDK 不属于本次公开分发。
+
+XR 风格预设是本仓库的参考设计，不是相关平台的官方主题、SDK 配置或设备认证。随范例使用的 Fluent Filled 图标固定到来源清单中的提交版本；保留原 SVG 与 MIT 许可，渲染时改色和缩放的处理也在清单中说明。

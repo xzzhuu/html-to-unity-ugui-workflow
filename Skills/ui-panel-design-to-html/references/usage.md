@@ -12,7 +12,7 @@ python scripts/init_directory.py --root D:/UI/SettingsVisual --panel-name Settin
 python scripts/validate_directory.py --root D:/UI/SettingsVisual --mode visual-only
 ```
 
-默认 `full`、1920×1080。`--width/--height` 可明确覆盖；已有工作区保留原分辨率，缺少 mode 的旧工作区按 full 读取。重复初始化不覆盖文件；显式配置或模式冲突时停止。两个分支都保留 `.html-directory.json` 这个兼容性文件名，其中 `mode` 决定路线，视觉分支不因此需要 HTML。
+默认 `full`、1920×1080。`--width/--height` 可明确覆盖工作区画布分辨率；面板主体的 A/B/C/D/W 选择遵循 [尺寸档位与画布占比](../SKILL.md#面板尺寸档位与画布占比)，不能仅因使用 B/C 主体就缩小工作区画布。已有工作区保留原分辨率，缺少 mode 的旧工作区按 full 读取。重复初始化不覆盖文件；显式配置或模式冲突时停止。两个分支都保留 `.html-directory.json` 这个兼容性文件名，其中 `mode` 决定路线，视觉分支不因此需要 HTML。
 
 | 内容 | full | visual-only |
 | --- | --- | --- |
@@ -27,7 +27,7 @@ python scripts/validate_directory.py --root D:/UI/SettingsVisual --mode visual-o
 ## 执行步骤与产出
 
 1. 核对实际面板、原生组件、Sprite、绑定和项目路径，产出实际所需元素清单，不扩展参考类型。
-2. 制作或沿用完整面板预览，取得“面板预览图确认”。
+2. 制作或沿用完整面板预览；无参考且没有已批准风格时，按[XR 风格选择](game-contracts.md#无参考设计与-xr-风格包)先给代表页面两套方案，方向选择并入“面板预览图确认”，不新增审批阶段。
 3. 每个复用结构独立制作组图，标明真实尺寸、必要状态、图层及拼接效果，取得“元素组图确认”。
 4. 导出中性颜色独立 PNG；记录原始/导出像素、九宫格和 Image.color 用法。组图中演示不同 tint 不等于交付多份彩色图片。
 5. full：生成并验收 HTML，再按用户需求使用既有转换器与 MCP 导入；visual-only：直接用 Unity MCP 导入并替换原 Prefab。

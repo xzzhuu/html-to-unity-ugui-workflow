@@ -1,0 +1,6340 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-only-unapproved",
+  "units": "layout pixels, not dp or meters",
+  "iconSources": "../icon-library/sources.json",
+  "visualReview": "not-checked-by-renderer",
+  "interactionContrastAudit": {
+    "status": "passed",
+    "measurements": 244,
+    "exemptDisabled": 16,
+    "violations": [],
+    "scope": "reference color pairs only; not design approval or device acceptance"
+  },
+  "examples": [
+    {
+      "presetId": "meta-friendly",
+      "kind": "SettingsPanel",
+      "status": "draft-unapproved",
+      "canvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "panel": {
+        "x": 160,
+        "y": 90,
+        "width": 1600,
+        "height": 900,
+        "sizeTier": "B"
+      },
+      "svg": "meta-friendly/SettingsPanel.svg",
+      "png": "meta-friendly/SettingsPanel.png",
+      "svgSha256": "9f5f12bbf698cc7c09756034d4dec06fe0123b5903243380f0e863c35905d22a",
+      "pngSha256": "8333c397342a373ebecf2778b49325733150b136e060a43f3db829ad4dee55f2",
+      "hitTargets": [
+        {
+          "x": 32,
+          "y": 172,
+          "width": 248,
+          "height": 64,
+          "label": "工作空间",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 32,
+          "y": 260,
+          "width": 248,
+          "height": 64,
+          "label": "显示与舒适",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 32,
+          "y": 348,
+          "width": 248,
+          "height": 64,
+          "label": "交互方式",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 32,
+          "y": 436,
+          "width": 248,
+          "height": 64,
+          "label": "通知与声音",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 1416,
+          "y": 377,
+          "width": 104,
+          "height": 64,
+          "label": "显示空间网格",
+          "type": "Toggle",
+          "disabled": false
+        },
+        {
+          "x": 1416,
+          "y": 493,
+          "width": 104,
+          "height": 64,
+          "label": "面板跟随",
+          "type": "Toggle",
+          "disabled": false
+        },
+        {
+          "x": 1096,
+          "y": 643,
+          "width": 400,
+          "height": 64,
+          "label": "透视亮度",
+          "type": "Slider",
+          "disabled": false
+        },
+        {
+          "x": 1120,
+          "y": 800,
+          "width": 192,
+          "height": 64,
+          "label": "恢复默认",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 1344,
+          "y": 800,
+          "width": 216,
+          "height": 64,
+          "label": "保存设置",
+          "type": "Button",
+          "disabled": false
+        }
+      ],
+      "texts": [
+        {
+          "x": 88,
+          "y": 40,
+          "label": "空间工作区",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 40,
+          "y": 104,
+          "label": "工作区 A",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 92,
+          "y": 189,
+          "label": "工作空间",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 92,
+          "y": 277,
+          "label": "显示与舒适",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 92,
+          "y": 365,
+          "label": "交互方式",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 92,
+          "y": 453,
+          "label": "通知与声音",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 148,
+          "y": 775,
+          "label": "已连接",
+          "size": 20,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 40,
+          "y": 826,
+          "label": "工作头显 01",
+          "size": 18,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 336,
+          "y": 42,
+          "label": "空间设置",
+          "size": 40,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 336,
+          "y": 104,
+          "label": "为当前工作空间配置显示与交互",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 492,
+          "y": 184,
+          "label": "桌面工作区",
+          "size": 32,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 492,
+          "y": 238,
+          "label": "固定世界位置    手柄射线",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1464,
+          "y": 199,
+          "label": "已连接",
+          "size": 20,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 368,
+          "y": 374,
+          "label": "显示空间网格",
+          "size": 26,
+          "weight": 550,
+          "anchor": "start"
+        },
+        {
+          "x": 368,
+          "y": 416,
+          "label": "辅助识别空间边界与定位",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 368,
+          "y": 490,
+          "label": "面板跟随",
+          "size": 26,
+          "weight": 550,
+          "anchor": "start"
+        },
+        {
+          "x": 368,
+          "y": 532,
+          "label": "关闭后保持当前世界位置",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 368,
+          "y": 612,
+          "label": "透视亮度",
+          "size": 26,
+          "weight": 550,
+          "anchor": "start"
+        },
+        {
+          "x": 368,
+          "y": 654,
+          "label": "保持真实环境清楚可见",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1520,
+          "y": 600,
+          "label": "66%",
+          "size": 24,
+          "weight": 600,
+          "anchor": "end"
+        },
+        {
+          "x": 368,
+          "y": 818,
+          "label": "更改将在保存后生效",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1228,
+          "y": 817,
+          "label": "恢复默认",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 1464,
+          "y": 817,
+          "label": "保存设置",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        }
+      ],
+      "interactionContrasts": [
+        {
+          "role": "Nav/工作空间/label",
+          "foreground": "#17243B",
+          "background": "#E2E8F1",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/工作空间/icon",
+          "foreground": "#125EDC",
+          "background": "#E2E8F1",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/显示与舒适/label",
+          "foreground": "#53627A",
+          "background": "#EEF1F6",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/显示与舒适/icon",
+          "foreground": "#53627A",
+          "background": "#EEF1F6",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/交互方式/label",
+          "foreground": "#53627A",
+          "background": "#EEF1F6",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/交互方式/icon",
+          "foreground": "#53627A",
+          "background": "#EEF1F6",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/通知与声音/label",
+          "foreground": "#53627A",
+          "background": "#EEF1F6",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/通知与声音/icon",
+          "foreground": "#53627A",
+          "background": "#EEF1F6",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "显示空间网格/track",
+          "foreground": "#125EDC",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "显示空间网格/thumb",
+          "foreground": "#FFFFFF",
+          "background": "#125EDC",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "面板跟随/track",
+          "foreground": "#53627A",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "面板跟随/thumb",
+          "foreground": "#FFFFFF",
+          "background": "#53627A",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/track-parent",
+          "foreground": "#748291",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/fill-track",
+          "foreground": "#102E52",
+          "background": "#748291",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/handle-parent",
+          "foreground": "#102E52",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "恢复默认/surface",
+          "foreground": "#5C6C7E",
+          "background": "#F5F6FA",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "恢复默认/label-icon",
+          "foreground": "#FFFFFF",
+          "background": "#5C6C7E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "保存设置/surface",
+          "foreground": "#125EDC",
+          "background": "#F5F6FA",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "保存设置/label-icon",
+          "foreground": "#FFFFFF",
+          "background": "#125EDC",
+          "minimum": 4.5,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "presetId": "meta-friendly",
+      "kind": "MonitoringPanel",
+      "status": "draft-unapproved",
+      "canvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "panel": {
+        "x": 160,
+        "y": 90,
+        "width": 1600,
+        "height": 900,
+        "sizeTier": "B"
+      },
+      "svg": "meta-friendly/MonitoringPanel.svg",
+      "png": "meta-friendly/MonitoringPanel.png",
+      "svgSha256": "b2c5611e1b28f9711e0153d3420ac23e0bb505734b65ea8037cf3e5d0c973308",
+      "pngSha256": "313df4285b8631005dd561f6659269d74bd517c3d20cdb0532bcf52fabfd79b4",
+      "hitTargets": [
+        {
+          "x": 32,
+          "y": 172,
+          "width": 248,
+          "height": 64,
+          "label": "设备概览",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 32,
+          "y": 260,
+          "width": 248,
+          "height": 64,
+          "label": "设备列表",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 32,
+          "y": 348,
+          "width": 248,
+          "height": 64,
+          "label": "告警记录",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 32,
+          "y": 436,
+          "width": 248,
+          "height": 64,
+          "label": "运行历史",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 1232,
+          "y": 664,
+          "width": 304,
+          "height": 64,
+          "label": "查看告警",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 1344,
+          "y": 812,
+          "width": 216,
+          "height": 64,
+          "label": "导出记录",
+          "type": "Button",
+          "disabled": false
+        }
+      ],
+      "texts": [
+        {
+          "x": 88,
+          "y": 40,
+          "label": "空间工作区",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 40,
+          "y": 104,
+          "label": "工作区 A",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 92,
+          "y": 189,
+          "label": "设备概览",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 92,
+          "y": 277,
+          "label": "设备列表",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 92,
+          "y": 365,
+          "label": "告警记录",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 92,
+          "y": 453,
+          "label": "运行历史",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 148,
+          "y": 775,
+          "label": "已连接",
+          "size": 20,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 40,
+          "y": 826,
+          "label": "工作头显 01",
+          "size": 18,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 336,
+          "y": 42,
+          "label": "设备监控",
+          "size": 40,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 336,
+          "y": 104,
+          "label": "工作区 A    6 台设备    最近更新 14:32",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 360,
+          "y": 180,
+          "label": "在线设备",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 360,
+          "y": 216,
+          "label": "06",
+          "size": 48,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 704,
+          "y": 244,
+          "label": "台",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 776,
+          "y": 180,
+          "label": "今日运行",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 776,
+          "y": 216,
+          "label": "12.6",
+          "size": 48,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 1120,
+          "y": 244,
+          "label": "小时",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1192,
+          "y": 180,
+          "label": "待处理告警",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1192,
+          "y": 216,
+          "label": "02",
+          "size": 48,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 1536,
+          "y": 244,
+          "label": "条",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 360,
+          "y": 350,
+          "label": "设备编号",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 624.3199999999999,
+          "y": 350,
+          "label": "运行状态",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 878.72,
+          "y": 350,
+          "label": "温度",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1160,
+          "y": 350,
+          "label": "剩余电量",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 360,
+          "y": 396,
+          "label": "XR-01",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 658.3199999999999,
+          "y": 396,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 878.72,
+          "y": 396,
+          "label": "35 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1160,
+          "y": 396,
+          "label": "78%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 360,
+          "y": 450,
+          "label": "XR-02",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 658.3199999999999,
+          "y": 450,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 878.72,
+          "y": 450,
+          "label": "36 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1160,
+          "y": 450,
+          "label": "86%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 360,
+          "y": 504,
+          "label": "XR-03",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 658.3199999999999,
+          "y": 504,
+          "label": "需关注",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 878.72,
+          "y": 504,
+          "label": "49 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1160,
+          "y": 504,
+          "label": "42%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 360,
+          "y": 558,
+          "label": "XR-04",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 658.3199999999999,
+          "y": 558,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 878.72,
+          "y": 558,
+          "label": "38 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1160,
+          "y": 558,
+          "label": "93%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 360,
+          "y": 612,
+          "label": "XR-05",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 658.3199999999999,
+          "y": 612,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 878.72,
+          "y": 612,
+          "label": "39 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1160,
+          "y": 612,
+          "label": "64%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 360,
+          "y": 666,
+          "label": "XR-06",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 658.3199999999999,
+          "y": 666,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 878.72,
+          "y": 666,
+          "label": "40 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1160,
+          "y": 666,
+          "label": "71%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1232,
+          "y": 438,
+          "label": "XR-03 温度偏高",
+          "size": 26,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 1232,
+          "y": 492,
+          "label": "当前温度",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1232,
+          "y": 534,
+          "label": "49 °C",
+          "size": 48,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 1232,
+          "y": 612,
+          "label": "建议暂停使用并检查散热",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1396,
+          "y": 681,
+          "label": "查看告警",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 336,
+          "y": 828,
+          "label": "显示全部 6 台设备",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1464,
+          "y": 829,
+          "label": "导出记录",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        }
+      ],
+      "interactionContrasts": [
+        {
+          "role": "Nav/设备概览/label",
+          "foreground": "#17243B",
+          "background": "#E2E8F1",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/设备概览/icon",
+          "foreground": "#125EDC",
+          "background": "#E2E8F1",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/设备列表/label",
+          "foreground": "#53627A",
+          "background": "#EEF1F6",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/设备列表/icon",
+          "foreground": "#53627A",
+          "background": "#EEF1F6",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/告警记录/label",
+          "foreground": "#53627A",
+          "background": "#EEF1F6",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/告警记录/icon",
+          "foreground": "#53627A",
+          "background": "#EEF1F6",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/运行历史/label",
+          "foreground": "#53627A",
+          "background": "#EEF1F6",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/运行历史/icon",
+          "foreground": "#53627A",
+          "background": "#EEF1F6",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "查看告警/surface",
+          "foreground": "#5C6C7E",
+          "background": "#E9EDF5",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "查看告警/label-icon",
+          "foreground": "#FFFFFF",
+          "background": "#5C6C7E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "导出记录/surface",
+          "foreground": "#125EDC",
+          "background": "#F5F6FA",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "导出记录/label-icon",
+          "foreground": "#FFFFFF",
+          "background": "#125EDC",
+          "minimum": 4.5,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "presetId": "meta-friendly",
+      "kind": "Components",
+      "status": "draft-unapproved",
+      "canvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "panel": {
+        "x": 160,
+        "y": 90,
+        "width": 1600,
+        "height": 900,
+        "sizeTier": "B"
+      },
+      "svg": "meta-friendly/Components.svg",
+      "png": "meta-friendly/Components.png",
+      "svgSha256": "fd2aca76a68cd13086c51edfa8a3c75ed87197f4d2e1278c6a3fecbb76962aa9",
+      "pngSha256": "fdb8c0dfe67d6c82ad062203686f66b7816663540c088392a94b8f0d63cc2e30",
+      "hitTargets": [
+        {
+          "x": 80,
+          "y": 192,
+          "width": 216,
+          "height": 64,
+          "label": "保存设置",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 320,
+          "y": 192,
+          "width": 192,
+          "height": 64,
+          "label": "恢复默认",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 552,
+          "y": 192,
+          "width": 216,
+          "height": 64,
+          "label": "空间设置",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 816,
+          "y": 176,
+          "width": 704,
+          "height": 96,
+          "label": "桌面工作区",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 84,
+          "y": 503,
+          "width": 104,
+          "height": 64,
+          "label": "Toggle Off",
+          "type": "Toggle",
+          "disabled": false
+        },
+        {
+          "x": 306,
+          "y": 503,
+          "width": 104,
+          "height": 64,
+          "label": "Toggle On",
+          "type": "Toggle",
+          "disabled": false
+        },
+        {
+          "x": 528,
+          "y": 503,
+          "width": 104,
+          "height": 64,
+          "label": "Toggle Disabled",
+          "type": "Toggle",
+          "disabled": true
+        },
+        {
+          "x": 80,
+          "y": 716,
+          "width": 392,
+          "height": 64,
+          "label": "设备名称",
+          "type": "InputField",
+          "disabled": false
+        },
+        {
+          "x": 496,
+          "y": 716,
+          "width": 336,
+          "height": 64,
+          "label": "工作区 A",
+          "type": "Dropdown",
+          "disabled": false
+        },
+        {
+          "x": 880,
+          "y": 717,
+          "width": 448,
+          "height": 64,
+          "label": "透视亮度",
+          "type": "Slider",
+          "disabled": false
+        },
+        {
+          "x": 1416,
+          "y": 676,
+          "width": 72,
+          "height": 128,
+          "label": "滚动条",
+          "type": "Scrollbar",
+          "disabled": false
+        }
+      ],
+      "texts": [
+        {
+          "x": 48,
+          "y": 32,
+          "label": "组件结构与反馈",
+          "size": 40,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 48,
+          "y": 94,
+          "label": "按职责组合，颜色变化共用素材；图标统一使用 Fluent Filled",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 200,
+          "y": 209,
+          "label": "保存设置",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 428,
+          "y": 209,
+          "label": "恢复默认",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 672,
+          "y": 209,
+          "label": "空间设置",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 924,
+          "y": 188,
+          "label": "桌面工作区",
+          "size": 26,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 924,
+          "y": 232,
+          "label": "图标、标题与状态组合为操作卡",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 344,
+          "label": "次操作与交互状态",
+          "size": 28,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 136,
+          "y": 420,
+          "label": "正常",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 268,
+          "y": 420,
+          "label": "悬停",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 400,
+          "y": 420,
+          "label": "聚焦",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 532,
+          "y": 420,
+          "label": "按下",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 664,
+          "y": 420,
+          "label": "禁用",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 136,
+          "y": 570,
+          "label": "Off",
+          "size": 20,
+          "weight": 400,
+          "anchor": "middle"
+        },
+        {
+          "x": 358,
+          "y": 570,
+          "label": "On",
+          "size": 20,
+          "weight": 400,
+          "anchor": "middle"
+        },
+        {
+          "x": 580,
+          "y": 570,
+          "label": "Disabled",
+          "size": 20,
+          "weight": 400,
+          "anchor": "middle"
+        },
+        {
+          "x": 824,
+          "y": 344,
+          "label": "信息层级与图标",
+          "size": 28,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 824,
+          "y": 410,
+          "label": "透视亮度",
+          "size": 26,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 824,
+          "y": 452,
+          "label": "数值和单位分层，信息不依赖颜色",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1508,
+          "y": 402,
+          "label": "66%",
+          "size": 42,
+          "weight": 600,
+          "anchor": "end"
+        },
+        {
+          "x": 80,
+          "y": 666,
+          "label": "输入、选择、滑动与滚动",
+          "size": 26,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 800,
+          "label": "必要识别部位 ≥3:1，普通控件文字 ≥4.5:1；数值检查不代替 VR 实测。",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 104,
+          "y": 732,
+          "label": "设备名称",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 520,
+          "y": 732,
+          "label": "工作区 A",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        }
+      ],
+      "interactionContrasts": [
+        {
+          "role": "保存设置/surface",
+          "foreground": "#125EDC",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "保存设置/label-icon",
+          "foreground": "#FFFFFF",
+          "background": "#125EDC",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "恢复默认/surface",
+          "foreground": "#5C6C7E",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "恢复默认/label-icon",
+          "foreground": "#FFFFFF",
+          "background": "#5C6C7E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "空间设置/surface",
+          "foreground": "#5C6C7E",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "空间设置/label-icon",
+          "foreground": "#FFFFFF",
+          "background": "#5C6C7E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "ActionCard/surface",
+          "foreground": "#5C6C7E",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "ActionCard/label-icon",
+          "foreground": "#FFFFFF",
+          "background": "#5C6C7E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/正常/surface",
+          "foreground": "#5C6C7E",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/正常/label",
+          "foreground": "#FFFFFF",
+          "background": "#5C6C7E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/悬停/surface",
+          "foreground": "#4A5C70",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/悬停/label",
+          "foreground": "#FFFFFF",
+          "background": "#4A5C70",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/聚焦/surface",
+          "foreground": "#2B5274",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/聚焦/label",
+          "foreground": "#FFFFFF",
+          "background": "#2B5274",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/按下/surface",
+          "foreground": "#3C4E62",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/按下/label",
+          "foreground": "#FFFFFF",
+          "background": "#3C4E62",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/禁用/surface",
+          "foreground": "#E3E6EE",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": true
+        },
+        {
+          "role": "Selectable/禁用/label",
+          "foreground": "#647085",
+          "background": "#E3E6EE",
+          "minimum": 4.5,
+          "disabled": true
+        },
+        {
+          "role": "Toggle Off/track",
+          "foreground": "#53627A",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Toggle Off/thumb",
+          "foreground": "#FFFFFF",
+          "background": "#53627A",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Toggle On/track",
+          "foreground": "#125EDC",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Toggle On/thumb",
+          "foreground": "#FFFFFF",
+          "background": "#125EDC",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Toggle Disabled/track",
+          "foreground": "#E3E6EE",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": true
+        },
+        {
+          "role": "Toggle Disabled/thumb",
+          "foreground": "#647085",
+          "background": "#E3E6EE",
+          "minimum": 3,
+          "disabled": true
+        },
+        {
+          "role": "InputField/surface",
+          "foreground": "#5C6C7E",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "InputField/label",
+          "foreground": "#FFFFFF",
+          "background": "#5C6C7E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Dropdown/surface",
+          "foreground": "#5C6C7E",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Dropdown/label",
+          "foreground": "#FFFFFF",
+          "background": "#5C6C7E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Slider/track-parent",
+          "foreground": "#748291",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/fill-track",
+          "foreground": "#102E52",
+          "background": "#748291",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/handle-parent",
+          "foreground": "#102E52",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Scrollbar/track-parent",
+          "foreground": "#748291",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Scrollbar/thumb-track",
+          "foreground": "#102E52",
+          "background": "#748291",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Scrollbar/thumb-parent",
+          "foreground": "#102E52",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "presetId": "pico-spatial",
+      "kind": "SettingsPanel",
+      "status": "draft-unapproved",
+      "canvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "panel": {
+        "x": 160,
+        "y": 90,
+        "width": 1600,
+        "height": 900,
+        "sizeTier": "B"
+      },
+      "svg": "pico-spatial/SettingsPanel.svg",
+      "png": "pico-spatial/SettingsPanel.png",
+      "svgSha256": "af0ba529e199a358e6b97a3867f9c05c643daa9d7bdd5c5c8a0b6163912b27fc",
+      "pngSha256": "5cd8730a77b33706f3e72ceb736b4bf85387cc95b40de845e468ec21497ebebf",
+      "hitTargets": [
+        {
+          "x": 20,
+          "y": 172,
+          "width": 184,
+          "height": 64,
+          "label": "工作空间",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 20,
+          "y": 252,
+          "width": 184,
+          "height": 64,
+          "label": "显示与舒适",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 20,
+          "y": 332,
+          "width": 184,
+          "height": 64,
+          "label": "交互方式",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 20,
+          "y": 412,
+          "width": 184,
+          "height": 64,
+          "label": "通知与声音",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 952,
+          "y": 273,
+          "width": 104,
+          "height": 64,
+          "label": "显示空间网格",
+          "type": "Toggle",
+          "disabled": false
+        },
+        {
+          "x": 952,
+          "y": 391,
+          "width": 104,
+          "height": 64,
+          "label": "面板跟随",
+          "type": "Toggle",
+          "disabled": false
+        },
+        {
+          "x": 296,
+          "y": 579,
+          "width": 744,
+          "height": 64,
+          "label": "透视亮度",
+          "type": "Slider",
+          "disabled": false
+        },
+        {
+          "x": 1120,
+          "y": 800,
+          "width": 192,
+          "height": 64,
+          "label": "恢复默认",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 1344,
+          "y": 800,
+          "width": 216,
+          "height": 64,
+          "label": "保存设置",
+          "type": "Button",
+          "disabled": false
+        }
+      ],
+      "texts": [
+        {
+          "x": 88,
+          "y": 40,
+          "label": "空间工作区",
+          "size": 20,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 40,
+          "y": 104,
+          "label": "工作区 A",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 189,
+          "label": "工作空间",
+          "size": 20,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 269,
+          "label": "显示与舒适",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 349,
+          "label": "交互方式",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 429,
+          "label": "通知与声音",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 120,
+          "y": 775,
+          "label": "已连接",
+          "size": 20,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 40,
+          "y": 826,
+          "label": "工作头显 01",
+          "size": 18,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 264,
+          "y": 42,
+          "label": "空间设置",
+          "size": 40,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 264,
+          "y": 104,
+          "label": "为当前工作空间配置显示与交互",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 296,
+          "y": 196,
+          "label": "显示与位置",
+          "size": 28,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 296,
+          "y": 270,
+          "label": "显示空间网格",
+          "size": 26,
+          "weight": 550,
+          "anchor": "start"
+        },
+        {
+          "x": 296,
+          "y": 312,
+          "label": "辅助识别空间边界与定位",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 296,
+          "y": 388,
+          "label": "面板跟随",
+          "size": 26,
+          "weight": 550,
+          "anchor": "start"
+        },
+        {
+          "x": 296,
+          "y": 430,
+          "label": "关闭后保持当前世界位置",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 296,
+          "y": 524,
+          "label": "透视亮度",
+          "size": 26,
+          "weight": 550,
+          "anchor": "start"
+        },
+        {
+          "x": 1056,
+          "y": 524,
+          "label": "66%",
+          "size": 26,
+          "weight": 600,
+          "anchor": "end"
+        },
+        {
+          "x": 296,
+          "y": 668,
+          "label": "保持真实环境清楚可见",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1144,
+          "y": 196,
+          "label": "当前空间",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1336,
+          "y": 450,
+          "label": "桌面工作区",
+          "size": 32,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 1336,
+          "y": 517,
+          "label": "已连接",
+          "size": 20,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 1144,
+          "y": 596,
+          "label": "固定世界位置",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1144,
+          "y": 644,
+          "label": "输入方式：手柄射线",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 264,
+          "y": 820,
+          "label": "工作头显 01",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1228,
+          "y": 817,
+          "label": "恢复默认",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 1464,
+          "y": 817,
+          "label": "保存设置",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        }
+      ],
+      "interactionContrasts": [
+        {
+          "role": "Nav/工作空间/label",
+          "foreground": "#F1F5F9",
+          "background": "#25333E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/工作空间/icon",
+          "foreground": "#9ACFFF",
+          "background": "#25333E",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/显示与舒适/label",
+          "foreground": "#B8C4D0",
+          "background": "#1B2026",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/显示与舒适/icon",
+          "foreground": "#B8C4D0",
+          "background": "#1B2026",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/交互方式/label",
+          "foreground": "#B8C4D0",
+          "background": "#1B2026",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/交互方式/icon",
+          "foreground": "#B8C4D0",
+          "background": "#1B2026",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/通知与声音/label",
+          "foreground": "#B8C4D0",
+          "background": "#1B2026",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/通知与声音/icon",
+          "foreground": "#B8C4D0",
+          "background": "#1B2026",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "显示空间网格/track",
+          "foreground": "#9ACFFF",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "显示空间网格/thumb",
+          "foreground": "#112B40",
+          "background": "#9ACFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "面板跟随/track",
+          "foreground": "#B8C4D0",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "面板跟随/thumb",
+          "foreground": "#2B333C",
+          "background": "#B8C4D0",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/track-parent",
+          "foreground": "#718494",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/fill-track",
+          "foreground": "#E3F2FF",
+          "background": "#718494",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/handle-parent",
+          "foreground": "#E3F2FF",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "恢复默认/surface",
+          "foreground": "#92A7B8",
+          "background": "#1E2329",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "恢复默认/label-icon",
+          "foreground": "#0D1D29",
+          "background": "#92A7B8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "保存设置/surface",
+          "foreground": "#9ACFFF",
+          "background": "#1E2329",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "保存设置/label-icon",
+          "foreground": "#112B40",
+          "background": "#9ACFFF",
+          "minimum": 4.5,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "presetId": "pico-spatial",
+      "kind": "MonitoringPanel",
+      "status": "draft-unapproved",
+      "canvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "panel": {
+        "x": 160,
+        "y": 90,
+        "width": 1600,
+        "height": 900,
+        "sizeTier": "B"
+      },
+      "svg": "pico-spatial/MonitoringPanel.svg",
+      "png": "pico-spatial/MonitoringPanel.png",
+      "svgSha256": "060608e1edf6b25c5f6533b3d607e2d16c53a7555aec264b5485f1124bbc5448",
+      "pngSha256": "afeb262620b51792eec9f1fabd492c086b9274059591bfa63ecda389085c90f9",
+      "hitTargets": [
+        {
+          "x": 20,
+          "y": 172,
+          "width": 184,
+          "height": 64,
+          "label": "设备概览",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 20,
+          "y": 252,
+          "width": 184,
+          "height": 64,
+          "label": "设备列表",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 20,
+          "y": 332,
+          "width": 184,
+          "height": 64,
+          "label": "告警记录",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 20,
+          "y": 412,
+          "width": 184,
+          "height": 64,
+          "label": "运行历史",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 1200,
+          "y": 664,
+          "width": 336,
+          "height": 64,
+          "label": "查看告警",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 1344,
+          "y": 812,
+          "width": 216,
+          "height": 64,
+          "label": "导出记录",
+          "type": "Button",
+          "disabled": false
+        }
+      ],
+      "texts": [
+        {
+          "x": 88,
+          "y": 40,
+          "label": "空间工作区",
+          "size": 20,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 40,
+          "y": 104,
+          "label": "工作区 A",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 189,
+          "label": "设备概览",
+          "size": 20,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 269,
+          "label": "设备列表",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 349,
+          "label": "告警记录",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 429,
+          "label": "运行历史",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 120,
+          "y": 775,
+          "label": "已连接",
+          "size": 20,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 40,
+          "y": 826,
+          "label": "工作头显 01",
+          "size": 18,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 264,
+          "y": 42,
+          "label": "设备监控",
+          "size": 40,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 264,
+          "y": 104,
+          "label": "工作区 A    6 台设备    最近更新 14:32",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 288,
+          "y": 180,
+          "label": "在线设备",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 288,
+          "y": 216,
+          "label": "06",
+          "size": 48,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 656,
+          "y": 244,
+          "label": "台",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 728,
+          "y": 180,
+          "label": "今日运行",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 728,
+          "y": 216,
+          "label": "12.6",
+          "size": 48,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 1096,
+          "y": 244,
+          "label": "小时",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1168,
+          "y": 180,
+          "label": "待处理告警",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1168,
+          "y": 216,
+          "label": "02",
+          "size": 48,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 1536,
+          "y": 244,
+          "label": "条",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 288,
+          "y": 350,
+          "label": "设备编号",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 565.9200000000001,
+          "y": 350,
+          "label": "运行状态",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 832.32,
+          "y": 350,
+          "label": "温度",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1128,
+          "y": 350,
+          "label": "剩余电量",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 288,
+          "y": 396,
+          "label": "XR-01",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 599.9200000000001,
+          "y": 396,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 832.32,
+          "y": 396,
+          "label": "35 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1128,
+          "y": 396,
+          "label": "78%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 288,
+          "y": 450,
+          "label": "XR-02",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 599.9200000000001,
+          "y": 450,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 832.32,
+          "y": 450,
+          "label": "36 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1128,
+          "y": 450,
+          "label": "86%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 288,
+          "y": 504,
+          "label": "XR-03",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 599.9200000000001,
+          "y": 504,
+          "label": "需关注",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 832.32,
+          "y": 504,
+          "label": "49 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1128,
+          "y": 504,
+          "label": "42%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 288,
+          "y": 558,
+          "label": "XR-04",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 599.9200000000001,
+          "y": 558,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 832.32,
+          "y": 558,
+          "label": "38 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1128,
+          "y": 558,
+          "label": "93%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 288,
+          "y": 612,
+          "label": "XR-05",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 599.9200000000001,
+          "y": 612,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 832.32,
+          "y": 612,
+          "label": "39 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1128,
+          "y": 612,
+          "label": "64%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 288,
+          "y": 666,
+          "label": "XR-06",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 599.9200000000001,
+          "y": 666,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 832.32,
+          "y": 666,
+          "label": "40 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1128,
+          "y": 666,
+          "label": "71%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1200,
+          "y": 438,
+          "label": "XR-03 温度偏高",
+          "size": 26,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 1200,
+          "y": 492,
+          "label": "当前温度",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1200,
+          "y": 534,
+          "label": "49 °C",
+          "size": 48,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 1200,
+          "y": 612,
+          "label": "建议暂停使用并检查散热",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1380,
+          "y": 681,
+          "label": "查看告警",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 264,
+          "y": 828,
+          "label": "显示全部 6 台设备",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1464,
+          "y": 829,
+          "label": "导出记录",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        }
+      ],
+      "interactionContrasts": [
+        {
+          "role": "Nav/设备概览/label",
+          "foreground": "#F1F5F9",
+          "background": "#25333E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/设备概览/icon",
+          "foreground": "#9ACFFF",
+          "background": "#25333E",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/设备列表/label",
+          "foreground": "#B8C4D0",
+          "background": "#1B2026",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/设备列表/icon",
+          "foreground": "#B8C4D0",
+          "background": "#1B2026",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/告警记录/label",
+          "foreground": "#B8C4D0",
+          "background": "#1B2026",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/告警记录/icon",
+          "foreground": "#B8C4D0",
+          "background": "#1B2026",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/运行历史/label",
+          "foreground": "#B8C4D0",
+          "background": "#1B2026",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/运行历史/icon",
+          "foreground": "#B8C4D0",
+          "background": "#1B2026",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "查看告警/surface",
+          "foreground": "#92A7B8",
+          "background": "#151A20",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "查看告警/label-icon",
+          "foreground": "#0D1D29",
+          "background": "#92A7B8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "导出记录/surface",
+          "foreground": "#9ACFFF",
+          "background": "#1E2329",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "导出记录/label-icon",
+          "foreground": "#112B40",
+          "background": "#9ACFFF",
+          "minimum": 4.5,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "presetId": "pico-spatial",
+      "kind": "Components",
+      "status": "draft-unapproved",
+      "canvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "panel": {
+        "x": 160,
+        "y": 90,
+        "width": 1600,
+        "height": 900,
+        "sizeTier": "B"
+      },
+      "svg": "pico-spatial/Components.svg",
+      "png": "pico-spatial/Components.png",
+      "svgSha256": "ec2d37b0d4ca716b17ac2e9ab0c604c6ded1034d3736ad35973bf42ff850ce99",
+      "pngSha256": "5fc6b74ebe4045231758c6d6c22fc98f1583d1a039511fa187f76af504567fc0",
+      "hitTargets": [
+        {
+          "x": 80,
+          "y": 192,
+          "width": 216,
+          "height": 64,
+          "label": "保存设置",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 320,
+          "y": 192,
+          "width": 192,
+          "height": 64,
+          "label": "恢复默认",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 552,
+          "y": 192,
+          "width": 216,
+          "height": 64,
+          "label": "空间设置",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 816,
+          "y": 176,
+          "width": 704,
+          "height": 96,
+          "label": "桌面工作区",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 84,
+          "y": 503,
+          "width": 104,
+          "height": 64,
+          "label": "Toggle Off",
+          "type": "Toggle",
+          "disabled": false
+        },
+        {
+          "x": 306,
+          "y": 503,
+          "width": 104,
+          "height": 64,
+          "label": "Toggle On",
+          "type": "Toggle",
+          "disabled": false
+        },
+        {
+          "x": 528,
+          "y": 503,
+          "width": 104,
+          "height": 64,
+          "label": "Toggle Disabled",
+          "type": "Toggle",
+          "disabled": true
+        },
+        {
+          "x": 80,
+          "y": 716,
+          "width": 392,
+          "height": 64,
+          "label": "设备名称",
+          "type": "InputField",
+          "disabled": false
+        },
+        {
+          "x": 496,
+          "y": 716,
+          "width": 336,
+          "height": 64,
+          "label": "工作区 A",
+          "type": "Dropdown",
+          "disabled": false
+        },
+        {
+          "x": 880,
+          "y": 717,
+          "width": 448,
+          "height": 64,
+          "label": "透视亮度",
+          "type": "Slider",
+          "disabled": false
+        },
+        {
+          "x": 1416,
+          "y": 676,
+          "width": 72,
+          "height": 128,
+          "label": "滚动条",
+          "type": "Scrollbar",
+          "disabled": false
+        }
+      ],
+      "texts": [
+        {
+          "x": 48,
+          "y": 32,
+          "label": "组件结构与反馈",
+          "size": 40,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 48,
+          "y": 94,
+          "label": "按职责组合，颜色变化共用素材；图标统一使用 Fluent Filled",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 200,
+          "y": 209,
+          "label": "保存设置",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 428,
+          "y": 209,
+          "label": "恢复默认",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 672,
+          "y": 209,
+          "label": "空间设置",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 924,
+          "y": 188,
+          "label": "桌面工作区",
+          "size": 26,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 924,
+          "y": 232,
+          "label": "图标、标题与状态组合为操作卡",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 344,
+          "label": "次操作与交互状态",
+          "size": 28,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 136,
+          "y": 420,
+          "label": "正常",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 268,
+          "y": 420,
+          "label": "悬停",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 400,
+          "y": 420,
+          "label": "聚焦",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 532,
+          "y": 420,
+          "label": "按下",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 664,
+          "y": 420,
+          "label": "禁用",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 136,
+          "y": 570,
+          "label": "Off",
+          "size": 20,
+          "weight": 400,
+          "anchor": "middle"
+        },
+        {
+          "x": 358,
+          "y": 570,
+          "label": "On",
+          "size": 20,
+          "weight": 400,
+          "anchor": "middle"
+        },
+        {
+          "x": 580,
+          "y": 570,
+          "label": "Disabled",
+          "size": 20,
+          "weight": 400,
+          "anchor": "middle"
+        },
+        {
+          "x": 824,
+          "y": 344,
+          "label": "信息层级与图标",
+          "size": 28,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 824,
+          "y": 410,
+          "label": "透视亮度",
+          "size": 26,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 824,
+          "y": 452,
+          "label": "数值和单位分层，信息不依赖颜色",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1508,
+          "y": 402,
+          "label": "66%",
+          "size": 42,
+          "weight": 600,
+          "anchor": "end"
+        },
+        {
+          "x": 80,
+          "y": 666,
+          "label": "输入、选择、滑动与滚动",
+          "size": 26,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 800,
+          "label": "必要识别部位 ≥3:1，普通控件文字 ≥4.5:1；数值检查不代替 VR 实测。",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 104,
+          "y": 732,
+          "label": "设备名称",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 520,
+          "y": 732,
+          "label": "工作区 A",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        }
+      ],
+      "interactionContrasts": [
+        {
+          "role": "保存设置/surface",
+          "foreground": "#9ACFFF",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "保存设置/label-icon",
+          "foreground": "#112B40",
+          "background": "#9ACFFF",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "恢复默认/surface",
+          "foreground": "#92A7B8",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "恢复默认/label-icon",
+          "foreground": "#0D1D29",
+          "background": "#92A7B8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "空间设置/surface",
+          "foreground": "#92A7B8",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "空间设置/label-icon",
+          "foreground": "#0D1D29",
+          "background": "#92A7B8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "ActionCard/surface",
+          "foreground": "#92A7B8",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "ActionCard/label-icon",
+          "foreground": "#0D1D29",
+          "background": "#92A7B8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/正常/surface",
+          "foreground": "#92A7B8",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/正常/label",
+          "foreground": "#0D1D29",
+          "background": "#92A7B8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/悬停/surface",
+          "foreground": "#A5BED0",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/悬停/label",
+          "foreground": "#0D1D29",
+          "background": "#A5BED0",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/聚焦/surface",
+          "foreground": "#BADAF0",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/聚焦/label",
+          "foreground": "#0D1D29",
+          "background": "#BADAF0",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/按下/surface",
+          "foreground": "#7D91A2",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/按下/label",
+          "foreground": "#0D1D29",
+          "background": "#7D91A2",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/禁用/surface",
+          "foreground": "#39434D",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": true
+        },
+        {
+          "role": "Selectable/禁用/label",
+          "foreground": "#ABB8C5",
+          "background": "#39434D",
+          "minimum": 4.5,
+          "disabled": true
+        },
+        {
+          "role": "Toggle Off/track",
+          "foreground": "#B8C4D0",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Toggle Off/thumb",
+          "foreground": "#2B333C",
+          "background": "#B8C4D0",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Toggle On/track",
+          "foreground": "#9ACFFF",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Toggle On/thumb",
+          "foreground": "#112B40",
+          "background": "#9ACFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Toggle Disabled/track",
+          "foreground": "#39434D",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": true
+        },
+        {
+          "role": "Toggle Disabled/thumb",
+          "foreground": "#ABB8C5",
+          "background": "#39434D",
+          "minimum": 3,
+          "disabled": true
+        },
+        {
+          "role": "InputField/surface",
+          "foreground": "#92A7B8",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "InputField/label",
+          "foreground": "#0D1D29",
+          "background": "#92A7B8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Dropdown/surface",
+          "foreground": "#92A7B8",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Dropdown/label",
+          "foreground": "#0D1D29",
+          "background": "#92A7B8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Slider/track-parent",
+          "foreground": "#718494",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/fill-track",
+          "foreground": "#E3F2FF",
+          "background": "#718494",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/handle-parent",
+          "foreground": "#E3F2FF",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Scrollbar/track-parent",
+          "foreground": "#718494",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Scrollbar/thumb-track",
+          "foreground": "#E3F2FF",
+          "background": "#718494",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Scrollbar/thumb-parent",
+          "foreground": "#E3F2FF",
+          "background": "#2B333C",
+          "minimum": 3,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "presetId": "microsoft-mrdl",
+      "kind": "SettingsPanel",
+      "status": "draft-unapproved",
+      "canvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "panel": {
+        "x": 160,
+        "y": 90,
+        "width": 1600,
+        "height": 900,
+        "sizeTier": "B"
+      },
+      "svg": "microsoft-mrdl/SettingsPanel.svg",
+      "png": "microsoft-mrdl/SettingsPanel.png",
+      "svgSha256": "f5a87b7d3bb881520b0e59a21935b4ded29213a31a85458adb1dc3d002c21a41",
+      "pngSha256": "846d36eb4a0a9035d4f64690c95c82a47ed6a63cc0f7bcbed04f55350f1eed4c",
+      "hitTargets": [
+        {
+          "x": 20,
+          "y": 172,
+          "width": 160,
+          "height": 64,
+          "label": "工作空间",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 20,
+          "y": 252,
+          "width": 160,
+          "height": 64,
+          "label": "显示与舒适",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 20,
+          "y": 332,
+          "width": 160,
+          "height": 64,
+          "label": "交互方式",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 20,
+          "y": 412,
+          "width": 160,
+          "height": 64,
+          "label": "通知与声音",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 740,
+          "y": 541,
+          "width": 104,
+          "height": 64,
+          "label": "显示空间网格",
+          "type": "Toggle",
+          "disabled": false
+        },
+        {
+          "x": 740,
+          "y": 641,
+          "width": 104,
+          "height": 64,
+          "label": "面板跟随",
+          "type": "Toggle",
+          "disabled": false
+        },
+        {
+          "x": 1172,
+          "y": 551,
+          "width": 348,
+          "height": 64,
+          "label": "透视亮度",
+          "type": "Slider",
+          "disabled": false
+        },
+        {
+          "x": 1120,
+          "y": 800,
+          "width": 192,
+          "height": 64,
+          "label": "恢复默认",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 1344,
+          "y": 800,
+          "width": 216,
+          "height": 64,
+          "label": "保存设置",
+          "type": "Button",
+          "disabled": false
+        }
+      ],
+      "texts": [
+        {
+          "x": 88,
+          "y": 40,
+          "label": "空间工作区",
+          "size": 20,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 40,
+          "y": 104,
+          "label": "工作区 A",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 189,
+          "label": "工作空间",
+          "size": 20,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 269,
+          "label": "显示与舒适",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 349,
+          "label": "交互方式",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 429,
+          "label": "通知与声音",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 108,
+          "y": 775,
+          "label": "已连接",
+          "size": 20,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 40,
+          "y": 826,
+          "label": "工作头显 01",
+          "size": 18,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 248,
+          "y": 42,
+          "label": "空间设置",
+          "size": 40,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 248,
+          "y": 104,
+          "label": "为当前工作空间配置显示与交互",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 332,
+          "y": 196,
+          "label": "空间定位",
+          "size": 28,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 280,
+          "y": 266,
+          "label": "桌面工作区",
+          "size": 34,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 280,
+          "y": 326,
+          "label": "固定世界位置",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 780,
+          "y": 335,
+          "label": "已连接",
+          "size": 20,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 984,
+          "y": 196,
+          "label": "交互方式",
+          "size": 28,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 932,
+          "y": 266,
+          "label": "手柄射线",
+          "size": 34,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 932,
+          "y": 326,
+          "label": "工作头显 01",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 280,
+          "y": 472,
+          "label": "显示选项",
+          "size": 28,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 280,
+          "y": 538,
+          "label": "显示空间网格",
+          "size": 26,
+          "weight": 550,
+          "anchor": "start"
+        },
+        {
+          "x": 280,
+          "y": 580,
+          "label": "辅助识别空间边界与定位",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 280,
+          "y": 638,
+          "label": "面板跟随",
+          "size": 26,
+          "weight": 550,
+          "anchor": "start"
+        },
+        {
+          "x": 280,
+          "y": 680,
+          "label": "关闭后保持当前世界位置",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 932,
+          "y": 472,
+          "label": "透视亮度",
+          "size": 28,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 932,
+          "y": 536,
+          "label": "66",
+          "size": 64,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 1022,
+          "y": 572,
+          "label": "%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 932,
+          "y": 654,
+          "label": "保持真实环境清楚可见",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 248,
+          "y": 820,
+          "label": "更改将在保存后生效",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1228,
+          "y": 817,
+          "label": "恢复默认",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 1464,
+          "y": 817,
+          "label": "保存设置",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        }
+      ],
+      "interactionContrasts": [
+        {
+          "role": "Nav/工作空间/label",
+          "foreground": "#EFF8FB",
+          "background": "#203640",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/工作空间/icon",
+          "foreground": "#7BE0D1",
+          "background": "#203640",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/显示与舒适/label",
+          "foreground": "#B4C8D4",
+          "background": "#12222F",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/显示与舒适/icon",
+          "foreground": "#B4C8D4",
+          "background": "#12222F",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/交互方式/label",
+          "foreground": "#B4C8D4",
+          "background": "#12222F",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/交互方式/icon",
+          "foreground": "#B4C8D4",
+          "background": "#12222F",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/通知与声音/label",
+          "foreground": "#B4C8D4",
+          "background": "#12222F",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/通知与声音/icon",
+          "foreground": "#B4C8D4",
+          "background": "#12222F",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "显示空间网格/track",
+          "foreground": "#7BE0D1",
+          "background": "#172B38",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "显示空间网格/thumb",
+          "foreground": "#103B37",
+          "background": "#7BE0D1",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "面板跟随/track",
+          "foreground": "#B4C8D4",
+          "background": "#172B38",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "面板跟随/thumb",
+          "foreground": "#213746",
+          "background": "#B4C8D4",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/track-parent",
+          "foreground": "#718494",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/fill-track",
+          "foreground": "#E3F2FF",
+          "background": "#718494",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/handle-parent",
+          "foreground": "#E3F2FF",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "恢复默认/surface",
+          "foreground": "#92A7B8",
+          "background": "#101F2B",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "恢复默认/label-icon",
+          "foreground": "#0D1D29",
+          "background": "#92A7B8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "保存设置/surface",
+          "foreground": "#7BE0D1",
+          "background": "#101F2B",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "保存设置/label-icon",
+          "foreground": "#103B37",
+          "background": "#7BE0D1",
+          "minimum": 4.5,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "presetId": "microsoft-mrdl",
+      "kind": "MonitoringPanel",
+      "status": "draft-unapproved",
+      "canvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "panel": {
+        "x": 160,
+        "y": 90,
+        "width": 1600,
+        "height": 900,
+        "sizeTier": "B"
+      },
+      "svg": "microsoft-mrdl/MonitoringPanel.svg",
+      "png": "microsoft-mrdl/MonitoringPanel.png",
+      "svgSha256": "a1d775432ec01fb15bc4bc414422de93598114e2c5dd744c3a82ff1a75248593",
+      "pngSha256": "b7fff46686b2a6d4d0bd6c56121aad3f156bee375e04ef118145fbc4a6cf40a1",
+      "hitTargets": [
+        {
+          "x": 20,
+          "y": 172,
+          "width": 160,
+          "height": 64,
+          "label": "设备概览",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 20,
+          "y": 252,
+          "width": 160,
+          "height": 64,
+          "label": "设备列表",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 20,
+          "y": 332,
+          "width": 160,
+          "height": 64,
+          "label": "告警记录",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 20,
+          "y": 412,
+          "width": 160,
+          "height": 64,
+          "label": "运行历史",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 1196,
+          "y": 660,
+          "width": 340,
+          "height": 64,
+          "label": "查看告警",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 1344,
+          "y": 812,
+          "width": 216,
+          "height": 64,
+          "label": "导出记录",
+          "type": "Button",
+          "disabled": false
+        }
+      ],
+      "texts": [
+        {
+          "x": 88,
+          "y": 40,
+          "label": "空间工作区",
+          "size": 20,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 40,
+          "y": 104,
+          "label": "工作区 A",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 189,
+          "label": "设备概览",
+          "size": 20,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 269,
+          "label": "设备列表",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 349,
+          "label": "告警记录",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 429,
+          "label": "运行历史",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 108,
+          "y": 775,
+          "label": "已连接",
+          "size": 20,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 40,
+          "y": 826,
+          "label": "工作头显 01",
+          "size": 18,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 248,
+          "y": 42,
+          "label": "设备监控",
+          "size": 40,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 248,
+          "y": 104,
+          "label": "工作区 A    6 台设备    最近更新 14:32",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 272,
+          "y": 346,
+          "label": "设备编号",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 554,
+          "y": 346,
+          "label": "运行状态",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 824,
+          "y": 346,
+          "label": "温度",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1124,
+          "y": 346,
+          "label": "剩余电量",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 272,
+          "y": 392,
+          "label": "XR-01",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 588,
+          "y": 392,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 824,
+          "y": 392,
+          "label": "35 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1124,
+          "y": 392,
+          "label": "78%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 272,
+          "y": 446,
+          "label": "XR-02",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 588,
+          "y": 446,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 824,
+          "y": 446,
+          "label": "36 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1124,
+          "y": 446,
+          "label": "86%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 272,
+          "y": 500,
+          "label": "XR-03",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 588,
+          "y": 500,
+          "label": "需关注",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 824,
+          "y": 500,
+          "label": "49 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1124,
+          "y": 500,
+          "label": "42%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 272,
+          "y": 554,
+          "label": "XR-04",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 588,
+          "y": 554,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 824,
+          "y": 554,
+          "label": "38 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1124,
+          "y": 554,
+          "label": "93%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 272,
+          "y": 608,
+          "label": "XR-05",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 588,
+          "y": 608,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 824,
+          "y": 608,
+          "label": "39 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1124,
+          "y": 608,
+          "label": "64%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 272,
+          "y": 662,
+          "label": "XR-06",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 588,
+          "y": 662,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 824,
+          "y": 662,
+          "label": "40 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1124,
+          "y": 662,
+          "label": "71%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1196,
+          "y": 434,
+          "label": "XR-03 温度偏高",
+          "size": 26,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 1196,
+          "y": 488,
+          "label": "当前温度",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1196,
+          "y": 530,
+          "label": "49 °C",
+          "size": 48,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 1196,
+          "y": 608,
+          "label": "建议暂停使用并检查散热",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1378,
+          "y": 677,
+          "label": "查看告警",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 272,
+          "y": 180,
+          "label": "在线设备",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 272,
+          "y": 216,
+          "label": "06",
+          "size": 48,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 636,
+          "y": 244,
+          "label": "台",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 708,
+          "y": 180,
+          "label": "今日运行",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 708,
+          "y": 216,
+          "label": "12.6",
+          "size": 48,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 1072,
+          "y": 244,
+          "label": "小时",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1144,
+          "y": 180,
+          "label": "待处理告警",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1144,
+          "y": 216,
+          "label": "02",
+          "size": 48,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 1536,
+          "y": 244,
+          "label": "条",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 248,
+          "y": 828,
+          "label": "显示全部 6 台设备",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1464,
+          "y": 829,
+          "label": "导出记录",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        }
+      ],
+      "interactionContrasts": [
+        {
+          "role": "Nav/设备概览/label",
+          "foreground": "#EFF8FB",
+          "background": "#203640",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/设备概览/icon",
+          "foreground": "#7BE0D1",
+          "background": "#203640",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/设备列表/label",
+          "foreground": "#B4C8D4",
+          "background": "#12222F",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/设备列表/icon",
+          "foreground": "#B4C8D4",
+          "background": "#12222F",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/告警记录/label",
+          "foreground": "#B4C8D4",
+          "background": "#12222F",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/告警记录/icon",
+          "foreground": "#B4C8D4",
+          "background": "#12222F",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Nav/运行历史/label",
+          "foreground": "#B4C8D4",
+          "background": "#12222F",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Nav/运行历史/icon",
+          "foreground": "#B4C8D4",
+          "background": "#12222F",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "查看告警/surface",
+          "foreground": "#92A7B8",
+          "background": "#172B38",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "查看告警/label-icon",
+          "foreground": "#0D1D29",
+          "background": "#92A7B8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "导出记录/surface",
+          "foreground": "#7BE0D1",
+          "background": "#101F2B",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "导出记录/label-icon",
+          "foreground": "#103B37",
+          "background": "#7BE0D1",
+          "minimum": 4.5,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "presetId": "microsoft-mrdl",
+      "kind": "Components",
+      "status": "draft-unapproved",
+      "canvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "panel": {
+        "x": 160,
+        "y": 90,
+        "width": 1600,
+        "height": 900,
+        "sizeTier": "B"
+      },
+      "svg": "microsoft-mrdl/Components.svg",
+      "png": "microsoft-mrdl/Components.png",
+      "svgSha256": "901fd2edc1a23cc64d2cbf6006cdf46ad0685001dbbe0d1bcdb927c4d90f7749",
+      "pngSha256": "76724c52f5df33076d89b7af412bdd981965ec931c14bd0a1609257ec4b17e36",
+      "hitTargets": [
+        {
+          "x": 80,
+          "y": 192,
+          "width": 216,
+          "height": 64,
+          "label": "保存设置",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 320,
+          "y": 192,
+          "width": 192,
+          "height": 64,
+          "label": "恢复默认",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 552,
+          "y": 192,
+          "width": 216,
+          "height": 64,
+          "label": "空间设置",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 816,
+          "y": 176,
+          "width": 704,
+          "height": 96,
+          "label": "桌面工作区",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 84,
+          "y": 503,
+          "width": 104,
+          "height": 64,
+          "label": "Toggle Off",
+          "type": "Toggle",
+          "disabled": false
+        },
+        {
+          "x": 306,
+          "y": 503,
+          "width": 104,
+          "height": 64,
+          "label": "Toggle On",
+          "type": "Toggle",
+          "disabled": false
+        },
+        {
+          "x": 528,
+          "y": 503,
+          "width": 104,
+          "height": 64,
+          "label": "Toggle Disabled",
+          "type": "Toggle",
+          "disabled": true
+        },
+        {
+          "x": 80,
+          "y": 716,
+          "width": 392,
+          "height": 64,
+          "label": "设备名称",
+          "type": "InputField",
+          "disabled": false
+        },
+        {
+          "x": 496,
+          "y": 716,
+          "width": 336,
+          "height": 64,
+          "label": "工作区 A",
+          "type": "Dropdown",
+          "disabled": false
+        },
+        {
+          "x": 880,
+          "y": 717,
+          "width": 448,
+          "height": 64,
+          "label": "透视亮度",
+          "type": "Slider",
+          "disabled": false
+        },
+        {
+          "x": 1416,
+          "y": 676,
+          "width": 72,
+          "height": 128,
+          "label": "滚动条",
+          "type": "Scrollbar",
+          "disabled": false
+        }
+      ],
+      "texts": [
+        {
+          "x": 48,
+          "y": 32,
+          "label": "组件结构与反馈",
+          "size": 40,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 48,
+          "y": 94,
+          "label": "按职责组合，颜色变化共用素材；图标统一使用 Fluent Filled",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 200,
+          "y": 209,
+          "label": "保存设置",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 428,
+          "y": 209,
+          "label": "恢复默认",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 672,
+          "y": 209,
+          "label": "空间设置",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 924,
+          "y": 188,
+          "label": "桌面工作区",
+          "size": 26,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 924,
+          "y": 232,
+          "label": "图标、标题与状态组合为操作卡",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 344,
+          "label": "次操作与交互状态",
+          "size": 28,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 136,
+          "y": 420,
+          "label": "正常",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 268,
+          "y": 420,
+          "label": "悬停",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 400,
+          "y": 420,
+          "label": "聚焦",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 532,
+          "y": 420,
+          "label": "按下",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 664,
+          "y": 420,
+          "label": "禁用",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 136,
+          "y": 570,
+          "label": "Off",
+          "size": 20,
+          "weight": 400,
+          "anchor": "middle"
+        },
+        {
+          "x": 358,
+          "y": 570,
+          "label": "On",
+          "size": 20,
+          "weight": 400,
+          "anchor": "middle"
+        },
+        {
+          "x": 580,
+          "y": 570,
+          "label": "Disabled",
+          "size": 20,
+          "weight": 400,
+          "anchor": "middle"
+        },
+        {
+          "x": 824,
+          "y": 344,
+          "label": "信息层级与图标",
+          "size": 28,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 824,
+          "y": 410,
+          "label": "透视亮度",
+          "size": 26,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 824,
+          "y": 452,
+          "label": "数值和单位分层，信息不依赖颜色",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1508,
+          "y": 402,
+          "label": "66%",
+          "size": 42,
+          "weight": 600,
+          "anchor": "end"
+        },
+        {
+          "x": 80,
+          "y": 666,
+          "label": "输入、选择、滑动与滚动",
+          "size": 26,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 800,
+          "label": "必要识别部位 ≥3:1，普通控件文字 ≥4.5:1；数值检查不代替 VR 实测。",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 104,
+          "y": 732,
+          "label": "设备名称",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 520,
+          "y": 732,
+          "label": "工作区 A",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        }
+      ],
+      "interactionContrasts": [
+        {
+          "role": "保存设置/surface",
+          "foreground": "#7BE0D1",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "保存设置/label-icon",
+          "foreground": "#103B37",
+          "background": "#7BE0D1",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "恢复默认/surface",
+          "foreground": "#92A7B8",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "恢复默认/label-icon",
+          "foreground": "#0D1D29",
+          "background": "#92A7B8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "空间设置/surface",
+          "foreground": "#92A7B8",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "空间设置/label-icon",
+          "foreground": "#0D1D29",
+          "background": "#92A7B8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "ActionCard/surface",
+          "foreground": "#92A7B8",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "ActionCard/label-icon",
+          "foreground": "#0D1D29",
+          "background": "#92A7B8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/正常/surface",
+          "foreground": "#92A7B8",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/正常/label",
+          "foreground": "#0D1D29",
+          "background": "#92A7B8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/悬停/surface",
+          "foreground": "#A5BED0",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/悬停/label",
+          "foreground": "#0D1D29",
+          "background": "#A5BED0",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/聚焦/surface",
+          "foreground": "#BADAF0",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/聚焦/label",
+          "foreground": "#0D1D29",
+          "background": "#BADAF0",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/按下/surface",
+          "foreground": "#7D91A2",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/按下/label",
+          "foreground": "#0D1D29",
+          "background": "#7D91A2",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/禁用/surface",
+          "foreground": "#334955",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": true
+        },
+        {
+          "role": "Selectable/禁用/label",
+          "foreground": "#AFBFCA",
+          "background": "#334955",
+          "minimum": 4.5,
+          "disabled": true
+        },
+        {
+          "role": "Toggle Off/track",
+          "foreground": "#B4C8D4",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Toggle Off/thumb",
+          "foreground": "#213746",
+          "background": "#B4C8D4",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Toggle On/track",
+          "foreground": "#7BE0D1",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Toggle On/thumb",
+          "foreground": "#103B37",
+          "background": "#7BE0D1",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Toggle Disabled/track",
+          "foreground": "#334955",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": true
+        },
+        {
+          "role": "Toggle Disabled/thumb",
+          "foreground": "#AFBFCA",
+          "background": "#334955",
+          "minimum": 3,
+          "disabled": true
+        },
+        {
+          "role": "InputField/surface",
+          "foreground": "#92A7B8",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "InputField/label",
+          "foreground": "#0D1D29",
+          "background": "#92A7B8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Dropdown/surface",
+          "foreground": "#92A7B8",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Dropdown/label",
+          "foreground": "#0D1D29",
+          "background": "#92A7B8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Slider/track-parent",
+          "foreground": "#718494",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/fill-track",
+          "foreground": "#E3F2FF",
+          "background": "#718494",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/handle-parent",
+          "foreground": "#E3F2FF",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Scrollbar/track-parent",
+          "foreground": "#718494",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Scrollbar/thumb-track",
+          "foreground": "#E3F2FF",
+          "background": "#718494",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Scrollbar/thumb-parent",
+          "foreground": "#E3F2FF",
+          "background": "#213746",
+          "minimum": 3,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "presetId": "spatial-soft",
+      "kind": "SettingsPanel",
+      "status": "draft-unapproved",
+      "canvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "panel": {
+        "x": 160,
+        "y": 90,
+        "width": 1600,
+        "height": 900,
+        "sizeTier": "B"
+      },
+      "svg": "spatial-soft/SettingsPanel.svg",
+      "png": "spatial-soft/SettingsPanel.png",
+      "svgSha256": "eb4b37fd540dcbffd70ca386504009aa08c315e4275bc824a91f0c4c8386fc5e",
+      "pngSha256": "611420b27e602fa8302970f99697e0a82ab120bbfaa61a6aa246b2568143badb",
+      "hitTargets": [
+        {
+          "x": 100,
+          "y": 130,
+          "width": 332,
+          "height": 52,
+          "label": "工作空间",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 448,
+          "y": 130,
+          "width": 332,
+          "height": 52,
+          "label": "显示与舒适",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 796,
+          "y": 130,
+          "width": 332,
+          "height": 52,
+          "label": "交互方式",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 1144,
+          "y": 130,
+          "width": 332,
+          "height": 52,
+          "label": "通知与声音",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 1368,
+          "y": 265,
+          "width": 104,
+          "height": 64,
+          "label": "显示空间网格",
+          "type": "Toggle",
+          "disabled": false
+        },
+        {
+          "x": 1368,
+          "y": 393,
+          "width": 104,
+          "height": 64,
+          "label": "面板跟随",
+          "type": "Toggle",
+          "disabled": false
+        },
+        {
+          "x": 608,
+          "y": 587,
+          "width": 840,
+          "height": 64,
+          "label": "透视亮度",
+          "type": "Slider",
+          "disabled": false
+        },
+        {
+          "x": 1064,
+          "y": 800,
+          "width": 200,
+          "height": 64,
+          "label": "恢复默认",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 1296,
+          "y": 800,
+          "width": 216,
+          "height": 64,
+          "label": "保存设置",
+          "type": "Button",
+          "disabled": false
+        }
+      ],
+      "texts": [
+        {
+          "x": 88,
+          "y": 42,
+          "label": "空间设置",
+          "size": 40,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 88,
+          "y": 104,
+          "label": "为当前工作空间配置显示与交互",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 188,
+          "y": 140,
+          "label": "工作空间",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 536,
+          "y": 140,
+          "label": "显示与舒适",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 884,
+          "y": 140,
+          "label": "交互方式",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1232,
+          "y": 140,
+          "label": "通知与声音",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 312,
+          "y": 438,
+          "label": "桌面工作区",
+          "size": 32,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 312,
+          "y": 507,
+          "label": "已连接",
+          "size": 20,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 312,
+          "y": 570,
+          "label": "固定世界位置",
+          "size": 24,
+          "weight": 400,
+          "anchor": "middle"
+        },
+        {
+          "x": 312,
+          "y": 616,
+          "label": "手柄射线",
+          "size": 24,
+          "weight": 400,
+          "anchor": "middle"
+        },
+        {
+          "x": 312,
+          "y": 680,
+          "label": "工作头显 01",
+          "size": 20,
+          "weight": 400,
+          "anchor": "middle"
+        },
+        {
+          "x": 608,
+          "y": 262,
+          "label": "显示空间网格",
+          "size": 26,
+          "weight": 550,
+          "anchor": "start"
+        },
+        {
+          "x": 608,
+          "y": 304,
+          "label": "辅助识别空间边界与定位",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 608,
+          "y": 390,
+          "label": "面板跟随",
+          "size": 26,
+          "weight": 550,
+          "anchor": "start"
+        },
+        {
+          "x": 608,
+          "y": 432,
+          "label": "关闭后保持当前世界位置",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 608,
+          "y": 534,
+          "label": "透视亮度",
+          "size": 26,
+          "weight": 550,
+          "anchor": "start"
+        },
+        {
+          "x": 1472,
+          "y": 534,
+          "label": "66%",
+          "size": 26,
+          "weight": 600,
+          "anchor": "end"
+        },
+        {
+          "x": 608,
+          "y": 670,
+          "label": "保持真实环境清楚可见",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 88,
+          "y": 820,
+          "label": "更改将在保存后生效",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1176,
+          "y": 817,
+          "label": "恢复默认",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 1416,
+          "y": 817,
+          "label": "保存设置",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        }
+      ],
+      "interactionContrasts": [
+        {
+          "role": "Tab/工作空间/label",
+          "foreground": "#202731",
+          "background": "#F6F7F7",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Tab/工作空间/icon",
+          "foreground": "#265EB8",
+          "background": "#F6F7F7",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Tab/显示与舒适/label",
+          "foreground": "#58616B",
+          "background": "#E8E9E8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Tab/显示与舒适/icon",
+          "foreground": "#58616B",
+          "background": "#E8E9E8",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Tab/交互方式/label",
+          "foreground": "#58616B",
+          "background": "#E8E9E8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Tab/交互方式/icon",
+          "foreground": "#58616B",
+          "background": "#E8E9E8",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Tab/通知与声音/label",
+          "foreground": "#58616B",
+          "background": "#E8E9E8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Tab/通知与声音/icon",
+          "foreground": "#58616B",
+          "background": "#E8E9E8",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "显示空间网格/track",
+          "foreground": "#265EB8",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "显示空间网格/thumb",
+          "foreground": "#FFFFFF",
+          "background": "#265EB8",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "面板跟随/track",
+          "foreground": "#58616B",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "面板跟随/thumb",
+          "foreground": "#FFFFFF",
+          "background": "#58616B",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/track-parent",
+          "foreground": "#748291",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/fill-track",
+          "foreground": "#102E52",
+          "background": "#748291",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/handle-parent",
+          "foreground": "#102E52",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "恢复默认/surface",
+          "foreground": "#5C6C7E",
+          "background": "#EFEEEB",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "恢复默认/label-icon",
+          "foreground": "#FFFFFF",
+          "background": "#5C6C7E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "保存设置/surface",
+          "foreground": "#265EB8",
+          "background": "#EFEEEB",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "保存设置/label-icon",
+          "foreground": "#FFFFFF",
+          "background": "#265EB8",
+          "minimum": 4.5,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "presetId": "spatial-soft",
+      "kind": "MonitoringPanel",
+      "status": "draft-unapproved",
+      "canvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "panel": {
+        "x": 160,
+        "y": 90,
+        "width": 1600,
+        "height": 900,
+        "sizeTier": "B"
+      },
+      "svg": "spatial-soft/MonitoringPanel.svg",
+      "png": "spatial-soft/MonitoringPanel.png",
+      "svgSha256": "bc965a08beb8387c45c093e7d993b5a4f758aa8720de084c4dfafba72ec18b54",
+      "pngSha256": "8ba293991fdb571c9497d801c5d2752a07f61fac832d75a012f7b1d8617c5cba",
+      "hitTargets": [
+        {
+          "x": 100,
+          "y": 130,
+          "width": 332,
+          "height": 52,
+          "label": "设备概览",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 448,
+          "y": 130,
+          "width": 332,
+          "height": 52,
+          "label": "设备列表",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 796,
+          "y": 130,
+          "width": 332,
+          "height": 52,
+          "label": "告警记录",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 1144,
+          "y": 130,
+          "width": 332,
+          "height": 52,
+          "label": "运行历史",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 1104,
+          "y": 708,
+          "width": 384,
+          "height": 64,
+          "label": "查看告警",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 1296,
+          "y": 812,
+          "width": 216,
+          "height": 64,
+          "label": "导出记录",
+          "type": "Button",
+          "disabled": false
+        }
+      ],
+      "texts": [
+        {
+          "x": 88,
+          "y": 42,
+          "label": "设备监控",
+          "size": 40,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 88,
+          "y": 104,
+          "label": "工作区 A    6 台设备    最近更新 14:32",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 188,
+          "y": 140,
+          "label": "设备概览",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 536,
+          "y": 140,
+          "label": "设备列表",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 884,
+          "y": 140,
+          "label": "告警记录",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1232,
+          "y": 140,
+          "label": "运行历史",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 112,
+          "y": 232,
+          "label": "在线设备",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 112,
+          "y": 268,
+          "label": "06",
+          "size": 48,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 512,
+          "y": 296,
+          "label": "台",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 592,
+          "y": 232,
+          "label": "今日运行",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 592,
+          "y": 268,
+          "label": "12.6",
+          "size": 48,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 992,
+          "y": 296,
+          "label": "小时",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1072,
+          "y": 232,
+          "label": "待处理告警",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1072,
+          "y": 268,
+          "label": "02",
+          "size": 48,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 1488,
+          "y": 296,
+          "label": "条",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 112,
+          "y": 394,
+          "label": "设备编号",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 417.12,
+          "y": 394,
+          "label": "运行状态",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 707.52,
+          "y": 394,
+          "label": "温度",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1032,
+          "y": 394,
+          "label": "剩余电量",
+          "size": 20,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 112,
+          "y": 440,
+          "label": "XR-01",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 451.12,
+          "y": 440,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 707.52,
+          "y": 440,
+          "label": "35 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1032,
+          "y": 440,
+          "label": "78%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 112,
+          "y": 494,
+          "label": "XR-02",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 451.12,
+          "y": 494,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 707.52,
+          "y": 494,
+          "label": "36 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1032,
+          "y": 494,
+          "label": "86%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 112,
+          "y": 548,
+          "label": "XR-03",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 451.12,
+          "y": 548,
+          "label": "需关注",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 707.52,
+          "y": 548,
+          "label": "49 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1032,
+          "y": 548,
+          "label": "42%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 112,
+          "y": 602,
+          "label": "XR-04",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 451.12,
+          "y": 602,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 707.52,
+          "y": 602,
+          "label": "38 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1032,
+          "y": 602,
+          "label": "93%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 112,
+          "y": 656,
+          "label": "XR-05",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 451.12,
+          "y": 656,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 707.52,
+          "y": 656,
+          "label": "39 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1032,
+          "y": 656,
+          "label": "64%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 112,
+          "y": 710,
+          "label": "XR-06",
+          "size": 24,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 451.12,
+          "y": 710,
+          "label": "运行中",
+          "size": 22,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 707.52,
+          "y": 710,
+          "label": "40 °C",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1032,
+          "y": 710,
+          "label": "71%",
+          "size": 24,
+          "weight": 400,
+          "anchor": "end"
+        },
+        {
+          "x": 1104,
+          "y": 482,
+          "label": "XR-03 温度偏高",
+          "size": 26,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 1104,
+          "y": 536,
+          "label": "当前温度",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1104,
+          "y": 578,
+          "label": "49 °C",
+          "size": 48,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 1104,
+          "y": 656,
+          "label": "建议暂停使用并检查散热",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1308,
+          "y": 725,
+          "label": "查看告警",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 88,
+          "y": 828,
+          "label": "显示全部 6 台设备",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1416,
+          "y": 829,
+          "label": "导出记录",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        }
+      ],
+      "interactionContrasts": [
+        {
+          "role": "Tab/设备概览/label",
+          "foreground": "#202731",
+          "background": "#F6F7F7",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Tab/设备概览/icon",
+          "foreground": "#265EB8",
+          "background": "#F6F7F7",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Tab/设备列表/label",
+          "foreground": "#58616B",
+          "background": "#E8E9E8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Tab/设备列表/icon",
+          "foreground": "#58616B",
+          "background": "#E8E9E8",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Tab/告警记录/label",
+          "foreground": "#58616B",
+          "background": "#E8E9E8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Tab/告警记录/icon",
+          "foreground": "#58616B",
+          "background": "#E8E9E8",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Tab/运行历史/label",
+          "foreground": "#58616B",
+          "background": "#E8E9E8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Tab/运行历史/icon",
+          "foreground": "#58616B",
+          "background": "#E8E9E8",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "查看告警/surface",
+          "foreground": "#5C6C7E",
+          "background": "#E1E3E4",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "查看告警/label-icon",
+          "foreground": "#FFFFFF",
+          "background": "#5C6C7E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "导出记录/surface",
+          "foreground": "#265EB8",
+          "background": "#EFEEEB",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "导出记录/label-icon",
+          "foreground": "#FFFFFF",
+          "background": "#265EB8",
+          "minimum": 4.5,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "presetId": "spatial-soft",
+      "kind": "Components",
+      "status": "draft-unapproved",
+      "canvas": {
+        "width": 1920,
+        "height": 1080
+      },
+      "panel": {
+        "x": 160,
+        "y": 90,
+        "width": 1600,
+        "height": 900,
+        "sizeTier": "B"
+      },
+      "svg": "spatial-soft/Components.svg",
+      "png": "spatial-soft/Components.png",
+      "svgSha256": "9068d1d23c682a46d210ac4eeb8aa5e9a0f367a310622fa99d188ef26910a792",
+      "pngSha256": "0a09b3eb7a7195c9c1928d7485dca59cf512369dfce246f4ec9020e3201f90b4",
+      "hitTargets": [
+        {
+          "x": 80,
+          "y": 192,
+          "width": 216,
+          "height": 64,
+          "label": "保存设置",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 320,
+          "y": 192,
+          "width": 192,
+          "height": 64,
+          "label": "恢复默认",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 552,
+          "y": 192,
+          "width": 216,
+          "height": 64,
+          "label": "空间设置",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 816,
+          "y": 176,
+          "width": 704,
+          "height": 96,
+          "label": "桌面工作区",
+          "type": "Button",
+          "disabled": false
+        },
+        {
+          "x": 84,
+          "y": 503,
+          "width": 104,
+          "height": 64,
+          "label": "Toggle Off",
+          "type": "Toggle",
+          "disabled": false
+        },
+        {
+          "x": 306,
+          "y": 503,
+          "width": 104,
+          "height": 64,
+          "label": "Toggle On",
+          "type": "Toggle",
+          "disabled": false
+        },
+        {
+          "x": 528,
+          "y": 503,
+          "width": 104,
+          "height": 64,
+          "label": "Toggle Disabled",
+          "type": "Toggle",
+          "disabled": true
+        },
+        {
+          "x": 80,
+          "y": 716,
+          "width": 392,
+          "height": 64,
+          "label": "设备名称",
+          "type": "InputField",
+          "disabled": false
+        },
+        {
+          "x": 496,
+          "y": 716,
+          "width": 336,
+          "height": 64,
+          "label": "工作区 A",
+          "type": "Dropdown",
+          "disabled": false
+        },
+        {
+          "x": 880,
+          "y": 717,
+          "width": 448,
+          "height": 64,
+          "label": "透视亮度",
+          "type": "Slider",
+          "disabled": false
+        },
+        {
+          "x": 1416,
+          "y": 676,
+          "width": 72,
+          "height": 128,
+          "label": "滚动条",
+          "type": "Scrollbar",
+          "disabled": false
+        }
+      ],
+      "texts": [
+        {
+          "x": 48,
+          "y": 32,
+          "label": "组件结构与反馈",
+          "size": 40,
+          "weight": 650,
+          "anchor": "start"
+        },
+        {
+          "x": 48,
+          "y": 94,
+          "label": "按职责组合，颜色变化共用素材；图标统一使用 Fluent Filled",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 200,
+          "y": 209,
+          "label": "保存设置",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 428,
+          "y": 209,
+          "label": "恢复默认",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 672,
+          "y": 209,
+          "label": "空间设置",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 924,
+          "y": 188,
+          "label": "桌面工作区",
+          "size": 26,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 924,
+          "y": 232,
+          "label": "图标、标题与状态组合为操作卡",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 344,
+          "label": "次操作与交互状态",
+          "size": 28,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 136,
+          "y": 420,
+          "label": "正常",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 268,
+          "y": 420,
+          "label": "悬停",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 400,
+          "y": 420,
+          "label": "聚焦",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 532,
+          "y": 420,
+          "label": "按下",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 664,
+          "y": 420,
+          "label": "禁用",
+          "size": 24,
+          "weight": 600,
+          "anchor": "middle"
+        },
+        {
+          "x": 136,
+          "y": 570,
+          "label": "Off",
+          "size": 20,
+          "weight": 400,
+          "anchor": "middle"
+        },
+        {
+          "x": 358,
+          "y": 570,
+          "label": "On",
+          "size": 20,
+          "weight": 400,
+          "anchor": "middle"
+        },
+        {
+          "x": 580,
+          "y": 570,
+          "label": "Disabled",
+          "size": 20,
+          "weight": 400,
+          "anchor": "middle"
+        },
+        {
+          "x": 824,
+          "y": 344,
+          "label": "信息层级与图标",
+          "size": 28,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 824,
+          "y": 410,
+          "label": "透视亮度",
+          "size": 26,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 824,
+          "y": 452,
+          "label": "数值和单位分层，信息不依赖颜色",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 1508,
+          "y": 402,
+          "label": "66%",
+          "size": 42,
+          "weight": 600,
+          "anchor": "end"
+        },
+        {
+          "x": 80,
+          "y": 666,
+          "label": "输入、选择、滑动与滚动",
+          "size": 26,
+          "weight": 600,
+          "anchor": "start"
+        },
+        {
+          "x": 80,
+          "y": 800,
+          "label": "必要识别部位 ≥3:1，普通控件文字 ≥4.5:1；数值检查不代替 VR 实测。",
+          "size": 20,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 104,
+          "y": 732,
+          "label": "设备名称",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        },
+        {
+          "x": 520,
+          "y": 732,
+          "label": "工作区 A",
+          "size": 24,
+          "weight": 400,
+          "anchor": "start"
+        }
+      ],
+      "interactionContrasts": [
+        {
+          "role": "保存设置/surface",
+          "foreground": "#265EB8",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "保存设置/label-icon",
+          "foreground": "#FFFFFF",
+          "background": "#265EB8",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "恢复默认/surface",
+          "foreground": "#5C6C7E",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "恢复默认/label-icon",
+          "foreground": "#FFFFFF",
+          "background": "#5C6C7E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "空间设置/surface",
+          "foreground": "#5C6C7E",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "空间设置/label-icon",
+          "foreground": "#FFFFFF",
+          "background": "#5C6C7E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "ActionCard/surface",
+          "foreground": "#5C6C7E",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "ActionCard/label-icon",
+          "foreground": "#FFFFFF",
+          "background": "#5C6C7E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/正常/surface",
+          "foreground": "#5C6C7E",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/正常/label",
+          "foreground": "#FFFFFF",
+          "background": "#5C6C7E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/悬停/surface",
+          "foreground": "#4A5C70",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/悬停/label",
+          "foreground": "#FFFFFF",
+          "background": "#4A5C70",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/聚焦/surface",
+          "foreground": "#2B5274",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/聚焦/label",
+          "foreground": "#FFFFFF",
+          "background": "#2B5274",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/按下/surface",
+          "foreground": "#3C4E62",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/按下/label",
+          "foreground": "#FFFFFF",
+          "background": "#3C4E62",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Selectable/禁用/surface",
+          "foreground": "#DFE1E5",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": true
+        },
+        {
+          "role": "Selectable/禁用/label",
+          "foreground": "#626B76",
+          "background": "#DFE1E5",
+          "minimum": 4.5,
+          "disabled": true
+        },
+        {
+          "role": "Toggle Off/track",
+          "foreground": "#58616B",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Toggle Off/thumb",
+          "foreground": "#FFFFFF",
+          "background": "#58616B",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Toggle On/track",
+          "foreground": "#265EB8",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Toggle On/thumb",
+          "foreground": "#FFFFFF",
+          "background": "#265EB8",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Toggle Disabled/track",
+          "foreground": "#DFE1E5",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": true
+        },
+        {
+          "role": "Toggle Disabled/thumb",
+          "foreground": "#626B76",
+          "background": "#DFE1E5",
+          "minimum": 3,
+          "disabled": true
+        },
+        {
+          "role": "InputField/surface",
+          "foreground": "#5C6C7E",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "InputField/label",
+          "foreground": "#FFFFFF",
+          "background": "#5C6C7E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Dropdown/surface",
+          "foreground": "#5C6C7E",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Dropdown/label",
+          "foreground": "#FFFFFF",
+          "background": "#5C6C7E",
+          "minimum": 4.5,
+          "disabled": false
+        },
+        {
+          "role": "Slider/track-parent",
+          "foreground": "#748291",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/fill-track",
+          "foreground": "#102E52",
+          "background": "#748291",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Slider/handle-parent",
+          "foreground": "#102E52",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Scrollbar/track-parent",
+          "foreground": "#748291",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Scrollbar/thumb-track",
+          "foreground": "#102E52",
+          "background": "#748291",
+          "minimum": 3,
+          "disabled": false
+        },
+        {
+          "role": "Scrollbar/thumb-parent",
+          "foreground": "#102E52",
+          "background": "#FFFFFF",
+          "minimum": 3,
+          "disabled": false
+        }
+      ]
+    }
+  ]
+}

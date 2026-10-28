@@ -1,4 +1,4 @@
 interface:
   display_name: "UI Panel 设计到 HTML 工作流"
-  short_description: "确认面板与元素组图，支持 HTML 转换或 Unity MCP 视觉替换"
-  default_prompt: "使用 $ui-panel-design-to-html，默认以 1920×1080 的纯色画布确认面板预览，标注画布和面板主体宽高，再确认当前实际需要的元素组图；所有元素素材宽高分别使用 2 的幂次方，按组件缩写命名并保留像素细节，同形颜色差异通过 Image.color 实现；VR 元素采用无边缘描线的填充造型，以颜色和留白区分层级。完整流程再制作 HTML；仅视觉优化直接通过 Unity MCP 替换原 Prefab。交付素材、面板预制体，并在确认后将元素组图和完整面板预览作为参考图导入 Unity，不创建视觉 C#。"
+  short_description: "Unity/XR 面板与开源填充图标，无参考双方案、HTML 或 MCP 落地"
+  default_prompt: "使用 $ui-panel-design-to-html 设计 Unity/XR 面板：默认黑灰或淡蓝科技配色、不主动使用紫色；无参考且无已批准风格时先查看范例并给同一代表页两套方案，方向选择并入面板确认，再确认元素组图；所有交互组件默认态可辨，必要图形对相邻背景至少 3:1、普通控件文字至少 4.5:1，独立次操作不做成透明文字，导航底色仅轻微区分或沿用底图，不强制高对比块；保留纯色画布、VR 无描边、POT、TMP、图标许可与业务绑定，核对真实输入和空间可读性；完整分支制作 HTML，仅视觉分支使用 Unity MCP，不创建视觉 C#。"

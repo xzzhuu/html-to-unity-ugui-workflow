@@ -1,6 +1,6 @@
 # 游戏级素材、组件部件与同步规则
 
-本规则优先于本 Skill 中旧的“跨组件共用 Img”示例。新游戏使用 `projectName` 与外部项目根目录的 `project.assets.json`；单面板和全部面板生成前，都先同步当前游戏全部已确认、可交付素材到 `Assets/HtmlToUGUIStage/{GameName}/Sprites/`。RawImage 使用 `Textures/RawImage`。未制作、未确认的未来素材不必提前提供。
+本规则优先于本 Skill 中旧的“跨组件共用 Img”示例。新游戏使用 `projectName` 与外部项目根目录的 `project.assets.json`；单面板和全部面板的 **Unity Prefab 生成/导入前**，都先同步当前游戏全部已确认、可交付素材到 `Assets/HtmlToUGUIStage/{GameName}/Sprites/`。设计预览阶段只读核对清单，不因此向 Unity 写入；仅视觉分支使用其既定导入路径，不调用 HTML 转换器。RawImage 使用 `Textures/RawImage`。未制作、未确认的未来素材不必提前提供。
 
 ## 组件归属与部件
 
@@ -55,7 +55,7 @@ Slider 的 data-sprite 为 Track，data-fill-sprite/data-handle-sprite 对应 Fi
 
 ## 同步、规范选择与清理
 
-每次生成前读取完整游戏清单，检查源批准哈希及所有被引用资产。候选必须同游戏、实际类型、部件、状态语义，尺寸、Border/Pivot/PPU、色彩空间、过滤及导入配置一致，并且解码 RGBA 像素一致，才自动合并。视觉相似度只能提示复核。材质、轮廓、Alpha、纹理、阴影与九宫格适用性还需设计审核；不是看到形状近似就合并。
+每次 Unity Prefab 生成/导入前读取完整游戏清单，检查源批准哈希及所有被引用资产。候选必须同游戏、实际类型、部件、状态语义，尺寸、Border/Pivot/PPU、色彩空间、过滤及导入配置一致，并且解码 RGBA 像素一致，才自动合并。视觉相似度只能提示复核。材质、轮廓、Alpha、纹理、阴影与九宫格适用性还需设计审核；不是看到形状近似就合并。
 
 既有注册的规范素材优先保留；否则固定按 assetId 字典序确定并登记，不依赖扫描顺序。源内容变化属于版本更新；组件/部件/状态变更要新 ID；同 ID 不同来源冲突不得最后写入覆盖。
 

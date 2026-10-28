@@ -78,6 +78,10 @@ $ui-panel-design-to-html Create a UI Panel from the requirements and reference i
 
 The Skill's instructions and supporting reference documents are currently primarily in Chinese. The CLI commands can be used independently of Codex. The formal design workflow requires explicit layout approval before component breakdown and final HTML implementation.
 
+### Unity/XR style references
+
+The updated Skill includes four unapproved [Unity/XR style references](Skills/ui-panel-design-to-html/assets/style-presets/Overview.png): `meta-friendly`, `pico-spatial`, `microsoft-mrdl`, and `spatial-soft`. Without a reference or applicable approved system, inspect the examples and prepare two complete previews with identical business content; select the direction within the existing panel approval step. Existing project approvals remain authoritative. See the [Skill instructions](Skills/ui-panel-design-to-html/SKILL.md) for component recipes, panel sizes, icon licensing, and interaction appearance. Run `npm run verify:skill` for reference color-pair checks; passing values do not establish design approval or device acceptance.
+
 ### Install the Unity importer
 
 In Unity Package Manager, choose **Add package from disk** and select `Packages/com.nex.html-to-ugui/package.json` from this repository.

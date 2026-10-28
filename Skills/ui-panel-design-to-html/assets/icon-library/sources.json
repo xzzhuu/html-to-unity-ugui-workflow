@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "status": "reference-only-unapproved",
+  "checkedOn": "2026-10-28",
+  "repository": "https://github.com/microsoft/fluentui-system-icons",
+  "commit": "64e5aa757d1b70c24a283256ddcb8269d0f58773",
+  "license": "MIT",
+  "licensePath": "fluent-filled/LICENSE.txt",
+  "licenseSha256": "69bc45dc42b9acb96a69823adbc6ae538374e3c0bde169b855b32c48eaaef52f",
+  "files": [
+    {
+      "name": "home",
+      "sourcePath": "assets/Home/SVG/ic_fluent_home_24_filled.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/64e5aa757d1b70c24a283256ddcb8269d0f58773/assets/Home/SVG/ic_fluent_home_24_filled.svg",
+      "sourceSha256": "1f7d28af9fee0a889982a328b3b9949ec71f08c194ca1f4bbae3fbaab25b41a1",
+      "localPath": "fluent-filled/home.svg",
+      "modifications": "Source SVG unchanged. Example renderer overrides fill for display and scales the viewBox; PNG exports must be tracked per project."
+    },
+    {
+      "name": "settings",
+      "sourcePath": "assets/Settings/SVG/ic_fluent_settings_24_filled.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/64e5aa757d1b70c24a283256ddcb8269d0f58773/assets/Settings/SVG/ic_fluent_settings_24_filled.svg",
+      "sourceSha256": "c19ff922990add433c3d5ddc2fb9843b3e4d31c1074ef05295d46c4ec8f23c83",
+      "localPath": "fluent-filled/settings.svg",
+      "modifications": "Source SVG unchanged. Example renderer overrides fill for display and scales the viewBox; PNG exports must be tracked per project."
+    },
+    {
+      "name": "cube",
+      "sourcePath": "assets/Cube/SVG/ic_fluent_cube_24_filled.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/64e5aa757d1b70c24a283256ddcb8269d0f58773/assets/Cube/SVG/ic_fluent_cube_24_filled.svg",
+      "sourceSha256": "833d400e76ca1566698db558e7f2c0eea6629c5daa62f7f006d64ef026c58c35",
+      "localPath": "fluent-filled/cube.svg",
+      "modifications": "Source SVG unchanged. Example renderer overrides fill for display and scales the viewBox; PNG exports must be tracked per project."
+    },
+    {
+      "name": "eye",
+      "sourcePath": "assets/Eye/SVG/ic_fluent_eye_24_filled.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/64e5aa757d1b70c24a283256ddcb8269d0f58773/assets/Eye/SVG/ic_fluent_eye_24_filled.svg",
+      "sourceSha256": "1cab07ef463b2e275ce28ff0cc65d3251cd89834982605bb4770a5ba9faecb31",
+      "localPath": "fluent-filled/eye.svg",
+      "modifications": "Source SVG unchanged. Example renderer overrides fill for display and scales the viewBox; PNG exports must be tracked per project."
+    },
+    {
+      "name": "hand_right",
+      "sourcePath": "assets/Hand Right/SVG/ic_fluent_hand_right_24_filled.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/64e5aa757d1b70c24a283256ddcb8269d0f58773/assets/Hand%20Right/SVG/ic_fluent_hand_right_24_filled.svg",
+      "sourceSha256": "2bec16e354bf03cd9526d13b9e6387480971f346bfe3e4c1bcbc2b0444864cf7",
+      "localPath": "fluent-filled/hand_right.svg",
+      "modifications": "Source SVG unchanged. Example renderer overrides fill for display and scales the viewBox; PNG exports must be tracked per project."
+    },
+    {
+      "name": "alert",
+      "sourcePath": "assets/Alert/SVG/ic_fluent_alert_24_filled.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/64e5aa757d1b70c24a283256ddcb8269d0f58773/assets/Alert/SVG/ic_fluent_alert_24_filled.svg",
+      "sourceSha256": "f9317b0d723db1234c051e30bebad503d5a56b06cee7beb26fc1cf58ee17655a",
+      "localPath": "fluent-filled/alert.svg",
+      "modifications": "Source SVG unchanged. Example renderer overrides fill for display and scales the viewBox; PNG exports must be tracked per project."
+    },
+    {
+      "name": "arrow_download",
+      "sourcePath": "assets/Arrow Download/SVG/ic_fluent_arrow_download_24_filled.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/64e5aa757d1b70c24a283256ddcb8269d0f58773/assets/Arrow%20Download/SVG/ic_fluent_arrow_download_24_filled.svg",
+      "sourceSha256": "5f6d03bf77eee0d67eccb2fb5f0cb48e4137c9c6fd27508d738cf9926e6089da",
+      "localPath": "fluent-filled/arrow_download.svg",
+      "modifications": "Source SVG unchanged. Example renderer overrides fill for display and scales the viewBox; PNG exports must be tracked per project."
+    },
+    {
+      "name": "arrow_reset",
+      "sourcePath": "assets/Arrow Reset/SVG/ic_fluent_arrow_reset_24_filled.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/64e5aa757d1b70c24a283256ddcb8269d0f58773/assets/Arrow%20Reset/SVG/ic_fluent_arrow_reset_24_filled.svg",
+      "sourceSha256": "17a527313fec6a3cc9684a9572cef32f1d17e94fc2c883838c26fade884c3cac",
+      "localPath": "fluent-filled/arrow_reset.svg",
+      "modifications": "Source SVG unchanged. Example renderer overrides fill for display and scales the viewBox; PNG exports must be tracked per project."
+    },
+    {
+      "name": "checkmark",
+      "sourcePath": "assets/Checkmark/SVG/ic_fluent_checkmark_24_filled.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/64e5aa757d1b70c24a283256ddcb8269d0f58773/assets/Checkmark/SVG/ic_fluent_checkmark_24_filled.svg",
+      "sourceSha256": "1886370b96eaf1c02743c920c55bdd3ef57c3eaaf4dfeec5ce5ae3b473df1488",
+      "localPath": "fluent-filled/checkmark.svg",
+      "modifications": "Source SVG unchanged. Example renderer overrides fill for display and scales the viewBox; PNG exports must be tracked per project."
+    },
+    {
+      "name": "grid",
+      "sourcePath": "assets/Grid/SVG/ic_fluent_grid_24_filled.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/64e5aa757d1b70c24a283256ddcb8269d0f58773/assets/Grid/SVG/ic_fluent_grid_24_filled.svg",
+      "sourceSha256": "ca423fb466fa08a32a38ad28ab689bd25d3809b70cdecb719bdf0c052bc843dd",
+      "localPath": "fluent-filled/grid.svg",
+      "modifications": "Source SVG unchanged. Example renderer overrides fill for display and scales the viewBox; PNG exports must be tracked per project."
+    },
+    {
+      "name": "location",
+      "sourcePath": "assets/Location/SVG/ic_fluent_location_24_filled.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/64e5aa757d1b70c24a283256ddcb8269d0f58773/assets/Location/SVG/ic_fluent_location_24_filled.svg",
+      "sourceSha256": "a611000c8c82fe337c233bf833b8bb33b7cac72f90cab1892f84df9fdf2fa1c6",
+      "localPath": "fluent-filled/location.svg",
+      "modifications": "Source SVG unchanged. Example renderer overrides fill for display and scales the viewBox; PNG exports must be tracked per project."
+    },
+    {
+      "name": "dismiss",
+      "sourcePath": "assets/Dismiss/SVG/ic_fluent_dismiss_24_filled.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/64e5aa757d1b70c24a283256ddcb8269d0f58773/assets/Dismiss/SVG/ic_fluent_dismiss_24_filled.svg",
+      "sourceSha256": "059bf86157a83cf26ab0f009d8aaadc15cf0b4c8132fe34ad3a009f00e01febf",
+      "localPath": "fluent-filled/dismiss.svg",
+      "modifications": "Source SVG unchanged. Example renderer overrides fill for display and scales the viewBox; PNG exports must be tracked per project."
+    },
+    {
+      "name": "arrow_left",
+      "sourcePath": "assets/Arrow Left/SVG/ic_fluent_arrow_left_24_filled.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/64e5aa757d1b70c24a283256ddcb8269d0f58773/assets/Arrow%20Left/SVG/ic_fluent_arrow_left_24_filled.svg",
+      "sourceSha256": "d69a4f42ebedc2c9f6e45b575aa7fcefe025f9f796bf9de2b25ba1c0052e1caf",
+      "localPath": "fluent-filled/arrow_left.svg",
+      "modifications": "Source SVG unchanged. Example renderer overrides fill for display and scales the viewBox; PNG exports must be tracked per project."
+    },
+    {
+      "name": "chevron_down",
+      "sourcePath": "assets/Chevron Down/SVG/ic_fluent_chevron_down_24_filled.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/64e5aa757d1b70c24a283256ddcb8269d0f58773/assets/Chevron%20Down/SVG/ic_fluent_chevron_down_24_filled.svg",
+      "sourceSha256": "742b175352c68adec30caf7a83ea08d110a7a220fc18134399becb915397e231",
+      "localPath": "fluent-filled/chevron_down.svg",
+      "modifications": "Source SVG unchanged. Example renderer overrides fill for display and scales the viewBox; PNG exports must be tracked per project."
+    },
+    {
+      "name": "apps",
+      "sourcePath": "assets/Apps/SVG/ic_fluent_apps_24_filled.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/64e5aa757d1b70c24a283256ddcb8269d0f58773/assets/Apps/SVG/ic_fluent_apps_24_filled.svg",
+      "sourceSha256": "2f129b85454551f6e62525b34a19f113956a71ed4d278a897a1df51ca222ce9c",
+      "localPath": "fluent-filled/apps.svg",
+      "modifications": "Source SVG unchanged. Example renderer overrides fill for display and scales the viewBox; PNG exports must be tracked per project."
+    },
+    {
+      "name": "document_table",
+      "sourcePath": "assets/Document Table/SVG/ic_fluent_document_table_24_filled.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/64e5aa757d1b70c24a283256ddcb8269d0f58773/assets/Document%20Table/SVG/ic_fluent_document_table_24_filled.svg",
+      "sourceSha256": "1a4af3b4e6403f027b8e425c57d2adaa0c23672120c393b6d3fb13b32091fc16",
+      "localPath": "fluent-filled/document_table.svg",
+      "modifications": "Source SVG unchanged. Example renderer overrides fill for display and scales the viewBox; PNG exports must be tracked per project."
+    },
+    {
+      "name": "play",
+      "sourcePath": "assets/Play/SVG/ic_fluent_play_24_filled.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/64e5aa757d1b70c24a283256ddcb8269d0f58773/assets/Play/SVG/ic_fluent_play_24_filled.svg",
+      "sourceSha256": "113666855945f34b93da8ba7276a0b7c51a86812eecfc0ea5f12feb2b972cb97",
+      "localPath": "fluent-filled/play.svg",
+      "modifications": "Source SVG unchanged. Example renderer overrides fill for display and scales the viewBox; PNG exports must be tracked per project."
+    }
+  ],
+  "alternatives": [
+    {
+      "repository": "https://github.com/phosphor-icons/core",
+      "license": "MIT",
+      "variant": "fill",
+      "licenseUrl": "https://github.com/phosphor-icons/core/blob/main/LICENSE"
+    },
+    {
+      "repository": "https://github.com/tailwindlabs/heroicons",
+      "license": "MIT",
+      "variant": "solid",
+      "licenseUrl": "https://github.com/tailwindlabs/heroicons/blob/master/LICENSE"
+    }
+  ]
+}

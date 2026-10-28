@@ -76,6 +76,10 @@ $ui-panel-design-to-html 我以“新文件目录”的身份调用，请初始�
 
 正式设计可调用：`$ui-panel-design-to-html 请根据需求和参考图制作 UI Panel，先给出布局图与完整性清单供我审核。`
 
+### Unity/XR 风格参考
+
+最新版 Skill 内置四套未批准的 [Unity/XR 风格预设](Skills/ui-panel-design-to-html/assets/style-presets/Overview.png)：`meta-friendly`、`pico-spatial`、`microsoft-mrdl` 和 `spatial-soft`。无参考且无适用批准时，先查看内置范例，再以相同业务内容制作两套完整预览，风格选择并入已有的面板确认；不改写既有项目的批准记录。组件配方、尺寸档位、图标许可与交互可辨识要求见 [Skill 指引](Skills/ui-panel-design-to-html/SKILL.md)。使用 `npm run verify:skill` 检查参考颜色对；数值通过不代表设计批准或设备验收。
+
 ### 安装 Unity 转换包
 
 在 Package Manager 使用 **Add package from disk**，选择本仓库 `Packages/com.nex.html-to-ugui/package.json`。
