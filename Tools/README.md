@@ -28,6 +28,8 @@ CI 使用 Python 校验、打包工具和星港浏览器交互测试，不依赖
 
 ## 浏览器复验
 
+Skill 风格参考的独立检查运行 `npm run verify:skill`，包含交互对比度单测和内置范例颜色对审计；无需浏览器或 Unity。它只检查参考图声明的颜色对，不替代视觉审核、完整无障碍检查或 XR 设备验收。已安装 Skill 可直接运行 `node scripts/test_interaction_contrast.cjs` 及 `node scripts/interaction_contrast.cjs assets/style-presets/examples.json`。
+
 仓库根目录运行 `npm ci`、`npx playwright install chromium` 后，运行 `npm run verify:browser`，检查星港六面板的 16 项流程（含结构化 fixture 契约）。已有 Chrome 或 Edge 时，可设置 `HTML_UI_BROWSER_CHANNEL=chrome` 或 `msedge` 使用现有浏览器。
 
 测试工具自行启动可用端口的本机服务并在结束时关闭；`npm run verify:starport` 是同一入口。已有服务时可用 `STARPORT_BASE_URL` 指定其他端口；`STARPORT_EVIDENCE_DIR` 可指定输出目录，默认写入忽略目录 `Audit/Runs/latest/starport-browser/`，不会覆盖已批准的设计审核证据。`sharp` 仅供历史素材导出工具使用，不要为复验重新导出已批准素材。

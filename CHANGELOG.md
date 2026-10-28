@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-29
+
+- 同步最新版 ui-panel-design-to-html：增加无参考时的两套 XR 风格方案、面板尺寸档位和交互组件默认态可辨识规则，保留既有批准、双确认及项目业务引用。
+- 内置 meta-friendly、pico-spatial、microsoft-mrdl、spatial-soft 四套未批准参考预设及可编辑 SVG/PNG，附固定版本 Fluent Filled 图标、来源哈希和 MIT 许可。
+- 新增交互对比度检查与回归，接入 `npm run verify:skill` 和 CI；风格来源与 XR 条件保持可选，不改变既有工作区或制造设计/设备批准。
+
 ## 2026-10-24
 
 - 验收源文件边界与目标同时规范化路径，兼容 Windows CI 临时目录短路径别名，继续拒绝越界引用。

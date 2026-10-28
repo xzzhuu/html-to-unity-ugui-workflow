@@ -21,6 +21,52 @@ class GameWorkflowTests(unittest.TestCase):
         self.assertFalse(read(self.root/'project.assets.json')['assets'])
         self.assertFalse(list(self.root.rglob('*approval*')))
 
+    def test_xr_presets_remain_draft_v1_contracts_without_runtime_configuration(self):
+        import copy
+        presets=Path(__file__).parents[1]/'assets/style-presets'
+        for name in ('meta-friendly','pico-spatial','microsoft-mrdl','spatial-soft'):
+            with self.subTest(preset=name):
+                data=copy.deepcopy(read(presets/name/'tokens.json'))
+                data['projectName']=self.root.name
+                write(self.root/'contracts/style.json',data)
+                self.assertFalse(diagnostics(self.root))
+                self.assertEqual(data['status'],'draft')
+                self.assertIsNone(data['xrContext']['viewingDistanceMeters'])
+                self.assertIsNone(data['xrContext']['panelSizeMeters'])
+                self.assertEqual(data['xrContext']['inputModes'],[])
+                self.assertEqual(data['xrContext']['verification'],'not-checked')
+                self.assertEqual(read(self.root/'contracts/native-assembly.json')['status'],'draft')
+                self.assertFalse(list(self.root.rglob('*approval*')))
+
+    def test_optional_xr_metadata_preserves_old_workspaces_and_invalidates_review(self):
+        write(self.root/'contracts/screens.json',dict(schemaVersion=1,projectName=self.root.name,status='draft',screens=[dict(panelName='MainPanel',implemented=True)]))
+        baseline=self.root/'baseline.json';write(baseline,fingerprints(self.root))
+        p=self.root/'contracts/style.json';data=read(p)
+        data['designDirection']=dict(presetId='custom',signature='Keep existing approved geometry')
+        data['xrContext']=dict(inputModes=['controller-ray'],viewingDistanceMeters=None)
+        data['userExtension']='preserve';write(p,data)
+        plan=impact(self.root,baseline)
+        self.assertTrue(plan['panels'][0]['designReviewRequired'])
+        self.assertFalse(initialize(self.root)['created'])
+        self.assertEqual(read(p),data)
+        self.assertFalse(list(self.root.rglob('*approval*')))
+
+    def test_bundled_filled_icons_keep_pinned_source_and_license_integrity(self):
+        import hashlib
+        import xml.etree.ElementTree as ET
+        root=Path(__file__).parents[1]/'assets/icon-library'
+        manifest=read(root/'sources.json')
+        self.assertEqual(manifest['license'],'MIT')
+        license_bytes=(root/manifest['licensePath']).read_bytes()
+        self.assertEqual(hashlib.sha256(license_bytes).hexdigest(),manifest['licenseSha256'])
+        self.assertIn(b'permission notice shall be included',license_bytes)
+        for icon in manifest['files']:
+            source=(root/icon['localPath']).read_bytes()
+            self.assertEqual(hashlib.sha256(source).hexdigest(),icon['sourceSha256'])
+            self.assertIn('/'+manifest['commit']+'/',icon['sourceUrl'])
+            self.assertTrue(icon['sourcePath'].endswith('_filled.svg'))
+            self.assertEqual(ET.fromstring(source).tag,'{http://www.w3.org/2000/svg}svg')
+
     def test_collects_multiple_diagnostics(self):
         p=self.root/'contracts/style.json';data=read(p);data['canvas']['width']=True;data['colors']['teal']='wrong';write(p,data)
         errors=diagnostics(self.root)

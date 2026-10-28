@@ -19,3 +19,7 @@ Workspaces/** -text
 UnityProject/Assets/** -text
 Audit/Reports/** -text
 docs/game-example/evidence/** -text
+
+# Bundled reference assets include hashes of original source bytes.
+Skills/ui-panel-design-to-html/assets/icon-library/** -text
+Skills/ui-panel-design-to-html/assets/style-presets/** -text

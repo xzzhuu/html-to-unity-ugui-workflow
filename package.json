@@ -3,6 +3,7 @@
   "private": true,
   "engines": { "node": ">=20.9.0" },
   "scripts": {
+    "verify:skill": "node --test Skills/ui-panel-design-to-html/scripts/test_interaction_contrast.cjs && node Skills/ui-panel-design-to-html/scripts/interaction_contrast.cjs Skills/ui-panel-design-to-html/assets/style-presets/examples.json",
     "verify:browser": "node Tools/verify-browser.cjs",
     "verify:starport": "node Tools/verify-browser.cjs"
   },

@@ -44,6 +44,7 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci
+      - run: npm run verify:skill
       - run: npx playwright install --with-deps chromium
       - run: npm run verify:browser
       - uses: actions/upload-artifact@v7.0.1

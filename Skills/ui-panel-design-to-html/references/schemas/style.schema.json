@@ -66,6 +66,82 @@
     },
     "panels": {
       "type": "array"
+    },
+    "designDirection": {
+      "type": "object",
+      "description": "Optional design provenance; never approval or SDK configuration.",
+      "properties": {
+        "presetId": {
+          "type": "string"
+        },
+        "presetVersion": {
+          "type": "string"
+        },
+        "sourceUrls": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "signature": {
+          "type": "string"
+        },
+        "componentRecipes": {
+          "type": "object"
+        },
+        "iconFamily": {
+          "type": "string"
+        },
+        "interactionPolicy": {
+          "type": "object",
+          "description": "Optional interaction appearance policy for reference design; not runtime configuration or approval."
+        }
+      }
+    },
+    "xrContext": {
+      "type": "object",
+      "description": "Optional observed XR conditions. Unknown measurements stay null; no device pass is inferred.",
+      "properties": {
+        "targetPlatform": {
+          "type": "string"
+        },
+        "displayType": {
+          "type": "string"
+        },
+        "inputModes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "viewingDistanceMeters": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "panelSizeMeters": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "width": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "height": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          }
+        },
+        "verification": {
+          "type": "string"
+        }
+      }
     }
   }
 }
